@@ -1,0 +1,131 @@
+# Family Squares Game - Claude Context
+
+## Project Overview
+
+A Rails 8.1.1 application for managing family sports squares games across NCAA basketball tournaments. Players buy chances on a 10x10 grid, and winners are determined by final digit scores at each period/quarter.
+
+## Tech Stack
+
+- **Framework**: Rails 8.1.1
+- **Database**: SQLite3
+- **Background Jobs**: Solid Queue (Rails 8 built-in)
+- **Frontend**: Bootstrap 5 via cssbundling-rails, Stimulus, Importmap
+- **Admin Theme**: Falcon v3.23.0 (selective integration - Option B)
+- **Web Scraping**: HTTParty + Nokogiri (ESPN scoreboard data)
+- **Deployment**: Fly.io
+
+## Core Domain Concepts
+
+### Grid System
+- 100 squares (10x10): away team score (0-9) × home team score (0-9)
+- Grid format: serialized as `"a0h0:player_id;a0h1:player_id;..."`
+- **Immutable once created** - no preview to prevent "fishing" for favorable boards
+- Players weighted by `chances` field (active players only)
+- Charity players fill unfilled squares if total chances < 100
+
+### Player System
+- Active players: participate in new games (have chances > 0)
+- Charity players: fallback for unfilled squares
+- Family structure: self-referential (`family_id` references Player)
+- **Email addresses encrypted** (Rails `encrypts`), never displayed in UI
+
+### Score Tracking
+- Stores both period scores AND cumulative totals:
+  - `away`, `home`: period-specific scores
+  - `away_total`, `home_total`: running totals
+- Sentinel value: `-1` indicates period not yet played
+- **Destroy/recreate pattern**: ensures canonical score per period
+- Overtime compressed into final regulation period
+- Women's basketball: `non_scoring` flag for Q1/Q3 (only award at halves)
+
+### Grid Validation Strategy
+- **Fail-fast approach**:
+  1. Total chances > 100: Error, require adjustment
+  2. Total chances < 100 with no charities: Error, require code edit
+  3. Total chances < 100 with charities: Fill with random charities
+- Add `Player.total_active_chances` class method for UI indicator
+
+## Known Issues & Bugs
+
+### Fixed
+- ✅ `charity.sample` → `charities.sample` in game.rb:122
+
+### Pending
+- Add validation: active player chances must sum to ≤100
+- Adapt PostgreSQL virtual column syntax to SQLite3 (teams.search_index)
+
+## Architecture Patterns
+
+### Service Objects
+- Base class: `ApplicationService`
+- Scraper hierarchy: `BaseScraper` → `EspnScraper`, `SrCfbScraper`
+- Main orchestrator: `ScoreboardService::ScoreScraper`
+
+### Accountability
+- ActivityLog table: track deletions and admin actions
+- Require `reason` field when deleting games
+- Single audit log table (not per-model)
+
+## Sports Coverage
+
+### Initial Release (Tournament Test)
+- NCAA Men's Basketball (March Madness)
+- NCAA Women's Basketball (March Madness)
+- **Seed ALL D1 teams** (~350 teams)
+  - Tests UX at scale
+  - Ready for any Cinderella team
+  - Football overlap (most D1 basketball = D1 football)
+
+### Team Data Structure
+- Sport-agnostic core: name, location, mascot
+- Sport-specific affiliations: basketball_conference, football_conference
+- Handles multi-sport schools and conference differences
+
+## Falcon Theme Integration
+
+**Strategy: Option B (Selective Integration)**
+- Import only needed components: Choices.js, Flatpickr, DataTables
+- Skip: charts, maps, calendar, kanban, chat
+- Wrap each library in Stimulus controllers
+- Phased approach: SASS first → core JS → per-feature components
+
+## Development Workflow
+
+### Git Integration
+- Commits managed by Claude
+- Use both GitHub Issues (milestones) and TodoWrite (session tasks)
+- Branch strategy: feature branches, PRs to main
+
+### Testing Workflow
+- Claude: server logs, tests, syntax validation
+- Human: UX testing, visual feedback, browser console errors
+- Screenshots/error logs shared back to Claude for fixes
+
+## Important File Locations
+
+- Grid logic: `app/models/game.rb` (build_grid method)
+- Score scraping: `app/services/scoreboard_service/`
+- Old schema reference: `artifacts/schema.rb` (PostgreSQL, needs migration)
+- UI mockup: `artifacts/Bowls_Round_2.pdf`
+- Writing guide: `artifacts/Chris's Sports Writing Style Guide v2.pdf`
+
+## Next Steps (Priority Order)
+
+1. **Finalize unified schema.rb** - Reconcile old schema with new requirements
+2. Fix grid generation bug (charity → charities)
+3. Implement grid validation (Player.total_active_chances)
+4. Integrate Falcon SASS
+5. Build seed data for all D1 teams
+6. Set up ActionMailer for Fly.io
+7. Implement post editor with game list sidebar
+
+## Post-Release Features
+
+- Filter box for game list in post editor
+- ESPN scraper improvements (WinnerCalculator service, better error handling)
+- Transaction wrapper for score processing
+- Scraper registry pattern
+
+---
+
+**Last Updated**: 2026-01-05

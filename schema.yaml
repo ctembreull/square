@@ -1,0 +1,42 @@
+LEAGUE:
+  name:   string, unique          # National Footabll League
+  abbr:   string, unique          # NFL
+  level:  string['pro','college'] # pro
+  gender: string['men','women']   # men
+
+CONFERENCE:
+  name:   string  # National Football Conference
+  abbr:   string  # NFC
+  league: *league # -> National Football League
+
+DIVISION:
+  name:       string # NFC West
+  abbr:       string # NFCW
+  conference: *conference # -> National Football Conference
+
+TEAM:
+  abbr:         string # SEA
+  prefix:       string # 
+  location:     string # Seattle
+  suffix:       string #
+  display_name: string # Seattle Seahawks
+  name:         string # Seahawks
+  womens_name:  string # 
+  brand_url:    string #
+
+AFFILIATION:
+  team:       *team       # -> Seattle Seahawks
+  league:     *league     # -> National Football League
+  conference: *conference # -> National Football Conference
+  division:   *division   # -> NFC West
+
+COLOR:
+  team:    *team
+  name:    string
+  primary: boolean[false]
+  hex:     string
+
+STYLE:
+  team:    *team
+  css:     string
+  default: boolean[false]
