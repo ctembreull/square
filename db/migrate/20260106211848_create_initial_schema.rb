@@ -1,0 +1,232 @@
+class CreateInitialSchema < ActiveRecord::Migration[8.1]
+  def change
+    # Action Text support for rich text content
+    create_table :action_text_rich_texts do |t|
+      t.string :name, null: false
+      t.text :body
+      t.string :record_type, null: false
+      t.bigint :record_id, null: false
+      t.timestamps
+      t.index [:record_type, :record_id, :name], name: "index_action_text_rich_texts_uniqueness", unique: true
+    end
+
+    # Active Storage for file uploads
+    create_table :active_storage_blobs do |t|
+      t.string :key, null: false
+      t.string :filename, null: false
+      t.string :content_type
+      t.text :metadata
+      t.string :service_name, null: false
+      t.bigint :byte_size, null: false
+      t.string :checksum
+      t.datetime :created_at, null: false
+      t.index [:key], name: "index_active_storage_blobs_on_key", unique: true
+    end
+
+    create_table :active_storage_attachments do |t|
+      t.string :name, null: false
+      t.string :record_type, null: false
+      t.bigint :record_id, null: false
+      t.bigint :blob_id, null: false
+      t.datetime :created_at, null: false
+      t.index [:blob_id], name: "index_active_storage_attachments_on_blob_id"
+      t.index [:record_type, :record_id, :name, :blob_id], name: "index_active_storage_attachments_uniqueness", unique: true
+    end
+
+    create_table :active_storage_variant_records do |t|
+      t.bigint :blob_id, null: false
+      t.string :variation_digest, null: false
+      t.index [:blob_id, :variation_digest], name: "index_active_storage_variant_records_uniqueness", unique: true
+    end
+
+    # Activity logging for auditing admin actions
+    create_table :activity_logs do |t|
+      t.string :record_type, null: false
+      t.bigint :record_id
+      t.string :action, null: false
+      t.text :reason
+      t.bigint :user_id
+      t.text :metadata
+      t.datetime :created_at, null: false
+      t.index [:record_type, :record_id], name: "index_activity_logs_on_record"
+      t.index [:user_id], name: "index_activity_logs_on_user_id"
+      t.index [:created_at], name: "index_activity_logs_on_created_at"
+    end
+
+    # Sports organizational structure
+    create_table :leagues do |t|
+      t.string :sport
+      t.string :level
+      t.string :gender
+      t.string :abbr
+      t.string :name
+      t.integer :periods
+      t.boolean :quarters_score_as_halves, default: false, null: false
+      t.timestamps
+    end
+
+    create_table :conferences do |t|
+      t.bigint :league_id, null: false
+      t.string :abbr, null: false
+      t.string :name, null: false
+      t.timestamps
+      t.index [:league_id, :abbr], name: "index_conferences_on_league_id_and_abbr", unique: true
+      t.index [:league_id, :name], name: "index_conferences_on_league_id_and_name", unique: true
+      t.index [:league_id], name: "index_conferences_on_league_id"
+    end
+
+    create_table :divisions do |t|
+      t.bigint :conference_id, null: false
+      t.string :abbr, null: false
+      t.string :name, null: false
+      t.integer :order, default: 0, null: false
+      t.timestamps
+      t.index [:conference_id, :name], name: "index_divisions_on_conference_id_and_name", unique: true
+      t.index [:conference_id], name: "index_divisions_on_conference_id"
+    end
+
+    create_table :teams do |t|
+      t.string :abbr
+      t.string :prefix
+      t.string :location
+      t.string :suffix
+      t.string :display_location
+      t.string :name
+      t.string :womens_name
+      t.string :brand_info
+      t.string :level, default: "", null: false
+      t.timestamps
+    end
+
+    create_table :affiliations do |t|
+      t.bigint :league_id, null: false
+      t.bigint :conference_id, null: false
+      t.bigint :division_id, null: false
+      t.bigint :team_id, null: false
+      t.timestamps
+      t.index [:league_id, :conference_id, :division_id, :team_id], name: "index_affiliations_uniqueness", unique: true
+      t.index [:league_id], name: "index_affiliations_on_league_id"
+      t.index [:conference_id], name: "index_affiliations_on_conference_id"
+      t.index [:division_id], name: "index_affiliations_on_division_id"
+      t.index [:team_id], name: "index_affiliations_on_team_id"
+    end
+
+    create_table :colors do |t|
+      t.bigint :team_id, null: false
+      t.string :name
+      t.boolean :primary
+      t.string :hex
+      t.timestamps
+      t.index [:team_id], name: "index_colors_on_team_id"
+    end
+
+    create_table :styles do |t|
+      t.bigint :team_id, null: false
+      t.boolean :default, default: false, null: false
+      t.string :name, null: false
+      t.text :css, null: false
+      t.timestamps
+      t.index [:team_id], name: "index_styles_on_team_id"
+    end
+
+    # Events and games
+    create_table :events do |t|
+      t.string :title, null: false
+      t.boolean :active, default: false, null: false
+      t.date :start_date
+      t.date :end_date
+      t.timestamps
+    end
+
+    create_table :games do |t|
+      t.bigint :event_id, null: false
+      t.string :title
+      t.date :date
+      t.time :time
+      t.string :timezone
+      t.string :broadcast_network
+      t.string :status, default: "upcoming", null: false
+      t.bigint :league_id, null: false
+      t.bigint :home_team_id, null: false
+      t.string :home_style
+      t.bigint :away_team_id, null: false
+      t.string :away_style
+      t.text :grid
+      t.integer :period_prize, default: 0, null: false
+      t.integer :final_prize, default: 0, null: false
+      t.string :score_url
+      t.timestamps
+      t.index [:event_id], name: "index_games_on_event_id"
+      t.index [:league_id], name: "index_games_on_league_id"
+      t.index [:home_team_id], name: "index_games_on_home_team_id"
+      t.index [:away_team_id], name: "index_games_on_away_team_id"
+      t.index [:status], name: "index_games_on_status"
+      t.index [:date], name: "index_games_on_date"
+    end
+
+    create_table :scores do |t|
+      t.bigint :game_id, null: false
+      t.integer :period, null: false
+      t.boolean :ot, default: false, null: false
+      t.boolean :complete, default: false, null: false
+      t.integer :home
+      t.integer :home_total
+      t.integer :away
+      t.integer :away_total
+      t.integer :prize
+      t.bigint :winner_id
+      t.boolean :non_scoring, default: false
+      t.timestamps
+      t.index [:game_id], name: "index_scores_on_game_id"
+      t.index [:winner_id], name: "index_scores_on_winner_id"
+    end
+
+    # Players and posts
+    create_table :players do |t|
+      t.string :type, null: false
+      t.integer :family_id
+      t.string :email, null: false
+      t.string :name, null: false
+      t.string :display_name
+      t.boolean :active, default: false, null: false
+      t.integer :chances
+      t.timestamps
+    end
+
+    create_table :posts do |t|
+      t.bigint :event_id, null: false
+      t.string :title
+      t.text :body
+      t.timestamps
+      t.index [:event_id], name: "index_posts_on_event_id"
+    end
+
+    # Admin users
+    create_table :users do |t|
+      t.string :email
+      t.string :password_digest
+      t.string :display_name
+      t.timestamps
+    end
+
+    # Foreign keys
+    add_foreign_key :active_storage_attachments, :active_storage_blobs, column: :blob_id
+    add_foreign_key :active_storage_variant_records, :active_storage_blobs, column: :blob_id
+    add_foreign_key :activity_logs, :users
+    add_foreign_key :affiliations, :conferences
+    add_foreign_key :affiliations, :divisions
+    add_foreign_key :affiliations, :leagues
+    add_foreign_key :affiliations, :teams
+    add_foreign_key :colors, :teams
+    add_foreign_key :conferences, :leagues
+    add_foreign_key :divisions, :conferences
+    add_foreign_key :games, :events
+    add_foreign_key :games, :leagues
+    add_foreign_key :games, :teams, column: :away_team_id
+    add_foreign_key :games, :teams, column: :home_team_id
+    add_foreign_key :posts, :events
+    add_foreign_key :scores, :games
+    add_foreign_key :scores, :players, column: :winner_id
+    add_foreign_key :styles, :teams
+  end
+end
