@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light" lang="en-US" dir="ltr">
   <head>
-    <title><%= content_for(:title) || "Square" %></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Square">
     <meta name="mobile-web-app-capable" content="yes">
+
+    <title><%= content_for(:title) || "Square" %></title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -28,6 +32,69 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main class="main" id="top">
+      <div class="container" data-layout="container">
+        <nav class="navbar navbar-light navbar-vertical navbar-expand-xl">
+          <div class="d-flex align-items-center">
+            <div class="toggle-icon-wrapper">
+              <button class="btn navbar-toggler-humburger-icon navbar-vertical-toggle" data-bs-toggle="tooltip" data-bs-placement="left" title="Toggle Navigation">
+                <span class="navbar-toggle-icon"><span class="toggle-line"></span></span>
+              </button>
+            </div>
+            <%= link_to root_path, class: "navbar-brand" do %>
+              <div class="d-flex align-items-center py-3">
+                <span class="font-sans-serif text-primary fs-3 fw-bold">Square</span>
+              </div>
+            <% end %>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+            <div class="navbar-vertical-content scrollbar">
+              <ul class="navbar-nav flex-column mb-3" id="navbarVerticalNav">
+                <li class="nav-item">
+                  <%= link_to events_path, class: "nav-link #{'active' if controller_name == 'events'}" do %>
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon"><i class="bi bi-calendar-event"></i></span>
+                      <span class="nav-link-text ps-1">Events</span>
+                    </div>
+                  <% end %>
+                </li>
+                <%# More nav items will go here %>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="content">
+          <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand">
+            <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation">
+              <span class="navbar-toggle-icon"><span class="toggle-line"></span></span>
+            </button>
+            <%= link_to root_path, class: "navbar-brand me-1 me-sm-3" do %>
+              <div class="d-flex align-items-center">
+                <span class="font-sans-serif text-primary">Square</span>
+              </div>
+            <% end %>
+            <ul class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
+              <%# User menu and other top nav items will go here %>
+            </ul>
+          </nav>
+
+          <%= yield %>
+
+          <footer class="footer">
+            <div class="row g-0 justify-content-between fs-10 mt-4 mb-3">
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">
+                  <%= Time.current.year %> &copy; Family Squares
+                </p>
+              </div>
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">Built with Falcon</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
