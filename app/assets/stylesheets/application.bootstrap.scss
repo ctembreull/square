@@ -1,2 +1,42 @@
-@import 'bootstrap/scss/bootstrap';
+/* -------------------------------------------------------------------------- */
+/*                          Falcon Theme Integration                          */
+/* -------------------------------------------------------------------------- */
+
+// Bootstrap Functions (needed first)
+@import 'bootstrap/scss/functions';
+@import 'falcon/theme/functions';
+
+// User Variables and Theme Colors
+@import 'falcon/user-variables';
+@import 'falcon/theme/colors';
+@import 'falcon/theme/variables';
+@import 'falcon/theme/variables-dark';
+
+// Bootstrap Variables
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+
+// Maps
+@import 'falcon/theme/maps';
+@import 'bootstrap/scss/maps';
+
+// Mixins
+@import 'bootstrap/scss/mixins';
+@import 'falcon/theme/mixins';
+
+// Utilities
+@import 'falcon/theme/utilities';
+@import 'bootstrap/scss/utilities';
+
+// Root
+@import 'bootstrap/scss/root';
+@import 'falcon/theme/root';
+
+// Bootstrap Core
+@import 'falcon/bootstrap';
+
+// Falcon Theme Styles
+@import 'falcon/theme/theme';
+
+// Bootstrap Icons
 @import 'bootstrap-icons/font/bootstrap-icons';
