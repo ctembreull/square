@@ -1,0 +1,51 @@
+class LeaguesController < ApplicationController
+  before_action :set_league, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @leagues = League.all.order(:sport, :name)
+  end
+
+  def show
+    @conferences = @league.conferences.alphabetical
+  end
+
+  def new
+    @league = League.new
+  end
+
+  def create
+    @league = League.new(league_params)
+
+    if @league.save
+      redirect_to leagues_path, notice: "League was successfully created."
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @league.update(league_params)
+      redirect_to leagues_path, notice: "League was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    @league.destroy
+    redirect_to leagues_path, notice: "League was successfully deleted."
+  end
+
+  private
+
+  def set_league
+    @league = League.find(params[:id])
+  end
+
+  def league_params
+    params.require(:league).permit(:name, :abbr, :sport, :gender, :level, :periods, :quarters_score_as_halves)
+  end
+end

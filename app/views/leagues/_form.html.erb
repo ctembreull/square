@@ -1,0 +1,62 @@
+<%= form_with(model: league, local: true) do |form| %>
+  <% if league.errors.any? %>
+    <div class="alert alert-danger">
+      <h4 class="alert-heading"><%= pluralize(league.errors.count, "error") %> prohibited this league from being saved:</h4>
+      <ul class="mb-0">
+        <% league.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control", required: true %>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <%= form.label :abbr, "Abbreviation", class: "form-label" %>
+      <%= form.text_field :abbr, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :sport, class: "form-label" %>
+      <%= form.select :sport, League.sports.keys.map { |s| [s.titleize, s] }, { prompt: "Select a sport" }, class: "form-select", required: true %>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <%= form.label :gender, class: "form-label" %>
+      <%= form.select :gender, [["Men's", "men"], ["Women's", "women"], ["Co-ed", "coed"]], { prompt: "Select gender" }, class: "form-select" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :level, class: "form-label" %>
+      <%= form.text_field :level, class: "form-control", placeholder: "e.g., NCAA D1, Professional" %>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <%= form.label :periods, class: "form-label" %>
+      <%= form.number_field :periods, class: "form-control", min: 1, required: true %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 mb-3">
+      <div class="form-check">
+        <%= form.check_box :quarters_score_as_halves, class: "form-check-input" %>
+        <%= form.label :quarters_score_as_halves, "Quarters score as halves (for women's basketball)", class: "form-check-label" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-end gap-2">
+    <%= link_to "Cancel", leagues_path, class: "btn btn-secondary" %>
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

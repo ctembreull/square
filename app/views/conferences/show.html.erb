@@ -1,0 +1,65 @@
+<div class="mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <%= link_to league_path(@conference.league), class: "text-decoration-none text-muted mb-2 d-block" do %>
+        <i class="bi bi-arrow-left"></i> Back to <%= @conference.league.name %>
+      <% end %>
+      <h1><%= @conference.name %></h1>
+      <div class="text-muted">
+        <span class="badge bg-secondary"><%= @conference.league.name %></span>
+        <% if @conference.abbr.present? %>
+          <span class="badge bg-info"><%= @conference.abbr %></span>
+        <% end %>
+      </div>
+    </div>
+    <div>
+      <%= link_to "Edit Conference", edit_conference_path(@conference), class: "btn btn-secondary" %>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">Divisions</h5>
+          <%= link_to "New Division", new_division_path(conference_id: @conference.id), class: "btn btn-sm btn-primary" %>
+        </div>
+        <div class="card-body">
+          <% if @divisions.any? %>
+            <div class="table-responsive">
+              <table class="table table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Abbreviation</th>
+                    <th>Order</th>
+                    <th class="text-end">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @divisions.each do |division| %>
+                    <tr>
+                      <td><strong><%= division.name %></strong></td>
+                      <td><%= division.abbr %></td>
+                      <td><%= division.order %></td>
+                      <td class="text-end">
+                        <div class="btn-group btn-group-sm">
+                          <%= link_to "Edit", edit_division_path(division), class: "btn btn-falcon-default" %>
+                          <%= button_to "Delete", division_path(division), method: :delete,
+                              data: { turbo_confirm: "Are you sure you want to delete this division?" },
+                              class: "btn btn-falcon-default text-danger" %>
+                        </div>
+                      </td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
+          <% else %>
+            <p class="text-muted mb-0">No divisions have been added to this conference yet.</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

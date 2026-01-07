@@ -1,2 +1,2 @@
-web: env RUBY_DEBUG_OPEN=true bin/rails server
+web: env RUBY_DEBUG_OPEN=true BINDING=0.0.0.0 bin/rails server
 css: yarn watch:css

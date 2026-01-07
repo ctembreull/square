@@ -43,7 +43,7 @@
             </div>
             <%= link_to root_path, class: "navbar-brand" do %>
               <div class="d-flex align-items-center py-3">
-                <span class="font-sans-serif text-primary fs-3 fw-bold">Square</span>
+                <span class="font-sans-serif text-primary fs-5 fw-bold">Square</span>
               </div>
             <% end %>
           </div>
@@ -55,6 +55,22 @@
                     <div class="d-flex align-items-center">
                       <span class="nav-link-icon"><i class="bi bi-calendar-event"></i></span>
                       <span class="nav-link-text ps-1">Events</span>
+                    </div>
+                  <% end %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to leagues_path, class: "nav-link #{'active' if ['leagues', 'conferences', 'divisions'].include?(controller_name)}" do %>
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon"><i class="bi bi-dribbble"></i></span>
+                      <span class="nav-link-text ps-1">Sports</span>
+                    </div>
+                  <% end %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to teams_path, class: "nav-link #{'active' if controller_name == 'teams'}" do %>
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon"><i class="bi bi-shield"></i></span>
+                      <span class="nav-link-text ps-1">Teams</span>
                     </div>
                   <% end %>
                 </li>

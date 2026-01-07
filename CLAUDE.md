@@ -111,13 +111,16 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 
 ## Next Steps (Priority Order)
 
-1. **Finalize unified schema.rb** - Reconcile old schema with new requirements
-2. Fix grid generation bug (charity → charities)
-3. Implement grid validation (Player.total_active_chances)
-4. Integrate Falcon SASS
-5. Build seed data for all D1 teams
-6. Set up ActionMailer for Fly.io
-7. Implement post editor with game list sidebar
+1. ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
+2. ✅ **Integrate Falcon SASS** - Theme fully integrated with working JavaScript
+3. ✅ **Sports Admin CRUD** - Complete CRUD for Leagues, Conferences, Divisions, Teams
+4. **Status/Health Endpoint** - JSON API with database counts for smoke testing (Events, Games, Leagues, Conferences, Divisions, Teams, Colors, Styles)
+5. **Deploy to Fly.io** - Configure and deploy application
+6. Fix grid generation bug (charity → charities)
+7. Implement grid validation (Player.total_active_chances)
+8. Build seed data for all D1 teams
+9. Set up ActionMailer for Fly.io
+10. Implement post editor with game list sidebar
 
 ## Post-Release Features
 
@@ -126,6 +129,28 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - Transaction wrapper for score processing
 - Scraper registry pattern
 
+## Status Endpoint Specification
+
+**Route**: `GET /status.json`
+
+**Purpose**: Quick smoke test for database state, especially useful for mobile verification after deployments
+
+**Response Format**:
+```json
+{
+  "events": 5,
+  "games": 42,
+  "leagues": 4,
+  "conferences": 32,
+  "divisions": 64,
+  "teams": 350,
+  "colors": 700,
+  "styles": 350
+}
+```
+
+**Implementation**: StatusController with single JSON action, no authentication required
+
 ---
 
-**Last Updated**: 2026-01-05
+**Last Updated**: 2026-01-07
