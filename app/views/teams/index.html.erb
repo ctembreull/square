@@ -10,8 +10,8 @@
         <table class="table table-hover">
           <thead>
             <tr>
+              <th>Abbr</th>
               <th>Team</th>
-              <th>Abbreviation</th>
               <th>Level</th>
               <th class="text-end">Actions</th>
             </tr>
@@ -19,8 +19,8 @@
           <tbody>
             <% @teams.each do |team| %>
               <tr>
-                <td><strong><%= team.display_name %></strong></td>
                 <td><%= team.abbr %></td>
+                <td><strong><%= link_to team.display_name, team %></strong></td>
                 <td><%= team.level %></td>
                 <td class="text-end">
                   <div class="btn-group btn-group-sm">

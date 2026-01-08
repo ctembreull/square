@@ -18,21 +18,26 @@
           { prompt: "Select a conference" }, class: "form-select", required: true %>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-3 mb-3">
       <%= form.label :abbr, "Abbreviation", class: "form-label" %>
       <%= form.text_field :abbr, class: "form-control", required: true %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-9 mb-3">
-      <%= form.label :name, class: "form-label" %>
-      <%= form.text_field :name, class: "form-control", required: true %>
     </div>
 
     <div class="col-md-3 mb-3">
       <%= form.label :order, "Display Order", class: "form-label" %>
       <%= form.number_field :order, class: "form-control", min: 0, value: division.order || 0, required: true %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control", required: true %>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <%= form.label :display_name, class: "form-label" %>
+      <%= form.text_field :display_name, class: "form-control", required: true %>
     </div>
   </div>
 

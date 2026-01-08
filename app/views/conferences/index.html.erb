@@ -11,6 +11,7 @@
           <thead>
             <tr>
               <th>Name</th>
+              <th>Display</th>
               <th>Abbreviation</th>
               <th>League</th>
               <th class="text-end">Actions</th>
@@ -19,7 +20,8 @@
           <tbody>
             <% @conferences.each do |conference| %>
               <tr>
-                <td><strong><%= conference.name %></strong></td>
+                <td><strong><%= link_to conference.name, conference %></strong></td>
+                <td><%= conference.display_name %></td>
                 <td><%= conference.abbr %></td>
                 <td><span class="badge bg-secondary"><%= conference.league.name %></span></td>
                 <td class="text-end">

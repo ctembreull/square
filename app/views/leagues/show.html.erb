@@ -34,6 +34,7 @@
                 <thead>
                   <tr>
                     <th>Name</th>
+                    <th>Display Name</th>
                     <th>Abbreviation</th>
                     <th class="text-end">Actions</th>
                   </tr>
@@ -44,6 +45,7 @@
                       <td>
                         <%= link_to conference.name, conference_path(conference), class: "text-decoration-none" %>
                       </td>
+                      <td><%= conference.display_name %></td>
                       <td><%= conference.abbr %></td>
                       <td class="text-end">
                         <div class="btn-group btn-group-sm">

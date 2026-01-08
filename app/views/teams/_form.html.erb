@@ -11,26 +11,14 @@
   <% end %>
 
   <div class="row">
-    <div class="col-md-6 mb-3">
-      <%= form.label :location, class: "form-label" %>
-      <%= form.text_field :location, class: "form-control", required: true, placeholder: "e.g., Alabama, Ohio State" %>
-    </div>
-
-    <div class="col-md-6 mb-3">
-      <%= form.label :name, "Mascot/Name", class: "form-label" %>
-      <%= form.text_field :name, class: "form-control", required: true, placeholder: "e.g., Crimson Tide, Buckeyes" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4 mb-3">
-      <%= form.label :display_location, "Display Location (optional)", class: "form-label" %>
-      <%= form.text_field :display_location, class: "form-control", placeholder: "Override location for display" %>
-    </div>
-
     <div class="col-md-4 mb-3">
       <%= form.label :abbr, "Abbreviation", class: "form-label" %>
       <%= form.text_field :abbr, class: "form-control", placeholder: "e.g., ALA, OSU" %>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <%= form.label :display_location, "Display Location (optional)", class: "form-label" %>
+      <%= form.text_field :display_location, class: "form-control", placeholder: "Override location for display" %>
     </div>
 
     <div class="col-md-4 mb-3">
@@ -42,15 +30,27 @@
   <div class="row">
     <div class="col-md-4 mb-3">
       <%= form.label :prefix, "Prefix (optional)", class: "form-label" %>
-      <%= form.text_field :prefix, class: "form-control", placeholder: "e.g., The" %>
+      <%= form.text_field :prefix, class: "form-control", placeholder: "e.g., University of" %>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <%= form.label :location, class: "form-label" %>
+      <%= form.text_field :location, class: "form-control", required: true, placeholder: "e.g., Alabama, Ohio State" %>
     </div>
 
     <div class="col-md-4 mb-3">
       <%= form.label :suffix, "Suffix (optional)", class: "form-label" %>
-      <%= form.text_field :suffix, class: "form-control", placeholder: "e.g., Jr." %>
+      <%= form.text_field :suffix, class: "form-control", placeholder: "e.g., University" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :name, "Mascot/Name", class: "form-label" %>
+      <%= form.text_field :name, class: "form-control", required: true, placeholder: "e.g., Crimson Tide, Buckeyes" %>
     </div>
 
-    <div class="col-md-4 mb-3">
+    <div class="col-md-6 mb-3">
       <%= form.label :womens_name, "Women's Name (if different)", class: "form-label" %>
       <%= form.text_field :womens_name, class: "form-control", placeholder: "e.g., Lady Vols" %>
     </div>

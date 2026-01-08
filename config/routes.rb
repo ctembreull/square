@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   resources :leagues
 
   # Conferences
-  resources :conferences
+  resources :conferences, except: [:index]
 
   # Divisions
-  resources :divisions
+  resources :divisions, except: [:index]
 
   # Teams
   resources :teams

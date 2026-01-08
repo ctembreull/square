@@ -10,13 +10,14 @@ class DivisionsController < ApplicationController
 
   def new
     @division = Division.new
+    @division.conference_id = params[:conference_id] if params[:conference_id]
   end
 
   def create
     @division = Division.new(division_params)
 
     if @division.save
-      redirect_to divisions_path, notice: "Division was successfully created."
+      redirect_to conference_path(@division.conference), notice: "Division was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
@@ -27,15 +28,16 @@ class DivisionsController < ApplicationController
 
   def update
     if @division.update(division_params)
-      redirect_to divisions_path, notice: "Division was successfully updated."
+      redirect_to conference_path(@division.conference), notice: "Division was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
   end
 
   def destroy
+    conference = @division.conference
     @division.destroy
-    redirect_to divisions_path, notice: "Division was successfully deleted."
+    redirect_to conference_path(conference), notice: "Division was successfully deleted."
   end
 
   private
@@ -45,6 +47,6 @@ class DivisionsController < ApplicationController
   end
 
   def division_params
-    params.require(:division).permit(:name, :abbr, :conference_id, :order)
+    params.require(:division).permit(:name, :display_name, :abbr, :conference_id, :order)
   end
 end

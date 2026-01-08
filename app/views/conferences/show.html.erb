@@ -31,6 +31,7 @@
                 <thead>
                   <tr>
                     <th>Name</th>
+                    <th>Display Name</th>
                     <th>Abbreviation</th>
                     <th>Order</th>
                     <th class="text-end">Actions</th>
@@ -40,6 +41,7 @@
                   <% @divisions.each do |division| %>
                     <tr>
                       <td><strong><%= division.name %></strong></td>
+                      <td><%= division.display_name %></td>
                       <td><%= division.abbr %></td>
                       <td><%= division.order %></td>
                       <td class="text-end">
