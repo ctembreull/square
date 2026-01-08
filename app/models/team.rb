@@ -10,6 +10,7 @@ class Team < ApplicationRecord
 
   validates :name, presence: true
   validates :location, presence: true
+  validates :level, inclusion: { in: %w[college pro], message: "must be either 'college' or 'pro'" }, allow_nil: true
 
   scope :alphabetical, -> { order(:location, :name) }
   scope :by_level, ->(level) { where(level: level) }

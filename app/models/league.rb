@@ -7,6 +7,7 @@ class League < ApplicationRecord
 
   validates :name, presence: true
   validates :periods, presence: true, numericality: { only_integer: true, greater_than: 0 }
+  validates :level, inclusion: { in: %w[college pro], message: "must be either 'college' or 'pro'" }, allow_nil: true
 
   scope :by_sport, ->(sport) { where(sport: sport) }
   scope :by_gender, ->(gender) { where(gender: gender) }

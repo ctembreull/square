@@ -1,0 +1,102 @@
+<div class="mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <%= link_to teams_path, class: "text-decoration-none text-muted mb-2 d-block" do %>
+        <i class="bi bi-arrow-left"></i> Back to Teams
+      <% end %>
+      <h1><%= @team.display_name %></h1>
+      <% if @team.abbr.present? %>
+        <div class="text-muted">
+          <span class="badge bg-secondary"><%= @team.abbr %></span>
+          <% if @team.level.present? %>
+            <span class="badge bg-info"><%= @team.level.titleize %></span>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to "Edit Team", edit_team_path(@team), class: "btn btn-secondary" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="card-header">
+          <h5 class="mb-0">Basic Information</h5>
+        </div>
+        <div class="card-body">
+          <table class="table table-sm mb-0">
+            <tbody>
+              <tr>
+                <th class="w-50">Abbreviation</th>
+                <td><%= @team.abbr || "—" %></td>
+              </tr>
+              <tr>
+                <th>Location</th>
+                <td><%= @team.location || "—" %></td>
+              </tr>
+              <tr>
+                <th>Display Location</th>
+                <td><%= @team.display_location || "—" %></td>
+              </tr>
+              <tr>
+                <th>Name (Mascot)</th>
+                <td><%= @team.name || "—" %></td>
+              </tr>
+              <tr>
+                <th>Women's Name</th>
+                <td><%= @team.womens_name || "—" %></td>
+              </tr>
+              <tr>
+                <th>Level</th>
+                <td><%= @team.level&.titleize || "—" %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="card-header">
+          <h5 class="mb-0">Full Name Components</h5>
+        </div>
+        <div class="card-body">
+          <table class="table table-sm mb-0">
+            <tbody>
+              <tr>
+                <th class="w-50">Prefix</th>
+                <td><%= @team.prefix || "—" %></td>
+              </tr>
+              <tr>
+                <th>Suffix</th>
+                <td><%= @team.suffix || "—" %></td>
+              </tr>
+              <tr>
+                <th>Full Name</th>
+                <td><strong><%= @team.full_name %></strong></td>
+              </tr>
+              <tr>
+                <th>Display Name</th>
+                <td><strong><%= @team.display_name %></strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <% if @team.brand_info.present? %>
+        <div class="card mb-3">
+          <div class="card-header">
+            <h5 class="mb-0">Brand Information</h5>
+          </div>
+          <div class="card-body">
+            <p class="mb-0"><%= @team.brand_info %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,6 @@ class AddDisplayNameToConferences < ActiveRecord::Migration[8.1]
   end
 
   def down
-    delete_column :conferences, :display_name
+    remove_column :conferences, :display_name
   end
 end
