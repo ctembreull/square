@@ -17,3 +17,6 @@ pin "falcon/popover", to: "falcon/popover.js"
 pin "falcon/theme-control", to: "falcon/theme-control.js"
 pin "falcon/navbar-vertical", to: "falcon/navbar-vertical.js"
 pin "falcon/theme", to: "falcon/theme.js"
+
+# FontAwesome
+pin "fontawesome", to: "vendors/fontawesome.min.js"

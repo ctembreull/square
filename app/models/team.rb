@@ -20,7 +20,11 @@ class Team < ApplicationRecord
   end
 
   def full_name
-    [prefix, display_location || location, name, suffix].compact.join(" ")
+    [ prefix, location, suffix, name ].compact.join(" ")
+  end
+
+  def proper_name
+    [ prefix, location, suffix ].compact.join(" ")
   end
 
   def display_name

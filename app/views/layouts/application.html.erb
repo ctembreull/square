@@ -33,92 +33,43 @@
 
   <body>
     <main class="main" id="top">
-      <div class="container" data-layout="container">
-        <nav class="navbar navbar-light navbar-vertical navbar-expand-xl">
-          <div class="d-flex align-items-center">
-            <div class="toggle-icon-wrapper">
-              <button class="btn navbar-toggler-humburger-icon navbar-vertical-toggle" data-bs-toggle="tooltip" data-bs-placement="left" title="Toggle Navigation">
-                <span class="navbar-toggle-icon"><span class="toggle-line"></span></span>
-              </button>
-            </div>
-            <%= link_to root_path, class: "navbar-brand" do %>
-              <div class="d-flex align-items-center py-3">
-                <span class="font-sans-serif text-primary fs-5 fw-bold">Square</span>
-              </div>
-            <% end %>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
-            <div class="navbar-vertical-content scrollbar">
-              <ul class="navbar-nav flex-column mb-3" id="navbarVerticalNav">
-                <li class="nav-item">
-                  <%= link_to events_path, class: "nav-link #{'active' if controller_name == 'events'}" do %>
-                    <div class="d-flex align-items-center">
-                      <span class="nav-link-icon"><i class="bi bi-calendar-event"></i></span>
-                      <span class="nav-link-text ps-1">Events</span>
-                    </div>
-                  <% end %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to leagues_path, class: "nav-link #{'active' if ['leagues', 'conferences', 'divisions'].include?(controller_name)}" do %>
-                    <div class="d-flex align-items-center">
-                      <span class="nav-link-icon"><i class="bi bi-dribbble"></i></span>
-                      <span class="nav-link-text ps-1">Sports</span>
-                    </div>
-                  <% end %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to teams_path, class: "nav-link #{'active' if controller_name == 'teams'}" do %>
-                    <div class="d-flex align-items-center">
-                      <span class="nav-link-icon"><i class="bi bi-shield"></i></span>
-                      <span class="nav-link-text ps-1">Teams</span>
-                    </div>
-                  <% end %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to affiliations_path, class: "nav-link #{'active' if controller_name == 'affiliations'}" do %>
-                    <div class="d-flex align-items-center">
-                      <span class="nav-link-icon"><i class="bi bi-link-45deg"></i></span>
-                      <span class="nav-link-text ps-1">Affiliations</span>
-                    </div>
-                  <% end %>
-                </li>
-                <%# More nav items will go here %>
-              </ul>
-            </div>
-          </div>
-        </nav>
+			<div class="container" data-layout="container">
 
-        <div class="content">
-          <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand">
-            <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation">
-              <span class="navbar-toggle-icon"><span class="toggle-line"></span></span>
-            </button>
-            <%= link_to root_path, class: "navbar-brand me-1 me-sm-3" do %>
-              <div class="d-flex align-items-center">
-                <span class="font-sans-serif text-primary">Square</span>
-              </div>
-            <% end %>
-            <ul class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
-              <%# User menu and other top nav items will go here %>
-            </ul>
-          </nav>
+				<nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg">
+					<!-- logo block -->
+					<%= link_to root_path, class: "navbar-brand me-1 me-sm-3" do %>
+						<div class="d-flex align-items-center">
+							<span class="font-sans-serif text-primary">square</span>
+						</div>
+					<% end %>
 
-          <%= yield %>
+					<ul class="navbar-nav" data-top-nav-dropdowns="data-top-nav-dropdowns">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="events">
+								Events
+							</a>
+							<div class="dropdown-menu dropdown-caret dropdown-menu-card border-0 mt-0" aria-labelledby="events">
+                <div class="bg-white dark__bg-1000 rounded-3 py-2">
+									<%= link_to "Current", events_path, class: "dropdown-item link-600 fw-medium" %>
+									<a class="dropdown-item link-600 fw-medium" href="#">Older...</a>
+								</div>
+              </div>
+						</li>
+						<li class="nav-item">
+							<%= link_to "Sports", leagues_path, class: "nav-link" %>
+						</li>
+						<li class="nav-item">
+							<%= link_to "Teams", teams_path, class: "nav-link" %>
+						</li>
+					</ul>
+				</nav>
 
-          <footer class="footer">
-            <div class="row g-0 justify-content-between fs-10 mt-4 mb-3">
-              <div class="col-12 col-sm-auto text-center">
-                <p class="mb-0 text-600">
-                  <%= Time.current.year %> &copy; Family Squares
-                </p>
-              </div>
-              <div class="col-12 col-sm-auto text-center">
-                <p class="mb-0 text-600">Built with Falcon</p>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </div>
+				<div class="content">
+					<%= yield %>
+				</div>
+
+			</div>
     </main>
   </body>
+	
 </html>

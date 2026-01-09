@@ -1,53 +1,74 @@
-<div class="d-flex justify-content-between align-items-center mt-4">
-  <h1>Sports</h1>
-  <%= link_to "New League", new_league_path, class: "btn btn-primary" %>
+
+<!-- display header template -->
+<div class="row mb-3">
+	<div class="col">
+		<div class="card bg-100 shadow-none border py-2">
+			<div class="row gx-0 flex-between-center">
+				<div class="col-sm-auto d-flex align-items-center"><img class="ms-n2" src="../assets/img/illustrations/crm-bar-chart.png" alt="" width="90">
+					<div>
+						<h6 class="text-primary fs-10 mb-0">Welcome to </h6>
+						<h4 class="text-primary fw-bold mb-0">
+							Squares
+							<span class="text-info fw-medium">Sports Management</span>
+						</h4>
+					</div><img class="ms-n4 d-md-none d-lg-block" src="../assets/img/illustrations/crm-line-chart.png" alt="" width="150">
+				</div>
+				<div class="col-md-auto p-3">
+					<%= link_to "Create New League", new_league_path, class: "btn btn-primary btn-sm btn-outline" %>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
-<% if @leagues.any? %>
-  <div class="card mt-4">
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Abbreviation</th>
-              <th>Sport</th>
-              <th>Gender</th>
-              <th>Level</th>
-              <th>Periods</th>
-              <th class="text-end">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @leagues.each do |league| %>
-              <tr>
-                <td>
-                  <%= link_to league.name, league_path(league), class: "text-decoration-none fw-bold" %>
-                </td>
-                <td><%= league.abbr %></td>
-                <td><span class="badge bg-primary"><%= league.sport&.titleize %></span></td>
-                <td><%= league.gender&.titleize %></td>
-                <td><%= league.level %></td>
-                <td><%= league.periods %></td>
-                <td class="text-end">
-                  <div class="btn-group btn-group-sm">
-                    <%= link_to "View", league_path(league), class: "btn btn-falcon-default" %>
-                    <%= link_to "Edit", edit_league_path(league), class: "btn btn-falcon-default" %>
-                    <%= button_to "Delete", league_path(league), method: :delete,
+<div class="row g-3 mb-3">
+	<% if @leagues.any? %>
+		<% @leagues.each do |league| %>
+			<div class="col-xxl-6 col-lg-6">
+				<div class="card h-100">
+					<div class="card-header bg-body-tertiary py-1 d-flex flex-between-center">
+						<h6 class="mb-0">
+							<%= league.gender.possessive.downcase %>
+							<%= league.level.downcase %>
+							<%= league.sport.downcase %>
+						</h6>
+						<div class="dropdown font-sans-serif btn-reveal-trigger">
+							<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-league-options" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+								<span class="fas fa-ellipsis-h fs-11"></span>
+							</button>
+							<div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-league-options">
+								<%= link_to "View", league, class: "dropdown-item" %>
+								<%= link_to "Edit", edit_league_path(league), class: "dropdown-item" %>
+								<div class="dropdown-divider"></div>
+								<%= link_to "Delete", league_path(league), method: :delete,
                         data: { turbo_confirm: "Are you sure you want to delete this league?" },
-                        class: "btn btn-falcon-default text-danger" %>
-                  </div>
-                </td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-<% else %>
-  <div class="alert alert-info mt-4">
-    <p class="mb-0">No leagues have been configured yet.</p>
-  </div>
-<% end %>
+                        class: "dropdown-item text-danger" %>
+							</div>
+						</div>
+					</div>
+					<div class="card-body py-0">
+						<div class="row gx-3">
+							<div class="col">
+								<h5 class="text-primary fw-normal">
+									<%= link_to league.name, league %>
+								</h5>
+								<div class="row g-3">
+									<div class="col-4"><span class="fs-11 text-500 fw-semi-bold mb-0">Teams: <%= league.teams.count %></p></div>
+									<div class="col-4"><span class="fs-11 text-500 fw-semi-bold mb-0">Conferences: <%= league.conferences.count %></span></div>
+									<div class="col-4"><span class="fs-11 text-500 fw-semi-bold mb-0">Divisions: <%= league.divisions.count %></span></div>
+								</div>
+							</div>
+							<div class="col-auto text-end">
+								<!-- icon goes here? -->&nbsp;
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	<% else %>
+		<div class="alert alert-info mt-4">
+			<p class="mb-0">No leagues have been configured yet.</p>
+		</div>
+	<% end %>
+</div>

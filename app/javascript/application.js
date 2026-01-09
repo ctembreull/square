@@ -15,3 +15,6 @@ window.bootstrap = {
 
 // Import Falcon theme
 import "falcon/theme"
+
+// Import FontAwesome
+import "fontawesome"

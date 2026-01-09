@@ -5,6 +5,7 @@
         <i class="bi bi-arrow-left"></i> Back to Teams
       <% end %>
       <h1><%= @team.display_name %></h1>
+      <h6>[<%= @team.abbr %>] <%= @team.proper_name %></h6>
       <% if @team.abbr.present? %>
         <div class="text-muted">
           <span class="badge bg-secondary"><%= @team.abbr %></span>

@@ -11,36 +11,33 @@
   <% end %>
 
   <div class="row">
-    <div class="col-md-6 mb-3">
-      <%= form.label :name, class: "form-label" %>
-      <%= form.text_field :name, class: "form-control", required: true %>
-    </div>
-
-    <div class="col-md-6 mb-3">
+		<div class="col-md-3 mb-3">
       <%= form.label :abbr, "Abbreviation", class: "form-label" %>
       <%= form.text_field :abbr, class: "form-control" %>
+    </div>
+    <div class="col-md-9 mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control", required: true %>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-6 mb-3">
+    <div class="col-md-3 mb-3">
       <%= form.label :sport, class: "form-label" %>
       <%= form.select :sport, League.sports.keys.map { |s| [s.titleize, s] }, { prompt: "Select a sport" }, class: "form-select", required: true %>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-3 mb-3">
       <%= form.label :gender, class: "form-label" %>
-      <%= form.select :gender, [["Men's", "men"], ["Women's", "women"], ["Co-ed", "coed"]], { prompt: "Select gender" }, class: "form-select" %>
+			<%= form.select :gender, League.genders.keys.map { |g| [g.titleize.possessive, g] }, {prompt: "Select gender" }, class: "form-select", required: true  %>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-6 mb-3">
+    <div class="col-md-3 mb-3">
       <%= form.label :level, class: "form-label" %>
-      <%= form.select :level, [["College", "college"], ["Pro", "pro"]], { prompt: "Select level" }, class: "form-select" %>
+      <%= form.select :level, League.levels.keys.map { |l| [l.titleize, l] }, { prompt: "Select level" }, class: "form-select" %>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-3 mb-3">
       <%= form.label :periods, class: "form-label" %>
       <%= form.number_field :periods, class: "form-control", min: 1, required: true %>
     </div>
@@ -50,7 +47,7 @@
     <div class="col-md-12 mb-3">
       <div class="form-check">
         <%= form.check_box :quarters_score_as_halves, class: "form-check-input" %>
-        <%= form.label :quarters_score_as_halves, "Quarters score as halves (for women's basketball)", class: "form-check-label" %>
+        <%= form.label :quarters_score_as_halves, "Quarters score as halves (as in women's basketball)", class: "form-check-label" %>
       </div>
     </div>
   </div>
