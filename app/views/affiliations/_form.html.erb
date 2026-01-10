@@ -10,20 +10,15 @@
     </div>
   <% end %>
 
-  <div class="row">
-    <div class="col-md-6 mb-3">
-      <%= form.label :team_id, "Team", class: "form-label" %>
-      <%= form.collection_select :team_id, Team.alphabetical, :id, :display_name, { prompt: "Select a team" }, class: "form-select", required: true %>
-    </div>
+  <%= form.hidden_field :team_id %>
 
-    <div class="col-md-6 mb-3">
+  <div class="row">
+    <div class="col-md-4 mb-3">
       <%= form.label :league_id, "League", class: "form-label" %>
       <%= form.collection_select :league_id, League.all.order(:name), :id, :name, { prompt: "Select a league" }, { class: "form-select", required: true, data: { affiliation_form_target: "league", action: "change->affiliation-form#filterConferences" } } %>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-6 mb-3">
+    <div class="col-md-4 mb-3">
       <%= form.label :conference_id, "Conference", class: "form-label" %>
       <select name="<%= form.object_name %>[conference_id]" id="<%= form.object_name %>_conference_id" class="form-select" required data-affiliation-form-target="conference" data-action="change->affiliation-form#filterDivisions">
         <option value="">Select a conference</option>
@@ -33,7 +28,7 @@
       </select>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-4 mb-3">
       <%= form.label :division_id, "Division", class: "form-label" %>
       <select name="<%= form.object_name %>[division_id]" id="<%= form.object_name %>_division_id" class="form-select" required data-affiliation-form-target="division">
         <option value="">Select a division</option>
