@@ -20,3 +20,7 @@ pin "falcon/theme", to: "falcon/theme.js"
 
 # FontAwesome
 pin "fontawesome", to: "vendors/fontawesome.min.js"
+
+# List.js library and Falcon integration
+pin "list.js", to: "vendors/list.min.js"
+pin "falcon/list", to: "falcon/list.js"

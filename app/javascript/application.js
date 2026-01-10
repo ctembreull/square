@@ -13,6 +13,9 @@ window.bootstrap = {
   Dropdown
 }
 
+// Import List.js library (makes window.List available)
+import "list.js"
+
 // Import Falcon theme
 import "falcon/theme"
 

@@ -2,7 +2,7 @@
 	<div class="col">
 		<div class="card bg-100 shadow-none border py-2">
 			<div class="row gx-0 flex-between-center">
-				<div class="col-sm-auto d-flex align-items-center"><img class="ms-n2" src="../assets/img/illustrations/crm-bar-chart.png" alt="" width="90">
+				<div class="col-sm-auto d-flex align-items-center px-7">
 					<div>
 						<h6 class="text-primary fs-10 mb-0">
 							<%= link_to teams_path, class: "text-decoration-none text-muted mb-2 d-block" do %>
@@ -17,6 +17,28 @@
 				</div>
 				<div class="col-md-auto p-3">
 					<%= link_to "Edit Team", edit_team_path(@team), class: "btn btn-secondary btn-sm btn-outline" %>
+				</div>
+			</div>
+			<div class="row gx-0">
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<h6 class="text-muted fs-10 mb-0"><%= @team.proper_name %></h6>
+				</div>
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<h6 class="text-muted fs-10 mb-0">
+						<%= @team.name %>
+						<% unless @team.womens_name.empty? %>
+						<span class="text-info">|</span> <%= @team.womens_name %>
+						<% end %>	
+					</h6>
+				</div>
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<h6 class="text-info fs-10 mb-0">
+						<% if @team.brand_info.empty? %>
+							<%= link_to "Brand Search", @team.brand_search_query, target: "_new" %>
+						<% else %>
+							<%= link_to "Brand Info >", @team.brand_info %>
+					<% end %>
+					</h6>
 				</div>
 			</div>
 		</div>

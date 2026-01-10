@@ -53,6 +53,7 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 ### Pending
 - Add validation: active player chances must sum to ≤100
 - Adapt PostgreSQL virtual column syntax to SQLite3 (teams.search_index)
+- Replace List.js with server-side search/sort (Ransack + Pagy + Turbo Frames) - List.js sorting unreliable, Enter key clears search
 
 ## Architecture Patterns
 
@@ -80,6 +81,26 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - Sport-agnostic core: name, location, mascot
 - Sport-specific affiliations: basketball_conference, football_conference
 - Handles multi-sport schools and conference differences
+
+### Colors & Styles System
+Tables exist in schema, models not yet built:
+- **Colors**: `hex`, `name`, `primary` (boolean), `team_id`
+  - Teams have multiple colors (primary, secondary, etc.)
+  - Used to generate CSS styles for grid display
+- **Styles**: `css`, `name`, `default` (boolean), `team_id`
+  - Contains actual CSS rules for team branding
+  - Applied to grid headers via class names (e.g., `lou-louisville-cardinals`)
+  - `default` flag indicates which style to use when rendering
+
+Grid rendering flow: Team → Colors → Styles → CSS class on grid headers
+
+### Welcome Widgets (artifacts/welcome/)
+Reusable components for game display, ready to wire to models:
+- **Cards**: `_standard_card`, `_flex_card` (generic wrappers)
+- **Game display**: `_game_card`, `_game_card_empty`, `_upcoming_game_list_item`
+- **Grid components**: `_grid_grid` (10x10 board), `_grid_scores` (period scores), `_grid_winners` (prize/winner table)
+- **Demo layout**: `demo.html.erb` shows full game page composition
+- Reference: `artifacts/Bowls_Round_2.pdf` shows existing game output format
 
 ## Falcon Theme Integration
 
@@ -153,4 +174,4 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 
 ---
 
-**Last Updated**: 2026-01-07
+**Last Updated**: 2026-01-10

@@ -1,4 +1,6 @@
 class Team < ApplicationRecord
+  BRAND_SEARCH_URL = "https://www.google.com/search?q="
+
   has_many :affiliations, dependent: :destroy
   has_many :leagues, through: :affiliations
   has_many :conferences, through: :affiliations
@@ -13,6 +15,7 @@ class Team < ApplicationRecord
   validates :level, inclusion: { in: %w[college pro], message: "must be either 'college' or 'pro'" }, allow_nil: true
 
   scope :alphabetical, -> { order(:location, :name) }
+  scope :latest_first, -> { order(created_at: :desc)}
   scope :by_level, ->(level) { where(level: level) }
 
   def games
@@ -29,5 +32,9 @@ class Team < ApplicationRecord
 
   def display_name
     "#{display_location || location} #{name}"
+  end
+
+  def brand_search_query
+    BRAND_SEARCH_URL + (proper_name + " brand colors").split(" ").compact.join("+")
   end
 end

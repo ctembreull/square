@@ -27,7 +27,7 @@ class TeamsController < ApplicationController
 
   def update
     if @team.update(team_params)
-      redirect_to teams_path, notice: "Team was successfully updated."
+      redirect_to @team, notice: "Team was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
