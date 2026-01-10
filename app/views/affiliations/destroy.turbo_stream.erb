@@ -1,3 +1,5 @@
 <%= turbo_stream.replace "affiliations_card" do %>
-  <%= render "affiliations/affiliations_card", team: @team %>
+  <%= turbo_frame_tag "affiliations_card" do %>
+    <%= render "affiliations/affiliations_card", team: @team %>
+  <% end %>
 <% end %>

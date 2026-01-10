@@ -1,5 +1,9 @@
 <%= turbo_stream.replace "affiliations_card" do %>
-  <%= render "affiliations/affiliations_card", team: @affiliation.team %>
+  <%= turbo_frame_tag "affiliations_card" do %>
+    <%= render "affiliations/affiliations_card", team: @affiliation.team %>
+  <% end %>
 <% end %>
 
-<%= turbo_stream.replace "affiliation_modal", "" %>
+<%= turbo_stream.replace "affiliation_modal" do %>
+  <%= turbo_frame_tag "affiliation_modal" %>
+<% end %>
