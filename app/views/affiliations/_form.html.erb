@@ -1,4 +1,4 @@
-<%= form_with(model: affiliation, local: true, data: { controller: "affiliation-form" }) do |form| %>
+<%= form_with(model: affiliation, data: { controller: "affiliation-form" }) do |form| %>
   <% if affiliation.errors.any? %>
     <div class="alert alert-danger">
       <h4 class="alert-heading"><%= pluralize(affiliation.errors.count, "error") %> prohibited this affiliation from being saved:</h4>
@@ -45,7 +45,10 @@
   </div>
 
   <div class="d-flex justify-content-end gap-2">
-    <%= link_to "Cancel", affiliations_path, class: "btn btn-secondary" %>
+    <%= link_to "Cancel",
+        affiliation.team_id ? team_path(affiliation.team_id) : (affiliation.team ? team_path(affiliation.team) : teams_path),
+        class: "btn btn-secondary",
+        data: { turbo_frame: "_top" } %>
     <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>

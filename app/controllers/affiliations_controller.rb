@@ -20,7 +20,12 @@ class AffiliationsController < ApplicationController
     @affiliation = Affiliation.new(affiliation_params)
 
     if @affiliation.save
-      redirect_to affiliations_path, notice: "Affiliation was successfully created."
+      respond_to do |format|
+        format.turbo_stream do
+          @affiliation.team.reload
+        end
+        format.html { redirect_to team_path(@affiliation.team), notice: "Affiliation was successfully created." }
+      end
     else
       render :new, status: :unprocessable_entity
     end
@@ -31,15 +36,24 @@ class AffiliationsController < ApplicationController
 
   def update
     if @affiliation.update(affiliation_params)
-      redirect_to affiliations_path, notice: "Affiliation was successfully updated."
+      respond_to do |format|
+        format.turbo_stream do
+          @affiliation.team.reload
+        end
+        format.html { redirect_to team_path(@affiliation.team), notice: "Affiliation was successfully updated." }
+      end
     else
       render :edit, status: :unprocessable_entity
     end
   end
 
   def destroy
+    team = @affiliation.team
     @affiliation.destroy
-    redirect_to affiliations_path, notice: "Affiliation was successfully deleted."
+    respond_to do |format|
+      format.turbo_stream { @team = team }
+      format.html { redirect_to team_path(team), notice: "Affiliation was successfully deleted." }
+    end
   end
 
   private

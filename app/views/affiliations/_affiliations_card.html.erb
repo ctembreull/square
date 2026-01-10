@@ -1,0 +1,63 @@
+<div id="affiliationsTable" class="card">
+  <div class="card-header">
+    <div class="row flex-between-center">
+      <div class="col-6 col-sm-auto d-flex align-items-center pe-0">
+        <h5 class="fs-9 mb-0 text-nowrap py-2 py-xl-0">Affiliations</h5>
+      </div>
+      <div class="col-6 col-sm-auto ms-auto text-end ps-0">
+          <div id="table-purchases-replace-element">
+            <%= link_to new_affiliation_path(team_id: team.id),
+                class: "btn btn-falcon-default btn-sm",
+                data: { turbo_frame: "affiliation_modal" } do %>
+              <span class="d-none d-sm-inline-block ms-1">New</span>
+            <% end %>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body px-0 py-0">
+    <div class="table-responsive scrollbar">
+      <table class="table table-sm fs-10 mb-0 overflow-hidden">
+        <thead class="bg-200">
+          <tr>
+            <th class="text-900 pe-1 align-middle white-space-nowrap">League</th>
+            <th class="text-900 pe-1 align-middle white-space-nowrap">Conference</th>
+            <th class="text-900 pe-1 align-middle white-space-nowrap">Division</th>
+            <th class="pe-1 align-middle white-space-nowrap data-table-row-action" style="width: 28px;"></th>
+          </tr>
+        </thead>
+        <tbody id="table-affiliations-body">
+          <% team.affiliations.each do |affiliation| %>
+            <tr>
+              <th class="align-middle white-space-nowrap">
+                <%= link_to affiliation.league.abbr, affiliation.league, data: { turbo_frame: "_top" } %>
+              </th>
+              <td class="align-middle white-space-nowrap">
+                <%= link_to affiliation.conference.display_name, affiliation.conference, data: { turbo_frame: "_top" } %>
+              </td>
+              <td class="align-middle white-space-nowrap">
+                <%= link_to affiliation.division.display_name, affiliation.division, data: { turbo_frame: "_top" } %>
+              </td>
+              <td class="align-middle white-space-nowrap">
+                <div class="dropstart font-sans-serif position-static d-inline-block">
+                  <button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal float-end" type="button" id="dropdown-team-affiliation-<%= affiliation.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                    <span class="fas fa-ellipsis-h fs-10"></span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-team-affiliation-<%= affiliation.id %>" style="">
+                    <%= link_to "Edit", edit_affiliation_path(affiliation),
+                        class: "dropdown-item",
+                        data: { turbo_frame: "affiliation_modal" } %>
+                    <div class="dropdown-divider"></div>
+                    <%= link_to "Delete", affiliation_path(affiliation),
+                        data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this affiliation?" },
+                        class: "dropdown-item text-danger" %>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

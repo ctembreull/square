@@ -1,14 +1,16 @@
-<div class="mt-4">
-  <div class="mb-4">
-    <%= link_to affiliations_path, class: "text-decoration-none text-muted mb-2 d-block" do %>
-      <i class="bi bi-arrow-left"></i> Back to Affiliations
-    <% end %>
-    <h1>New Affiliation</h1>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-      <%= render "form", affiliation: @affiliation %>
+<%= turbo_frame_tag "affiliation_modal" do %>
+  <div class="modal fade show" id="affiliationModal" tabindex="-1" aria-labelledby="affiliationModalLabel" style="display: block;" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="affiliationModalLabel">New Affiliation</h5>
+          <%= link_to team_path(@affiliation.team_id), class: "btn-close", data: { turbo_frame: "_top" }, aria: { label: "Close" } do %><% end %>
+        </div>
+        <div class="modal-body">
+          <%= render "form", affiliation: @affiliation %>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <div class="modal-backdrop fade show"></div>
+<% end %>

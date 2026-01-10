@@ -1,0 +1,5 @@
+<%= turbo_stream.replace "affiliations_card" do %>
+  <%= render "affiliations/affiliations_card", team: @affiliation.team %>
+<% end %>
+
+<%= turbo_stream.replace "affiliation_modal", "" %>
