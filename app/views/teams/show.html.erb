@@ -56,7 +56,11 @@
       <%= render "colors/colors_card", team: @team %>
     <% end %>
   </div>
-  <div class="col-4">Styles</div>
+  <div class="col-4">
+    <%= turbo_frame_tag "styles_card" do %>
+      <%= render "styles/styles_card", team: @team %>
+    <% end %>
+  </div>
 </div>
 
 <!-- Affiliation Modal -->
@@ -64,3 +68,6 @@
 
 <!-- Color Modal -->
 <%= turbo_frame_tag "color_modal" %>
+
+<!-- Style Modal -->
+<%= turbo_frame_tag "style_modal" %>

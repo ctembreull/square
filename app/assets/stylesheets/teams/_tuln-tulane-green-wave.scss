@@ -1,0 +1,18 @@
+// Team: Tulane Green Wave
+// Generated: 2026-01-12T20:16:47Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$tuln-tulane-green-wave-tulane-blue: #65C5E8;
+$tuln-tulane-green-wave-tulane-green: #255C4E;
+$tuln-tulane-green-wave-tulane-white: #FFFFFF;
+
+// Style Classes
+.tuln-tulane-green-wave-white-on-green {
+  background-color: #255C4E; color: #FFFFFF; text-shadow: 1px 1px 0 #65C5E8, -1px 1px 0 #65C5E8, 1px -1px 0 #65C5E8, -1px -1px 0 #65C5E8; 
+}
+
+// Default Style Alias
+.tuln-tulane-green-wave-default {
+  @extend .tuln-tulane-green-wave-white-on-green;
+}

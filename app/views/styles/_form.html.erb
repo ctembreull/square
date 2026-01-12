@@ -1,0 +1,85 @@
+<%= form_with(model: style, data: { controller: "style-form" }) do |form| %>
+  <% if style.errors.any? %>
+    <div class="alert alert-danger">
+      <h4 class="alert-heading"><%= pluralize(style.errors.count, "error") %> prohibited this style from being saved:</h4>
+      <ul class="mb-0">
+        <% style.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.hidden_field :team_id %>
+  <%= form.hidden_field :css, data: { style_form_target: "css" } %>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <%= form.label :name, "Style Name", class: "form-label" %>
+        <%= form.text_field :name, class: "form-control", required: true, placeholder: "e.g. Primary, Away, Alternate", data: { style_form_target: "name", action: "input->style-form#updatePreview" } %>
+      </div>
+
+      <div class="mb-3">
+        <%= form.label :background_color, "Background Color", class: "form-label" %>
+        <select name="background_color_select" class="form-select" required data-style-form-target="backgroundColor" data-action="change->style-form#buildCss">
+          <option value="">Select background color</option>
+          <% team.colors.ordered.each do |color| %>
+            <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= color.name %> (<%= color.css_hex %>)</option>
+          <% end %>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <%= form.label :text_color, "Text Color", class: "form-label" %>
+        <select name="text_color_select" class="form-select" required data-style-form-target="textColor" data-action="change->style-form#buildCss">
+          <option value="">Select text color</option>
+          <% team.colors.ordered.each do |color| %>
+            <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= color.name %> (<%= color.css_hex %>)</option>
+          <% end %>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <%= form.label :stroke_color, "Stroke Color (optional)", class: "form-label" %>
+        <select name="stroke_color_select" class="form-select" data-style-form-target="strokeColor" data-action="change->style-form#buildCss">
+          <option value="">No stroke</option>
+          <% team.colors.ordered.each do |color| %>
+            <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= color.name %> (<%= color.css_hex %>)</option>
+          <% end %>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <div class="form-check form-switch">
+          <%= form.check_box :default, class: "form-check-input", role: "switch" %>
+          <%= form.label :default, "Default style for this team", class: "form-check-label" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="mb-3">
+        <%= form.label :preview, "Preview", class: "form-label" %>
+        <div class="d-flex align-items-center justify-content-center" style="height: 150px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px;">
+          <div data-style-form-target="preview" style="padding: 12px 24px; border-radius: 4px; font-size: 1.5rem; font-weight: bold;">
+            <%= style.name.presence || "Style Name" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <%= form.label :css, "Generated CSS", class: "form-label" %>
+        <textarea class="form-control font-monospace" rows="4" readonly data-style-form-target="cssDisplay"><%= style.css %></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-end gap-2">
+    <%= link_to "Cancel",
+        style.team_id ? team_path(style.team_id) : (style.team ? team_path(style.team) : teams_path),
+        class: "btn btn-secondary",
+        data: { turbo_frame: "_top" } %>
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

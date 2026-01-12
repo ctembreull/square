@@ -7,6 +7,8 @@ class Color < ApplicationRecord
   scope :ordered, -> { order(primary: :desc, name: :asc) }
 
   before_save :normalize_hex
+  after_save :regenerate_team_stylesheet
+  after_destroy :regenerate_team_stylesheet
 
   def css_hex
     "##{hex}"
@@ -16,5 +18,9 @@ class Color < ApplicationRecord
 
   def normalize_hex
     self.hex = hex.delete("#").upcase if hex.present?
+  end
+
+  def regenerate_team_stylesheet
+    TeamStylesheetService.generate_for(team)
   end
 end

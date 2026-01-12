@@ -1,0 +1,16 @@
+<%= turbo_frame_tag "style_modal" do %>
+  <div class="modal fade show" id="styleModal" tabindex="-1" aria-labelledby="styleModalLabel" style="display: block;" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="styleModalLabel">Edit Style</h5>
+          <%= link_to team_path(@style.team), class: "btn-close", data: { turbo_frame: "_top" }, aria: { label: "Close" } do %><% end %>
+        </div>
+        <div class="modal-body">
+          <%= render "form", style: @style, team: @team %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade show"></div>
+<% end %>

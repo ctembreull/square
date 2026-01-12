@@ -37,4 +37,16 @@ class Team < ApplicationRecord
   def brand_search_query
     BRAND_SEARCH_URL + (proper_name + " brand colors").split(" ").compact.join("+")
   end
+
+  # Generates slug for SCSS naming: abbr-display_location-name
+  # e.g., "tuln-tulane-green-wave"
+  def scss_slug
+    [abbr, display_location || location, name].compact.map { |s| s.downcase.gsub(/[^a-z0-9]+/, "-").gsub(/-+$/, "") }.join("-")
+  end
+
+  # Full prefix for SCSS variables/classes
+  # e.g., "tuln-tulane-green-wave"
+  def scss_prefix
+    scss_slug
+  end
 end

@@ -1,0 +1,5 @@
+<%= turbo_stream.replace "styles_card" do %>
+  <%= turbo_frame_tag "styles_card" do %>
+    <%= render "styles/styles_card", team: @team %>
+  <% end %>
+<% end %>
