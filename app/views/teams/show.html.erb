@@ -51,9 +51,16 @@
       <%= render "affiliations/affiliations_card", team: @team %>
     <% end %>
   </div>
-  <div class="col-4">Colors</div>
+  <div class="col-4">
+    <%= turbo_frame_tag "colors_card" do %>
+      <%= render "colors/colors_card", team: @team %>
+    <% end %>
+  </div>
   <div class="col-4">Styles</div>
 </div>
 
 <!-- Affiliation Modal -->
 <%= turbo_frame_tag "affiliation_modal" %>
+
+<!-- Color Modal -->
+<%= turbo_frame_tag "color_modal" %>

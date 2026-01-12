@@ -1,0 +1,9 @@
+<%= turbo_stream.replace "colors_card" do %>
+  <%= turbo_frame_tag "colors_card" do %>
+    <%= render "colors/colors_card", team: @color.team %>
+  <% end %>
+<% end %>
+
+<%= turbo_stream.replace "color_modal" do %>
+  <%= turbo_frame_tag "color_modal" %>
+<% end %>
