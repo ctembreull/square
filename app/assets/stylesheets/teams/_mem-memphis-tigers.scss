@@ -1,0 +1,19 @@
+// Team: Memphis Tigers
+// Generated: 2026-01-12T22:50:02Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$mem-memphis-tigers-memphis-blue: #00498F;
+$mem-memphis-tigers-memphis-gray: #9C9EA1;
+$mem-memphis-tigers-brister-blue: #193059;
+$mem-memphis-tigers-mynders-gray: #E2E4E6;
+
+// Style Classes
+.mem-memphis-tigers-gray-on-blue {
+  background-color: #00498F; color: #E2E4E6; text-shadow: 1px 1px 0 #9C9EA1, -1px 1px 0 #9C9EA1, 1px -1px 0 #9C9EA1, -1px -1px 0 #9C9EA1; 
+}
+
+// Default Style Alias
+.mem-memphis-tigers-default {
+  @extend .mem-memphis-tigers-gray-on-blue;
+}

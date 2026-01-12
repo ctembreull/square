@@ -1,0 +1,21 @@
+// Team: East Carolina Pirates
+// Generated: 2026-01-12T21:59:18Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ecu-east-carolina-pirates-gold: #FEC923;
+$ecu-east-carolina-pirates-purple: #592A8A;
+$ecu-east-carolina-pirates-dark-magenta: #77216F;
+$ecu-east-carolina-pirates-dark-purple: #41215E;
+$ecu-east-carolina-pirates-grey: #6C6D68;
+$ecu-east-carolina-pirates-teal: #00818F;
+
+// Style Classes
+.ecu-east-carolina-pirates-purple {
+  background-color: #592A8A; color: #FEC923; 
+}
+
+// Default Style Alias
+.ecu-east-carolina-pirates-default {
+  @extend .ecu-east-carolina-pirates-purple;
+}

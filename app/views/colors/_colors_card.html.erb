@@ -20,7 +20,7 @@
           <tr>
             <th class="text-900 pe-1 align-middle white-space-nowrap" style="width: 40px;">Swatch</th>
             <th class="text-900 pe-1 align-middle white-space-nowrap">Name</th>
-            <th class="text-900 pe-1 align-middle white-space-nowrap">Hex</th>
+            <th class="text-900 pe-1 align-middle white-space-nowrap"></th>
             <th class="pe-1 align-middle white-space-nowrap data-table-row-action" style="width: 28px;"></th>
           </tr>
         </thead>
@@ -32,12 +32,11 @@
               </td>
               <th class="align-middle white-space-nowrap">
                 <%= color.name %>
-                <% if color.primary? %>
-                  <span class="badge bg-primary ms-1">Primary</span>
-                <% end %>
               </th>
               <td class="align-middle white-space-nowrap text-monospace">
-                <%= color.css_hex %>
+                <% if color.primary? %>
+                  <i class="fas fa-star ms-1" title="Default style"></i>
+                <% end %>
               </td>
               <td class="align-middle white-space-nowrap">
                 <div class="dropstart font-sans-serif position-static d-inline-block">

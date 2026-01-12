@@ -1,0 +1,25 @@
+// Team: Rice Owls
+// Generated: 2026-01-12T23:02:39Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$rice-rice-owls-rice-university-blue: #00205B;
+$rice-rice-owls-rice-university-gray: #7C7E7F;
+$rice-rice-owls-bright-blue: #9FDDF9;
+$rice-rice-owls-dark-blue-gray: #303B61;
+$rice-rice-owls-dark-gray: #44474F;
+$rice-rice-owls-light-blue-gray: #ADC7DC;
+$rice-rice-owls-light-gray: #E0E2E6;
+$rice-rice-owls-medium-blue: #4D9AD4;
+$rice-rice-owls-midnight-blue: #13133E;
+$rice-rice-owls-rich-blue: #0A509E;
+
+// Style Classes
+.rice-rice-owls-gray-on-blue {
+  background-color: #00205B; color: #E0E2E6; 
+}
+
+// Default Style Alias
+.rice-rice-owls-default {
+  @extend .rice-rice-owls-gray-on-blue;
+}

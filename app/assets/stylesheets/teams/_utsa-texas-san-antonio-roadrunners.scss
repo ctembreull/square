@@ -1,0 +1,22 @@
+// Team: Texas - San Antonio Roadrunners
+// Generated: 2026-01-12T23:12:20Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$utsa-texas-san-antonio-roadrunners-midnight: #032044;
+$utsa-texas-san-antonio-roadrunners-ut-san-antonio-orange: #F15A22;
+$utsa-texas-san-antonio-roadrunners-black: #332F21;
+$utsa-texas-san-antonio-roadrunners-concrete: #EBE6E2;
+$utsa-texas-san-antonio-roadrunners-limestone: #F8F4F1;
+$utsa-texas-san-antonio-roadrunners-smoke: #D5CFC8;
+$utsa-texas-san-antonio-roadrunners-white: #FFFFFF;
+
+// Style Classes
+.utsa-texas-san-antonio-roadrunners-orange-on-blue {
+  background-color: #032044; color: #F15A22; 
+}
+
+// Default Style Alias
+.utsa-texas-san-antonio-roadrunners-default {
+  @extend .utsa-texas-san-antonio-roadrunners-orange-on-blue;
+}

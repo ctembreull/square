@@ -1,0 +1,21 @@
+// Team: North Texas Mean Green
+// Generated: 2026-01-12T22:59:23Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$unt-north-texas-mean-green-black: #000000;
+$unt-north-texas-mean-green-unt-system-green: #005903;
+$unt-north-texas-mean-green-white: #FFFFFF;
+$unt-north-texas-mean-green-dark-gray: #4D4D4F;
+$unt-north-texas-mean-green-light-gray: #DCDDDE;
+$unt-north-texas-mean-green-neon-green: #00FF00;
+
+// Style Classes
+.unt-north-texas-mean-green-white-on-green {
+  background-color: #005903; color: #FFFFFF; text-shadow: 1px 1px 0 #4D4D4F, -1px 1px 0 #4D4D4F, 1px -1px 0 #4D4D4F, -1px -1px 0 #4D4D4F; 
+}
+
+// Default Style Alias
+.unt-north-texas-mean-green-default {
+  @extend .unt-north-texas-mean-green-white-on-green;
+}

@@ -2,7 +2,7 @@ class AffiliationsController < ApplicationController
   before_action :set_affiliation, only: [:show, :edit, :update, :destroy]
 
   def index
-    @affiliations = Affiliation.includes(:team, :league, :conference, :division).all
+    @affiliations = Affiliation.includes(:team, :league, :conference).all
   end
 
   def show
@@ -13,7 +13,6 @@ class AffiliationsController < ApplicationController
     @affiliation.team_id = params[:team_id] if params[:team_id]
     @affiliation.league_id = params[:league_id] if params[:league_id]
     @affiliation.conference_id = params[:conference_id] if params[:conference_id]
-    @affiliation.division_id = params[:division_id] if params[:division_id]
   end
 
   def create
@@ -63,6 +62,6 @@ class AffiliationsController < ApplicationController
   end
 
   def affiliation_params
-    params.require(:affiliation).permit(:team_id, :league_id, :conference_id, :division_id)
+    params.require(:affiliation).permit(:team_id, :league_id, :conference_id)
   end
 end

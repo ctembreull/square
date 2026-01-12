@@ -1,0 +1,23 @@
+// Team: Charlotte 49ers
+// Generated: 2026-01-12T22:57:20Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$cha-charlotte-49ers-charlotte-green: #005035;
+$cha-charlotte-49ers-niner-gold: #A49665;
+$cha-charlotte-49ers-ore-black: #101820;
+$cha-charlotte-49ers-quartz-white: #FFFFFF;
+$cha-charlotte-49ers-clay-red: #802F2D;
+$cha-charlotte-49ers-jasper: #F1E6B2;
+$cha-charlotte-49ers-pine-green: #899064;
+$cha-charlotte-49ers-sky-blue: #007377;
+
+// Style Classes
+.cha-charlotte-49ers-gold-on-green {
+  background-color: #005035; color: #A49665; 
+}
+
+// Default Style Alias
+.cha-charlotte-49ers-default {
+  @extend .cha-charlotte-49ers-gold-on-green;
+}

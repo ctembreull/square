@@ -1,0 +1,17 @@
+// Team: Navy Midshipmen
+// Generated: 2026-01-12T22:54:25Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$navy-navy-midshipmen-navy-blue: #00225B;
+$navy-navy-midshipmen-vegas-gold: #B5A67C;
+
+// Style Classes
+.navy-navy-midshipmen-gold-on-blue {
+  background-color: #00225B; color: #B5A67C; 
+}
+
+// Default Style Alias
+.navy-navy-midshipmen-default {
+  @extend .navy-navy-midshipmen-gold-on-blue;
+}

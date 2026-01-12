@@ -1,0 +1,20 @@
+// Team: Temple Owls
+// Generated: 2026-01-12T23:07:50Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$tem-temple-owls-black: #000000;
+$tem-temple-owls-cherry: #9D2235;
+$tem-temple-owls-metallic-silver: #8A8D8F;
+$tem-temple-owls-silver: #C1C6C8;
+$tem-temple-owls-white: #FFFFFF;
+
+// Style Classes
+.tem-temple-owls-white-on-red {
+  background-color: #9D2235; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.tem-temple-owls-default {
+  @extend .tem-temple-owls-white-on-red;
+}

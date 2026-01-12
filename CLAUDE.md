@@ -134,8 +134,8 @@ Reusable components for game display, ready to wire to models:
 
 1. ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
 2. ✅ **Integrate Falcon SASS** - Theme fully integrated with working JavaScript
-3. ✅ **Sports Admin CRUD** - Complete CRUD for Leagues, Conferences, Divisions, Teams
-4. **Status/Health Endpoint** - JSON API with database counts for smoke testing (Events, Games, Leagues, Conferences, Divisions, Teams, Colors, Styles)
+3. ✅ **Sports Admin CRUD** - Complete CRUD for Leagues, Conferences, Teams
+4. **Status/Health Endpoint** - JSON API with database counts for smoke testing (Events, Games, Leagues, Conferences, Teams, Colors, Styles)
 5. **Deploy to Fly.io** - Configure and deploy application
 6. Fix grid generation bug (charity → charities)
 7. Implement grid validation (Player.total_active_chances)
@@ -163,7 +163,6 @@ Reusable components for game display, ready to wire to models:
   "games": 42,
   "leagues": 4,
   "conferences": 32,
-  "divisions": 64,
   "teams": 350,
   "colors": 700,
   "styles": 350
@@ -174,4 +173,4 @@ Reusable components for game display, ready to wire to models:
 
 ---
 
-**Last Updated**: 2026-01-10
+**Last Updated**: 2026-01-12

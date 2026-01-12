@@ -1,12 +1,11 @@
 class ConferencesController < ApplicationController
-  before_action :set_conference, only: [:show, :edit, :update, :destroy]
+  before_action :set_conference, only: [ :show, :edit, :update, :destroy ]
 
   def index
     @conferences = Conference.includes(:league).alphabetical
   end
 
   def show
-    @divisions = @conference.divisions.by_order
   end
 
   def new

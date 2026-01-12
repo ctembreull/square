@@ -22,7 +22,6 @@
           <tr>
             <th class="text-900 pe-1 align-middle white-space-nowrap">League</th>
             <th class="text-900 pe-1 align-middle white-space-nowrap">Conference</th>
-            <th class="text-900 pe-1 align-middle white-space-nowrap">Division</th>
             <th class="pe-1 align-middle white-space-nowrap data-table-row-action" style="width: 28px;"></th>
           </tr>
         </thead>
@@ -34,9 +33,6 @@
               </th>
               <td class="align-middle white-space-nowrap">
                 <%= link_to affiliation.conference.display_name, affiliation.conference, data: { turbo_frame: "_top" } %>
-              </td>
-              <td class="align-middle white-space-nowrap">
-                <%= link_to affiliation.division.display_name, affiliation.division, data: { turbo_frame: "_top" } %>
               </td>
               <td class="align-middle white-space-nowrap">
                 <div class="dropstart font-sans-serif position-static d-inline-block">

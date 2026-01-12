@@ -13,27 +13,17 @@
   <%= form.hidden_field :team_id %>
 
   <div class="row">
-    <div class="col-md-4 mb-3">
+    <div class="col-md-6 mb-3">
       <%= form.label :league_id, "League", class: "form-label" %>
       <%= form.collection_select :league_id, League.all.order(:name), :id, :name, { prompt: "Select a league" }, { class: "form-select", required: true, data: { affiliation_form_target: "league", action: "change->affiliation-form#filterConferences" } } %>
     </div>
 
-    <div class="col-md-4 mb-3">
+    <div class="col-md-6 mb-3">
       <%= form.label :conference_id, "Conference", class: "form-label" %>
-      <select name="<%= form.object_name %>[conference_id]" id="<%= form.object_name %>_conference_id" class="form-select" required data-affiliation-form-target="conference" data-action="change->affiliation-form#filterDivisions">
+      <select name="<%= form.object_name %>[conference_id]" id="<%= form.object_name %>_conference_id" class="form-select" required data-affiliation-form-target="conference">
         <option value="">Select a conference</option>
         <% Conference.includes(:league).order(:display_name).each do |conference| %>
           <option value="<%= conference.id %>" data-league-id="<%= conference.league_id %>" <%= 'selected' if affiliation.conference_id == conference.id %>><%= conference.display_name %></option>
-        <% end %>
-      </select>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <%= form.label :division_id, "Division", class: "form-label" %>
-      <select name="<%= form.object_name %>[division_id]" id="<%= form.object_name %>_division_id" class="form-select" required data-affiliation-form-target="division">
-        <option value="">Select a division</option>
-        <% Division.includes(:conference).order(:display_name).each do |division| %>
-          <option value="<%= division.id %>" data-conference-id="<%= division.conference_id %>" <%= 'selected' if affiliation.division_id == division.id %>><%= division.display_name %></option>
         <% end %>
       </select>
     </div>

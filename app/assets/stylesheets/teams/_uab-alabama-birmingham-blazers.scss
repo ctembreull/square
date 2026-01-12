@@ -1,0 +1,21 @@
+// Team: Alabama - Birmingham Blazers
+// Generated: 2026-01-12T22:44:47Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$uab-alabama-birmingham-blazers-uab-gold: #FDB913;
+$uab-alabama-birmingham-blazers-uab-green: #1A5632;
+$uab-alabama-birmingham-blazers-bham-sky-blue: #42CAF0;
+$uab-alabama-birmingham-blazers-campus-green: #90D408;
+$uab-alabama-birmingham-blazers-dragon-s-lair-green: #033319;
+$uab-alabama-birmingham-blazers-ever-loyal-evergreen: #17B045;
+
+// Style Classes
+.uab-alabama-birmingham-blazers-gold-on-green {
+  background-color: #1A5632; color: #FDB913; 
+}
+
+// Default Style Alias
+.uab-alabama-birmingham-blazers-default {
+  @extend .uab-alabama-birmingham-blazers-gold-on-green;
+}

@@ -4,7 +4,42 @@ export default class extends Controller {
   static targets = ["name", "backgroundColor", "textColor", "strokeColor", "css", "cssDisplay", "preview"]
 
   connect() {
+    // If editing an existing style, parse the CSS and pre-select dropdowns
+    const existingCss = this.cssTarget.value
+    if (existingCss) {
+      this.parseCssAndSelectOptions(existingCss)
+    }
     this.buildCss()
+  }
+
+  parseCssAndSelectOptions(css) {
+    // Extract background-color
+    const bgMatch = css.match(/background-color:\s*(#[0-9a-fA-F]{6}|#[0-9a-fA-F]{3})/)
+    if (bgMatch) {
+      this.selectOptionByValue(this.backgroundColorTarget, bgMatch[1])
+    }
+
+    // Extract color (text color)
+    const textMatch = css.match(/(?<!background-)color:\s*(#[0-9a-fA-F]{6}|#[0-9a-fA-F]{3})/)
+    if (textMatch) {
+      this.selectOptionByValue(this.textColorTarget, textMatch[1])
+    }
+
+    // Extract text-shadow (stroke color) - grab first color from the shadow
+    const strokeMatch = css.match(/text-shadow:.*?(#[0-9a-fA-F]{6}|#[0-9a-fA-F]{3})/)
+    if (strokeMatch) {
+      this.selectOptionByValue(this.strokeColorTarget, strokeMatch[1])
+    }
+  }
+
+  selectOptionByValue(selectElement, value) {
+    const normalizedValue = value.toLowerCase()
+    for (const option of selectElement.options) {
+      if (option.value.toLowerCase() === normalizedValue) {
+        option.selected = true
+        break
+      }
+    }
   }
 
   updatePreview() {

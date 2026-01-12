@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_08_221448) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_12_203428) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -65,13 +65,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_08_221448) do
   create_table "affiliations", force: :cascade do |t|
     t.bigint "conference_id", null: false
     t.datetime "created_at", null: false
-    t.bigint "division_id", null: false
     t.bigint "league_id", null: false
     t.bigint "team_id", null: false
     t.datetime "updated_at", null: false
     t.index ["conference_id"], name: "index_affiliations_on_conference_id"
-    t.index ["division_id"], name: "index_affiliations_on_division_id"
-    t.index ["league_id", "conference_id", "division_id", "team_id"], name: "index_affiliations_uniqueness", unique: true
+    t.index ["league_id", "conference_id", "team_id"], name: "index_affiliations_uniqueness", unique: true
     t.index ["league_id"], name: "index_affiliations_on_league_id"
     t.index ["team_id"], name: "index_affiliations_on_team_id"
   end
@@ -96,18 +94,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_08_221448) do
     t.index ["league_id", "abbr"], name: "index_conferences_on_league_id_and_abbr", unique: true
     t.index ["league_id", "name"], name: "index_conferences_on_league_id_and_name", unique: true
     t.index ["league_id"], name: "index_conferences_on_league_id"
-  end
-
-  create_table "divisions", force: :cascade do |t|
-    t.string "abbr", null: false
-    t.bigint "conference_id", null: false
-    t.datetime "created_at", null: false
-    t.string "display_name", null: false
-    t.string "name", null: false
-    t.integer "order", default: 0, null: false
-    t.datetime "updated_at", null: false
-    t.index ["conference_id", "name"], name: "index_divisions_on_conference_id_and_name", unique: true
-    t.index ["conference_id"], name: "index_divisions_on_conference_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -233,12 +219,10 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_08_221448) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "activity_logs", "users"
   add_foreign_key "affiliations", "conferences"
-  add_foreign_key "affiliations", "divisions"
   add_foreign_key "affiliations", "leagues"
   add_foreign_key "affiliations", "teams"
   add_foreign_key "colors", "teams"
   add_foreign_key "conferences", "leagues"
-  add_foreign_key "divisions", "conferences"
   add_foreign_key "games", "events"
   add_foreign_key "games", "leagues"
   add_foreign_key "games", "teams", column: "away_team_id"

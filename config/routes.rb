@@ -9,9 +9,6 @@ Rails.application.routes.draw do
   # Conferences
   resources :conferences, except: [:index]
 
-  # Divisions
-  resources :divisions, except: [:index]
-
   # Teams
   resources :teams
 

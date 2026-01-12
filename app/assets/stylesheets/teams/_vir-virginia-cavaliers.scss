@@ -1,0 +1,19 @@
+// Team: Virginia Cavaliers
+// Generated: 2026-01-12T22:05:20Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$vir-virginia-cavaliers-uva-blue: #232D4B;
+$vir-virginia-cavaliers-uva-orange: #E57200;
+$vir-virginia-cavaliers-uva-orange-25: #F9DCBF;
+$vir-virginia-cavaliers-uva-blue-25: #C8CBD2;
+
+// Style Classes
+.vir-virginia-cavaliers-orange-on-blue {
+  background-color: #232D4B; color: #E57200; 
+}
+
+// Default Style Alias
+.vir-virginia-cavaliers-default {
+  @extend .vir-virginia-cavaliers-orange-on-blue;
+}
