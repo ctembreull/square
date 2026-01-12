@@ -62,15 +62,15 @@
 								<% if @teams.any? %>
 									<% @teams.each do |team| %>
 										<tr>
-											<td class="abbr"><%= team.abbr %></td>
-											<td class="name"><%= link_to team.display_name, team %></td>
-											<td class="womens_name"><%= team.womens_name %></td>
-											<td class="level"><%= team.level %></td>
-											<td class="affiliations"><%= team.affiliations.count %></td>
-											<td class="colors">0</td>
-											<td class="styles">0</td>
-											<td class="created"><%= team.created_at.strftime("%Y.%m.%d.%H%M") %></td>
-											<td class="text-end pe-2">
+											<td class="abbr py-0 pt-2"><%= team.abbr %></td>
+											<td class="name py-0 pt-2"><%= link_to team.display_name, team, class: "fw-semi-bold mb-0" %></td>
+											<td class="womens_name py-0 pt-2"><%= team.womens_name %></td>
+											<td class="level py-0 pt-2"><%= team.level %></td>
+											<td class="affiliations py-0 pt-2"><%= team.affiliations.count %></td>
+											<td class="colors py-0 pt-2">0</td>
+											<td class="styles py-0 pt-2">0</td>
+											<td class="created py-0 pt-2"><%= team.created_at.strftime("%Y.%m.%d.%H%M") %></td>
+											<td class="text-end pe-2 py-0 pt-2">
 												<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal float-end" type="button" id="dropdown-team-<%= team.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
                     			<span class="fas fa-ellipsis-h fs-10"></span>
                   			</button>
