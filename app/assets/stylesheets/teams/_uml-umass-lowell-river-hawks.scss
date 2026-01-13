@@ -1,0 +1,20 @@
+// Team: UMass Lowell River Hawks
+// Generated: 2026-01-13T07:10:08Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$uml-umass-lowell-river-hawks-umass-lowell-blue: #0067B1;
+$uml-umass-lowell-river-hawks-umass-lowell-red: #C8102E;
+$uml-umass-lowell-river-hawks-black: #000000;
+$uml-umass-lowell-river-hawks-gray: #97999B;
+$uml-umass-lowell-river-hawks-white: #FFFFFF;
+
+// Style Classes
+.uml-umass-lowell-river-hawks-red-on-blue {
+  background-color: #0067B1; color: #C8102E; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+// Default Style Alias
+.uml-umass-lowell-river-hawks-default {
+  @extend .uml-umass-lowell-river-hawks-red-on-blue;
+}

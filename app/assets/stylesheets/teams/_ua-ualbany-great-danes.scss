@@ -1,0 +1,20 @@
+// Team: UAlbany Great Danes
+// Generated: 2026-01-13T07:20:45Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ua-ualbany-great-danes-ualbany-gold: #EEB211;
+$ua-ualbany-great-danes-ualbany-purple: #46166B;
+$ua-ualbany-great-danes-black: #000000;
+$ua-ualbany-great-danes-gray: #7F7F7F;
+$ua-ualbany-great-danes-white: #FFFFFF;
+
+// Style Classes
+.ua-ualbany-great-danes-gold-on-purple {
+  background-color: #46166B; color: #EEB211; 
+}
+
+// Default Style Alias
+.ua-ualbany-great-danes-default {
+  @extend .ua-ualbany-great-danes-gold-on-purple;
+}

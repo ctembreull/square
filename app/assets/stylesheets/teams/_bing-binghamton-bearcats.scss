@@ -1,0 +1,21 @@
+// Team: Binghamton Bearcats
+// Generated: 2026-01-13T07:32:26Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$bing-binghamton-bearcats-black: #000000;
+$bing-binghamton-bearcats-deep-green: #005A43;
+$bing-binghamton-bearcats-gray-424: #5A5C5B;
+$bing-binghamton-bearcats-green-360: #6CC24A;
+$bing-binghamton-bearcats-green-381: #CEDC00;
+$bing-binghamton-bearcats-white: #FFFFFF;
+
+// Style Classes
+.bing-binghamton-bearcats-green {
+  background-color: #005A43; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.bing-binghamton-bearcats-default {
+  @extend .bing-binghamton-bearcats-green;
+}

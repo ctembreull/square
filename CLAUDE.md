@@ -51,6 +51,8 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - ✅ `charity.sample` → `charities.sample` in game.rb:122
 
 ### Pending
+- **HIGH PRIORITY**: Simplify team naming - condense `prefix`, `location`, `suffix` into just `location`. We have `display_location` for familiar names; stop over-engineering with full official school names we'll never use.
+- Color form modal should autofocus the 'name' field when it opens
 - Add validation: active player chances must sum to ≤100
 - Adapt PostgreSQL virtual column syntax to SQLite3 (teams.search_index)
 - Replace List.js with server-side search/sort (Ransack + Pagy + Turbo Frames) - List.js sorting unreliable, Enter key clears search

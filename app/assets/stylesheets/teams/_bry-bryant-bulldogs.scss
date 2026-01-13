@@ -1,0 +1,20 @@
+// Team: Bryant Bulldogs
+// Generated: 2026-01-13T07:24:18Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$bry-bryant-bulldogs-blue-200: #1D7BBF;
+$bry-bryant-bulldogs-gold-400: #A98F42;
+$bry-bryant-bulldogs-grey-100: #222020;
+$bry-bryant-bulldogs-purple-200: #622D50;
+$bry-bryant-bulldogs-yellow-200: #EAAA00;
+
+// Style Classes
+.bry-bryant-bulldogs-gold-on-black {
+  background-color: #222020; color: #A98F42; 
+}
+
+// Default Style Alias
+.bry-bryant-bulldogs-default {
+  @extend .bry-bryant-bulldogs-gold-on-black;
+}

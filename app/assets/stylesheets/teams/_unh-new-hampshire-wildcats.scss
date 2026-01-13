@@ -1,0 +1,17 @@
+// Team: New Hampshire Wildcats
+// Generated: 2026-01-13T07:29:31Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$unh-new-hampshire-wildcats-blue: #003591;
+$unh-new-hampshire-wildcats-white: #FFFFFF;
+
+// Style Classes
+.unh-new-hampshire-wildcats-white-on-blue {
+  background-color: #003591; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.unh-new-hampshire-wildcats-default {
+  @extend .unh-new-hampshire-wildcats-white-on-blue;
+}

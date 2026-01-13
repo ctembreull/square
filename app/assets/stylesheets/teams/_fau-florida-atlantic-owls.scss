@@ -1,5 +1,5 @@
 // Team: Florida Atlantic Owls
-// Generated: 2026-01-12T23:38:34Z
+// Generated: 2026-01-13T06:48:40Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -14,7 +14,11 @@ $fau-florida-atlantic-owls-stone: #7A97AB;
 
 // Style Classes
 .fau-florida-atlantic-owls-red-on-blue {
-  background-color: #003366; color: #CC0000; text-shadow: 1px 1px 0 #D9ECFF, -1px 1px 0 #D9ECFF, 1px -1px 0 #D9ECFF, -1px -1px 0 #D9ECFF; 
+  background-color: #003366; color: #CC0000; 
+}
+
+.fau-florida-atlantic-owls-blue {
+  background-color: #003366; color: #D9ECFF; text-shadow: 1px 1px 0 #CC0000, -1px 1px 0 #CC0000, 1px -1px 0 #CC0000, -1px -1px 0 #CC0000; 
 }
 
 // Default Style Alias

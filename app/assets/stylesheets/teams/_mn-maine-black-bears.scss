@@ -1,0 +1,25 @@
+// Team: Maine Black Bears
+// Generated: 2026-01-13T07:27:25Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$mn-maine-black-bears-dark-blue: #082E58;
+$mn-maine-black-bears-light-blue: #79BDE8;
+$mn-maine-black-bears-white: #FFFFFF;
+$mn-maine-black-bears-black: #000000;
+$mn-maine-black-bears-gray: #908C89;
+$mn-maine-black-bears-red: #AB0634;
+
+// Style Classes
+.mn-maine-black-bears-dark-blue {
+  background-color: #082E58; color: #FFFFFF; text-shadow: 1px 1px 0 #79BDE8, -1px 1px 0 #79BDE8, 1px -1px 0 #79BDE8, -1px -1px 0 #79BDE8; 
+}
+
+.mn-maine-black-bears-light-blue {
+  background-color: #79BDE8; color: #FFFFFF; text-shadow: 1px 1px 0 #082E58, -1px 1px 0 #082E58, 1px -1px 0 #082E58, -1px -1px 0 #082E58; 
+}
+
+// Default Style Alias
+.mn-maine-black-bears-default {
+  @extend .mn-maine-black-bears-dark-blue;
+}

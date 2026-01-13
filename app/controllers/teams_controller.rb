@@ -18,7 +18,7 @@ class TeamsController < ApplicationController
     @team = Team.new(team_params)
 
     if @team.save
-      redirect_to teams_path, notice: "Team was successfully created."
+      redirect_to @team, notice: "Team was successfully created."
     else
       render :new, status: :unprocessable_entity
     end

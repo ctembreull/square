@@ -1,0 +1,18 @@
+// Team: NJIT Highlanders
+// Generated: 2026-01-13T07:16:56Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$njit-njit-highlanders-njit-red: #CC0000;
+$njit-njit-highlanders-white: #FFFFFF;
+$njit-njit-highlanders-accent-blue: #1C1475;
+
+// Style Classes
+.njit-njit-highlanders-white-on-red {
+  background-color: #CC0000; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.njit-njit-highlanders-default {
+  @extend .njit-njit-highlanders-white-on-red;
+}

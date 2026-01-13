@@ -1,0 +1,17 @@
+// Team: UMBC Retrievers
+// Generated: 2026-01-13T07:08:08Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$umbc-umbc-retrievers-umbc-black: #000000;
+$umbc-umbc-retrievers-umbc-gold: #FDB515;
+
+// Style Classes
+.umbc-umbc-retrievers-gold-on-black {
+  background-color: #000000; color: #FDB515; 
+}
+
+// Default Style Alias
+.umbc-umbc-retrievers-default {
+  @extend .umbc-umbc-retrievers-gold-on-black;
+}
