@@ -1,0 +1,17 @@
+// Team: Central Florida Knights
+// Generated: 2026-01-13T02:13:29Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ucf-central-florida-knights-black: #000000;
+$ucf-central-florida-knights-ucf-bright-gold: #FFC904;
+
+// Style Classes
+.ucf-central-florida-knights-black {
+  background-color: #000000; color: #FFC904; 
+}
+
+// Default Style Alias
+.ucf-central-florida-knights-default {
+  @extend .ucf-central-florida-knights-black;
+}

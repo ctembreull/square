@@ -1,0 +1,22 @@
+// Team: Arizona State Sun Devils
+// Generated: 2026-01-13T02:01:45Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$asu-arizona-state-sun-devils-asu-gold: #FFC627;
+$asu-arizona-state-sun-devils-asu-maroon: #8C1D40;
+$asu-arizona-state-sun-devils-asu-rich-black: #000000;
+$asu-arizona-state-sun-devils-asu-white: #FFFFFF;
+$asu-arizona-state-sun-devils-asu-copper: #AF674B;
+$asu-arizona-state-sun-devils-asu-gray: #747474;
+$asu-arizona-state-sun-devils-asu-orange: #FF7F32;
+
+// Style Classes
+.asu-arizona-state-sun-devils-maroon {
+  background-color: #8C1D40; color: #FFC627; 
+}
+
+// Default Style Alias
+.asu-arizona-state-sun-devils-default {
+  @extend .asu-arizona-state-sun-devils-maroon;
+}

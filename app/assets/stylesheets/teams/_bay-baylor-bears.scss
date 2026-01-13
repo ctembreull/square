@@ -1,0 +1,17 @@
+// Team: Baylor Bears
+// Generated: 2026-01-13T02:03:30Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$bay-baylor-bears-baylor-green: #154734;
+$bay-baylor-bears-university-gold: #FFB81C;
+
+// Style Classes
+.bay-baylor-bears-green {
+  background-color: #154734; color: #FFB81C; 
+}
+
+// Default Style Alias
+.bay-baylor-bears-default {
+  @extend .bay-baylor-bears-green;
+}

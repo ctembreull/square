@@ -1,0 +1,20 @@
+// Team: Kansas Jayhawks
+// Generated: 2026-01-13T05:41:13Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ku-kansas-jayhawks-crimson: #E8000D;
+$ku-kansas-jayhawks-kansas-blue: #0051BA;
+$ku-kansas-jayhawks-white: #FFFFFF;
+$ku-kansas-jayhawks-jayhawk-yellow: #FFC82D;
+$ku-kansas-jayhawks-signature-gray: #85898A;
+
+// Style Classes
+.ku-kansas-jayhawks-blue {
+  background-color: #0051BA; color: #FFFFFF; text-shadow: 1px 1px 0 #E8000D, -1px 1px 0 #E8000D, 1px -1px 0 #E8000D, -1px -1px 0 #E8000D; 
+}
+
+// Default Style Alias
+.ku-kansas-jayhawks-default {
+  @extend .ku-kansas-jayhawks-blue;
+}

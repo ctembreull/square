@@ -1,0 +1,20 @@
+// Team: Clemson Tigers
+// Generated: 2026-01-13T02:22:10Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$clem-clemson-tigers-clemson-orange: #F56600;
+$clem-clemson-tigers-college-avenue: #333333;
+$clem-clemson-tigers-diploma: #2E1A47;
+$clem-clemson-tigers-goal-line: #FFFFFF;
+$clem-clemson-tigers-regalia: #522E80;
+
+// Style Classes
+.clem-clemson-tigers-orange {
+  background-color: #F56600; color: #FFFFFF; text-shadow: 1px 1px 0 #522E80, -1px 1px 0 #522E80, 1px -1px 0 #522E80, -1px -1px 0 #522E80; 
+}
+
+// Default Style Alias
+.clem-clemson-tigers-default {
+  @extend .clem-clemson-tigers-orange;
+}

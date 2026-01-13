@@ -1,0 +1,18 @@
+// Team: Southern Methodist Mustangs
+// Generated: 2026-01-13T05:54:55Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$smu-southern-methodist-mustangs-blue: #354CA1;
+$smu-southern-methodist-mustangs-red: #CC0035;
+$smu-southern-methodist-mustangs-white: #FFFFFF;
+
+// Style Classes
+.smu-southern-methodist-mustangs-blue {
+  background-color: #354CA1; color: #FFFFFF; text-shadow: 1px 1px 0 #CC0035, -1px 1px 0 #CC0035, 1px -1px 0 #CC0035, -1px -1px 0 #CC0035; 
+}
+
+// Default Style Alias
+.smu-southern-methodist-mustangs-default {
+  @extend .smu-southern-methodist-mustangs-blue;
+}

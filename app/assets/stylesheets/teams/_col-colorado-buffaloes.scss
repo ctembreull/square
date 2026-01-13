@@ -1,0 +1,19 @@
+// Team: Colorado Buffaloes
+// Generated: 2026-01-13T02:25:06Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$col-colorado-buffaloes-black: #000000;
+$col-colorado-buffaloes-cu-dark-gray: #565A5C;
+$col-colorado-buffaloes-cu-gold: #CFB87C;
+$col-colorado-buffaloes-cu-light-gray: #A2A4A3;
+
+// Style Classes
+.col-colorado-buffaloes-black-gold {
+  background-color: #000000; color: #CFB87C; 
+}
+
+// Default Style Alias
+.col-colorado-buffaloes-default {
+  @extend .col-colorado-buffaloes-black-gold;
+}

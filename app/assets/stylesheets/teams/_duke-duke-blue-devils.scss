@@ -1,0 +1,18 @@
+// Team: Duke Blue Devils
+// Generated: 2026-01-13T02:27:00Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$duke-duke-blue-devils-duke-navy-blue: #012169;
+$duke-duke-blue-devils-duke-royal-blue: #00539B;
+$duke-duke-blue-devils-white: #FFFFFF;
+
+// Style Classes
+.duke-duke-blue-devils-duke-blue {
+  background-color: #00539B; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.duke-duke-blue-devils-default {
+  @extend .duke-duke-blue-devils-duke-blue;
+}

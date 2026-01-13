@@ -1,0 +1,22 @@
+// Team: Miami Hurricanes
+// Generated: 2026-01-13T05:45:17Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$mia-miami-hurricanes-um-green: #005030;
+$mia-miami-hurricanes-um-orange: #F47321;
+$mia-miami-hurricanes-white: #FFFFFF;
+
+// Style Classes
+.mia-miami-hurricanes-green {
+  background-color: #005030; color: #FFFFFF; text-shadow: 1px 1px 0 #F47321, -1px 1px 0 #F47321, 1px -1px 0 #F47321, -1px -1px 0 #F47321; 
+}
+
+.mia-miami-hurricanes-orange {
+  background-color: #F47321; color: #FFFFFF; text-shadow: 1px 1px 0 #005030, -1px 1px 0 #005030, 1px -1px 0 #005030, -1px -1px 0 #005030; 
+}
+
+// Default Style Alias
+.mia-miami-hurricanes-default {
+  @extend .mia-miami-hurricanes-green;
+}

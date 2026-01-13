@@ -1,0 +1,17 @@
+// Team: Florida State Seminoles
+// Generated: 2026-01-13T02:28:34Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$fsu-florida-state-seminoles-garnet: #782F40;
+$fsu-florida-state-seminoles-gold: #CEB888;
+
+// Style Classes
+.fsu-florida-state-seminoles-garnet-gold {
+  background-color: #782F40; color: #CEB888; 
+}
+
+// Default Style Alias
+.fsu-florida-state-seminoles-default {
+  @extend .fsu-florida-state-seminoles-garnet-gold;
+}

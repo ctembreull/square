@@ -1,0 +1,18 @@
+// Team: Brigham Young Cougars
+// Generated: 2026-01-13T02:05:30Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$byu-brigham-young-cougars-navy: #002E5D;
+$byu-brigham-young-cougars-white: #FFFFFF;
+$byu-brigham-young-cougars-royal: #0047BA;
+
+// Style Classes
+.byu-brigham-young-cougars-navy {
+  background-color: #002E5D; color: #FFFFFF; text-shadow: 1px 1px 0 #0047BA, -1px 1px 0 #0047BA, 1px -1px 0 #0047BA, -1px -1px 0 #0047BA; 
+}
+
+// Default Style Alias
+.byu-brigham-young-cougars-default {
+  @extend .byu-brigham-young-cougars-navy;
+}

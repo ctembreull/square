@@ -1,0 +1,30 @@
+// Team: Cincinnati Bearcats
+// Generated: 2026-01-13T02:35:13Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$cin-cincinnati-bearcats-grey: #F3F3F3;
+$cin-cincinnati-bearcats-uc-black: #000000;
+$cin-cincinnati-bearcats-uc-red: #E00122;
+$cin-cincinnati-bearcats-white: #FFFFFF;
+$cin-cincinnati-bearcats-bearcats-black: #333333;
+$cin-cincinnati-bearcats-calhoun-maroon: #890519;
+$cin-cincinnati-bearcats-gettler-gold: #D1B179;
+$cin-cincinnati-bearcats-main-street-mist: #E0DFE3;
+$cin-cincinnati-bearcats-steger-silver: #A7A5AA;
+$cin-cincinnati-bearcats-tangeman-tan: #EADBC1;
+$cin-cincinnati-bearcats-uc-dark-red: #B8011C;
+
+// Style Classes
+.cin-cincinnati-bearcats-black {
+  background-color: #000000; color: #E00122; 
+}
+
+.cin-cincinnati-bearcats-red {
+  background-color: #E00122; color: #000000; text-shadow: 1px 1px 0 #A7A5AA, -1px 1px 0 #A7A5AA, 1px -1px 0 #A7A5AA, -1px -1px 0 #A7A5AA; 
+}
+
+// Default Style Alias
+.cin-cincinnati-bearcats-default {
+  @extend .cin-cincinnati-bearcats-black;
+}

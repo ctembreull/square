@@ -1,0 +1,19 @@
+// Team: West Virginia Mountaineers
+// Generated: 2026-01-13T06:14:40Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$wvu-west-virginia-mountaineers-blue: #002C5B;
+$wvu-west-virginia-mountaineers-gold: #F2B111;
+$wvu-west-virginia-mountaineers-coal: #1C2B39;
+$wvu-west-virginia-mountaineers-not-quite-white: #FAF9F8;
+
+// Style Classes
+.wvu-west-virginia-mountaineers-gold-on-blue {
+  background-color: #002C5B; color: #F2B111; 
+}
+
+// Default Style Alias
+.wvu-west-virginia-mountaineers-default {
+  @extend .wvu-west-virginia-mountaineers-gold-on-blue;
+}

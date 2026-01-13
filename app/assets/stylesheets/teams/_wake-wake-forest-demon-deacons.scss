@@ -1,0 +1,25 @@
+// Team: Wake Forest Demon Deacons
+// Generated: 2026-01-13T06:12:19Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$wake-wake-forest-demon-deacons-black: #000000;
+$wake-wake-forest-demon-deacons-old-gold: #9E7E38;
+$wake-wake-forest-demon-deacons-white: #FFFFFF;
+$wake-wake-forest-demon-deacons-athletics-gold: #CEB888;
+$wake-wake-forest-demon-deacons-gray: #53565A;
+$wake-wake-forest-demon-deacons-yellow: #FDC314;
+
+// Style Classes
+.wake-wake-forest-demon-deacons-black-on-gold {
+  background-color: #9E7E38; color: #000000; text-shadow: 1px 1px 0 #CEB888, -1px 1px 0 #CEB888, 1px -1px 0 #CEB888, -1px -1px 0 #CEB888; 
+}
+
+.wake-wake-forest-demon-deacons-gold-on-black {
+  background-color: #000000; color: #9E7E38; 
+}
+
+// Default Style Alias
+.wake-wake-forest-demon-deacons-default {
+  @extend .wake-wake-forest-demon-deacons-black-on-gold;
+}

@@ -1,0 +1,28 @@
+// Team: Arizona Wildcats
+// Generated: 2026-01-13T01:58:56Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ari-arizona-wildcats-arizona-blue: #0C234B;
+$ari-arizona-wildcats-arizona-red: #AB0520;
+$ari-arizona-wildcats-azurite: #1E5288;
+$ari-arizona-wildcats-chili: #8B0015;
+$ari-arizona-wildcats-cool-gray: #E2E9EB;
+$ari-arizona-wildcats-midnight: #001C48;
+$ari-arizona-wildcats-oasis: #378DBD;
+$ari-arizona-wildcats-warm-gray: #F4EDE5;
+$ari-arizona-wildcats-white: #FFFFFF;
+
+// Style Classes
+.ari-arizona-wildcats-blue {
+  background-color: #0C234B; color: #FFFFFF; text-shadow: 1px 1px 0 #AB0520, -1px 1px 0 #AB0520, 1px -1px 0 #AB0520, -1px -1px 0 #AB0520; 
+}
+
+.ari-arizona-wildcats-red {
+  background-color: #AB0520; color: #FFFFFF; text-shadow: 1px 1px 0 #0C234B, -1px 1px 0 #0C234B, 1px -1px 0 #0C234B, -1px -1px 0 #0C234B; 
+}
+
+// Default Style Alias
+.ari-arizona-wildcats-default {
+  @extend .ari-arizona-wildcats-blue;
+}

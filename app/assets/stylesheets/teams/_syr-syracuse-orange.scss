@@ -1,0 +1,25 @@
+// Team: Syracuse Orange
+// Generated: 2026-01-13T06:00:40Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$syr-syracuse-orange-su-blue: #000E54;
+$syr-syracuse-orange-su-orange: #F76900;
+$syr-syracuse-orange-white: #FFFFFF;
+$syr-syracuse-orange-black: #000000;
+$syr-syracuse-orange-su-blue-light: #2B72D7;
+$syr-syracuse-orange-su-blue-medium: #203299;
+$syr-syracuse-orange-su-gray-light: #ADB3B8;
+$syr-syracuse-orange-su-gray-medium: #707780;
+$syr-syracuse-orange-su-orange-light: #FF8E00;
+$syr-syracuse-orange-su-orange-medium: #FF431B;
+
+// Style Classes
+.syr-syracuse-orange-classic-orange {
+  background-color: #F76900; color: #FFFFFF; text-shadow: 1px 1px 0 #000E54, -1px 1px 0 #000E54, 1px -1px 0 #000E54, -1px -1px 0 #000E54; 
+}
+
+// Default Style Alias
+.syr-syracuse-orange-default {
+  @extend .syr-syracuse-orange-classic-orange;
+}

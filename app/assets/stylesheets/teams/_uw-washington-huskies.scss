@@ -1,0 +1,30 @@
+// Team: Washington Huskies
+// Generated: 2026-01-13T06:23:25Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$uw-washington-huskies-husky-gold: #B7A57A;
+$uw-washington-huskies-husky-purple: #32006E;
+$uw-washington-huskies-spirit-purple: #4B2E83;
+$uw-washington-huskies-black: #000000;
+$uw-washington-huskies-heritage-gold: #85754D;
+$uw-washington-huskies-spirit-gold: #FFC700;
+$uw-washington-huskies-white: #FFFFFF;
+
+// Style Classes
+.uw-washington-huskies-white-on-purple {
+  background-color: #4B2E83; color: #FFFFFF; text-shadow: 1px 1px 0 #85754D, -1px 1px 0 #85754D, 1px -1px 0 #85754D, -1px -1px 0 #85754D; 
+}
+
+.uw-washington-huskies-montlake-purple {
+  background-color: #32006E; color: #B7A57A; 
+}
+
+.uw-washington-huskies-purple-on-gold {
+  background-color: #B7A57A; color: #4B2E83; 
+}
+
+// Default Style Alias
+.uw-washington-huskies-default {
+  @extend .uw-washington-huskies-white-on-purple;
+}
