@@ -54,6 +54,7 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - Add validation: active player chances must sum to ≤100
 - Adapt PostgreSQL virtual column syntax to SQLite3 (teams.search_index)
 - Replace List.js with server-side search/sort (Ransack + Pagy + Turbo Frames) - List.js sorting unreliable, Enter key clears search
+- Document rake tasks more clearly: `sports:generate_seeds` (Ruby seeds.rb), `seeds:export`/`seeds:import` (YAML with colors/styles), `styles:regenerate_all` (SCSS files) - clarify when each should be used
 
 ## Architecture Patterns
 
