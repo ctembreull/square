@@ -37,6 +37,40 @@ uab-alabama-birmingham-blazers:
       name: Gold on Green
       css: 'background-color: #1A5632; color: #FDB913; '
       default: true
+ua-ualbany-great-danes:
+  abbr: UA
+  prefix: State University of New York at
+  location: Albany
+  display_location: UAlbany
+  suffix: ''
+  name: Great Danes
+  level: college
+  colors:
+    ualbany-gold:
+      name: UAlbany Gold
+      hex: EEB211
+      primary: true
+    ualbany-purple:
+      name: UAlbany Purple
+      hex: 46166B
+      primary: true
+    black:
+      name: Black
+      hex: '000000'
+      primary: false
+    gray:
+      name: Gray
+      hex: 7F7F7F
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    gold-on-purple:
+      name: Gold on Purple
+      css: 'background-color: #46166B; color: #EEB211; '
+      default: true
 asu-arizona-state-sun-devils:
   abbr: ASU
   prefix: ''
@@ -157,6 +191,44 @@ bay-baylor-bears:
       name: Green
       css: 'background-color: #154734; color: #FFB81C; '
       default: true
+bing-binghamton-bearcats:
+  abbr: BING
+  prefix: ''
+  location: Binghamton
+  display_location: Binghamton
+  suffix: University
+  name: Bearcats
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    deep-green:
+      name: Deep green
+      hex: 005A43
+      primary: true
+    gray-424:
+      name: Gray 424
+      hex: 5A5C5B
+      primary: false
+    green-360:
+      name: Green 360
+      hex: 6CC24A
+      primary: false
+    green-381:
+      name: Green 381
+      hex: CEDC00
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    green:
+      name: Green
+      css: 'background-color: #005A43; color: #FFFFFF; '
+      default: true
 bc-boston-college-eagles:
   abbr: BC
   prefix: ''
@@ -217,6 +289,40 @@ byu-brigham-young-cougars:
       name: Navy
       css: 'background-color: #002E5D; color: #FFFFFF; text-shadow: 1px 1px 0 #0047BA,
         -1px 1px 0 #0047BA, 1px -1px 0 #0047BA, -1px -1px 0 #0047BA; '
+      default: true
+bry-bryant-bulldogs:
+  abbr: BRY
+  prefix: ''
+  location: Bryant
+  display_location: Bryant
+  suffix: University
+  name: Bulldogs
+  level: college
+  colors:
+    blue-200:
+      name: Blue 200
+      hex: 1D7BBF
+      primary: true
+    gold-400:
+      name: Gold 400
+      hex: A98F42
+      primary: true
+    grey-100:
+      name: Grey 100
+      hex: '222020'
+      primary: true
+    purple-200:
+      name: Purple 200
+      hex: 622D50
+      primary: true
+    yellow-200:
+      name: Yellow 200
+      hex: EAAA00
+      primary: true
+  styles:
+    gold-on-black:
+      name: Gold on Black
+      css: 'background-color: #222020; color: #A98F42; '
       default: true
 cal-california-golden-bears:
   abbr: CAL
@@ -510,9 +616,13 @@ fau-florida-atlantic-owls:
   styles:
     red-on-blue:
       name: Red on Blue
-      css: 'background-color: #003366; color: #CC0000; text-shadow: 1px 1px 0 #D9ECFF,
-        -1px 1px 0 #D9ECFF, 1px -1px 0 #D9ECFF, -1px -1px 0 #D9ECFF; '
+      css: 'background-color: #003366; color: #CC0000; '
       default: true
+    blue:
+      name: Blue
+      css: 'background-color: #003366; color: #D9ECFF; text-shadow: 1px 1px 0 #CC0000,
+        -1px 1px 0 #CC0000, 1px -1px 0 #CC0000, -1px -1px 0 #CC0000; '
+      default: false
 fsu-florida-state-seminoles:
   abbr: FSU
   prefix: ''
@@ -731,6 +841,107 @@ lou-louisville-cardinals:
       css: 'background-color: #AD0000; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
         -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
+mn-maine-black-bears:
+  abbr: MN
+  prefix: University of
+  location: Maine
+  display_location: Maine
+  suffix: ''
+  name: Black Bears
+  level: college
+  colors:
+    dark-blue:
+      name: Dark Blue
+      hex: '082E58'
+      primary: true
+    light-blue:
+      name: Light Blue
+      hex: 79BDE8
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    black:
+      name: Black
+      hex: '000000'
+      primary: false
+    gray:
+      name: Gray
+      hex: 908C89
+      primary: false
+    red:
+      name: Red
+      hex: AB0634
+      primary: false
+  styles:
+    dark-blue:
+      name: Dark Blue
+      css: 'background-color: #082E58; color: #FFFFFF; text-shadow: 1px 1px 0 #79BDE8,
+        -1px 1px 0 #79BDE8, 1px -1px 0 #79BDE8, -1px -1px 0 #79BDE8; '
+      default: true
+    light-blue:
+      name: Light Blue
+      css: 'background-color: #79BDE8; color: #FFFFFF; text-shadow: 1px 1px 0 #082E58,
+        -1px 1px 0 #082E58, 1px -1px 0 #082E58, -1px -1px 0 #082E58; '
+      default: false
+umbc-umbc-retrievers:
+  abbr: UMBC
+  prefix: University of
+  location: Maryland, Baltimore County
+  display_location: UMBC
+  suffix: ''
+  name: Retrievers
+  level: college
+  colors:
+    umbc-black:
+      name: UMBC Black
+      hex: '000000'
+      primary: true
+    umbc-gold:
+      name: UMBC Gold
+      hex: FDB515
+      primary: true
+  styles:
+    gold-on-black:
+      name: Gold on Black
+      css: 'background-color: #000000; color: #FDB515; '
+      default: true
+uml-umass-lowell-river-hawks:
+  abbr: UML
+  prefix: University of
+  location: Massachusetts at Lowell
+  display_location: UMass Lowell
+  suffix: ''
+  name: River Hawks
+  level: college
+  colors:
+    umass-lowell-blue:
+      name: UMass Lowell Blue
+      hex: 0067B1
+      primary: true
+    umass-lowell-red:
+      name: UMass Lowell Red
+      hex: C8102E
+      primary: true
+    black:
+      name: Black
+      hex: '000000'
+      primary: false
+    gray:
+      name: Gray
+      hex: 97999B
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    red-on-blue:
+      name: Red on Blue
+      css: 'background-color: #0067B1; color: #C8102E; text-shadow: 1px 1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
+      default: true
 mem-memphis-tigers:
   abbr: MEM
   prefix: University of
@@ -846,6 +1057,54 @@ navy-navy-midshipmen:
     gold-on-blue:
       name: Gold on Blue
       css: 'background-color: #00225B; color: #B5A67C; '
+      default: true
+unh-new-hampshire-wildcats:
+  abbr: UNH
+  prefix: University of
+  location: New Hampshire
+  display_location: New Hampshire
+  suffix: ''
+  name: Wildcats
+  level: college
+  colors:
+    blue:
+      name: Blue
+      hex: '003591'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    white-on-blue:
+      name: White on Blue
+      css: 'background-color: #003591; color: #FFFFFF; '
+      default: true
+njit-njit-highlanders:
+  abbr: NJIT
+  prefix: ''
+  location: New Jersey
+  display_location: NJIT
+  suffix: Institute of Technology
+  name: Highlanders
+  level: college
+  colors:
+    njit-red:
+      name: NJIT Red
+      hex: CC0000
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    accent-blue:
+      name: Accent Blue
+      hex: 1C1475
+      primary: false
+  styles:
+    white-on-red:
+      name: White on Red
+      css: 'background-color: #CC0000; color: #FFFFFF; '
       default: true
 unc-north-carolina-tar-heels:
   abbr: UNC
@@ -1546,6 +1805,44 @@ utah-utah-utes:
       css: 'background-color: #BE0000; color: #FFFFFF; text-shadow: 1px 1px 0 #707271,
         -1px 1px 0 #707271, 1px -1px 0 #707271, -1px -1px 0 #707271; '
       default: false
+vt-vermont-catamounts:
+  abbr: VT
+  prefix: Univerisity of
+  location: Vermont
+  display_location: Vermont
+  suffix: ''
+  name: Catamounts
+  level: college
+  colors:
+    catamount-green:
+      name: Catamount Green
+      hex: '154734'
+      primary: true
+    gold:
+      name: Gold
+      hex: FFD100
+      primary: true
+    clear-sky:
+      name: Clear Sky
+      hex: 489FDF
+      primary: false
+    morning-fog:
+      name: Morning Fog
+      hex: F7F7F7
+      primary: false
+    old-mill:
+      name: Old Mill
+      hex: DC582A
+      primary: false
+    vermont-slate:
+      name: Vermont Slate
+      hex: 00313C
+      primary: false
+  styles:
+    gold-on-green:
+      name: Gold on Green
+      css: 'background-color: #154734; color: #FFD100; '
+      default: true
 vir-virginia-cavaliers:
   abbr: VIR
   prefix: University of
