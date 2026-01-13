@@ -1,0 +1,818 @@
+---
+uab-alabama-birmingham-blazers:
+  abbr: UAB
+  prefix: University of
+  location: Alabama - Birmingham
+  display_location: Alabama - Birmingham
+  suffix: ''
+  name: Blazers
+  level: college
+  colors:
+    uab-gold:
+      name: UAB Gold
+      hex: FDB913
+      primary: true
+    uab-green:
+      name: UAB Green
+      hex: 1A5632
+      primary: true
+    bham-sky-blue:
+      name: BHam Sky Blue
+      hex: 42CAF0
+      primary: false
+    campus-green:
+      name: Campus Green
+      hex: 90D408
+      primary: false
+    dragon-s-lair-green:
+      name: Dragon's Lair Green
+      hex: '033319'
+      primary: false
+    ever-loyal-evergreen:
+      name: Ever Loyal Evergreen
+      hex: 17B045
+      primary: false
+  styles:
+    gold-on-green:
+      name: Gold on Green
+      css: 'background-color: #1A5632; color: #FDB913; '
+      default: true
+asu-arizona-state-sun-devils:
+  abbr: ASU
+  prefix: ''
+  location: Arizona
+  display_location: Arizona State
+  suffix: State University
+  name: Sun Devils
+  level: college
+ari-arizona-wildcats:
+  abbr: ARI
+  prefix: University of
+  location: Arizona
+  display_location: Arizona
+  suffix: ''
+  name: Wildcats
+  level: college
+bay-baylor-bears:
+  abbr: BAY
+  prefix: ''
+  location: Baylor
+  display_location: Baylor
+  suffix: University
+  name: Bears
+  level: college
+bc-boston-college-eagles:
+  abbr: BC
+  prefix: ''
+  location: Boston
+  display_location: Boston College
+  suffix: College
+  name: Eagles
+  level: college
+byu-brigham-young-cougars:
+  abbr: BYU
+  prefix: ''
+  location: Brigham Young
+  display_location: Brigham Young
+  suffix: University
+  name: Cougars
+  level: college
+cal-california-golden-bears:
+  abbr: CAL
+  prefix: University of
+  location: California
+  display_location: California
+  suffix: at Berkeley
+  name: Golden Bears
+  level: college
+ucf-central-florida-knights:
+  abbr: UCF
+  prefix: University of
+  location: Central Florida
+  display_location: Central Florida
+  suffix: ''
+  name: Knights
+  level: college
+cin-cincinnati-bearcats:
+  abbr: CIN
+  prefix: University of
+  location: Cincinnati
+  display_location: Cincinnati
+  suffix: ''
+  name: Bearcats
+  level: college
+clem-clemson-tigers:
+  abbr: CLEM
+  prefix: ''
+  location: Clemson
+  display_location: Clemson
+  suffix: University
+  name: Tigers
+  level: college
+col-colorado-buffaloes:
+  abbr: COL
+  prefix: University of
+  location: Colorado
+  display_location: Colorado
+  suffix: ''
+  name: Buffaloes
+  level: college
+duke-duke-blue-devils:
+  abbr: DUKE
+  prefix: ''
+  location: Duke
+  display_location: Duke
+  suffix: University
+  name: Blue Devils
+  level: college
+ecu-east-carolina-pirates:
+  abbr: ECU
+  prefix: ''
+  location: East Carolina
+  display_location: East Carolina
+  suffix: University
+  name: Pirates
+  level: college
+  colors:
+    gold:
+      name: Gold
+      hex: FEC923
+      primary: true
+    purple:
+      name: Purple
+      hex: 592A8A
+      primary: true
+    dark-magenta:
+      name: Dark Magenta
+      hex: 77216F
+      primary: false
+    dark-purple:
+      name: Dark Purple
+      hex: 41215E
+      primary: false
+    grey:
+      name: Grey
+      hex: 6C6D68
+      primary: false
+    teal:
+      name: Teal
+      hex: '00818F'
+      primary: false
+  styles:
+    purple:
+      name: Purple
+      css: 'background-color: #592A8A; color: #FEC923; '
+      default: true
+fau-florida-atlantic-owls:
+  abbr: FAU
+  prefix: ''
+  location: Florida Atlantic
+  display_location: Florida Atlantic
+  suffix: University
+  name: Owls
+  level: college
+  colors:
+    fau-blue:
+      name: FAU Blue
+      hex: '003366'
+      primary: true
+    fau-dark-gray:
+      name: FAU Dark Gray
+      hex: 4D4C55
+      primary: true
+    fau-gray:
+      name: FAU Gray
+      hex: CCCCCC
+      primary: true
+    fau-red:
+      name: FAU Red
+      hex: CC0000
+      primary: true
+    fau-electric-blue:
+      name: FAU Electric Blue
+      hex: 126BD9
+      primary: false
+    sand:
+      name: Sand
+      hex: D4B98B
+      primary: false
+    sky-blue:
+      name: Sky Blue
+      hex: D9ECFF
+      primary: false
+    stone:
+      name: Stone
+      hex: 7A97AB
+      primary: false
+  styles:
+    red-on-blue:
+      name: Red on Blue
+      css: 'background-color: #003366; color: #CC0000; text-shadow: 1px 1px 0 #D9ECFF,
+        -1px 1px 0 #D9ECFF, 1px -1px 0 #D9ECFF, -1px -1px 0 #D9ECFF; '
+      default: true
+fsu-florida-state-seminoles:
+  abbr: FSU
+  prefix: ''
+  location: Florida State
+  display_location: Florida State
+  suffix: University
+  name: Seminoles
+  level: college
+gt-georgia-tech-yellow-jackets:
+  abbr: GT
+  prefix: ''
+  location: Georgia
+  display_location: Georgia Tech
+  suffix: " Institute of Technology"
+  name: Yellow Jackets
+  level: college
+hou-houston-cougars:
+  abbr: HOU
+  prefix: 'University of '
+  location: Houston
+  display_location: Houston
+  suffix: ''
+  name: Cougars
+  level: college
+isu-iowa-state-cyclones:
+  abbr: ISU
+  prefix: ''
+  location: Iowa
+  display_location: Iowa State
+  suffix: State University
+  name: Cyclones
+  level: college
+ku-kansas-jayhawks:
+  abbr: KU
+  prefix: University of
+  location: Kansas
+  display_location: Kansas
+  suffix: ''
+  name: Jayhawks
+  level: college
+ksu-kansas-state-wildcats:
+  abbr: KSU
+  prefix: ''
+  location: Kansas
+  display_location: Kansas State
+  suffix: State University
+  name: Wildcats
+  level: college
+lou-louisville-cardinals:
+  abbr: LOU
+  prefix: University of
+  location: Louisville
+  display_location: Louisville
+  suffix: ''
+  name: Cardinals
+  level: college
+mem-memphis-tigers:
+  abbr: MEM
+  prefix: University of
+  location: Memphis
+  display_location: Memphis
+  suffix: ''
+  name: Tigers
+  level: college
+  colors:
+    memphis-blue:
+      name: Memphis Blue
+      hex: '00498F'
+      primary: true
+    memphis-gray:
+      name: Memphis Gray
+      hex: 9C9EA1
+      primary: true
+    brister-blue:
+      name: Brister Blue
+      hex: '193059'
+      primary: false
+    mynders-gray:
+      name: Mynders Gray
+      hex: E2E4E6
+      primary: false
+  styles:
+    gray-on-blue:
+      name: Gray on Blue
+      css: 'background-color: #00498F; color: #E2E4E6; text-shadow: 1px 1px 0 #9C9EA1,
+        -1px 1px 0 #9C9EA1, 1px -1px 0 #9C9EA1, -1px -1px 0 #9C9EA1; '
+      default: true
+mia-miami-hurricanes:
+  abbr: MIA
+  prefix: University of
+  location: Miami
+  display_location: Miami
+  suffix: ''
+  name: Hurricanes
+  level: college
+army-army-black-knights:
+  abbr: ARMY
+  prefix: 'United States '
+  location: Military Academy
+  display_location: Army
+  suffix: ''
+  name: Black Knights
+  level: college
+  colors:
+    gold:
+      name: Gold
+      hex: D3BC8D
+      primary: true
+    gray:
+      name: Gray
+      hex: 2C2A29
+      primary: true
+    light-gray:
+      name: Light Gray
+      hex: B1B3B3
+      primary: true
+  styles:
+    gold-on-gray:
+      name: Gold on Gray
+      css: 'background-color: #2C2A29; color: #D3BC8D; '
+      default: true
+    cadet-gray:
+      name: Cadet Gray
+      css: 'background-color: #B1B3B3; color: #D3BC8D; text-shadow: 1px 1px 0 #2C2A29,
+        -1px 1px 0 #2C2A29, 1px -1px 0 #2C2A29, -1px -1px 0 #2C2A29; '
+      default: false
+navy-navy-midshipmen:
+  abbr: NAVY
+  prefix: United States
+  location: Naval Academy
+  display_location: Navy
+  suffix: ''
+  name: Midshipmen
+  level: college
+  colors:
+    navy-blue:
+      name: Navy Blue
+      hex: 00225B
+      primary: true
+    vegas-gold:
+      name: Vegas Gold
+      hex: B5A67C
+      primary: true
+  styles:
+    gold-on-blue:
+      name: Gold on Blue
+      css: 'background-color: #00225B; color: #B5A67C; '
+      default: true
+unc-north-carolina-tar-heels:
+  abbr: UNC
+  prefix: University of
+  location: North Carolina
+  display_location: North Carolina
+  suffix: at Chapel Hill
+  name: Tar Heels
+  level: college
+cha-charlotte-49ers:
+  abbr: CHA
+  prefix: University of
+  location: North Carolina - Charlotte
+  display_location: Charlotte
+  suffix: ''
+  name: 49ers
+  level: college
+  colors:
+    charlotte-green:
+      name: Charlotte Green
+      hex: '005035'
+      primary: true
+    niner-gold:
+      name: Niner Gold
+      hex: A49665
+      primary: true
+    ore-black:
+      name: Ore Black
+      hex: '101820'
+      primary: true
+    quartz-white:
+      name: Quartz White
+      hex: FFFFFF
+      primary: true
+    clay-red:
+      name: Clay Red
+      hex: 802F2D
+      primary: false
+    jasper:
+      name: Jasper
+      hex: F1E6B2
+      primary: false
+    pine-green:
+      name: Pine Green
+      hex: '899064'
+      primary: false
+    sky-blue:
+      name: Sky Blue
+      hex: '007377'
+      primary: false
+  styles:
+    gold-on-green:
+      name: Gold on Green
+      css: 'background-color: #005035; color: #A49665; '
+      default: true
+ncst-nc-state-wolfpack:
+  abbr: NCST
+  prefix: ''
+  location: North Carolina State
+  display_location: NC State
+  suffix: University
+  name: Wolfpack
+  level: college
+unt-north-texas-mean-green:
+  abbr: UNT
+  prefix: University of
+  location: North Texas
+  display_location: North Texas
+  suffix: ''
+  name: Mean Green
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    unt-system-green:
+      name: UNT System - Green
+      hex: '005903'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    dark-gray:
+      name: Dark Gray
+      hex: 4D4D4F
+      primary: false
+    light-gray:
+      name: Light Gray
+      hex: DCDDDE
+      primary: false
+    neon-green:
+      name: Neon Green
+      hex: 00FF00
+      primary: false
+  styles:
+    white-on-green:
+      name: White on Green
+      css: 'background-color: #005903; color: #FFFFFF; text-shadow: 1px 1px 0 #4D4D4F,
+        -1px 1px 0 #4D4D4F, 1px -1px 0 #4D4D4F, -1px -1px 0 #4D4D4F; '
+      default: true
+osu-oklahoma-state-cowboys:
+  abbr: OSU
+  prefix: ''
+  location: Oklahoma
+  display_location: Oklahoma State
+  suffix: State University
+  name: Cowboys
+  level: college
+pit-pitt-panthers:
+  abbr: PIT
+  prefix: University of
+  location: Pittsburgh
+  display_location: Pitt
+  suffix: ''
+  name: Panthers
+  level: college
+rice-rice-owls:
+  abbr: RICE
+  prefix: ''
+  location: Rice
+  display_location: Rice
+  suffix: University
+  name: Owls
+  level: college
+  colors:
+    rice-university-blue:
+      name: Rice University Blue
+      hex: 00205B
+      primary: true
+    rice-university-gray:
+      name: Rice University Gray
+      hex: 7C7E7F
+      primary: true
+    bright-blue:
+      name: Bright Blue
+      hex: 9FDDF9
+      primary: false
+    dark-blue-gray:
+      name: Dark Blue Gray
+      hex: 303B61
+      primary: false
+    dark-gray:
+      name: Dark Gray
+      hex: 44474F
+      primary: false
+    light-blue-gray:
+      name: Light Blue Gray
+      hex: ADC7DC
+      primary: false
+    light-gray:
+      name: Light Gray
+      hex: E0E2E6
+      primary: false
+    medium-blue:
+      name: Medium Blue
+      hex: 4D9AD4
+      primary: false
+    midnight-blue:
+      name: Midnight Blue
+      hex: 13133E
+      primary: false
+    rich-blue:
+      name: Rich Blue
+      hex: 0A509E
+      primary: false
+  styles:
+    gray-on-blue:
+      name: Gray on Blue
+      css: 'background-color: #00205B; color: #E0E2E6; '
+      default: true
+usf-south-florida-bulls:
+  abbr: USF
+  prefix: University of
+  location: South Florida
+  display_location: South Florida
+  suffix: ''
+  name: Bulls
+  level: college
+  colors:
+    usf-gold:
+      name: USF Gold
+      hex: CFC493
+      primary: true
+    usf-green:
+      name: USF Green
+      hex: '006747'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    evergreen:
+      name: Evergreen
+      hex: '005432'
+      primary: false
+    gray:
+      name: Gray
+      hex: 7E96A0
+      primary: false
+    sand:
+      name: Sand
+      hex: EDEBD1
+      primary: false
+    silver:
+      name: Silver
+      hex: CAD2D8
+      primary: false
+    slate:
+      name: Slate
+      hex: '466069'
+      primary: false
+    soft-black:
+      name: Soft Black
+      hex: '303434'
+      primary: false
+  styles:
+    gold-on-green:
+      name: Gold on Green
+      css: 'background-color: #006747; color: #CFC493; '
+      default: true
+    alternate:
+      name: Alternate
+      css: 'background-color: #466069; color: #006747; text-shadow: 1px 1px 0 #CFC493,
+        -1px 1px 0 #CFC493, 1px -1px 0 #CFC493, -1px -1px 0 #CFC493; '
+      default: false
+smu-southern-methodist-mustangs:
+  abbr: SMU
+  prefix: ''
+  location: Southern Methodist
+  display_location: Southern Methodist
+  suffix: University
+  name: Mustangs
+  level: college
+stan-stanford-cardinal:
+  abbr: STAN
+  prefix: ''
+  location: Stanford
+  display_location: Stanford
+  suffix: University
+  name: Cardinal
+  level: college
+syr-syracuse-orange:
+  abbr: SYR
+  prefix: ''
+  location: Syracuse
+  display_location: Syracuse
+  suffix: University
+  name: Orange
+  level: college
+tem-temple-owls:
+  abbr: TEM
+  prefix: ''
+  location: Temple
+  display_location: Temple
+  suffix: University
+  name: Owls
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    cherry:
+      name: Cherry
+      hex: 9D2235
+      primary: true
+    metallic-silver:
+      name: Metallic Silver
+      hex: 8A8D8F
+      primary: true
+    silver:
+      name: Silver
+      hex: C1C6C8
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    white-on-red:
+      name: White on Red
+      css: 'background-color: #9D2235; color: #FFFFFF; '
+      default: true
+tcu-texas-christian-horned-frogs:
+  abbr: TCU
+  prefix: ''
+  location: Texas
+  display_location: Texas Christian
+  suffix: Christian University
+  name: Horned Frogs
+  level: college
+utsa-texas-san-antonio-roadrunners:
+  abbr: UTSA
+  prefix: University of
+  location: Texas - San Antonio
+  display_location: Texas - San Antonio
+  suffix: ''
+  name: Roadrunners
+  level: college
+  colors:
+    midnight:
+      name: Midnight
+      hex: '032044'
+      primary: true
+    ut-san-antonio-orange:
+      name: UT San Antonio Orange
+      hex: F15A22
+      primary: true
+    black:
+      name: Black
+      hex: 332F21
+      primary: false
+    concrete:
+      name: Concrete
+      hex: EBE6E2
+      primary: false
+    limestone:
+      name: Limestone
+      hex: F8F4F1
+      primary: false
+    smoke:
+      name: Smoke
+      hex: D5CFC8
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    orange-on-blue:
+      name: Orange on Blue
+      css: 'background-color: #032044; color: #F15A22; '
+      default: true
+ttu-texas-tech-red-raiders:
+  abbr: TTU
+  prefix: ''
+  location: Texas Tech
+  display_location: Texas Tech
+  suffix: University
+  name: Red Raiders
+  level: college
+tuln-tulane-green-wave:
+  abbr: TULN
+  prefix: ''
+  location: Tulane
+  display_location: Tulane
+  suffix: University
+  name: Green Wave
+  level: college
+  colors:
+    tulane-blue:
+      name: Tulane Blue
+      hex: 65C5E8
+      primary: true
+    tulane-green:
+      name: Tulane Green
+      hex: 255C4E
+      primary: true
+    tulane-white:
+      name: Tulane White
+      hex: FFFFFF
+      primary: true
+  styles:
+    white-on-green:
+      name: White on Green
+      css: 'background-color: #255C4E; color: #FFFFFF; text-shadow: 1px 1px 0 #65C5E8,
+        -1px 1px 0 #65C5E8, 1px -1px 0 #65C5E8, -1px -1px 0 #65C5E8; '
+      default: true
+    alternate-blue:
+      name: Alternate Blue
+      css: 'background-color: #65C5E8; color: #255C4E; text-shadow: 1px 1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
+      default: false
+tul-tulsa-golden-hurricane:
+  abbr: TUL
+  prefix: University of
+  location: Tulsa
+  display_location: Tulsa
+  suffix: ''
+  name: Golden Hurricane
+  level: college
+  colors:
+    blue:
+      name: Blue
+      hex: '003595'
+      primary: true
+    gold:
+      name: Gold
+      hex: D0B787
+      primary: true
+  styles:
+    primary:
+      name: Primary
+      css: 'background-color: #003595; color: #D0B787; '
+      default: false
+utah-utah-utes:
+  abbr: UTAH
+  prefix: 'University of '
+  location: Utah
+  display_location: Utah
+  suffix: ''
+  name: Utes
+  level: college
+vir-virginia-cavaliers:
+  abbr: VIR
+  prefix: University of
+  location: Virginia
+  display_location: Virginia
+  suffix: ''
+  name: Cavaliers
+  level: college
+  colors:
+    uva-blue:
+      name: UVA Blue
+      hex: 232D4B
+      primary: true
+    uva-orange:
+      name: UVA Orange
+      hex: E57200
+      primary: true
+    uva-orange-25:
+      name: UVA Orange 25%
+      hex: F9DCBF
+      primary: true
+    uva-blue-25:
+      name: UVA Blue 25%
+      hex: C8CBD2
+      primary: false
+  styles:
+    orange-on-blue:
+      name: Orange on Blue
+      css: 'background-color: #232D4B; color: #E57200; '
+      default: true
+vt-virginia-tech-hokies:
+  abbr: VT
+  prefix: ''
+  location: Virginia Polytechnic
+  display_location: Virginia Tech
+  suffix: Institute and State University
+  name: Hokies
+  level: college
+wake-wake-forest-demon-deacons:
+  abbr: WAKE
+  prefix: ''
+  location: Wake Forest
+  display_location: Wake Forest
+  suffix: University
+  name: Demon Deacons
+  level: college
+wvu-west-virginia-mountaineers:
+  abbr: WVU
+  prefix: ''
+  location: West Virginia
+  display_location: West Virginia
+  suffix: University
+  name: Mountaineers
+  level: college

@@ -17,6 +17,15 @@ class Team < ApplicationRecord
   scope :latest_first, -> { order(created_at: :desc) }
   scope :by_level, ->(level) { where(level: level) }
 
+  # Ransack configuration
+  def self.ransackable_attributes(auth_object = nil)
+    %w[abbr created_at display_location level location name updated_at]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    %w[affiliations colors styles]
+  end
+
   def games
     Game.where("home_team_id = ? OR away_team_id = ?", id, id)
   end

@@ -2,7 +2,9 @@ class TeamsController < ApplicationController
   before_action :set_team, only: [:show, :edit, :update, :destroy]
 
   def index
-    @teams = Team.alphabetical
+    @q = Team.ransack(params[:q])
+    @q.sorts = "location asc" if @q.sorts.empty?
+    @pagy, @teams = pagy(:offset, @q.result.includes(:affiliations, :colors, :styles))
   end
 
   def show
