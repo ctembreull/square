@@ -34,8 +34,13 @@ class Team < ApplicationRecord
     "#{location} #{name}"
   end
 
-  def display_name
-    "#{display_location || location} #{name}"
+  def display_name(league: nil)
+    gender_name = name
+    if !league.nil? && league.gender == "women" && !womens_name.blank?
+      gender_name = womens_name
+    end
+
+    "#{display_location || location} #{gender_name}"
   end
 
   def brand_search_query
