@@ -1,0 +1,20 @@
+// Team: Stetson Hatters
+// Generated: 2026-01-13T09:15:06Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$stet-stetson-hatters-gray: #666666;
+$stet-stetson-hatters-green: #339933;
+$stet-stetson-hatters-light-green: #CCCC99;
+$stet-stetson-hatters-purple: #993399;
+$stet-stetson-hatters-white: #FFFFFF;
+
+// Style Classes
+.stet-stetson-hatters-green {
+  background-color: #339933; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.stet-stetson-hatters-default {
+  @extend .stet-stetson-hatters-green;
+}

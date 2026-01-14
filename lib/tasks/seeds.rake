@@ -11,10 +11,8 @@ namespace :seeds do
 
       team_data = {
         "abbr" => team.abbr,
-        "prefix" => team.prefix,
         "location" => team.location,
         "display_location" => team.display_location,
-        "suffix" => team.suffix,
         "name" => team.name,
         "level" => team.level
       }.compact
@@ -71,10 +69,8 @@ namespace :seeds do
       if team
         team.update!(
           abbr: team_data["abbr"],
-          prefix: team_data["prefix"],
           location: team_data["location"],
           display_location: team_data["display_location"],
-          suffix: team_data["suffix"],
           name: team_data["name"],
           level: team_data["level"]
         )
@@ -82,10 +78,8 @@ namespace :seeds do
       else
         team = Team.create!(
           abbr: team_data["abbr"],
-          prefix: team_data["prefix"],
           location: team_data["location"],
           display_location: team_data["display_location"],
-          suffix: team_data["suffix"],
           name: team_data["name"],
           level: team_data["level"]
         )
@@ -156,10 +150,8 @@ namespace :seeds do
 
       team_data = {
         "abbr" => team.abbr,
-        "prefix" => team.prefix,
         "location" => team.location,
         "display_location" => team.display_location,
-        "suffix" => team.suffix,
         "name" => team.name,
         "level" => team.level
       }.compact

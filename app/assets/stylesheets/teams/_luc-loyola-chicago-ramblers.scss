@@ -1,0 +1,22 @@
+// Team: Loyola Chicago Ramblers
+// Generated: 2026-01-14T00:21:25Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$luc-loyola-chicago-ramblers-loyola-gold: #EAAA00;
+$luc-loyola-chicago-ramblers-loyola-maroon: #5A0722;
+$luc-loyola-chicago-ramblers-gray: #888888;
+$luc-loyola-chicago-ramblers-gray-dark: #555555;
+$luc-loyola-chicago-ramblers-gray-extra-dark: #272727;
+$luc-loyola-chicago-ramblers-gray-extra-light: #EEEEEE;
+$luc-loyola-chicago-ramblers-gray-light: #CCCCCC;
+
+// Style Classes
+.luc-loyola-chicago-ramblers-gold-on-maroon {
+  background-color: #5A0722; color: #EAAA00; 
+}
+
+// Default Style Alias
+.luc-loyola-chicago-ramblers-default {
+  @extend .luc-loyola-chicago-ramblers-gold-on-maroon;
+}

@@ -31,11 +31,7 @@ class Team < ApplicationRecord
   end
 
   def full_name
-    [ prefix, location, suffix, name ].compact.join(" ")
-  end
-
-  def proper_name
-    [ prefix, location, suffix ].compact.join(" ")
+    "#{location} #{name}"
   end
 
   def display_name
@@ -43,7 +39,7 @@ class Team < ApplicationRecord
   end
 
   def brand_search_query
-    BRAND_SEARCH_URL + (proper_name + " brand colors").split(" ").compact.join("+")
+    BRAND_SEARCH_URL + (location + " brand colors").split(" ").compact.join("+")
   end
 
   # Generates slug for SCSS naming: abbr-display_location-name

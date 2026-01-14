@@ -1,0 +1,20 @@
+// Team: North Florida Ospreys
+// Generated: 2026-01-13T09:32:21Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$nfl-north-florida-ospreys-osprey-blue: #0A233F;
+$nfl-north-florida-ospreys-osprey-gray: #A7A8A9;
+$nfl-north-florida-ospreys-cool-gray: #BBBBBB;
+$nfl-north-florida-ospreys-unf-aqua-blue: #00B2E2;
+$nfl-north-florida-ospreys-white: #FFFFFF;
+
+// Style Classes
+.nfl-north-florida-ospreys-blue {
+  background-color: #0A233F; color: #00B2E2; 
+}
+
+// Default Style Alias
+.nfl-north-florida-ospreys-default {
+  @extend .nfl-north-florida-ospreys-blue;
+}

@@ -1,5 +1,5 @@
 // Team: Oklahoma State Cowboys
-// Generated: 2026-01-13T05:51:05Z
+// Generated: 2026-01-13T18:19:31Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -10,11 +10,19 @@ $osu-oklahoma-state-cowboys-orange: #FE5C00;
 $osu-oklahoma-state-cowboys-white: #FFFFFF;
 
 // Style Classes
+.osu-oklahoma-state-cowboys-orange-on-black {
+  background-color: #000000; color: #FE5C00; text-shadow: 1px 1px 0 #757575, -1px 1px 0 #757575, 1px -1px 0 #757575, -1px -1px 0 #757575; 
+}
+
+.osu-oklahoma-state-cowboys-black {
+  background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #FE5C00, -1px 1px 0 #FE5C00, 1px -1px 0 #FE5C00, -1px -1px 0 #FE5C00; 
+}
+
 .osu-oklahoma-state-cowboys-orange {
   background-color: #FE5C00; color: #000000; 
 }
 
 // Default Style Alias
 .osu-oklahoma-state-cowboys-default {
-  @extend .osu-oklahoma-state-cowboys-orange;
+  @extend .osu-oklahoma-state-cowboys-orange-on-black;
 }

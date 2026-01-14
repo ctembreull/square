@@ -1,0 +1,32 @@
+// Team: Duquesne Dukes
+// Generated: 2026-01-14T00:06:33Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$duq-duquesne-dukes-blue: #041E42;
+$duq-duquesne-dukes-electric-blue: #00B8DE;
+$duq-duquesne-dukes-gray: #A2AAAD;
+$duq-duquesne-dukes-red: #BA0C2F;
+$duq-duquesne-dukes-white: #FFFFFF;
+
+// Style Classes
+.duq-duquesne-dukes-red-on-blue {
+  background-color: #041E42; color: #BA0C2F; 
+}
+
+.duq-duquesne-dukes-alternate {
+  background-color: #041E42; color: #BA0C2F; text-shadow: 1px 1px 0 #00B8DE, -1px 1px 0 #00B8DE, 1px -1px 0 #00B8DE, -1px -1px 0 #00B8DE; 
+}
+
+.duq-duquesne-dukes-blue {
+  background-color: #041E42; color: #FFFFFF; text-shadow: 1px 1px 0 #BA0C2F, -1px 1px 0 #BA0C2F, 1px -1px 0 #BA0C2F, -1px -1px 0 #BA0C2F; 
+}
+
+.duq-duquesne-dukes-blue-on-red {
+  background-color: #BA0C2F; color: #041E42; 
+}
+
+// Default Style Alias
+.duq-duquesne-dukes-default {
+  @extend .duq-duquesne-dukes-red-on-blue;
+}

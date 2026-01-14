@@ -1,0 +1,19 @@
+// Team: Dayton Flyers
+// Generated: 2026-01-14T00:01:14Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$day-dayton-flyers-black: #000000;
+$day-dayton-flyers-blue: #002554;
+$day-dayton-flyers-red: #D50032;
+$day-dayton-flyers-white: #FFFFFF;
+
+// Style Classes
+.day-dayton-flyers-red {
+  background-color: #D50032; color: #FFFFFF; text-shadow: 1px 1px 0 #002554, -1px 1px 0 #002554, 1px -1px 0 #002554, -1px -1px 0 #002554; 
+}
+
+// Default Style Alias
+.day-dayton-flyers-default {
+  @extend .day-dayton-flyers-red;
+}

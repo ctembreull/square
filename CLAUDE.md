@@ -49,13 +49,13 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 
 ### Fixed
 - ✅ `charity.sample` → `charities.sample` in game.rb:122
+- ✅ Simplified team naming - removed `prefix`/`suffix` columns, keeping only `location` and `display_location`
+- ✅ Color form modal autofocuses the 'name' field
+- ✅ Replaced List.js with Ransack + Pagy for teams table (server-side search/sort)
 
 ### Pending
-- **HIGH PRIORITY**: Simplify team naming - condense `prefix`, `location`, `suffix` into just `location`. We have `display_location` for familiar names; stop over-engineering with full official school names we'll never use.
-- Color form modal should autofocus the 'name' field when it opens
 - Add validation: active player chances must sum to ≤100
 - Adapt PostgreSQL virtual column syntax to SQLite3 (teams.search_index)
-- Replace List.js with server-side search/sort (Ransack + Pagy + Turbo Frames) - List.js sorting unreliable, Enter key clears search
 - Document rake tasks more clearly: `sports:generate_seeds` (Ruby seeds.rb), `seeds:export`/`seeds:import` (YAML with colors/styles), `styles:regenerate_all` (SCSS files) - clarify when each should be used
 
 ## Architecture Patterns

@@ -75,8 +75,6 @@ namespace :sports do
         output << "# #{team.display_name}"
         output << "#{var_name} = Team.find_or_create_by!(location: #{team.location.inspect}, name: #{team.name.inspect}) do |t|"
         output << "  t.abbr = #{team.abbr.inspect}" if team.abbr.present?
-        output << "  t.prefix = #{team.prefix.inspect}" if team.prefix.present?
-        output << "  t.suffix = #{team.suffix.inspect}" if team.suffix.present?
         output << "  t.display_location = #{team.display_location.inspect}" if team.display_location.present?
         output << "  t.womens_name = #{team.womens_name.inspect}" if team.womens_name.present?
         output << "  t.level = #{team.level.inspect}" if team.level.present?

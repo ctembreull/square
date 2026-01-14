@@ -1,0 +1,18 @@
+// Team: North Alabama Lions
+// Generated: 2026-01-13T09:21:46Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$nau-north-alabama-lions-una-gold: #FFB92A;
+$nau-north-alabama-lions-una-purple: #592B8A;
+$nau-north-alabama-lions-white: #FFFFFF;
+
+// Style Classes
+.nau-north-alabama-lions-gold-on-purple {
+  background-color: #592B8A; color: #FFB92A; 
+}
+
+// Default Style Alias
+.nau-north-alabama-lions-default {
+  @extend .nau-north-alabama-lions-gold-on-purple;
+}

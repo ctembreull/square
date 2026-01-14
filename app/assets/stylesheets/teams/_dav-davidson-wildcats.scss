@@ -1,0 +1,18 @@
+// Team: Davidson Wildcats
+// Generated: 2026-01-14T00:01:31Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$dav-davidson-wildcats-davidson-red: #D42121;
+$dav-davidson-wildcats-white: #FFFFFF;
+$dav-davidson-wildcats-black: #0F1012;
+
+// Style Classes
+.dav-davidson-wildcats-red {
+  background-color: #D42121; color: #FFFFFF; text-shadow: 1px 1px 0 #0F1012, -1px 1px 0 #0F1012, 1px -1px 0 #0F1012, -1px -1px 0 #0F1012; 
+}
+
+// Default Style Alias
+.dav-davidson-wildcats-default {
+  @extend .dav-davidson-wildcats-red;
+}

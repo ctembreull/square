@@ -1,0 +1,19 @@
+// Team: Rhode Island Rams
+// Generated: 2026-01-14T00:24:00Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$uri-rhode-island-rams-blue: #002147;
+$uri-rhode-island-rams-yellow: #D0A627;
+$uri-rhode-island-rams-gold: #C79316;
+$uri-rhode-island-rams-white: #FFFFFF;
+
+// Style Classes
+.uri-rhode-island-rams-gold-on-blue {
+  background-color: #002147; color: #C79316; 
+}
+
+// Default Style Alias
+.uri-rhode-island-rams-default {
+  @extend .uri-rhode-island-rams-gold-on-blue;
+}

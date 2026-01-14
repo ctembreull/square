@@ -1,0 +1,17 @@
+// Team: Indiana Hoosiers
+// Generated: 2026-01-13T18:00:40Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$iu-indiana-hoosiers-cream: #EDEBEB;
+$iu-indiana-hoosiers-crimson: #990000;
+
+// Style Classes
+.iu-indiana-hoosiers-cream-on-crimson {
+  background-color: #990000; color: #EDEBEB; 
+}
+
+// Default Style Alias
+.iu-indiana-hoosiers-default {
+  @extend .iu-indiana-hoosiers-cream-on-crimson;
+}

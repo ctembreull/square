@@ -1,0 +1,21 @@
+// Team: Fordham Rams
+// Generated: 2026-01-14T00:10:29Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$for-fordham-rams-athletics-maroon: #72253D;
+$for-fordham-rams-fordham-black: #292321;
+$for-fordham-rams-rams-maroon: #5A0414;
+$for-fordham-rams-white: #FFFFFF;
+$for-fordham-rams-fordham-dark-gray: #58585B;
+$for-fordham-rams-jesuit-gold: #9E8959;
+
+// Style Classes
+.for-fordham-rams-maroon {
+  background-color: #5A0414; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.for-fordham-rams-default {
+  @extend .for-fordham-rams-maroon;
+}

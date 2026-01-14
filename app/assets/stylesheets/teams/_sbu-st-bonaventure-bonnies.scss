@@ -1,0 +1,19 @@
+// Team: St. Bonaventure Bonnies
+// Generated: 2026-01-14T00:34:46Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$sbu-st-bonaventure-bonnies-bona-brown: #4E3227;
+$sbu-st-bonaventure-bonnies-bona-yellow-sun: #FDDA24;
+$sbu-st-bonaventure-bonnies-bona-gray-wolf: #B6ADA5;
+$sbu-st-bonaventure-bonnies-white: #FFFFFF;
+
+// Style Classes
+.sbu-st-bonaventure-bonnies-brown {
+  background-color: #4E3227; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.sbu-st-bonaventure-bonnies-default {
+  @extend .sbu-st-bonaventure-bonnies-brown;
+}

@@ -1,0 +1,21 @@
+// Team: Massachusetts Minutemen
+// Generated: 2026-01-14T00:42:33Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$umass-massachusetts-minutemen-umass-black: #212721;
+$umass-massachusetts-minutemen-umass-maroon: #881C1C;
+$umass-massachusetts-minutemen-dark-gray: #373A36;
+$umass-massachusetts-minutemen-gray: #505759;
+$umass-massachusetts-minutemen-silver: #A2AAAD;
+$umass-massachusetts-minutemen-white: #FFFFFF;
+
+// Style Classes
+.umass-massachusetts-minutemen-maroon {
+  background-color: #881C1C; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.umass-massachusetts-minutemen-default {
+  @extend .umass-massachusetts-minutemen-maroon;
+}

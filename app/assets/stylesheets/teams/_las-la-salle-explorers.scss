@@ -1,0 +1,21 @@
+// Team: La Salle Explorers
+// Generated: 2026-01-14T00:18:52Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$las-la-salle-explorers-explorer-gold: #FFCE00;
+$las-la-salle-explorers-la-salle-blue: #003356;
+$las-la-salle-explorers-medium-blue: #3574BA;
+$las-la-salle-explorers-powder-blue: #99CAEA;
+$las-la-salle-explorers-teal: #0092BC;
+$las-la-salle-explorers-white: #FFFFFF;
+
+// Style Classes
+.las-la-salle-explorers-gold-on-blue {
+  background-color: #003356; color: #FFCE00; 
+}
+
+// Default Style Alias
+.las-la-salle-explorers-default {
+  @extend .las-la-salle-explorers-gold-on-blue;
+}

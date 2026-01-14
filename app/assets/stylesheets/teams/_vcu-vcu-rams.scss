@@ -1,0 +1,19 @@
+// Team: VCU Rams
+// Generated: 2026-01-14T00:40:41Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$vcu-vcu-rams-black: #000000;
+$vcu-vcu-rams-cool-gray: #63656A;
+$vcu-vcu-rams-vcu-gold: #FFB300;
+$vcu-vcu-rams-white: #FFFFFF;
+
+// Style Classes
+.vcu-vcu-rams-gold-on-black {
+  background-color: #000000; color: #FFB300; 
+}
+
+// Default Style Alias
+.vcu-vcu-rams-default {
+  @extend .vcu-vcu-rams-gold-on-black;
+}

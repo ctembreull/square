@@ -1,0 +1,30 @@
+// Team: Richmond Spiders
+// Generated: 2026-01-14T00:28:05Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$rich-richmond-spiders-blue: #122851;
+$rich-richmond-spiders-red: #990000;
+$rich-richmond-spiders-white: #FFFFFF;
+
+// Style Classes
+.rich-richmond-spiders-blue-on-red {
+  background-color: #990000; color: #122851; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+.rich-richmond-spiders-blue {
+  background-color: #122851; color: #FFFFFF; 
+}
+
+.rich-richmond-spiders-red {
+  background-color: #990000; color: #FFFFFF; 
+}
+
+.rich-richmond-spiders-red-on-blue {
+  background-color: #122851; color: #990000; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+// Default Style Alias
+.rich-richmond-spiders-default {
+  @extend .rich-richmond-spiders-blue-on-red;
+}

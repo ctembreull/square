@@ -1,9 +1,9 @@
 class TeamsController < ApplicationController
-  before_action :set_team, only: [:show, :edit, :update, :destroy]
+  before_action :set_team, only: [ :show, :edit, :update, :destroy ]
 
   def index
     @q = Team.ransack(params[:q])
-    @q.sorts = "location asc" if @q.sorts.empty?
+    @q.sorts = "display_location asc" if @q.sorts.empty?
     @pagy, @teams = pagy(:offset, @q.result.includes(:affiliations, :colors, :styles))
   end
 
@@ -47,6 +47,6 @@ class TeamsController < ApplicationController
   end
 
   def team_params
-    params.require(:team).permit(:name, :location, :display_location, :abbr, :prefix, :suffix, :level, :womens_name, :brand_info)
+    params.require(:team).permit(:name, :location, :display_location, :abbr, :level, :womens_name, :brand_info)
   end
 end
