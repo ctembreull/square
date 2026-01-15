@@ -1,0 +1,46 @@
+<div class="row mb-3">
+  <div class="col">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to "Events", events_path %></li>
+        <li class="breadcrumb-item active" aria-current="page">New Event</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header py-2">
+        <h5 class="mb-0">Create New Event</h5>
+      </div>
+      <div class="card-body">
+        <%= render "form", event: @event %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-header py-2">
+        <h6 class="mb-0">About Events</h6>
+      </div>
+      <div class="card-body">
+        <p class="text-muted mb-3">
+          Events are containers for related games, like a tournament or bowl season.
+        </p>
+        <dl class="mb-0">
+          <dt>Title</dt>
+          <dd class="text-muted mb-2">Use descriptive names like "March Madness 2026" or "College Football Playoff 2025-26".</dd>
+
+          <dt>Dates</dt>
+          <dd class="text-muted mb-2">Set the start and end dates to match your event's schedule. Status is calculated automatically.</dd>
+
+          <dt>Active</dt>
+          <dd class="text-muted mb-0">Active events are visible to players. Deactivate to hide without deleting.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>

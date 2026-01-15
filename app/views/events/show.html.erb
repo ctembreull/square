@@ -1,44 +1,160 @@
-<div class="d-flex justify-content-between align-items-center mt-4">
-  <h1><%= @event.title %></h1>
-  <%= link_to "← All Events", events_path, class: "btn btn-outline-secondary" %>
-</div>
-
-<div class="card mt-4">
-  <div class="card-body">
-    <p>
-      <strong>Dates:</strong> <%= @event.start_date.strftime("%B %d, %Y") %> - <%= @event.end_date.strftime("%B %d, %Y") %>
-    </p>
-    <p>
-      <strong>Status:</strong>
-      <% if @event.start_date > Date.today %>
-        <span class="badge bg-info">Upcoming</span>
-      <% elsif @event.start_date <= Date.today && @event.end_date >= Date.today %>
-        <span class="badge bg-success">In Progress</span>
-      <% else %>
-        <span class="badge bg-secondary">Completed</span>
-      <% end %>
-    </p>
+<div class="row mb-3">
+  <div class="col">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to "Events", events_path %></li>
+        <li class="breadcrumb-item active" aria-current="page"><%= @event.title %></li>
+      </ol>
+    </nav>
   </div>
 </div>
 
-<div class="mt-4">
-  <h2>Games</h2>
-  <% if @event.games.any? %>
-    <p class="text-muted">Games will be listed here</p>
-  <% else %>
-    <div class="alert alert-info">
-      <p class="mb-0">No games have been added to this event yet.</p>
+<div class="row mb-3">
+  <div class="col">
+    <div class="card bg-100 shadow-none border py-2">
+      <div class="row gx-0 flex-between-center">
+        <div class="col-sm-auto d-flex align-items-center">
+          <div class="ms-3">
+            <h6 class="text-primary fs-10 mb-0">Event</h6>
+            <h4 class="text-primary fw-bold mb-0">
+              <%= @event.title %>
+              <% if @event.upcoming? %>
+                <span class="badge bg-info ms-2">Upcoming</span>
+              <% elsif @event.in_progress? %>
+                <span class="badge bg-success ms-2">In Progress</span>
+              <% else %>
+                <span class="badge bg-secondary ms-2">Completed</span>
+              <% end %>
+            </h4>
+          </div>
+        </div>
+        <div class="col-md-auto p-3 d-flex gap-2">
+          <%= link_to edit_event_path(@event), class: "btn btn-outline-secondary btn-sm" do %>
+            <span class="fas fa-edit me-1"></span> Edit
+          <% end %>
+        </div>
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>
 
-<div class="mt-4">
-  <h2>Posts</h2>
-  <% if @event.posts.any? %>
-    <p class="text-muted">Posts will be listed here</p>
-  <% else %>
-    <div class="alert alert-info">
-      <p class="mb-0">No posts have been created for this event yet.</p>
+<div class="row g-3 mb-3">
+  <div class="col-lg-9">
+    <%# Games Section %>
+    <div class="card mb-3">
+      <div class="card-header border-bottom border-200 px-3 py-2">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">Games</h5>
+          <span class="badge bg-primary rounded-pill"><%= @event.games.count %></span>
+        </div>
+      </div>
+      <div class="card-body">
+        <% if @event.games.any? %>
+          <p class="text-muted">Games will be listed here once the Games feature is complete.</p>
+        <% else %>
+          <div class="text-center py-4">
+            <p class="text-muted mb-3">No games have been added to this event yet.</p>
+            <p class="text-muted mb-0 fs-10">
+              <span class="fas fa-info-circle me-1"></span>
+              Games will be added via the Games management section.
+            </p>
+          </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
+
+    <%# Posts Section %>
+    <div class="card">
+      <div class="card-header border-bottom border-200 px-3 py-2">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">Posts</h5>
+          <span class="badge bg-secondary rounded-pill"><%= @event.posts.count %></span>
+        </div>
+      </div>
+      <div class="card-body">
+        <% if @event.posts.any? %>
+          <p class="text-muted">Posts will be listed here once the Posts feature is complete.</p>
+        <% else %>
+          <div class="text-center py-4">
+            <p class="text-muted mb-3">No posts have been created for this event yet.</p>
+            <p class="text-muted mb-0 fs-10">
+              <span class="fas fa-info-circle me-1"></span>
+              Posts are used to communicate with players about the event.
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <%# Sidebar %>
+  <div class="col-lg-3">
+    <div class="card mb-3">
+      <div class="card-header py-2">
+        <h6 class="mb-0">Event Details</h6>
+      </div>
+      <div class="card-body">
+        <dl class="mb-0">
+          <dt>Start Date</dt>
+          <dd><%= @event.start_date.strftime("%B %d, %Y") %></dd>
+
+          <dt>End Date</dt>
+          <dd>
+            <% if @event.end_date.present? %>
+              <%= @event.end_date.strftime("%B %d, %Y") %>
+            <% else %>
+              <span class="text-muted">Open-ended</span>
+            <% end %>
+          </dd>
+
+          <% if @event.end_date.present? %>
+            <dt>Duration</dt>
+            <dd><%= (@event.end_date - @event.start_date).to_i + 1 %> days</dd>
+          <% elsif @event.start_date <= Date.today %>
+            <dt>Running For</dt>
+            <dd><%= (Date.today - @event.start_date).to_i + 1 %> days</dd>
+          <% end %>
+
+          <dt>Visibility</dt>
+          <dd>
+            <% if @event.active? %>
+              <span class="text-success"><span class="fas fa-eye me-1"></span> Active</span>
+            <% else %>
+              <span class="text-muted"><span class="fas fa-eye-slash me-1"></span> Inactive</span>
+            <% end %>
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header py-2">
+        <h6 class="mb-0">Quick Actions</h6>
+      </div>
+      <div class="card-body">
+        <div class="d-grid gap-2">
+          <% if @event.in_progress? && @event.end_date.nil? %>
+            <%= link_to end_event_event_path(@event),
+                data: { turbo_method: :patch, turbo_confirm: "End #{@event.title} today?" },
+                class: "btn btn-success btn-sm" do %>
+              <span class="fas fa-flag-checkered me-1"></span> End Event Today
+            <% end %>
+          <% end %>
+          <% if @event.active? %>
+            <%= link_to deactivate_event_path(@event),
+                data: { turbo_method: :patch, turbo_confirm: "Deactivate #{@event.title}?" },
+                class: "btn btn-outline-warning btn-sm" do %>
+              <span class="fas fa-eye-slash me-1"></span> Deactivate Event
+            <% end %>
+          <% else %>
+            <%= link_to activate_event_path(@event),
+                data: { turbo_method: :patch },
+                class: "btn btn-outline-success btn-sm" do %>
+              <span class="fas fa-eye me-1"></span> Activate Event
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,83 @@
+<div class="row mb-3">
+  <div class="col">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to "Events", events_path %></li>
+        <li class="breadcrumb-item"><%= link_to @event.title, event_path(@event) %></li>
+        <li class="breadcrumb-item active" aria-current="page">Edit</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header py-2">
+        <h5 class="mb-0">Edit <%= @event.title %></h5>
+      </div>
+      <div class="card-body">
+        <%= render "form", event: @event %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card mb-3">
+      <div class="card-header py-2">
+        <h6 class="mb-0">Event Info</h6>
+      </div>
+      <div class="card-body">
+        <dl class="mb-0">
+          <dt>Status</dt>
+          <dd>
+            <% if @event.upcoming? %>
+              <span class="badge bg-info">Upcoming</span>
+            <% elsif @event.in_progress? %>
+              <span class="badge bg-success">In Progress</span>
+            <% else %>
+              <span class="badge bg-secondary">Completed</span>
+            <% end %>
+          </dd>
+
+          <dt>Visibility</dt>
+          <dd><%= @event.active? ? "Active (visible)" : "Inactive (hidden)" %></dd>
+
+          <dt>Games</dt>
+          <dd><%= @event.games.count %> games</dd>
+
+          <dt>Posts</dt>
+          <dd><%= @event.posts.count %> posts</dd>
+        </dl>
+      </div>
+    </div>
+
+    <% if @event.games.none? %>
+      <div class="card border-danger">
+        <div class="card-header py-2 bg-danger text-white">
+          <h6 class="mb-0">Danger Zone</h6>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-2">Permanently delete this event.</p>
+          <%= link_to event_path(@event),
+              data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{@event.title}? This cannot be undone." },
+              class: "btn btn-outline-danger btn-sm" do %>
+            <span class="fas fa-trash me-1"></span> Delete Event
+          <% end %>
+        </div>
+      </div>
+    <% else %>
+      <div class="card border-warning">
+        <div class="card-header py-2 bg-warning">
+          <h6 class="mb-0">Cannot Delete</h6>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-0">
+            <span class="fas fa-info-circle me-1"></span>
+            This event has <%= @event.games.count %> games and cannot be deleted. Deactivate it instead to hide from players.
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

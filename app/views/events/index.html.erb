@@ -1,35 +1,219 @@
-<h1 class="mt-4">Family Squares Events</h1>
+<div class="row mb-3">
+	<div class="col">
+		<div class="card bg-100 shadow-none border py-2">
+			<div class="row gx-0 flex-between-center">
+				<div class="col-sm-auto d-flex align-items-center">
+					<div class="ms-3">
+						<h6 class="text-primary fs-10 mb-0">Squares</h6>
+						<h4 class="text-primary fw-bold mb-0">
+							Events
+							<span class="text-info fw-medium">Management</span>
+						</h4>
+					</div>
+				</div>
+				<div class="col-md-auto p-3">
+					<%= link_to new_event_path, class: "btn btn-primary btn-sm" do %>
+						<span class="fas fa-plus me-1"></span> Add Event
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<% if @current_event %>
-  <div class="alert alert-success mt-4">
-    <h2 class="alert-heading">Current Event</h2>
-    <h3><%= @current_event.title %></h3>
-    <p>
-      <strong>Dates:</strong> <%= @current_event.start_date.strftime("%B %d, %Y") %> - <%= @current_event.end_date.strftime("%B %d, %Y") %>
-    </p>
-    <%= link_to "Go to Event", event_path(@current_event), class: "btn btn-primary btn-lg" %>
-  </div>
-<% else %>
-  <div class="alert alert-info mt-4">
-    <p class="mb-0">No current event at this time. Check back soon!</p>
-  </div>
-<% end %>
+<div class="row g-3 mb-3">
+	<div class="col-lg-9">
+		<%# Active Events Table %>
+		<div class="card mb-3" id="eventsTable">
+			<div class="card-header border-bottom border-200 px-3 py-2">
+				<div class="d-flex justify-content-between align-items-center">
+					<h5 class="mb-0">Active Events</h5>
+					<span class="badge bg-primary rounded-pill"><%= @active_events.count %></span>
+				</div>
+			</div>
+			<div class="card-body p-0">
+				<div class="table-responsive scrollbar">
+					<table class="table table-sm table-striped fs-10 mb-0 overflow-hidden">
+						<thead class="bg-200">
+							<tr>
+								<th class="text-900">Title</th>
+								<th class="text-900">Start Date</th>
+								<th class="text-900">End Date</th>
+								<th class="text-900 text-center">Games</th>
+								<th class="text-900">Status</th>
+								<th class="text-900 text-end">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% if @active_events.any? %>
+								<% @active_events.each do |event| %>
+									<tr>
+										<td class="py-2">
+											<%= link_to event.title, event_path(event), class: "fw-semi-bold" %>
+										</td>
+										<td class="py-2"><%= event.start_date.strftime("%b %d, %Y") %></td>
+										<td class="py-2">
+											<% if event.end_date.present? %>
+												<%= event.end_date.strftime("%b %d, %Y") %>
+											<% else %>
+												<span class="text-muted">Open</span>
+											<% end %>
+										</td>
+										<td class="py-2 text-center">
+											<span class="badge bg-secondary rounded-pill"><%= event.games.count %></span>
+										</td>
+										<td class="py-2">
+											<% if event.upcoming? %>
+												<span class="badge bg-info">Upcoming</span>
+											<% elsif event.in_progress? %>
+												<span class="badge bg-success">In Progress</span>
+											<% else %>
+												<span class="badge bg-secondary">Completed</span>
+											<% end %>
+										</td>
+										<td class="text-end pe-2 py-2">
+											<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-event-<%= event.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+												<span class="fas fa-ellipsis-h fs-10"></span>
+											</button>
+											<div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-event-<%= event.id %>">
+												<%= link_to event_path(event), class: "dropdown-item" do %>
+													<span class="fas fa-eye me-2"></span> View
+												<% end %>
+												<%= link_to edit_event_path(event), class: "dropdown-item" do %>
+													<span class="fas fa-edit me-2"></span> Edit
+												<% end %>
+												<% if event.in_progress? && event.end_date.nil? %>
+													<%= link_to end_event_event_path(event),
+															data: { turbo_method: :patch, turbo_confirm: "End #{event.title} today?" },
+															class: "dropdown-item text-success" do %>
+														<span class="fas fa-flag-checkered me-2"></span> End Event
+													<% end %>
+												<% end %>
+												<div class="dropdown-divider"></div>
+												<%= link_to deactivate_event_path(event),
+														data: { turbo_method: :patch, turbo_confirm: "Deactivate #{event.title}?" },
+														class: "dropdown-item text-warning" do %>
+													<span class="fas fa-eye-slash me-2"></span> Deactivate
+												<% end %>
+											</div>
+										</td>
+									</tr>
+								<% end %>
+							<% else %>
+								<tr>
+									<td colspan="6" class="text-center py-4 text-muted">No active events yet. Create your first event!</td>
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 
-<% if @past_events.any? %>
-  <h2 class="mt-5">Past Events</h2>
-  <div class="row mt-3">
-    <% @past_events.each do |event| %>
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><%= event.title %></h5>
-            <p class="card-text">
-              <strong>Dates:</strong> <%= event.start_date.strftime("%B %d, %Y") %> - <%= event.end_date.strftime("%B %d, %Y") %>
-            </p>
-            <%= link_to "View Event", event_path(event), class: "btn btn-secondary" %>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-<% end %>
+		<%# Inactive Events Table %>
+		<% if @inactive_events.any? %>
+			<div class="card" id="inactiveEventsTable">
+				<div class="card-header border-bottom border-200 px-3 py-2">
+					<div class="d-flex justify-content-between align-items-center">
+						<h5 class="mb-0">Inactive Events</h5>
+						<span class="badge bg-secondary rounded-pill"><%= @inactive_events.count %></span>
+					</div>
+				</div>
+				<div class="card-body p-0">
+					<div class="table-responsive scrollbar">
+						<table class="table table-sm table-striped fs-10 mb-0 overflow-hidden">
+							<thead class="bg-200">
+								<tr>
+									<th class="text-900">Title</th>
+									<th class="text-900">Start Date</th>
+									<th class="text-900">End Date</th>
+									<th class="text-900 text-center">Games</th>
+									<th class="text-900">Status</th>
+									<th class="text-900 text-end">Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<% @inactive_events.each do |event| %>
+									<tr class="text-muted">
+										<td class="py-2">
+											<%= link_to event.title, event_path(event), class: "fw-semi-bold text-muted" %>
+										</td>
+										<td class="py-2"><%= event.start_date.strftime("%b %d, %Y") %></td>
+										<td class="py-2">
+											<% if event.end_date.present? %>
+												<%= event.end_date.strftime("%b %d, %Y") %>
+											<% else %>
+												<span class="text-muted">Open</span>
+											<% end %>
+										</td>
+										<td class="py-2 text-center">
+											<span class="badge bg-secondary rounded-pill"><%= event.games.count %></span>
+										</td>
+										<td class="py-2">
+											<span class="badge bg-secondary">
+												<% if event.upcoming? %>Upcoming<% elsif event.in_progress? %>In Progress<% else %>Completed<% end %>
+											</span>
+										</td>
+										<td class="text-end pe-2 py-2">
+											<%= link_to activate_event_path(event),
+													data: { turbo_method: :patch },
+													class: "btn btn-sm btn-outline-success",
+													title: "Reactivate #{event.title}" do %>
+												<span class="fas fa-eye"></span>
+											<% end %>
+										</td>
+									</tr>
+								<% end %>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+
+	<%# Sidebar %>
+	<div class="col-lg-3">
+		<div class="card mb-3">
+			<div class="card-header py-2">
+				<h6 class="mb-0">Event Status Guide</h6>
+			</div>
+			<div class="card-body">
+				<ul class="list-unstyled mb-0">
+					<li class="mb-2">
+						<span class="badge bg-info me-2">Upcoming</span>
+						<small class="text-muted">Starts in the future</small>
+					</li>
+					<li class="mb-2">
+						<span class="badge bg-success me-2">In Progress</span>
+						<small class="text-muted">Started, no end date set</small>
+					</li>
+					<li>
+						<span class="badge bg-secondary me-2">Completed</span>
+						<small class="text-muted">End date has passed</small>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header py-2">
+				<h6 class="mb-0">Quick Tips</h6>
+			</div>
+			<div class="card-body">
+				<p class="text-muted mb-2 fs-10">
+					<span class="fas fa-info-circle me-1 text-info"></span>
+					Events with games cannot be deleted. Deactivate them instead.
+				</p>
+				<p class="text-muted mb-2 fs-10">
+					<span class="fas fa-info-circle me-1 text-info"></span>
+					Leave end date blank for open-ended events like bowl season.
+				</p>
+				<p class="text-muted mb-0 fs-10">
+					<span class="fas fa-info-circle me-1 text-info"></span>
+					Use "End Event" to close an open event when it's finished.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
   # Events
-  resources :events, only: [:index, :show]
-  root "events#index"
+  resources :events do
+    member do
+      patch :activate
+      patch :deactivate
+      patch :end_event
+    end
+  end
+  root "events#home"
 
   # Leagues
   resources :leagues
 
   # Conferences
-  resources :conferences, except: [:index]
+  resources :conferences, except: [ :index ]
 
   # Teams
   resources :teams
@@ -16,10 +22,21 @@ Rails.application.routes.draw do
   resources :affiliations
 
   # Colors
-  resources :colors, except: [:index, :show]
+  resources :colors, except: [ :index, :show ]
 
   # Styles
-  resources :styles, except: [:index, :show]
+  resources :styles, except: [ :index, :show ]
+
+  # Players
+  resources :players do
+    collection do
+      patch :bulk_update_chances
+    end
+    member do
+      patch :deactivate
+      patch :activate
+    end
+  end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

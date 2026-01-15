@@ -8,24 +8,50 @@ class Event < ApplicationRecord
   # Validations
   validates :title, presence: true
   validates :start_date, presence: true
-  validates :end_date, presence: true
-  validate :end_date_after_start_date
+  validate :end_date_after_start_date, if: -> { end_date.present? }
 
   # Scopes
   scope :active, -> { where(active: true) }
   scope :inactive, -> { where(active: false) }
   scope :upcoming, -> { where("start_date > ?", Date.today).order(:start_date) }
-  scope :current, -> { where("start_date <= ? AND end_date >= ?", Date.today, Date.today).order(:start_date) }
+  # Current: started but not ended (end_date nil or in future)
+  scope :current, -> { where("start_date <= ? AND (end_date IS NULL OR end_date >= ?)", Date.today, Date.today).order(:start_date) }
+  # Past: has an end_date that has passed
   scope :past, -> { where("end_date < ?", Date.today).order(start_date: :desc) }
 
   # Prevent deletion if games exist
   before_destroy :prevent_deletion_with_games
 
+  # Status helpers
+  def status
+    if start_date > Date.today
+      :upcoming
+    elsif end_date.present? && end_date < Date.today
+      :completed
+    else
+      :in_progress
+    end
+  end
+
+  def upcoming?
+    status == :upcoming
+  end
+
+  def in_progress?
+    status == :in_progress
+  end
+
+  def completed?
+    status == :completed
+  end
+
+  def end_event!
+    update(end_date: Date.today)
+  end
+
   private
 
   def end_date_after_start_date
-    return if end_date.blank? || start_date.blank?
-
     if end_date < start_date
       errors.add(:end_date, "must be after the start date")
     end
