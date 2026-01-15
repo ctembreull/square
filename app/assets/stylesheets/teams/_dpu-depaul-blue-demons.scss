@@ -1,0 +1,23 @@
+// Team: DePaul Blue Demons
+// Generated: 2026-01-14T21:45:59Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$dpu-depaul-blue-demons-blue: #003DA5;
+$dpu-depaul-blue-demons-black: #000000;
+$dpu-depaul-blue-demons-gray: #D1D1D1;
+$dpu-depaul-blue-demons-light-blue: #0072CE;
+$dpu-depaul-blue-demons-navy: #00205B;
+$dpu-depaul-blue-demons-pale-blue: #6DA4D8;
+$dpu-depaul-blue-demons-red: #CE112D;
+$dpu-depaul-blue-demons-white: #FFFFFF;
+
+// Style Classes
+.dpu-depaul-blue-demons-blue {
+  background-color: #003DA5; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.dpu-depaul-blue-demons-default {
+  @extend .dpu-depaul-blue-demons-blue;
+}

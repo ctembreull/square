@@ -1,0 +1,18 @@
+// Team: Montana State Bobcats
+// Generated: 2026-01-14T23:25:31Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$mtsu-montana-state-bobcats-blue: #00205B;
+$mtsu-montana-state-bobcats-gold: #B9975B;
+$mtsu-montana-state-bobcats-white: #FFFFFF;
+
+// Style Classes
+.mtsu-montana-state-bobcats-gold-on-blue {
+  background-color: #00205B; color: #B9975B; 
+}
+
+// Default Style Alias
+.mtsu-montana-state-bobcats-default {
+  @extend .mtsu-montana-state-bobcats-gold-on-blue;
+}

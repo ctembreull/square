@@ -1,0 +1,19 @@
+// Team: Villanova Wildcats
+// Generated: 2026-01-14T21:33:12Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$nova-villanova-wildcats-villanova-signature-blue: #002664;
+$nova-villanova-wildcats-white: #FFFFFF;
+$nova-villanova-wildcats-bronze: #847248;
+$nova-villanova-wildcats-pewter: #867A6E;
+
+// Style Classes
+.nova-villanova-wildcats-white-on-blue {
+  background-color: #002664; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.nova-villanova-wildcats-default {
+  @extend .nova-villanova-wildcats-white-on-blue;
+}

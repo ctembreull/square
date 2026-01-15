@@ -1,0 +1,18 @@
+// Team: Eastern Washington Eagles
+// Generated: 2026-01-14T23:34:59Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ewu-eastern-washington-eagles-black: #000000;
+$ewu-eastern-washington-eagles-red: #C8102E;
+$ewu-eastern-washington-eagles-white: #FFFFFF;
+
+// Style Classes
+.ewu-eastern-washington-eagles-red {
+  background-color: #C8102E; color: #FFFFFF; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
+
+// Default Style Alias
+.ewu-eastern-washington-eagles-default {
+  @extend .ewu-eastern-washington-eagles-red;
+}

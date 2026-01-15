@@ -1,0 +1,27 @@
+// Team: Xavier Musketeers
+// Generated: 2026-01-14T21:49:34Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$xav-xavier-musketeers-running-man-blue: #0033A0;
+$xav-xavier-musketeers-xavier-blue: #0C2340;
+$xav-xavier-musketeers-xavier-gray: #9EA2A2;
+$xav-xavier-musketeers-white: #FFFFFF;
+
+// Style Classes
+.xav-xavier-musketeers-blue {
+  background-color: #0C2340; color: #FFFFFF; text-shadow: 1px 1px 0 #9EA2A2, -1px 1px 0 #9EA2A2, 1px -1px 0 #9EA2A2, -1px -1px 0 #9EA2A2; 
+}
+
+.xav-xavier-musketeers-gray {
+  background-color: #9EA2A2; color: #0C2340; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+.xav-xavier-musketeers-white {
+  background-color: #FFFFFF; color: #0C2340; text-shadow: 1px 1px 0 #9EA2A2, -1px 1px 0 #9EA2A2, 1px -1px 0 #9EA2A2, -1px -1px 0 #9EA2A2; 
+}
+
+// Default Style Alias
+.xav-xavier-musketeers-default {
+  @extend .xav-xavier-musketeers-blue;
+}

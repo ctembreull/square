@@ -1,0 +1,22 @@
+// Team: Marquette Golden Eagles
+// Generated: 2026-01-14T21:59:00Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$marq-marquette-golden-eagles-marquette-blue: #003366;
+$marq-marquette-golden-eagles-marquette-gold: #FFCC00;
+$marq-marquette-golden-eagles-white: #FFFFFF;
+
+// Style Classes
+.marq-marquette-golden-eagles-gold-on-blue {
+  background-color: #003366; color: #FFCC00; 
+}
+
+.marq-marquette-golden-eagles-blue-on-gold {
+  background-color: #FFCC00; color: #003366; 
+}
+
+// Default Style Alias
+.marq-marquette-golden-eagles-default {
+  @extend .marq-marquette-golden-eagles-gold-on-blue;
+}

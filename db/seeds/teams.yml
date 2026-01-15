@@ -254,6 +254,39 @@ bry-bryant-bulldogs:
       name: Gold on Black
       css: 'background-color: #222020; color: #A98F42; '
       default: true
+but-butler-bulldogs:
+  abbr: BUT
+  location: Butler University
+  display_location: Butler
+  name: Bulldogs
+  level: college
+  colors:
+    bright-blue:
+      name: Bright Blue
+      hex: 00A3E0
+      primary: true
+    butler-blue:
+      name: Butler Blue
+      hex: 13294B
+      primary: true
+    cool-gray:
+      name: Cool Gray
+      hex: D1E0D7
+      primary: true
+    medium-blue:
+      name: Medium Blue
+      hex: 3178A4
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #13294B; color: #FFFFFF; text-shadow: 1px 1px 0 #00A3E0,
+        -1px 1px 0 #00A3E0, 1px -1px 0 #00A3E0, -1px -1px 0 #00A3E0; '
+      default: true
 clem-clemson-tigers:
   abbr: CLEM
   location: Clemson University
@@ -286,6 +319,39 @@ clem-clemson-tigers:
       name: Orange
       css: 'background-color: #F56600; color: #FFFFFF; text-shadow: 1px 1px 0 #522E80,
         -1px 1px 0 #522E80, 1px -1px 0 #522E80, -1px -1px 0 #522E80; '
+      default: true
+crei-creighton-blue-jays:
+  abbr: CREI
+  location: Creighton University
+  display_location: Creighton
+  name: Blue Jays
+  level: college
+  colors:
+    cu-blue:
+      name: CU Blue
+      hex: 005CA9
+      primary: true
+    cu-gray:
+      name: CU Gray
+      hex: '828282'
+      primary: true
+    cu-light-blue:
+      name: CU Light Blue
+      hex: 6CADDE
+      primary: true
+    cu-light-gray:
+      name: CU Light Gray
+      hex: C8C8C8
+      primary: true
+    cu-navy-blue:
+      name: CU Navy Blue
+      hex: 00235D
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #005CA9; color: #C8C8C8; text-shadow: 1px 1px 0 #00235D,
+        -1px 1px 0 #00235D, 1px -1px 0 #00235D, -1px -1px 0 #00235D; '
       default: true
 dav-davidson-wildcats:
   abbr: DAV
@@ -340,6 +406,50 @@ day-dayton-flyers:
       name: Red
       css: 'background-color: #D50032; color: #FFFFFF; text-shadow: 1px 1px 0 #002554,
         -1px 1px 0 #002554, 1px -1px 0 #002554, -1px -1px 0 #002554; '
+      default: true
+dpu-depaul-blue-demons:
+  abbr: DPU
+  location: DePaul University
+  display_location: DePaul
+  name: Blue Demons
+  level: college
+  colors:
+    blue:
+      name: Blue
+      hex: 003DA5
+      primary: true
+    black:
+      name: Black
+      hex: '000000'
+      primary: false
+    gray:
+      name: Gray
+      hex: D1D1D1
+      primary: false
+    light-blue:
+      name: Light Blue
+      hex: 0072CE
+      primary: false
+    navy:
+      name: Navy
+      hex: 00205B
+      primary: false
+    pale-blue:
+      name: Pale Blue
+      hex: 6DA4D8
+      primary: false
+    red:
+      name: Red
+      hex: CE112D
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #003DA5; color: #FFFFFF; '
       default: true
 duke-duke-blue-devils:
   abbr: DUKE
@@ -677,6 +787,31 @@ gw-george-washington-revolutionaries:
       name: Gold on Blue
       css: 'background-color: #033C5A; color: #AA9868; '
       default: true
+gtn-georgetown-hoyas:
+  abbr: GTN
+  location: Georgetown University
+  display_location: Georgetown
+  name: Hoyas
+  level: college
+  colors:
+    georgetown-blue:
+      name: Georgetown Blue
+      hex: 041E42
+      primary: true
+    georgetown-gray:
+      name: Georgetown Gray
+      hex: 63666A
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #041E42; color: #FFFFFF; text-shadow: 1px 1px 0 #63666A,
+        -1px 1px 0 #63666A, 1px -1px 0 #63666A, -1px -1px 0 #63666A; '
+      default: false
 gt-georgia-tech-yellow-jackets:
   abbr: GT
   location: Georgia Tech
@@ -898,6 +1033,34 @@ luc-loyola-chicago-ramblers:
       name: Gold on Maroon
       css: 'background-color: #5A0722; color: #EAAA00; '
       default: true
+marq-marquette-golden-eagles:
+  abbr: MARQ
+  location: Marquette University
+  display_location: Marquette
+  name: Golden Eagles
+  level: college
+  colors:
+    marquette-blue:
+      name: Marquette Blue
+      hex: '003366'
+      primary: true
+    marquette-gold:
+      name: Marquette Gold
+      hex: FFCC00
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    gold-on-blue:
+      name: Gold on Blue
+      css: 'background-color: #003366; color: #FFCC00; '
+      default: true
+    blue-on-gold:
+      name: Blue on Gold
+      css: 'background-color: #FFCC00; color: #003366; '
+      default: false
 umass-massachusetts-minutemen:
   abbr: UMASS
   location: Massachusetts - Amherst
@@ -1023,6 +1186,39 @@ osu-oklahoma-state-cowboys:
     orange:
       name: Orange
       css: 'background-color: #FE5C00; color: #000000; '
+      default: false
+prv-providence-friars:
+  abbr: PRV
+  location: Providence University
+  display_location: Providence
+  name: Friars
+  level: college
+  colors:
+    cool-gray:
+      name: Cool Gray
+      hex: A3A19E
+      primary: true
+    harkins-yellow:
+      name: Harkins Yellow
+      hex: FCFADE
+      primary: true
+    providence-black:
+      name: Providence Black
+      hex: '000000'
+      primary: true
+    providence-gold:
+      name: Providence Gold
+      hex: BD9E5E
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    black:
+      name: Black
+      css: 'background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #BD9E5E,
+        -1px 1px 0 #BD9E5E, 1px -1px 0 #BD9E5E, -1px -1px 0 #BD9E5E; '
       default: false
 qu-queens-university-royals:
   abbr: QU
@@ -1254,6 +1450,71 @@ slu-saint-louis-billikens:
       name: Blue
       css: 'background-color: #003DA5; color: #FFFFFF; '
       default: true
+sh-seton-hall-pirates:
+  abbr: SH
+  location: Seton Hall University
+  display_location: Seton Hall
+  name: Pirates
+  level: college
+  colors:
+    seton-hall-blue:
+      name: Seton Hall Blue
+      hex: 0060A9
+      primary: true
+    seton-hall-navy:
+      name: Seton Hall Navy
+      hex: '003263'
+      primary: true
+    black:
+      name: Black
+      hex: '333132'
+      primary: false
+    cream:
+      name: Cream
+      hex: FBF3E6
+      primary: false
+    cyan:
+      name: Cyan
+      hex: 51AADF
+      primary: false
+    dark-gray:
+      name: Dark Gray
+      hex: 514F4B
+      primary: false
+    light-gray:
+      name: Light Gray
+      hex: EAEBE6
+      primary: false
+    medium-gray:
+      name: Medium Gray
+      hex: 9D9FA2
+      primary: false
+    metallic-silver:
+      name: Metallic Silver
+      hex: 8D9093
+      primary: false
+    sky-blue:
+      name: Sky Blue
+      hex: B4D1E6
+      primary: false
+    slate-blue:
+      name: Slate Blue
+      hex: 7E96A4
+      primary: false
+    tan:
+      name: Tan
+      hex: CDC7B7
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #0060A9; color: #FFFFFF; text-shadow: 1px 1px 0 #514F4B,
+        -1px 1px 0 #514F4B, 1px -1px 0 #514F4B, -1px -1px 0 #514F4B; '
+      default: false
 smu-southern-methodist-mustangs:
   abbr: SMU
   location: Southern Methodist University
@@ -1306,6 +1567,38 @@ sbu-st-bonaventure-bonnies:
     brown:
       name: Brown
       css: 'background-color: #4E3227; color: #FFFFFF; '
+      default: true
+sju-st-john-s-red-storm:
+  abbr: SJU
+  location: St. John's University
+  display_location: St. John's
+  name: Red Storm
+  level: college
+  colors:
+    red:
+      name: Red
+      hex: CF102D
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    black:
+      name: Black
+      hex: '000000'
+      primary: false
+    blue:
+      name: Blue
+      hex: 051C2C
+      primary: false
+    gray:
+      name: Gray
+      hex: 898B8E
+      primary: false
+  styles:
+    white-on-red:
+      name: White on Red
+      css: 'background-color: #CF102D; color: #FFFFFF; '
       default: true
 stan-stanford-cardinal:
   abbr: STAN
@@ -1863,6 +2156,38 @@ col-colorado-buffaloes:
     black-gold:
       name: Black & Gold
       css: 'background-color: #000000; color: #CFB87C; '
+      default: true
+uconn-uconn-huskies:
+  abbr: UCONN
+  location: University of Connecticut
+  display_location: UConn
+  name: Huskies
+  level: college
+  colors:
+    grey:
+      name: Grey
+      hex: 7C878E
+      primary: true
+    navy-blue:
+      name: Navy Blue
+      hex: 000E2F
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    husky-eyes-only:
+      name: Husky Eyes Only
+      hex: A4C8E1
+      primary: false
+    red:
+      name: Red
+      hex: E4002B
+      primary: false
+  styles:
+    white-on-blue:
+      name: White on Blue
+      css: 'background-color: #000E2F; color: #FFFFFF; '
       default: true
 hou-houston-cougars:
   abbr: HOU
@@ -2650,6 +2975,34 @@ wga-west-georgia-wolves:
       name: Red on Blue
       css: 'background-color: #0054A6; color: #D9192C; '
       default: true
+nova-villanova-wildcats:
+  abbr: NOVA
+  location: Villanova University
+  display_location: Villanova
+  name: Wildcats
+  level: college
+  colors:
+    villanova-signature-blue:
+      name: Villanova Signature Blue
+      hex: '002664'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    bronze:
+      name: Bronze
+      hex: '847248'
+      primary: false
+    pewter:
+      name: Pewter
+      hex: 867A6E
+      primary: false
+  styles:
+    white-on-blue:
+      name: White on Blue
+      css: 'background-color: #002664; color: #FFFFFF; '
+      default: true
 vcu-vcu-rams:
   abbr: VCU
   location: Virginia Commonwealth University
@@ -2780,3 +3133,42 @@ wvu-west-virginia-mountaineers:
       name: Gold on Blue
       css: 'background-color: #002C5B; color: #F2B111; '
       default: true
+xav-xavier-musketeers:
+  abbr: XAV
+  location: Xavier University
+  display_location: Xavier
+  name: Musketeers
+  level: college
+  colors:
+    running-man-blue:
+      name: Running Man Blue
+      hex: 0033A0
+      primary: true
+    xavier-blue:
+      name: Xavier Blue
+      hex: 0C2340
+      primary: true
+    xavier-gray:
+      name: Xavier Gray
+      hex: 9EA2A2
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #0C2340; color: #FFFFFF; text-shadow: 1px 1px 0 #9EA2A2,
+        -1px 1px 0 #9EA2A2, 1px -1px 0 #9EA2A2, -1px -1px 0 #9EA2A2; '
+      default: true
+    gray:
+      name: Gray
+      css: 'background-color: #9EA2A2; color: #0C2340; text-shadow: 1px 1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
+      default: false
+    white:
+      name: White
+      css: 'background-color: #FFFFFF; color: #0C2340; text-shadow: 1px 1px 0 #9EA2A2,
+        -1px 1px 0 #9EA2A2, 1px -1px 0 #9EA2A2, -1px -1px 0 #9EA2A2; '
+      default: false

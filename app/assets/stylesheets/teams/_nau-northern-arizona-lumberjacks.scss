@@ -1,0 +1,21 @@
+// Team: Northern Arizona Lumberjacks
+// Generated: 2026-01-14T23:41:09Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$nau-northern-arizona-lumberjacks-blue: #002454;
+$nau-northern-arizona-lumberjacks-gold: #FAC01A;
+
+// Style Classes
+.nau-northern-arizona-lumberjacks-gold-on-blue {
+  background-color: #002454; color: #FAC01A; 
+}
+
+.nau-northern-arizona-lumberjacks-blue-on-gold {
+  background-color: #FAC01A; color: #002454; 
+}
+
+// Default Style Alias
+.nau-northern-arizona-lumberjacks-default {
+  @extend .nau-northern-arizona-lumberjacks-gold-on-blue;
+}

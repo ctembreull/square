@@ -1,0 +1,19 @@
+// Team: Idaho Vandals
+// Generated: 2026-01-14T23:30:20Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ida-idaho-vandals-black: #191919;
+$ida-idaho-vandals-pride-gold: #F1B300;
+$ida-idaho-vandals-silver: #808080;
+$ida-idaho-vandals-white: #FFFFFF;
+
+// Style Classes
+.ida-idaho-vandals-gold {
+  background-color: #F1B300; color: #191919; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+// Default Style Alias
+.ida-idaho-vandals-default {
+  @extend .ida-idaho-vandals-gold;
+}

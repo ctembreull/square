@@ -1,0 +1,18 @@
+// Team: Northern Colorado Bears
+// Generated: 2026-01-14T23:37:37Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$nco-northern-colorado-bears-bears-blue: #013C65;
+$nco-northern-colorado-bears-bears-gold: #FFB71B;
+$nco-northern-colorado-bears-white: #FFFFFF;
+
+// Style Classes
+.nco-northern-colorado-bears-gold-on-blue {
+  background-color: #013C65; color: #FFB71B; 
+}
+
+// Default Style Alias
+.nco-northern-colorado-bears-default {
+  @extend .nco-northern-colorado-bears-gold-on-blue;
+}
