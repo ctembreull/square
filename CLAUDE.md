@@ -153,6 +153,7 @@ Reusable components for game display, ready to wire to models:
 - ESPN scraper improvements (WinnerCalculator service, better error handling)
 - Transaction wrapper for score processing
 - Scraper registry pattern
+- Gradient/animated text styles for team branding (e.g., Seattle Seahawks iridescent green)
 
 ## Status Endpoint Specification
 
