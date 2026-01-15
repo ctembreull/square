@@ -1,51 +1,88 @@
 <div class="row mb-3">
-  <div class="col">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><%= link_to "Events", events_path %></li>
-        <li class="breadcrumb-item active" aria-current="page"><%= @event.title %></li>
-      </ol>
-    </nav>
-  </div>
-</div>
+	<div class="col">
+		<div class="card bg-100 shadow-none border py-2">
+			<div class="row gx-0 flex-between-center">
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<div>
+						<h6 class="text-primary fs-10 mb-0">
+							<%= link_to events_path, class: "text-decoration-none text-muted mb-2 d-block" do %>
+        				<i class="bi bi-arrow-left"></i> Back to Events
+      				<% end %>
+						</h6>
 
-<div class="row mb-3">
-  <div class="col">
-    <div class="card bg-100 shadow-none border py-2">
-      <div class="row gx-0 flex-between-center">
-        <div class="col-sm-auto d-flex align-items-center">
-          <div class="ms-3">
-            <h6 class="text-primary fs-10 mb-0">Event</h6>
-            <h4 class="text-primary fw-bold mb-0">
-              <%= @event.title %>
-              <% if @event.upcoming? %>
-                <span class="badge bg-info ms-2">Upcoming</span>
-              <% elsif @event.in_progress? %>
-                <span class="badge bg-success ms-2">In Progress</span>
-              <% else %>
-                <span class="badge bg-secondary ms-2">Completed</span>
-              <% end %>
-            </h4>
-          </div>
-        </div>
-        <div class="col-md-auto p-3 d-flex gap-2">
-          <%= link_to edit_event_path(@event), class: "btn btn-outline-secondary btn-sm" do %>
+						<h4 class="text-primary fw-bold mb-0">
+							Event:
+							<span class="text-info fw-medium"><%= @event.title %></span>
+						</h4>
+					</div>
+				</div>
+				<div class="col-md-auto p-3">
+					<% if @event.active? %>
+            <%= link_to deactivate_event_path(@event),
+                data: { turbo_method: :patch, turbo_confirm: "Deactivate #{@event.title}?" },
+                class: "btn btn-outline-warning btn-sm" do %>
+              <span class="fas fa-eye-slash me-1"></span> Deactivate
+            <% end %>
+          <% else %>
+            <%= link_to activate_event_path(@event),
+                data: { turbo_method: :patch },
+                class: "btn btn-outline-success btn-sm" do %>
+              <span class="fas fa-eye me-1"></span> Activate
+            <% end %>
+          <% end %>
+
+					<%= link_to edit_event_path(@event), class: "btn btn-outline-secondary btn-sm" do %>
             <span class="fas fa-edit me-1"></span> Edit
           <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+			</div>
+			<div class="row gx-0">
+				<div class="col-sm-auto d-flex align-items-center ps-7">
+					<h6 class="text-muted fs-10 mb-0">
+						<% if @event.upcoming? %>
+							<span class="badge bg-info ms-2">Upcoming</span>
+						<% elsif @event.in_progress? %>
+							<span class="badge bg-success ms-2">In Progress</span>
+						<% else %>
+							<span class="badge bg-secondary ms-2">Completed</span>
+						<% end %>
+
+						<% if @event.active? %>
+              <span class="badge bg-success ms-2"><span class="fas fa-eye me-1"></span> Active</span>
+            <% else %>
+              <span class="badge bg-secondary ms-2"><span class="fas fa-eye-slash me-1"></span> Inactive</span>
+            <% end %>
+					</h6>
+				</div>
+				<div class="col-sm-auto d-flex align-items-center ps-7">
+					<h6 class="text-muted fs-10 mb-0">
+						Start Date: <%= @event.start_date.strftime("%B %d, %Y") %>
+					</h6>
+				</div>
+				<div class="col-sm-auto d-flex align-items-center ps-7">
+					<h6 class="text-muted fs-10 mb-0">
+						<% if @event.end_date.present? %>
+							End Date: <%= @event.end_date.strftime("%B, %d, %Y") %>
+						<% end %>
+					</h6>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
+<%# Games and Posts %>
 <div class="row g-3 mb-3">
-  <div class="col-lg-9">
+  <div class="col-lg-6">
     <%# Games Section %>
     <div class="card mb-3">
-      <div class="card-header border-bottom border-200 px-3 py-2">
+      <div class="card-header border-bottom border-200 px-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="mb-0">Games</h5>
-          <span class="badge bg-primary rounded-pill"><%= @event.games.count %></span>
+
+					<%= link_to new_game_path(event_id: @event.id), class: "btn btn-primary btn-sm" do %>
+            <span class="fas fa-plus me-1" data-fa-transform="shrink-3"></span> Create Game
+          <% end %>
         </div>
       </div>
       <div class="card-body">
@@ -62,17 +99,22 @@
         <% end %>
       </div>
     </div>
+	</div>
 
+	<div class="col-lg-6">
     <%# Posts Section %>
-    <div class="card">
-      <div class="card-header border-bottom border-200 px-3 py-2">
-        <div class="d-flex justify-content-between align-items-center">
+		<div class="card mb-3">
+			<div class="card-header border-bottom border-200 px-3">
+				<div class="d-flex justify-content-between align-items-center">
           <h5 class="mb-0">Posts</h5>
-          <span class="badge bg-secondary rounded-pill"><%= @event.posts.count %></span>
+
+					<%= link_to new_post_path, class: "btn btn-primary btn-sm" do %>
+            <span class="bi-pencil-square me-1" data-fa-transform="shrink-3"></span> Create Post
+          <% end %>
         </div>
       </div>
-      <div class="card-body">
-        <% if @event.posts.any? %>
+			<div class="card-body">
+				<% if @event.posts.any? %>
           <p class="text-muted">Posts will be listed here once the Posts feature is complete.</p>
         <% else %>
           <div class="text-center py-4">
@@ -83,78 +125,7 @@
             </p>
           </div>
         <% end %>
-      </div>
-    </div>
-  </div>
-
-  <%# Sidebar %>
-  <div class="col-lg-3">
-    <div class="card mb-3">
-      <div class="card-header py-2">
-        <h6 class="mb-0">Event Details</h6>
-      </div>
-      <div class="card-body">
-        <dl class="mb-0">
-          <dt>Start Date</dt>
-          <dd><%= @event.start_date.strftime("%B %d, %Y") %></dd>
-
-          <dt>End Date</dt>
-          <dd>
-            <% if @event.end_date.present? %>
-              <%= @event.end_date.strftime("%B %d, %Y") %>
-            <% else %>
-              <span class="text-muted">Open-ended</span>
-            <% end %>
-          </dd>
-
-          <% if @event.end_date.present? %>
-            <dt>Duration</dt>
-            <dd><%= (@event.end_date - @event.start_date).to_i + 1 %> days</dd>
-          <% elsif @event.start_date <= Date.today %>
-            <dt>Running For</dt>
-            <dd><%= (Date.today - @event.start_date).to_i + 1 %> days</dd>
-          <% end %>
-
-          <dt>Visibility</dt>
-          <dd>
-            <% if @event.active? %>
-              <span class="text-success"><span class="fas fa-eye me-1"></span> Active</span>
-            <% else %>
-              <span class="text-muted"><span class="fas fa-eye-slash me-1"></span> Inactive</span>
-            <% end %>
-          </dd>
-        </dl>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header py-2">
-        <h6 class="mb-0">Quick Actions</h6>
-      </div>
-      <div class="card-body">
-        <div class="d-grid gap-2">
-          <% if @event.in_progress? && @event.end_date.nil? %>
-            <%= link_to end_event_event_path(@event),
-                data: { turbo_method: :patch, turbo_confirm: "End #{@event.title} today?" },
-                class: "btn btn-success btn-sm" do %>
-              <span class="fas fa-flag-checkered me-1"></span> End Event Today
-            <% end %>
-          <% end %>
-          <% if @event.active? %>
-            <%= link_to deactivate_event_path(@event),
-                data: { turbo_method: :patch, turbo_confirm: "Deactivate #{@event.title}?" },
-                class: "btn btn-outline-warning btn-sm" do %>
-              <span class="fas fa-eye-slash me-1"></span> Deactivate Event
-            <% end %>
-          <% else %>
-            <%= link_to activate_event_path(@event),
-                data: { turbo_method: :patch },
-                class: "btn btn-outline-success btn-sm" do %>
-              <span class="fas fa-eye me-1"></span> Activate Event
-            <% end %>
-          <% end %>
-        </div>
-      </div>
-    </div>
+			</div>
+		</div>
   </div>
 </div>

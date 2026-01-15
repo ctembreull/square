@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event ]
+  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners ]
 
   def home
     current_event = Event.active.current.first
@@ -64,6 +64,9 @@ class EventsController < ApplicationController
   def end_event
     @event.end_event!
     redirect_to events_path, notice: "#{@event.title} has been ended."
+  end
+
+  def winners
   end
 
   private

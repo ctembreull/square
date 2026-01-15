@@ -58,6 +58,7 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - Adapt PostgreSQL virtual column syntax to SQLite3 (teams.search_index)
 - Document rake tasks more clearly: `sports:generate_seeds` (Ruby seeds.rb), `seeds:export`/`seeds:import` (YAML with colors/styles), `styles:regenerate_all` (SCSS files) - clarify when each should be used
 - **Query optimization on `leagues/show`** - page generates many queries, needs eager loading or caching review
+- Replace boring `<h1>` page headers (e.g., leagues#new) with styled hero cards (low priority, pre-launch cleanup)
 
 ## Architecture Patterns
 
@@ -134,6 +135,37 @@ Reusable components for game display, ready to wire to models:
 - UI mockup: `artifacts/Bowls_Round_2.pdf`
 - Writing guide: `artifacts/Chris's Sports Writing Style Guide v2.pdf`
 
+## Established Patterns & UX Understanding
+
+The following patterns have been validated through implementation and should be followed for consistency:
+
+### Admin UI Patterns (Falcon Theme)
+- **Index pages**: Card-based tables with active/inactive sections, action dropdowns, breadcrumbs
+- **Show pages**: Header card with title/status, main content area (left), sidebar with details/quick actions (right)
+- **Forms**: Card wrapper, horizontal labels, validation feedback, cancel/submit buttons
+- **Soft delete**: Use active/inactive flags rather than deletion to preserve data integrity for scoring history
+
+### STI Workarounds (Player/Individual/Charity/Family)
+- Explicit path helpers: `player_path(record)` not `polymorphic_path(record)`
+- Form params: `scope: :player` regardless of subclass
+- Form URLs: Explicit `url: player_path(record)` for edit forms
+- Controller: Single PlayersController handles all types via `type` param
+
+### Model Status Patterns
+- Status helper methods in models (`upcoming?`, `in_progress?`, `completed?`)
+- Scopes for filtering by status (`active`, `inactive`, `current`)
+- Manual action methods for state transitions (`end_event!`, `deactivate!`)
+
+### Navigation Patterns
+- Dynamic dropdowns populated from scopes (e.g., `Event.active.current`)
+- Home route redirects to current item or falls back to index
+- "Older..." link convention for accessing full index from dropdown
+
+### Barebones Model Strategy
+- When a feature depends on an unbuilt model, create minimal version with just associations
+- Prevents rabbit holes while unblocking dependent features
+- Document that model needs expansion when its feature is built
+
 ## Next Steps (Priority Order)
 
 1. ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
@@ -149,6 +181,12 @@ Reusable components for game display, ready to wire to models:
 
 ## Post-Release Features
 
+- **Public/Admin View Separation** (after Games feature)
+  - Same routes, different views based on user role
+  - Admin: Falcon-styled management interface
+  - Public: Fun game-focused interface using welcome widgets
+  - Admin preview mode (`?preview=true`) to see public view
+  - Plan documented at: `.claude/plans/mighty-greeting-cosmos.md`
 - Filter box for game list in post editor
 - ESPN scraper improvements (WinnerCalculator service, better error handling)
 - Transaction wrapper for score processing
@@ -178,4 +216,4 @@ Reusable components for game display, ready to wire to models:
 
 ---
 
-**Last Updated**: 2026-01-13
+**Last Updated**: 2026-01-14

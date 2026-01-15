@@ -2,19 +2,36 @@
 	<div class="col">
 		<div class="card bg-100 shadow-none border py-2">
 			<div class="row gx-0 flex-between-center">
-				<div class="col-sm-auto d-flex align-items-center">
-					<div class="ms-3">
-						<h6 class="text-primary fs-10 mb-0">Squares</h6>
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<div>
+						<h6 class="text-primary fs-10 mb-0">Welcome to </h6>
 						<h4 class="text-primary fw-bold mb-0">
-							Events
-							<span class="text-info fw-medium">Management</span>
+							Squares
+							<span class="text-info fw-medium">Event Management</span>
 						</h4>
 					</div>
 				</div>
 				<div class="col-md-auto p-3">
-					<%= link_to new_event_path, class: "btn btn-primary btn-sm" do %>
-						<span class="fas fa-plus me-1"></span> Add Event
+					<%= link_to new_event_path, class: "btn btn-primary btn-sm btn-outline" do %>
+						<span class="fas fa-plus me-1"></span> Create Event
 					<% end %>
+				</div>
+			</div>
+			<div class="row gx-0">
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<h6 class="text-muted fs-10 mb-0">
+						<!-- status badge -->
+					</h6>
+				</div>
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<h6 class="text-muted fs-10 mb-0">
+						<!-- starts/started date -->
+					</h6>
+				</div>
+				<div class="col-sm-auto d-flex align-items-center px-7">
+					<h6 class="text-info fs-10 mb-0">
+						<!-- ends/ended date -->
+					</h6>
 				</div>
 			</div>
 		</div>
