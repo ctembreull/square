@@ -1,4 +1,46 @@
 class Game < ApplicationRecord
+  DEFAULT_PERIOD_PRIZE = 25
+  DEFAULT_FINAL_PRIZE = 50
+
+  TIMEZONES = [
+    [ "Eastern", "America/New_York" ],
+    [ "Central", "America/Chicago" ],
+    [ "Mountain", "America/Denver" ],
+    [ "Arizona", "America/Phoenix" ],
+    [ "Pacific", "America/Los_Angeles" ],
+    [ "Alaska", "America/Anchorage" ],
+    [ "Hawaii", "Pacific/Honolulu" ]
+  ].freeze
+
+  GAME_PLAYERS = 100
+  SHUFFLE_TIMES = 99
+
+  DEFAULT_TIMEZONE = "America/New_York"
+
+  after_initialize :build_grid
+  attr_reader :game_map
+  attr_writer :local_date, :local_time
+
+  def local_timezone=(value)
+    @local_timezone = value
+    self.timezone = value if value.present?
+  end
+
+  before_validation :combine_datetime_fields
+
+  # Virtual attribute readers - extract from starts_at for edit forms
+  def local_date
+    @local_date || (starts_at&.in_time_zone(local_timezone || DEFAULT_TIMEZONE)&.to_date)
+  end
+
+  def local_time
+    @local_time || (starts_at&.in_time_zone(local_timezone || DEFAULT_TIMEZONE))
+  end
+
+  def local_timezone
+    @local_timezone || timezone || DEFAULT_TIMEZONE
+  end
+
   belongs_to :event
   belongs_to :league
   belongs_to :home_team, class_name: "Team"
@@ -10,4 +52,58 @@ class Game < ApplicationRecord
   validates :league, presence: true
   validates :home_team, presence: true
   validates :away_team, presence: true
+  validates :score_url, presence: true
+  validates :period_prize, presence: true, numericality: { only_integer: true }
+  validates :final_prize, presence: true, numericality: { only_integer: true }
+
+  scope :upcoming, -> { where("starts_at > ?", Time.current) }
+  scope :today, -> { where(starts_at: Time.current.beginning_of_day..Time.current.end_of_day) }
+  scope :past, -> { where("starts_at < ?", Time.current) }
+  scope :earliest_first, -> { order(starts_at: :asc) }
+  scope :latest_first, -> { order(starts_at: :desc) }
+  scope :featuring, ->(team) { where("away_team_id = ?", team).or(where("home_team_id = ?", team)) }
+
+  def build_map
+    # Assumes grid =~ "a0h0:<player_id>;<a0h1>:<player_id>..."
+    return unless @game_map.nil?
+    players = Player.all.load
+    @game_map = grid.split(";").map do |square|
+      k, v = square.split(":")
+      [ k, players.find(v) ]
+    end.to_h
+  end
+
+  def get_player_for_square(ah)
+    build_map
+    @game_map[ah]
+  end
+
+  def get_player_for_score(a: 0, h: 0)
+    get_player_for_square("a" + a.to_s + "h" + h.to_s)
+  end
+
+  # Returns starts_at in the specified timezone (defaults to Eastern)
+  def starts_at_in_zone(zone = "America/New_York")
+    return nil unless starts_at
+    starts_at.in_time_zone(zone)
+  end
+
+  private
+
+  def combine_datetime_fields
+    return if local_date.blank? || local_time.blank? || local_timezone.blank?
+
+    tz = ActiveSupport::TimeZone[local_timezone]
+    return unless tz
+
+    date = local_date.is_a?(String) ? Date.parse(local_date) : local_date
+    time = local_time.is_a?(String) ? Time.parse(local_time) : local_time
+
+    self.starts_at = tz.local(date.year, date.month, date.day, time.hour, time.min).utc
+  end
+
+  def build_grid
+    # STUB, implementation to come
+    nil unless self.grid.nil? # Don't build a new grid if we've already got one.
+  end
 end

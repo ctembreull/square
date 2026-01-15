@@ -1,0 +1,120 @@
+<%= form_with(model: game, local: true) do |form| %>
+	<% if game.errors.any? %>
+    <div class="alert alert-danger">
+      <h4 class="alert-heading"><%= pluralize(game.errors.count, "error") %> prohibited this game from being saved:</h4>
+      <ul class="mb-0">
+        <% game.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<%= form.hidden_field :event_id %>
+
+	<div class="row mb-3">
+		<div class="col-6">
+			<%= form.label :title, "Title", class: "form-label" %>
+			<%= form.text_field :title, class: "form-control form-control-sm" %>
+		</div>
+		<div class="col-2"></div>
+		<div class="col-2">
+			<%= form.label :period_prize, "Period Prize", class: "form-label" %>
+			<%= form.number_field :period_prize, class: "form-control form-control-sm", step: 25,
+					data: { game_form_target: "periodPrize", action: "change->game-form#periodPrizeChanged" } %>
+		</div>
+		<div class="col-2">
+			<%= form.label :final_prize, "Final Prize", class: "form-label" %>
+			<%= form.number_field :final_prize, class: "form-control form-control-sm", step: 25,
+					data: { game_form_target: "finalPrize", action: "change->game-form#finalPrizeChanged" } %>
+		</div>
+	</div>
+
+	<div class="row mb-3">
+		<div class="col-3">
+			<%= form.label :local_date, "Date", class: "form-label" %>
+			<%= form.date_field :local_date, class: "form-control form-control-sm" %>
+		</div>
+		<div class="col-3">
+			<%= form.label :local_time, "Time", class: "form-label" %>
+			<%= form.time_field :local_time, class: "form-control form-control-sm" %>
+		</div>
+		<div class="col-3">
+			<%= form.label :local_timezone, "Timezone", class: "form-label" %>
+			<%= form.select :local_timezone, Game::TIMEZONES,
+					{ include_blank: "Select Timezone" },
+					class: "form-control form-control-sm" %>
+		</div>
+		<div class="col-3">
+			<%= form.label :broadcast_network, "Broadcast", class: "form-label" %>
+			<%= form.text_field :broadcast_network, class: "form-control form-control-sm" %>
+		</div>
+	</div>
+
+	<div class="row mb-3">
+		<div class="col-4">
+			<%= form.label :league_id, "League", class: "form-label" %>
+			<%= form.select :league_id,
+					League.all.order(:sport, :name).map { |league| [league.name, league.id] },
+					{ include_blank: "Select League" },
+					class: "form-control form-control-sm",
+					data: { game_form_target: "league", action: "change->game-form#leagueChanged" } %>
+		</div>
+		<div class="col-5">
+			<%= form.label :away_team_id, "Away Team", class: "form-label" %>
+			<%= form.select :away_team_id, [],
+					{ include_blank: "Select League first" },
+					class: "form-control form-control-sm",
+					data: {
+						game_form_target: "awayTeam",
+						action: "change->game-form#awayTeamChanged",
+						selected_value: game.away_team_id
+					} %>
+		</div>
+		<div class="col-3">
+			<%= form.label :away_style, "Away Style", class: "form-label" %>
+			<%= form.select :away_style, [],
+					{ include_blank: "Select Team first" },
+					class: "form-control form-control-sm",
+					data: {
+						game_form_target: "awayStyle",
+						action: "change->game-form#awayStyleChanged",
+						selected_value: game.away_style
+					} %>
+		</div>
+	</div>
+
+	<div class="row mb-3">
+		<div class="col-4">
+			<%= form.label :score_url, "Score URL", class: "form-label" %>
+			<%= form.text_field :score_url, class: "form-control form-control-sm" %>
+		</div>
+		<div class="col-5">
+			<%= form.label :home_team_id, "Home Team", class: "form-label" %>
+			<%= form.select :home_team_id, [],
+					{ include_blank: "Select League first" },
+					class: "form-control form-control-sm",
+					data: {
+						game_form_target: "homeTeam",
+						action: "change->game-form#homeTeamChanged",
+						selected_value: game.home_team_id
+					} %>
+		</div>
+		<div class="col-3">
+			<%= form.label :home_style, "Home Style", class: "form-label" %>
+			<%= form.select :home_style, [],
+					{ include_blank: "Select Team first" },
+					class: "form-control form-control-sm",
+					data: {
+						game_form_target: "homeStyle",
+						action: "change->game-form#homeStyleChanged",
+						selected_value: game.home_style
+					} %>
+		</div>
+	</div>
+
+	<div class="d-flex justify-content-end gap-2">
+    <%= link_to "Cancel", game.event || events_path, class: "btn btn-secondary" %>
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

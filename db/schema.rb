@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_15_001119) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_15_200401) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -110,7 +110,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_15_001119) do
     t.bigint "away_team_id", null: false
     t.string "broadcast_network"
     t.datetime "created_at", null: false
-    t.date "date"
     t.bigint "event_id", null: false
     t.integer "final_prize", default: 0, null: false
     t.text "grid"
@@ -119,16 +118,16 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_15_001119) do
     t.bigint "league_id", null: false
     t.integer "period_prize", default: 0, null: false
     t.string "score_url"
+    t.datetime "starts_at"
     t.string "status", default: "upcoming", null: false
-    t.time "time"
-    t.string "timezone"
+    t.string "timezone", default: "America/New_York"
     t.string "title"
     t.datetime "updated_at", null: false
     t.index ["away_team_id"], name: "index_games_on_away_team_id"
-    t.index ["date"], name: "index_games_on_date"
     t.index ["event_id"], name: "index_games_on_event_id"
     t.index ["home_team_id"], name: "index_games_on_home_team_id"
     t.index ["league_id"], name: "index_games_on_league_id"
+    t.index ["starts_at"], name: "index_games_on_starts_at"
     t.index ["status"], name: "index_games_on_status"
   end
 

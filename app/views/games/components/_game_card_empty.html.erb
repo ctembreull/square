@@ -1,0 +1,56 @@
+<div class="col-md-6 col-xxl-<%= size %>">
+	<div class="card">
+		<div class="card-header py-2 mb-0">
+			<h6><%= title %></h6>
+		</div>
+		<div class="card-body pt-0">
+
+			<div class="m-0 py-2">
+				<a class="fw-bold text-800 fs-11 ps-0 h6" href="#">
+					Game Title
+					<span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span>
+				</a>
+
+				<span class="fw-bold text-800 fs-11 pe-0 float-end">
+					Date <%= "| Time" if past == false %> <!-- past games get no time info -->
+				</span>
+			</div>
+
+			<table class="m-0 border" style="width: 100%;">
+				<tr class="border-bottom">
+					<td class="p-1 h6">Away Team TBD</td>
+					<% if past || active %>
+						<td class="p-1 border-end" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1 border-end" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1 border-end" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1 bg-300" style="width: 5%"><span class="fs-10 fw-bolder">&nbsp;</span></td>
+					<% end %>
+				</tr>
+
+				<tr>
+					<td class="p-1 h6">Home Team TBD</td>
+					<% if past || active %>
+						<td class="p-1 border-end" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1 border-end" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1 border-end" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1" style="width: 5%"><span class="fs-10">&nbsp;</span></td>
+						<td class="p-1 bg-300" style="width: 5%"><span class="fs-10 fw-bolder">&nbsp;</span></td>
+					<% end %>
+				</tr>
+			</table>
+
+			<div class="m-0 py-1">
+				<span class="fw-bold text-800 fs-11 pe-0 float-end">
+					<% if past == false %>
+						TV
+					<% else %>
+						&nbsp;
+					<% end %>
+				</span>
+			</div>
+
+
+		</div>
+	</div>
+</div>

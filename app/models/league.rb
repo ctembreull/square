@@ -15,4 +15,15 @@ class League < ApplicationRecord
 
   scope :by_sport, ->(sport) { where(sport: sport) }
   scope :by_gender, ->(gender) { where(gender: gender) }
+
+  def period_term
+    case periods
+    when 2
+      "Half"
+    when 4
+      "Quarter"
+    else
+      "Period"
+    end
+  end
 end

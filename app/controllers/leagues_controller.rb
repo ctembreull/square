@@ -1,5 +1,5 @@
 class LeaguesController < ApplicationController
-  before_action :set_league, only: [:show, :edit, :update, :destroy]
+  before_action :set_league, only: [:show, :edit, :update, :destroy, :teams]
 
   def index
     @leagues = League.all.order(:sport, :name)
@@ -7,6 +7,12 @@ class LeaguesController < ApplicationController
 
   def show
     @conferences = @league.conferences.alphabetical
+  end
+
+  # GET /leagues/:id/teams.json
+  def teams
+    @teams = @league.teams.alphabetical.distinct
+    render json: @teams.map { |t| { id: t.id, display_name: t.display_name(league: @league) } }
   end
 
   def new

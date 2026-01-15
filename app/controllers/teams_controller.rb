@@ -1,5 +1,5 @@
 class TeamsController < ApplicationController
-  before_action :set_team, only: [ :show, :edit, :update, :destroy ]
+  before_action :set_team, only: [ :show, :edit, :update, :destroy, :styles ]
 
   def index
     @q = Team.ransack(params[:q])
@@ -8,6 +8,12 @@ class TeamsController < ApplicationController
   end
 
   def show
+  end
+
+  # GET /teams/:id/styles.json
+  def styles
+    @styles = @team.styles.ordered
+    render json: @styles.map { |s| { id: s.id, name: s.name, scss_class_name: s.scss_class_name, default: s.default } }
   end
 
   def new

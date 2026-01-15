@@ -10,13 +10,21 @@ Rails.application.routes.draw do
   root "events#home"
 
   # Leagues
-  resources :leagues
+  resources :leagues do
+    member do
+      get :teams
+    end
+  end
 
   # Conferences
   resources :conferences, except: [ :index ]
 
   # Teams
-  resources :teams
+  resources :teams do
+    member do
+      get :styles
+    end
+  end
 
   # Affiliations
   resources :affiliations
@@ -35,8 +43,15 @@ Rails.application.routes.draw do
     member do
       patch :deactivate
       patch :activate
+      get :winners
     end
   end
+
+  # Games
+  resources :games, except: [ :index ]
+
+  # Posts
+  resources :posts, except: [ :index ]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

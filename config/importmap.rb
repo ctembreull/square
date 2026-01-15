@@ -24,3 +24,5 @@ pin "fontawesome", to: "vendors/fontawesome.min.js"
 # List.js library and Falcon integration
 pin "list.js", to: "vendors/list.min.js"
 pin "falcon/list", to: "falcon/list.js"
+
+# Note: Choices.js is loaded via script tag in application.html.erb (not ES module compatible)

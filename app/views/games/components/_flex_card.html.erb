@@ -1,0 +1,12 @@
+<div class="card mb-3 pb-2">
+	<div class="card-header d-flex flex-between-center">
+		<<%= size ||= 'h6' %> class="mb-0">
+			<%= title ||= 'Flex Card' %>
+		</<%= size ||= 'h6' %>>
+	</div>
+	<div class="card-body py-0 d-flex align-items-center h-100">
+		<div class="flex-1">
+			<%= yield %>
+		</div>
+	</div>
+</div>
