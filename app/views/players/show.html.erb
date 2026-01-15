@@ -1,0 +1,132 @@
+<div class="row mb-3">
+  <div class="col">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to "Players", players_path %></li>
+        <li class="breadcrumb-item active" aria-current="page"><%= @player.name %></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card mb-3">
+      <div class="card-header py-2 d-flex justify-content-between align-items-center">
+        <h5 class="mb-0"><%= @player.name %></h5>
+        <span class="badge bg-<%= player_type_color(@player) %> rounded-pill"><%= @player.type %></span>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <dl>
+              <dt>Name</dt>
+              <dd><%= @player.name %></dd>
+
+              <dt>Display Name</dt>
+              <dd><%= @player.display_name.presence || "—" %></dd>
+
+              <dt>Email</dt>
+              <dd class="text-muted"><em>(hidden for privacy)</em></dd>
+            </dl>
+          </div>
+          <div class="col-md-6">
+            <dl>
+              <dt>Status</dt>
+              <dd>
+                <% if @player.active? %>
+                  <span class="badge bg-success">Active</span>
+                <% else %>
+                  <span class="badge bg-secondary">Inactive</span>
+                <% end %>
+              </dd>
+
+              <dt>Chances</dt>
+              <dd><span class="fs-4 fw-bold"><%= @player.chances || 0 %></span></dd>
+
+              <% if @player.family.present? %>
+                <dt>Family</dt>
+                <dd><%= link_to @player.family.name, player_path(@player.family), class: "fw-semi-bold" %></dd>
+              <% end %>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer bg-100">
+        <%= link_to edit_player_path(@player), class: "btn btn-primary btn-sm" do %>
+          <span class="fas fa-edit me-1"></span> Edit
+        <% end %>
+        <%= link_to players_path, class: "btn btn-secondary btn-sm" do %>
+          <span class="fas fa-arrow-left me-1"></span> Back to Players
+        <% end %>
+      </div>
+    </div>
+
+    <% if @player.is_a?(Family) && @player.members.any? %>
+      <div class="card">
+        <div class="card-header py-2">
+          <h6 class="mb-0">Family Members</h6>
+        </div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-sm fs-10 mb-0">
+              <thead class="bg-200">
+                <tr>
+                  <th class="text-900">Name</th>
+                  <th class="text-900">Display Name</th>
+                  <th class="text-900 text-center">Chances</th>
+                  <th class="text-900">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @player.members.each do |member| %>
+                  <tr>
+                    <td class="py-2"><%= link_to member.name, player_path(member), class: "fw-semi-bold" %></td>
+                    <td class="py-2 text-muted"><%= member.display_name %></td>
+                    <td class="py-2 text-center"><%= member.chances || 0 %></td>
+                    <td class="py-2">
+                      <% if member.active? %>
+                        <span class="badge bg-success">Active</span>
+                      <% else %>
+                        <span class="badge bg-secondary">Inactive</span>
+                      <% end %>
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card mb-3">
+      <div class="card-header py-2">
+        <h6 class="mb-0">Quick Stats</h6>
+      </div>
+      <div class="card-body">
+        <div class="d-flex justify-content-between mb-2">
+          <span class="text-muted">Created:</span>
+          <span><%= @player.created_at.strftime("%b %d, %Y") %></span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span class="text-muted">Updated:</span>
+          <span><%= @player.updated_at.strftime("%b %d, %Y") %></span>
+        </div>
+      </div>
+    </div>
+
+    <%# Placeholder for future win history %>
+    <div class="card">
+      <div class="card-header py-2">
+        <h6 class="mb-0">Win History</h6>
+      </div>
+      <div class="card-body text-center text-muted py-4">
+        <span class="fas fa-trophy fa-2x mb-2 d-block opacity-50"></span>
+        <small>Win history will appear here once games are played.</small>
+      </div>
+    </div>
+  </div>
+</div>

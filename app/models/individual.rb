@@ -1,0 +1,2 @@
+class Individual < Player
+end

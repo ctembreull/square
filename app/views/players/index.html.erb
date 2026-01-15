@@ -1,0 +1,451 @@
+<div class="row mb-3">
+	<div class="col">
+		<div class="card bg-100 shadow-none border py-2">
+			<div class="row gx-0 flex-between-center">
+				<div class="col-sm-auto d-flex align-items-center">
+					<div class="ms-3">
+						<h6 class="text-primary fs-10 mb-0">Squares</h6>
+						<h4 class="text-primary fw-bold mb-0">
+							Players
+							<span class="text-info fw-medium">Management</span>
+						</h4>
+					</div>
+				</div>
+				<div class="col-md-auto p-3 d-flex gap-2">
+					<button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#bulkChancesModal">
+						<span class="fas fa-sliders-h me-1"></span> Update Chances
+					</button>
+					<%= link_to new_player_path, class: "btn btn-primary btn-sm" do %>
+						<span class="fas fa-plus me-1"></span> Add Player
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= turbo_frame_tag "players_content" do %>
+<div class="row g-3 mb-3">
+	<div class="col-lg-9">
+		<%# Active Players Table %>
+		<div class="card mb-3" id="playersTable">
+			<div class="card-header border-bottom border-200 px-3 py-2">
+				<div class="d-flex justify-content-between align-items-center">
+					<h5 class="mb-0">Active Players</h5>
+					<span class="badge bg-primary rounded-pill"><%= @total_active_players %> players</span>
+				</div>
+			</div>
+			<div class="card-body p-0">
+				<div class="table-responsive scrollbar">
+					<table class="table table-sm table-striped fs-10 mb-0 overflow-hidden">
+						<thead class="bg-200">
+							<tr>
+								<th class="text-900">Type</th>
+								<th class="text-900">Name</th>
+								<th class="text-900">Display Name</th>
+								<th class="text-900 text-center"><span class="fas fa-envelope"></span></th>
+								<th class="text-900">Family</th>
+								<th class="text-900 text-center">Chances</th>
+								<th class="text-900 text-end">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% if @singles.any? || @families.any? %>
+								<%# Singles first %>
+								<% @singles.each do |player| %>
+									<tr>
+										<td class="py-2">
+											<span class="badge bg-<%= player_type_color(player) %> rounded-pill"><%= player.type %></span>
+										</td>
+										<td class="py-2">
+											<%= link_to player.name, player_path(player), class: "fw-semi-bold", target: "_top" %>
+										</td>
+										<td class="py-2 text-muted"><%= player.display_name %></td>
+										<td class="py-2 text-center">
+											<% if player.email.present? %>
+												<span class="fas fa-check text-success"></span>
+											<% end %>
+										</td>
+										<td class="py-2">
+											<span class="text-muted">-</span>
+										</td>
+										<td class="py-2 text-center">
+											<span class="fw-bold"><%= player.chances || 0 %></span>
+										</td>
+										<td class="text-end pe-2 py-2">
+											<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-player-<%= player.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+												<span class="fas fa-ellipsis-h fs-10"></span>
+											</button>
+											<div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-player-<%= player.id %>">
+												<%= link_to edit_player_path(player), class: "dropdown-item", target: "_top" do %>
+													<span class="fas fa-edit me-2"></span> Edit
+												<% end %>
+												<div class="dropdown-divider"></div>
+												<%= link_to deactivate_player_path(player),
+														data: { turbo_method: :patch, turbo_confirm: "Deactivate #{player.name}? They won't appear in future games." },
+														class: "dropdown-item text-warning" do %>
+													<span class="fas fa-user-slash me-2"></span> Deactivate
+												<% end %>
+											</div>
+										</td>
+									</tr>
+								<% end %>
+
+								<%# Families with members nested underneath %>
+								<% @families.each do |family| %>
+									<tr class="bg-200">
+										<td class="py-2">
+											<span class="badge bg-<%= player_type_color(family) %> rounded-pill"><%= family.type %></span>
+										</td>
+										<td class="py-2">
+											<%= link_to family.name, player_path(family), class: "fw-semi-bold", target: "_top" %>
+										</td>
+										<td class="py-2 text-muted"><%= family.display_name %></td>
+										<td class="py-2 text-center">
+											<% if family.email.present? %>
+												<span class="fas fa-check text-success"></span>
+											<% end %>
+										</td>
+										<td class="py-2">
+											<span class="text-muted"><%= family.members.count %> members</span>
+										</td>
+										<td class="py-2 text-center">
+											<span class="fw-bold"><%= family.chances || 0 %></span>
+										</td>
+										<td class="text-end pe-2 py-2">
+											<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-player-<%= family.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+												<span class="fas fa-ellipsis-h fs-10"></span>
+											</button>
+											<div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-player-<%= family.id %>">
+												<%= link_to edit_player_path(family), class: "dropdown-item", target: "_top" do %>
+													<span class="fas fa-edit me-2"></span> Edit
+												<% end %>
+												<div class="dropdown-divider"></div>
+												<%= link_to deactivate_player_path(family),
+														data: { turbo_method: :patch, turbo_confirm: "Deactivate #{family.name}? They won't appear in future games." },
+														class: "dropdown-item text-warning"  do %>
+													<span class="fas fa-user-slash me-2"></span> Deactivate
+												<% end %>
+											</div>
+										</td>
+									</tr>
+									<%# Family members indented %>
+									<% family.members.active.order(:name).each do |member| %>
+										<tr>
+											<td class="py-2 ps-4">
+												<span class="badge bg-<%= player_type_color(member) %> rounded-pill"><%= member.type %></span>
+											</td>
+											<td class="py-2">
+												<span class="text-muted me-1 bi-arrow-return-right"></span>
+												<%= link_to member.name, player_path(member), class: "fw-semi-bold", target: "_top" %>
+											</td>
+											<td class="py-2 text-muted"><%= member.display_name %></td>
+											<td class="py-2 text-center">
+												<% if member.email.present? %>
+													<span class="fas fa-check text-success"></span>
+												<% end %>
+											</td>
+											<td class="py-2">
+												<%= link_to family.name, player_path(family), class: "text-info", target: "_top" %>
+											</td>
+											<td class="py-2 text-center">
+												<span class="fw-bold"><%= member.chances || 0 %></span>
+											</td>
+											<td class="text-end pe-2 py-2">
+												<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-player-<%= member.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+													<span class="fas fa-ellipsis-h fs-10"></span>
+												</button>
+												<div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-player-<%= member.id %>">
+													<%= link_to edit_player_path(member), class: "dropdown-item", target: "_top" do %>
+														<span class="fas fa-edit me-2"></span> Edit
+													<% end %>
+													<div class="dropdown-divider"></div>
+													<%= link_to deactivate_player_path(member),
+															data: { turbo_method: :patch, turbo_confirm: "Deactivate #{member.name}? They won't appear in future games." },
+															class: "dropdown-item text-warning" do %>
+														<span class="fas fa-user-slash me-2"></span> Deactivate
+													<% end %>
+												</div>
+											</td>
+										</tr>
+									<% end %>
+								<% end %>
+							<% else %>
+								<tr>
+									<td colspan="7" class="text-center py-4 text-muted">No active players yet. Add your first player!</td>
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<%# Charities Table %>
+		<div class="card mb-3" id="charitiesTable">
+			<div class="card-header border-bottom border-200 px-3 py-2">
+				<div class="d-flex justify-content-between align-items-center">
+					<h5 class="mb-0">Charities</h5>
+					<span class="badge bg-success rounded-pill"><%= @charities.count %></span>
+				</div>
+			</div>
+			<div class="card-body p-0">
+				<div class="table-responsive scrollbar">
+					<table class="table table-sm table-striped fs-10 mb-0 overflow-hidden">
+						<thead class="bg-200">
+							<tr>
+								<th class="text-900">Name</th>
+								<th class="text-900">Display Name</th>
+								<th class="text-900 text-end">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% if @charities.any? || @inactive_charities.any? %>
+								<% @charities.each do |charity| %>
+									<tr>
+										<td class="py-2">
+											<%= link_to charity.name, player_path(charity), class: "fw-semi-bold", target: "_top" %>
+										</td>
+										<td class="py-2 text-muted"><%= charity.display_name %></td>
+										<td class="text-end pe-2 py-2">
+											<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-charity-<%= charity.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+												<span class="fas fa-ellipsis-h fs-10"></span>
+											</button>
+											<div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-charity-<%= charity.id %>">
+												<%= link_to edit_player_path(charity), class: "dropdown-item", target: "_top" do %>
+													<span class="fas fa-edit me-2"></span> Edit
+												<% end %>
+												<div class="dropdown-divider"></div>
+												<%= link_to deactivate_player_path(charity),
+														data: { turbo_method: :patch, turbo_confirm: "Deactivate #{charity.name}?" },
+														class: "dropdown-item text-warning" do %>
+													<span class="fas fa-user-slash me-2"></span> Deactivate
+												<% end %>
+											</div>
+										</td>
+									</tr>
+								<% end %>
+								<%# Inactive charities %>
+								<% @inactive_charities.each do |charity| %>
+									<tr class="text-muted">
+										<td class="py-2">
+											<%= link_to charity.name, player_path(charity), class: "fw-semi-bold text-muted", target: "_top" %>
+											<span class="badge bg-secondary rounded-pill ms-1">inactive</span>
+										</td>
+										<td class="py-2"><%= charity.display_name %></td>
+										<td class="text-end pe-2 py-2">
+											<%= link_to activate_player_path(charity),
+													data: { turbo_method: :patch },
+													class: "btn btn-sm btn-outline-success",
+													title: "Reactivate #{charity.name}" do %>
+												<span class="fas fa-check"></span>
+											<% end %>
+										</td>
+									</tr>
+								<% end %>
+							<% else %>
+								<tr>
+									<td colspan="3" class="text-center py-4 text-muted">No charities added yet.</td>
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<%# Inactive Players Table %>
+		<% if @inactive_players.any? %>
+			<div class="card" id="inactivePlayersTable">
+				<div class="card-header border-bottom border-200 px-3 py-2">
+					<div class="d-flex justify-content-between align-items-center">
+						<h5 class="mb-0">Inactive Players</h5>
+						<span class="badge bg-secondary rounded-pill"><%= @inactive_players.count %></span>
+					</div>
+				</div>
+				<div class="card-body p-0">
+					<div class="table-responsive scrollbar">
+						<table class="table table-sm table-striped fs-10 mb-0 overflow-hidden">
+							<thead class="bg-200">
+								<tr>
+									<th class="text-900">Type</th>
+									<th class="text-900">Name</th>
+									<th class="text-900">Display Name</th>
+									<th class="text-900 text-center"><span class="fas fa-envelope"></span></th>
+									<th class="text-900">Family</th>
+									<th class="text-900 text-center">Chances</th>
+									<th class="text-900 text-end">Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<% @inactive_players.each do |player| %>
+									<tr class="text-muted">
+										<td class="py-2">
+											<span class="badge bg-secondary rounded-pill"><%= player.type %></span>
+										</td>
+										<td class="py-2">
+											<%= link_to player.name, player_path(player), class: "fw-semi-bold text-muted" %>
+										</td>
+										<td class="py-2"><%= player.display_name %></td>
+										<td class="py-2 text-center">
+											<% if player.email.present? %>
+												<span class="fas fa-check text-success"></span>
+											<% end %>
+										</td>
+										<td class="py-2">
+											<% if player.family.present? %>
+												<%= link_to player.family.name, player_path(player.family) %>
+											<% else %>
+												-
+											<% end %>
+										</td>
+										<td class="py-2 text-center"><%= player.chances || 0 %></td>
+										<td class="text-end pe-2 py-2">
+											<%= link_to activate_player_path(player),
+													data: { turbo_method: :patch },
+													class: "btn btn-sm btn-outline-success",
+													title: "Reactivate #{player.name}" do %>
+												<span class="fas fa-user-check"></span>
+											<% end %>
+										</td>
+									</tr>
+								<% end %>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+
+	<%# Sidebar %>
+	<div class="col-lg-3">
+		<div class="card mb-3">
+			<div class="card-header py-2">
+				<h6 class="mb-0">Grid Status</h6>
+			</div>
+			<div class="card-body">
+				<div class="d-flex justify-content-between mb-2">
+					<span class="text-muted">Total Chances:</span>
+					<span class="fw-bold <%= @total_chances > 100 ? 'text-danger' : (@total_chances == 100 ? 'text-success' : 'text-warning') %>">
+						<%= @total_chances %> / 100
+					</span>
+				</div>
+				<div class="progress mb-3" style="height: 8px;">
+					<% progress_width = [@total_chances, 100].min %>
+					<% progress_color = @total_chances > 100 ? 'danger' : (@total_chances == 100 ? 'success' : 'warning') %>
+					<div class="progress-bar bg-<%= progress_color %>" role="progressbar" style="width: <%= progress_width %>%" aria-valuenow="<%= @total_chances %>" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+
+				<% if @total_chances > 100 %>
+					<div class="alert alert-danger py-2 px-3 mb-0">
+						<small><span class="fas fa-exclamation-triangle me-1"></span> Too many chances! Reduce by <%= @total_chances - 100 %>.</small>
+					</div>
+				<% elsif @total_chances < 100 %>
+					<div class="alert alert-warning py-2 px-3 mb-0">
+						<small><span class="fas fa-info-circle me-1"></span> <%= 100 - @total_chances %> squares will go to charities.</small>
+					</div>
+				<% else %>
+					<div class="alert alert-success py-2 px-3 mb-0">
+						<small><span class="fas fa-check-circle me-1"></span> Grid is fully allocated!</small>
+					</div>
+				<% end %>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header py-2">
+				<h6 class="mb-0">Player Types</h6>
+			</div>
+			<div class="card-body">
+				<ul class="list-unstyled mb-0">
+					<li class="mb-2">
+						<span class="badge bg-primary me-2">Single</span>
+						<small class="text-muted">One person, no family</small>
+					</li>
+					<li class="mb-2">
+						<span class="badge bg-info me-2">Individual</span>
+						<small class="text-muted">Part of a family group</small>
+					</li>
+					<li class="mb-2">
+						<span class="badge bg-warning me-2">Family</span>
+						<small class="text-muted">Group with members</small>
+					</li>
+					<li>
+						<span class="badge bg-success me-2">Charity</span>
+						<small class="text-muted">Fills unfilled squares</small>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<% end %>
+
+<%# Bulk Update Chances Modal %>
+<div class="modal fade" id="bulkChancesModal" tabindex="-1" aria-labelledby="bulkChancesModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content"
+			data-controller="bulk-chances"
+			data-bulk-chances-single-count-value="<%= @singles.count %>"
+			data-bulk-chances-family-count-value="<%= @families.count %>"
+			data-bulk-chances-individual-count-value="<%= @individuals_count %>"
+			data-bulk-chances-current-total-value="<%= @total_chances %>"
+			data-bulk-chances-single-current-value="<%= @singles_chances_sum %>"
+			data-bulk-chances-family-current-value="<%= @families_chances_sum %>"
+			data-bulk-chances-individual-current-value="<%= @individuals_chances_sum %>">
+			<%= form_with url: bulk_update_chances_players_path, method: :patch, local: true do |form| %>
+				<div class="modal-header">
+					<h5 class="modal-title" id="bulkChancesModalLabel">Update Chances</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="text-muted mb-3">Set chances for all active players of each type. Leave blank to keep current values.</p>
+
+					<div class="mb-3">
+						<label class="form-label">
+							<span class="badge bg-primary me-2">Single</span>
+							Chances per player
+							<span class="text-muted">(<%= @singles.count %> players)</span>
+						</label>
+						<%= form.number_field :single_chances, class: "form-control", min: 0, max: 100, placeholder: "Leave blank to skip", data: { bulk_chances_target: "singleInput", action: "input->bulk-chances#calculate" } %>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label">
+							<span class="badge bg-warning me-2">Family</span>
+							Chances per family
+							<span class="text-muted">(<%= @families.count %> families)</span>
+						</label>
+						<%= form.number_field :family_chances, class: "form-control", min: 0, max: 100, placeholder: "Leave blank to skip", data: { bulk_chances_target: "familyInput", action: "input->bulk-chances#calculate" } %>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label">
+							<span class="badge bg-info me-2">Individual</span>
+							Chances per individual
+							<span class="text-muted">(<%= @individuals_count %> individuals)</span>
+						</label>
+						<%= form.number_field :individual_chances, class: "form-control", min: 0, max: 100, placeholder: "Leave blank to skip", data: { bulk_chances_target: "individualInput", action: "input->bulk-chances#calculate" } %>
+					</div>
+
+					<div class="alert alert-secondary py-2 px-3 mb-3 d-none" data-bulk-chances-target="preview">
+						<div class="d-flex justify-content-between align-items-center">
+							<span><span class="fas fa-calculator me-1"></span> Projected Total:</span>
+							<span class="fw-bold fs-5" data-bulk-chances-target="total"><%= @total_chances %></span>
+							<span class="text-muted">/ 100</span>
+						</div>
+					</div>
+
+					<div class="alert alert-info py-2 px-3 mb-0">
+						<small><span class="fas fa-info-circle me-1"></span> Only active players will be updated. Current total: <%= @total_chances %></small>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					<%= form.submit "Update Chances", class: "btn btn-primary" %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

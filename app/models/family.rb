@@ -1,0 +1,2 @@
+class Family < Player
+end

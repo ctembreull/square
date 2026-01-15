@@ -1,0 +1,74 @@
+<div class="row mb-3">
+  <div class="col">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to "Players", players_path %></li>
+        <li class="breadcrumb-item"><%= link_to @player.name, player_path(@player) %></li>
+        <li class="breadcrumb-item active" aria-current="page">Edit</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header py-2">
+        <h5 class="mb-0">Edit <%= @player.name %></h5>
+      </div>
+      <div class="card-body">
+        <%= render "form", player: @player %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card mb-3">
+      <div class="card-header py-2">
+        <h6 class="mb-0">Player Info</h6>
+      </div>
+      <div class="card-body">
+        <dl class="mb-0">
+          <dt>Type</dt>
+          <dd><span class="badge bg-<%= player_type_color(@player) %>"><%= @player.type %></span></dd>
+
+          <dt>Status</dt>
+          <dd><%= @player.active? ? "Active" : "Inactive" %></dd>
+
+          <dt>Chances</dt>
+          <dd><%= @player.chances || 0 %></dd>
+
+          <% if @player.is_a?(Family) && @player.members.any? %>
+            <dt>Members</dt>
+            <dd>
+              <ul class="list-unstyled mb-0">
+                <% @player.members.each do |member| %>
+                  <li><%= link_to member.name, player_path(member) %></li>
+                <% end %>
+              </ul>
+            </dd>
+          <% end %>
+
+          <% if @player.family.present? %>
+            <dt>Family</dt>
+            <dd><%= link_to @player.family.name, player_path(@player.family) %></dd>
+          <% end %>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card border-danger">
+      <div class="card-header py-2 bg-danger text-white">
+        <h6 class="mb-0">Danger Zone</h6>
+      </div>
+      <div class="card-body">
+        <p class="text-muted mb-2">Permanently delete this player.</p>
+        <%= link_to player_path(@player),
+            data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{@player.name}? This cannot be undone." },
+            class: "btn btn-outline-danger btn-sm" do %>
+          <span class="fas fa-trash me-1"></span> Delete Player
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

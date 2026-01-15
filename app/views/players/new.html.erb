@@ -1,0 +1,46 @@
+<div class="row mb-3">
+  <div class="col">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to "Players", players_path %></li>
+        <li class="breadcrumb-item active" aria-current="page">New Player</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header py-2">
+        <h5 class="mb-0">Add New Player</h5>
+      </div>
+      <div class="card-body">
+        <%= render "form", player: @player %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-header py-2">
+        <h6 class="mb-0">Player Types</h6>
+      </div>
+      <div class="card-body">
+        <dl class="mb-0">
+          <dt class="text-primary">Single</dt>
+          <dd class="text-muted mb-2">A person playing on their own, not part of any family group.</dd>
+
+          <dt class="text-info">Individual</dt>
+          <dd class="text-muted mb-2">A person who is part of a family group. Select their family below.</dd>
+
+          <dt class="text-warning">Family</dt>
+          <dd class="text-muted mb-2">A family group that individuals can belong to. The family itself can have chances.</dd>
+
+          <dt class="text-success">Charity</dt>
+          <dd class="text-muted mb-0">Used to fill unfilled squares when total chances are less than 100. Not active players.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>

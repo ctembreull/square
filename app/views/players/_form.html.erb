@@ -1,0 +1,67 @@
+<%= form_with(model: player, url: player.persisted? ? player_path(player) : players_path, scope: :player, local: true) do |form| %>
+  <% if player.errors.any? %>
+    <div class="alert alert-danger">
+      <h4 class="alert-heading"><%= pluralize(player.errors.count, "error") %> prohibited this player from being saved:</h4>
+      <ul class="mb-0">
+        <% player.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :type, "Player Type", class: "form-label" %>
+      <%= form.select :type, player_type_options, { prompt: "Select type..." }, class: "form-select", required: true %>
+      <div class="form-text">Choose the type of player to add.</div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <%= form.label :active, class: "form-label d-block" %>
+      <div class="form-check form-switch mt-2">
+        <%= form.check_box :active, class: "form-check-input", role: "switch" %>
+        <%= form.label :active, "Active player (participates in games)", class: "form-check-label" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control", required: true, placeholder: "Full name" %>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <%= form.label :display_name, "Display Name (optional)", class: "form-label" %>
+      <%= form.text_field :display_name, class: "form-control", placeholder: "Nickname or short name for display" %>
+      <div class="form-text">Used on grids when space is limited.</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <%= form.label :email, class: "form-label" %>
+      <%= form.email_field :email, class: "form-control", required: true, placeholder: "email@example.com" %>
+    </div>
+
+    <div class="col-md-6 mb-3" id="chances-field">
+      <%= form.label :chances, class: "form-label" %>
+      <%= form.number_field :chances, class: "form-control", min: 0, max: 100, placeholder: "Number of grid squares" %>
+      <div class="form-text">How many squares this player gets (0-100).</div>
+    </div>
+  </div>
+
+  <div class="row" id="family-field">
+    <div class="col-md-6 mb-3">
+      <%= form.label :family_id, "Family Group", class: "form-label" %>
+      <%= form.collection_select :family_id, Family.order(:name), :id, :name, { prompt: "No family (independent)", include_blank: true }, class: "form-select" %>
+      <div class="form-text">For Individuals: select which family they belong to.</div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-end gap-2">
+    <%= link_to "Cancel", players_path, class: "btn btn-secondary" %>
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
