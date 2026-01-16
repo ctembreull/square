@@ -1,4 +1,4 @@
-<table class="scores-grid">
+<table class="scores-grid m-0">
 	<tbody>
 		<tr class="scores-header">
 			<th class="scores-team"></th>
@@ -11,7 +11,7 @@
 
 		<tr class="scores-row scores-away">
 			<th class="p-0 h6 border-bottom border-400">
-				<div class="p-2 <%= game.away_style %>"><%= game.away_team.display_name %></div>
+				<div class="p-2 <%= game.away_style %>"><%= game.away_team.display_location %></div>
 			</th>
 			<td>0</td>
 			<td>0</td>
@@ -22,7 +22,7 @@
 
 		<tr class="scores-row scores-home">
 			<th class="p-0 h6">
-				<div class="p-2 <%= game.home_style %>"><%= game.home_team.display_name %></div>
+				<div class="p-2 <%= game.home_style %>"><%= game.home_team.display_location %></div>
 			</th>
 			<td>0</td>
 			<td>0</td>

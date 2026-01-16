@@ -206,6 +206,7 @@ The following patterns have been validated through implementation and should be 
 - Transaction wrapper for score processing
 - Scraper registry pattern
 - Gradient/animated text styles for team branding (e.g., Seattle Seahawks iridescent green)
+- Text-stroke lightness slider (HSL adjustment for stroke intensity without affecting hue; helps readability at small text sizes while maintaining contrast benefits)
 
 ## Status Endpoint Specification
 
