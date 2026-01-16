@@ -9,6 +9,7 @@ class Player < ApplicationRecord
   validates :name, presence: true
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :chances, numericality: { only_integer: true, greater_than_or_equal_to: 0 }, allow_nil: true
+  validate :total_chances_within_limit, if: -> { active? && !is_a?(Charity) }
 
   # Scopes for STI types
   scope :humans, -> { where.not(type: "Charity") }
@@ -30,5 +31,16 @@ class Player < ApplicationRecord
   # Display name with fallback
   def display_name_or_name
     display_name.presence || name
+  end
+
+  private
+
+  def total_chances_within_limit
+    other_chances = Player.humans.active.where.not(id: id).sum(:chances)
+    total = other_chances + (chances || 0)
+
+    if total > 100
+      errors.add(:chances, "would bring total active chances to #{total}, which exceeds 100")
+    end
   end
 end

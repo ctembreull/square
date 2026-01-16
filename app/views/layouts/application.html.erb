@@ -72,6 +72,21 @@
 							<%= link_to "Players", players_path, class: "nav-link" %>
 						</li>
 					</ul>
+
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<%= current_timezone %>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end dropdown-caret dropdown-menu-card border-0 mt-0">
+								<div class="bg-white dark__bg-1000 rounded-3 py-2">
+									<% %w[Hawaii Alaska Pacific\ Time\ (US\ &\ Canada) Arizona Mountain\ Time\ (US\ &\ Canada) Central\ Time\ (US\ &\ Canada) Eastern\ Time\ (US\ &\ Canada)].each do |zone| %>
+										<%= button_to zone, timezone_path(timezone: zone), method: :patch, class: "dropdown-item #{'fw-bold' if zone == current_timezone}" %>
+									<% end %>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</nav>
 
 				<div class="content">

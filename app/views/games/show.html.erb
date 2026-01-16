@@ -1,0 +1,38 @@
+<div class="row mb-4 p-0">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+                <h6><%= link_to "Back to Event: #{@game.event.title}", @game.event%></h6>
+                <h4 class="mb-0"><%= @game.title %></h4>
+            </div>
+            <div class="d-flex gap-2">
+                <%= button_to swap_teams_game_path(@game), method: :patch, class: "btn btn-outline-secondary btn-sm", data: { turbo_confirm: "Swap home and away teams?" } do %>
+                    <span class="fas fa-exchange-alt me-1"></span> Swap Teams
+                <% end %>
+                <%= link_to edit_game_path(@game), class: "btn btn-outline-primary btn-sm" do %>
+                    <span class="fas fa-edit me-1"></span> Edit
+                <% end %>
+            </div>
+        </div>
+        <div class="card p-0">
+            <%= render "games/components/grid_grid", game: @game %>
+        </div>
+    </div>
+</div>
+<div class="row mb-3 p-0">
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
+                <%= render "games/components/grid_scores", game: @game %>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <%= render "games/components/grid_winners", game: @game %>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [ :show, :edit, :update, :destroy ]
+  before_action :set_game, only: [ :show, :edit, :update, :destroy, :swap_teams ]
 
 
   def show
@@ -38,6 +38,16 @@ class GamesController < ApplicationController
     else
       redirect_to @game.event, alert: @game.errors.full_messages.to_sentence
     end
+  end
+
+  def swap_teams
+    @game.update!(
+      home_team_id: @game.away_team_id,
+      away_team_id: @game.home_team_id,
+      home_style: @game.away_style,
+      away_style: @game.home_style
+    )
+    redirect_to @game, notice: "Teams swapped successfully"
   end
 
   private

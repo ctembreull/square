@@ -80,7 +80,9 @@ export default class extends Controller {
   awayTeamChanged(event) {
     const teamId = event.target.value
     const selectedOption = this.awayTeamChoices.getValue()
-    this.updateBanner(this.awayBannerTarget, selectedOption?.label || "Away Team", null)
+    // Clear old style selection and set team name - new style will be applied after loadStylesForTeam completes
+    this.awayStyleTarget.dataset.selectedValue = ""
+    this.updateBanner(this.awayBannerTarget, selectedOption?.label || "Away Team", "")
     this.loadStylesForTeam(teamId, this.awayStyleChoices, this.awayStyleTarget, this.awayBannerTarget)
   }
 
@@ -88,7 +90,9 @@ export default class extends Controller {
   homeTeamChanged(event) {
     const teamId = event.target.value
     const selectedOption = this.homeTeamChoices.getValue()
-    this.updateBanner(this.homeBannerTarget, selectedOption?.label || "Home Team", null)
+    // Clear old style selection and set team name - new style will be applied after loadStylesForTeam completes
+    this.homeStyleTarget.dataset.selectedValue = ""
+    this.updateBanner(this.homeBannerTarget, selectedOption?.label || "Home Team", "")
     this.loadStylesForTeam(teamId, this.homeStyleChoices, this.homeStyleTarget, this.homeBannerTarget)
   }
 
@@ -111,9 +115,11 @@ export default class extends Controller {
     }
     if (styleClass !== null) {
       // Remove any existing style classes (they follow pattern like "team-name-style")
+      // Preserve layout classes: m-0, p-3, p-4
+      const preserveClasses = ["m-0", "p-3", "p-4"]
       const classes = Array.from(bannerTarget.classList)
       classes.forEach(cls => {
-        if (cls !== "m-0" && cls !== "p-3") {
+        if (!preserveClasses.includes(cls)) {
           bannerTarget.classList.remove(cls)
         }
       })
@@ -158,11 +164,11 @@ export default class extends Controller {
 
       if (awayTeamId) {
         this.awayTeamChoices.setChoiceByValue(awayTeamId)
-        this.loadStylesForTeam(awayTeamId, this.awayStyleChoices, this.awayStyleTarget)
+        this.loadStylesForTeam(awayTeamId, this.awayStyleChoices, this.awayStyleTarget, this.awayBannerTarget)
       }
       if (homeTeamId) {
         this.homeTeamChoices.setChoiceByValue(homeTeamId)
-        this.loadStylesForTeam(homeTeamId, this.homeStyleChoices, this.homeStyleTarget)
+        this.loadStylesForTeam(homeTeamId, this.homeStyleChoices, this.homeStyleTarget, this.homeBannerTarget)
       }
     } catch (error) {
       console.error("Failed to load teams:", error)
@@ -174,7 +180,7 @@ export default class extends Controller {
 
     if (!teamId) {
       choicesInstance.setChoices([{ value: "", label: "Select a team first", disabled: true }], "value", "label", true)
-      this.updateBanner(bannerTarget, null, "")
+      if (bannerTarget) this.updateBanner(bannerTarget, null, "")
       return
     }
 
@@ -198,12 +204,12 @@ export default class extends Controller {
 
       choicesInstance.setChoices(choices, "value", "label", true)
 
-      // If editing, restore selection
+      // If editing, restore selection from data attribute
       const selectedValue = selectTarget.dataset.selectedValue
-      if (selectedValue) {
+      if (selectedValue && bannerTarget) {
         choicesInstance.setChoiceByValue(selectedValue)
         this.updateBanner(bannerTarget, null, selectedValue)
-      } else if (defaultStyle) {
+      } else if (defaultStyle && bannerTarget) {
         // Apply default style to banner
         this.updateBanner(bannerTarget, null, defaultStyle.scss_class_name)
       }

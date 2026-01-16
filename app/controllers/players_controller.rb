@@ -62,19 +62,25 @@ class PlayersController < ApplicationController
   end
 
   def bulk_update_chances
+    single_chances = params[:single_chances].presence&.to_i
+    family_chances = params[:family_chances].presence&.to_i
+    individual_chances = params[:individual_chances].presence&.to_i
+
+    # Calculate projected total
+    projected_total = 0
+    projected_total += Player.singles.active.count * single_chances if single_chances
+    projected_total += Player.families.active.count * family_chances if family_chances
+    projected_total += Player.individuals.active.count * individual_chances if individual_chances
+
+    if projected_total > 100
+      redirect_to players_path, alert: "Cannot update: total chances would be #{projected_total}, which exceeds 100."
+      return
+    end
+
     updated_count = 0
-
-    if params[:single_chances].present?
-      updated_count += Player.singles.active.update_all(chances: params[:single_chances].to_i)
-    end
-
-    if params[:family_chances].present?
-      updated_count += Player.families.active.update_all(chances: params[:family_chances].to_i)
-    end
-
-    if params[:individual_chances].present?
-      updated_count += Player.individuals.active.update_all(chances: params[:individual_chances].to_i)
-    end
+    updated_count += Player.singles.active.update_all(chances: single_chances) if single_chances
+    updated_count += Player.families.active.update_all(chances: family_chances) if family_chances
+    updated_count += Player.individuals.active.update_all(chances: individual_chances) if individual_chances
 
     redirect_to players_path, notice: "Updated chances for #{updated_count} players."
   end
@@ -87,6 +93,6 @@ class PlayersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def player_params
-      params.require(:player).permit(:type, :email, :name, :display_name, :active, :chances, :family_id)
+      params.require(:player).permit(:type, :email, :name, :display_name, :active, :chances, :family_id, :timezone)
     end
 end

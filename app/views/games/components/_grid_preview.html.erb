@@ -1,0 +1,47 @@
+<%# Optional locals: home_banner_target, away_banner_target, home_team, away_team, home_style, away_style %>
+<% home_team_name = local_assigns[:home_team] || "Home Team" %>
+<% away_team_name = local_assigns[:away_team] || "Away Team" %>
+<% home_style_class = local_assigns[:home_style] || "" %>
+<% away_style_class = local_assigns[:away_style] || "" %>
+
+<table class="game-grid">
+	<tbody>
+		<tr>
+			<th colspan="2"></th>
+			<th id="home-team-header" colspan="10" class="home-team-display p-0 border border-400 display-5">
+				<div id="home-team-banner" class="m-0 p-3 <%= home_style_class %>"
+					<%= "data-game-form-target=#{local_assigns[:home_banner_target]}" if local_assigns[:home_banner_target] %>
+				><%= home_team_name %></div>
+			</th>
+		</tr>
+		<tr>
+			<th colspan="2"></th>
+			<% (0..9).each do |n| %>
+				<th id="h<%= n %>" class="hnum hn<%= n %> py-2 fw-bold bg-200 border border-400"><%= n %></th>
+			<% end %>
+		</tr>
+		<tr class="game-row">
+			<th id="away-team-header" rowspan="10" class="away-team-display p-0 border border-400 display-5" style="width: 6%;">
+				<div id="away-team-banner" class="m-0 p-4 <%= away_style_class %>"
+					<%= "data-game-form-target=#{local_assigns[:away_banner_target]}" if local_assigns[:away_banner_target] %>
+				><%= away_team_name %></div>
+			</th>
+			<th id="a0" class="anum an0 py-3 px-3 fw-bold bg-200 border border-400">0</th>
+			<% (0..9).each do |h| %>
+				<td id="a0h<%= h %>" class="game-cell border fs-11">
+					<%= @game.get_player_for_square("a0h" + h.to_s).display_name %>
+				</td>
+			<% end %>
+		</tr>
+		<% (1..9).each do |a| %>
+			<tr>
+				<th id="a<%= a %>" class="anum an<%= a %> py-3 fw-bold bg-200 border border-400"><%= a %></th>
+				<% (0..9).each do |h| %>
+					<td id="a<%= a %>h<%= h %>" class="game-cell border fs-11">
+						<%= @game.get_player_for_square("a" + a.to_s + "h" + h.to_s).display_name %>
+					</td>
+				<% end %>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

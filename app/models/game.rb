@@ -15,9 +15,9 @@ class Game < ApplicationRecord
   GAME_PLAYERS = 100
   SHUFFLE_TIMES = 99
 
-  DEFAULT_TIMEZONE = "America/New_York"
+  DEFAULT_TIMEZONE = "America/Los Angeles"
 
-  after_initialize :build_grid
+  after_initialize :build_grid, if: :new_record?
   attr_reader :game_map
   attr_writer :local_date, :local_time
 
@@ -103,7 +103,38 @@ class Game < ApplicationRecord
   end
 
   def build_grid
-    # STUB, implementation to come
-    nil unless self.grid.nil? # Don't build a new grid if we've already got one.
+    return unless self.grid.nil? # Don't build a new grid if we've already got one.
+
+    chances = []
+    vectors = []
+
+    # Build chances array with active players
+    Player.active.each do |player|
+      player.chances.times { chances.push(player.id) }
+    end
+
+    # Augment chances array with (100 - length) randomly chosen charities if length < 100
+    if chances.length < GAME_PLAYERS
+      charity_slots = GAME_PLAYERS - chances.length
+      charities = Player.charities
+      charity_slots.times do
+        chances.push charities.sample.id
+      end
+    end
+
+    # Randomize the chances array. Thoroughly.
+    SHUFFLE_TIMES.times do
+      chances.shuffle!
+    end
+
+    # Serialize the chances array as aXhY:PlayerId;...
+    for a in 0..9
+      for h in 0..9
+        vectors.push "a#{a}h#{h}:#{chances.shift}"
+      end
+    end
+
+    # And set it
+    self.grid = vectors.join(";")
   end
 end

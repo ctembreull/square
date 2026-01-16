@@ -67,6 +67,13 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - Scraper hierarchy: `BaseScraper` → `EspnScraper`, `SrCfbScraper`
 - Main orchestrator: `ScoreboardService::ScoreScraper`
 
+### ESPN Scraping Constraints
+- **Obfuscated CSS classes**: ESPN uses randomized class names that change periodically to prevent scraping
+- **Position-dependent parsing**: Must rely on DOM structure (row/cell order) rather than class names
+- **Context inference**: Parser must infer what data it's looking at based on position, not labels
+- **No stable selectors**: Avoid `.class-name` selectors; use structural navigation (nth-child, table positions)
+- **Fragile by design**: ESPN is intentionally hostile to scrapers - expect maintenance burden
+
 ### Accountability
 - ActivityLog table: track deletions and admin actions
 - Require `reason` field when deleting games

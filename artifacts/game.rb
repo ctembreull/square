@@ -1,5 +1,6 @@
 class Game < ApplicationRecord
-  after_initialize :build_grid
+  after_initialize puts "woo"
+
   attr_reader :game_map
 
   GAME_PLAYERS  = 100
@@ -24,12 +25,12 @@ class Game < ApplicationRecord
 
   scope :featuring, ->(team) { where("away_team_id = ?", team).or(where("home_team_id = ?", team)) }
 
-  def build_map()
+  def build_map
     return unless @game_map.nil?
     players = Player.all.load
     @game_map = grid.split(';').map do |square|
-      k,v = square.split(':')
-      [k,players.find(v)]
+      k, v = square.split(':')
+      [ k, players.find(v) ]
     end.to_h
   end
 
@@ -52,18 +53,18 @@ class Game < ApplicationRecord
         score_hash[i].prize = period_prize
       end
     end
-    return score_hash
+    score_hash
   end
 
   def get_period_word
     case league.periods
-      when 2
+    when 2
         "Half"
-      when 4
+    when 4
         "Quarter"
-      when 9
+    when 9
         "Inning"
-      else
+    else
         "Period"
     end
   end
@@ -91,7 +92,7 @@ class Game < ApplicationRecord
 
   def title_display_string
     return title + ":" unless title.empty?
-    return ""
+    ""
   end
 
   def create_scores
@@ -138,5 +139,4 @@ class Game < ApplicationRecord
       # And set it
       self.grid = vectors.join(";")
     end
-
 end

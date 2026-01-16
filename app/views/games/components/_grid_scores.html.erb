@@ -10,7 +10,9 @@
 		</tr>
 
 		<tr class="scores-row scores-away">
-			<th class="p-1 h6 border-bottom border-400">Away Team</th>
+			<th class="p-0 h6 border-bottom border-400">
+				<div class="p-2 <%= game.away_style %>"><%= game.away_team.display_name %></div>
+			</th>
 			<td>0</td>
 			<td>0</td>
 			<td>0</td>
@@ -19,7 +21,9 @@
 		</tr>
 
 		<tr class="scores-row scores-home">
-			<th class="p-1 h6">Home Team</th>
+			<th class="p-0 h6">
+				<div class="p-2 <%= game.home_style %>"><%= game.home_team.display_name %></div>
+			</th>
 			<td>0</td>
 			<td>0</td>
 			<td>0</td>
