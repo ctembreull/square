@@ -183,11 +183,18 @@ The following patterns have been validated through implementation and should be 
 6. Fix grid generation bug (charity → charities)
 7. Implement grid validation (Player.total_active_chances)
 8. Build seed data for all D1 teams
-9. Set up ActionMailer for Fly.io
+9. Set up ActionMailer for Fly.io (Resend primary, Postmark fallback if deliverability issues)
 10. Implement post editor with game list sidebar
 
 ## Post-Release Features
 
+- **Event PDF Export** (target: football season, nice-to-have for NCAA tournament)
+  - Generate printable PDF of all games in an event
+  - Layout: Grid (full-width top), linescores (bottom-left), winners (bottom-right)
+  - Sort order: Upcoming games (earliest first) → Past games (latest first)
+  - Distribution: Download button on event page + optional attachment on Post emails
+  - Use HTML-to-PDF approach (WickedPDF or Grover) to reuse existing grid partials
+  - Serves tech-hesitant family members who prefer familiar PDF/email format
 - **Public/Admin View Separation** (after Games feature)
   - Same routes, different views based on user role
   - Admin: Falcon-styled management interface
@@ -223,4 +230,4 @@ The following patterns have been validated through implementation and should be 
 
 ---
 
-**Last Updated**: 2026-01-14
+**Last Updated**: 2026-01-15
