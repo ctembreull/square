@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [ :show, :edit, :update, :destroy, :swap_teams ]
+  before_action :set_game, only: [ :show, :edit, :update, :destroy, :swap_teams, :refresh_scores ]
 
 
   def show
@@ -48,6 +48,13 @@ class GamesController < ApplicationController
       away_style: @game.home_style
     )
     redirect_to @game, notice: "Teams swapped successfully"
+  end
+
+  def refresh_scores
+    ScoreboardService::ScoreScraper.call(@game)
+    redirect_to @game, notice: "Scores refreshed successfully"
+  rescue ScoreboardService::ScoreScraper::ScraperError => e
+    redirect_to @game, alert: "Failed to refresh scores: #{e.message}"
   end
 
   private

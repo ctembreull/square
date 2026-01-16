@@ -51,6 +51,7 @@ Rails.application.routes.draw do
   resources :games, except: [ :index ] do
     member do
       patch :swap_teams
+      patch :refresh_scores
     end
   end
 

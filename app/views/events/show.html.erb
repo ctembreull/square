@@ -84,7 +84,11 @@
 					<div class="col-auto">
 						<h5 class="m-0">Games</h5>
 					</div>
-					<div class="col-auto">button</div>
+					<div class="col-auto">
+						<%= link_to new_game_path(event_id: @event.id), class: "btn btn-primary btn-sm" do %>
+							<span class="fas fa-plus me-1"></span> New Game
+						<% end %>
+					</div>
 				</div>
 			</div>
 			<div class="card-body p-0">

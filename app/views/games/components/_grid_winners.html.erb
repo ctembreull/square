@@ -1,3 +1,5 @@
+<% scores = game.scores.by_period %>
+
 <table class="winners-grid">
 	<thead>
 		<tr>
@@ -13,13 +15,39 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% (1..game.league.periods).each do |period| %>
+		<%# Women's basketball: 4 quarters but only score at halves (periods 2 & 4) %>
+		<%# Men's basketball: 2 halves, show both %>
+		<%# Football: 4 quarters, show all %>
+		<% scoring_periods = game.league.quarters_score_as_halves ? [2, 4] : (1..game.league.periods).to_a %>
+		<% scoring_periods.each do |period| %>
+			<% score = scores.find { |s| s.period == period } %>
+			<% is_final = period == game.league.periods %>
 			<tr>
-				<th class="winners-period p-1"><%= period %><%= period.ordinal %> <%= game.league.period_term %></th>
-				<td class="winners-prize p-1">$0</d>
-				<td class="winners-team winners-away p-1">0</td>
-				<td class="winners-team winners-home p-1">0</td>
-				<th class="winners-winner p-1">Winner</th>
+				<th class="winners-period p-1">
+					<% if is_final %>
+						Final
+					<% elsif game.league.quarters_score_as_halves %>
+						Halftime
+					<% else %>
+						<%= "#{period}#{period.ordinal} #{game.league.period_term}" %>
+					<% end %>
+				</th>
+				<td class="winners-prize p-1">
+					<% if score&.prize %>
+						$<%= score.prize %>
+					<% else %>
+						$<%= is_final ? game.final_prize : game.period_prize %>
+					<% end %>
+				</td>
+				<td class="winners-team winners-away p-1"><%= score&.away_total || "-" %></td>
+				<td class="winners-team winners-home p-1"><%= score&.home_total || "-" %></td>
+				<td class="winners-winner p-1">
+					<% if score&.winner %>
+						<%= score.winner.display_name %>
+					<% else %>
+						-
+					<% end %>
+				</td>
 			</tr>
 		<% end %>
 	</tbody>

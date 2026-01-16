@@ -12,6 +12,9 @@
         <h4 class="mb-0"><%= @game.title %></h4>
     </div>
     <div class="col-4 text-end align-middle">
+        <%= button_to refresh_scores_game_path(@game), method: :patch, class: "btn btn-outline-success btn-sm me-2" do %>
+            <span class="fas fa-sync-alt me-1"></span> Refresh Scores
+        <% end %>
         <%= link_to edit_game_path(@game), class: "btn btn-outline-primary btn-sm" do %>
             <span class="fas fa-edit me-1"></span> Edit
         <% end %>

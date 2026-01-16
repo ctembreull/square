@@ -1,11 +1,15 @@
+<% scores = game.scores.by_period %>
+<% away_final = scores.last&.away_total || 0 %>
+<% home_final = scores.last&.home_total || 0 %>
+
 <table class="scores-grid m-0">
 	<tbody>
 		<tr class="scores-header">
 			<th class="scores-team"></th>
-			<th class="scores-period bg-200 py-1 fw-bold h6 fs-10">1</th>
-			<th class="scores-period bg-200 py-1 fw-bold h6 fs-10">2</th>
-			<th class="scores-period bg-200 py-1 fw-bold h6 fs-10">3</th>
-			<th class="scores-period bg-200 py-1 fw-bold h6 fs-10">4/OT</th>
+			<% (1..game.league.periods).each do |period| %>
+				<% score = scores.find { |s| s.period == period } %>
+				<th class="scores-period bg-200 py-1 fw-bold h6 fs-10"><%= score&.period_header || period %></th>
+			<% end %>
 			<th class="scores-period bg-200 py-1 fw-bold h6 fs-10">F</th>
 		</tr>
 
@@ -13,22 +17,22 @@
 			<th class="p-0 h6 border-bottom border-400">
 				<div class="p-2 <%= game.away_style %>"><%= game.away_team.display_location %></div>
 			</th>
-			<td>0</td>
-			<td>0</td>
-			<td>0</td>
-			<td>0</td>
-			<td class="bg-200 py-1 px-3 fw-bold h6 fs-10">0</td>
+			<% (1..game.league.periods).each do |period| %>
+				<% score = scores.find { |s| s.period == period } %>
+				<td><%= score&.away || "-" %></td>
+			<% end %>
+			<td class="bg-200 py-1 px-3 fw-bold h6 fs-10"><%= away_final %></td>
 		</tr>
 
 		<tr class="scores-row scores-home">
 			<th class="p-0 h6">
 				<div class="p-2 <%= game.home_style %>"><%= game.home_team.display_location %></div>
 			</th>
-			<td>0</td>
-			<td>0</td>
-			<td>0</td>
-			<td>0</td>
-			<td class="bg-200 py-1 px-3 fw-bold h6 fs-10">0</td>
+			<% (1..game.league.periods).each do |period| %>
+				<% score = scores.find { |s| s.period == period } %>
+				<td><%= score&.home || "-" %></td>
+			<% end %>
+			<td class="bg-200 py-1 px-3 fw-bold h6 fs-10"><%= home_final %></td>
 		</tr>
 	</tbody>
 </table>
