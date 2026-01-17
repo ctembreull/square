@@ -1,0 +1,22 @@
+// Team:  Titans
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ten--titans-steel-grey: #54585A;
+$ten--titans-titans-blue: #4B92DB;
+$ten--titans-titans-navy: #0C2340;
+$ten--titans-titans-silver: #8A8D8F;
+$ten--titans-titans-red: #C8102E;
+$ten--titans-wolf-grey: #A2AAAD;
+$ten--titans-white: #FFFFFF;
+
+// Style Classes
+.ten--titans-blue {
+  background-color: #4B92DB; color: #0C2340; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+// Default Style Alias
+.ten--titans-default {
+  @extend .ten--titans-blue;
+}

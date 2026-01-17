@@ -1,0 +1,20 @@
+// Team: Dallas Cowboys
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$dal-dallas-cowboys-blue: #041E42;
+$dal-dallas-cowboys-royal-blue: #003594;
+$dal-dallas-cowboys-silver-road: #869397;
+$dal-dallas-cowboys-silver-green-home: #7F9695;
+$dal-dallas-cowboys-white: #FFFFFF;
+
+// Style Classes
+.dal-dallas-cowboys-blue {
+  background-color: #041E42; color: #FFFFFF; text-shadow: 1px 1px 0 #7F9695, -1px 1px 0 #7F9695, 1px -1px 0 #7F9695, -1px -1px 0 #7F9695; 
+}
+
+// Default Style Alias
+.dal-dallas-cowboys-default {
+  @extend .dal-dallas-cowboys-blue;
+}

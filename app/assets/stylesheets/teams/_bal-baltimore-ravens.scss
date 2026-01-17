@@ -1,0 +1,20 @@
+// Team: Baltimore Ravens
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$bal-baltimore-ravens-black: #000000;
+$bal-baltimore-ravens-metallic-gold: #9E7C0C;
+$bal-baltimore-ravens-purple: #241773;
+$bal-baltimore-ravens-red: #C60C30;
+$bal-baltimore-ravens-white: #FFFFFF;
+
+// Style Classes
+.bal-baltimore-ravens-purple {
+  background-color: #241773; color: #FFFFFF; text-shadow: 1px 1px 0 #9E7C0C, -1px 1px 0 #9E7C0C, 1px -1px 0 #9E7C0C, -1px -1px 0 #9E7C0C; 
+}
+
+// Default Style Alias
+.bal-baltimore-ravens-default {
+  @extend .bal-baltimore-ravens-purple;
+}

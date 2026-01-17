@@ -1,0 +1,31 @@
+// Team: Seattle Seahawks
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$sea-seattle-seahawks-action-green: #69BE28;
+$sea-seattle-seahawks-college-navy: #002244;
+$sea-seattle-seahawks-wolf-gray: #A5ACAF;
+$sea-seattle-seahawks-blue-1976: #003087;
+$sea-seattle-seahawks-green-1976: #046A38;
+$sea-seattle-seahawks-grey: #B2B4B2;
+$sea-seattle-seahawks-silver-1976: #8A8D8F;
+$sea-seattle-seahawks-white: #FFFFFF;
+
+// Style Classes
+.sea-seattle-seahawks-blue {
+  background-color: #002244; color: #FFFFFF; text-shadow: 1px 1px 0 #69BE28, -1px 1px 0 #69BE28, 1px -1px 0 #69BE28, -1px -1px 0 #69BE28; 
+}
+
+.sea-seattle-seahawks-alternate {
+  background-color: #A5ACAF; color: #002244; text-shadow: 1px 1px 0 #69BE28, -1px 1px 0 #69BE28, 1px -1px 0 #69BE28, -1px -1px 0 #69BE28; 
+}
+
+.sea-seattle-seahawks-throwback-blue {
+  background-color: #003087; color: #FFFFFF; text-shadow: 1px 1px 0 #046A38, -1px 1px 0 #046A38, 1px -1px 0 #046A38, -1px -1px 0 #046A38; 
+}
+
+// Default Style Alias
+.sea-seattle-seahawks-default {
+  @extend .sea-seattle-seahawks-blue;
+}

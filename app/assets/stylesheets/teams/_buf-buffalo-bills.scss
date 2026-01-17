@@ -1,0 +1,18 @@
+// Team: Buffalo Bills
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$buf-buffalo-bills-blue: #00338D;
+$buf-buffalo-bills-red: #C60C30;
+$buf-buffalo-bills-white: #FFFFFF;
+
+// Style Classes
+.buf-buffalo-bills-blue {
+  background-color: #00338D; color: #FFFFFF; text-shadow: 1px 1px 0 #C60C30, -1px 1px 0 #C60C30, 1px -1px 0 #C60C30, -1px -1px 0 #C60C30; 
+}
+
+// Default Style Alias
+.buf-buffalo-bills-default {
+  @extend .buf-buffalo-bills-blue;
+}

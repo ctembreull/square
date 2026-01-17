@@ -1,0 +1,19 @@
+// Team: Indianapolis Colts
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ind-indianapolis-colts-gray: #A2AAAD;
+$ind-indianapolis-colts-speed-blue: #002C5F;
+$ind-indianapolis-colts-blue-1984: #003087;
+$ind-indianapolis-colts-white: #FFFFFF;
+
+// Style Classes
+.ind-indianapolis-colts-blue {
+  background-color: #002C5F; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.ind-indianapolis-colts-default {
+  @extend .ind-indianapolis-colts-blue;
+}

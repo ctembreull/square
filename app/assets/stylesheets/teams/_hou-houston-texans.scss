@@ -1,0 +1,22 @@
+// Team: Houston Texans
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$hou-houston-texans-battle-red: #A71930;
+$hou-houston-texans-deep-steel-blue: #03202F;
+$hou-houston-texans-white: #FFFFFF;
+
+// Style Classes
+.hou-houston-texans-blue {
+  background-color: #03202F; color: #FFFFFF; text-shadow: 1px 1px 0 #A71930, -1px 1px 0 #A71930, 1px -1px 0 #A71930, -1px -1px 0 #A71930; 
+}
+
+.hou-houston-texans-red {
+  background-color: #A71930; color: #03202F; 
+}
+
+// Default Style Alias
+.hou-houston-texans-default {
+  @extend .hou-houston-texans-blue;
+}

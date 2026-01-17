@@ -1,0 +1,20 @@
+// Team: Los Angeles Rams
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$lar-los-angeles-rams-blue: #003594;
+$lar-los-angeles-rams-dark-gold: #FF8200;
+$lar-los-angeles-rams-gold: #FFA300;
+$lar-los-angeles-rams-white: #FFFFFF;
+$lar-los-angeles-rams-yellow: #FFD100;
+
+// Style Classes
+.lar-los-angeles-rams-blue {
+  background-color: #003594; color: #FFFFFF; text-shadow: 1px 1px 0 #FFA300, -1px 1px 0 #FFA300, 1px -1px 0 #FFA300, -1px -1px 0 #FFA300; 
+}
+
+// Default Style Alias
+.lar-los-angeles-rams-default {
+  @extend .lar-los-angeles-rams-blue;
+}

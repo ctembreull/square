@@ -1,0 +1,19 @@
+// Team: Detroit Lions
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$det-detroit-lions-black: #000000;
+$det-detroit-lions-honolulu-blue: #0076B6;
+$det-detroit-lions-silver: #B0B7BC;
+$det-detroit-lions-white: #FFFFFF;
+
+// Style Classes
+.det-detroit-lions-blue {
+  background-color: #0076B6; color: #FFFFFF; text-shadow: 1px 1px 0 #B0B7BC, -1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC; 
+}
+
+// Default Style Alias
+.det-detroit-lions-default {
+  @extend .det-detroit-lions-blue;
+}

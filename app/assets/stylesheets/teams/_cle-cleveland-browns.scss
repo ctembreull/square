@@ -1,0 +1,22 @@
+// Team: Cleveland Browns
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$cle-cleveland-browns-dark-brown: #311D00;
+$cle-cleveland-browns-orange: #FF3C00;
+$cle-cleveland-browns-white: #FFFFFF;
+
+// Style Classes
+.cle-cleveland-browns-brown {
+  background-color: #311D00; color: #FFFFFF; text-shadow: 1px 1px 0 #FF3C00, -1px 1px 0 #FF3C00, 1px -1px 0 #FF3C00, -1px -1px 0 #FF3C00; 
+}
+
+.cle-cleveland-browns-orange {
+  background-color: #FF3C00; color: #311D00; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+// Default Style Alias
+.cle-cleveland-browns-default {
+  @extend .cle-cleveland-browns-brown;
+}

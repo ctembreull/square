@@ -1,0 +1,18 @@
+// Team: Chicago Bears
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$chi-chicago-bears-dark-navy: #0B162A;
+$chi-chicago-bears-orange: #C83803;
+$chi-chicago-bears-white: #FFFFFF;
+
+// Style Classes
+.chi-chicago-bears-blue {
+  background-color: #0B162A; color: #FFFFFF; text-shadow: 1px 1px 0 #C83803, -1px 1px 0 #C83803, 1px -1px 0 #C83803, -1px -1px 0 #C83803; 
+}
+
+// Default Style Alias
+.chi-chicago-bears-default {
+  @extend .chi-chicago-bears-blue;
+}

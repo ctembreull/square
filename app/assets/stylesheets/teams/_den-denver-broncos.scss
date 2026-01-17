@@ -1,0 +1,28 @@
+// Team: Denver Broncos
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$den-denver-broncos-broncos-navy: #002244;
+$den-denver-broncos-broncos-orange: #FB4F14;
+$den-denver-broncos-blue-1970: #001489;
+$den-denver-broncos-orange-1970: #F14616;
+$den-denver-broncos-white: #FFFFFF;
+
+// Style Classes
+.den-denver-broncos-orange {
+  background-color: #FB4F14; color: #FFFFFF; text-shadow: 1px 1px 0 #001489, -1px 1px 0 #001489, 1px -1px 0 #001489, -1px -1px 0 #001489; 
+}
+
+.den-denver-broncos-blue {
+  background-color: #002244; color: #FFFFFF; text-shadow: 1px 1px 0 #FB4F14, -1px 1px 0 #FB4F14, 1px -1px 0 #FB4F14, -1px -1px 0 #FB4F14; 
+}
+
+.den-denver-broncos-throwback {
+  background-color: #FB4F14; color: #FFFFFF; text-shadow: 1px 1px 0 #001489, -1px 1px 0 #001489, 1px -1px 0 #001489, -1px -1px 0 #001489; 
+}
+
+// Default Style Alias
+.den-denver-broncos-default {
+  @extend .den-denver-broncos-orange;
+}

@@ -1,0 +1,22 @@
+// Team: New Orleans Saints
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$no-new-orleans-saints-black: #101820;
+$no-new-orleans-saints-old-gold: #D3BC8D;
+$no-new-orleans-saints-white: #FFFFFF;
+
+// Style Classes
+.no-new-orleans-saints-black {
+  background-color: #101820; color: #FFFFFF; text-shadow: 1px 1px 0 #D3BC8D, -1px 1px 0 #D3BC8D, 1px -1px 0 #D3BC8D, -1px -1px 0 #D3BC8D; 
+}
+
+.no-new-orleans-saints-gold {
+  background-color: #D3BC8D; color: #101820; 
+}
+
+// Default Style Alias
+.no-new-orleans-saints-default {
+  @extend .no-new-orleans-saints-black;
+}

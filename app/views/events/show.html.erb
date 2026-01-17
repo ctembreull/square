@@ -92,10 +92,43 @@
 				</div>
 			</div>
 			<div class="card-body p-0">
-				
-				<% @event.games.earliest_first.each do |game| %>
-					<%= render "games/components/upcoming_game_list_item", game: game %>
+				<!-- top section: currently ongoing games -->
+				<% if @event.games.in_progress.any? %>
+					<div>Games in Progress</div>
+					<div class="row mb-1">
+						<div class="col">
+							<% @event.games.in_progress.earliest_first.each do |game| %>
+								<%= render "games/components/upcoming_game_list_item", game: game %>
+							<% end %>
+						</div>
+					</div>
 				<% end %>
+
+				<!-- 2nd section: upcoming games, earliest-first -->
+				<% if @event.games.upcoming.any? %>
+					<div>Upcoming Games</div>
+					<div class="row mb-1">
+						<div class="col">
+							<% @event.games.upcoming.earliest_first.each do |game| %>
+								<%= render "games/components/upcoming_game_list_item", game: game %>
+							<% end %>
+						</div>
+					</div>
+				<% end %>
+
+
+				<!-- 3rd section: completed games, latest first -->
+				<% if @event.games.completed.any? %>
+					<div>Completed Games</div>
+					<div class="row mb-1">
+						<div class="col">
+							<% @event.games.completed.latest_first.each do |game| %>
+								<%= render "games/components/upcoming_game_list_item", game: game %>
+							<% end %>
+						</div>
+					</div>
+				<% end %>
+				
 
 			</div>
 		</div>

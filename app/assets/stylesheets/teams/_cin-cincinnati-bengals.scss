@@ -1,0 +1,22 @@
+// Team: Cincinnati Bengals
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$cin-cincinnati-bengals-black: #000000;
+$cin-cincinnati-bengals-orange: #FB4F14;
+$cin-cincinnati-bengals-white: #FFFFFF;
+
+// Style Classes
+.cin-cincinnati-bengals-orange {
+  background-color: #FB4F14; color: #000000; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+.cin-cincinnati-bengals-black {
+  background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #FB4F14, -1px 1px 0 #FB4F14, 1px -1px 0 #FB4F14, -1px -1px 0 #FB4F14; 
+}
+
+// Default Style Alias
+.cin-cincinnati-bengals-default {
+  @extend .cin-cincinnati-bengals-orange;
+}

@@ -1,0 +1,19 @@
+// Team: Atlanta Falcons
+// Generated: 2026-01-17T20:25:57Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$atl-atlanta-falcons-black: #000000;
+$atl-atlanta-falcons-red: #A71930;
+$atl-atlanta-falcons-silver: #A5ACAF;
+$atl-atlanta-falcons-white: #FFFFFF;
+
+// Style Classes
+.atl-atlanta-falcons-red {
+  background-color: #A71930; color: #000000; text-shadow: 1px 1px 0 #A5ACAF, -1px 1px 0 #A5ACAF, 1px -1px 0 #A5ACAF, -1px -1px 0 #A5ACAF; 
+}
+
+// Default Style Alias
+.atl-atlanta-falcons-default {
+  @extend .atl-atlanta-falcons-red;
+}

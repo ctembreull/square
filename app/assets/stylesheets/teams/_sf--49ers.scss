@@ -1,0 +1,22 @@
+// Team:  49ers
+// Generated: 2026-01-17T20:25:31Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$sf--49ers-49ers-red: #AA0000;
+$sf--49ers-gold: #B3995D;
+$sf--49ers-white: #FFFFFF;
+
+// Style Classes
+.sf--49ers-red {
+  background-color: #AA0000; color: #B3995D; 
+}
+
+.sf--49ers-gold {
+  background-color: #B3995D; color: #AA0000; 
+}
+
+// Default Style Alias
+.sf--49ers-default {
+  @extend .sf--49ers-red;
+}
