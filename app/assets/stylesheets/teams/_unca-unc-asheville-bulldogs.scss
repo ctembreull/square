@@ -1,0 +1,17 @@
+// Team: UNC Asheville Bulldogs
+// Generated: 2026-01-16T20:12:39-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$unca-unc-asheville-bulldogs-bulldog-blue: #003DA5;
+$unca-unc-asheville-bulldogs-white: #FFFFFF;
+
+// Style Classes
+.unca-unc-asheville-bulldogs-blue {
+  background-color: #003DA5; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.unca-unc-asheville-bulldogs-default {
+  @extend .unca-unc-asheville-bulldogs-blue;
+}

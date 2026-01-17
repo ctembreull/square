@@ -1,0 +1,21 @@
+// Team: Presbyterian Blue Hose
+// Generated: 2026-01-16T20:07:18-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$pres-presbyterian-blue-hose-pc-true-blue: #0033A0;
+$pres-presbyterian-blue-hose-rail-steel-gray: #B2B4B3;
+$pres-presbyterian-blue-hose-tartan-red: #9D2235;
+$pres-presbyterian-blue-hose-claymore-gray: #F7F7F7;
+$pres-presbyterian-blue-hose-presby-black: #2B2B2B;
+$pres-presbyterian-blue-hose-presby-white: #FFFFFF;
+
+// Style Classes
+.pres-presbyterian-blue-hose-blue {
+  background-color: #0033A0; color: #FFFFFF; text-shadow: 1px 1px 0 #9D2235, -1px 1px 0 #9D2235, 1px -1px 0 #9D2235, -1px -1px 0 #9D2235; 
+}
+
+// Default Style Alias
+.pres-presbyterian-blue-hose-default {
+  @extend .pres-presbyterian-blue-hose-blue;
+}

@@ -1,0 +1,17 @@
+// Team: High Point Panthers
+// Generated: 2026-01-16T19:56:48-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$hip-high-point-panthers-purple: #330072;
+$hip-high-point-panthers-white: #FFFFFF;
+
+// Style Classes
+.hip-high-point-panthers-purple {
+  background-color: #330072; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.hip-high-point-panthers-default {
+  @extend .hip-high-point-panthers-purple;
+}

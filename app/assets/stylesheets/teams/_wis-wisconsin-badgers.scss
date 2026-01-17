@@ -1,0 +1,17 @@
+// Team: Wisconsin Badgers
+// Generated: 2026-01-16T20:35:49-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$wis-wisconsin-badgers-badger-red: #C5050C;
+$wis-wisconsin-badgers-white: #FFFFFF;
+
+// Style Classes
+.wis-wisconsin-badgers-red {
+  background-color: #C5050C; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.wis-wisconsin-badgers-default {
+  @extend .wis-wisconsin-badgers-red;
+}

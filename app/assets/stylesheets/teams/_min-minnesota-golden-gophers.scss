@@ -1,0 +1,17 @@
+// Team: Minnesota Golden Gophers
+// Generated: 2026-01-16T20:42:51-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$min-minnesota-golden-gophers-umn-gold: #FFCC33;
+$min-minnesota-golden-gophers-umn-maroon: #7A0019;
+
+// Style Classes
+.min-minnesota-golden-gophers-gold-on-maroon {
+  background-color: #7A0019; color: #FFCC33; 
+}
+
+// Default Style Alias
+.min-minnesota-golden-gophers-default {
+  @extend .min-minnesota-golden-gophers-gold-on-maroon;
+}

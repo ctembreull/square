@@ -1,0 +1,17 @@
+// Team: Michigan Wolverines
+// Generated: 2026-01-16T20:28:42-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$um-michigan-wolverines-blue: #00274C;
+$um-michigan-wolverines-maize: #FFCB05;
+
+// Style Classes
+.um-michigan-wolverines-maize-on-blue {
+  background-color: #00274C; color: #FFCB05; 
+}
+
+// Default Style Alias
+.um-michigan-wolverines-default {
+  @extend .um-michigan-wolverines-maize-on-blue;
+}

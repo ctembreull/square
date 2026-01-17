@@ -1,0 +1,19 @@
+// Team: Nebraska Cornhuskers
+// Generated: 2026-01-16T20:24:29-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$neb-nebraska-cornhuskers-cream: #F5F1E7;
+$neb-nebraska-cornhuskers-gray: #C7C8CA;
+$neb-nebraska-cornhuskers-scarlet: #D00000;
+$neb-nebraska-cornhuskers-lighter-cream: #FEFDFA;
+
+// Style Classes
+.neb-nebraska-cornhuskers-cream-on-scarlet {
+  background-color: #D00000; color: #F5F1E7; 
+}
+
+// Default Style Alias
+.neb-nebraska-cornhuskers-default {
+  @extend .neb-nebraska-cornhuskers-cream-on-scarlet;
+}

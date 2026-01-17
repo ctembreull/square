@@ -1,0 +1,17 @@
+// Team: Iowa Hawkeyes
+// Generated: 2026-01-16T20:46:35-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$iowa-iowa-hawkeyes-black: #000000;
+$iowa-iowa-hawkeyes-yellow: #FFCD00;
+
+// Style Classes
+.iowa-iowa-hawkeyes-yellow-on-black {
+  background-color: #000000; color: #FFCD00; 
+}
+
+// Default Style Alias
+.iowa-iowa-hawkeyes-default {
+  @extend .iowa-iowa-hawkeyes-yellow-on-black;
+}

@@ -1,0 +1,24 @@
+// Team: South Carolina Upstate Spartans
+// Generated: 2026-01-16T20:16:04-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$scu-south-carolina-upstate-spartans-black: #000000;
+$scu-south-carolina-upstate-spartans-upstate-green: #00833E;
+$scu-south-carolina-upstate-spartans-cool-gray: #D0D0CE;
+$scu-south-carolina-upstate-spartans-gray: #898A8D;
+$scu-south-carolina-upstate-spartans-slate-gray: #373A36;
+
+// Style Classes
+.scu-south-carolina-upstate-spartans-green {
+  background-color: #00833E; color: #D0D0CE; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
+
+.scu-south-carolina-upstate-spartans-black {
+  background-color: #000000; color: #00833E; 
+}
+
+// Default Style Alias
+.scu-south-carolina-upstate-spartans-default {
+  @extend .scu-south-carolina-upstate-spartans-green;
+}

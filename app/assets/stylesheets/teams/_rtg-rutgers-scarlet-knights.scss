@@ -1,0 +1,18 @@
+// Team: Rutgers Scarlet Knights
+// Generated: 2026-01-16T20:48:50-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$rtg-rutgers-scarlet-knights-black: #000000;
+$rtg-rutgers-scarlet-knights-rutgers-red: #CC0033;
+$rtg-rutgers-scarlet-knights-white: #FFFFFF;
+
+// Style Classes
+.rtg-rutgers-scarlet-knights-red {
+  background-color: #CC0033; color: #FFFFFF; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
+
+// Default Style Alias
+.rtg-rutgers-scarlet-knights-default {
+  @extend .rtg-rutgers-scarlet-knights-red;
+}

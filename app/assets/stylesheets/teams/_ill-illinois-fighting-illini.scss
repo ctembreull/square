@@ -1,0 +1,24 @@
+// Team: Illinois Fighting Illini
+// Generated: 2026-01-16T20:34:01-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ill-illinois-fighting-illini-illini-blue: #13294B;
+$ill-illinois-fighting-illini-illini-orange: #FF5F05;
+$ill-illinois-fighting-illini-black: #000000;
+$ill-illinois-fighting-illini-storm: #707372;
+$ill-illinois-fighting-illini-white: #FFFFFF;
+
+// Style Classes
+.ill-illinois-fighting-illini-orange-on-blue {
+  background-color: #13294B; color: #FF5F05; text-shadow: 1px 1px 0 #707372, -1px 1px 0 #707372, 1px -1px 0 #707372, -1px -1px 0 #707372; 
+}
+
+.ill-illinois-fighting-illini-blue-on-orange {
+  background-color: #FF5F05; color: #13294B; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
+
+// Default Style Alias
+.ill-illinois-fighting-illini-default {
+  @extend .ill-illinois-fighting-illini-orange-on-blue;
+}

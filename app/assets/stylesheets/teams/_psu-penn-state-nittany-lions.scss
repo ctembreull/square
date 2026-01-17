@@ -1,0 +1,19 @@
+// Team: Penn State Nittany Lions
+// Generated: 2026-01-16T20:53:36-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$psu-penn-state-nittany-lions-beaver-blue: #1E407C;
+$psu-penn-state-nittany-lions-nittany-navy: #001E44;
+$psu-penn-state-nittany-lions-white-out: #FFFFFF;
+$psu-penn-state-nittany-lions-pugh-blue: #96BEE6;
+
+// Style Classes
+.psu-penn-state-nittany-lions-navy {
+  background-color: #001E44; color: #FFFFFF; text-shadow: 1px 1px 0 #1E407C, -1px 1px 0 #1E407C, 1px -1px 0 #1E407C, -1px -1px 0 #1E407C; 
+}
+
+// Default Style Alias
+.psu-penn-state-nittany-lions-default {
+  @extend .psu-penn-state-nittany-lions-navy;
+}

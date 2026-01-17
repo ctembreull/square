@@ -1,0 +1,21 @@
+// Team: Purdue Boilermakers
+// Generated: 2026-01-16T20:27:03-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$pur-purdue-boilermakers-black: #000000;
+$pur-purdue-boilermakers-boilermaker-gold: #CFB991;
+
+// Style Classes
+.pur-purdue-boilermakers-gold-on-black {
+  background-color: #000000; color: #CFB991; 
+}
+
+.pur-purdue-boilermakers-black-on-gold {
+  background-color: #CFB991; color: #000000; 
+}
+
+// Default Style Alias
+.pur-purdue-boilermakers-default {
+  @extend .pur-purdue-boilermakers-gold-on-black;
+}

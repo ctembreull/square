@@ -55,7 +55,6 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 
 ### Pending
 - Add validation: active player chances must sum to ≤100
-- Adapt PostgreSQL virtual column syntax to SQLite3 (teams.search_index)
 - Document rake tasks more clearly: `sports:generate_seeds` (Ruby seeds.rb), `seeds:export`/`seeds:import` (YAML with colors/styles), `styles:regenerate_all` (SCSS files) - clarify when each should be used
 - **Query optimization on `leagues/show`** - page generates many queries, needs eager loading or caching review
 - Replace boring `<h1>` page headers (e.g., leagues#new) with styled hero cards (low priority, pre-launch cleanup)
@@ -178,13 +177,12 @@ The following patterns have been validated through implementation and should be 
 1. ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
 2. ✅ **Integrate Falcon SASS** - Theme fully integrated with working JavaScript
 3. ✅ **Sports Admin CRUD** - Complete CRUD for Leagues, Conferences, Teams
-4. **Status/Health Endpoint** - JSON API with database counts for smoke testing (Events, Games, Leagues, Conferences, Teams, Colors, Styles)
-5. **Deploy to Fly.io** - Configure and deploy application
-6. Fix grid generation bug (charity → charities)
+4. **Posts feature** - Last major user-facing feature; post editor with game list sidebar for composing event emails
+5. **Status/Health Endpoint** - JSON API with database counts for smoke testing (Events, Games, Leagues, Conferences, Teams, Colors, Styles)
+6. **Deploy to Fly.io** - Configure and deploy application
 7. Implement grid validation (Player.total_active_chances)
 8. Build seed data for all D1 teams
 9. Set up ActionMailer for Fly.io (Resend primary, Postmark fallback if deliverability issues)
-10. Implement post editor with game list sidebar
 
 ## Post-Release Features
 
@@ -201,7 +199,6 @@ The following patterns have been validated through implementation and should be 
   - Public: Fun game-focused interface using welcome widgets
   - Admin preview mode (`?preview=true`) to see public view
   - Plan documented at: `.claude/plans/mighty-greeting-cosmos.md`
-- Filter box for game list in post editor
 - ESPN scraper improvements (WinnerCalculator service, better error handling)
 - Transaction wrapper for score processing
 - Scraper registry pattern
@@ -231,4 +228,4 @@ The following patterns have been validated through implementation and should be 
 
 ---
 
-**Last Updated**: 2026-01-15
+**Last Updated**: 2026-01-16

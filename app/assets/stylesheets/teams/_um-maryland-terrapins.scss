@@ -1,0 +1,19 @@
+// Team: Maryland Terrapins
+// Generated: 2026-01-16T20:59:18-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$um-maryland-terrapins-black: #000000;
+$um-maryland-terrapins-maryland-gold: #FFD200;
+$um-maryland-terrapins-maryland-red: #E21833;
+$um-maryland-terrapins-white: #FFFFFF;
+
+// Style Classes
+.um-maryland-terrapins-red {
+  background-color: #E21833; color: #FFD200; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
+
+// Default Style Alias
+.um-maryland-terrapins-default {
+  @extend .um-maryland-terrapins-red;
+}

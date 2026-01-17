@@ -1,0 +1,19 @@
+// Team: USC Trojans
+// Generated: 2026-01-16T20:40:45-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$usc-usc-trojans-usc-cardinal: #990000;
+$usc-usc-trojans-usc-gold: #FFCC00;
+$usc-usc-trojans-black: #000000;
+$usc-usc-trojans-white: #FFFFFF;
+
+// Style Classes
+.usc-usc-trojans-gold-on-red {
+  background-color: #990000; color: #FFCC00; 
+}
+
+// Default Style Alias
+.usc-usc-trojans-default {
+  @extend .usc-usc-trojans-gold-on-red;
+}

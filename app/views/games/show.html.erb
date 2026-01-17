@@ -26,7 +26,7 @@
     </div>   
 </div>
 
-<%= turbo_stream_from @game, "scores" %>
+<%= turbo_stream_from @game, "scores" unless @game.completed? %>
 
 <div class="row mb-3">
     <div class="col-5">

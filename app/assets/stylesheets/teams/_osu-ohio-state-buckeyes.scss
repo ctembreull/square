@@ -1,0 +1,18 @@
+// Team: Ohio State Buckeyes
+// Generated: 2026-01-16T20:44:56-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$osu-ohio-state-buckeyes-gray: #A7B1B7;
+$osu-ohio-state-buckeyes-scarlet: #BA0C2F;
+$osu-ohio-state-buckeyes-white: #FFFFFF;
+
+// Style Classes
+.osu-ohio-state-buckeyes-white-on-red {
+  background-color: #BA0C2F; color: #FFFFFF; text-shadow: 1px 1px 0 #A7B1B7, -1px 1px 0 #A7B1B7, 1px -1px 0 #A7B1B7, -1px -1px 0 #A7B1B7; 
+}
+
+// Default Style Alias
+.osu-ohio-state-buckeyes-default {
+  @extend .osu-ohio-state-buckeyes-white-on-red;
+}

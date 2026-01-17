@@ -1,0 +1,18 @@
+// Team: Michigan State Spartans
+// Generated: 2026-01-16T20:31:03-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$msu-michigan-state-spartans-black: #000000;
+$msu-michigan-state-spartans-spartan-green: #18453B;
+$msu-michigan-state-spartans-white: #FFFFFF;
+
+// Style Classes
+.msu-michigan-state-spartans-white-on-green {
+  background-color: #18453B; color: #FFFFFF; 
+}
+
+// Default Style Alias
+.msu-michigan-state-spartans-default {
+  @extend .msu-michigan-state-spartans-white-on-green;
+}

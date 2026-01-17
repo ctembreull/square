@@ -1,0 +1,17 @@
+// Team: Winthrop Eagles
+// Generated: 2026-01-16T19:54:36-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$win-winthrop-eagles-garnet: #660000;
+$win-winthrop-eagles-gold: #F0B323;
+
+// Style Classes
+.win-winthrop-eagles-gold-on-garnet {
+  background-color: #660000; color: #F0B323; 
+}
+
+// Default Style Alias
+.win-winthrop-eagles-default {
+  @extend .win-winthrop-eagles-gold-on-garnet;
+}

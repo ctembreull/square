@@ -1,0 +1,18 @@
+// Team: Oregon Ducks
+// Generated: 2026-01-16T20:50:55-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ore-oregon-ducks-uo-green: #007030;
+$ore-oregon-ducks-uo-yellow: #FEE11A;
+$ore-oregon-ducks-white: #FFFFFF;
+
+// Style Classes
+.ore-oregon-ducks-green {
+  background-color: #007030; color: #FEE11A; 
+}
+
+// Default Style Alias
+.ore-oregon-ducks-default {
+  @extend .ore-oregon-ducks-green;
+}
