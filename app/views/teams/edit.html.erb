@@ -1,11 +1,41 @@
-<div class="mt-4">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h1>Edit Team</h1>
-  </div>
+<div class="row mb-3">
+	<div class="col-12">
+		<div class="card bg-100 shadow-none border mb-0">
+			<div class="card-body p-0">
+				<div class="row gx-0 p-2 pb-0 mb-0 flex-between-center" id="header-top">
+					<div class="col-auto">
+						<div>
+							<h6 class="fs-10 mb-0">
+								<%= link_to teams_path, class: "text-decoration-none text-muted mb-2 d-block" do %>
+									<i class="bi bi-arrow-left"></i> Back to Teams
+								<% end %>
+							</h6>
+							<h4 class="text-primary fw-bold mb-0">
+								Edit Team:
+								<span class="text-info fw-medium"><%= @team.display_name %></span>
+							</h4>
+						</div>
+					</div>
+					<div class="col-auto">
+					</div>
+				</div>
+				<div class="row gx-0 p-2 pt-0" id="header-info">
+				</div>
+				<% if false %>
+					<div class="row gx-0 p-2 bg-700 text-200" id="header-toolbar">
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
 
-  <div class="card">
-    <div class="card-body">
-      <%= render "form", team: @team %>
-    </div>
-  </div>
+<div class="row mb-3">
+	<div class="col">
+		<div class="card">
+			<div class="card-body">
+				<%= render "form", team: @team %>
+			</div>
+		</div>
+	</div>
 </div>
