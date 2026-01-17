@@ -54,10 +54,7 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - ✅ Replaced List.js with Ransack + Pagy for teams table (server-side search/sort)
 
 ### Pending
-- Add validation: active player chances must sum to ≤100
-- Document rake tasks more clearly: `sports:generate_seeds` (Ruby seeds.rb), `seeds:export`/`seeds:import` (YAML with colors/styles), `styles:regenerate_all` (SCSS files) - clarify when each should be used
-- **Query optimization on `leagues/show`** - page generates many queries, needs eager loading or caching review
-- Replace boring `<h1>` page headers (e.g., leagues#new) with styled hero cards (low priority, pre-launch cleanup)
+- (See milestone tables for tracked work items)
 
 ## Architecture Patterns
 
@@ -172,38 +169,63 @@ The following patterns have been validated through implementation and should be 
 - Prevents rabbit holes while unblocking dependent features
 - Document that model needs expansion when its feature is built
 
-## Next Steps (Priority Order)
+## Completed
 
-1. ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
-2. ✅ **Integrate Falcon SASS** - Theme fully integrated with working JavaScript
-3. ✅ **Sports Admin CRUD** - Complete CRUD for Leagues, Conferences, Teams
-4. **Posts feature** - Last major user-facing feature; post editor with game list sidebar for composing event emails
-5. **Status/Health Endpoint** - JSON API with database counts for smoke testing (Events, Games, Leagues, Conferences, Teams, Colors, Styles)
-6. **Deploy to Fly.io** - Configure and deploy application
-7. Implement grid validation (Player.total_active_chances)
-8. Build seed data for all D1 teams
-9. Set up ActionMailer for Fly.io (Resend primary, Postmark fallback if deliverability issues)
+- ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
+- ✅ **Integrate Falcon SASS** - Theme fully integrated with working JavaScript
+- ✅ **Sports Admin CRUD** - Complete CRUD for Leagues, Conferences, Teams
 
-## Post-Release Features
+## Milestone: Testing Deployment - March 15, 2026
 
-- **Event PDF Export** (target: football season, nice-to-have for NCAA tournament)
-  - Generate printable PDF of all games in an event
-  - Layout: Grid (full-width top), linescores (bottom-left), winners (bottom-right)
-  - Sort order: Upcoming games (earliest first) → Past games (latest first)
-  - Distribution: Download button on event page + optional attachment on Post emails
-  - Use HTML-to-PDF approach (WickedPDF or Grover) to reuse existing grid partials
-  - Serves tech-hesitant family members who prefer familiar PDF/email format
-- **Public/Admin View Separation** (after Games feature)
-  - Same routes, different views based on user role
-  - Admin: Falcon-styled management interface
-  - Public: Fun game-focused interface using welcome widgets
-  - Admin preview mode (`?preview=true`) to see public view
-  - Plan documented at: `.claude/plans/mighty-greeting-cosmos.md`
-- ESPN scraper improvements (WinnerCalculator service, better error handling)
-- Transaction wrapper for score processing
-- Scraper registry pattern
-- Gradient/animated text styles for team branding (e.g., Seattle Seahawks iridescent green)
-- Text-stroke lightness slider (HSL adjustment for stroke intensity without affecting hue; helps readability at small text sizes while maintaining contrast benefits)
+Target: NCAA Tournament testing on Fly.io
+
+| Item | Notes |
+|------|-------|
+| Status/Health Endpoint | JSON API for smoke testing after deploy |
+| Deploy to Fly.io | Infrastructure setup and configuration |
+| Set up ActionMailer | Email delivery via Resend |
+| Build seed data for all D1 teams | ~350 teams ready for any matchup |
+| Grid validation (Player.total_active_chances) | Prevent bad game creation |
+| Query optimization on leagues/show | Performance fix (eager loading/caching) |
+| Active player chances validation | Sum must be ≤100 |
+| **Posts feature** | Event emails with game list sidebar (resilience: manual email fallback) |
+| **Event PDF Export** | Printable grids for family (see spec below) |
+| **Full Dockerization** | Ensure app runs locally with production data as fallback |
+| **Grid export button (admin)** | 10x10 player names in TSV format → clipboard for Apple Numbers |
+| **Scores export button (admin)** | Period scores in TSV format → clipboard for Apple Numbers |
+| **Manual score input modal (admin)** | Direct score entry/creation when ESPN or fallback scrapers fail |
+| **WinnerCalculator service** | Determine winners from scraped scores |
+| **Public/Admin View Separation** | Fun public UI vs Falcon admin (plan: `.claude/plans/mighty-greeting-cosmos.md`) |
+
+## Milestone: Full 1.0 Release - August 15, 2026
+
+Target: Ready for football season
+
+| Item | Notes |
+|------|-------|
+| ESPN scraper improvements | Better error handling |
+| Transaction wrapper for score processing | Data integrity |
+| Scraper registry pattern | Cleaner architecture |
+| Document rake tasks | Clarify generate_seeds vs export/import vs regenerate_all |
+| Replace h1 headers with hero cards | Visual polish |
+| Gradient/animated text styles | Team branding (e.g., Seahawks iridescent green) |
+| Text-stroke lightness slider | HSL adjustment for readability tuning |
+
+### Event PDF Export Spec
+
+- Generate printable PDF of all games in an event
+- Layout: Grid (full-width top), linescores (bottom-left), winners (bottom-right)
+- Sort order: Upcoming games (earliest first) → Past games (latest first)
+- Distribution: Download button on event page + optional attachment on Post emails
+- Use HTML-to-PDF approach (WickedPDF or Grover) to reuse existing grid partials
+- Serves tech-hesitant family members who prefer familiar PDF/email format
+
+### Public/Admin View Separation Spec
+
+- Same routes, different views based on user role
+- Admin: Falcon-styled management interface
+- Public: Fun game-focused interface using welcome widgets
+- Admin preview mode (`?preview=true`) to see public view
 
 ## Status Endpoint Specification
 
@@ -226,6 +248,12 @@ The following patterns have been validated through implementation and should be 
 
 **Implementation**: StatusController with single JSON action, no authentication required
 
+## Post-1.0 / Future
+
+| Item | Notes |
+|------|-------|
+| **Fallback platform plan** | Alternative hosting strategy for outage resilience (multi-cloud, static export) |
+
 ---
 
-**Last Updated**: 2026-01-16
+**Last Updated**: 2026-01-17
