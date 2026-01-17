@@ -38,7 +38,7 @@
 		</div>
 		<div class="col-3">
 			<%= form.label :local_time, "Time", class: "form-label" %>
-			<%= form.time_field :local_time, class: "form-control form-control-sm" %>
+			<%= form.time_field :local_time, class: "form-control form-control-sm", step: 60 %>
 		</div>
 		<div class="col-3">
 			<%= form.label :local_timezone, "Timezone", class: "form-label" %>

@@ -7,7 +7,10 @@ module ScoreboardService
     end
 
     def call
-      process_score(scrape_score)
+      linescore = scrape_score
+      process_score(linescore)
+      @game.broadcast_scores
+      linescore[:final]
     end
 
     def test
@@ -27,7 +30,8 @@ module ScoreboardService
       {
         away: process_overtime(raw_linescore[:away]),
         home: process_overtime(raw_linescore[:home]),
-        overtime: raw_linescore[:home].length > @periods
+        overtime: raw_linescore[:home].length > @periods,
+        final: raw_linescore[:final] || false
       }
     end
 
@@ -56,6 +60,9 @@ module ScoreboardService
     end
 
     def process_score(linescore)
+      # Skip if no real scores yet (ESPN shows all zeros before game starts)
+      return if linescore[:away].all?(&:zero?) && linescore[:home].all?(&:zero?)
+
       progressive_score = { away: 0, home: 0 }
 
       (0..(@periods - 1)).each do |i|

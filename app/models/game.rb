@@ -1,6 +1,9 @@
 class Game < ApplicationRecord
+  include ActionView::RecordIdentifier
+
   DEFAULT_PERIOD_PRIZE = 25
   DEFAULT_FINAL_PRIZE = 50
+  STATUSES = %w[upcoming in_progress completed].freeze
 
   TIMEZONES = [
     [ "Eastern", "America/New_York" ],
@@ -18,6 +21,7 @@ class Game < ApplicationRecord
   DEFAULT_TIMEZONE = "America/Los Angeles"
 
   after_initialize :build_grid, if: :new_record?
+  after_save :schedule_score_refresh, if: :should_schedule_refresh?
   attr_reader :game_map
   attr_writer :local_date, :local_time
 
@@ -34,7 +38,10 @@ class Game < ApplicationRecord
   end
 
   def local_time
-    @local_time || (starts_at&.in_time_zone(local_timezone || DEFAULT_TIMEZONE))
+    return @local_time if @local_time
+    return nil unless starts_at
+
+    starts_at.in_time_zone(local_timezone || DEFAULT_TIMEZONE).strftime("%H:%M")
   end
 
   def local_timezone
@@ -62,6 +69,8 @@ class Game < ApplicationRecord
   scope :earliest_first, -> { order(starts_at: :asc) }
   scope :latest_first, -> { order(starts_at: :desc) }
   scope :featuring, ->(team) { where("away_team_id = ?", team).or(where("home_team_id = ?", team)) }
+  scope :in_progress, -> { where(status: "in_progress") }
+  scope :completed, -> { where(status: "completed") }
 
   def build_map
     # Assumes grid =~ "a0h0:<player_id>;<a0h1>:<player_id>..."
@@ -86,6 +95,44 @@ class Game < ApplicationRecord
   def starts_at_in_zone(zone = "America/New_York")
     return nil unless starts_at
     starts_at.in_time_zone(zone)
+  end
+
+  # Status helpers
+  def upcoming?
+    status == "upcoming"
+  end
+
+  def in_progress?
+    status == "in_progress"
+  end
+
+  def completed?
+    status == "completed"
+  end
+
+  def start!
+    update!(status: "in_progress")
+  end
+
+  def complete!
+    update!(status: "completed")
+  end
+
+  # Broadcast score updates to connected clients via Turbo Streams
+  def broadcast_scores
+    reload # Ensure we have fresh scores association
+    Turbo::StreamsChannel.broadcast_update_to(
+      self, "scores",
+      target: dom_id(self, :scores),
+      partial: "games/components/grid_scores",
+      locals: { game: self }
+    )
+    Turbo::StreamsChannel.broadcast_update_to(
+      self, "scores",
+      target: dom_id(self, :winners),
+      partial: "games/components/grid_winners",
+      locals: { game: self }
+    )
   end
 
   private
@@ -136,5 +183,22 @@ class Game < ApplicationRecord
 
     # And set it
     self.grid = vectors.join(";")
+  end
+
+  def should_schedule_refresh?
+    saved_change_to_starts_at? && starts_at.present? && starts_at > Time.current && upcoming?
+  end
+
+  def schedule_score_refresh
+    cancel_pending_refresh_jobs
+    RefreshGameScoresJob.set(wait_until: starts_at).perform_later(id)
+  end
+
+  def cancel_pending_refresh_jobs
+    # Find and cancel any existing scheduled RefreshGameScoresJob for this game
+    SolidQueue::Job.where(class_name: "RefreshGameScoresJob")
+                   .where("arguments LIKE ?", "%\"arguments\":[#{id}]%")
+                   .where(finished_at: nil)
+                   .find_each(&:destroy)
   end
 end

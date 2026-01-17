@@ -51,7 +51,8 @@ class GamesController < ApplicationController
   end
 
   def refresh_scores
-    ScoreboardService::ScoreScraper.call(@game)
+    is_final = ScoreboardService::ScoreScraper.call(@game)
+    @game.complete! if is_final
     redirect_to @game, notice: "Scores refreshed successfully"
   rescue ScoreboardService::ScoreScraper::ScraperError => e
     redirect_to @game, alert: "Failed to refresh scores: #{e.message}"

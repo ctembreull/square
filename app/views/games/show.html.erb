@@ -12,9 +12,6 @@
         <h4 class="mb-0"><%= @game.title %></h4>
     </div>
     <div class="col-4 text-end align-middle">
-        <%= button_to refresh_scores_game_path(@game), method: :patch, class: "btn btn-outline-success btn-sm me-2" do %>
-            <span class="fas fa-sync-alt me-1"></span> Refresh Scores
-        <% end %>
         <%= link_to edit_game_path(@game), class: "btn btn-outline-primary btn-sm" do %>
             <span class="fas fa-edit me-1"></span> Edit
         <% end %>
@@ -29,11 +26,23 @@
     </div>   
 </div>
 
+<%= turbo_stream_from @game, "scores" %>
+
 <div class="row mb-3">
     <div class="col-5">
         <div class="card">
             <div class="card-body p-2">
-                <%= render "games/components/grid_scores", game: @game %>
+                <div id="<%= dom_id(@game, :scores) %>">
+                    <%= render "games/components/grid_scores", game: @game %>
+                </div>
+                <div class="row mt-3">
+                    <div class="col text-end">
+                        <%= button_to refresh_scores_game_path(@game), method: :patch, class: "btn btn-outline-success btn-sm me-2" do %>
+                            <span class="fas fa-sync-alt me-1"></span> Refresh Scores
+                        <% end %>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -41,7 +50,9 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body p-2">
-                <%= render "games/components/grid_winners", game: @game %>
+                <div id="<%= dom_id(@game, :winners) %>">
+                    <%= render "games/components/grid_winners", game: @game %>
+                </div>
             </div>
         </div>
     </div>
