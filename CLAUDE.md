@@ -210,6 +210,7 @@ Target: Ready for football season
 | Replace h1 headers with hero cards | Visual polish |
 | Gradient/animated text styles | Team branding (e.g., Seahawks iridescent green) |
 | Text-stroke lightness slider | HSL adjustment for readability tuning |
+| **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
 
 ### Event PDF Export Spec
 
