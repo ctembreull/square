@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # Events
   resources :events do
     member do
+      get :display
       patch :activate
       patch :deactivate
       patch :end_event

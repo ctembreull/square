@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners ]
+  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display ]
 
   def home
     current_event = Event.active.current.first
@@ -16,6 +16,9 @@ class EventsController < ApplicationController
   end
 
   def show
+  end
+
+  def display
   end
 
   def new

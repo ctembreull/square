@@ -38,8 +38,8 @@
 	<% @conferences.each do |conference| %>
 		<div class="col col-4">
 			<div class="card mb-4">
-				<div class="card-header p-1 bg-body-tertiary d-flex flex-between-center">
-					<h6><%= link_to conference.display_name, conference, class: "text-muted" %></h6>
+				<div class="card-header p-1 bg-body-tertiary d-flex flex-between-center py-1">
+					<h6 class="mt-1"><%= conference.display_name %></h6>
 					<div class="dropdown font-sans-serif btn-reveal-trigger">
 							<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-conference-options" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
 								<span class="fas fa-ellipsis-h fs-11">&nbsp;</span>
