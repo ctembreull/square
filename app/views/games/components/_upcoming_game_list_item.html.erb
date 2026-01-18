@@ -20,11 +20,17 @@
 			<table class="m-0">
 				<tr>
 					<td class="text-center p-0" class="p-0" style="width: 50%;">
-						<div class="h6 p-1 m-0 <%= game.away_style %>"><%= game.away_team.display_location %></div>
+						<div class="h6 p-1 m-0 <%= game.away_style %>">
+							<%= link_to game.away_team.display_location, game.away_team, class: "text-decoration-none #{game.away_style}" %>
+						</div>
 					</td>
-					<td class="text-center bg-300 fw-bold fs-9 px-1">vs.</td>
+					<td class="text-center bg-300 fw-bold fs-10 px-1">
+						<%= link_to "vs", game, class: "fw-semi-bold text-700 text-decoration-none" %>
+					</td>
 					<td class="text-center" class="p-0" style="width: 50%;">
-						<div class="h6 p-1 m-0 <%= game.home_style %>"><%= game.home_team.display_location %></div>
+						<div class="h6 p-1 m-0 <%= game.home_style %>">
+							<%= link_to game.home_team.display_location, game.home_team, class: "text-decoration-none #{game.home_style}" %>
+						</div>
 					</td>
 				</tr>
 			</table>

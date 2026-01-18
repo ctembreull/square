@@ -1,22 +1,79 @@
 
-<div class="row my-4">
-    <div class="col-4 text-left align-middle">
-        <h6>
-            <%= link_to @game.event, class: "btn btn-secondary btn-sm" do%>
-                <span class="fas fa-chevron-left ms-1"></span>
-                More Games                
-            <% end %>
-        </h6>
-    </div>
-    <div class="col-4 text-center">
-        <h4 class="mb-0"><%= @game.title %></h4>
-    </div>
-    <div class="col-4 text-end align-middle">
-        <%= link_to edit_game_path(@game), class: "btn btn-outline-primary btn-sm" do %>
-            <span class="fas fa-edit me-1"></span> Edit
-        <% end %>
-    </div>
+<div class="row mb-3">
+	<div class="col-12">
+		<div class="card bg-100 shadow-none border mb-0">
+			<div class="card-body p-0">
+				<div class="row gx-0 p-3 pb-0 mb-2" id="header-top">
+					<div class="col-2 text-start pt-2">
+						<h6>
+							<%= link_to @game.event, class: "btn btn-secondary btn-sm" do%>
+								<span class="fas fa-chevron-left ms-1"></span>
+								More Games                
+							<% end %>
+						</h6>
+					</div>
+					<div class="col-8 text-center">
+						<h6 class="text-muted fs-10"><%= @game.league.name %></h6>
+						<h4 class="text-primary fw-bold mb-0">
+							Game:
+							<span class="text-info fw-medium"><%= @game.title %></span>
+						</h4>
+					</div>
+					<div class="col-2 text-end pt-2 align-middle">
+						<%= link_to edit_game_path(@game), class: "btn btn-outline-secondary btn-sm", target: :blank do %>
+								<span class="fas fa-edit me-1"></span> Edit
+						<% end %>
+					</div>
+				</div>
+				<div class="row gx-0 p-2 pt-1" id="header-info">
+					<div class="col-4 text-start pt-1">
+						<h6 class="my-0 text-primary fw-semi-bold">
+							<%= link_to "Box Score", @game.score_url %>
+						</h6>
+					</div>
+					<div class="col-4 text-center pt-1">
+						<% if @game.status == "upcoming" %>
+							<h6 class="my-0 text-primary fw-semi-bold">Upcoming</h6>
+						<% elsif @game.status == "completed" %>
+							<h6 class="my-0 text-muted">Completed</h6>
+						<% else %>
+							<h6 class="my-0 text-success fw-semi-bold">
+								In Progress
+								<span class="text-600">| <%= @game.broadcast_network %></span>	
+							</h6>
+						<% end %>
+					</div>
+					<div class="col-4 text-end pt-1">
+						<% if @game.status == "upcoming" %>
+							<h6 class="my-0">
+								<%= @game.starts_at.in_time_zone(current_timezone).strftime("%Y/%m/%d %l:%M %p") %>
+								<span class="text-600"><%= @game.broadcast_network %></span>
+							</h6>
+						<% elsif @game.status == "completed" %>
+							<h6 class="my-0">
+								<%= @game.starts_at.in_time_zone(current_timezone).strftime("%Y/%m/%d") %>
+							</h6>
+						<% else %>
+							<h6 class="my-0 text-600" id="live-game-message">
+								<span class="text-warning">Live: </span>Scores will auto-refresh every 5 minutes
+							</h6>
+						<% end %>
+					</div>
+				</div>
+				<% if false %>
+					<div class="row gx-0 p-2 bg-700 text-200" id="header-toolbar">
+						<div class="col-4 text-200 text-start"><!-- left admin controls --></div>
+						<div class="col-4 text-200 text-center"><!-- center admin controls --></div>
+						<div class="col-4 text-200 text-end"><!-- right admin controls --></div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
 </div>
+
+
+
 
 <div class="row mb-3">
     <div class="col-12">

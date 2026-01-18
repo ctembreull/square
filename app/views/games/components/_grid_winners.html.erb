@@ -23,11 +23,11 @@
 			<% score = scores.find { |s| s.period == period } %>
 			<% is_final = period == game.league.periods %>
 			<tr>
-				<th class="winners-period p-1">
+				<th class="winners-period p-1 h6">
 					<% if is_final %>
 						Final
 					<% elsif game.league.quarters_score_as_halves %>
-						Halftime
+						1st Half
 					<% else %>
 						<%= "#{period}#{period.ordinal} #{game.league.period_term}" %>
 					<% end %>
@@ -39,13 +39,13 @@
 						$<%= is_final ? game.final_prize : game.period_prize %>
 					<% end %>
 				</td>
-				<td class="winners-team winners-away p-1"><%= score&.away_total || "-" %></td>
-				<td class="winners-team winners-home p-1"><%= score&.home_total || "-" %></td>
-				<td class="winners-winner p-1">
+				<td class="winners-team winners-away p-1 fs-9"><%= score&.away_total || "-" %></td>
+				<td class="winners-team winners-home p-1 fs-9"><%= score&.home_total || "-" %></td>
+				<td class="winners-winner p-1 text-center fs-9">
 					<% if score&.winner %>
 						<%= score.winner.display_name %>
 					<% else %>
-						-
+						&nbsp;
 					<% end %>
 				</td>
 			</tr>
