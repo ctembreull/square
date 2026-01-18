@@ -60,6 +60,7 @@ class Game < ApplicationRecord
   validates :home_team, presence: true
   validates :away_team, presence: true
   validates :score_url, presence: true
+  validates :starts_at, presence: true
   validates :period_prize, presence: true, numericality: { only_integer: true }
   validates :final_prize, presence: true, numericality: { only_integer: true }
 
