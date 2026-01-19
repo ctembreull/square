@@ -253,8 +253,15 @@ Target: Ready for football season
 
 | Item | Notes |
 |------|-------|
-| **Fallback platform plan** | Alternative hosting strategy for outage resilience (multi-cloud, static export) |
+| **Fallback platform plan** | Alternative hosting strategy for outage resilience (multi-cloud, static export). Note: Render blocked SMTP on free tier (Sept 2025), limiting viability unless using paid tier or HTTP-based email APIs. |
+
+## Small Fixes (No Milestone)
+
+| Item | Notes |
+|------|-------|
+| ✅ Team stylesheet `!important` override | Add `!important` to `background-color` and `color` in generated styles to override Falcon theme table styles |
+| Reset game page on final status | When automatic scoring sets a game to "final", broadcast a page reset via ActionCable to terminate the live connection and show the final UX |
 
 ---
 
-**Last Updated**: 2026-01-17
+**Last Updated**: 2026-01-18

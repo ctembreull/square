@@ -81,7 +81,7 @@ class TeamStylesheetService
   def color_variables
     return [] if @team.colors.empty?
 
-    lines = ["// Color Variables"]
+    lines = [ "// Color Variables" ]
     @team.colors.ordered.each do |color|
       variable_name = color_variable_name(color)
       lines << "$#{variable_name}: ##{color.hex};"
@@ -98,15 +98,27 @@ class TeamStylesheetService
   def style_classes
     return [] if @team.styles.empty?
 
-    lines = ["// Style Classes"]
+    lines = [ "// Style Classes" ]
     @team.styles.ordered.each do |style|
       class_name = style_class_name(style)
       lines << ".#{class_name} {"
-      lines << "  #{style.css}"
+      lines << "  #{add_important_to_css(style.css)}"
       lines << "}"
       lines << ""
     end
     lines
+  end
+
+  # Add !important to background-color and color properties to override Falcon theme table styles
+  def add_important_to_css(css)
+    css.gsub(/\b(background-color|color):\s*([^;]+);/) do |match|
+      prop, value = $1, $2.strip
+      if value.end_with?("!important")
+        match
+      else
+        "#{prop}: #{value} !important;"
+      end
+    end
   end
 
   def style_class_name(style)
