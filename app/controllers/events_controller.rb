@@ -19,6 +19,7 @@ class EventsController < ApplicationController
   end
 
   def display
+    @banner_rows = BannerGameSelector.call(@event)
   end
 
   def new

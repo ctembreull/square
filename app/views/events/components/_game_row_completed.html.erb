@@ -1,0 +1,19 @@
+<% score = game.scores.order(period: :desc).first %>
+<tr>
+	<td><%= game.starts_at.in_time_zone(current_timezone).strftime("%m/%d/%Y") %></td>
+	<th>
+		<%= link_to game do %>
+			<%= game.title %>
+		<% end %>
+	</th>
+	<td class="text-center px-2 align-middle <%= game.away_style %> fw-semi-bold" style="width: 20%;">
+		<%= game.away_team.display_location %>
+	</td>
+	<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.away_total %></td>
+	<td class="bg-200 fw-semi-bold align-middle text-center">-</td>
+	<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.home_total %></td>
+	<td class="text-center px-2 <%= game.home_style %> fw-semi-bold" style="width: 20%;">
+		<%= game.home_team.display_location %>
+	</td>
+	<td class="text-end"><%= link_to "Box Score", game.score_url, target: "_blank" %></td>
+</tr>

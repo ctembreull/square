@@ -1,95 +1,150 @@
-<div class="row mb-3">
-	<div class="col-4 text-center">
-		<h6>Upcoming Games</h6>
-	</div>
-	<div class="col-4 text-center">
-		<h6>Current Games</h6>
-	</div>
-	<div class="col-4 text-center">
-		<h6>Completed Games</h6>
-	</div>
-</div>
 
+<!-- Shiny heder -- TODO: replace with version from game#show? -->
 <div class="row mb-3">
 	<div class="col-12">
-		<h6>Latest Post</h6>
+		<div class="card bg-100 shadow-none border mb-0">
+			<div class="card-body p-1 pb-0">
+				<div class="row gx-0 p-2 pb-0 mb-0 flex-between-center" id="header-top">
+					<div class="col-auto ps-2">
+						<div>
+							<h6 class="fs-10 mb-0">
+								<%= link_to events_path, class: "text-decoration-none text-muted mb-1 d-block" do %>
+									<i class="bi bi-arrow-left" data-fa-transform="shrink-4 down-1"></i> Back to Events
+								<% end %>
+							</h6>
+							<h4 class="text-primary fw-bold mb-0">
+								Event:
+								<span class="text-info fw-medium"><%= @event.title %></span>
+							</h4>
+						</div>
+					</div>
+					<div class="col-auto">
+						
+					</div>
+				</div>
+				<div class="row gx-0 p-2" id="header-info">
+					<div class="col-3 text-start">
+						<h6 class="text-muted fs-10 mb-0">
+							<% if @event.upcoming? %>
+								<span class="badge bg-info ms-2">Upcoming</span>
+							<% elsif @event.in_progress? %>
+								<span class="badge bg-success ms-2">In Progress</span>
+							<% else %>
+								<span class="badge bg-secondary ms-2">Completed</span>
+							<% end %>
+
+							<% if @event.active? %>
+								<span class="badge bg-success ms-2"><span class="fas fa-eye me-1"></span> Active</span>
+							<% else %>
+								<span class="badge bg-secondary ms-2"><span class="fas fa-eye-slash me-1"></span> Inactive</span>
+							<% end %>
+						</h6>
+					</div>
+					<div class="col-6 text-center">
+						<h6 class="text-muted fs-10 mb-0 pt-1">
+							<%= @event.start_date.strftime("%B %d, %Y") %>
+							-
+							<%= @event.end_date.strftime("%B %d, %Y") %>
+						</h6>
+					</div>
+					<div class="col-3 text-end"></div>
+				</div>
+				<% if false %>
+					<div class="row gx-0 p-2 bg-700 text-200" id="header-toolbar">
+						<div class="col-4 text-200 text-start"><!-- left admin controls --></div>
+						<div class="col-4 text-200 text-center"><!-- center admin controls --></div>
+						<div class="col-4 text-200 text-end"><!-- right admin controls --></div>
+					</div>
+				<% end %>
+			</div>
+		</div>
 	</div>
 </div>
 
-<div class="row mb-3">
-	<div class="col-9">
+<!-- game cards banner -->
+<div class="row mt-4 mb-1">
+	<% @banner_rows.headers.each do |header| %>
+		<div class="col-4 text-start">
+			<% if header %>
+				<h6><%= header %></h6>
+			<% end %>
+		</div>
+	<% end %>
+</div>
+<% @banner_rows.rows.each do |row| %>
+	<div class="row mb-1">
+		<% row.each do |game| %>
+			<div class="col-4 text-center">
+				<% if game.nil? %>
+					<%= render "events/components/game_placeholder_card" %>
+				<% elsif game.upcoming? %>
+					<%= render "events/components/game_upcoming_card", game: game %>
+				<% else %>
+					<%= render "events/components/game_score_card", game: game %>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+<% end %>
 
-		<div class="row mb-3">
-			<div class="col-12">
-				<div class="card">
-					<div class="card-header">
+
+
+<!-- games tables -- TODO: merge into one -->
+<div class="tab-content gx-0 p-0">
+	<div class="row mb-3 tab-pane fade show active">
+		<div class="col-9">
+
+			<div class="row mb-3"> <!-- top row (upcoming games) -->
+				<div class="col-12">
+					<div class="mb-3">
+
 						<h6>Upcoming Games</h6>
-					</div>
-					<div class="card-body p-0">
-						<div class="table-responsive scrollbar">
-							<table class="table table-sm fs-10">
-								<% @event.games.upcoming.earliest_first.each do |game| %>
-									<tr>
-										<td><%= game.starts_at.in_time_zone(current_timezone).strftime("%a. %b %d, %Y, %-I:%M %P") %></td>
-										<th>
-											<%= link_to game do %>
-												<%= game.title %>
-											<% end %>
-										</th>
-										<td class="text-center px-2 align-middle <%= game.away_style %> fw-semi-bold" style="width: 20%;">
-											<%= game.away_team.display_location %>
-										</td>
-										<td class="bg-200 fw-semi-bold align-middle text-center">vs</td>
-										<td class="text-center px-2 <%= game.home_style %> fw-semi-bold" style="width: 20%;">
-											<%= game.home_team.display_location %>
-										</td>
-										<td class="text-center"><%= game.broadcast_network %></td>
-									</tr>
-								<% end %>
-							</table>
+						<div class="card mb-3">
+							<div class="card-body p-0">
+								<div class="table-responsive scrollbar">
+									<table class="table table-sm fs-10 my-2">
+										<% @event.games.upcoming.earliest_first.each do |game| %>
+											<%= render "events/components/game_row_upcoming", game: game %>
+										<% end %>
+									</table>
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="row mb-3">
-			<div class="col-12">
-				<div class="card">
-					<div class="card-header">
+			<div class="row mb-3"> <!-- bottom row (completed games) -->
+				<div class="col-12">
+					<div class="mb-3">
+
 						<h6>Completed Games</h6>
-					</div>
-					<div class="card-body p-0">
-						<div class="table-responsive scrollbar">
-							<table class="table table-sm fs-10">
-								<% @event.games.completed.latest_first.each do |game| %>
-									<% score = game.scores.order(period: :desc).first %>
-									<tr>
-										<td><%= game.starts_at.in_time_zone(current_timezone).strftime("%m/%d/%Y") %></td>
-										<th>
-											<%= link_to game do %>
-												<%= game.title %>
-											<% end %>
-										</th>
-										<td class="text-center px-2 align-middle <%= game.away_style %> fw-semi-bold" style="width: 20%;">
-											<%= game.away_team.display_location %>
-										</td>
-										<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.away_total %></td>
-										<td class="bg-200 fw-semi-bold align-middle text-center">vs</td>
-										<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.home_total %></td>
-										<td class="text-center px-2 <%= game.home_style %> fw-semi-bold" style="width: 20%;">
-											<%= game.home_team.display_location %>
-										</td>
-										<td class="text-end"><%= link_to "Box Score", game.score_url, target: :blank %></td>
-									</tr>
-								<% end %>
-							</table>
+						<div class="card mb-3">
+							<div class="card-body p-0">
+								<div class="table-responsive scrollbar">
+									<table class="table table-sm fs-10 my-2">
+										<% @event.games.completed.latest_first.each do |game| %>
+											<%= render "events/components/game_row_completed", game: game %>
+										<% end %>
+									</table>
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</div>
-
 			</div>
 		</div>
 
+	</div>
+
+	<div class="row mb-3 " >
+		<div class="col-6">
+			<div class="card">latest post!</div>
+		</div>
+		<div class="col-4">
+			<div class="card">post archive</div>
+		</div>
 	</div>
 </div>
