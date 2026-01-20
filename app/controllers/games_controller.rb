@@ -9,9 +9,12 @@ class GamesController < ApplicationController
     @game = Game.new(event_id: params[:event_id])
     @game.period_prize = Game::DEFAULT_PERIOD_PRIZE
     @game.final_prize = Game::DEFAULT_FINAL_PRIZE
+    @game.local_timezone = default_timezone_for_form
   end
 
   def edit
+    # Apply default timezone if the game doesn't have one set
+    @game.local_timezone ||= default_timezone_for_form
   end
 
   def create
@@ -68,5 +71,16 @@ class GamesController < ApplicationController
     params.require(:game).permit(:event_id, :title, :local_date, :local_time, :local_timezone,
         :league_id, :home_team_id, :home_style, :away_team_id, :away_style,
         :grid, :periods, :period_prize, :final_prize, :score_url, :broadcast_network)
+  end
+
+  def default_timezone_for_form
+    # Convert Rails timezone name from cookie to IANA identifier for the form select
+    if cookies[:timezone].present?
+      tz = ActiveSupport::TimeZone[cookies[:timezone]]
+      iana_id = tz&.tzinfo&.name
+      # Return the IANA id if it's in our supported list, otherwise fall back to Pacific
+      return iana_id if Game::TIMEZONES.any? { |_, id| id == iana_id }
+    end
+    "America/Los_Angeles" # Pacific time as default
   end
 end
