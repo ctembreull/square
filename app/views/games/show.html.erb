@@ -20,8 +20,10 @@
 						</h4>
 					</div>
 					<div class="col-2 text-end pt-2 align-middle">
-						<%= link_to edit_game_path(@game), class: "btn btn-outline-secondary btn-sm", target: :blank do %>
-								<span class="fas fa-edit me-1"></span> Edit
+						<% if admin? %>
+							<%= link_to edit_game_path(@game), class: "btn btn-outline-secondary btn-sm", target: :blank do %>
+									<span class="fas fa-edit me-1"></span> Edit
+							<% end %>
 						<% end %>
 					</div>
 				</div>
@@ -96,13 +98,15 @@
                 <div id="<%= dom_id(@game, :scores) %>">
                     <%= render "games/components/grid_scores", game: @game %>
                 </div>
-                <div class="row mt-3">
-                    <div class="col text-end">
-                        <%= button_to refresh_scores_game_path(@game), method: :patch, class: "btn btn-outline-success btn-sm me-2" do %>
-                            <span class="fas fa-sync-alt me-1"></span> Refresh Scores
-                        <% end %>
+                <% if admin? %>
+                    <div class="row mt-3">
+                        <div class="col text-end">
+                            <%= button_to refresh_scores_game_path(@game), method: :patch, class: "btn btn-outline-success btn-sm me-2" do %>
+                                <span class="fas fa-sync-alt me-1"></span> Refresh Scores
+                            <% end %>
+                        </div>
                     </div>
-                </div>
+                <% end %>
 
             </div>
         </div>

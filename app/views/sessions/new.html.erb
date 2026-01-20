@@ -1,0 +1,26 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Admin Login</h4>
+      </div>
+      <div class="card-body">
+        <%= form_with url: login_path, method: :post, local: true do |f| %>
+          <div class="mb-3">
+            <%= f.label :email, class: "form-label" %>
+            <%= f.email_field :email, class: "form-control", autofocus: true, required: true %>
+          </div>
+
+          <div class="mb-3">
+            <%= f.label :password, class: "form-label" %>
+            <%= f.password_field :password, class: "form-control", required: true %>
+          </div>
+
+          <div class="d-grid">
+            <%= f.submit "Log In", class: "btn btn-primary" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

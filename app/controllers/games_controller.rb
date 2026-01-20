@@ -1,4 +1,5 @@
 class GamesController < ApplicationController
+  skip_before_action :require_admin, only: [:show]
   before_action :set_game, only: [ :show, :edit, :update, :destroy, :swap_teams, :refresh_scores ]
 
 

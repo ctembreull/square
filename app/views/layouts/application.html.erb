@@ -64,15 +64,17 @@
 								</div>
               </div>
 						</li>
-						<li class="nav-item">
-							<%= link_to "Sports", leagues_path, class: "nav-link" %>
-						</li>
-						<li class="nav-item">
-							<%= link_to "Teams", teams_path, class: "nav-link" %>
-						</li>
-						<li class="nav-item">
-							<%= link_to "Players", players_path, class: "nav-link" %>
-						</li>
+						<% if admin? %>
+							<li class="nav-item">
+								<%= link_to "Sports", leagues_path, class: "nav-link" %>
+							</li>
+							<li class="nav-item">
+								<%= link_to "Teams", teams_path, class: "nav-link" %>
+							</li>
+							<li class="nav-item">
+								<%= link_to "Players", players_path, class: "nav-link" %>
+							</li>
+						<% end %>
 					</ul>
 
 					<ul class="navbar-nav ms-auto">
@@ -88,6 +90,23 @@
 								</div>
 							</div>
 						</li>
+						<% if logged_in? %>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="fas fa-user me-1"></span>
+									<%= current_user.display_name || current_user.name %>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end dropdown-caret dropdown-menu-card border-0 mt-0">
+									<div class="bg-white dark__bg-1000 rounded-3 py-2">
+										<%= button_to "Log Out", logout_path, method: :delete, class: "dropdown-item" %>
+									</div>
+								</div>
+							</li>
+						<% else %>
+							<li class="nav-item">
+								<%= link_to "Log In", login_path, class: "nav-link" %>
+							</li>
+						<% end %>
 					</ul>
 				</nav>
 

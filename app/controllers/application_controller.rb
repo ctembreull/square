@@ -12,7 +12,10 @@ class ApplicationController < ActionController::Base
   # Use timezone from cookie for all requests
   around_action :set_timezone
 
-  helper_method :current_timezone
+  # Require admin for all actions by default
+  before_action :require_admin
+
+  helper_method :current_timezone, :current_user, :logged_in?, :admin?
 
   private
 
@@ -22,5 +25,24 @@ class ApplicationController < ActionController::Base
 
   def current_timezone
     cookies[:timezone] || "Eastern Time (US & Canada)"
+  end
+
+  def current_user
+    @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
+  end
+
+  def logged_in?
+    current_user.present?
+  end
+
+  def admin?
+    current_user&.admin?
+  end
+
+  def require_admin
+    unless admin?
+      flash[:alert] = "You must be logged in as an admin to access this page"
+      redirect_to login_path
+    end
   end
 end
