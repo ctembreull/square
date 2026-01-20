@@ -11,10 +11,10 @@ module ScoreboardService
 
     def self.scrape_score(url)
       # Extract the linescore table from the html of the url specified
-      raw_html = HTTParty.get(url)
-      raise ScraperError, "The URL returned no response" if raw_html.nil?
+      response = HTTParty.get(url)
+      raise ScraperError, "The URL returned no response" if response.body.nil? || response.body.empty?
 
-      doc = Nokogiri::HTML(raw_html)
+      doc = Nokogiri::HTML(response)
       linescore = doc.css(self::LINESCORE_CSS_PATH)[self::LINESCORE_CSS_INDEX]
       raise ScraperError, "No linescore found in the response HTML" if linescore.nil?
 
