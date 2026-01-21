@@ -59,7 +59,7 @@
 						<ul class="list-group list-group-flush">
 							<% conference.teams.alphabetical.each do |team| %>
 								<li class="list-group-item py-1 px-2 fw-bold text-center <%= team.get_default_style_class_name %>">
-									<%= link_to team.display_name(league: @league), team_path(league_id: @league.id), class: team.get_default_style_class_name + "" %>
+									<%= link_to team.display_name(league: @league), team_path(team, league_id: @league.id), class: team.get_default_style_class_name %>
 								</li>
 							<% end %>
 						</ul>
