@@ -263,6 +263,7 @@ Target: Ready for football season
 |------|-------|
 | ✅ Team stylesheet `!important` override | Add `!important` to `background-color` and `color` in generated styles to override Falcon theme table styles |
 | Reset game page on final status | When automatic scoring sets a game to "final", broadcast a page reset via ActionCable to terminate the live connection and show the final UX |
+| Tabs controller Turbo cache issue | On some page loads, neither tab panel shows. Possibly a Turbo Drive caching race condition. May need `data-turbo-cache="false"` or `turbo:before-cache` handler. Monitor for recurrence. |
 
 ---
 
