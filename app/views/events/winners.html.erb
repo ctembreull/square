@@ -1,1 +1,170 @@
-winners stub
+<!-- Header -->
+<div class="row mb-3">
+	<div class="col-12">
+		<div class="card bg-100 shadow-none border">
+			<div class="card-body py-2">
+				<h6 class="fs-10 mb-0">
+					<%= link_to events_path, class: "text-decoration-none text-muted" do %>
+						<i class="bi bi-arrow-left me-1"></i> Events
+					<% end %>
+					/
+					<%= link_to @event.title, @event, class: "text-decoration-none text-muted" %>
+					/ Winners
+				</h6>
+				<h4 class="text-primary fw-bold mb-0 mt-1">
+					<span class="fas fa-trophy text-warning me-2"></span>
+					<%= @event.title %> Prize Winners
+				</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Summary Card -->
+<div class="row mb-3">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body py-3">
+				<div class="row text-center">
+					<div class="col-4">
+						<h6 class="text-muted mb-1">Total Awarded</h6>
+						<h4 class="text-success mb-0">$<%= number_with_delimiter(@total_awarded) %></h4>
+					</div>
+					<div class="col-4">
+						<h6 class="text-muted mb-1">Winning Families</h6>
+						<h4 class="mb-0"><%= @winners.keys.count %></h4>
+					</div>
+					<div class="col-4">
+						<h6 class="text-muted mb-1">Charity Wins</h6>
+						<h4 class="mb-0"><%= @charities.sum { |c| c[:wins].length } %></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Winners Table -->
+<div class="row">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-header border-bottom">
+				<h5 class="mb-0">Winners by Family</h5>
+			</div>
+			<div class="card-body p-0">
+				<table class="table table-sm fs-10 mb-0">
+					<thead class="bg-200">
+						<tr>
+							<th class="ps-3" style="width: 40%">Name</th>
+							<th class="text-end" style="width: 15%">Total</th>
+							<th class="text-center" style="width: 10%">Wins</th>
+							<th class="pe-3" style="width: 35%">Games</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% @winners.each do |family_id, winners| %>
+							<% family = @families[family_id] %>
+							<% family_total = winners.sum { |w| w[:total] } %>
+							<% family_wins = winners.sum { |w| w[:wins].length } %>
+
+							<!-- Family Header Row -->
+							<tr class="bg-100">
+								<th class="ps-3 py-2"><%= family.display_name.presence || family.name %></th>
+								<th class="text-end py-2 text-success">$<%= number_with_delimiter(family_total) %></th>
+								<th class="text-center py-2"><%= family_wins %></th>
+								<th class="pe-3 py-2"></th>
+							</tr>
+
+							<!-- Individual Winners -->
+							<% winners.each_with_index do |winner, idx| %>
+								<% collapse_id = "wins-#{family_id}-#{idx}" %>
+								<tr>
+									<td class="ps-5"><%= winner[:name] %></td>
+									<td class="text-end">$<%= number_with_delimiter(winner[:total]) %></td>
+									<td class="text-center">
+										<a href="#"
+										   class="text-decoration-none"
+										   data-bs-toggle="collapse"
+										   data-bs-target="#<%= collapse_id %>"
+										   aria-expanded="false">
+											<span class="badge bg-primary">
+												<%= winner[:wins].length %>
+												<span class="fas fa-chevron-down ms-1 fs-11 collapse-indicator"></span>
+											</span>
+										</a>
+									</td>
+									<td class="pe-3">
+										<div class="collapse" id="<%= collapse_id %>">
+											<% winner[:wins].each do |win| %>
+												<%= link_to game_path(win.game), class: "text-decoration-none" do %>
+													<span class="badge bg-secondary me-1 mb-1">
+														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
+														<span class="text-success ms-1">$<%= win.prize %></span>
+													</span>
+												<% end %>
+											<% end %>
+										</div>
+									</td>
+								</tr>
+							<% end %>
+						<% end %>
+
+						<% if @charities.any? %>
+							<% charity_total = @charities.sum { |c| c[:total] } %>
+							<% charity_wins = @charities.sum { |c| c[:wins].length } %>
+
+							<!-- Charities Header Row -->
+							<tr class="bg-100">
+								<th class="ps-3 py-2">
+									<span class="fas fa-heart text-danger me-1"></span>
+									Charities
+								</th>
+								<th class="text-end py-2 text-success">$<%= number_with_delimiter(charity_total) %></th>
+								<th class="text-center py-2"><%= charity_wins %></th>
+								<th class="pe-3 py-2"></th>
+							</tr>
+
+							<!-- Individual Charities -->
+							<% @charities.each_with_index do |charity, idx| %>
+								<% collapse_id = "wins-charity-#{idx}" %>
+								<tr>
+									<td class="ps-5"><%= charity[:name] %></td>
+									<td class="text-end">$<%= number_with_delimiter(charity[:total]) %></td>
+									<td class="text-center">
+										<a href="#"
+										   class="text-decoration-none"
+										   data-bs-toggle="collapse"
+										   data-bs-target="#<%= collapse_id %>"
+										   aria-expanded="false">
+											<span class="badge bg-primary">
+												<%= charity[:wins].length %>
+												<span class="fas fa-chevron-down ms-1 fs-11 collapse-indicator"></span>
+											</span>
+										</a>
+									</td>
+									<td class="pe-3">
+										<div class="collapse" id="<%= collapse_id %>">
+											<% charity[:wins].each do |win| %>
+												<%= link_to game_path(win.game), class: "text-decoration-none" do %>
+													<span class="badge bg-secondary me-1 mb-1">
+														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
+														<span class="text-success ms-1">$<%= win.prize %></span>
+													</span>
+												<% end %>
+											<% end %>
+										</div>
+									</td>
+								</tr>
+							<% end %>
+						<% end %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.collapse-indicator { transition: transform 0.2s ease; }
+	[aria-expanded="true"] .collapse-indicator { transform: rotate(180deg); }
+</style>

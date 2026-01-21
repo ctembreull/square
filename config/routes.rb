@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :posts, only: [:new, :create]
     member do
       get :display
+      get :winners
       patch :activate
       patch :deactivate
       patch :end_event

@@ -73,6 +73,10 @@ class EventsController < ApplicationController
   end
 
   def winners
+    @winners = helpers.aggregate_winners(@event).group_by { |w| w[:family] }
+    @charities = @winners.delete("charity") || []
+    @families = Player.where(id: @winners.keys).index_by(&:id)
+    @total_awarded = (@winners.values.flatten + @charities).sum { |w| w[:total] }
   end
 
   private
