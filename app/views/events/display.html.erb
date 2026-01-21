@@ -90,61 +90,78 @@
 
 
 <!-- games tables -- TODO: merge into one -->
-<div class="tab-content gx-0 p-0">
+<div class="gx-0 p-0 my-4" id="games-tab-container">
 	<div class="row mb-3 tab-pane fade show active">
-		<div class="col-9">
+		<div class="col-12">
 
 			<div class="row mb-3"> <!-- top row (upcoming games) -->
 				<div class="col-12">
-					<div class="mb-3">
+					<div class="card p-0">
 
-						<h6>Upcoming Games</h6>
-						<div class="card mb-3">
-							<div class="card-body p-0">
-								<div class="table-responsive scrollbar">
-									<table class="table table-sm fs-10 my-2">
-										<% @event.games.upcoming.earliest_first.each do |game| %>
-											<%= render "events/components/game_row_upcoming", game: game %>
-										<% end %>
-									</table>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="row mb-3"> <!-- bottom row (completed games) -->
-				<div class="col-12">
-					<div class="mb-3">
-
-						<h6>Completed Games</h6>
-						<div class="card mb-3">
-							<div class="card-body p-0">
-								<div class="table-responsive scrollbar">
-									<table class="table table-sm fs-10 my-2">
-										<% @event.games.completed.latest_first.each do |game| %>
+							<table class="table table-sm fs-10 m-0">
+								<tbody id="upcoming-games-table">
+									<tr>
+										<td colspan="9" class="bg-700 py-2">
+											<h6 class="text-200 my-0">Upcoming Games</h6>
+										</td>
+									</tr>
+									<% @event.games.upcoming.earliest_first.each do |game| %>
+										<%= render "events/components/game_row_upcoming", game: game %>
+									<% end %>
+								</tbody>
+								<tbody id="completed-games-table">
+									<tr>
+										<td colspan="9" class="bg-700 py-2">
+											<h6 class="text-200 my-0">Completed Games</h6>
+										</td>
+									</tr>
+									<% @event.games.completed.latest_first.each do |game| %>
 											<%= render "events/components/game_row_completed", game: game %>
 										<% end %>
-									</table>
-								</div>
-							</div>
-						</div>
+								</tbody>
+							</table>
 
 					</div>
 				</div>
+
 			</div>
-		</div>
-
-	</div>
-
-	<div class="row mb-3 " >
-		<div class="col-6">
-			<div class="card">latest post!</div>
-		</div>
-		<div class="col-4">
-			<div class="card">post archive</div>
 		</div>
 	</div>
 </div>
+
+	<div class="row mb-3 " >
+		<div class="col-8">
+			<div class="card">
+				<div class="card-header border-bottom">
+					<h5 class="m-0 mb-2"><%= @event.posts.first.title %></h5>
+					<h6 class="m-0 fs-11 text-800">
+						<%= time_ago_in_words(@event.posts.first.created_at) %> ago
+						by <%= @event.posts.first.user.display_name %>
+					</h6>
+				</div>
+				<div class="card-body">
+					<%= @event.posts.first.body %>
+				</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card">
+				<div class="card-header border-bottom py-1"><h6 class="mb-0">Post Archive</h6></div>
+				<div class="card-body py-1 px-0">
+					<table class="table table-sm fs-10 m-0">
+						<tbody>
+							<% @event.posts.each do |post| %>
+								<tr>
+									<th class="fw-semi-bold text-muted">
+										<a href="#" class="text-muted">
+											<%= post.title %>
+										</a>
+									</th>
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
