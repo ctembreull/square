@@ -174,6 +174,8 @@ The following patterns have been validated through implementation and should be 
 - ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
 - ✅ **Integrate Falcon SASS** - Theme fully integrated with working JavaScript
 - ✅ **Sports Admin CRUD** - Complete CRUD for Leagues, Conferences, Teams
+- ✅ **Admin Authentication** - Session-based auth with has_secure_password, public/admin route separation
+- ✅ **SolidQueue Score Refresh** - Automatic score scraping every 5 minutes for in-progress games, auto-completion on "Final" detection
 
 ## Milestone: Testing Deployment - March 15, 2026
 
@@ -264,4 +266,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-18
+**Last Updated**: 2026-01-20
