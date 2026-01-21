@@ -196,8 +196,8 @@ Target: NCAA Tournament testing on Fly.io
 | **Grid export button (admin)** | 10x10 player names in TSV format → clipboard for Apple Numbers |
 | **Scores export button (admin)** | Period scores in TSV format → clipboard for Apple Numbers |
 | **Manual score input modal (admin)** | Direct score entry/creation when ESPN or fallback scrapers fail |
-| **WinnerCalculator service** | Determine winners from scraped scores |
-| **Public/Admin View Separation** | Fun public UI vs Falcon admin (plan: `.claude/plans/mighty-greeting-cosmos.md`) |
+| ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
+| ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
 
@@ -213,6 +213,7 @@ Target: Ready for football season
 | Gradient/animated text styles | Team branding (e.g., Seahawks iridescent green) |
 | Text-stroke lightness slider | HSL adjustment for readability tuning |
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
+| **Square win probability display** | (Stretch) Show win % per square on game#new grid using hardcoded sport-specific digit frequency tables. Fun visualization, may or may not be useful. |
 
 ### Event PDF Export Spec
 
@@ -222,13 +223,6 @@ Target: Ready for football season
 - Distribution: Download button on event page + optional attachment on Post emails
 - Use HTML-to-PDF approach (WickedPDF or Grover) to reuse existing grid partials
 - Serves tech-hesitant family members who prefer familiar PDF/email format
-
-### Public/Admin View Separation Spec
-
-- Same routes, different views based on user role
-- Admin: Falcon-styled management interface
-- Public: Fun game-focused interface using welcome widgets
-- Admin preview mode (`?preview=true`) to see public view
 
 ## Status Endpoint Specification
 
@@ -256,6 +250,8 @@ Target: Ready for football season
 | Item | Notes |
 |------|-------|
 | **Fallback platform plan** | Alternative hosting strategy for outage resilience (multi-cloud, static export). Note: Render blocked SMTP on free tier (Sept 2025), limiting viability unless using paid tier or HTTP-based email APIs. |
+| **Public Docker release** | Package as self-hosted one-click deploy for offices/groups to run their own squares games. Sidesteps SaaS complexity and gambling compliance - users handle their own local rules. Test on TrueNAS first. |
+| **Draft mode for grid selection** | Alternative to random grid: players claim specific squares (office-style pools). Could be first-come-first-served or structured draft order. Note: Chris has patent on automated fantasy drafts - potential IP leverage. |
 
 ## Small Fixes (No Milestone)
 
@@ -267,4 +263,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-20
+**Last Updated**: 2026-01-21
