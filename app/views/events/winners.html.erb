@@ -96,7 +96,7 @@
 									<td class="pe-3">
 										<div class="collapse" id="<%= collapse_id %>">
 											<% winner[:wins].each do |win| %>
-												<%= link_to game_path(win.game), class: "text-decoration-none" do %>
+												<%= link_to game_path(win.game, highlight_period: win.period), class: "text-decoration-none" do %>
 													<span class="badge bg-secondary me-1 mb-1">
 														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
 														<span class="text-success ms-1">$<%= win.prize %></span>
@@ -145,7 +145,7 @@
 									<td class="pe-3">
 										<div class="collapse" id="<%= collapse_id %>">
 											<% charity[:wins].each do |win| %>
-												<%= link_to game_path(win.game), class: "text-decoration-none" do %>
+												<%= link_to game_path(win.game, highlight_period: win.period), class: "text-decoration-none" do %>
 													<span class="badge bg-secondary me-1 mb-1">
 														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
 														<span class="text-success ms-1">$<%= win.prize %></span>

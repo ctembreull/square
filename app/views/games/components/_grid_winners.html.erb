@@ -1,4 +1,5 @@
 <% scores = game.scores.by_period %>
+<% highlight_period ||= nil %>
 
 <table class="winners-grid">
 	<thead>
@@ -22,7 +23,7 @@
 		<% scoring_periods.each do |period| %>
 			<% score = scores.find { |s| s.period == period } %>
 			<% is_final = period == game.league.periods %>
-			<tr>
+			<tr class="<%= 'period-highlight' if period == highlight_period %>">
 				<th class="winners-period p-1 h6">
 					<% if is_final %>
 						Final

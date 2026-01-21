@@ -4,6 +4,7 @@ class GamesController < ApplicationController
 
 
   def show
+    @highlight_period = params[:highlight_period].to_i if params[:highlight_period].present?
   end
 
   def new
