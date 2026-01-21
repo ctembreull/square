@@ -14,7 +14,7 @@ module ScoreboardService
       response = HTTParty.get(url)
       raise ScraperError, "The URL returned no response" if response.body.nil? || response.body.empty?
 
-      doc = Nokogiri::HTML(response)
+      doc = Nokogiri::HTML(response.body)
       linescore = doc.css(self::LINESCORE_CSS_PATH)[self::LINESCORE_CSS_INDEX]
       raise ScraperError, "No linescore found in the response HTML" if linescore.nil?
 
