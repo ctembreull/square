@@ -21,3 +21,6 @@ import "falcon/theme"
 
 // Import FontAwesome
 import "fontawesome"
+
+import "trix"
+import "@rails/actiontext"
