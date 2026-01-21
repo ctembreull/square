@@ -1,0 +1,14 @@
+<turbo-frame id="post-content">
+	<div class="card">
+		<div class="card-header border-bottom">
+			<h5 class="m-0 mb-2"><%= post.title %></h5>
+			<h6 class="m-0 fs-11 text-800">
+				<%= time_ago_in_words(post.created_at) %> ago
+				by <%= post.user.display_name %>
+			</h6>
+		</div>
+		<div class="card-body">
+			<%= post.body %>
+		</div>
+	</div>
+</turbo-frame>

@@ -1,7 +1,13 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [ :show, :edit, :update, :destroy ]
+  skip_before_action :require_admin, only: [ :show, :content ]
+  before_action :set_post, only: [ :show, :content, :edit, :update, :destroy ]
 
   def show
+  end
+
+  # Returns just the post content partial for Turbo Frame updates
+  def content
+    render partial: "posts/content", locals: { post: @post }
   end
 
   def new

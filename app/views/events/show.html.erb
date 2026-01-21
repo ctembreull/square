@@ -1,3 +1,5 @@
+
+<!-- Shiny header  -->
 <div class="row mb-3">
 	<div class="col-12">
 		<div class="card bg-100 shadow-none border mb-0">
@@ -17,23 +19,7 @@
 						</div>
 					</div>
 					<div class="col-auto">
-						<%= link_to "Display", display_event_path(@event), class: "btn btn-danger btn-sm" %>
-
 						<% if admin? %>
-							<% if @event.active? %>
-								<%= link_to deactivate_event_path(@event),
-									data: { turbo_method: :patch, turbo_confirm: "Deactivate #{@event.title}?" },
-									class: "btn btn-outline-warning btn-sm" do %>
-								<span class="fas fa-eye-slash me-1"></span> Deactivate
-								<% end %>
-							<% else %>
-								<%= link_to activate_event_path(@event),
-									data: { turbo_method: :patch },
-									class: "btn btn-outline-success btn-sm" do %>
-								<span class="fas fa-eye me-1"></span> Activate
-								<% end %>
-							<% end %>
-
 							<%= link_to edit_event_path(@event), class: "btn btn-outline-secondary btn-sm" do %>
 								<span class="fas fa-edit me-1"></span> Edit
 							<% end %>
@@ -79,104 +65,149 @@
 	</div>
 </div>
 
-<%# Games and Posts %>
-<div class="row mb-3">
-	<div class="col-6">
-		<div class="card">
-			<div class="card-header border-bottom p-2">
-				<div class="row flex-between-center">
-					<div class="col-auto">
-						<h5 class="m-0">Games</h5>
-					</div>
-					<% if admin? %>
-						<div class="col-auto">
+<!-- game cards banner -->
+<div class="row mt-4 mb-1">
+	<% @banner_rows.headers.each do |header| %>
+		<div class="col-4 text-start">
+			<% if header %>
+				<h6><%= header %></h6>
+			<% end %>
+		</div>
+	<% end %>
+</div>
+<% @banner_rows.rows.each do |row| %>
+	<div class="row mb-1">
+		<% row.each do |game| %>
+			<div class="col-4 text-center">
+				<% if game.nil? %>
+					<%= render "events/components/game_placeholder_card" %>
+				<% elsif game.upcoming? %>
+					<%= render "events/components/game_upcoming_card", game: game %>
+				<% else %>
+					<%= render "events/components/game_score_card", game: game %>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+<% end %>
+
+<!-- tab row -->
+<div class="row mb-3 gx-0" data-controller="tabs" data-tabs-default-tab-value="games">
+	<div class="card">
+		<div class="card-header p-0">
+			<ul class="nav nav-tabs border-0 flex-nowrap gx-0 w-100">
+				<li class="nav-item" role="presentation">
+					<a id="games-tab" class="nav-link p-3 mb-0 active" role="tab" href="#games"
+					   data-tabs-target="button" data-action="tabs#select" data-tabs-panel="games">
+						<h5 class="mb-0 text-600 fs-9">
+							<span class="fas fa-football-ball icon text-600 me-1"></span>
+							Games <span>(<%= @event.games.count %>)</span>
+						</h5>
+					</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a id="posts-tab" class="nav-link p-3 mb-0" role="tab" href="#posts"
+					   data-tabs-target="button" data-action="tabs#select" data-tabs-panel="posts">
+						<h5 class="mb-0 text-600 fs-9">
+							<span class="bi bi-newspaper icon text-600 me-1"></span>
+							Posts <span>(<%= @event.posts.count %>)</span>
+						</h5>
+					</a>
+				</li>
+				<% if admin? %>
+					<li class="nav-item ms-auto d-flex align-items-center pe-3">
+						<span data-tabs-target="action" data-tabs-panel="games">
 							<%= link_to new_game_path(event_id: @event.id), class: "btn btn-primary btn-sm" do %>
 								<span class="fas fa-plus me-1"></span> New Game
 							<% end %>
-						</div>
-					<% end %>
-				</div>
-			</div>
-			<div class="card-body p-0">
-				<!-- top section: currently ongoing games -->
-				<% if @event.games.in_progress.any? %>
-					<div>Games in Progress</div>
-					<div class="row mb-1">
-						<div class="col">
-							<% @event.games.in_progress.earliest_first.each do |game| %>
-								<%= render "games/components/upcoming_game_list_item", game: game %>
-							<% end %>
-						</div>
-					</div>
-				<% end %>
-
-				<!-- 2nd section: upcoming games, earliest-first -->
-				<% if @event.games.upcoming.any? %>
-					<div>Upcoming Games</div>
-					<div class="row mb-1">
-						<div class="col">
-							<% @event.games.upcoming.earliest_first.each do |game| %>
-								<%= render "games/components/upcoming_game_list_item", game: game %>
-							<% end %>
-						</div>
-					</div>
-				<% end %>
-
-
-				<!-- 3rd section: completed games, latest first -->
-				<% if @event.games.completed.any? %>
-					<div>Completed Games</div>
-					<div class="row mb-1">
-						<div class="col">
-							<% @event.games.completed.latest_first.each do |game| %>
-								<%= render "games/components/upcoming_game_list_item", game: game %>
-							<% end %>
-						</div>
-					</div>
-				<% end %>
-				
-
-			</div>
-		</div>
-	</div>
-	<div class="col-6">
-		<div class="card">
-			<div class="card-header border-bottom p-2">
-				<div class="row flex-between-center">
-					<div class="col-auto">
-						<h5 class="m-0">Posts</h5>
-					</div>
-					<% if admin? %>
-						<div class="col-auto">
+						</span>
+						<span data-tabs-target="action" data-tabs-panel="posts" class="d-none">
 							<%= link_to new_event_post_path(@event), class: "btn btn-primary btn-sm" do %>
 								<span class="fas fa-plus me-1"></span> New Post
 							<% end %>
-						</div>
-					<% end %>
-				</div>
-			</div>
-			<div class="card-body p-0">
-				<% if @event.posts.any? %>
-					<div class="list-group list-group-flush">
-						<% @event.posts.recent.each do |post| %>
-							<%= link_to post_path(post), class: "list-group-item list-group-item-action px-3 py-2" do %>
-								<div class="d-flex justify-content-between align-items-start">
-									<div class="fw-semibold"><%= post.title %></div>
-									<small class="text-muted"><%= time_ago_in_words(post.created_at) %> ago</small>
-								</div>
-								<% if post.body.present? %>
-									<small class="text-muted"><%= truncate(post.body.to_plain_text, length: 80) %></small>
-								<% end %>
-							<% end %>
-						<% end %>
-					</div>
-				<% else %>
-					<div class="text-center text-muted py-4">
-						<p class="mb-0">No posts yet.</p>
-					</div>
+						</span>
+					</li>
 				<% end %>
-			</div>
+			</ul>
 		</div>
 	</div>
 
+	<!-- games panel -->
+	<div class="gx-0 p-0 my-4" id="games" data-tabs-target="panel">
+	<div class="row mb-3 tab-pane fade show active">
+		<div class="col-12">
+
+			<table class="table table-sm fs-10 m-0">
+				<tbody id="upcoming-games-table">
+					<tr>
+						<td colspan="9" class="bg-500 py-2">
+							<h6 class="text-200 my-0">Upcoming Games</h6>
+						</td>
+					</tr>
+					<% @event.games.upcoming.earliest_first.each do |game| %>
+						<%= render "events/components/game_row_upcoming", game: game %>
+					<% end %>
+				</tbody>
+				<tbody id="completed-games-table">
+					<tr>
+						<td colspan="9" class="bg-500 py-2">
+							<h6 class="text-200 my-0">Completed Games</h6>
+						</td>
+					</tr>
+					<% @event.games.completed.latest_first.each do |game| %>
+							<%= render "events/components/game_row_completed", game: game %>
+						<% end %>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div>
+
+	<!-- posts panel -->
+	<div class="gx-0 p-0 my-4 d-none" id="posts" data-tabs-target="panel">
+		<div class="row mb-3">
+			<% if @event.posts.any? %>
+				<div class="col-8">
+					<%= render "posts/content", post: @event.posts.first %>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-header border-bottom py-1"><h6 class="mb-0">Post Archive</h6></div>
+						<div class="card-body py-1 px-0">
+							<table class="table table-sm fs-10 m-0">
+								<tbody>
+									<% @event.posts.each do |post| %>
+										<tr>
+											<th class="fw-semi-bold text-muted">
+												<%= link_to content_post_path(post), data: { turbo_frame: "post-content" }, class: "text-muted" do %>
+													<%= post.title %>
+												<% end %>
+											</th>
+										</tr>
+									<% end %>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			<% else %>
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body text-center text-muted py-5">
+							<span class="bi bi-newspaper fs-3 d-block mb-2"></span>
+							No posts yet for this event.
+							<% if admin? %>
+								<div class="mt-3">
+									<%= link_to new_event_post_path(@event), class: "btn btn-primary btn-sm" do %>
+										<span class="fas fa-plus me-1"></span> Create First Post
+									<% end %>
+								</div>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
 </div>

@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  skip_before_action :require_admin, only: [:index, :show, :display, :home]
+  skip_before_action :require_admin, only: [ :index, :show, :display, :home ]
   before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display ]
 
   def home
@@ -17,6 +17,7 @@ class EventsController < ApplicationController
   end
 
   def show
+    @banner_rows = BannerGameSelector.call(@event)
   end
 
   def display

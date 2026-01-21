@@ -63,7 +63,11 @@ Rails.application.routes.draw do
   end
 
   # Posts (nested new/create under events, standalone show/edit/update/destroy)
-  resources :posts, only: [:show, :edit, :update, :destroy]
+  resources :posts, only: [:show, :edit, :update, :destroy] do
+    member do
+      get :content
+    end
+  end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
