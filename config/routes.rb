@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   # Events
   resources :events do
+    resources :posts, only: [:new, :create]
     member do
       get :display
       patch :activate
@@ -61,8 +62,8 @@ Rails.application.routes.draw do
     end
   end
 
-  # Posts
-  resources :posts, except: [ :index ]
+  # Posts (nested new/create under events, standalone show/edit/update/destroy)
+  resources :posts, only: [:show, :edit, :update, :destroy]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

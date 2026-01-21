@@ -1,0 +1,57 @@
+<div class="row mb-3">
+	<div class="col-12">
+		<div class="card bg-100 shadow-none border mb-0">
+			<div class="card-body p-3">
+				<div class="row gx-0 flex-between-center">
+					<div class="col-auto">
+						<h6 class="fs-10 mb-0">
+							<%= link_to @post.event, class: "text-decoration-none text-muted mb-1 d-block" do %>
+								<i class="fas fa-chevron-left"></i> Back to Event: <%= @post.event.title %>
+							<% end %>
+						</h6>
+						<h4 class="text-primary fw-bold mb-0">
+							<span class="text-info fw-medium"><%= @post.title %></span>
+						</h4>
+						<p class="text-muted fs-10 mb-0">
+							Posted <%= time_ago_in_words(@post.created_at) %> ago
+						</p>
+					</div>
+					<% if admin? %>
+						<div class="col-auto">
+							<%= link_to edit_post_path(@post), class: "btn btn-outline-secondary btn-sm" do %>
+								<span class="fas fa-edit me-1"></span> Edit
+							<% end %>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row mb-3">
+	<div class="col-8">
+		<div class="card">
+			<div class="card-body">
+				<div class="post-body">
+					<%= @post.body %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="card">
+			<div class="card-header border-bottom p-2">
+				<h6 class="m-0">Games</h6>
+			</div>
+			<div class="card-body p-0">
+				<% @post.event.games.earliest_first.each do |game| %>
+					<%= render "games/components/upcoming_game_list_item", game: game %>
+				<% end %>
+				<% if @post.event.games.empty? %>
+					<p class="text-muted p-3 mb-0">No games yet.</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

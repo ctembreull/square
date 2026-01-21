@@ -1,0 +1,35 @@
+<%= form_with(model: post.persisted? ? post : [@event, post], local: true) do |form| %>
+	<% if post.errors.any? %>
+		<div class="alert alert-danger">
+			<h4 class="alert-heading"><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h4>
+			<ul class="mb-0">
+				<% post.errors.each do |error| %>
+					<li><%= error.full_message %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<div class="mb-3">
+		<%= form.label :title, "Title", class: "form-label" %>
+		<%= form.text_field :title, class: "form-control", autofocus: true %>
+	</div>
+
+	<div class="mb-3 post-editor-wrapper">
+		<%= form.label :body, "Body", class: "form-label" %>
+		<%= form.rich_text_area :body %>
+	</div>
+
+	<div class="d-flex justify-content-end gap-2">
+		<%= link_to "Cancel", post.persisted? ? post : @event, class: "btn btn-secondary" %>
+		<%= form.submit class: "btn btn-primary" %>
+	</div>
+<% end %>
+
+<style>
+	.post-editor-wrapper trix-editor {
+		min-height: 400px;
+		max-height: 60vh;
+		overflow-y: auto;
+	}
+</style>
