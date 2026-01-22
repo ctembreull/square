@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   skip_before_action :require_admin, only: [:show]
-  before_action :set_game, only: [ :show, :edit, :update, :destroy, :swap_teams, :refresh_scores ]
+  before_action :set_game, only: [ :show, :edit, :update, :destroy, :swap_teams, :refresh_scores, :manual_scores ]
 
 
   def show
@@ -61,6 +61,62 @@ class GamesController < ApplicationController
     redirect_to @game, notice: "Scores refreshed successfully"
   rescue ScoreboardService::ScoreScraper::ScraperError => e
     redirect_to @game, alert: "Failed to refresh scores: #{e.message}"
+  end
+
+  def manual_scores
+    periods = @game.league.periods
+    away_scores = params[:away_scores].values.map { |v| v.blank? ? nil : v.to_i }
+    home_scores = params[:home_scores].values.map { |v| v.blank? ? nil : v.to_i }
+    mark_final = params[:mark_final] == "1"
+    overtime = params[:overtime] == "1"
+
+    progressive_away = 0
+    progressive_home = 0
+
+    (0..(periods - 1)).each do |i|
+      period_number = i + 1
+      away_score = away_scores[i]
+      home_score = home_scores[i]
+
+      # Skip periods without scores
+      next if away_score.nil? || home_score.nil?
+
+      progressive_away += away_score
+      progressive_home += home_score
+
+      # Destroy existing score for this period and create new one
+      @game.scores.where(period: period_number).destroy_all
+
+      prize = period_number == periods ? @game.final_prize : @game.period_prize
+      winner_address = "a#{progressive_away % 10}h#{progressive_home % 10}"
+      winner = @game.get_player_for_square(winner_address)
+
+      score = Score.new(
+        game: @game,
+        period: period_number,
+        complete: true,
+        ot: period_number == periods && overtime,
+        away: away_score,
+        home: home_score,
+        away_total: progressive_away,
+        home_total: progressive_home,
+        prize: prize,
+        winner: winner
+      )
+
+      # Mark as non-scoring for women's basketball (Q1, Q3)
+      if @game.league.quarters_score_as_halves && period_number.odd?
+        score.non_scoring = true
+      end
+
+      score.save!
+    end
+
+    @game.broadcast_scores
+    @game.start! if @game.upcoming?
+    @game.complete! if mark_final
+
+    redirect_to @game, notice: "Scores updated successfully"
   end
 
   private

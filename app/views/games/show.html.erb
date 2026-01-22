@@ -100,7 +100,27 @@
                 <% if admin? %>
                     <div class="row mt-3">
                         <div class="col text-end">
-                            <%= button_to refresh_scores_game_path(@game), method: :patch, class: "btn btn-outline-success btn-sm me-2" do %>
+                            <button type="button"
+                                    class="btn btn-outline-secondary btn-sm me-2"
+                                    data-controller="clipboard"
+                                    data-clipboard-content-value="<%= grid_tsv(@game) %>"
+                                    data-action="click->clipboard#copy">
+                                <span class="fas fa-table me-1"></span> Export Grid
+                            </button>
+                            <button type="button"
+                                    class="btn btn-outline-secondary btn-sm me-2"
+                                    data-controller="clipboard"
+                                    data-clipboard-content-value="<%= scores_tsv(@game) %>"
+                                    data-action="click->clipboard#copy">
+                                <span class="fas fa-list me-1"></span> Export Scores
+                            </button>
+                            <button type="button"
+                                    class="btn btn-outline-warning btn-sm me-2"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#manualScoresModal">
+                                <span class="fas fa-keyboard me-1"></span> Manual Entry
+                            </button>
+                            <%= button_to refresh_scores_game_path(@game), method: :patch, class: "btn btn-outline-success btn-sm" do %>
                                 <span class="fas fa-sync-alt me-1"></span> Refresh Scores
                             <% end %>
                         </div>
@@ -121,3 +141,7 @@
         </div>
     </div>
 </div>
+
+<% if admin? %>
+    <%= render "games/components/manual_scores_modal", game: @game %>
+<% end %>

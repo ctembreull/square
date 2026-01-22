@@ -60,6 +60,7 @@ Rails.application.routes.draw do
     member do
       patch :swap_teams
       patch :refresh_scores
+      patch :manual_scores
     end
   end
 
@@ -74,6 +75,9 @@ Rails.application.routes.draw do
 
   # Timezone preference (cookie-based)
   patch "timezone" => "timezone#update", as: :timezone
+
+  # Status endpoint for deployment smoke testing
+  get "status" => "status#show", as: :status, defaults: { format: :json }
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
