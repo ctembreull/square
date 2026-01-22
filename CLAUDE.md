@@ -183,7 +183,12 @@ Target: NCAA Tournament testing on Fly.io
 
 | Item | Notes |
 |------|-------|
-| Status/Health Endpoint | JSON API for smoke testing after deploy |
+| ~~Status/Health Endpoint~~ | ✅ Done - `/status.json` returns model counts |
+| ~~**Grid export button (admin)**~~ | ✅ Done - TSV to clipboard via Stimulus controller |
+| ~~**Scores export button (admin)**~~ | ✅ Done - TSV to clipboard via Stimulus controller |
+| ~~**Manual score input modal (admin)**~~ | ✅ Done - Team colors, OT checkbox, mark-as-final |
+| ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
+| ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
 | Deploy to Fly.io | Infrastructure setup and configuration |
 | Set up ActionMailer | Email delivery via Resend |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
@@ -193,11 +198,6 @@ Target: NCAA Tournament testing on Fly.io
 | **Posts feature** | Event emails with game list sidebar (resilience: manual email fallback) |
 | **Event PDF Export** | Printable grids for family (see spec below) |
 | **Full Dockerization** | Ensure app runs locally with production data as fallback |
-| **Grid export button (admin)** | 10x10 player names in TSV format → clipboard for Apple Numbers |
-| **Scores export button (admin)** | Period scores in TSV format → clipboard for Apple Numbers |
-| **Manual score input modal (admin)** | Direct score entry/creation when ESPN or fallback scrapers fail |
-| ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
-| ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
 
@@ -264,4 +264,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-21
+**Last Updated**: 2026-01-22
