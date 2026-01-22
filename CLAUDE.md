@@ -156,7 +156,7 @@ The following patterns have been validated through implementation and should be 
 
 ### Model Status Patterns
 - Status helper methods in models (`upcoming?`, `in_progress?`, `completed?`)
-- Scopes for filtering by status (`active`, `inactive`, `current`)
+- Scopes for filtering by status (`active`, `inactive`, `upcoming`, `in_progress`, `completed`)
 - Manual action methods for state transitions (`end_event!`, `deactivate!`)
 
 ### Navigation Patterns
@@ -214,6 +214,7 @@ Target: Ready for football season
 | Text-stroke lightness slider | HSL adjustment for readability tuning |
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
 | **Square win probability display** | (Stretch) Show win % per square on game#new grid using hardcoded sport-specific digit frequency tables. Fun visualization, may or may not be useful. |
+| Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
 
 ### Event PDF Export Spec
 
