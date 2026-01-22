@@ -13,14 +13,9 @@ class Event < ApplicationRecord
   # Scopes
   scope :active, -> { where(active: true) }
   scope :inactive, -> { where(active: false) }
-  scope :in_progress, -> { where(status: "in_progress") }
-  scope :upcoming, -> { where(status: "upcoming") }
-  scope :completed, -> { where(status: "completed") }
-
-  # Current: started but not ended (end_date nil or in future)
-  scope :current, -> { where("start_date <= ? AND (end_date IS NULL OR end_date >= ?)", Date.today, Date.today).order(:start_date) }
-  # Past: has an end_date that has passed
-  scope :past, -> { where("end_date < ?", Date.today).order(start_date: :desc) }
+  scope :in_progress, -> { where("start_date <= ? AND (end_date IS NULL OR end_date >= ?)", Date.today, Date.today) }
+  scope :upcoming, -> { where("start_date > ?", Date.today) }
+  scope :completed, -> { where("end_date IS NOT NULL AND end_date < ?", Date.today) }
 
   # Prevent deletion if games exist
   before_destroy :prevent_deletion_with_games

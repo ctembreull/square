@@ -3,7 +3,7 @@ class EventsController < ApplicationController
   before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display ]
 
   def home
-    current_event = Event.active.current.first
+    current_event = Event.active.in_progress.first
     if current_event
       redirect_to event_path(current_event)
     else
@@ -12,8 +12,9 @@ class EventsController < ApplicationController
   end
 
   def index
-    @active_events = Event.active.order(start_date: :desc)
-    @inactive_events = Event.inactive.order(start_date: :desc)
+    @current_events = Event.in_progress.order(start_date: :asc)
+    @upcoming_events = Event.upcoming.order(start_date: :asc)
+    @completed_events = Event.completed.order(end_date: :desc)
   end
 
   def show
