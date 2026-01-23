@@ -199,6 +199,7 @@ Target: NCAA Tournament testing on Fly.io
 | **Event PDF Export** | Printable grids for family (see spec below) |
 | **Player export/import** | Rake tasks for YAML export (emails excluded) and import; needed for deploy sync. Alt: share credentials.yml.enc + RAILS_MASTER_KEY via Fly secrets to preserve encrypted emails. |
 | **Full Dockerization** | Ensure app runs locally with production data as fallback |
+| **Admin toolbar toggle** | Show/hide the admin toolbar on game#show (user preference or session-based) |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
 
@@ -216,6 +217,7 @@ Target: Ready for football season
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
 | **Square win probability display** | (Stretch) Show win % per square on game#new grid using hardcoded sport-specific digit frequency tables. Fun visualization, may or may not be useful. |
 | Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
+| **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 
 ### Event PDF Export Spec
 
