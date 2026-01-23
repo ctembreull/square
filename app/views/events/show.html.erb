@@ -165,7 +165,7 @@
 		<div class="row">
 			<% if @event.posts.any? %>
 				<div class="col-8">
-					<%= render "posts/content", post: @event.posts.first %>
+					<%= render "posts/content", post: @event.posts.recent.first %>
 				</div>
 				<div class="col-4">
 					<div class="card">
@@ -173,7 +173,7 @@
 						<div class="card-body py-1 px-0">
 							<table class="table table-sm fs-10 m-0">
 								<tbody>
-									<% @event.posts.each do |post| %>
+									<% @event.posts.recent.each do |post| %>
 										<tr>
 											<th class="fw-semi-bold text-muted">
 												<%= link_to content_post_path(post), data: { turbo_frame: "post-content" }, class: "text-muted" do %>

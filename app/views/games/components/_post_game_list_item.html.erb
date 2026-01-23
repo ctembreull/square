@@ -1,0 +1,10 @@
+<tr>
+	<td class="py-0 px-1 align-middle fw-semi-bold bg-200">
+		<%= link_to game, class: "text-primary-emphasis" do %>
+			<i class="bi bi-link-45deg"></i>
+		<% end %>
+	</td>
+	<td style="width: 45%;" class="p-0 h6 fs-10 text-center align-middle <%= game.away_style %>"><%= game.away_team.display_location %></td>
+	<td class="py-0 px-1 fw-semi-bold fs-10 align-middle">vs</td>
+	<td style="width: 45%;" class="p-0 h6 fs-10 text-center align-middle <%= game.home_style %>"><%= game.home_team.display_location %></td>
+</tr>

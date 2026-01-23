@@ -254,6 +254,7 @@ Target: Ready for football season
 | **Fallback platform plan** | Alternative hosting strategy for outage resilience (multi-cloud, static export). Note: Render blocked SMTP on free tier (Sept 2025), limiting viability unless using paid tier or HTTP-based email APIs. |
 | **Public Docker release** | Package as self-hosted one-click deploy for offices/groups to run their own squares games. Sidesteps SaaS complexity and gambling compliance - users handle their own local rules. Test on TrueNAS first. |
 | **Draft mode for grid selection** | Alternative to random grid: players claim specific squares (office-style pools). Could be first-come-first-served or structured draft order. Note: Chris has patent on automated fantasy drafts - potential IP leverage. |
+| **Historical game import** | Import games from old system via YAML export/import. Challenge: grid stores player IDs that differ between systems. Solution: (1) Add `legacy_id` field to Player for old system's ID, (2) Admin UI to map current players to their old IDs, (3) Import creates inactive players for unmapped old IDs, then translates grid references. Preserves family game history from pre-1.0 years. |
 
 ## Small Fixes (No Milestone)
 

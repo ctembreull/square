@@ -29,17 +29,33 @@
 	</div>
 	<div class="col-4">
 		<div class="card">
-			<div class="card-header border-bottom p-2">
+			<div class="card-header border-bottom p-2 bg-200">
 				<h6 class="m-0">Games</h6>
 			</div>
 			<div class="card-body p-0">
-				<% if @event.games.any? %>
-					<% @event.games.earliest_first.each do |game| %>
-						<%= render "games/components/upcoming_game_list_item", game: game %>
+				<table class="table table-sm m-0">
+					<% if @event.games.upcoming.any? %>
+						<tbody>
+							<tr>
+								<th colspan="4" class="h6 fs-10 fw-semi-bold text-200 bg-600">Upcoming Games</th>
+							</tr>
+							<% @event.games.upcoming.earliest_first.each do |game| %>
+								<%= render "games/components/post_game_list_item", game: game %>
+							<% end %>
+						</tbody>
 					<% end %>
-				<% else %>
-					<p class="text-muted p-3 mb-0">No games yet.</p>
-				<% end %>
+
+					<% if @event.games.completed.any? %>
+						<tbody>
+							<tr>
+								<th colspan="4" class="h6 fs-10 fw-semi-bold text-200 bg-600">Completed Games</th>
+							</tr>
+							<% @event.games.completed.latest_first.each do |game| %>
+								<%= render "games/components/post_game_list_item", game: game %>
+							<% end %>
+						</tbody>
+					<% end %>
+				</table>
 			</div>
 		</div>
 	</div>
