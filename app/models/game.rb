@@ -63,6 +63,7 @@ class Game < ApplicationRecord
   validates :starts_at, presence: true
   validates :period_prize, presence: true, numericality: { only_integer: true }
   validates :final_prize, presence: true, numericality: { only_integer: true }
+  validate :grid_can_be_filled, on: :create
 
   scope :upcoming, -> { where("starts_at > ?", Time.current) }
   scope :today, -> { where(starts_at: Time.current.beginning_of_day..Time.current.end_of_day) }
@@ -139,6 +140,17 @@ class Game < ApplicationRecord
   end
 
   private
+
+  def grid_can_be_filled
+    total_chances = Player.total_active_chances
+
+    if total_chances > GAME_PLAYERS
+      errors.add(:base, "Cannot create game: total active chances (#{total_chances}) exceeds #{GAME_PLAYERS}. Reduce player chances first.")
+    elsif total_chances < GAME_PLAYERS && Player.charities.active.none?
+      shortfall = GAME_PLAYERS - total_chances
+      errors.add(:base, "Cannot create game: #{shortfall} squares would be unfilled and no active charities exist to fill them.")
+    end
+  end
 
   def combine_datetime_fields
     return if local_date.blank? || local_time.blank? || local_timezone.blank?

@@ -192,9 +192,9 @@ Target: NCAA Tournament testing on Fly.io
 | Deploy to Fly.io | Infrastructure setup and configuration. Note: PDF generation uses `localhost` for Puppeteer to fetch stylesheets - verify internal port routing works in container. |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
-| Grid validation (Player.total_active_chances) | Prevent bad game creation |
+| ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
 | Query optimization on leagues/show | Performance fix (eager loading/caching) |
-| Active player chances validation | Sum must be ≤100 |
+| ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
 | ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
 | **Player export/import** | Rake tasks for YAML export (emails excluded) and import; needed for deploy sync. Alt: share credentials.yml.enc + RAILS_MASTER_KEY via Fly secrets to preserve encrypted emails. |
 | **Full Dockerization** | Ensure app runs locally with production data as fallback. Include Chromium for Grover PDF generation. |
