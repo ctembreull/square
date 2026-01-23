@@ -6,11 +6,11 @@
 		<tr>
 			<th class="winners-period"></th>
 			<th class="winners-prize bg-200 py-1 fw-bold h6 fs-10">Prize</th>
-			<th class="winners-team winners-away p-0 h6 fs-10">
-				<div class="p-2 <%= game.away_style %>"><%= game.away_team.abbr %></div>
+			<th class="winners-team winners-away p-2 h6 fw-semibold fs-10 <%= game.away_style %>">
+				<%= game.away_team.abbr %>
 			</th>
-			<th class="winners-team winners-home p-0 h6 fs-10">
-				<div class="p-2 <%= game.home_style %>"><%= game.home_team.abbr %></div>
+			<th class="winners-team winners-home p-2 h6 fw-semibold fs-10 <%= game.home_style %>">
+				<%= game.home_team.abbr %>
 			</th>
 			<th class="winners-winner bg-200 py-1 fw-bold h6 fs-10">Winner</th>
 		</tr>

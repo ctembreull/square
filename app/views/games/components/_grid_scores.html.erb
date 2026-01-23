@@ -15,8 +15,8 @@
 		</tr>
 
 		<tr class="scores-row scores-away">
-			<th class="p-0 h6 border-bottom border-400">
-				<div class="p-2 <%= game.away_style %>"><%= game.away_team.display_location %></div>
+			<th class="p-2 h6 fw-semibold border-bottom border-400 <%= game.away_style %>">
+				<%= game.away_team.display_location %>
 			</th>
 			<% (1..game.league.periods).each do |period| %>
 				<% score = scores.find { |s| s.period == period } %>
@@ -26,8 +26,8 @@
 		</tr>
 
 		<tr class="scores-row scores-home">
-			<th class="p-0 h6">
-				<div class="p-2 <%= game.home_style %>"><%= game.home_team.display_location %></div>
+			<th class="p-2 h6 fw-semibold <%= game.home_style %>">
+				<%= game.home_team.display_location %>
 			</th>
 			<% (1..game.league.periods).each do |period| %>
 				<% score = scores.find { |s| s.period == period } %>

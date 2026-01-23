@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     member do
       get :display
       get :winners
+      get :pdf
       patch :activate
       patch :deactivate
       patch :end_event

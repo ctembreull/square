@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   skip_before_action :require_admin, only: [ :index, :show, :display, :home ]
-  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display ]
+  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display, :pdf ]
 
   def home
     current_event = Event.active.in_progress.first
@@ -78,6 +78,25 @@ class EventsController < ApplicationController
     @charities = @winners.delete("charity") || []
     @families = Player.where(id: @winners.keys).index_by(&:id)
     @total_awarded = (@winners.values.flatten + @charities).sum { |w| w[:total] }
+  end
+
+  def pdf
+    # Sort: upcoming (earliest first), then completed (latest first)
+    @upcoming_games = @event.games.upcoming.earliest_first
+    @completed_games = @event.games.completed.latest_first
+
+    html = render_to_string(
+      template: "events/pdf",
+      layout: "pdf",
+      locals: { event: @event, upcoming_games: @upcoming_games, completed_games: @completed_games }
+    )
+
+    pdf = Grover.new(html, display_url: request.base_url).to_pdf
+
+    send_data pdf,
+      filename: "#{@event.title.parameterize}-games.pdf",
+      type: "application/pdf",
+      disposition: "attachment"
   end
 
   private

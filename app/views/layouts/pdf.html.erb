@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= content_for?(:title) ? yield(:title) : "Family Squares" %></title>
+
+  <%# Include stylesheets with full URLs for Grover to fetch %>
+  <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" %>
+  <%= stylesheet_link_tag :app, media: "all" %>
+  <%= stylesheet_link_tag "teams", media: "all" %>
+  <%= stylesheet_link_tag "game", media: "all" %>
+
+  <style>
+    /* PDF-specific overrides */
+    html, body {
+      font-size: 9pt;
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 0 !important;
+      height: auto !important;
+      display: block !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    /* Force content to top, no vertical centering */
+    .container-fluid {
+      display: block !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+    }
+
+    .game-page:first-child {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    #pdf-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0.25in;
+      right: 0.25in;
+    }
+
+    /* Ensure backgrounds print */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    /* Page break helpers */
+    .page-break {
+      page-break-after: always;
+    }
+
+    .avoid-break {
+      page-break-inside: avoid;
+    }
+
+    /* Tighten up game grid for print */
+    table.game-grid {
+      font-size: 8pt;
+    }
+
+    table.game-grid td.game-cell {
+      padding: 8px 4px !important;
+      font-size: 8pt;
+      line-height: 1.3;
+      height: 42px !important;
+      vertical-align: middle;
+    }
+
+    table.game-grid tr.game-row,
+    table.game-grid tbody tr {
+      height: 42px !important;
+    }
+
+    table.game-grid th.hnum,
+    table.game-grid th.anum {
+      padding: 6px !important;
+      font-size: 10pt;
+    }
+
+    /* Team header styling for PDF */
+    table.game-grid #home-team-header {
+      padding: 6px 8px !important;
+      font-size: 16pt !important;
+    }
+
+    table.game-grid #away-team-header {
+      padding: 0 !important;
+    }
+
+    table.game-grid #away-team-header > div {
+      font-size: 14pt !important;
+    }
+
+    table.game-grid th.home-team-display,
+    table.game-grid th.away-team-display {
+      font-size: 16pt;
+    }
+
+    table.game-grid .display-6 {
+      font-size: 16pt !important;
+    }
+
+    /* Tighten scores and winners tables */
+    table.scores-grid,
+    table.winners-grid {
+      font-size: 9pt;
+    }
+
+    table.scores-grid td,
+    table.scores-grid th,
+    table.winners-grid td,
+    table.winners-grid th {
+      padding: 3px 5px !important;
+    }
+
+    /* Team cells in scores/winners tables */
+    table.scores-grid th.p-2,
+    table.winners-grid th.p-2 {
+      padding: 4px 6px !important;
+    }
+
+    .h6 {
+      margin-bottom: 0 !important;
+      font-size: 9pt !important;
+    }
+
+    /* Game header styling */
+    .game-header {
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+    }
+
+    .game-header h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 16pt;
+    }
+
+    .game-header p {
+      font-size: 10pt;
+      margin-bottom: 0.1rem;
+    }
+
+    /* Reduce row spacing */
+    .row.mb-3 {
+      margin-bottom: 0.5rem !important;
+    }
+
+    /* Reduce container padding */
+    .container-fluid.p-3 {
+      padding: 0.25rem !important;
+      padding-top: 0 !important;
+    }
+
+    /* Tighten game page spacing */
+    .game-page .mb-3 {
+      margin-bottom: 2rem !important;
+    }
+
+    .game-page .mb-2 {
+      margin-bottom: 0.25rem !important;
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <div id="pdf-wrapper">
+    <%= yield %>
+  </div>
+</body>
+</html>

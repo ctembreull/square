@@ -3,10 +3,8 @@
 	<tbody>
 		<tr>
 			<th colspan="2"></th>
-			<th id="home-team-header" colspan="10" class="home-team-display p-0 border border-400 display-6">
-				<div id="home-team-banner" class="m-0 p-3 <%= game.home_style %>">
-					<%= game.home_team.display_name %>
-				</div>
+			<th id="home-team-header" colspan="10" class="home-team-display p-3 border border-400 display-6 <%= game.home_style %>">
+				<%= game.home_team.display_name %>
 			</th>
 		</tr>
 		<tr>
@@ -17,7 +15,7 @@
 		</tr>
 		<tr class="game-row">
 			<th id="away-team-header" rowspan="10" class="away-team-display p-0 border border-400 display-6" style="width: 6%;">
-				<div id="away-team-banner" class="m-0 p-4 <%= game.away_style %>">
+				<div class="<%= game.away_style %>">
 					<%= game.away_team.display_name %>
 				</div>
 			</th>
