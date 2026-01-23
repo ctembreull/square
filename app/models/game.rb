@@ -73,18 +73,20 @@ class Game < ApplicationRecord
   scope :in_progress, -> { where(status: "in_progress") }
   scope :completed, -> { where(status: "completed") }
 
-  def build_map
+  # Build the grid map from serialized grid string
+  # Optionally accepts preloaded players hash (id => Player) to avoid N+1 queries
+  def build_map(players_by_id = nil)
     # Assumes grid =~ "a0h0:<player_id>;<a0h1>:<player_id>..."
     return unless @game_map.nil?
-    players = Player.all.load
-    @game_map = grid.split(";").map do |square|
+    players_by_id ||= Player.all.index_by(&:id)
+    @game_map = grid.split(";").to_h do |square|
       k, v = square.split(":")
-      [ k, players.find(v) ]
-    end.to_h
+      [ k, players_by_id[v.to_i] ]
+    end
   end
 
-  def get_player_for_square(ah)
-    build_map
+  def get_player_for_square(ah, players_by_id: nil)
+    build_map(players_by_id)
     @game_map[ah]
   end
 

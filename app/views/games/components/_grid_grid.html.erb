@@ -1,3 +1,4 @@
+<% players_by_id ||= nil %>
 
 <table class="game-grid">
 	<tbody>
@@ -22,7 +23,7 @@
 			<th id="a0" class="anum an0 py-3 px-3 fw-bold bg-200 border border-400">0</th>
 			<% (0..9).each do |h| %>
 				<td id="a0h<%= h %>" class="game-cell border fs-10 text-wrap">
-					<%= game.get_player_for_square("a0h" + h.to_s).display_name %><br>
+					<%= game.get_player_for_square("a0h#{h}", players_by_id: players_by_id).display_name %><br>
 				</td>
 			<% end %>
 		</tr>
@@ -31,7 +32,7 @@
 				<th id="a<%= a %>" class="anum an<%= a %> py-3 fw-bold bg-200 border border-400"><%= a %></th>
 				<% (0..9).each do |h| %>
 					<td id="a<%= a %>h<%= h %>" class="game-cell border fs-10 text-wrap">
-						<%= game.get_player_for_square("a" + a.to_s + "h" + h.to_s).display_name %><br>
+						<%= game.get_player_for_square("a#{a}h#{h}", players_by_id: players_by_id).display_name %><br>
 					</td>
 				<% end %>
 			</tr>

@@ -81,14 +81,25 @@ class EventsController < ApplicationController
   end
 
   def pdf
+    # Eager load associations to avoid N+1 queries during PDF generation
+    games_scope = @event.games.includes(:home_team, :away_team, :league, scores: :winner)
+
     # Sort: upcoming (earliest first), then completed (latest first)
-    @upcoming_games = @event.games.upcoming.earliest_first
-    @completed_games = @event.games.completed.latest_first
+    @upcoming_games = games_scope.upcoming.earliest_first
+    @completed_games = games_scope.completed.latest_first
+
+    # Preload all players once for grid lookups (build_map normally loads per-game)
+    @all_players = Player.all.index_by(&:id)
 
     html = render_to_string(
       template: "events/pdf",
       layout: "pdf",
-      locals: { event: @event, upcoming_games: @upcoming_games, completed_games: @completed_games }
+      locals: {
+        event: @event,
+        upcoming_games: @upcoming_games,
+        completed_games: @completed_games,
+        players_by_id: @all_players
+      }
     )
 
     # Use localhost for Puppeteer to fetch stylesheets - it runs on the server,
