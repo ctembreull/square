@@ -197,7 +197,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
 | ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
 | **Player export/import** | Rake tasks for YAML export (emails excluded) and import; needed for deploy sync. Alt: share credentials.yml.enc + RAILS_MASTER_KEY via Fly secrets to preserve encrypted emails. |
-| **Full Dockerization** | Ensure app runs locally with production data as fallback. Include Chromium for Grover PDF generation. |
+| **Full Dockerization** | Rails 8 Dockerfile exists. TODO: (1) Add `chromium chromium-sandbox` to base packages, (2) Set Puppeteer env vars for Grover, (3) Add docker-compose.yml with SQLite volume for local testing. |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
