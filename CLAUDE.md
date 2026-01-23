@@ -263,7 +263,10 @@ Target: Ready for football season
 | ✅ Team stylesheet `!important` override | Add `!important` to `background-color` and `color` in generated styles to override Falcon theme table styles |
 | Reset game page on final status | When automatic scoring sets a game to "final", broadcast a page reset via ActionCable to terminate the live connection and show the final UX |
 | Tabs controller Turbo cache issue | On some page loads, neither tab panel shows. Possibly a Turbo Drive caching race condition. May need `data-turbo-cache="false"` or `turbo:before-cache` handler. Monitor for recurrence. |
+| ✅ Action Text links load in frame | Fixed - Stimulus controller `action_text_links_controller.js` adds `data-turbo-frame="_top"` to all links on connect |
+| Posts UI: add edit links | Re-add edit links to the Stimulus-controlled posts UI |
+| Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
 
 ---
 
-**Last Updated**: 2026-01-22
+**Last Updated**: 2026-01-23
