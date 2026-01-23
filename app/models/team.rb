@@ -60,8 +60,9 @@ class Team < ApplicationRecord
   end
 
   ## Get a team's default css class name
+  # Uses Ruby find to work with preloaded associations instead of generating SQL
   def get_default_style
-    style = styles.default.first || styles.first
+    styles.find { |s| s.default } || styles.first
   end
 
   def get_default_style_class_name

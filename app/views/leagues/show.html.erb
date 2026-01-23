@@ -55,9 +55,10 @@
 						</div>
 				</div>
 				<div class="card-body p-0 g-0">
-					<% if conference.teams.any? %>
+					<% teams = conference.teams.sort_by { |t| [t.location.to_s, t.name.to_s] } %>
+					<% if teams.any? %>
 						<ul class="list-group list-group-flush">
-							<% conference.teams.alphabetical.each do |team| %>
+							<% teams.each do |team| %>
 								<li class="list-group-item py-1 px-2 fw-bold text-center <%= team.get_default_style_class_name %>">
 									<%= link_to team.display_name(league: @league), team_path(team, league_id: @league.id), class: team.get_default_style_class_name %>
 								</li>

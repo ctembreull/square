@@ -6,7 +6,9 @@ class LeaguesController < ApplicationController
   end
 
   def show
-    @conferences = @league.conferences.alphabetical
+    @conferences = @league.conferences
+                          .includes(teams: :styles)
+                          .alphabetical
   end
 
   # GET /leagues/:id/teams.json

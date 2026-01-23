@@ -193,7 +193,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
-| Query optimization on leagues/show | Performance fix (eager loading/caching) |
+| ~~Query optimization on leagues/show~~ | ✅ Done - Eager loading + Ruby sorting reduced 335 queries to 4 |
 | ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
 | ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
 | **Player export/import** | Rake tasks for YAML export (emails excluded) and import; needed for deploy sync. Alt: share credentials.yml.enc + RAILS_MASTER_KEY via Fly secrets to preserve encrypted emails. |
