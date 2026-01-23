@@ -21,7 +21,7 @@
 	</div>
 
 	<div class="d-flex justify-content-end gap-2">
-		<%= link_to "Cancel", post.persisted? ? post : @event, class: "btn btn-secondary" %>
+		<%= link_to "Cancel", event_path(post.persisted? ? post.event : @event, anchor: "posts"), class: "btn btn-secondary" %>
 		<%= form.submit class: "btn btn-primary" %>
 	</div>
 <% end %>
