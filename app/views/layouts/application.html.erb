@@ -98,6 +98,13 @@
 								</a>
 								<div class="dropdown-menu dropdown-menu-end dropdown-caret dropdown-menu-card border-0 mt-0">
 									<div class="bg-white dark__bg-1000 rounded-3 py-2">
+										<% if admin? %>
+											<%= button_to toggle_admin_tools_path, method: :patch, class: "dropdown-item" do %>
+												<span class="fas fa-<%= show_admin_tools? ? 'eye-slash' : 'eye' %> me-2"></span>
+												<%= show_admin_tools? ? "Hide" : "Show" %> Admin Tools
+											<% end %>
+											<div class="dropdown-divider"></div>
+										<% end %>
 										<%= button_to "Log Out", logout_path, method: :delete, class: "dropdown-item" %>
 									</div>
 								</div>

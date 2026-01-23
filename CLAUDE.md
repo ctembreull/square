@@ -198,7 +198,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
 | **Player export/import** | Rake tasks for YAML export (emails excluded) and import; needed for deploy sync. Alt: share credentials.yml.enc + RAILS_MASTER_KEY via Fly secrets to preserve encrypted emails. |
 | **Full Dockerization** | Ensure app runs locally with production data as fallback. Include Chromium for Grover PDF generation. |
-| **Admin toolbar toggle** | Show/hide the admin toolbar on game#show (user preference or session-based) |
+| ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
 

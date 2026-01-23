@@ -20,4 +20,9 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to root_path, notice: "Logged out successfully"
   end
+
+  def toggle_admin_tools
+    session[:show_admin_tools] = !session[:show_admin_tools]
+    redirect_back fallback_location: root_path
+  end
 end

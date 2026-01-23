@@ -62,49 +62,43 @@
 						<% end %>
 					</div>
 				</div>
-				<% if admin? %>
+				<% if show_admin_tools? %>
 					<div class="row gx-0 p-2 bg-700 text-200" id="header-toolbar">
 						<div class="col-5 text-200 text-start">
-							<% if admin? %>
-								<div class="btn-group">
+							<div class="btn-group">
 								<button type="button"
-													class="btn btn-outline-info btn-sm"
-													data-controller="clipboard"
-													data-clipboard-content-value="<%= grid_tsv(@game) %>"
-													data-action="click->clipboard#copy">
-											<span class="fas fa-table me-1"></span> Copy Grid
-									</button>
-									<button type="button"
-													class="btn btn-outline-info btn-sm"
-													data-controller="clipboard"
-													data-clipboard-content-value="<%= scores_tsv(@game) %>"
-													data-action="click->clipboard#copy">
-											<span class="fas fa-list me-1"></span> Copy Scores
-									</button>
-									</div>
-								<% end %>
+												class="btn btn-outline-info btn-sm"
+												data-controller="clipboard"
+												data-clipboard-content-value="<%= grid_tsv(@game) %>"
+												data-action="click->clipboard#copy">
+									<span class="fas fa-table me-1"></span> Copy Grid
+								</button>
+								<button type="button"
+												class="btn btn-outline-info btn-sm"
+												data-controller="clipboard"
+												data-clipboard-content-value="<%= scores_tsv(@game) %>"
+												data-action="click->clipboard#copy">
+									<span class="fas fa-list me-1"></span> Copy Scores
+								</button>
+							</div>
 						</div>
 						<div class="col-2 text-200 text-center">
-							<% if admin? %>
-								<%= link_to edit_game_path(@game), class: "btn btn-outline-light btn-sm", target: :blank do %>
-									<span class="fas fa-edit me-1"></span> Edit
-								<% end %>
+							<%= link_to edit_game_path(@game), class: "btn btn-outline-light btn-sm", target: :blank do %>
+								<span class="fas fa-edit me-1"></span> Edit
 							<% end %>
 						</div>
 						<div class="col-5 text-200 text-end">
-							<% if admin? %>
-								<div class="btn-group">
+							<div class="btn-group">
 								<button type="button"
-													class="btn btn-outline-warning btn-sm"
-													data-bs-toggle="modal"
-													data-bs-target="#manualScoresModal">
-											<span class="fas fa-keyboard me-1"></span> Manual Scores
-									</button>
-									<%= link_to refresh_scores_game_path(@game), data: { turbo_method: :patch }, class: "btn btn-outline-success btn-sm" do %>
-											<span class="fas fa-sync-alt me-1"></span> Fetch Scores
-									<% end %>
-									</div>
-							<% end %>
+												class="btn btn-outline-warning btn-sm"
+												data-bs-toggle="modal"
+												data-bs-target="#manualScoresModal">
+									<span class="fas fa-keyboard me-1"></span> Manual Scores
+								</button>
+								<%= link_to refresh_scores_game_path(@game), data: { turbo_method: :patch }, class: "btn btn-outline-success btn-sm" do %>
+									<span class="fas fa-sync-alt me-1"></span> Fetch Scores
+								<% end %>
+							</div>
 						</div>
 					</div>
 				<% end %>
@@ -147,6 +141,6 @@
     </div>
 </div>
 
-<% if admin? %>
+<% if show_admin_tools? %>
     <%= render "games/components/manual_scores_modal", game: @game %>
 <% end %>

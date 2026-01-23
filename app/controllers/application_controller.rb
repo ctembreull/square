@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   # Require admin for all actions by default
   before_action :require_admin
 
-  helper_method :current_timezone, :current_user, :logged_in?, :admin?
+  helper_method :current_timezone, :current_user, :logged_in?, :admin?, :show_admin_tools?
 
   private
 
@@ -37,6 +37,10 @@ class ApplicationController < ActionController::Base
 
   def admin?
     current_user&.admin?
+  end
+
+  def show_admin_tools?
+    admin? && session[:show_admin_tools] != false
   end
 
   def require_admin
