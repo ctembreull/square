@@ -1,0 +1,71 @@
+class PostMailer < ApplicationMailer
+  def event_post(post, email, attach_pdf: false)
+    @post = post
+    @event = post.event
+
+    # Convert relative URLs in post body to absolute for email clients
+    @post_body = absolutize_urls(@post.body.to_s)
+
+    # Plain text version with proper paragraph breaks
+    @post_body_text = html_to_plain_text(@post_body)
+
+    # Attach PDF if requested
+    if attach_pdf
+      pdf_data = generate_event_pdf(@event)
+      attachments["#{@event.title.parameterize}-games.pdf"] = pdf_data if pdf_data
+    end
+
+    mail(
+      to: email,
+      subject: "[Family Squares] #{@post.title}"
+    )
+  end
+
+  private
+
+  def absolutize_urls(html)
+    host = ActionMailer::Base.default_url_options[:host]
+    port = ActionMailer::Base.default_url_options[:port]
+    base = port ? "http://#{host}:#{port}" : "https://#{host}"
+
+    # Convert href="/..." to href="https://host/..."
+    html.gsub(/href="\//, "href=\"#{base}/")
+  end
+
+  def html_to_plain_text(html)
+    text = html.dup
+    # Convert paragraph and div closes to double newlines
+    text.gsub!(/<\/p>/i, "\n\n")
+    text.gsub!(/<\/div>/i, "\n\n")
+    # Convert line breaks to single newlines
+    text.gsub!(/<br\s*\/?>/i, "\n")
+    # Strip remaining tags
+    text = ActionController::Base.helpers.strip_tags(text)
+    # Clean up excessive whitespace while preserving paragraph breaks
+    text.gsub(/\n{3,}/, "\n\n").strip
+  end
+
+  def generate_event_pdf(event)
+    # Reuse existing PDF generation logic from EventsController
+    games_scope = event.games.includes(:home_team, :away_team, :league, scores: :winner)
+    upcoming_games = games_scope.upcoming.earliest_first
+    completed_games = games_scope.completed.latest_first
+    players_by_id = Player.all.index_by(&:id)
+
+    html = ApplicationController.render(
+      template: "events/pdf",
+      layout: "pdf",
+      assigns: {
+        event: event,
+        upcoming_games: upcoming_games,
+        completed_games: completed_games
+      },
+      locals: { players_by_id: players_by_id }
+    )
+
+    Grover.new(html, display_url: "http://localhost:3000").to_pdf
+  rescue => e
+    Rails.logger.error "PDF generation failed: #{e.message}"
+    nil
+  end
+end

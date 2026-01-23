@@ -23,6 +23,14 @@ class Player < ApplicationRecord
   scope :inactive, -> { where(active: false) }
   scope :without_family, -> { where(family_id: nil) }
 
+  # Email recipients: active Families and Singles with email addresses
+  # (Individuals belong to Families, Charities are placeholders)
+  scope :email_recipients, -> {
+    where(type: %w[Family Single])
+      .where(active: true)
+      .where.not(email: [ nil, "" ])
+  }
+
   # Class method for grid validation (only counts human players, not charities)
   def self.total_active_chances
     humans.active.sum(:chances)
