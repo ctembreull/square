@@ -189,16 +189,16 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Manual score input modal (admin)**~~ | ✅ Done - Team colors, OT checkbox, mark-as-final |
 | ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
 | ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
-| Deploy to Fly.io | Infrastructure setup and configuration |
+| Deploy to Fly.io | Infrastructure setup and configuration. Note: PDF generation uses `localhost` for Puppeteer to fetch stylesheets - verify internal port routing works in container. |
 | Set up ActionMailer | Email delivery via Resend |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
 | Grid validation (Player.total_active_chances) | Prevent bad game creation |
 | Query optimization on leagues/show | Performance fix (eager loading/caching) |
 | Active player chances validation | Sum must be ≤100 |
 | **Posts feature** | Event emails with game list sidebar (resilience: manual email fallback) |
-| **Event PDF Export** | Printable grids for family (see spec below) |
+| ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
 | **Player export/import** | Rake tasks for YAML export (emails excluded) and import; needed for deploy sync. Alt: share credentials.yml.enc + RAILS_MASTER_KEY via Fly secrets to preserve encrypted emails. |
-| **Full Dockerization** | Ensure app runs locally with production data as fallback |
+| **Full Dockerization** | Ensure app runs locally with production data as fallback. Include Chromium for Grover PDF generation. |
 | **Admin toolbar toggle** | Show/hide the admin toolbar on game#show (user preference or session-based) |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
@@ -219,14 +219,12 @@ Target: Ready for football season
 | Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 
-### Event PDF Export Spec
+### Event PDF Export (Implemented)
 
-- Generate printable PDF of all games in an event
+- Grover gem (Puppeteer-based) generates landscape Letter PDFs
 - Layout: Grid (full-width top), linescores (bottom-left), winners (bottom-right)
 - Sort order: Upcoming games (earliest first) → Past games (latest first)
-- Distribution: Download button on event page + optional attachment on Post emails
-- Use HTML-to-PDF approach (WickedPDF or Grover) to reuse existing grid partials
-- Serves tech-hesitant family members who prefer familiar PDF/email format
+- **Deployment note**: Uses `localhost:PORT` for Puppeteer to fetch stylesheets since Puppeteer runs server-side and can't resolve external hostnames. Verify port routing in Docker/Fly.io.
 
 ## Status Endpoint Specification
 
