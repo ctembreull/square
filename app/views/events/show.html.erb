@@ -133,13 +133,8 @@
 				<% end %>
 			</ul>
 		</div>
-	</div>
-
-	<!-- games panel -->
-	<div class="gx-0 p-0 my-4" id="games" data-tabs-target="panel">
-	<div class="row mb-3 tab-pane fade show active">
-		<div class="col-12">
-
+		<div class="card-body p-0" id="games" data-tabs-target="panel">
+			
 			<table class="table table-sm fs-10 m-0">
 				<tbody id="upcoming-games-table">
 					<tr>
@@ -158,18 +153,16 @@
 						</td>
 					</tr>
 					<% @event.games.completed.latest_first.each do |game| %>
-							<%= render "events/components/game_row_completed", game: game %>
-						<% end %>
+						<%= render "events/components/game_row_completed", game: game %>
+					<% end %>
 				</tbody>
 			</table>
 
 		</div>
 	</div>
-</div>
-
-	<!-- posts panel -->
-	<div class="gx-0 p-0 my-4 d-none" id="posts" data-tabs-target="panel">
-		<div class="row mb-3">
+	<!-- Posts panel: outside the card for floating card styling -->
+	<div class="d-none mt-3" id="posts" data-tabs-target="panel">
+		<div class="row">
 			<% if @event.posts.any? %>
 				<div class="col-8">
 					<%= render "posts/content", post: @event.posts.first %>
@@ -214,3 +207,4 @@
 		</div>
 	</div>
 </div>
+

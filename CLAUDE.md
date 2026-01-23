@@ -197,6 +197,7 @@ Target: NCAA Tournament testing on Fly.io
 | Active player chances validation | Sum must be ≤100 |
 | **Posts feature** | Event emails with game list sidebar (resilience: manual email fallback) |
 | **Event PDF Export** | Printable grids for family (see spec below) |
+| **Player export/import** | Rake tasks for YAML export (emails excluded) and import; needed for deploy sync. Alt: share credentials.yml.enc + RAILS_MASTER_KEY via Fly secrets to preserve encrypted emails. |
 | **Full Dockerization** | Ensure app runs locally with production data as fallback |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
