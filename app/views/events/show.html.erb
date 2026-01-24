@@ -20,15 +20,6 @@
 					</div>
 					<div class="col-auto">
 						<% if admin? %>
-							<%= link_to pdf_event_path(@event), class: "btn btn-outline-info btn-sm me-2", data: { turbo: false } do %>
-								<span class="fas fa-file-pdf me-1"></span> PDF
-							<% end %>
-							<%= link_to winners_event_path(@event), class: "btn btn-outline-warning btn-sm me-2" do %>
-								<span class="fas fa-trophy me-1"></span> Winners
-							<% end %>
-							<%= link_to edit_event_path(@event), class: "btn btn-outline-secondary btn-sm" do %>
-								<span class="fas fa-edit me-1"></span> Edit
-							<% end %>
 						<% end %>
 					</div>
 				</div>
@@ -59,11 +50,23 @@
 					</div>
 					<div class="col-3 text-end"></div>
 				</div>
-				<% if false %>
+				<% if show_admin_tools? %>
 					<div class="row gx-0 p-2 bg-700 text-200" id="header-toolbar">
-						<div class="col-4 text-200 text-start"><!-- left admin controls --></div>
-						<div class="col-4 text-200 text-center"><!-- center admin controls --></div>
-						<div class="col-4 text-200 text-end"><!-- right admin controls --></div>
+						<div class="col-4 text-200 text-start">
+							<%= link_to pdf_event_path(@event), class: "btn btn-outline-info btn-sm me-2", data: { turbo: false } do %>
+								<span class="fas fa-file-pdf me-1"></span> PDF
+							<% end %>
+						</div>
+						<div class="col-4 text-200 text-center">
+							<%= link_to edit_event_path(@event), class: "btn btn-outline-light btn-sm" do %>
+								<span class="fas fa-edit me-1"></span> Edit
+							<% end %>
+						</div>
+						<div class="col-4 text-200 text-end">
+							<%= link_to winners_event_path(@event), class: "btn btn-outline-warning btn-sm me-2" do %>
+								<span class="fas fa-trophy me-1"></span> Winners
+							<% end %>
+						</div>
 					</div>
 				<% end %>
 			</div>

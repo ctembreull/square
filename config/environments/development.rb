@@ -63,6 +63,9 @@ Rails.application.configure do
   # SolidQueue is used in production
   config.active_job.queue_adapter = :async
 
+  # Configure SolidQueue to use the queue database (needed if running bin/jobs manually)
+  config.solid_queue.connects_to = { database: { writing: :queue } }
+
   # Highlight code that triggered redirect in logs.
   config.action_dispatch.verbose_redirect_logs = true
 
