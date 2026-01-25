@@ -403,6 +403,154 @@ but-butler-bulldogs:
       css: 'background-color: #13294B; color: #FFFFFF; text-shadow: 1px 1px 0 #00A3E0,
         -1px 1px 0 #00A3E0, 1px -1px 0 #00A3E0, -1px -1px 0 #00A3E0; '
       default: true
+poly-cal-poly-mustangs:
+  abbr: POLY
+  location: California Polytechnic State University
+  display_location: Cal Poly
+  name: Mustangs
+  level: college
+  colors:
+    mustang-gold:
+      name: Mustang Gold
+      hex: BD8B13
+      primary: true
+    poly-green:
+      name: Poly Green
+      hex: '154734'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    green:
+      name: Green
+      css: 'background-color: #154734; color: #FFFFFF; text-shadow: 1px 1px 0 #BD8B13,
+        -1px 1px 0 #BD8B13, 1px -1px 0 #BD8B13, -1px -1px 0 #BD8B13; '
+      default: true
+csb-cal-state-bakersfield-roadrunners:
+  abbr: CSB
+  location: California State University, Bakersfield
+  display_location: Cal State Bakersfield
+  name: Roadrunners
+  level: college
+  colors:
+    blue:
+      name: Blue
+      hex: '003594'
+      primary: true
+    gold:
+      name: Gold
+      hex: FFC72C
+      primary: true
+  styles:
+    gold-on-blue:
+      name: Gold on Blue
+      css: 'background-color: #003594; color: #FFC72C; '
+      default: true
+csuf-cal-state-fullerton-titans:
+  abbr: CSUF
+  location: California State University, Fullerton
+  display_location: Cal State Fullerton
+  name: Titans
+  level: college
+  colors:
+    titan-blue:
+      name: 'Titan Blue '
+      hex: 00244E
+      primary: true
+    titan-orange:
+      name: Titan Orange
+      hex: FF7900
+      primary: true
+  styles:
+    orange-on-blue:
+      name: Orange on Blue
+      css: 'background-color: #00244E; color: #FF7900; '
+      default: true
+lbst-long-beach-state-beach:
+  abbr: LBST
+  location: California State University, Long Beach
+  display_location: Long Beach State
+  name: Beach
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    yellow:
+      name: Yellow
+      hex: ECAA00
+      primary: true
+  styles:
+    yellow-on-black:
+      name: Yellow on Black
+      css: 'background-color: #000000; color: #ECAA00; '
+      default: true
+    yellow-on-white:
+      name: Yellow on White
+      css: 'background-color: #FFFFFF; color: #ECAA00; text-shadow: 1px 1px 0 #000000,
+        -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
+      default: false
+csun-cal-state-northridge-matadors:
+  abbr: CSUN
+  location: California State University, Northridge
+  display_location: Cal State Northridge
+  name: Matadors
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    csun-hero-red:
+      name: CSUN Hero Red
+      hex: D22030
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    black-on-red:
+      name: Black on Red
+      css: 'background-color: #D22030; color: #000000; '
+      default: true
+    black:
+      name: Black
+      css: 'background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #D22030,
+        -1px 1px 0 #D22030, 1px -1px 0 #D22030, -1px -1px 0 #D22030; '
+      default: false
+cam-campbell-fighting-camels:
+  abbr: CAM
+  location: Campbell University
+  display_location: Campbell
+  name: Fighting Camels
+  level: college
+  colors:
+    campbell-black:
+      name: Campbell Black
+      hex: 1E252B
+      primary: true
+    campbell-orange:
+      name: Campbell Orange
+      hex: EA7125
+      primary: true
+    campbell-white:
+      name: Campbell White
+      hex: FFFFFF
+      primary: true
+  styles:
+    orange:
+      name: Orange
+      css: 'background-color: #EA7125; color: #1E252B; text-shadow: 1px 1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
+      default: true
 car-carolina-panthers:
   abbr: CAR
   location: Carolina
@@ -586,6 +734,31 @@ cle-cleveland-browns:
       css: 'background-color: #FF3C00; color: #311D00; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: false
+cha-charleston-cougars:
+  abbr: CHA
+  location: College of Charleston
+  display_location: Charleston
+  name: Cougars
+  level: college
+  colors:
+    gold:
+      name: Gold
+      hex: BFA87C
+      primary: true
+    maroon:
+      name: Maroon
+      hex: '660000'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    maroon:
+      name: Maroon
+      css: 'background-color: #660000; color: #FFFFFF; text-shadow: 1px 1px 0 #BFA87C,
+        -1px 1px 0 #BFA87C, 1px -1px 0 #BFA87C, -1px -1px 0 #BFA87C; '
+      default: true
 crei-creighton-blue-jays:
   abbr: CREI
   location: Creighton University
@@ -822,6 +995,26 @@ det-detroit-lions:
       css: 'background-color: #0076B6; color: #FFFFFF; text-shadow: 1px 1px 0 #B0B7BC,
         -1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC; '
       default: true
+drx-drexel-fighting-dragons:
+  abbr: DRX
+  location: Drexel University
+  display_location: Drexel
+  name: Fighting Dragons
+  level: college
+  colors:
+    drexel-blue:
+      name: Drexel Blue
+      hex: '07294D'
+      primary: true
+    drexel-yellow:
+      name: Drexel Yellow
+      hex: FFC600
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #07294D; color: #FFC600; '
+      default: true
 duke-duke-blue-devils:
   abbr: DUKE
   location: Duke University
@@ -984,6 +1177,30 @@ ewu-eastern-washington-eagles:
       name: Red
       css: 'background-color: #C8102E; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
         -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
+      default: true
+elon-elon-phoenix:
+  abbr: ELON
+  location: Elon University
+  display_location: Elon
+  name: Phoenix
+  level: college
+  colors:
+    gold:
+      name: Gold
+      hex: B59A57
+      primary: true
+    maroon:
+      name: Maroon
+      hex: 73000A
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    gold-on-maroon:
+      name: Gold on Maroon
+      css: 'background-color: #73000A; color: #B59A57; '
       default: true
 fau-florida-atlantic-owls:
   abbr: FAU
@@ -1291,6 +1508,39 @@ gb-green-bay-packers:
       css: 'background-color: #203731; color: #FFFFFF; text-shadow: 1px 1px 0 #FFB612,
         -1px 1px 0 #FFB612, 1px -1px 0 #FFB612, -1px -1px 0 #FFB612; '
       default: true
+ham-hampton-pirates:
+  abbr: HAM
+  location: Hampton University
+  display_location: Hampton
+  name: Pirates
+  level: college
+  colors:
+    hampton-blue:
+      name: Hampton Blue
+      hex: 004AAD
+      primary: true
+    sail-white:
+      name: Sail White
+      hex: FFFFFF
+      primary: true
+    anchor-grey:
+      name: Anchor Grey
+      hex: 353A3C
+      primary: false
+    black:
+      name: Black
+      hex: '000000'
+      primary: false
+    hampton-grey:
+      name: Hampton Grey
+      hex: BEBFC3
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #004AAD; color: #FFFFFF; text-shadow: 1px 1px 0 #BEBFC3,
+        -1px 1px 0 #BEBFC3, 1px -1px 0 #BEBFC3, -1px -1px 0 #BEBFC3; '
+      default: true
 hip-high-point-panthers:
   abbr: HIP
   location: High Point University
@@ -1310,6 +1560,26 @@ hip-high-point-panthers:
     purple:
       name: Purple
       css: 'background-color: #330072; color: #FFFFFF; '
+      default: true
+hof-hofstra-pride:
+  abbr: HOF
+  location: Hofstra University
+  display_location: Hofstra
+  name: Pride
+  level: college
+  colors:
+    hofstra-blue:
+      name: Hofstra Blue
+      hex: '003594'
+      primary: true
+    hofstra-gold:
+      name: Hofstra Gold
+      hex: FFC72C
+      primary: true
+  styles:
+    gold-on-blue:
+      name: Gold on Blue
+      css: 'background-color: #003594; color: #FFC72C; '
       default: true
 hou-houston-texans:
   abbr: HOU
@@ -1872,6 +2142,26 @@ min-minnesota-vikings:
       css: 'background-color: #4F2683; color: #FFFFFF; text-shadow: 1px 1px 0 #FFC62F,
         -1px 1px 0 #FFC62F, 1px -1px 0 #FFC62F, -1px -1px 0 #FFC62F; '
       default: true
+mon-monmouth-hawks:
+  abbr: MON
+  location: Monmouth University
+  display_location: Monmouth
+  name: Hawks
+  level: college
+  colors:
+    shadow-blue:
+      name: Shadow Blue
+      hex: '002855'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #002855; color: #FFFFFF; '
+      default: true
 mtsu-montana-state-bobcats:
   abbr: MTSU
   location: Montana State University
@@ -1949,6 +2239,11 @@ ne-new-england-patriots:
       css: 'background-color: #002244; color: #FFFFFF; text-shadow: 1px 1px 0 #C60C30,
         -1px 1px 0 #C60C30, 1px -1px 0 #C60C30, -1px -1px 0 #C60C30; '
       default: true
+    retro-red:
+      name: Retro Red
+      css: 'background-color: #CC122C; color: #FFFFFF; text-shadow: 1px 1px 0 #04328C,
+        -1px 1px 0 #04328C, 1px -1px 0 #04328C, -1px -1px 0 #04328C; '
+      default: false
 njit-njit-highlanders:
   abbr: NJIT
   location: New Jersey Institute of Technology
@@ -2055,6 +2350,30 @@ nyj-new-york-jets:
       name: Green
       css: 'background-color: #125740; color: #FFFFFF; '
       default: true
+ncat-north-carolina-a-t-aggies:
+  abbr: NCAT
+  location: North Carolina A&T University
+  display_location: North Carolina A&T
+  name: Aggies
+  level: college
+  colors:
+    30-black:
+      name: 30% Black
+      hex: C2C2C2
+      primary: true
+    aggie-blue:
+      name: Aggie Blue
+      hex: '004684'
+      primary: true
+    aggie-gold:
+      name: Aggie Gold
+      hex: FDB927
+      primary: true
+  styles:
+    blue-on-gold:
+      name: Blue on Gold
+      css: 'background-color: #FDB927; color: #004684; '
+      default: true
 ncst-nc-state-wolfpack:
   abbr: NCST
   location: North Carolina State University
@@ -2078,6 +2397,35 @@ ncst-nc-state-wolfpack:
     white-on-red:
       name: White on Red
       css: 'background-color: #CC0000; color: #FFFFFF; '
+      default: true
+nore-northeastern-huskies:
+  abbr: NORE
+  location: Northeastern University
+  display_location: Northeastern
+  name: Huskies
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    red:
+      name: Red
+      hex: C8102E
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    gold:
+      name: Gold
+      hex: C8A978
+      primary: false
+  styles:
+    red:
+      name: Red
+      css: 'background-color: #C8102E; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
+        -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
 nau-northern-arizona-lumberjacks:
   abbr: NAU
@@ -3074,6 +3422,26 @@ stet-stetson-hatters:
       name: Green
       css: 'background-color: #339933; color: #FFFFFF; '
       default: true
+sbu-stony-brook-seawolves:
+  abbr: SBU
+  location: Stony Brook University
+  display_location: Stony Brook
+  name: Seawolves
+  level: college
+  colors:
+    stony-brook-black:
+      name: Stony Brook Black
+      hex: '000000'
+      primary: true
+    stony-brook-red:
+      name: Stony Brook Red
+      hex: '990000'
+      primary: true
+  styles:
+    black-on-red:
+      name: Black on Red
+      css: 'background-color: #990000; color: #000000; '
+      default: true
 syr-syracuse-orange:
   abbr: SYR
   location: Syracuse University
@@ -3306,6 +3674,51 @@ ttu-texas-tech-red-raiders:
       name: Red on Black
       css: 'background-color: #000000; color: #CC0000; '
       default: true
+tow-towson-tigers:
+  abbr: TOW
+  location: Towson University
+  display_location: Towson
+  name: Tigers
+  level: college
+  colors:
+    "-black":
+      name: " Black"
+      hex: '000000'
+      primary: true
+    glen-mist:
+      name: Glen Mist
+      hex: DDDDDD
+      primary: true
+    gold:
+      name: Gold
+      hex: FFBB00
+      primary: true
+    graphite:
+      name: Graphite
+      hex: 3C3C3C
+      primary: true
+    mascot-red:
+      name: Mascot Red
+      hex: CC0033
+      primary: true
+    old-line-gold:
+      name: Old (Line) Gold
+      hex: CC9900
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+    athletic-silver:
+      name: Athletic Silver
+      hex: C0C0C0
+      primary: false
+  styles:
+    black:
+      name: Black
+      css: 'background-color: #3C3C3C; color: #FFFFFF; text-shadow: 1px 1px 0 #CC9900,
+        -1px 1px 0 #CC9900, 1px -1px 0 #CC9900, -1px -1px 0 #CC9900; '
+      default: true
 tuln-tulane-green-wave:
   abbr: TULN
   location: Tulane University
@@ -3475,6 +3888,26 @@ ari-arizona-wildcats:
       css: 'background-color: #AB0520; color: #FFFFFF; text-shadow: 1px 1px 0 #0C234B,
         -1px 1px 0 #0C234B, 1px -1px 0 #0C234B, -1px -1px 0 #0C234B; '
       default: false
+ucd-uc-davis-aggies:
+  abbr: UCD
+  location: University of California - Davis
+  display_location: UC Davis
+  name: Aggies
+  level: college
+  colors:
+    aggie-blue:
+      name: Aggie Blue
+      hex: 004AA8
+      primary: true
+    aggie-gold:
+      name: Aggie Gold
+      hex: D9B000
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #004AA8; color: #D9B000; '
+      default: true
 ucla-ucla-bruins:
   abbr: UCLA
   location: University of California - Los Angeles
@@ -3508,6 +3941,26 @@ ucla-ucla-bruins:
       css: 'background-color: #8BB8E8; color: #FFB81C; text-shadow: 1px 1px 0 #003B5C,
         -1px 1px 0 #003B5C, 1px -1px 0 #003B5C, -1px -1px 0 #003B5C; '
       default: true
+ucsb-uc-santa-barbara-gauchos:
+  abbr: UCSB
+  location: University of California - Santa Barbara
+  display_location: UC Santa Barbara
+  name: Gauchos
+  level: college
+  colors:
+    gold:
+      name: Gold
+      hex: FFB800
+      primary: true
+    navy:
+      name: Navy
+      hex: 00306C
+      primary: true
+  styles:
+    navy:
+      name: Navy
+      css: 'background-color: #00306C; color: #FFB800; '
+      default: true
 cal-california-golden-bears:
   abbr: CAL
   location: University of California at Berkeley
@@ -3540,6 +3993,75 @@ cal-california-golden-bears:
       name: Blue
       css: 'background-color: #002676; color: #FDB515; '
       default: true
+irv-uc-irvine-anteaters:
+  abbr: IRV
+  location: University of California at Irvine
+  display_location: UC Irvine
+  name: Anteaters
+  level: college
+  colors:
+    uci-blue:
+      name: UCI Blue
+      hex: '255799'
+      primary: true
+    uci-gold:
+      name: UCI Gold
+      hex: FECC07
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #255799; color: #FECC07; '
+      default: false
+ucsd-uc-san-diego-tritons:
+  abbr: UCSD
+  location: University of California at San Diego
+  display_location: UC San Diego
+  name: Tritons
+  level: college
+  colors:
+    uc-san-diego-blue:
+      name: UC San Diego Blue
+      hex: '00629B'
+      primary: true
+    uc-san-diego-gold:
+      name: UC San Diego Gold
+      hex: C69214
+      primary: true
+    uc-san-diego-navy:
+      name: UC San Diego Navy
+      hex: 182B49
+      primary: true
+    uc-san-diego-yellow:
+      name: UC San Diego Yellow
+      hex: FFCD00
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #00629B; color: #FFCD00; text-shadow: 1px 1px 0 #182B49,
+        -1px 1px 0 #182B49, 1px -1px 0 #182B49, -1px -1px 0 #182B49; '
+      default: true
+ucr-uc-riverside-highlanders:
+  abbr: UCR
+  location: University of California, Riverside
+  display_location: UC Riverside
+  name: Highlanders
+  level: college
+  colors:
+    blue:
+      name: Blue
+      hex: 003DA5
+      primary: true
+    gold:
+      name: Gold
+      hex: FFB81C
+      primary: true
+  styles:
+    gold-on-blue:
+      name: Gold on Blue
+      css: 'background-color: #003DA5; color: #FFB81C; '
+      default: false
 cak-central-arkansas-bears:
   abbr: CAK
   location: University of Central Arkansas
@@ -3705,6 +4227,31 @@ uconn-uconn-huskies:
     white-on-blue:
       name: White on Blue
       css: 'background-color: #000E2F; color: #FFFFFF; '
+      default: true
+haw-hawai-i-rainbow-warriors:
+  abbr: HAW
+  location: University of Hawaii at Manoa
+  display_location: Hawai'i
+  name: Rainbow Warriors
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    green:
+      name: Green
+      hex: '024731'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    green:
+      name: Green
+      css: 'background-color: #024731; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
+        -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
 hou-houston-cougars:
   abbr: HOU
@@ -4025,8 +4572,8 @@ uml-umass-lowell-river-hawks:
   styles:
     red-on-blue:
       name: Red on Blue
-      css: 'background-color: #0067B1; color: #C8102E; text-shadow: 1px 1px 0 #FFFFFF,
-        -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
+      css: 'background-color: #0067B1; color: #C8102E; text-shadow: 1px 1px 0 #97999B,
+        -1px 1px 0 #97999B, 1px -1px 0 #97999B, -1px -1px 0 #97999B; '
       default: true
 mem-memphis-tigers:
   abbr: MEM
@@ -4315,6 +4862,35 @@ cha-charlotte-49ers:
     gold-on-green:
       name: Gold on Green
       css: 'background-color: #005035; color: #A49665; '
+      default: true
+uncw-unc-wilmington-seahawks:
+  abbr: UNCW
+  location: University of North Carolina - Wilmington
+  display_location: UNC Wilmington
+  name: Seahawks
+  level: college
+  colors:
+    seahawk-gold-accent:
+      name: Seahawk Gold Accent
+      hex: F3E389
+      primary: true
+    seahawk-navy:
+      name: Seahawk Navy
+      hex: '003366'
+      primary: true
+    seahawk-teal:
+      name: Seahawk Teal
+      hex: '007680'
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    teal:
+      name: Teal
+      css: 'background-color: #007680; color: #FFFFFF; text-shadow: 1px 1px 0 #003366,
+        -1px 1px 0 #003366, 1px -1px 0 #003366, -1px -1px 0 #003366; '
       default: true
 unca-unc-asheville-bulldogs:
   abbr: UNCA
@@ -5076,6 +5652,35 @@ wvu-west-virginia-mountaineers:
     gold-on-blue:
       name: Gold on Blue
       css: 'background-color: #002C5B; color: #F2B111; '
+      default: true
+wm-william-mary-tribe:
+  abbr: WM
+  location: William & Mary University
+  display_location: William & Mary
+  name: Tribe
+  level: college
+  colors:
+    w-m-gold:
+      name: W&M Gold
+      hex: B79257
+      primary: true
+    w-m-green:
+      name: W&M Green
+      hex: 004E38
+      primary: true
+    w-m-silver:
+      name: W&M Silver
+      hex: D8DCDB
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    green:
+      name: Green
+      css: 'background-color: #004E38; color: #FFFFFF; text-shadow: 1px 1px 0 #B79257,
+        -1px 1px 0 #B79257, 1px -1px 0 #B79257, -1px -1px 0 #B79257; '
       default: true
 win-winthrop-eagles:
   abbr: WIN
