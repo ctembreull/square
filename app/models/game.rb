@@ -60,6 +60,7 @@ class Game < ApplicationRecord
   validates :home_team, presence: true
   validates :away_team, presence: true
   validates :score_url, presence: true
+  validate :score_url_is_valid_http_url
   validates :starts_at, presence: true
   validates :period_prize, presence: true, numericality: { only_integer: true }
   validates :final_prize, presence: true, numericality: { only_integer: true }
@@ -150,6 +151,17 @@ class Game < ApplicationRecord
       shortfall = GAME_PLAYERS - total_chances
       errors.add(:base, "Cannot create game: #{shortfall} squares would be unfilled and no active charities exist to fill them.")
     end
+  end
+
+  def score_url_is_valid_http_url
+    return if score_url.blank?
+
+    uri = URI.parse(score_url)
+    unless uri.is_a?(URI::HTTP) || uri.is_a?(URI::HTTPS)
+      errors.add(:score_url, "must be a valid HTTP or HTTPS URL")
+    end
+  rescue URI::InvalidURIError
+    errors.add(:score_url, "is not a valid URL")
   end
 
   def combine_datetime_fields
