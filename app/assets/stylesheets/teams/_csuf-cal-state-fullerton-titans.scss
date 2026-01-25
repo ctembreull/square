@@ -1,0 +1,17 @@
+// Team: Cal State Fullerton Titans
+// Generated: 2026-01-24T10:27:43-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$csuf-cal-state-fullerton-titans-titan-blue: #00244E;
+$csuf-cal-state-fullerton-titans-titan-orange: #FF7900;
+
+// Style Classes
+.csuf-cal-state-fullerton-titans-orange-on-blue {
+  background-color: #00244E !important; color: #FF7900 !important; 
+}
+
+// Default Style Alias
+.csuf-cal-state-fullerton-titans-default {
+  @extend .csuf-cal-state-fullerton-titans-orange-on-blue;
+}

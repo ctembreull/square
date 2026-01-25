@@ -1,0 +1,18 @@
+// Team: Hawai'i Rainbow Warriors
+// Generated: 2026-01-24T18:25:18Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$haw-hawai-i-rainbow-warriors-black: #000000;
+$haw-hawai-i-rainbow-warriors-green: #024731;
+$haw-hawai-i-rainbow-warriors-white: #FFFFFF;
+
+// Style Classes
+.haw-hawai-i-rainbow-warriors-green {
+  background-color: #024731 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
+
+// Default Style Alias
+.haw-hawai-i-rainbow-warriors-default {
+  @extend .haw-hawai-i-rainbow-warriors-green;
+}

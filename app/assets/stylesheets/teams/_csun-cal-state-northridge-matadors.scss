@@ -1,0 +1,22 @@
+// Team: Cal State Northridge Matadors
+// Generated: 2026-01-24T18:25:18Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$csun-cal-state-northridge-matadors-black: #000000;
+$csun-cal-state-northridge-matadors-csun-hero-red: #D22030;
+$csun-cal-state-northridge-matadors-white: #FFFFFF;
+
+// Style Classes
+.csun-cal-state-northridge-matadors-black-on-red {
+  background-color: #D22030 !important; color: #000000 !important; 
+}
+
+.csun-cal-state-northridge-matadors-black {
+  background-color: #000000 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #D22030, -1px 1px 0 #D22030, 1px -1px 0 #D22030, -1px -1px 0 #D22030; 
+}
+
+// Default Style Alias
+.csun-cal-state-northridge-matadors-default {
+  @extend .csun-cal-state-northridge-matadors-black-on-red;
+}

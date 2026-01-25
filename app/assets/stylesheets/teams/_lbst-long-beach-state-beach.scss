@@ -1,0 +1,22 @@
+// Team: Long Beach State Beach
+// Generated: 2026-01-24T18:25:18Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$lbst-long-beach-state-beach-black: #000000;
+$lbst-long-beach-state-beach-white: #FFFFFF;
+$lbst-long-beach-state-beach-yellow: #ECAA00;
+
+// Style Classes
+.lbst-long-beach-state-beach-yellow-on-black {
+  background-color: #000000 !important; color: #ECAA00 !important; 
+}
+
+.lbst-long-beach-state-beach-yellow-on-white {
+  background-color: #FFFFFF !important; color: #ECAA00 !important; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
+
+// Default Style Alias
+.lbst-long-beach-state-beach-default {
+  @extend .lbst-long-beach-state-beach-yellow-on-black;
+}

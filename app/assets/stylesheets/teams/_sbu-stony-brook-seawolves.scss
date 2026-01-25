@@ -1,0 +1,17 @@
+// Team: Stony Brook Seawolves
+// Generated: 2026-01-24T21:31:20-05:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$sbu-stony-brook-seawolves-stony-brook-black: #000000;
+$sbu-stony-brook-seawolves-stony-brook-red: #990000;
+
+// Style Classes
+.sbu-stony-brook-seawolves-black-on-red {
+  background-color: #990000 !important; color: #000000 !important; 
+}
+
+// Default Style Alias
+.sbu-stony-brook-seawolves-default {
+  @extend .sbu-stony-brook-seawolves-black-on-red;
+}

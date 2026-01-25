@@ -1,0 +1,17 @@
+// Team: Cal State Bakersfield Roadrunners
+// Generated: 2026-01-24T10:33:23-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$csb-cal-state-bakersfield-roadrunners-blue: #003594;
+$csb-cal-state-bakersfield-roadrunners-gold: #FFC72C;
+
+// Style Classes
+.csb-cal-state-bakersfield-roadrunners-gold-on-blue {
+  background-color: #003594 !important; color: #FFC72C !important; 
+}
+
+// Default Style Alias
+.csb-cal-state-bakersfield-roadrunners-default {
+  @extend .csb-cal-state-bakersfield-roadrunners-gold-on-blue;
+}

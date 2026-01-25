@@ -1,0 +1,19 @@
+// Team: UC San Diego Tritons
+// Generated: 2026-01-24T18:25:18Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ucsd-uc-san-diego-tritons-uc-san-diego-blue: #00629B;
+$ucsd-uc-san-diego-tritons-uc-san-diego-gold: #C69214;
+$ucsd-uc-san-diego-tritons-uc-san-diego-navy: #182B49;
+$ucsd-uc-san-diego-tritons-uc-san-diego-yellow: #FFCD00;
+
+// Style Classes
+.ucsd-uc-san-diego-tritons-blue {
+  background-color: #00629B !important; color: #FFCD00 !important; text-shadow: 1px 1px 0 #182B49, -1px 1px 0 #182B49, 1px -1px 0 #182B49, -1px -1px 0 #182B49; 
+}
+
+// Default Style Alias
+.ucsd-uc-san-diego-tritons-default {
+  @extend .ucsd-uc-san-diego-tritons-blue;
+}
