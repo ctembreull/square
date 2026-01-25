@@ -1,5 +1,5 @@
 // Team: Providence Friars
-// Generated: 2026-01-24T18:25:18Z
+// Generated: 2026-01-25T00:33:14-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -12,4 +12,9 @@ $prv-providence-friars-white: #FFFFFF;
 // Style Classes
 .prv-providence-friars-black {
   background-color: #000000 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #BD9E5E, -1px 1px 0 #BD9E5E, 1px -1px 0 #BD9E5E, -1px -1px 0 #BD9E5E; 
+}
+
+// Default Style Alias
+.prv-providence-friars-default {
+  @extend .prv-providence-friars-black;
 }

@@ -1,5 +1,5 @@
 // Team: Utah Utes
-// Generated: 2026-01-24T18:25:18Z
+// Generated: 2026-01-25T00:30:41-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -11,4 +11,9 @@ $utah-utah-utes-zion-cinder-cone: #707271;
 // Style Classes
 .utah-utah-utes-white-on-red {
   background-color: #BE0000 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #707271, -1px 1px 0 #707271, 1px -1px 0 #707271, -1px -1px 0 #707271; 
+}
+
+// Default Style Alias
+.utah-utah-utes-default {
+  @extend .utah-utah-utes-white-on-red;
 }

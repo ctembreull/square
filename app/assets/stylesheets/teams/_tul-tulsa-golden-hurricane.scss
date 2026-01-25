@@ -1,5 +1,5 @@
 // Team: Tulsa Golden Hurricane
-// Generated: 2026-01-24T18:25:17Z
+// Generated: 2026-01-25T00:29:49-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -9,4 +9,9 @@ $tul-tulsa-golden-hurricane-gold: #D0B787;
 // Style Classes
 .tul-tulsa-golden-hurricane-primary {
   background-color: #003595 !important; color: #D0B787 !important; 
+}
+
+// Default Style Alias
+.tul-tulsa-golden-hurricane-default {
+  @extend .tul-tulsa-golden-hurricane-primary;
 }

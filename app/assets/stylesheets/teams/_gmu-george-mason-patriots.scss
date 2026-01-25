@@ -1,5 +1,5 @@
 // Team: George Mason Patriots
-// Generated: 2026-01-24T18:25:18Z
+// Generated: 2026-01-25T00:32:19-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -11,4 +11,9 @@ $gmu-george-mason-patriots-white: #FFFFFF;
 // Style Classes
 .gmu-george-mason-patriots-green {
   background-color: #005239 !important; color: #FFC733 !important; 
+}
+
+// Default Style Alias
+.gmu-george-mason-patriots-default {
+  @extend .gmu-george-mason-patriots-green;
 }

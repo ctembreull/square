@@ -1,5 +1,5 @@
 // Team: UC Irvine Anteaters
-// Generated: 2026-01-24T18:25:18Z
+// Generated: 2026-01-25T00:33:23-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -9,4 +9,9 @@ $irv-uc-irvine-anteaters-uci-gold: #FECC07;
 // Style Classes
 .irv-uc-irvine-anteaters-blue {
   background-color: #255799 !important; color: #FECC07 !important; 
+}
+
+// Default Style Alias
+.irv-uc-irvine-anteaters-default {
+  @extend .irv-uc-irvine-anteaters-blue;
 }

@@ -1,5 +1,5 @@
 // Team: North Carolina Tar Heels
-// Generated: 2026-01-24T18:25:17Z
+// Generated: 2026-01-25T00:30:12-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -15,4 +15,9 @@ $unc-north-carolina-tar-heels-white: #FFFFFF;
 
 .unc-north-carolina-tar-heels-carolina-fancy {
   background-color: #4B9CD3 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #13294B, -1px 1px 0 #13294B, 1px -1px 0 #13294B, -1px -1px 0 #13294B; 
+}
+
+// Default Style Alias
+.unc-north-carolina-tar-heels-default {
+  @extend .unc-north-carolina-tar-heels-carolina-blue;
 }

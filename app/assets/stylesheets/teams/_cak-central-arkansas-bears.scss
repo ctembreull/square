@@ -1,5 +1,5 @@
 // Team: Central Arkansas Bears
-// Generated: 2026-01-24T18:25:18Z
+// Generated: 2026-01-25T00:32:03-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -10,4 +10,9 @@ $cak-central-arkansas-bears-white: #FFFFFF;
 // Style Classes
 .cak-central-arkansas-bears-purple {
   background-color: #582C83 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #7C878E, -1px 1px 0 #7C878E, 1px -1px 0 #7C878E, -1px -1px 0 #7C878E; 
+}
+
+// Default Style Alias
+.cak-central-arkansas-bears-default {
+  @extend .cak-central-arkansas-bears-purple;
 }

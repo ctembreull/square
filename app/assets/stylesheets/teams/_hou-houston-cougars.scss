@@ -1,5 +1,5 @@
 // Team: Houston Cougars
-// Generated: 2026-01-24T18:25:18Z
+// Generated: 2026-01-25T00:31:00-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -12,4 +12,9 @@ $hou-houston-cougars-slate: #54585A;
 // Style Classes
 .hou-houston-cougars-white-on-red {
   background-color: #C8102E !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #960C22, -1px 1px 0 #960C22, 1px -1px 0 #960C22, -1px -1px 0 #960C22; 
+}
+
+// Default Style Alias
+.hou-houston-cougars-default {
+  @extend .hou-houston-cougars-white-on-red;
 }

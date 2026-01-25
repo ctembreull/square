@@ -1,5 +1,5 @@
 // Team: Iowa State Cyclones
-// Generated: 2026-01-24T18:25:18Z
+// Generated: 2026-01-25T00:31:11-08:00
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -12,4 +12,9 @@ $isu-iowa-state-cyclones-red: #C8102E;
 // Style Classes
 .isu-iowa-state-cyclones-gold-on-red {
   background-color: #C8102E !important; color: #F1BE48 !important; 
+}
+
+// Default Style Alias
+.isu-iowa-state-cyclones-default {
+  @extend .isu-iowa-state-cyclones-gold-on-red;
 }
