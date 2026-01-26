@@ -201,7 +201,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Manual score input modal (admin)**~~ | ✅ Done - Team colors, OT checkbox, mark-as-final |
 | ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
 | ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
-| Deploy to Fly.io | Infrastructure setup and configuration. Note: PDF generation uses `localhost` for Puppeteer to fetch stylesheets - verify internal port routing works in container. |
+| Deploy to Fly.io | Infrastructure setup and configuration. Note: PDF generation uses `localhost` for Puppeteer to fetch stylesheets - verify internal port routing works in container. **Secrets:** Use `fly secrets set` for RAILS_MASTER_KEY, ADMIN_EMAIL, ADMIN_PASSWORD. **Players:** Import via SSH after deploy (`fly ssh console`, upload players.yml, run `rails players:import`). |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
