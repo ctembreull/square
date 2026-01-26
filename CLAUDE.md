@@ -209,8 +209,9 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
 | ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
 | ~~**Player export/import**~~ | ✅ Done - `rake players:export` and `rake players:import` tasks (emails excluded, must re-enter) |
-| ~~**Affiliations UI (Conference show)**~~ | ✅ Done - Inline team list with delete buttons, auto-submit dropdown for adding teams (filtered by league level). Turbo Stream updates without page reload. |
-| **Full Dockerization** | Rails 8 Dockerfile exists. TODO: (1) Add `chromium chromium-sandbox` to base packages, (2) Set Puppeteer env vars for Grover, (3) Add docker-compose.yml with SQLite volume for local testing. |
+| ~~**Affiliations export/import**~~ | ✅ Done - `rake affiliations:export` and `rake affiliations:import` tasks using natural keys (scss_slug, league abbr, conference abbr) |
+| ~~**Affiliations UI (Conference show)**~~ | ✅ Done - Inline team list with delete buttons, Choices.js searchable dropdown for adding teams (filtered by league level). Turbo Stream updates without page reload. |
+| ~~**Full Dockerization**~~ | ✅ Done - Chromium + Node.js for Grover PDF generation, docker-compose.yml with SQLite volume, entrypoint runs seeds/imports, admin user via env vars, health check on /status.json |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
@@ -222,7 +223,7 @@ Target: Ready for football season
 | ESPN scraper improvements | Better error handling |
 | Transaction wrapper for score processing | Data integrity |
 | Scraper registry pattern | Cleaner architecture |
-| Document rake tasks | Clarify generate_seeds vs export/import vs regenerate_all |
+| ~~Document rake tasks~~ | ✅ Done - README documents all export/import tasks and rebuild order |
 | Replace h1 headers with hero cards | Visual polish |
 | Gradient/animated text styles | Team branding (e.g., Seahawks iridescent green) |
 | Text-stroke lightness slider | HSL adjustment for readability tuning |

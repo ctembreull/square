@@ -131,18 +131,24 @@
 
 	<div class="row mb-3 " >
 		<div class="col-8">
-			<div class="card">
-				<div class="card-header border-bottom">
-					<h5 class="m-0 mb-2"><%= @event.posts.first.title %></h5>
-					<h6 class="m-0 fs-11 text-800">
-						<%= time_ago_in_words(@event.posts.first.created_at) %> ago
-						by <%= @event.posts.first.user.display_name %>
-					</h6>
+			<% if @event.posts.any? %>
+				<div class="card">
+					<div class="card-header border-bottom">
+						<h5 class="m-0 mb-2"><%= @event.posts.first.title %></h5>
+						<h6 class="m-0 fs-11 text-800">
+							<%= time_ago_in_words(@event.posts.first.created_at) %> ago
+							by <%= @event.posts.first.user.display_name %>
+						</h6>
+					</div>
+					<div class="card-body">
+						<%= @event.posts.first.body %>
+					</div>
 				</div>
-				<div class="card-body">
-					<%= @event.posts.first.body %>
+			<% else %>
+				<div class="card">
+					<div class="card-body text-muted">No posts yet.</div>
 				</div>
-			</div>
+			<% end %>
 		</div>
 		<div class="col-4">
 			<div class="card">

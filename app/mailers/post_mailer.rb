@@ -63,7 +63,8 @@ class PostMailer < ApplicationMailer
       locals: { players_by_id: players_by_id }
     )
 
-    Grover.new(html, display_url: "http://localhost:3000").to_pdf
+    internal_port = Rails.env.production? ? 80 : 3000
+    Grover.new(html, display_url: "http://localhost:#{internal_port}").to_pdf
   rescue => e
     Rails.logger.error "PDF generation failed: #{e.message}"
     nil

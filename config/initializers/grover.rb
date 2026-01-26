@@ -15,4 +15,9 @@ Grover.configure do |config|
     # Wait for all resources (stylesheets, fonts) to load before generating PDF
     wait_until: "networkidle0"
   }
+
+  # Docker/production: Chromium needs --no-sandbox since container provides isolation
+  if Rails.env.production? || ENV["PUPPETEER_EXECUTABLE_PATH"].present?
+    config.options[:launch_args] = ["--no-sandbox", "--disable-setuid-sandbox"]
+  end
 end

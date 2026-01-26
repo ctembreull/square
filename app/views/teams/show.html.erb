@@ -35,14 +35,14 @@
 					<div class="col-6 text-center">
 						<h6 class="text-muted fs-10 mb-0">
 							<%= @team.name %>
-							<% unless @team.womens_name.empty? %>
+							<% unless @team.womens_name.blank? %>
 							<span class="text-info">|</span> <%= @team.womens_name %>
 							<% end %>	
 						</h6>
 					</div>
 					<div class="col-3 text-end">
 						<h6 class="text-info fs-10 mb-0">
-							<% if @team.brand_info.empty? %>
+							<% if @team.brand_info.blank? %>
 								<%= link_to "Brand Search", @team.brand_search_query, target: "_new" %>
 							<% else %>
 								<%= link_to "Brand Info >", @team.brand_info %>

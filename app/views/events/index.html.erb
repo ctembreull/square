@@ -84,11 +84,13 @@
 										<%= link_to event_path(event, anchor: "posts"), class: "text-800" do %>
 											<h6 class="mb-0">Posts</h6>
 										<% end %>
-										<p class="mb-0 fs-11 text-600">
-											<strong>"<%= event.posts.recent.first.title %>"</strong> by
-											<strong><%= event.posts.recent.first.user.display_name %></strong>, 
-											<%= time_ago_in_words(event.posts.recent.first.created_at.in_time_zone(current_timezone)) %> ago
-										</p>
+										<% if event.posts.any? %>
+											<p class="mb-0 fs-11 text-600">
+												<strong>"<%= event.posts.recent.first.title %>"</strong> by
+												<strong><%= event.posts.recent.first.user.display_name %></strong>,
+												<%= time_ago_in_words(event.posts.recent.first.created_at.in_time_zone(current_timezone)) %> ago
+											</p>
+										<% end %>
 									</div>
 								</div>
 							</div>

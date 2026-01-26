@@ -1,8 +1,24 @@
 #!/bin/bash -e
 
-# If running the rails server then create or migrate existing database
+# If running the rails server then prepare the database
 if [ "${@: -2:1}" == "./bin/rails" ] && [ "${@: -1:1}" == "server" ]; then
+  # Create/migrate database
   ./bin/rails db:prepare
+
+  # Run seeds in order (all idempotent - safe to run on every boot)
+  ./bin/rails db:seed              # Leagues, conferences
+  ./bin/rails seeds:import         # Teams from YAML
+  ./bin/rails affiliations:import  # Team-conference affiliations
+
+  # Players import only if YAML exists
+  if [ -f "db/seeds/players.yml" ]; then
+    ./bin/rails players:import
+  fi
+
+  # Create admin user if credentials are provided via env vars
+  if [ -n "$ADMIN_EMAIL" ] && [ -n "$ADMIN_PASSWORD" ]; then
+    ./bin/rails users:create_admin
+  fi
 fi
 
 exec "${@}"

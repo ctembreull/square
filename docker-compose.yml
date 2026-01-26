@@ -1,0 +1,23 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:80"
+    environment:
+      - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
+      # Optional: Admin user created on first boot if these are set
+      - ADMIN_NAME=${ADMIN_NAME:-}
+      - ADMIN_EMAIL=${ADMIN_EMAIL:-}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-}
+    volumes:
+      # Persist SQLite database and storage across container restarts
+      - sqlite_data:/rails/storage
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/status.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  sqlite_data:

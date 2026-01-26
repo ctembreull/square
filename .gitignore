@@ -30,6 +30,9 @@
 
 /public/assets
 
+# Ignore player seed data (contains personal info, regenerate with rake players:export)
+/db/seeds/players.yml
+
 # Ignore key files for decrypting credentials and more.
 /config/*.key
 

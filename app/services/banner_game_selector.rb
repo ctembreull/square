@@ -48,12 +48,10 @@ class BannerGameSelector < ApplicationService
         headers: [ "Upcoming", nil, nil ]
       )
     else
-      # Fallback: fill with whatever we have
-      left = @upcoming[0] || @completed[0]
-      center = @upcoming[1] || @completed[1] || @upcoming[0]
-      right = @completed[0] || @upcoming[2] || @completed[1]
+      # Fallback: fill with whatever we have (no duplicates)
+      all_games = (@upcoming + @completed).uniq
       Result.new(
-        rows: [ [ left, center, right ] ],
+        rows: [ [ all_games[0], all_games[1], all_games[2] ] ],
         headers: [ "Games", nil, nil ]
       )
     end

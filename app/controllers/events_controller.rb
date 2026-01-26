@@ -104,7 +104,9 @@ class EventsController < ApplicationController
 
     # Use localhost for Puppeteer to fetch stylesheets - it runs on the server,
     # not the client, so it can't resolve external hostnames like minors.local
-    pdf_data = Grover.new(html, display_url: "http://localhost:#{request.port}").to_pdf
+    # In Docker/production, use internal port 80; in dev, use request port
+    internal_port = Rails.env.production? ? 80 : request.port
+    pdf_data = Grover.new(html, display_url: "http://localhost:#{internal_port}").to_pdf
 
     send_data pdf_data,
       filename: "#{@event.title.parameterize}-games.pdf",
