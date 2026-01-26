@@ -24,9 +24,15 @@
         <%= form.label :background_color, "Background Color", class: "form-label" %>
         <select name="background_color_select" class="form-select" required data-style-form-target="backgroundColor" data-action="change->style-form#buildCss">
           <option value="">Select background color</option>
-          <% team.colors.ordered.each do |color| %>
-            <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= color.name %> (<%= color.css_hex %>)</option>
-          <% end %>
+          <optgroup label="Team Colors">
+            <% team.colors.ordered.each do |color| %>
+              <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= "★ " if color.primary %><%= color.name %> (<%= color.css_hex %>)</option>
+            <% end %>
+          </optgroup>
+          <optgroup label="Universal">
+            <option value="#ffffff" data-color-name="White">White (#ffffff)</option>
+            <option value="#000000" data-color-name="Black">Black (#000000)</option>
+          </optgroup>
         </select>
       </div>
 
@@ -34,9 +40,15 @@
         <%= form.label :text_color, "Text Color", class: "form-label" %>
         <select name="text_color_select" class="form-select" required data-style-form-target="textColor" data-action="change->style-form#buildCss">
           <option value="">Select text color</option>
-          <% team.colors.ordered.each do |color| %>
-            <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= color.name %> (<%= color.css_hex %>)</option>
-          <% end %>
+          <optgroup label="Team Colors">
+            <% team.colors.ordered.each do |color| %>
+              <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= "★ " if color.primary %><%= color.name %> (<%= color.css_hex %>)</option>
+            <% end %>
+          </optgroup>
+          <optgroup label="Universal">
+            <option value="#ffffff" data-color-name="White">White (#ffffff)</option>
+            <option value="#000000" data-color-name="Black">Black (#000000)</option>
+          </optgroup>
         </select>
       </div>
 
@@ -44,9 +56,15 @@
         <%= form.label :stroke_color, "Stroke Color (optional)", class: "form-label" %>
         <select name="stroke_color_select" class="form-select" data-style-form-target="strokeColor" data-action="change->style-form#buildCss">
           <option value="">No stroke</option>
-          <% team.colors.ordered.each do |color| %>
-            <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= color.name %> (<%= color.css_hex %>)</option>
-          <% end %>
+          <optgroup label="Team Colors">
+            <% team.colors.ordered.each do |color| %>
+              <option value="<%= color.css_hex %>" data-color-name="<%= color.name %>"><%= "★ " if color.primary %><%= color.name %> (<%= color.css_hex %>)</option>
+            <% end %>
+          </optgroup>
+          <optgroup label="Universal">
+            <option value="#ffffff" data-color-name="White">White (#ffffff)</option>
+            <option value="#000000" data-color-name="Black">Black (#000000)</option>
+          </optgroup>
         </select>
       </div>
 
