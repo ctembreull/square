@@ -275,7 +275,8 @@ Target: Ready for football season
 | ✅ Action Text links load in frame | Fixed - Stimulus controller `action_text_links_controller.js` adds `data-turbo-frame="_top"` to all links on connect |
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |
 | Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
+| Broadcast logger for job visibility | Consider adding `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development, so `bin/jobs` output is visible in Procfile.dev. Trade-off: more verbose Rails server output. |
 
 ---
 
-**Last Updated**: 2026-01-24
+**Last Updated**: 2026-01-25
