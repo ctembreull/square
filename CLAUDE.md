@@ -62,8 +62,11 @@ These issues must be resolved before any other development work. Do not proceed 
 
 | Issue | Description |
 |-------|-------------|
-| **Seed data corruption** | Duplicate Leagues (IDs 1,6 and 2,7) and Teams due to conflicting data sources. `db/seeds.rb` creates teams with short locations ("Duke"), while `db/seeds/teams.yml` uses full names ("Duke University"). The `seeds:import` task matches by `scss_slug`, so mismatched names create duplicates instead of updating. **Fix:** (1) Remove all team definitions from `seeds.rb`, keep only leagues/conferences. (2) Make `seeds.rb` fully idempotent. (3) Delete corrupted data: Leagues 6-7, all Teams, Colors, Styles. (4) Reimport from `teams.yml` as sole team data source. (5) Recreate test Games. |
-| **Player export/import** | Rake tasks for YAML export (excluding encrypted emails) and import. Required for data portability during rebuilds and for deploy sync to Fly.io. Alt approach: share `credentials.yml.enc` + `RAILS_MASTER_KEY` via Fly secrets to preserve encrypted emails across environments. |
+| *(none)* | All blockers resolved |
+
+### Resolved Blockers
+- ✅ **Seed data corruption** - Fixed: Removed team definitions from `seeds.rb`, teams now sourced only from `db/seeds/teams.yml` via `rake seeds:import`. Duplicate teams cleaned up by deleting those with zero affiliations.
+- ✅ **Player export/import** - Done: `rake players:export` and `rake players:import` tasks created. Exports exclude encrypted emails (must be re-entered after import).
 
 ## Architecture Patterns
 
@@ -205,7 +208,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Query optimization on leagues/show~~ | ✅ Done - Eager loading + Ruby sorting reduced 335 queries to 4 |
 | ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
 | ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
-| ~~**Player export/import**~~ | Moved to Blockers - required for data rebuild |
+| ~~**Player export/import**~~ | ✅ Done - `rake players:export` and `rake players:import` tasks (emails excluded, must re-enter) |
 | **Affiliations UI (Conference show)** | Inline team list with delete buttons, typed-select dropdown + add button for creating affiliations without modal. Prep for March Madness team setup. |
 | **Full Dockerization** | Rails 8 Dockerfile exists. TODO: (1) Add `chromium chromium-sandbox` to base packages, (2) Set Puppeteer env vars for Grover, (3) Add docker-compose.yml with SQLite volume for local testing. |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
@@ -279,4 +282,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-25
+**Last Updated**: 2026-01-26
