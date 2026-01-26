@@ -141,6 +141,87 @@ namespace :seeds do
     puts "  Styles: #{created[:styles]} created, #{updated[:styles]} updated"
   end
 
+  desc "Export current Leagues and Conferences to db/seeds.rb"
+  task export_structure: :environment do
+    output = []
+
+    output << "# This file should ensure the existence of records required to run the application in every environment (production,"
+    output << "# development, test). The code here should be idempotent so that it can be executed at any point in every environment."
+    output << "# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup)."
+    output << "#"
+    output << "# Generated from database on #{Time.current.strftime('%Y-%m-%d %H:%M')}"
+    output << ""
+    output << 'puts "Seeding sports structure..."'
+    output << ""
+    output << "# ============================================================================"
+    output << "# LEAGUES"
+    output << "# ============================================================================"
+    output << ""
+
+    # Export leagues
+    League.order(:id).each do |l|
+      var_name = l.abbr.downcase
+      output << "# #{l.name}"
+      output << "#{var_name} = League.find_or_create_by!(abbr: #{l.abbr.inspect}) do |l|"
+      output << "  l.name = #{l.name.inspect}"
+      output << "  l.sport = #{l.sport.inspect}"
+      output << "  l.gender = #{l.gender.inspect}"
+      output << "  l.level = #{l.level.inspect}"
+      output << "  l.periods = #{l.periods}"
+      output << "  l.quarters_score_as_halves = true" if l.quarters_score_as_halves
+      output << "end"
+      output << "puts \"✓ \#{#{var_name}.name}\""
+      output << ""
+    end
+
+    # Export conferences grouped by league
+    League.order(:id).each do |league|
+      conferences = league.conferences.order(:name)
+      next if conferences.empty?
+
+      var_name = league.abbr.downcase
+      output << "# ============================================================================"
+      output << "# #{league.name.upcase} CONFERENCES"
+      output << "# ============================================================================"
+      output << ""
+      output << "#{var_name}_conferences = ["
+
+      conferences.each_with_index do |c, idx|
+        comma = idx < conferences.length - 1 ? "," : ""
+        output << "  { abbr: #{c.abbr.inspect}, name: #{c.name.inspect}, display_name: #{c.display_name.inspect} }#{comma}"
+      end
+
+      output << "]"
+      output << ""
+      output << "#{var_name}_conferences.each do |conf_data|"
+      output << "  conf = #{var_name}.conferences.find_or_create_by!(abbr: conf_data[:abbr]) do |c|"
+      output << "    c.name = conf_data[:name]"
+      output << "    c.display_name = conf_data[:display_name]"
+      output << "  end"
+      output << "  puts \"  ✓ \#{conf.display_name} (#{league.abbr})\""
+      output << "end"
+      output << ""
+    end
+
+    output << "# ============================================================================"
+    output << "# TEAMS - Use `rake seeds:import` to import from db/seeds/teams.yml"
+    output << "# ============================================================================"
+    output << "# Teams are NOT seeded here to avoid conflicts with the YAML import."
+    output << "# The YAML file is the single source of truth for team data."
+    output << ""
+    output << 'puts "\nSeed completed!"'
+    output << 'puts "Summary:"'
+    output << 'puts "  Leagues: #{League.count}"'
+    output << 'puts "  Conferences: #{Conference.count}"'
+    output << 'puts "  Teams: #{Team.count} (run `rake seeds:import` to import from YAML)"'
+
+    File.write(Rails.root.join("db", "seeds.rb"), output.join("\n") + "\n")
+
+    puts "Exported to db/seeds.rb:"
+    puts "  Leagues: #{League.count}"
+    puts "  Conferences: #{Conference.count}"
+  end
+
   desc "Show current teams YAML export without writing to file"
   task preview: :environment do
     data = {}

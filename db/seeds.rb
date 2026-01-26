@@ -1,6 +1,8 @@
 # This file should ensure the existence of records required to run the application in every environment (production,
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
+#
+# Generated from database on 2026-01-26 18:23
 
 puts "Seeding sports structure..."
 
@@ -9,17 +11,17 @@ puts "Seeding sports structure..."
 # ============================================================================
 
 # NCAA Men's Division I Basketball
-ncaambb = League.find_or_create_by!(abbr: "NCAAMBB") do |l|
+mbb = League.find_or_create_by!(abbr: "MBB") do |l|
   l.name = "NCAA Men's Division I Basketball"
   l.sport = "basketball"
   l.gender = "men"
   l.level = "college"
   l.periods = 2
 end
-puts "✓ #{ncaambb.name}"
+puts "✓ #{mbb.name}"
 
 # NCAA Women's Division I Basketball
-ncaawbb = League.find_or_create_by!(abbr: "NCAAWBB") do |l|
+wbb = League.find_or_create_by!(abbr: "WBB") do |l|
   l.name = "NCAA Women's Division I Basketball"
   l.sport = "basketball"
   l.gender = "women"
@@ -27,7 +29,7 @@ ncaawbb = League.find_or_create_by!(abbr: "NCAAWBB") do |l|
   l.periods = 4
   l.quarters_score_as_halves = true
 end
-puts "✓ #{ncaawbb.name}"
+puts "✓ #{wbb.name}"
 
 # National Football League
 nfl = League.find_or_create_by!(abbr: "NFL") do |l|
@@ -63,42 +65,42 @@ puts "✓ #{fcs.name}"
 # NCAA MEN'S DIVISION I BASKETBALL CONFERENCES
 # ============================================================================
 
-ncaambb_conferences = [
-  { name: "Atlantic 10 Conference", display_name: "Atlantic 10", abbr: "A10" },
-  { name: "American Conference", display_name: "American", abbr: "AAC" },
-  { name: "Atlantic Coast Conference", display_name: "Atlantic Coast", abbr: "ACC" },
-  { name: "America East Conference", display_name: " America East", abbr: "AEAST" },
-  { name: "Atlantic Sun Conference", display_name: "Atlantic Sun", abbr: "ASUN" },
-  { name: "Big 12 Conference", display_name: "Big 12", abbr: "B12" },
-  { name: "Big Ten Conference", display_name: "Big Ten", abbr: "B1G" },
-  { name: "Big East Conference", display_name: "Big East", abbr: "BIGEAST" },
-  { name: "Big South Conference", display_name: "Big South", abbr: "BSOUTH" },
-  { name: "Big West Conference", display_name: "Big West", abbr: "BWEST" },
-  { name: "Coastal Athletic Association", display_name: "Coastal ", abbr: "CAA" },
-  { name: "Conference USA", display_name: " Conference USA", abbr: "CUSA" },
-  { name: "Horizon League", display_name: " Horizon League", abbr: "HORIZ" },
-  { name: "Ivy League", display_name: " Ivy League", abbr: "IVY" },
-  { name: "Mid-American Conference", display_name: "Mid-American", abbr: "MAC" },
-  { name: "Mid-Eastern Athletic Conference", display_name: "Mid-Eastern", abbr: "MEAC" },
-  { name: "Metro Atlantic Athletic Conference", display_name: "Metro Atlantic", abbr: "METRO" },
-  { name: "Missouri Valley Conference", display_name: "Missouri Valley", abbr: "MVC" },
-  { name: "Mountain West Conference", display_name: "Mountain West", abbr: "MWC" },
-  { name: "Northeast Conference", display_name: "Northeast", abbr: "NEC" },
-  { name: "Ohio Valley Conference", display_name: "Ohio Valley", abbr: "OVC" },
-  { name: "Patriot League", display_name: "Patriot League", abbr: "PAT" },
-  { name: "Southeastern Conference", display_name: "Southeastern", abbr: "SEC" },
-  { name: "Big Sky Conference", display_name: "Big Sky", abbr: "SKY" },
-  { name: "Southland Conference", display_name: "Southland", abbr: "SLND" },
-  { name: "Southern Conference", display_name: "Southern", abbr: "SOU" },
-  { name: "Summit League", display_name: "Summit", abbr: "SUM" },
-  { name: "Sun Belt Conference", display_name: "Sun Belt", abbr: "SUN" },
-  { name: "Southwestern Athletic Conference", display_name: "Southwestern", abbr: "SWAC" },
-  { name: "West Coast Conference", display_name: "West Coast", abbr: "WCC" },
-  { name: "Western Athletic Conference", display_name: "Western", abbr: "WEST" },
+mbb_conferences = [
+  { abbr: "AEAST", name: "America East Conference", display_name: " America East" },
+  { abbr: "AAC", name: "American Conference", display_name: "American" },
+  { abbr: "A10", name: "Atlantic 10 Conference", display_name: "Atlantic 10" },
+  { abbr: "ACC", name: "Atlantic Coast Conference", display_name: "Atlantic Coast" },
+  { abbr: "ASUN", name: "Atlantic Sun Conference", display_name: "Atlantic Sun" },
+  { abbr: "B12", name: "Big 12 Conference", display_name: "Big 12" },
+  { abbr: "BIGEAST", name: "Big East Conference", display_name: "Big East" },
+  { abbr: "SKY", name: "Big Sky Conference", display_name: "Big Sky" },
+  { abbr: "BSOUTH", name: "Big South Conference", display_name: "Big South" },
+  { abbr: "B1G", name: "Big Ten Conference", display_name: "Big Ten" },
+  { abbr: "BWEST", name: "Big West Conference", display_name: "Big West" },
+  { abbr: "CAA", name: "Coastal Athletic Association", display_name: "Coastal " },
+  { abbr: "CUSA", name: "Conference USA", display_name: " Conference USA" },
+  { abbr: "HORIZ", name: "Horizon League", display_name: " Horizon League" },
+  { abbr: "IVY", name: "Ivy League", display_name: " Ivy League" },
+  { abbr: "METRO", name: "Metro Atlantic Athletic Conference", display_name: "Metro Atlantic" },
+  { abbr: "MAC", name: "Mid-American Conference", display_name: "Mid-American" },
+  { abbr: "MEAC", name: "Mid-Eastern Athletic Conference", display_name: "Mid-Eastern" },
+  { abbr: "MVC", name: "Missouri Valley Conference", display_name: "Missouri Valley" },
+  { abbr: "MWC", name: "Mountain West Conference", display_name: "Mountain West" },
+  { abbr: "NEC", name: "Northeast Conference", display_name: "Northeast" },
+  { abbr: "OVC", name: "Ohio Valley Conference", display_name: "Ohio Valley" },
+  { abbr: "PAT", name: "Patriot League", display_name: "Patriot League" },
+  { abbr: "SEC", name: "Southeastern Conference", display_name: "Southeastern" },
+  { abbr: "SOU", name: "Southern Conference", display_name: "Southern" },
+  { abbr: "SLND", name: "Southland Conference", display_name: "Southland" },
+  { abbr: "SWAC", name: "Southwestern Athletic Conference", display_name: "Southwestern" },
+  { abbr: "SUM", name: "Summit League", display_name: "Summit" },
+  { abbr: "SUN", name: "Sun Belt Conference", display_name: "Sun Belt" },
+  { abbr: "WCC", name: "West Coast Conference", display_name: "West Coast" },
+  { abbr: "WEST", name: "Western Athletic Conference", display_name: "Western" }
 ]
 
-ncaambb_conferences.each do |conf_data|
-  conf = ncaambb.conferences.find_or_create_by!(abbr: conf_data[:abbr]) do |c|
+mbb_conferences.each do |conf_data|
+  conf = mbb.conferences.find_or_create_by!(abbr: conf_data[:abbr]) do |c|
     c.name = conf_data[:name]
     c.display_name = conf_data[:display_name]
   end
@@ -109,42 +111,42 @@ end
 # NCAA WOMEN'S DIVISION I BASKETBALL CONFERENCES
 # ============================================================================
 
-ncaawbb_conferences = [
-  { name: "Atlantic 10 Conference", display_name: "Atlantic 10", abbr: "A10" },
-  { name: "American Conference", display_name: "American", abbr: "AAC" },
-  { name: "Atlantic Coast Conference", display_name: "Atlantic Coast", abbr: "ACC" },
-  { name: "America East Conference", display_name: "America East", abbr: "AEAST" },
-  { name: "Atlantic Sun Conference", display_name: "Atlantic Sun", abbr: "ASUN" },
-  { name: "Big 12 Conference ", display_name: "Big 12", abbr: "B12" },
-  { name: "Big Ten Conference", display_name: "Big Ten", abbr: "B1G" },
-  { name: "Big East Conference", display_name: "Big East", abbr: "BIGEAST" },
-  { name: "Big Sky Conference", display_name: "Big Sky", abbr: "BSKY" },
-  { name: "Big South Conference ", display_name: "Big South", abbr: "BSOUTH" },
-  { name: "Big West Conference", display_name: "Big West", abbr: "BWEST" },
-  { name: "Coastal Athletic Association", display_name: "Coastal", abbr: "CAA" },
-  { name: "Conference USA", display_name: "Conference USA", abbr: "CUSA" },
-  { name: "Horizon League", display_name: "Horizon League", abbr: "HORIZ" },
-  { name: "Ivy League", display_name: "Ivy League", abbr: "IVY" },
-  { name: "Mid-American Conference", display_name: "Mid-American", abbr: "MAC" },
-  { name: "Mid-Eastern Athletic Conference", display_name: "Mid-Eastern", abbr: "MEAC" },
-  { name: "Metro Atlantic Athletic Conference", display_name: "Metro Atlantic", abbr: "METRO" },
-  { name: "Missouri Valley Conference", display_name: "Missouri Valley", abbr: "MVC" },
-  { name: "Mountain West Conference", display_name: "Mountain West", abbr: "MWC" },
-  { name: "Northeast Conference", display_name: "Northeast", abbr: "NEC" },
-  { name: "Ohio Valley Conference", display_name: "Ohio Valley", abbr: "OVC" },
-  { name: "Patriot League", display_name: "Patriot League", abbr: "PAT" },
-  { name: "Southeastern Conference", display_name: "Southeastern", abbr: "SEC" },
-  { name: "Southland Conference", display_name: "Southland", abbr: "SLND" },
-  { name: "Southern Conference", display_name: "Southern", abbr: "SOU" },
-  { name: "Summit League", display_name: "Summit League", abbr: "SUM" },
-  { name: "Sun Belt Conference", display_name: "Sun Belt", abbr: "SUN" },
-  { name: "Southwestern Athletic Conference", display_name: "Southwestern", abbr: "SWAC" },
-  { name: "West Coast Conference", display_name: "West Coast", abbr: "WCC" },
-  { name: "Western Athletic Conference", display_name: "Western", abbr: "WEST" },
+wbb_conferences = [
+  { abbr: "AEAST", name: "America East Conference", display_name: "America East" },
+  { abbr: "AAC", name: "American Conference", display_name: "American" },
+  { abbr: "A10", name: "Atlantic 10 Conference", display_name: "Atlantic 10" },
+  { abbr: "ACC", name: "Atlantic Coast Conference", display_name: "Atlantic Coast" },
+  { abbr: "ASUN", name: "Atlantic Sun Conference", display_name: "Atlantic Sun" },
+  { abbr: "B12", name: "Big 12 Conference ", display_name: "Big 12" },
+  { abbr: "BIGEAST", name: "Big East Conference", display_name: "Big East" },
+  { abbr: "BSKY", name: "Big Sky Conference", display_name: "Big Sky" },
+  { abbr: "BSOUTH", name: "Big South Conference ", display_name: "Big South" },
+  { abbr: "B1G", name: "Big Ten Conference", display_name: "Big Ten" },
+  { abbr: "BWEST", name: "Big West Conference", display_name: "Big West" },
+  { abbr: "CAA", name: "Coastal Athletic Association", display_name: "Coastal" },
+  { abbr: "CUSA", name: "Conference USA", display_name: "Conference USA" },
+  { abbr: "HORIZ", name: "Horizon League", display_name: "Horizon League" },
+  { abbr: "IVY", name: "Ivy League", display_name: "Ivy League" },
+  { abbr: "METRO", name: "Metro Atlantic Athletic Conference", display_name: "Metro Atlantic" },
+  { abbr: "MAC", name: "Mid-American Conference", display_name: "Mid-American" },
+  { abbr: "MEAC", name: "Mid-Eastern Athletic Conference", display_name: "Mid-Eastern" },
+  { abbr: "MVC", name: "Missouri Valley Conference", display_name: "Missouri Valley" },
+  { abbr: "MWC", name: "Mountain West Conference", display_name: "Mountain West" },
+  { abbr: "NEC", name: "Northeast Conference", display_name: "Northeast" },
+  { abbr: "OVC", name: "Ohio Valley Conference", display_name: "Ohio Valley" },
+  { abbr: "PAT", name: "Patriot League", display_name: "Patriot League" },
+  { abbr: "SEC", name: "Southeastern Conference", display_name: "Southeastern" },
+  { abbr: "SOU", name: "Southern Conference", display_name: "Southern" },
+  { abbr: "SLND", name: "Southland Conference", display_name: "Southland" },
+  { abbr: "SWAC", name: "Southwestern Athletic Conference", display_name: "Southwestern" },
+  { abbr: "SUM", name: "Summit League", display_name: "Summit League" },
+  { abbr: "SUN", name: "Sun Belt Conference", display_name: "Sun Belt" },
+  { abbr: "WCC", name: "West Coast Conference", display_name: "West Coast" },
+  { abbr: "WEST", name: "Western Athletic Conference", display_name: "Western" }
 ]
 
-ncaawbb_conferences.each do |conf_data|
-  conf = ncaawbb.conferences.find_or_create_by!(abbr: conf_data[:abbr]) do |c|
+wbb_conferences.each do |conf_data|
+  conf = wbb.conferences.find_or_create_by!(abbr: conf_data[:abbr]) do |c|
     c.name = conf_data[:name]
     c.display_name = conf_data[:display_name]
   end
@@ -152,21 +154,38 @@ ncaawbb_conferences.each do |conf_data|
 end
 
 # ============================================================================
+# NATIONAL FOOTBALL LEAGUE CONFERENCES
+# ============================================================================
+
+nfl_conferences = [
+  { abbr: "AFC", name: "American Football Conference", display_name: "AFC" },
+  { abbr: "NFC", name: "National Football Conference", display_name: "NFC" }
+]
+
+nfl_conferences.each do |conf_data|
+  conf = nfl.conferences.find_or_create_by!(abbr: conf_data[:abbr]) do |c|
+    c.name = conf_data[:name]
+    c.display_name = conf_data[:display_name]
+  end
+  puts "  ✓ #{conf.display_name} (NFL)"
+end
+
+# ============================================================================
 # NCAA FOOTBALL BOWL SUBDIVISION CONFERENCES
 # ============================================================================
 
 fbs_conferences = [
-  { name: "American Conference", display_name: "American", abbr: "AAC" },
-  { name: "Atlantic Coast Conference", display_name: "Atlantic Coast", abbr: "ACC" },
-  { name: "Big 12 Conference", display_name: "Big 12", abbr: "B12" },
-  { name: "Big Ten Conference", display_name: "Big Ten", abbr: "B1G" },
-  { name: "Conference USA", display_name: "Conference USA", abbr: "CUSA" },
-  { name: "FBS Independents", display_name: "Independent", abbr: "IND" },
-  { name: "Mid-American Conference", display_name: "Mid-American", abbr: "MAC" },
-  { name: "Mountain West Conference", display_name: "Mountain West", abbr: "MWC" },
-  { name: "Pac-12 Conference", display_name: "Pac-12", abbr: "PAC" },
-  { name: "Southeastern Conference", display_name: "Southeastern", abbr: "SEC" },
-  { name: "Sun Belt Conference", display_name: "Sun Belt", abbr: "SUN" },
+  { abbr: "AAC", name: "American Conference", display_name: "American" },
+  { abbr: "ACC", name: "Atlantic Coast Conference", display_name: "Atlantic Coast" },
+  { abbr: "B12", name: "Big 12 Conference", display_name: "Big 12" },
+  { abbr: "B1G", name: "Big Ten Conference", display_name: "Big Ten" },
+  { abbr: "CUSA", name: "Conference USA", display_name: "Conference USA" },
+  { abbr: "IND", name: "FBS Independents", display_name: "Independent" },
+  { abbr: "MAC", name: "Mid-American Conference", display_name: "Mid-American" },
+  { abbr: "MWC", name: "Mountain West Conference", display_name: "Mountain West" },
+  { abbr: "PAC", name: "Pac-12 Conference", display_name: "Pac-12" },
+  { abbr: "SEC", name: "Southeastern Conference", display_name: "Southeastern" },
+  { abbr: "SUN", name: "Sun Belt Conference", display_name: "Sun Belt" }
 ]
 
 fbs_conferences.each do |conf_data|
