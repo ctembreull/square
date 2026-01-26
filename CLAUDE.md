@@ -213,6 +213,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Affiliations UI (Conference show)**~~ | ✅ Done - Inline team list with delete buttons, Choices.js searchable dropdown for adding teams (filtered by league level). Turbo Stream updates without page reload. |
 | ~~**Full Dockerization**~~ | ✅ Done - Chromium + Node.js for Grover PDF generation, docker-compose.yml with SQLite volume, entrypoint runs seeds/imports, admin user via env vars, health check on /status.json |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
+| **Basic Users CRUD** | Admin-only UI to create/manage other admins. Env vars bootstrap first admin; UI for ongoing management. Needed for 2 additional testers. |
 
 ## Milestone: Full 1.0 Release - August 15, 2026
 
@@ -267,7 +268,7 @@ Target: Ready for football season
 | **Fallback platform plan** | Alternative hosting strategy for outage resilience (multi-cloud, static export). Note: Render blocked SMTP on free tier (Sept 2025), limiting viability unless using paid tier or HTTP-based email APIs. |
 | **Public Docker release** | Package as self-hosted one-click deploy for offices/groups to run their own squares games. Sidesteps SaaS complexity and gambling compliance - users handle their own local rules. Test on TrueNAS first. |
 | **Draft mode for grid selection** | Alternative to random grid: players claim specific squares (office-style pools). Could be first-come-first-served or structured draft order. Note: Chris has patent on automated fantasy drafts - potential IP leverage. |
-| **Historical game import** | Import games from old system via YAML export/import. Challenge: grid stores player IDs that differ between systems. Solution: (1) Add `legacy_id` field to Player for old system's ID, (2) Admin UI to map current players to their old IDs, (3) Import creates inactive players for unmapped old IDs, then translates grid references. Preserves family game history from pre-1.0 years. |
+| **Full data export/import** | Production is canonical source of truth. Need complete export/import for: (1) **Sport structure** (leagues, conferences, teams, affiliations, colors, styles) → version-controlled seed files, (2) **Game operations** (events, games, scores, players) → disaster recovery if redeploying mid-event. Challenge: grid stores player IDs that differ between systems. Solution: `legacy_id` field + ID translation on import. Export tasks already exist for teams/affiliations/players; need events/games/scores export. This also enables historical game import from old system. |
 
 ## Small Fixes (No Milestone)
 
