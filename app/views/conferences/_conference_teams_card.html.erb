@@ -1,0 +1,68 @@
+<div id="conference_teams_card" class="card">
+  <div class="card-header">
+    <div class="row flex-between-center">
+      <div class="col-6 col-sm-auto d-flex align-items-center pe-0">
+        <h5 class="fs-9 mb-0 text-nowrap py-2 py-xl-0">
+          Teams
+          <span class="badge bg-soft-secondary text-secondary ms-2"><%= conference.teams.count %></span>
+        </h5>
+      </div>
+      <div class="col-6 col-sm-auto ms-auto text-end ps-0">
+        <% if available_teams.any? %>
+          <%= form_with url: affiliations_path, method: :post, local: false, class: "d-inline-flex align-items-center gap-2", data: { controller: "conference-team-add" } do |f| %>
+            <%= f.hidden_field :league_id, value: conference.league_id %>
+            <%= f.hidden_field :conference_id, value: conference.id %>
+            <select name="affiliation[team_id]" class="form-select form-select-sm" style="width: 200px;" data-conference-team-add-target="select" data-action="change->conference-team-add#submit" required>
+              <option value="">Add team...</option>
+              <% available_teams.each do |team| %>
+                <option value="<%= team.id %>"><%= team.location %> <%= team.name %></option>
+              <% end %>
+            </select>
+            <noscript>
+              <%= f.submit "Add", class: "btn btn-falcon-primary btn-sm" %>
+            </noscript>
+          <% end %>
+        <% else %>
+          <span class="text-muted fs-10">All teams affiliated</span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="card-body px-0 py-0">
+    <% if affiliations.any? %>
+      <div class="table-responsive scrollbar">
+        <table class="table table-sm fs-10 mb-0 overflow-hidden">
+          <thead class="bg-200">
+            <tr>
+              <th class="text-900 pe-1 align-middle white-space-nowrap">Team</th>
+              <th class="pe-1 align-middle white-space-nowrap data-table-row-action" style="width: 28px;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% affiliations.each do |affiliation| %>
+              <tr id="<%= dom_id(affiliation) %>">
+                <td class="align-middle white-space-nowrap">
+                  <%= link_to team_path(affiliation.team), data: { turbo_frame: "_top" } do %>
+                    <strong><%= affiliation.team.location %></strong> <%= affiliation.team.name %>
+                  <% end %>
+                </td>
+                <td class="align-middle white-space-nowrap text-end">
+                  <%= button_to affiliation_path(affiliation),
+                      method: :delete,
+                      form: { data: { turbo_confirm: "Remove #{affiliation.team.location} #{affiliation.team.name} from #{conference.display_name}?" } },
+                      class: "btn btn-link text-danger btn-sm p-0" do %>
+                    <span class="fas fa-times"></span>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% else %>
+      <div class="p-4 text-center text-muted">
+        <p class="mb-0">No teams in this conference yet.</p>
+      </div>
+    <% end %>
+  </div>
+</div>

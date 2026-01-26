@@ -22,8 +22,16 @@ class AffiliationsController < ApplicationController
       respond_to do |format|
         format.turbo_stream do
           @affiliation.team.reload
+          @from_conference = request.referer&.include?("/conferences/")
+          @conference = @affiliation.conference if @from_conference
         end
-        format.html { redirect_to team_path(@affiliation.team), notice: "Affiliation was successfully created." }
+        format.html do
+          if request.referer&.include?("/conferences/")
+            redirect_to conference_path(@affiliation.conference), notice: "Team added to conference."
+          else
+            redirect_to team_path(@affiliation.team), notice: "Affiliation was successfully created."
+          end
+        end
       end
     else
       render :new, status: :unprocessable_entity
@@ -48,10 +56,21 @@ class AffiliationsController < ApplicationController
 
   def destroy
     team = @affiliation.team
+    conference = @affiliation.conference
     @affiliation.destroy
     respond_to do |format|
-      format.turbo_stream { @team = team }
-      format.html { redirect_to team_path(team), notice: "Affiliation was successfully deleted." }
+      format.turbo_stream do
+        @team = team
+        @from_conference = request.referer&.include?("/conferences/")
+        @conference = conference if @from_conference
+      end
+      format.html do
+        if request.referer&.include?("/conferences/")
+          redirect_to conference_path(conference), notice: "Team removed from conference."
+        else
+          redirect_to team_path(team), notice: "Affiliation was successfully deleted."
+        end
+      end
     end
   end
 

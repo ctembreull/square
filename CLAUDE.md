@@ -209,7 +209,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
 | ~~**Event PDF Export**~~ | ✅ Done - Grover/Puppeteer generates landscape Letter PDFs with grid, scores, winners |
 | ~~**Player export/import**~~ | ✅ Done - `rake players:export` and `rake players:import` tasks (emails excluded, must re-enter) |
-| **Affiliations UI (Conference show)** | Inline team list with delete buttons, typed-select dropdown + add button for creating affiliations without modal. Prep for March Madness team setup. |
+| ~~**Affiliations UI (Conference show)**~~ | ✅ Done - Inline team list with delete buttons, auto-submit dropdown for adding teams (filtered by league level). Turbo Stream updates without page reload. |
 | **Full Dockerization** | Rails 8 Dockerfile exists. TODO: (1) Add `chromium chromium-sandbox` to base packages, (2) Set Puppeteer env vars for Grover, (3) Add docker-compose.yml with SQLite volume for local testing. |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 

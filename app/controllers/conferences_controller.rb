@@ -6,6 +6,12 @@ class ConferencesController < ApplicationController
   end
 
   def show
+    @affiliations = @conference.affiliations.includes(:team).order("teams.location")
+    # Teams at this level that don't yet have any affiliation in this league
+    teams_in_league = Affiliation.where(league_id: @conference.league_id).select(:team_id)
+    @available_teams = Team.where(level: @conference.league.level)
+                           .where.not(id: teams_in_league)
+                           .alphabetical
   end
 
   def new

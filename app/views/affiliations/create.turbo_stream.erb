@@ -1,9 +1,25 @@
-<%= turbo_stream.replace "affiliations_card" do %>
-  <%= turbo_frame_tag "affiliations_card" do %>
-    <%= render "affiliations/affiliations_card", team: @affiliation.team %>
+<% if @from_conference %>
+  <%
+    affiliations = @conference.affiliations.includes(:team).order("teams.location")
+    teams_in_league = Affiliation.where(league_id: @conference.league_id).select(:team_id)
+    available_teams = Team.where(level: @conference.league.level)
+                          .where.not(id: teams_in_league)
+                          .alphabetical
+  %>
+  <%= turbo_stream.replace "conference_teams_card" do %>
+    <%= render "conferences/conference_teams_card",
+        conference: @conference,
+        affiliations: affiliations,
+        available_teams: available_teams %>
   <% end %>
-<% end %>
+<% else %>
+  <%= turbo_stream.replace "affiliations_card" do %>
+    <%= turbo_frame_tag "affiliations_card" do %>
+      <%= render "affiliations/affiliations_card", team: @affiliation.team %>
+    <% end %>
+  <% end %>
 
-<%= turbo_stream.replace "affiliation_modal" do %>
-  <%= turbo_frame_tag "affiliation_modal" %>
+  <%= turbo_stream.replace "affiliation_modal" do %>
+    <%= turbo_frame_tag "affiliation_modal" %>
+  <% end %>
 <% end %>
