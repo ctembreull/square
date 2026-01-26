@@ -5,6 +5,8 @@ services:
       - "3000:80"
     environment:
       - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
+      # Run Solid Queue job processor inside Puma (single container setup)
+      - SOLID_QUEUE_IN_PUMA=1
       # Optional: Admin user created on first boot if these are set
       - ADMIN_NAME=${ADMIN_NAME:-}
       - ADMIN_EMAIL=${ADMIN_EMAIL:-}
