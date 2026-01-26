@@ -7,12 +7,12 @@
           <span class="badge bg-soft-secondary text-secondary ms-2"><%= conference.teams.count %></span>
         </h5>
       </div>
-      <div class="col-6 col-sm-auto ms-auto text-end ps-0">
+      <div class="col-6 col-sm-auto ms-auto ps-0" style="min-width: 250px;">
         <% if available_teams.any? %>
-          <%= form_with url: affiliations_path, method: :post, local: false, class: "d-inline-flex align-items-center gap-2", data: { controller: "conference-team-add" } do |f| %>
+          <%= form_with url: affiliations_path, scope: :affiliation, method: :post, local: false, data: { controller: "conference-team-add" } do |f| %>
             <%= f.hidden_field :league_id, value: conference.league_id %>
             <%= f.hidden_field :conference_id, value: conference.id %>
-            <select name="affiliation[team_id]" class="form-select form-select-sm" style="width: 200px;" data-conference-team-add-target="select" data-action="change->conference-team-add#submit" required>
+            <select name="affiliation[team_id]" data-conference-team-add-target="select" data-action="change->conference-team-add#submit" required>
               <option value="">Add team...</option>
               <% available_teams.each do |team| %>
                 <option value="<%= team.id %>"><%= team.location %> <%= team.name %></option>

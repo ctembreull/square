@@ -1,0 +1,1014 @@
+---
+ari-arizona-cardinals:
+- league: NFL
+  conference: NFC
+ari-arizona-wildcats:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+army-army-black-knights:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+asu-arizona-state-sun-devils:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+atl-atlanta-falcons:
+- league: NFL
+  conference: NFC
+bal-baltimore-ravens:
+- league: NFL
+  conference: AFC
+bay-baylor-bears:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+bc-boston-college-eagles:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+bel-bellarmine-knights:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+bing-binghamton-bearcats:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+bry-bryant-bulldogs:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+buf-buffalo-bills:
+- league: NFL
+  conference: AFC
+but-butler-bulldogs:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+byu-brigham-young-cougars:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+cak-central-arkansas-bears:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+cal-california-golden-bears:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+cam-campbell-fighting-camels:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+car-carolina-panthers:
+- league: NFL
+  conference: NFC
+cha-charleston-cougars:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+cha-charlotte-49ers:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+chi-chicago-bears:
+- league: NFL
+  conference: NFC
+chs-charleston-southern-buccaneers:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+cin-cincinnati-bearcats:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+cin-cincinnati-bengals:
+- league: NFL
+  conference: AFC
+cle-cleveland-browns:
+- league: NFL
+  conference: AFC
+clem-clemson-tigers:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+col-colorado-buffaloes:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+crei-creighton-blue-jays:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+csb-cal-state-bakersfield-roadrunners:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+csuf-cal-state-fullerton-titans:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+csun-cal-state-northridge-matadors:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+dal-dallas-cowboys:
+- league: NFL
+  conference: NFC
+dav-davidson-wildcats:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+day-dayton-flyers:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+den-denver-broncos:
+- league: NFL
+  conference: AFC
+det-detroit-lions:
+- league: NFL
+  conference: NFC
+dpu-depaul-blue-demons:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+drx-drexel-fighting-dragons:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+duke-duke-blue-devils:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+duq-duquesne-dukes:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+ecu-east-carolina-pirates:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+eku-eastern-kentucky-colonels:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+elon-elon-phoenix:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+ewu-eastern-washington-eagles:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+fau-florida-atlantic-owls:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+fgcu-florida-gulf-coast-eagles:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+for-fordham-rams:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+fsu-florida-state-seminoles:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+gb-green-bay-packers:
+- league: NFL
+  conference: NFC
+gmu-george-mason-patriots:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+gt-georgia-tech-yellow-jackets:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+gtn-georgetown-hoyas:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+gw-gardner-webb-runnin-bulldogs:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+gw-george-washington-revolutionaries:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+ham-hampton-pirates:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+haw-hawai-i-rainbow-warriors:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+hip-high-point-panthers:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+hof-hofstra-pride:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+hou-houston-cougars:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+hou-houston-texans:
+- league: NFL
+  conference: AFC
+ida-idaho-vandals:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+idst-idaho-state-bengals:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+ill-illinois-fighting-illini:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+ind-indianapolis-colts:
+- league: NFL
+  conference: AFC
+iowa-iowa-hawkeyes:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+irv-uc-irvine-anteaters:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+isu-iowa-state-cyclones:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+iu-indiana-hoosiers:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+jac-jacksonville-jaguars:
+- league: NFL
+  conference: AFC
+jax-jacksonville-dolphins:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+kc-kansas-city-chiefs:
+- league: NFL
+  conference: AFC
+ksu-kansas-state-wildcats:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+ku-kansas-jayhawks:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+lac-los-angeles-chargers:
+- league: NFL
+  conference: AFC
+lar-los-angeles-rams:
+- league: NFL
+  conference: NFC
+las-la-salle-explorers:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+lbst-long-beach-state-beach:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+lib-liberty-flames:
+- league: MBB
+  conference: CUSA
+lip-lipscomb-bisons:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+lng-longwood-lancers:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+lou-louisville-cardinals:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+luc-loyola-chicago-ramblers:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+marq-marquette-golden-eagles:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+mem-memphis-tigers:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+mia-miami-dolphins:
+- league: NFL
+  conference: AFC
+mia-miami-hurricanes:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+min-minnesota-golden-gophers:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+min-minnesota-vikings:
+- league: NFL
+  conference: NFC
+mn-maine-black-bears:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+mnt-montana-grizzlies:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+mon-monmouth-hawks:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+msu-michigan-state-spartans:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+mtsu-montana-state-bobcats:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+nau-north-alabama-lions:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+nau-northern-arizona-lumberjacks:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+navy-navy-midshipmen:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+ncat-north-carolina-a-t-aggies:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+nco-northern-colorado-bears:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+ncst-nc-state-wolfpack:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: A10
+nd-notre-dame-fighting-irish:
+- league: FBS
+  conference: IND
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+ne-new-england-patriots:
+- league: NFL
+  conference: AFC
+neb-nebraska-cornhuskers:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+nfl-north-florida-ospreys:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+njit-njit-highlanders:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+no-new-orleans-saints:
+- league: NFL
+  conference: NFC
+nore-northeastern-huskies:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+nova-villanova-wildcats:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+nw-northwestern-wildcats:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+nyg-new-york-giants:
+- league: NFL
+  conference: NFC
+nyj-new-york-jets:
+- league: NFL
+  conference: AFC
+oak-oakland-raiders:
+- league: NFL
+  conference: AFC
+ore-oregon-ducks:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+osu-ohio-state-buckeyes:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+osu-oklahoma-state-cowboys:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+peay-austin-peay-governors:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+phi-philadelphia-eagles:
+- league: NFL
+  conference: NFC
+pit-pitt-panthers:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+pit-pittsburgh-steelers:
+- league: NFL
+  conference: AFC
+poly-cal-poly-mustangs:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+pres-presbyterian-blue-hose:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+prv-providence-friars:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+psu-penn-state-nittany-lions:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+psu-portland-state-vikings:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+pur-purdue-boilermakers:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+qu-queens-university-royals:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+rad-radford-highlanders:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+rice-rice-owls:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+rich-richmond-spiders:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+rtg-rutgers-scarlet-knights:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+sacst-sacramento-state-hornets:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+sbu-st-bonaventure-bonnies:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+sbu-stony-brook-seawolves:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+scu-south-carolina-upstate-spartans:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+sea-seattle-seahawks:
+- league: NFL
+  conference: NFC
+sf-san-francisco-49ers:
+- league: NFL
+  conference: NFC
+sh-seton-hall-pirates:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+sju-saint-josephs-hawks:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+sju-st-john-s-red-storm:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+slu-saint-louis-billikens:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+smu-southern-methodist-mustangs:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+stan-stanford-cardinal:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+stet-stetson-hatters:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+syr-syracuse-orange:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+tb-tampa-bay-buccaneers:
+- league: NFL
+  conference: NFC
+tcu-texas-christian-horned-frogs:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+tem-temple-owls:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+ten-tennessee-titans:
+- league: NFL
+  conference: AFC
+tow-towson-tigers:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+ttu-texas-tech-red-raiders:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+tul-tulsa-golden-hurricane:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+tuln-tulane-green-wave:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+ua-ualbany-great-danes:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+uab-alabama-birmingham-blazers:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+ucd-uc-davis-aggies:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+ucf-central-florida-knights:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+ucla-ucla-bruins:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+uconn-uconn-huskies:
+- league: FBS
+  conference: IND
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST
+ucr-uc-riverside-highlanders:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+ucsb-uc-santa-barbara-gauchos:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+ucsd-uc-san-diego-tritons:
+- league: MBB
+  conference: BWEST
+- league: WBB
+  conference: BWEST
+um-maryland-terrapins:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+um-michigan-wolverines:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+umass-massachusetts-minutemen:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
+umbc-umbc-retrievers:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+uml-umass-lowell-river-hawks:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+unc-north-carolina-tar-heels:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+unca-unc-asheville-bulldogs:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+uncw-unc-wilmington-seahawks:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+unh-new-hampshire-wildcats:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+unt-north-texas-mean-green:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+uri-rhode-island-rams:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+usc-usc-trojans:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+usf-south-florida-bulls:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+utah-utah-utes:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+utsa-texas-san-antonio-roadrunners:
+- league: FBS
+  conference: AAC
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+uw-washington-huskies:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+vcu-vcu-rams:
+- league: MBB
+  conference: A10
+- league: WBB
+  conference: A10
+vir-virginia-cavaliers:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+vt-vermont-catamounts:
+- league: MBB
+  conference: AEAST
+- league: WBB
+  conference: AEAST
+vt-virginia-tech-hokies:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+wake-wake-forest-demon-deacons:
+- league: FBS
+  conference: ACC
+- league: MBB
+  conference: ACC
+- league: WBB
+  conference: ACC
+was-washington-commanders:
+- league: NFL
+  conference: NFC
+web-weber-state-wildcats:
+- league: MBB
+  conference: SKY
+- league: WBB
+  conference: BSKY
+wga-west-georgia-wolves:
+- league: MBB
+  conference: ASUN
+- league: WBB
+  conference: ASUN
+win-winthrop-eagles:
+- league: MBB
+  conference: BSOUTH
+- league: WBB
+  conference: BSOUTH
+wis-wisconsin-badgers:
+- league: FBS
+  conference: B1G
+- league: MBB
+  conference: B1G
+- league: WBB
+  conference: B1G
+wm-william-mary-tribe:
+- league: MBB
+  conference: CAA
+- league: WBB
+  conference: CAA
+wvu-west-virginia-mountaineers:
+- league: FBS
+  conference: B12
+- league: MBB
+  conference: B12
+- league: WBB
+  conference: B12
+xav-xavier-musketeers:
+- league: MBB
+  conference: BIGEAST
+- league: WBB
+  conference: BIGEAST

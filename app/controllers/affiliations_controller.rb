@@ -34,7 +34,11 @@ class AffiliationsController < ApplicationController
         end
       end
     else
-      render :new, status: :unprocessable_entity
+      if request.referer&.include?("/conferences/") && @affiliation.conference_id.present?
+        redirect_to conference_path(@affiliation.conference_id), alert: @affiliation.errors.full_messages.join(", ")
+      else
+        render :new, status: :unprocessable_entity
+      end
     end
   end
 
