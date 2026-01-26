@@ -15,7 +15,8 @@
   <div class="row">
     <div class="col-md-6 mb-3">
       <%= form.label :league_id, "League", class: "form-label" %>
-      <%= form.collection_select :league_id, League.all.order(:name), :id, :name, { prompt: "Select a league" }, { class: "form-select", required: true, data: { affiliation_form_target: "league", action: "change->affiliation-form#filterConferences" } } %>
+      <% leagues = defined?(@available_leagues) && @available_leagues ? @available_leagues : League.order(:name) %>
+      <%= form.collection_select :league_id, leagues, :id, :name, { prompt: "Select a league" }, { class: "form-select", required: true, data: { affiliation_form_target: "league", action: "change->affiliation-form#filterConferences" } } %>
     </div>
 
     <div class="col-md-6 mb-3">

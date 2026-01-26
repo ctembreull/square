@@ -13,6 +13,7 @@ class AffiliationsController < ApplicationController
     @affiliation.team_id = params[:team_id] if params[:team_id]
     @affiliation.league_id = params[:league_id] if params[:league_id]
     @affiliation.conference_id = params[:conference_id] if params[:conference_id]
+    set_available_leagues
   end
 
   def create
@@ -37,6 +38,7 @@ class AffiliationsController < ApplicationController
       if request.referer&.include?("/conferences/") && @affiliation.conference_id.present?
         redirect_to conference_path(@affiliation.conference_id), alert: @affiliation.errors.full_messages.join(", ")
       else
+        set_available_leagues
         render :new, status: :unprocessable_entity
       end
     end
@@ -86,5 +88,14 @@ class AffiliationsController < ApplicationController
 
   def affiliation_params
     params.require(:affiliation).permit(:team_id, :league_id, :conference_id)
+  end
+
+  def set_available_leagues
+    if @affiliation.team_id.present?
+      affiliated_league_ids = Affiliation.where(team_id: @affiliation.team_id).pluck(:league_id)
+      @available_leagues = League.where.not(id: affiliated_league_ids).order(:name)
+    else
+      @available_leagues = League.order(:name)
+    end
   end
 end
