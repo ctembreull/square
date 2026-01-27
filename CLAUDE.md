@@ -331,6 +331,7 @@ Target: Ready for football season
 | Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
 | Broadcast logger for job visibility | Consider adding `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development, so `bin/jobs` output is visible in Procfile.dev. Trade-off: more verbose Rails server output. |
 | **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Partial failure suggests path resolution issue, not wholesale asset pipeline failure. Check how card backgrounds are referenced vs header logo. |
+| **Winners table period display** | Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. |
 
 ---
 
