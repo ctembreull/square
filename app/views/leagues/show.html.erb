@@ -16,8 +16,11 @@
 							</h4>
 						</div>
 					</div>
-					<div class="col-auto">
-						<%= link_to "Edit League", edit_league_path(@league), class: "btn btn-secondary btn-sm btn-outline" %>
+					<div class="col-auto d-flex gap-2">
+						<%= link_to new_conference_path(league_id: @league.id), class: "btn btn-primary btn-sm" do %>
+							<span class="fas fa-plus me-1"></span> Add Conference
+						<% end %>
+						<%= link_to "Edit League", edit_league_path(@league), class: "btn btn-outline-secondary btn-sm" %>
 					</div>
 				</div>
 				<div class="row gx-0 p-2 pt-0" id="header-info">
