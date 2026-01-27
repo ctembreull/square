@@ -201,7 +201,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Manual score input modal (admin)**~~ | ✅ Done - Team colors, OT checkbox, mark-as-final |
 | ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
 | ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
-| **Deploy to Fly.io** | See deployment checklist below. Target: **February 8, 2026** (Super Bowl demo) |
+| ~~**Deploy to Fly.io**~~ | ✅ Done - App live at family-squares.fly.dev. See deployment notes below. |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
@@ -215,42 +215,40 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 | ~~**Basic Users CRUD**~~ | ✅ Done - UsersController with full CRUD. Manage Users in dropdown. Password match validation via Stimulus. |
 
-### Fly.io Deployment Checklist
+### Fly.io Deployment Notes
 
-Target: **February 8, 2026** (Super Bowl demo for Dad)
+**Deployed 2026-01-27** to family-squares.fly.dev (sjc region)
 
-**Prerequisites:**
-- [ ] Fly.io account (done)
-- [ ] Install `flyctl` (`brew install flyctl` or `curl -L https://fly.io/install.sh | sh`)
-- [ ] Login: `fly auth login`
+**Configuration:**
+- Port 8080 (non-root container requires high port)
+- `HTTP_PORT=8080` env var for Thruster
+- SQLite with WAL mode for better concurrency
+- `min_machines_running=1` to prevent autostop
+- 1GB RAM (shared-cpu-1x)
 
-**Initialize & Configure:**
-- [ ] Run `fly launch` (decline Postgres, accept Dockerfile detection)
-- [ ] Create volume: `fly volumes create sqlite_data --region ord --size 1`
-- [ ] Configure `fly.toml`:
-  - Mount volume to `/rails/storage`
-  - Health check on `/status.json`
-  - Internal port 80
-  - Single machine (SQLite constraint)
+**Working:**
+- ✅ App serves requests
+- ✅ Login/authentication
+- ✅ Players auto-imported from `db/seeds/players.yml`
+- ✅ Live scoring jobs (SolidQueue in Puma)
+- ✅ Health check at `/up` and `/status.json`
 
-**Secrets:**
-- [ ] `fly secrets set RAILS_MASTER_KEY=$(cat config/master.key)`
-- [ ] `fly secrets set ADMIN_NAME="Chris"`
-- [ ] `fly secrets set ADMIN_EMAIL="..."`
-- [ ] `fly secrets set ADMIN_PASSWORD="..."`
+**Not Working:**
+- ❌ PDF generation - Chromium crashes silently even with 1GB RAM. Likely timeout or Puppeteer routing issue. Generate PDFs locally as workaround.
 
-**Deploy & Verify:**
-- [ ] Run `fly deploy`
-- [ ] Check `fly status` and `fly logs`
-- [ ] Verify `/status.json` returns data
-- [ ] Test login with admin credentials
-- [ ] Test PDF generation (Puppeteer localhost routing)
+**Useful Commands:**
+```bash
+fly deploy                    # Deploy new version
+fly logs --app family-squares # View logs
+fly ssh console              # Shell access (requires WireGuard)
+fly machine restart          # Restart the machine
+fly scale vm shared-cpu-1x --memory 512  # Adjust memory
+```
 
-**Post-Deploy Data:**
-- [ ] Upload `players.yml` via `fly ssh sftp`
-- [ ] Import players: `fly ssh console` → `rails players:import`
-- [ ] Create Super Bowl event and game
-- [ ] Verify live scoring works
+**Backup Before Deploy:**
+```bash
+fly ssh sftp get /rails/storage/production.sqlite3 ./backup-$(date +%Y%m%d).sqlite3
+```
 
 **Email (Resend SMTP) - Optional for demo:**
 - [ ] `fly secrets set SMTP_HOST=smtp.resend.com`
@@ -278,6 +276,7 @@ Target: Ready for football season
 | Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
+| **Fix Fly.io PDF generation** | Chromium crashes silently even with 1GB RAM. Investigate: (1) Puppeteer timeout settings, (2) localhost routing in Fly.io, (3) OOM killer logs, (4) alternative PDF approaches (Prawn, external service). |
 
 ### Event PDF Export (Implemented)
 
