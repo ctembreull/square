@@ -117,10 +117,17 @@ class Game < ApplicationRecord
 
   def start!
     update!(status: "in_progress")
+    broadcast_status_change
   end
 
   def complete!
     update!(status: "completed")
+    broadcast_status_change
+  end
+
+  # Broadcast a page refresh to connected clients when status changes
+  def broadcast_status_change
+    Turbo::StreamsChannel.broadcast_refresh_to(self, "scores")
   end
 
   # Broadcast score updates to connected clients via Turbo Streams

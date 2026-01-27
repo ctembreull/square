@@ -1,0 +1,60 @@
+<%= form_with model: user, class: "needs-validation" do |form| %>
+	<% if user.errors.any? %>
+		<div class="alert alert-danger">
+			<h6 class="alert-heading"><%= pluralize(user.errors.count, "error") %> prevented this user from being saved:</h6>
+			<ul class="mb-0">
+				<% user.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<div class="mb-3">
+		<%= form.label :name, class: "form-label" %>
+		<%= form.text_field :name, class: "form-control", required: true %>
+	</div>
+
+	<div class="mb-3">
+		<%= form.label :email, class: "form-label" %>
+		<%= form.email_field :email, class: "form-control", required: true %>
+	</div>
+
+	<div class="mb-3">
+		<%= form.label :display_name, "Display Name (optional)", class: "form-label" %>
+		<%= form.text_field :display_name, class: "form-control" %>
+		<div class="form-text">Shown in the navigation bar instead of name.</div>
+	</div>
+
+	<div data-controller="password-match">
+		<div class="mb-3">
+			<%= form.label :password, class: "form-label" %>
+			<%= form.password_field :password, class: "form-control", required: user.new_record?, minlength: 8, data: { password_match_target: "password", action: "input->password-match#check" } %>
+			<% if user.persisted? %>
+				<div class="form-text">Leave blank to keep current password.</div>
+			<% else %>
+				<div class="form-text">Minimum 8 characters.</div>
+			<% end %>
+		</div>
+
+		<div class="mb-3">
+			<%= form.label :password_confirmation, "Confirm Password", class: "form-label" %>
+			<%= form.password_field :password_confirmation, class: "form-control", required: user.new_record?, minlength: 8, data: { password_match_target: "confirmation", action: "input->password-match#check" } %>
+			<div class="form-text d-none" data-password-match-target="feedback"></div>
+		</div>
+	</div>
+
+	<div class="mb-4">
+		<div class="form-check">
+			<%= form.check_box :admin, class: "form-check-input" %>
+			<%= form.label :admin, class: "form-check-label" do %>
+				<strong>Admin</strong> - Can access all admin features
+			<% end %>
+		</div>
+	</div>
+
+	<div class="d-flex gap-2">
+		<%= form.submit class: "btn btn-primary" %>
+		<%= link_to "Cancel", users_path, class: "btn btn-secondary" %>
+	</div>
+<% end %>

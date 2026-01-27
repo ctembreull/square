@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   delete "logout", to: "sessions#destroy", as: :logout
   patch "toggle_admin_tools", to: "sessions#toggle_admin_tools", as: :toggle_admin_tools
 
+  # Users (admin management)
+  resources :users, except: [:show]
+
   # Events
   resources :events do
     resources :posts, only: [:new, :create]

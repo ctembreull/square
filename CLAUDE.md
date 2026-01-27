@@ -201,7 +201,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Manual score input modal (admin)**~~ | ✅ Done - Team colors, OT checkbox, mark-as-final |
 | ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
 | ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
-| Deploy to Fly.io | Infrastructure setup and configuration. Note: PDF generation uses `localhost` for Puppeteer to fetch stylesheets - verify internal port routing works in container. **Secrets:** Use `fly secrets set` for RAILS_MASTER_KEY, ADMIN_EMAIL, ADMIN_PASSWORD. **Players:** Import via SSH after deploy (`fly ssh console`, upload players.yml, run `rails players:import`). |
+| **Deploy to Fly.io** | See deployment checklist below. Target: **February 8, 2026** (Super Bowl demo) |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
@@ -213,7 +213,52 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Affiliations UI (Conference show)**~~ | ✅ Done - Inline team list with delete buttons, Choices.js searchable dropdown for adding teams (filtered by league level). Turbo Stream updates without page reload. |
 | ~~**Full Dockerization**~~ | ✅ Done - Chromium + Node.js for Grover PDF generation, docker-compose.yml with SQLite volume, entrypoint runs seeds/imports, admin user via env vars, health check on /status.json |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
-| **Basic Users CRUD** | Admin-only UI to create/manage other admins. Env vars bootstrap first admin; UI for ongoing management. Needed for 2 additional testers. |
+| ~~**Basic Users CRUD**~~ | ✅ Done - UsersController with full CRUD. Manage Users in dropdown. Password match validation via Stimulus. |
+
+### Fly.io Deployment Checklist
+
+Target: **February 8, 2026** (Super Bowl demo for Dad)
+
+**Prerequisites:**
+- [ ] Fly.io account (done)
+- [ ] Install `flyctl` (`brew install flyctl` or `curl -L https://fly.io/install.sh | sh`)
+- [ ] Login: `fly auth login`
+
+**Initialize & Configure:**
+- [ ] Run `fly launch` (decline Postgres, accept Dockerfile detection)
+- [ ] Create volume: `fly volumes create sqlite_data --region ord --size 1`
+- [ ] Configure `fly.toml`:
+  - Mount volume to `/rails/storage`
+  - Health check on `/status.json`
+  - Internal port 80
+  - Single machine (SQLite constraint)
+
+**Secrets:**
+- [ ] `fly secrets set RAILS_MASTER_KEY=$(cat config/master.key)`
+- [ ] `fly secrets set ADMIN_NAME="Chris"`
+- [ ] `fly secrets set ADMIN_EMAIL="..."`
+- [ ] `fly secrets set ADMIN_PASSWORD="..."`
+
+**Deploy & Verify:**
+- [ ] Run `fly deploy`
+- [ ] Check `fly status` and `fly logs`
+- [ ] Verify `/status.json` returns data
+- [ ] Test login with admin credentials
+- [ ] Test PDF generation (Puppeteer localhost routing)
+
+**Post-Deploy Data:**
+- [ ] Upload `players.yml` via `fly ssh sftp`
+- [ ] Import players: `fly ssh console` → `rails players:import`
+- [ ] Create Super Bowl event and game
+- [ ] Verify live scoring works
+
+**Email (Resend SMTP) - Optional for demo:**
+- [ ] `fly secrets set SMTP_HOST=smtp.resend.com`
+- [ ] `fly secrets set SMTP_USERNAME=resend`
+- [ ] `fly secrets set SMTP_PASSWORD=re_...`
+
+**Backup Strategy:**
+- Before each deploy: `fly ssh sftp get /rails/storage/production.sqlite3 ./backup-$(date +%Y%m%d).sqlite3`
 
 ## Milestone: Full 1.0 Release - August 15, 2026
 
@@ -232,6 +277,7 @@ Target: Ready for football season
 | **Square win probability display** | (Stretch) Show win % per square on game#new grid using hardcoded sport-specific digit frequency tables. Fun visualization, may or may not be useful. |
 | Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
+| **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
 
 ### Event PDF Export (Implemented)
 
@@ -275,7 +321,7 @@ Target: Ready for football season
 | Item | Notes |
 |------|-------|
 | ✅ Team stylesheet `!important` override | Add `!important` to `background-color` and `color` in generated styles to override Falcon theme table styles |
-| Reset game page on final status | When automatic scoring sets a game to "final", broadcast a page reset via ActionCable to terminate the live connection and show the final UX |
+| ✅ **Game status transitions via ActionCable** | Done - `broadcast_status_change` in Game model calls `Turbo::StreamsChannel.broadcast_refresh_to` on `start!` and `complete!`. Page auto-refreshes on status transitions. |
 | Tabs controller Turbo cache issue | On some page loads, neither tab panel shows. Possibly a Turbo Drive caching race condition. May need `data-turbo-cache="false"` or `turbo:before-cache` handler. Monitor for recurrence. |
 | ✅ Action Text links load in frame | Fixed - Stimulus controller `action_text_links_controller.js` adds `data-turbo-frame="_top"` to all links on connect |
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |

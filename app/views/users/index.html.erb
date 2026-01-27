@@ -1,0 +1,104 @@
+<div class="row mb-3">
+	<div class="col">
+		<div class="card bg-100 shadow-none border py-2">
+			<div class="row gx-0 flex-between-center">
+				<div class="col-sm-auto d-flex align-items-center">
+					<div class="ms-3">
+						<h6 class="text-primary fs-10 mb-0">Admin</h6>
+						<h4 class="text-primary fw-bold mb-0">
+							Users
+							<span class="text-info fw-medium">Management</span>
+						</h4>
+					</div>
+				</div>
+				<div class="col-md-auto p-3">
+					<%= link_to new_user_path, class: "btn btn-primary btn-sm" do %>
+						<span class="fas fa-plus me-1"></span> Add User
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row g-3 mb-3">
+	<div class="col-lg-8">
+		<div class="card" id="usersTable">
+			<div class="card-header border-bottom border-200 px-3 py-2">
+				<div class="d-flex justify-content-between align-items-center">
+					<h5 class="mb-0">All Users</h5>
+					<span class="badge bg-primary rounded-pill"><%= @users.count %></span>
+				</div>
+			</div>
+			<div class="card-body p-0">
+				<div class="table-responsive scrollbar">
+					<table class="table table-sm table-striped fs-10 mb-0 overflow-hidden">
+						<thead class="bg-200">
+							<tr>
+								<th class="text-900">Name</th>
+								<th class="text-900">Email</th>
+								<th class="text-900">Display Name</th>
+								<th class="text-900 text-center">Admin</th>
+								<th class="text-900 text-end">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% @users.each do |user| %>
+								<tr>
+									<td class="py-2">
+										<span class="fw-semi-bold"><%= user.name %></span>
+										<% if user == current_user %>
+											<span class="badge bg-info rounded-pill ms-1">you</span>
+										<% end %>
+									</td>
+									<td class="py-2 text-muted"><%= user.email %></td>
+									<td class="py-2 text-muted"><%= user.display_name %></td>
+									<td class="py-2 text-center">
+										<% if user.admin? %>
+											<span class="fas fa-check text-success"></span>
+										<% end %>
+									</td>
+									<td class="text-end pe-2 py-2">
+										<button class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal" type="button" id="dropdown-user-<%= user.id %>" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+											<span class="fas fa-ellipsis-h fs-10"></span>
+										</button>
+										<div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-user-<%= user.id %>">
+											<%= link_to edit_user_path(user), class: "dropdown-item" do %>
+												<span class="fas fa-edit me-2"></span> Edit
+											<% end %>
+											<% unless user == current_user %>
+												<div class="dropdown-divider"></div>
+												<%= link_to user_path(user),
+														data: { turbo_method: :delete, turbo_confirm: "Delete #{user.name}? This cannot be undone." },
+														class: "dropdown-item text-danger" do %>
+													<span class="fas fa-trash me-2"></span> Delete
+												<% end %>
+											<% end %>
+										</div>
+									</td>
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-4">
+		<div class="card">
+			<div class="card-header py-2">
+				<h6 class="mb-0">About Users</h6>
+			</div>
+			<div class="card-body">
+				<p class="text-muted mb-2">
+					Users can log in to the admin area. Only users with the <strong>Admin</strong> flag can access protected pages.
+				</p>
+				<p class="text-muted mb-0">
+					<span class="fas fa-info-circle me-1"></span>
+					The first admin user is created via environment variables during deployment.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -2,7 +2,7 @@ services:
   web:
     build: .
     ports:
-      - "3000:80"
+      - "3080:80"
     environment:
       - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
       # Run Solid Queue job processor inside Puma (single container setup)
