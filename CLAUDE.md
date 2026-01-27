@@ -278,6 +278,7 @@ Target: Ready for football season
 | Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
+| **Team game history** | Team show page: list all games featuring this team, grouped by event. Game create form: show "last used" date for each team to encourage diversity. |
 
 ### Event PDF Export (Implemented)
 
