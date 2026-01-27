@@ -272,6 +272,7 @@ Target: Ready for football season
 | ~~Document rake tasks~~ | ✅ Done - README documents all export/import tasks and rebuild order |
 | Replace h1 headers with hero cards | Visual polish |
 | Gradient/animated text styles | Team branding (e.g., Seahawks iridescent green) |
+| Double-stroke text via text-shadow | Layered outlines (e.g., Kennesaw State black/gold). Generate shadow stack from primary + secondary stroke colors. |
 | Text-stroke lightness slider | HSL adjustment for readability tuning |
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
 | **Square win probability display** | (Stretch) Show win % per square on game#new grid using hardcoded sport-specific digit frequency tables. Fun visualization, may or may not be useful. |
