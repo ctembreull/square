@@ -50,3 +50,6 @@
 /.dockerignore
 /Dockerfile*
 /docker-compose*.yml
+
+# Ignore artifacts (reference docs, mockups, old schemas)
+/artifacts

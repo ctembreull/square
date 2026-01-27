@@ -130,7 +130,7 @@
 										</td>
 									</tr>
 									<%# Family members indented %>
-									<% family.members.active.order(:name).each do |member| %>
+									<% family.members.select(&:active?).sort_by(&:name).each do |member| %>
 										<tr>
 											<td class="py-2 ps-4">
 												<span class="badge bg-<%= player_type_color(member) %> rounded-pill"><%= member.type %></span>

@@ -2,9 +2,11 @@ services:
   web:
     build: .
     ports:
-      - "3080:80"
+      - "3080:8080"
     environment:
       - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
+      - PORT=8080
+      - HTTP_PORT=8080
       # Run Solid Queue job processor inside Puma (single container setup)
       - SOLID_QUEUE_IN_PUMA=1
       # Optional: Admin user created on first boot if these are set
@@ -15,7 +17,7 @@ services:
       # Persist SQLite database and storage across container restarts
       - sqlite_data:/rails/storage
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80/status.json"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/status.json"]
       interval: 30s
       timeout: 10s
       retries: 3
