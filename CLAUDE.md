@@ -328,7 +328,8 @@ Target: Ready for football season
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |
 | Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
 | Broadcast logger for job visibility | Consider adding `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development, so `bin/jobs` output is visible in Procfile.dev. Trade-off: more verbose Rails server output. |
+| **Fly.io image asset paths broken** | Images not loading on production. Likely asset pipeline or relative URL issue through Fly's proxy. Check `asset_host` config and precompile output. |
 
 ---
 
-**Last Updated**: 2026-01-26
+**Last Updated**: 2026-01-27
