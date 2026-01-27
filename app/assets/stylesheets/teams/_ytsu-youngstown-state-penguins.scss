@@ -1,0 +1,17 @@
+// Team: Youngstown State Penguins
+// Generated: 2026-01-27T13:09:21-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ytsu-youngstown-state-penguins-black: #000000;
+$ytsu-youngstown-state-penguins-red: #C8333B;
+
+// Style Classes
+.ytsu-youngstown-state-penguins-red {
+  background-color: #C8333B !important; color: #000000 !important; 
+}
+
+// Default Style Alias
+.ytsu-youngstown-state-penguins-default {
+  @extend .ytsu-youngstown-state-penguins-red;
+}

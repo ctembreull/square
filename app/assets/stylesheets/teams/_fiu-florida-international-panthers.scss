@@ -1,0 +1,21 @@
+// Team: Florida International Panthers
+// Generated: 2026-01-27T12:35:07-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$fiu-florida-international-panthers-fiu-blue: #081E3F;
+$fiu-florida-international-panthers-fiu-gold: #B6862C;
+
+// Style Classes
+.fiu-florida-international-panthers-blue {
+  background-color: #081E3F !important; color: #ffffff !important; text-shadow: 1px 1px 0 #B6862C, -1px 1px 0 #B6862C, 1px -1px 0 #B6862C, -1px -1px 0 #B6862C; 
+}
+
+.fiu-florida-international-panthers-white {
+  background-color: #ffffff !important; color: #081E3F !important; text-shadow: 1px 1px 0 #B6862C, -1px 1px 0 #B6862C, 1px -1px 0 #B6862C, -1px -1px 0 #B6862C; 
+}
+
+// Default Style Alias
+.fiu-florida-international-panthers-default {
+  @extend .fiu-florida-international-panthers-blue;
+}

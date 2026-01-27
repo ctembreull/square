@@ -150,6 +150,11 @@ csb-cal-state-bakersfield-roadrunners:
   conference: BWEST
 - league: WBB
   conference: BWEST
+cst-cleveland-state-vikings:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 csuf-cal-state-fullerton-titans:
 - league: MBB
   conference: BWEST
@@ -173,6 +178,13 @@ day-dayton-flyers:
   conference: A10
 - league: WBB
   conference: A10
+del-delaware-blue-hens:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 den-denver-broncos:
 - league: NFL
   conference: AFC
@@ -235,6 +247,13 @@ fgcu-florida-gulf-coast-eagles:
   conference: ASUN
 - league: WBB
   conference: ASUN
+fiu-florida-international-panthers:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 for-fordham-rams:
 - league: MBB
   conference: A10
@@ -353,6 +372,11 @@ iu-indiana-hoosiers:
   conference: B1G
 - league: WBB
   conference: B1G
+iupui-iu-indianapolis-jaguars:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 jac-jacksonville-jaguars:
 - league: NFL
   conference: AFC
@@ -361,9 +385,23 @@ jax-jacksonville-dolphins:
   conference: ASUN
 - league: WBB
   conference: ASUN
+jvst-jacksonville-state-gamecocks:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 kc-kansas-city-chiefs:
 - league: NFL
   conference: AFC
+knst-kennesaw-state-owls:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 ksu-kansas-state-wildcats:
 - league: FBS
   conference: B12
@@ -389,13 +427,24 @@ las-la-salle-explorers:
   conference: A10
 - league: WBB
   conference: A10
+lat-louisiana-tech-bulldogs:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 lbst-long-beach-state-beach:
 - league: MBB
   conference: BWEST
 - league: WBB
   conference: BWEST
 lib-liberty-flames:
+- league: FBS
+  conference: CUSA
 - league: MBB
+  conference: CUSA
+- league: WBB
   conference: CUSA
 lip-lipscomb-bisons:
 - league: MBB
@@ -441,6 +490,11 @@ mia-miami-hurricanes:
   conference: ACC
 - league: WBB
   conference: ACC
+mil-milwaukee-panthers:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 min-minnesota-golden-gophers:
 - league: FBS
   conference: B1G
@@ -466,6 +520,13 @@ mon-monmouth-hawks:
   conference: CAA
 - league: WBB
   conference: CAA
+most-missouri-state-bears:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 msu-michigan-state-spartans:
 - league: FBS
   conference: B1G
@@ -473,6 +534,13 @@ msu-michigan-state-spartans:
   conference: B1G
 - league: WBB
   conference: B1G
+mtsu-middle-tennessee-blue-raiders:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 mtsu-montana-state-bobcats:
 - league: MBB
   conference: SKY
@@ -539,6 +607,18 @@ njit-njit-highlanders:
   conference: AEAST
 - league: WBB
   conference: AEAST
+nku-northern-kentucky-norse:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
+nmst-new-mexico-state-aggies:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 no-new-orleans-saints:
 - league: NFL
   conference: NFC
@@ -565,6 +645,11 @@ nyg-new-york-giants:
 nyj-new-york-jets:
 - league: NFL
   conference: AFC
+oak-oakland-golden-grizzlies:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 oak-oakland-raiders:
 - league: NFL
   conference: AFC
@@ -663,6 +748,11 @@ rich-richmond-spiders:
   conference: A10
 - league: WBB
   conference: A10
+rmu-robert-morris-colonels:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 rtg-rutgers-scarlet-knights:
 - league: FBS
   conference: B1G
@@ -701,6 +791,13 @@ sh-seton-hall-pirates:
   conference: BIGEAST
 - league: WBB
   conference: BIGEAST
+shst-sam-houston-bearkats:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 sju-saint-josephs-hawks:
 - league: MBB
   conference: A10
@@ -841,6 +938,16 @@ ucsd-uc-san-diego-tritons:
   conference: BWEST
 - league: WBB
   conference: BWEST
+udm-detroit-mercy-titans:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
+ugb-green-bay-phoenix:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 um-maryland-terrapins:
 - league: FBS
   conference: B1G
@@ -899,6 +1006,11 @@ unt-north-texas-mean-green:
   conference: AAC
 - league: WBB
   conference: AAC
+upfw-purdue-fort-wayne-mastodons:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 uri-rhode-island-rams:
 - league: MBB
   conference: A10
@@ -925,6 +1037,13 @@ utah-utah-utes:
   conference: B12
 - league: WBB
   conference: B12
+utep-utep-miners:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 utsa-texas-san-antonio-roadrunners:
 - league: FBS
   conference: AAC
@@ -995,11 +1114,23 @@ wis-wisconsin-badgers:
   conference: B1G
 - league: WBB
   conference: B1G
+wku-western-kentucky-hilltoppers:
+- league: FBS
+  conference: CUSA
+- league: MBB
+  conference: CUSA
+- league: WBB
+  conference: CUSA
 wm-william-mary-tribe:
 - league: MBB
   conference: CAA
 - league: WBB
   conference: CAA
+wrst-wright-state-raiders:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ
 wvu-west-virginia-mountaineers:
 - league: FBS
   conference: B12
@@ -1012,3 +1143,8 @@ xav-xavier-musketeers:
   conference: BIGEAST
 - league: WBB
   conference: BIGEAST
+ytsu-youngstown-state-penguins:
+- league: MBB
+  conference: HORIZ
+- league: WBB
+  conference: HORIZ

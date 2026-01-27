@@ -1,0 +1,18 @@
+// Team: Purdue Fort Wayne Mastodons
+// Generated: 2026-01-27T12:54:51-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$upfw-purdue-fort-wayne-mastodons-black: #000000;
+$upfw-purdue-fort-wayne-mastodons-golden: #CFB991;
+$upfw-purdue-fort-wayne-mastodons-white: #FFFFFF;
+
+// Style Classes
+.upfw-purdue-fort-wayne-mastodons-golden {
+  background-color: #CFB991 !important; color: #000000 !important; 
+}
+
+// Default Style Alias
+.upfw-purdue-fort-wayne-mastodons-default {
+  @extend .upfw-purdue-fort-wayne-mastodons-golden;
+}

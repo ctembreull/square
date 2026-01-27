@@ -1,0 +1,17 @@
+// Team: Milwaukee Panthers
+// Generated: 2026-01-27T13:03:10-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$mil-milwaukee-panthers-black: #000000;
+$mil-milwaukee-panthers-gold: #FEBD36;
+
+// Style Classes
+.mil-milwaukee-panthers-gold {
+  background-color: #FEBD36 !important; color: #000000 !important; 
+}
+
+// Default Style Alias
+.mil-milwaukee-panthers-default {
+  @extend .mil-milwaukee-panthers-gold;
+}

@@ -1,0 +1,17 @@
+// Team: Wright State Raiders
+// Generated: 2026-01-27T12:51:12-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$wrst-wright-state-raiders-wright-state-gold: #CBA052;
+$wrst-wright-state-raiders-wright-state-green: #046A38;
+
+// Style Classes
+.wrst-wright-state-raiders-green {
+  background-color: #046A38 !important; color: #ffffff !important; text-shadow: 1px 1px 0 #CBA052, -1px 1px 0 #CBA052, 1px -1px 0 #CBA052, -1px -1px 0 #CBA052; 
+}
+
+// Default Style Alias
+.wrst-wright-state-raiders-default {
+  @extend .wrst-wright-state-raiders-green;
+}

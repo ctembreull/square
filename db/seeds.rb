@@ -2,7 +2,7 @@
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
-# Generated from database on 2026-01-26 18:23
+# Generated from database on 2026-01-27 21:13
 
 puts "Seeding sports structure..."
 
@@ -194,6 +194,22 @@ fbs_conferences.each do |conf_data|
     c.display_name = conf_data[:display_name]
   end
   puts "  ✓ #{conf.display_name} (FBS)"
+end
+
+# ============================================================================
+# NCAA FOOTBALL CHAMPIONSHIP SUBDIVISION CONFERENCES
+# ============================================================================
+
+fcs_conferences = [
+  { abbr: "IVY", name: "Ivy League", display_name: "Ivy" }
+]
+
+fcs_conferences.each do |conf_data|
+  conf = fcs.conferences.find_or_create_by!(abbr: conf_data[:abbr]) do |c|
+    c.name = conf_data[:name]
+    c.display_name = conf_data[:display_name]
+  end
+  puts "  ✓ #{conf.display_name} (FCS)"
 end
 
 # ============================================================================

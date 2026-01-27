@@ -1,0 +1,18 @@
+// Team: UTEP Miners
+// Generated: 2026-01-27T12:39:27-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$utep-utep-miners-utep-blue: #041E42;
+$utep-utep-miners-utep-orange: #FF8200;
+$utep-utep-miners-utep-silver: #B1B3B3;
+
+// Style Classes
+.utep-utep-miners-orange-on-blue {
+  background-color: #041E42 !important; color: #FF8200 !important; 
+}
+
+// Default Style Alias
+.utep-utep-miners-default {
+  @extend .utep-utep-miners-orange-on-blue;
+}

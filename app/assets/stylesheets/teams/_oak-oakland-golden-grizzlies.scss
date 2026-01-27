@@ -1,0 +1,18 @@
+// Team: Oakland Golden Grizzlies
+// Generated: 2026-01-27T12:53:04-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$oak-oakland-golden-grizzlies-black: #000000;
+$oak-oakland-golden-grizzlies-gold: #BC945B;
+$oak-oakland-golden-grizzlies-white: #FFFFFF;
+
+// Style Classes
+.oak-oakland-golden-grizzlies-black {
+  background-color: #000000 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #BC945B, -1px 1px 0 #BC945B, 1px -1px 0 #BC945B, -1px -1px 0 #BC945B; 
+}
+
+// Default Style Alias
+.oak-oakland-golden-grizzlies-default {
+  @extend .oak-oakland-golden-grizzlies-black;
+}

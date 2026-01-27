@@ -1,0 +1,17 @@
+// Team: Missouri State Bears
+// Generated: 2026-01-27T12:10:54-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$most-missouri-state-bears-black: #000000;
+$most-missouri-state-bears-missouri-state-maroon: #5E0009;
+
+// Style Classes
+.most-missouri-state-bears-maroon {
+  background-color: #5E0009 !important; color: #ffffff !important; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
+
+// Default Style Alias
+.most-missouri-state-bears-default {
+  @extend .most-missouri-state-bears-maroon;
+}

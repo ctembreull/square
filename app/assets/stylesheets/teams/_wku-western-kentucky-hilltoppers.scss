@@ -1,0 +1,17 @@
+// Team: Western Kentucky Hilltoppers
+// Generated: 2026-01-27T12:32:06-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$wku-western-kentucky-hilltoppers-wku-red: #B01E24;
+$wku-western-kentucky-hilltoppers-wku-red-darker: #9A1A20;
+
+// Style Classes
+.wku-western-kentucky-hilltoppers-red {
+  background-color: #B01E24 !important; color: #ffffff !important; 
+}
+
+// Default Style Alias
+.wku-western-kentucky-hilltoppers-default {
+  @extend .wku-western-kentucky-hilltoppers-red;
+}
