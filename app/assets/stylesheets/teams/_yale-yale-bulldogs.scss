@@ -1,0 +1,16 @@
+// Team: Yale Bulldogs
+// Generated: 2026-01-27T13:21:09-08:00
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$yale-yale-bulldogs-yale-blue: #00356B;
+
+// Style Classes
+.yale-yale-bulldogs-blue {
+  background-color: #00356B !important; color: #ffffff !important; 
+}
+
+// Default Style Alias
+.yale-yale-bulldogs-default {
+  @extend .yale-yale-bulldogs-blue;
+}

@@ -53,6 +53,13 @@ bing-binghamton-bearcats:
   conference: AEAST
 - league: WBB
   conference: AEAST
+brwn-brown-bears:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
 bry-bryant-bulldogs:
 - league: MBB
   conference: AEAST
@@ -140,6 +147,20 @@ col-colorado-buffaloes:
   conference: B12
 - league: WBB
   conference: B12
+col-columbia-lions:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
+corn-cornell-big-red:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
 crei-creighton-blue-jays:
 - league: MBB
   conference: BIGEAST
@@ -168,6 +189,13 @@ csun-cal-state-northridge-matadors:
 dal-dallas-cowboys:
 - league: NFL
   conference: NFC
+dart-dartmouth-big-green:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
 dav-davidson-wildcats:
 - league: MBB
   conference: A10
@@ -301,6 +329,13 @@ ham-hampton-pirates:
   conference: CAA
 - league: WBB
   conference: CAA
+harv-harvard-crimson:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
 haw-hawai-i-rainbow-warriors:
 - league: MBB
   conference: BWEST
@@ -679,6 +714,13 @@ peay-austin-peay-governors:
   conference: ASUN
 - league: WBB
   conference: ASUN
+penn-pennsylvania-quakers:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
 phi-philadelphia-eagles:
 - league: NFL
   conference: NFC
@@ -702,6 +744,13 @@ pres-presbyterian-blue-hose:
   conference: BSOUTH
 - league: WBB
   conference: BSOUTH
+prin-princeton-tigers:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
 prv-providence-friars:
 - league: MBB
   conference: BIGEAST
@@ -1143,6 +1192,13 @@ xav-xavier-musketeers:
   conference: BIGEAST
 - league: WBB
   conference: BIGEAST
+yale-yale-bulldogs:
+- league: FCS
+  conference: IVY
+- league: MBB
+  conference: IVY
+- league: WBB
+  conference: IVY
 ytsu-youngstown-state-penguins:
 - league: MBB
   conference: HORIZ

@@ -313,6 +313,35 @@ byu-brigham-young-cougars:
       css: 'background-color: #002E5D; color: #FFFFFF; text-shadow: 1px 1px 0 #0047BA,
         -1px 1px 0 #0047BA, 1px -1px 0 #0047BA, -1px -1px 0 #0047BA; '
       default: true
+brwn-brown-bears:
+  abbr: BRWN
+  location: Brown University
+  display_location: Brown
+  name: Bears
+  level: college
+  colors:
+    brown:
+      name: Brown
+      hex: 4E3629
+      primary: true
+    red:
+      name: Red
+      hex: ED1C24
+      primary: true
+    gold:
+      name: Gold
+      hex: FFC72C
+      primary: false
+    gray:
+      name: Gray
+      hex: 98A4AE
+      primary: false
+  styles:
+    brown:
+      name: Brown
+      css: 'background-color: #4E3629; color: #ffffff; text-shadow: 1px 1px 0 #ED1C24,
+        -1px 1px 0 #ED1C24, 1px -1px 0 #ED1C24, -1px -1px 0 #ED1C24; '
+      default: true
 bry-bryant-bulldogs:
   abbr: BRY
   location: Bryant University
@@ -785,6 +814,55 @@ cha-charleston-cougars:
       css: 'background-color: #660000; color: #FFFFFF; text-shadow: 1px 1px 0 #BFA87C,
         -1px 1px 0 #BFA87C, 1px -1px 0 #BFA87C, -1px -1px 0 #BFA87C; '
       default: true
+col-columbia-lions:
+  abbr: COL
+  location: Columbia University
+  display_location: Columbia
+  name: Lions
+  level: college
+  colors:
+    dark-blue:
+      name: Dark Blue
+      hex: '012169'
+      primary: true
+    light-blue:
+      name: Light Blue
+      hex: 6CACE4
+      primary: false
+    medium-blue:
+      name: Medium Blue
+      hex: '009EFF'
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #012169; color: #FFFFFF; text-shadow: 1px 1px 0 #009EFF,
+        -1px 1px 0 #009EFF, 1px -1px 0 #009EFF, -1px -1px 0 #009EFF; '
+      default: true
+corn-cornell-big-red:
+  abbr: CORN
+  location: Cornell University
+  display_location: Cornell
+  name: Big Red
+  level: college
+  colors:
+    red:
+      name: Red
+      hex: B31B1B
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    red:
+      name: Red
+      css: 'background-color: #B31B1B; color: #FFFFFF; '
+      default: true
 crei-creighton-blue-jays:
   abbr: CREI
   location: Creighton University
@@ -850,6 +928,39 @@ dal-dallas-cowboys:
       name: Blue
       css: 'background-color: #041E42; color: #FFFFFF; text-shadow: 1px 1px 0 #7F9695,
         -1px 1px 0 #7F9695, 1px -1px 0 #7F9695, -1px -1px 0 #7F9695; '
+      default: true
+dart-dartmouth-big-green:
+  abbr: DART
+  location: Dartmouth University
+  display_location: Dartmouth
+  name: Big Green
+  level: college
+  colors:
+    dartmouth-green:
+      name: Dartmouth Green
+      hex: '00693E'
+      primary: true
+    forest-green:
+      name: Forest Green
+      hex: 12312B
+      primary: false
+    midnight-black:
+      name: Midnight Black
+      hex: '000000'
+      primary: false
+    rich-forest-green:
+      name: Rich Forest Green
+      hex: 0D1E1C
+      primary: false
+    snow-white:
+      name: Snow White
+      hex: FFFFFF
+      primary: false
+  styles:
+    green:
+      name: Green
+      css: 'background-color: #00693E; color: #FFFFFF; text-shadow: 1px 1px 0 #0D1E1C,
+        -1px 1px 0 #0D1E1C, 1px -1px 0 #0D1E1C, -1px -1px 0 #0D1E1C; '
       default: true
 dav-davidson-wildcats:
   abbr: DAV
@@ -1592,6 +1703,27 @@ ham-hampton-pirates:
       name: Blue
       css: 'background-color: #004AAD; color: #FFFFFF; text-shadow: 1px 1px 0 #BEBFC3,
         -1px 1px 0 #BEBFC3, 1px -1px 0 #BEBFC3, -1px -1px 0 #BEBFC3; '
+      default: true
+harv-harvard-crimson:
+  abbr: HARV
+  location: Harvard University
+  display_location: Harvard
+  name: Crimson
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: 1E1E1E
+      primary: true
+    crimson:
+      name: Crimson
+      hex: A51C30
+      primary: true
+  styles:
+    crimson:
+      name: Crimson
+      css: 'background-color: #A51C30; color: #ffffff; text-shadow: 1px 1px 0 #000000,
+        -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
 hip-high-point-panthers:
   abbr: HIP
@@ -3022,6 +3154,35 @@ pres-presbyterian-blue-hose:
       css: 'background-color: #0033A0; color: #FFFFFF; text-shadow: 1px 1px 0 #9D2235,
         -1px 1px 0 #9D2235, 1px -1px 0 #9D2235, -1px -1px 0 #9D2235; '
       default: true
+prin-princeton-tigers:
+  abbr: PRIN
+  location: Princeton University
+  display_location: Princeton
+  name: Tigers
+  level: college
+  colors:
+    black:
+      name: Black
+      hex: '121212'
+      primary: true
+    orange:
+      name: Orange
+      hex: E77500
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    black:
+      name: Black
+      css: 'background-color: #121212; color: #FFFFFF; text-shadow: 1px 1px 0 #E77500,
+        -1px 1px 0 #E77500, 1px -1px 0 #E77500, -1px -1px 0 #E77500; '
+      default: true
+    orange:
+      name: Orange
+      css: 'background-color: #E77500; color: #121212; '
+      default: false
 prv-providence-friars:
   abbr: PRV
   location: Providence University
@@ -5448,6 +5609,32 @@ ore-oregon-ducks:
       name: Green
       css: 'background-color: #007030; color: #FEE11A; '
       default: true
+penn-pennsylvania-quakers:
+  abbr: PENN
+  location: University of Pennsylvania
+  display_location: Pennsylvania
+  name: Quakers
+  level: college
+  colors:
+    penn-blue:
+      name: Penn Blue
+      hex: 011F5B
+      primary: true
+    penn-red:
+      name: Penn Red
+      hex: '990000'
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #011F5B; color: #ffffff; text-shadow: 1px 1px 0 #990000,
+        -1px 1px 0 #990000, 1px -1px 0 #990000, -1px -1px 0 #990000; '
+      default: false
+    red:
+      name: Red
+      css: 'background-color: #990000; color: #ffffff; text-shadow: 1px 1px 0 #011F5B,
+        -1px 1px 0 #011F5B, 1px -1px 0 #011F5B, -1px -1px 0 #011F5B; '
+      default: false
 pit-pitt-panthers:
   abbr: PIT
   location: University of Pittsburgh
@@ -6237,6 +6424,22 @@ xav-xavier-musketeers:
       css: 'background-color: #FFFFFF; color: #0C2340; text-shadow: 1px 1px 0 #9EA2A2,
         -1px 1px 0 #9EA2A2, 1px -1px 0 #9EA2A2, -1px -1px 0 #9EA2A2; '
       default: false
+yale-yale-bulldogs:
+  abbr: YALE
+  location: Yale University
+  display_location: Yale
+  name: Bulldogs
+  level: college
+  colors:
+    yale-blue:
+      name: Yale Blue
+      hex: 00356B
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #00356B; color: #ffffff; '
+      default: true
 ytsu-youngstown-state-penguins:
   abbr: YTSU
   location: Youngstown State University
