@@ -204,6 +204,8 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Deploy to Fly.io**~~ | ✅ Done - App live at family-squares.fly.dev. See deployment notes below. |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
+| **Debug Grover PDF on Fly.io** | Investigate silent Chromium crash: check OOM logs, Puppeteer timeouts, localhost routing. Works locally, should work on Fly.io. |
+| **Evaluate DocRaptor as PDF fallback** | If Grover unfixable, swap renderer. Same HTML, different backend. Test mode available for prototyping. |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
 | ~~Query optimization on leagues/show~~ | ✅ Done - Eager loading + Ruby sorting reduced 335 queries to 4 |
 | ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
@@ -276,7 +278,6 @@ Target: Ready for football season
 | Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
-| **Fix Fly.io PDF generation** | Chromium crashes silently even with 1GB RAM. Investigate: (1) Puppeteer timeout settings, (2) localhost routing in Fly.io, (3) OOM killer logs, (4) alternative PDF approaches (Prawn, external service). |
 
 ### Event PDF Export (Implemented)
 
