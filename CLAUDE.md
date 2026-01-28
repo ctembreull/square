@@ -223,6 +223,8 @@ Target: NCAA Tournament testing on Fly.io
 | **Winners table period display** | Reformat individual winning periods column for better scannability |
 | Clarify Event `active` flag purpose | Determine use case vs date-based scopes (upcoming/in_progress/completed). May be removable. |
 | **Team game history** | Team show page: list all games featuring this team. Game create form: show "last used" date for each team. |
+| Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
+| Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
 
 ### Fly.io Deployment Notes
 
