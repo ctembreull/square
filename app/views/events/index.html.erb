@@ -15,8 +15,10 @@
 						</div>
 					</div>
 					<div class="col-auto">
-						<%= link_to new_event_path, class: "btn btn-primary btn-sm btn-outline" do %>
-							<span class="fas fa-plus me-1"></span> Create Event
+						<% if admin? %>
+							<%= link_to new_event_path, class: "btn btn-primary btn-sm btn-outline" do %>
+								<span class="fas fa-plus me-1"></span> Create Event
+							<% end %>
 						<% end %>
 					</div>
 				</div>
