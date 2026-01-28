@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   skip_before_action :require_admin, only: [ :index, :show, :display, :home ]
-  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display, :pdf ]
+  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display, :pdf, :generate_pdf ]
 
   def home
     current_event = Event.active.in_progress.first
@@ -81,14 +81,39 @@ class EventsController < ApplicationController
   end
 
   def pdf
+    # Serve cached PDF if available and fresh
+    if @event.pdf_fresh?
+      redirect_to rails_blob_path(@event.pdf, disposition: "attachment")
+    elsif @event.pdf.attached?
+      # PDF exists but is stale - serve it but note it's outdated
+      redirect_to rails_blob_path(@event.pdf, disposition: "attachment")
+    else
+      # No PDF cached - generate synchronously (fallback for dev/testing)
+      generate_pdf_sync
+    end
+  end
+
+  def generate_pdf
+    GenerateEventPdfJob.perform_later(@event.id)
+    respond_to do |format|
+      format.html { redirect_to @event, notice: "PDF generation started. This may take a minute." }
+      format.turbo_stream {
+        render turbo_stream: turbo_stream.replace(
+          "event_pdf_status",
+          partial: "events/pdf_status",
+          locals: { event: @event, generating: true }
+        )
+      }
+    end
+  end
+
+  private
+
+  def generate_pdf_sync
     # Eager load associations to avoid N+1 queries during PDF generation
     games_scope = @event.games.includes(:home_team, :away_team, :league, scores: :winner)
-
-    # Sort: upcoming (earliest first), then completed (latest first)
     @upcoming_games = games_scope.upcoming.earliest_first
     @completed_games = games_scope.completed.latest_first
-
-    # Preload all players once for grid lookups (build_map normally loads per-game)
     @all_players = Player.all.index_by(&:id)
 
     html = render_to_string(
@@ -102,19 +127,14 @@ class EventsController < ApplicationController
       }
     )
 
-    # Use localhost for Puppeteer to fetch stylesheets - it runs on the server,
-    # not the client, so it can't resolve external hostnames like minors.local
-    # In Docker/production, use internal port 80; in dev, use request port
-    internal_port = Rails.env.production? ? 80 : request.port
+    internal_port = Rails.env.production? ? 8080 : request.port
     pdf_data = Grover.new(html, display_url: "http://localhost:#{internal_port}").to_pdf
 
     send_data pdf_data,
-      filename: "#{@event.title.parameterize}-games.pdf",
+      filename: @event.pdf_filename,
       type: "application/pdf",
       disposition: "attachment"
   end
-
-  private
 
   def set_event
     @event = Event.find(params[:id])

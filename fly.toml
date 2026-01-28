@@ -13,6 +13,7 @@ console_command = '/rails/bin/rails console'
   SOLID_QUEUE_IN_PUMA = 'true'
   PORT = '8080'
   HTTP_PORT = '8080'
+  GROVER_NO_SANDBOX = 'true'
 
 [[mounts]]
   source = 'sqlite_data'
@@ -25,6 +26,7 @@ console_command = '/rails/bin/rails console'
   auto_start_machines = true
   min_machines_running = 1
   processes = ['app']
+  idle_timeout = 120  # 2 minutes for slow PDF generation
 
   [[http_service.checks]]
     interval = '10s'

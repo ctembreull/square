@@ -4,6 +4,7 @@ class Event < ApplicationRecord
   # This forces explicit cleanup of games first if deletion is truly needed
   has_many :games, dependent: :restrict_with_error
   has_many :posts, dependent: :destroy
+  has_one_attached :pdf
 
   # Validations
   validates :title, presence: true
@@ -45,6 +46,23 @@ class Event < ApplicationRecord
 
   def end_event!
     update(end_date: Date.today)
+  end
+
+  # PDF helpers
+  def pdf_stale?
+    return true unless pdf.attached?
+    pdf_created = pdf.blob.created_at
+    # PDF is stale if any game or score was updated after PDF was generated
+    games.where("updated_at > ?", pdf_created).exists? ||
+      Score.joins(:game).where(games: { event_id: id }).where("scores.updated_at > ?", pdf_created).exists?
+  end
+
+  def pdf_fresh?
+    pdf.attached? && !pdf_stale?
+  end
+
+  def pdf_filename
+    "#{title.parameterize}-games.pdf"
   end
 
   private

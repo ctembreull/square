@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get :display
       get :winners
       get :pdf
+      post :generate_pdf
       patch :activate
       patch :deactivate
       patch :end_event

@@ -1,3 +1,4 @@
+<%= turbo_stream_from @event %>
 
 <!-- Shiny header  -->
 <div class="row mb-3">
@@ -56,9 +57,7 @@
 				<% if show_admin_tools? %>
 					<div class="row gx-0 p-2 bg-700 text-200" id="header-toolbar">
 						<div class="col-4 text-200 text-start">
-							<%= link_to pdf_event_path(@event), class: "btn btn-outline-info btn-sm me-2", data: { turbo: false } do %>
-								<span class="fas fa-file-pdf me-1"></span> PDF
-							<% end %>
+							<%= render "events/pdf_status", event: @event %>
 						</div>
 						<div class="col-4 text-200 text-center">
 							<%= link_to edit_event_path(@event), class: "btn btn-outline-light btn-sm" do %>

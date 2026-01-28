@@ -1,8 +1,8 @@
-<% content_for :title do %><%= @event.title %> - Game Grids<% end %>
+<% content_for :title do %><%= event.title %> - Game Grids<% end %>
 
 <div class="container-fluid p-3">
   <%# Upcoming games first (earliest first) %>
-  <% @upcoming_games.each_with_index do |game, index| %>
+  <% upcoming_games.each_with_index do |game, index| %>
     <div class="game-page avoid-break">
       <%# Game header %>
       <div class="game-header text-center mb-2">
@@ -30,13 +30,13 @@
       </div>
     </div>
 
-    <% unless index == @upcoming_games.size - 1 && @completed_games.empty? %>
+    <% unless index == upcoming_games.size - 1 && completed_games.empty? %>
       <div class="page-break"></div>
     <% end %>
   <% end %>
 
   <%# Completed games (latest first) %>
-  <% @completed_games.each_with_index do |game, index| %>
+  <% completed_games.each_with_index do |game, index| %>
     <div class="game-page avoid-break">
       <%# Game header %>
       <div class="game-header text-center mb-2">
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <% unless index == @completed_games.size - 1 %>
+    <% unless index == completed_games.size - 1 %>
       <div class="page-break"></div>
     <% end %>
   <% end %>
