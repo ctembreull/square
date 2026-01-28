@@ -9,10 +9,10 @@ class PostMailer < ApplicationMailer
     # Plain text version with proper paragraph breaks
     @post_body_text = html_to_plain_text(@post_body)
 
-    # Attach PDF if requested
+    # Attach PDF if requested - use cached version if available
     if attach_pdf
-      pdf_data = generate_event_pdf(@event)
-      attachments["#{@event.title.parameterize}-games.pdf"] = pdf_data if pdf_data
+      pdf_data = fetch_or_generate_pdf(@event)
+      attachments[@event.pdf_filename] = pdf_data if pdf_data
     end
 
     mail(
@@ -45,8 +45,21 @@ class PostMailer < ApplicationMailer
     text.gsub(/\n{3,}/, "\n\n").strip
   end
 
-  def generate_event_pdf(event)
-    # Reuse existing PDF generation logic from EventsController
+  def fetch_or_generate_pdf(event)
+    # Use cached PDF from Active Storage if available
+    if event.pdf.attached?
+      return event.pdf.download
+    end
+
+    # Fall back to generating on-the-fly (slower, but works if no cached version)
+    Rails.logger.info "No cached PDF for event #{event.id}, generating on-the-fly"
+    generate_pdf_sync(event)
+  rescue => e
+    Rails.logger.error "PDF fetch/generation failed: #{e.message}"
+    nil
+  end
+
+  def generate_pdf_sync(event)
     games_scope = event.games.includes(:home_team, :away_team, :league, scores: :winner)
     upcoming_games = games_scope.upcoming.earliest_first
     completed_games = games_scope.completed.latest_first
@@ -63,10 +76,7 @@ class PostMailer < ApplicationMailer
       locals: { players_by_id: players_by_id }
     )
 
-    internal_port = Rails.env.production? ? 80 : 3000
+    internal_port = Rails.env.production? ? 8080 : 3000
     Grover.new(html, display_url: "http://localhost:#{internal_port}").to_pdf
-  rescue => e
-    Rails.logger.error "PDF generation failed: #{e.message}"
-    nil
   end
 end
