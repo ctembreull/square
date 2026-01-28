@@ -108,37 +108,39 @@
 </div>
 
 
-<!-- the game grid -->
-<div class="row mb-3">
-    <div class="col-12">
-        <div class="card p-0">
-            <%= render "games/components/grid_grid", game: @game %>
-        </div>
-    </div>   
-</div>
+<div data-controller="grid-highlighter">
+	<!-- the game grid -->
+	<div class="row mb-3">
+		<div class="col-12">
+			<div class="card p-0" data-grid-highlighter-target="grid">
+				<%= render "games/components/grid_grid", game: @game %>
+			</div>
+		</div>
+	</div>
 
-<%= turbo_stream_from @game, "scores" unless @game.completed? %>
+	<%= turbo_stream_from @game, "scores" unless @game.completed? %>
 
-<div class="row mb-3">
-    <div class="col-5">
-        <div class="card">
-            <div class="card-body p-2">
-                <div id="<%= dom_id(@game, :scores) %>">
-                    <%= render "games/components/grid_scores", game: @game, highlight_period: @highlight_period %>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-1"></div>
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body p-2">
-                <div id="<%= dom_id(@game, :winners) %>">
-                    <%= render "games/components/grid_winners", game: @game, highlight_period: @highlight_period %>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="row mb-3">
+		<div class="col-5">
+			<div class="card">
+				<div class="card-body p-2">
+					<div id="<%= dom_id(@game, :scores) %>" data-grid-highlighter-target="scores">
+						<%= render "games/components/grid_scores", game: @game, highlight_period: @highlight_period %>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-1"></div>
+		<div class="col-6">
+			<div class="card">
+				<div class="card-body p-2">
+					<div id="<%= dom_id(@game, :winners) %>" data-grid-highlighter-target="winners">
+						<%= render "games/components/grid_winners", game: @game, highlight_period: @highlight_period %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <% if show_admin_tools? %>

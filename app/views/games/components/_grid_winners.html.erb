@@ -23,7 +23,8 @@
 		<% scoring_periods.each do |period| %>
 			<% score = scores.find { |s| s.period == period } %>
 			<% is_final = period == game.league.periods %>
-			<tr class="<%= 'period-highlight' if period == highlight_period %>">
+			<tr class="<%= 'period-highlight' if period == highlight_period %>"
+			<%= "data-away-digit=#{score.away_digit} data-home-digit=#{score.home_digit}" if score&.away_total && score&.home_total %>>
 				<th class="winners-period p-1 h6">
 					<% if is_final %>
 						Final
