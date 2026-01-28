@@ -1,4 +1,6 @@
 class TimezoneController < ApplicationController
+  skip_before_action :require_admin
+
   def update
     timezone = params[:timezone]
 
