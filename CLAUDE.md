@@ -217,6 +217,12 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Full Dockerization**~~ | ✅ Done - Chromium + Node.js for Grover PDF generation, docker-compose.yml with SQLite volume, entrypoint runs seeds/imports, admin user via env vars, health check on /status.json |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 | ~~**Basic Users CRUD**~~ | ✅ Done - UsersController with full CRUD. Manage Users in dropdown. Password match validation via Stimulus. |
+| Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
+| Broadcast logger for job visibility | Add `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development |
+| **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Check path resolution. |
+| **Winners table period display** | Reformat individual winning periods column for better scannability |
+| Clarify Event `active` flag purpose | Determine use case vs date-based scopes (upcoming/in_progress/completed). May be removable. |
+| **Team game history** | Team show page: list all games featuring this team. Game create form: show "last used" date for each team. |
 
 ### Fly.io Deployment Notes
 
@@ -286,10 +292,8 @@ Target: Ready for football season
 | Text-stroke lightness slider | HSL adjustment for readability tuning |
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
 | **Square win probability display** | (Stretch) Show win % per square on game#new grid using hardcoded sport-specific digit frequency tables. Fun visualization, may or may not be useful. |
-| Clarify Event `active` flag purpose | Determine use case for deactivating events vs relying on date-based scopes (upcoming/in_progress/completed). May be removable. |
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
-| **Team game history** | Team show page: list all games featuring this team, grouped by event. Game create form: show "last used" date for each team to encourage diversity. |
 | ~~**PDF caching**~~ | ✅ Done - PDFs cached in Active Storage, served if fresh. Stale detection via game/score `updated_at`. `rake storage:purge_unattached` cleans orphaned blobs. |
 
 ### Event PDF Export (Implemented)
@@ -336,7 +340,7 @@ Target: Ready for football season
 |------|-------|
 | ✅ Team stylesheet `!important` override | Add `!important` to `background-color` and `color` in generated styles to override Falcon theme table styles |
 | ✅ **Game status transitions via ActionCable** | Done - `broadcast_status_change` in Game model calls `Turbo::StreamsChannel.broadcast_refresh_to` on `start!` and `complete!`. Page auto-refreshes on status transitions. |
-| Tabs controller Turbo cache issue | On some page loads, neither tab panel shows. Possibly a Turbo Drive caching race condition. May need `data-turbo-cache="false"` or `turbo:before-cache` handler. Monitor for recurrence. |
+| ~~Tabs controller Turbo cache issue~~ | ✅ Resolved - No recurrence observed, likely fixed by other Turbo/Stimulus changes |
 | ✅ Action Text links load in frame | Fixed - Stimulus controller `action_text_links_controller.js` adds `data-turbo-frame="_top"` to all links on connect |
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |
 | Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
