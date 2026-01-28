@@ -53,8 +53,9 @@ class PostsController < ApplicationController
       msg = attach_pdf ? "Email with PDF sent to #{current_user.email} (dev mode)." : "Email sent to #{current_user.email} (dev mode)."
       redirect_to @post.event, notice: msg
     else
-      # Production: send to unique list of player emails
-      emails = Player.email_recipients.pluck(:email).uniq
+      # Production (TEST MODE): send only to admin Users
+      # TODO: For 1.0 release, change to: Player.email_recipients.pluck(:email).uniq
+      emails = User.pluck(:email).uniq
 
       if emails.empty?
         redirect_to @post, alert: "No recipients found."
