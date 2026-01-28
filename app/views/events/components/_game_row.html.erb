@@ -24,8 +24,8 @@
 		<%# colspan 2 if game is upcoming %>
 		<%= game.away_team.display_location %>
 	</td>
-	<% if game.completed? %>
-		<%# only show score if game is completed %>
+	<% if game.completed? || game.in_progress? %>
+		<%# only show score if game is completed or live %>
 		<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.away_total %></td>
 	<% end %>
 	<td class="bg-200 fw-semi-bold align-middle text-center">
@@ -36,7 +36,7 @@
 			-
 		<% end %>
 	</td>
-	<% if game.completed? %>
+	<% if game.completed? || game.in_progress? %>
 		<%# only show score if game is completed %>
 		<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.home_total %></td>
 	<% end %>
@@ -46,7 +46,7 @@
 	</td>
 	<td class="text-end">
 		<%# tv network if upcoming, link to box score if completed %>
-		<% if game.upcoming? %>
+		<% if game.upcoming? || game.in_progress? %>
 			<%= game.broadcast_network %></td>
 		<% else %>
 			<%= link_to "Box Score", game.score_url, target: "_blank" %>

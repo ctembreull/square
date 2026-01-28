@@ -44,8 +44,11 @@
 					<div class="col-6 text-center">
 						<h6 class="text-muted fs-10 mb-0 pt-1">
 							<%= @event.start_date.strftime("%B %d, %Y") %>
-							-
-							<%= @event.end_date.strftime("%B %d, %Y") %>
+							<% if @event.end_date.present? %>
+								- <%= @event.end_date.strftime("%B %d, %Y") %>
+							<% else %>
+								- <span class="fst-italic">ongoing</span>
+							<% end %>
 						</h6>
 					</div>
 					<div class="col-3 text-end"></div>
@@ -60,6 +63,13 @@
 						<div class="col-4 text-200 text-center">
 							<%= link_to edit_event_path(@event), class: "btn btn-outline-light btn-sm" do %>
 								<span class="fas fa-edit me-1"></span> Edit
+							<% end %>
+							<% if @event.in_progress? && @event.end_date.blank? %>
+								<%= link_to end_event_event_path(@event),
+									data: { turbo_method: :patch, turbo_confirm: "End this event now? This will set the end date to today." },
+									class: "btn btn-outline-warning btn-sm ms-2" do %>
+									<span class="fas fa-flag-checkered me-1"></span> End Now
+								<% end %>
 							<% end %>
 						</div>
 						<div class="col-4 text-200 text-end">
@@ -142,6 +152,19 @@
 		<div class="card-body p-0" id="games" data-tabs-target="panel">
 			
 			<table class="table table-sm fs-10 m-0">
+				<% if @event.games.in_progress.any? %>
+					<tbody id="in-progress-games-table">
+						<tr>
+							<td colspan="9" class="bg-600 py-2">
+								<h6 class="text-200 my-0">Live Games</h6>
+							</td>
+						</tr>
+						<% @event.games.in_progress.earliest_first.each do |game| %>
+							<%= render "events/components/game_row", game: game %>
+						<% end %>
+					</tbody>
+				<% end %>
+				
 				<% if @event.games.upcoming.any? %>
 					<tbody id="upcoming-games-table">
 						<tr>
