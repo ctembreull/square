@@ -204,8 +204,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Deploy to Fly.io**~~ | ✅ Done - App live at family-squares.fly.dev. See deployment notes below. |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
-| **Debug Grover PDF on Fly.io** | Investigate silent Chromium crash: check OOM logs, Puppeteer timeouts, localhost routing. Works locally, should work on Fly.io. |
-| **Evaluate DocRaptor as PDF fallback** | If Grover unfixable, swap renderer. Same HTML, different backend. Test mode available for prototyping. |
+| ~~**Debug Grover PDF on Fly.io**~~ | ✅ Done - Fixed with `GROVER_NO_SANDBOX=true` env var + async job to avoid 60s proxy timeout |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
 | ~~Query optimization on leagues/show~~ | ✅ Done - Eager loading + Ruby sorting reduced 335 queries to 4 |
 | ~~Active player chances validation~~ | ✅ Done - Player model validates sum ≤100 on save |
@@ -235,8 +234,11 @@ Target: NCAA Tournament testing on Fly.io
 - ✅ Live scoring jobs (SolidQueue in Puma)
 - ✅ Health check at `/up` and `/status.json`
 
-**Not Working:**
-- ❌ PDF generation - Chromium crashes silently even with 1GB RAM. Likely timeout or Puppeteer routing issue. Generate PDFs locally as workaround.
+**PDF Generation:**
+- ✅ Working with `GROVER_NO_SANDBOX=true` env var and async job (avoids 60s proxy timeout)
+- Background job generates PDF, attaches to Event via Active Storage
+- Turbo Stream broadcasts UI update when generation completes
+- Stale detection shows "Update" button when games/scores change
 
 **Useful Commands:**
 ```bash
@@ -280,7 +282,7 @@ Target: Ready for football season
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
 | **Team game history** | Team show page: list all games featuring this team, grouped by event. Game create form: show "last used" date for each team to encourage diversity. |
-| **PDF caching** | Cache generated PDFs (Active Storage) and serve cached version if event/game state unchanged. Detect staleness via `updated_at` or content hash. Enables local pre-generation to work around Fly.io Puppeteer issues. |
+| ~~**PDF caching**~~ | ✅ Done - PDFs cached in Active Storage, served if fresh. Stale detection via game/score `updated_at`. `rake storage:purge_unattached` cleans orphaned blobs. |
 
 ### Event PDF Export (Implemented)
 
@@ -336,4 +338,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-27
+**Last Updated**: 2026-01-28
