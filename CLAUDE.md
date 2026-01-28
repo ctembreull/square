@@ -203,8 +203,9 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**WinnerCalculator service**~~ | ✅ Done - `aggregate_winners` helper in EventsHelper |
 | ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
 | ~~**Deploy to Fly.io**~~ | ✅ Done - App live at family-squares.fly.dev. See deployment notes below. |
-| ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. **Resend SMTP config deferred to Fly.io deploy.** |
+| ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. Resend SMTP configured. |
 | Build seed data for all D1 teams | ~350 teams ready for any matchup |
+| ~~**Winners worksheet mode**~~ | ✅ Done - Simplified check-writing view: family-grouped names + amounts, prominent checkboxes, progress bar, grayed strikethrough on checked items, localStorage persistence |
 | ~~**Debug Grover PDF on Fly.io**~~ | ✅ Done - Fixed with `GROVER_NO_SANDBOX=true` env var + async job to avoid 60s proxy timeout |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
 | ~~Query optimization on leagues/show~~ | ✅ Done - Eager loading + Ruby sorting reduced 335 queries to 4 |
@@ -255,10 +256,16 @@ fly scale vm shared-cpu-1x --memory 512  # Adjust memory
 fly ssh sftp get /rails/storage/production.sqlite3 ./backup-$(date +%Y%m%d).sqlite3
 ```
 
-**Email (Resend SMTP) - Optional for demo:**
-- [ ] `fly secrets set SMTP_HOST=smtp.resend.com`
-- [ ] `fly secrets set SMTP_USERNAME=resend`
-- [ ] `fly secrets set SMTP_PASSWORD=re_...`
+**Custom Domain:**
+- ✅ famsquares.net configured with A/AAAA records pointing to Fly.io
+- ✅ www.famsquares.net CNAME configured
+- ✅ SSL certificate provisioned via Fly.io
+
+**Email (Resend SMTP):**
+- ✅ `SMTP_HOST`, `SMTP_USERNAME`, `SMTP_PASSWORD` secrets configured
+- ✅ `APP_HOST=famsquares.net` and `MAIL_FROM` secrets set
+- ✅ Domain verified in Resend (SPF on `send` subdomain, DKIM, DMARC)
+- ✅ Email with PDF attachment tested end-to-end
 
 **Backup Strategy:**
 - Before each deploy: `fly ssh sftp get /rails/storage/production.sqlite3 ./backup-$(date +%Y%m%d).sqlite3`

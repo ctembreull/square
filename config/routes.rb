@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     member do
       get :display
       get :winners
+      get :winners_worksheet
       get :pdf
       post :generate_pdf
       patch :activate

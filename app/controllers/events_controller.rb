@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   skip_before_action :require_admin, only: [ :index, :show, :display, :home ]
-  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :display, :pdf, :generate_pdf ]
+  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :winners_worksheet, :display, :pdf, :generate_pdf ]
 
   def home
     current_event = Event.active.in_progress.first
@@ -74,6 +74,13 @@ class EventsController < ApplicationController
   end
 
   def winners
+    @winners = helpers.aggregate_winners(@event).group_by { |w| w[:family] }
+    @charities = @winners.delete("charity") || []
+    @families = Player.where(id: @winners.keys).index_by(&:id)
+    @total_awarded = (@winners.values.flatten + @charities).sum { |w| w[:total] }
+  end
+
+  def winners_worksheet
     @winners = helpers.aggregate_winners(@event).group_by { |w| w[:family] }
     @charities = @winners.delete("charity") || []
     @families = Player.where(id: @winners.keys).index_by(&:id)
