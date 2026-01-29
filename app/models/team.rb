@@ -74,8 +74,11 @@ class Team < ApplicationRecord
     end
   end
 
-  # Returns the most recent game date for this team (for "last used" display)
-  def last_game_date
-    games.maximum(:starts_at)
+  # Returns the most recent past game date for this team (for "last used" display)
+  # Optionally scoped to a specific event
+  def last_game_date(event: nil)
+    scope = games.where("starts_at <= ?", Time.current)
+    scope = scope.where(event: event) if event
+    scope.maximum(:starts_at)
   end
 end

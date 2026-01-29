@@ -10,7 +10,7 @@
     </div>
   <% end %>
 
-	<%= form.hidden_field :event_id %>
+	<%= form.hidden_field :event_id, data: { game_form_target: "eventId" } %>
 	<%= form.hidden_field :grid %>
 
 	<div class="row mb-3">

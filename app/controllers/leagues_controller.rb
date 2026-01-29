@@ -14,11 +14,12 @@ class LeaguesController < ApplicationController
   # GET /leagues/:id/teams.json
   def teams
     @teams = @league.teams.alphabetical.distinct
+    event = Event.find_by(id: params[:event_id])
     render json: @teams.map { |t|
       {
         id: t.id,
         display_name: t.display_name(league: @league),
-        last_used: t.last_game_date&.strftime("%Y-%m-%d")
+        last_used: t.last_game_date(event: event)&.strftime("%Y-%m-%d")
       }
     }
   end

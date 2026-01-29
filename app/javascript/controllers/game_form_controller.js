@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 // Choices.js is loaded via CDN and attaches to window
 // We'll access it dynamically since the CDN version isn't an ES module
 export default class extends Controller {
-  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner", "awayLastUsed", "homeLastUsed"]
+  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner", "awayLastUsed", "homeLastUsed", "eventId"]
 
   connect() {
     // Store team data for last_used lookup
@@ -172,7 +172,11 @@ export default class extends Controller {
 
   async loadTeamsForLeague(leagueId) {
     try {
-      const response = await fetch(`/leagues/${leagueId}/teams.json`)
+      const eventId = this.hasEventIdTarget ? this.eventIdTarget.value : ""
+      const url = eventId
+        ? `/leagues/${leagueId}/teams.json?event_id=${eventId}`
+        : `/leagues/${leagueId}/teams.json`
+      const response = await fetch(url)
       const teams = await response.json()
 
       // Store team data for last_used lookup
