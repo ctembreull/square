@@ -1,11 +1,16 @@
 // Team: Weber State Wildcats
-// Generated: 2026-01-29T01:40:26Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $web-weber-state-wildcats-university-gray: #4A494D;
 $web-weber-state-wildcats-wildcat-purple: #492365;
 $web-weber-state-wildcats-white: #FFFFFF;
+
+// Style Classes
+.web-weber-state-wildcats-purple {
+  background-color: #492365 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #4A494D, -1px 1px 0 #4A494D, 1px -1px 0 #4A494D, -1px -1px 0 #4A494D; 
+}
 
 // Default Style Alias
 .web-weber-state-wildcats-default {

@@ -1,5 +1,5 @@
 // Team: Gardner-Webb Runnin' Bulldogs
-// Generated: 2026-01-29T01:40:22Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -7,6 +7,11 @@ $gw-gardner-webb-runnin-bulldogs-gwu-red: #BB0000;
 $gw-gardner-webb-runnin-bulldogs-pale-gray: #E6E7E8;
 $gw-gardner-webb-runnin-bulldogs-pure-white: #FFFFFF;
 $gw-gardner-webb-runnin-bulldogs-rich-black: #141414;
+
+// Style Classes
+.gw-gardner-webb-runnin-bulldogs-red {
+  background-color: #BB0000 !important; color: #141414 !important; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
 
 // Default Style Alias
 .gw-gardner-webb-runnin-bulldogs-default {

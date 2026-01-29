@@ -1,5 +1,5 @@
 // Team: Jacksonville Jaguars
-// Generated: 2026-01-29T01:40:22Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -8,6 +8,11 @@ $jac-jacksonville-jaguars-dark-gold: #9F792C;
 $jac-jacksonville-jaguars-gold: #D7A22A;
 $jac-jacksonville-jaguars-teal: #006778;
 $jac-jacksonville-jaguars-white: #FFFFFF;
+
+// Style Classes
+.jac-jacksonville-jaguars-teal {
+  background-color: #006778 !important; color: #D7A22A !important; text-shadow: 1px 1px 0 #101820, -1px 1px 0 #101820, 1px -1px 0 #101820, -1px -1px 0 #101820; 
+}
 
 // Default Style Alias
 .jac-jacksonville-jaguars-default {

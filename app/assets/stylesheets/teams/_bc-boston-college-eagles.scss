@@ -1,5 +1,5 @@
 // Team: Boston College Eagles
-// Generated: 2026-01-29T01:40:21Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -8,6 +8,11 @@ $bc-boston-college-eagles-cardinal: #8C2232;
 $bc-boston-college-eagles-gray: #B4B2B3;
 $bc-boston-college-eagles-vegas-gold: #DBCCA6;
 $bc-boston-college-eagles-white: #FFFFFF;
+
+// Style Classes
+.bc-boston-college-eagles-cardinal {
+  background-color: #8C2232 !important; color: #DBCCA6 !important; 
+}
 
 // Default Style Alias
 .bc-boston-college-eagles-default {

@@ -1,10 +1,15 @@
 // Team: Liberty Flames
-// Generated: 2026-01-29T01:40:22Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $lib-liberty-flames-liberty-navy: #0A254E;
 $lib-liberty-flames-liberty-red: #B72025;
+
+// Style Classes
+.lib-liberty-flames-navy {
+  background-color: #0A254E !important; color: #ffffff !important; text-shadow: 1px 1px 0 #B72025, -1px 1px 0 #B72025, 1px -1px 0 #B72025, -1px -1px 0 #B72025; 
+}
 
 // Default Style Alias
 .lib-liberty-flames-default {

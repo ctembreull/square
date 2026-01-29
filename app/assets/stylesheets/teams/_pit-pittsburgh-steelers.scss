@@ -1,5 +1,5 @@
 // Team: Pittsburgh Steelers
-// Generated: 2026-01-29T01:40:23Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -9,6 +9,11 @@ $pit-pittsburgh-steelers-blue: #003087;
 $pit-pittsburgh-steelers-red: #C60C30;
 $pit-pittsburgh-steelers-silver: #A5ACAF;
 $pit-pittsburgh-steelers-white: #FFFFFF;
+
+// Style Classes
+.pit-pittsburgh-steelers-black {
+  background-color: #101820 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #FFB612, -1px 1px 0 #FFB612, 1px -1px 0 #FFB612, -1px -1px 0 #FFB612; 
+}
 
 // Default Style Alias
 .pit-pittsburgh-steelers-default {

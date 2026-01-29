@@ -1,11 +1,16 @@
 // Team: Green Bay Packers
-// Generated: 2026-01-29T01:40:22Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $gb-green-bay-packers-dark-green: #203731;
 $gb-green-bay-packers-gold: #FFB612;
 $gb-green-bay-packers-white: #FFFFFF;
+
+// Style Classes
+.gb-green-bay-packers-green {
+  background-color: #203731 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #FFB612, -1px 1px 0 #FFB612, 1px -1px 0 #FFB612, -1px -1px 0 #FFB612; 
+}
 
 // Default Style Alias
 .gb-green-bay-packers-default {

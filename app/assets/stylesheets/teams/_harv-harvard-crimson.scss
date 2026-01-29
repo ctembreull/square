@@ -1,10 +1,15 @@
 // Team: Harvard Crimson
-// Generated: 2026-01-29T01:40:22Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $harv-harvard-crimson-black: #1E1E1E;
 $harv-harvard-crimson-crimson: #A51C30;
+
+// Style Classes
+.harv-harvard-crimson-crimson {
+  background-color: #A51C30 !important; color: #ffffff !important; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
 
 // Default Style Alias
 .harv-harvard-crimson-default {

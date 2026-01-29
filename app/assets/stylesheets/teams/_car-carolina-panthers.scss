@@ -1,5 +1,5 @@
 // Team: Carolina Panthers
-// Generated: 2026-01-29T01:40:21Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -7,6 +7,11 @@ $car-carolina-panthers-black: #101820;
 $car-carolina-panthers-carolina-blue: #0085CA;
 $car-carolina-panthers-silver: #BFC0BF;
 $car-carolina-panthers-white: #FFFFFF;
+
+// Style Classes
+.car-carolina-panthers-blue {
+  background-color: #0085CA !important; color: #BFC0BF !important; text-shadow: 1px 1px 0 #101820, -1px 1px 0 #101820, 1px -1px 0 #101820, -1px -1px 0 #101820; 
+}
 
 // Default Style Alias
 .car-carolina-panthers-default {

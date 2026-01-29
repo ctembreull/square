@@ -1,5 +1,5 @@
 // Team: Tennessee Titans
-// Generated: 2026-01-29T01:40:24Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -10,6 +10,11 @@ $ten-tennessee-titans-titans-silver: #8A8D8F;
 $ten-tennessee-titans-titans-red: #C8102E;
 $ten-tennessee-titans-wolf-grey: #A2AAAD;
 $ten-tennessee-titans-white: #FFFFFF;
+
+// Style Classes
+.ten-tennessee-titans-blue {
+  background-color: #4B92DB !important; color: #0C2340 !important; text-shadow: 1px 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; 
+}
 
 // Default Style Alias
 .ten-tennessee-titans-default {

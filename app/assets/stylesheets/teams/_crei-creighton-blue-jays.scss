@@ -1,5 +1,5 @@
 // Team: Creighton Blue Jays
-// Generated: 2026-01-29T01:40:21Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -8,6 +8,11 @@ $crei-creighton-blue-jays-cu-gray: #828282;
 $crei-creighton-blue-jays-cu-light-blue: #6CADDE;
 $crei-creighton-blue-jays-cu-light-gray: #C8C8C8;
 $crei-creighton-blue-jays-cu-navy-blue: #00235D;
+
+// Style Classes
+.crei-creighton-blue-jays-blue {
+  background-color: #005CA9 !important; color: #C8C8C8 !important; text-shadow: 1px 1px 0 #00235D, -1px 1px 0 #00235D, 1px -1px 0 #00235D, -1px -1px 0 #00235D; 
+}
 
 // Default Style Alias
 .crei-creighton-blue-jays-default {

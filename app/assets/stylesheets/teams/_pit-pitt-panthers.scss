@@ -1,11 +1,16 @@
 // Team: Pitt Panthers
-// Generated: 2026-01-29T01:40:25Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $pit-pitt-panthers-pitt-gold: #FFB81C;
 $pit-pitt-panthers-pitt-royal-blue: #003594;
 $pit-pitt-panthers-white: #FFFFFF;
+
+// Style Classes
+.pit-pitt-panthers-gold-on-blue {
+  background-color: #003594 !important; color: #FFB81C !important; 
+}
 
 // Default Style Alias
 .pit-pitt-panthers-default {

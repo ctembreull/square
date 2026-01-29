@@ -1,11 +1,16 @@
 // Team: Robert Morris Colonels
-// Generated: 2026-01-29T01:40:23Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $rmu-robert-morris-colonels-rmu-blue: #14234B;
 $rmu-robert-morris-colonels-rmu-gray: #B2B1AE;
 $rmu-robert-morris-colonels-rmu-red: #E51937;
+
+// Style Classes
+.rmu-robert-morris-colonels-blue {
+  background-color: #14234B !important; color: #ffffff !important; text-shadow: 1px 1px 0 #E51937, -1px 1px 0 #E51937, 1px -1px 0 #E51937, -1px -1px 0 #E51937; 
+}
 
 // Default Style Alias
 .rmu-robert-morris-colonels-default {

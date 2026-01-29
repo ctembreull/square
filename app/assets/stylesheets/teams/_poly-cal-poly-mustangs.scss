@@ -1,11 +1,16 @@
 // Team: Cal Poly Mustangs
-// Generated: 2026-01-29T01:40:21Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $poly-cal-poly-mustangs-mustang-gold: #BD8B13;
 $poly-cal-poly-mustangs-poly-green: #154734;
 $poly-cal-poly-mustangs-white: #FFFFFF;
+
+// Style Classes
+.poly-cal-poly-mustangs-green {
+  background-color: #154734 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #BD8B13, -1px 1px 0 #BD8B13, 1px -1px 0 #BD8B13, -1px -1px 0 #BD8B13; 
+}
 
 // Default Style Alias
 .poly-cal-poly-mustangs-default {

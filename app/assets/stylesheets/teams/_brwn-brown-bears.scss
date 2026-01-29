@@ -1,5 +1,5 @@
 // Team: Brown Bears
-// Generated: 2026-01-29T01:40:21Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -7,6 +7,11 @@ $brwn-brown-bears-brown: #4E3629;
 $brwn-brown-bears-red: #ED1C24;
 $brwn-brown-bears-gold: #FFC72C;
 $brwn-brown-bears-gray: #98A4AE;
+
+// Style Classes
+.brwn-brown-bears-brown {
+  background-color: #4E3629 !important; color: #ffffff !important; text-shadow: 1px 1px 0 #ED1C24, -1px 1px 0 #ED1C24, 1px -1px 0 #ED1C24, -1px -1px 0 #ED1C24; 
+}
 
 // Default Style Alias
 .brwn-brown-bears-default {

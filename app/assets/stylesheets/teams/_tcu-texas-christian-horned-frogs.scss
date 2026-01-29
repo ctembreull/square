@@ -1,5 +1,5 @@
 // Team: Texas Christian Horned Frogs
-// Generated: 2026-01-29T01:40:24Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -7,6 +7,11 @@ $tcu-texas-christian-horned-frogs-horned-frog-purple: #4D1979;
 $tcu-texas-christian-horned-frogs-horned-frog-white: #FFFFFF;
 $tcu-texas-christian-horned-frogs-horned-frog-black: #000000;
 $tcu-texas-christian-horned-frogs-horned-frog-grey: #A3A9AC;
+
+// Style Classes
+.tcu-texas-christian-horned-frogs-white-on-purple {
+  background-color: #4D1979 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #A3A9AC, -1px 1px 0 #A3A9AC, 1px -1px 0 #A3A9AC, -1px -1px 0 #A3A9AC; 
+}
 
 // Default Style Alias
 .tcu-texas-christian-horned-frogs-default {

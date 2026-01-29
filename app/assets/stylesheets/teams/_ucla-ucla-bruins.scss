@@ -1,5 +1,5 @@
 // Team: UCLA Bruins
-// Generated: 2026-01-29T01:40:24Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -8,6 +8,11 @@ $ucla-ucla-bruins-darker-gold: #FFC72C;
 $ucla-ucla-bruins-darkest-blue: #003B5C;
 $ucla-ucla-bruins-darkest-gold: #FFB81C;
 $ucla-ucla-bruins-lighter-blue: #8BB8E8;
+
+// Style Classes
+.ucla-ucla-bruins-gold-on-blue {
+  background-color: #8BB8E8 !important; color: #FFB81C !important; text-shadow: 1px 1px 0 #003B5C, -1px 1px 0 #003B5C, 1px -1px 0 #003B5C, -1px -1px 0 #003B5C; 
+}
 
 // Default Style Alias
 .ucla-ucla-bruins-default {

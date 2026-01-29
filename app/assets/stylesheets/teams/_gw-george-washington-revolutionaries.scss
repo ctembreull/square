@@ -1,5 +1,5 @@
 // Team: George Washington Revolutionaries
-// Generated: 2026-01-29T01:40:22Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -8,6 +8,11 @@ $gw-george-washington-revolutionaries-gold: #AA9868;
 $gw-george-washington-revolutionaries-white: #FFFFFF;
 $gw-george-washington-revolutionaries-light-blue: #0190DB;
 $gw-george-washington-revolutionaries-light-yellow: #F8E08E;
+
+// Style Classes
+.gw-george-washington-revolutionaries-gold-on-blue {
+  background-color: #033C5A !important; color: #AA9868 !important; 
+}
 
 // Default Style Alias
 .gw-george-washington-revolutionaries-default {

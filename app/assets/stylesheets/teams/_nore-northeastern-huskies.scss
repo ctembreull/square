@@ -1,5 +1,5 @@
 // Team: Northeastern Huskies
-// Generated: 2026-01-29T01:40:23Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -7,6 +7,11 @@ $nore-northeastern-huskies-black: #000000;
 $nore-northeastern-huskies-red: #C8102E;
 $nore-northeastern-huskies-white: #FFFFFF;
 $nore-northeastern-huskies-gold: #C8A978;
+
+// Style Classes
+.nore-northeastern-huskies-red {
+  background-color: #C8102E !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
 
 // Default Style Alias
 .nore-northeastern-huskies-default {

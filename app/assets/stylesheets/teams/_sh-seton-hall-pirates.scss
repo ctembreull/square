@@ -1,5 +1,5 @@
 // Team: Seton Hall Pirates
-// Generated: 2026-01-29T01:40:24Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -16,6 +16,11 @@ $sh-seton-hall-pirates-sky-blue: #B4D1E6;
 $sh-seton-hall-pirates-slate-blue: #7E96A4;
 $sh-seton-hall-pirates-tan: #CDC7B7;
 $sh-seton-hall-pirates-white: #FFFFFF;
+
+// Style Classes
+.sh-seton-hall-pirates-blue {
+  background-color: #0060A9 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #514F4B, -1px 1px 0 #514F4B, 1px -1px 0 #514F4B, -1px -1px 0 #514F4B; 
+}
 
 // Default Style Alias
 .sh-seton-hall-pirates-default {

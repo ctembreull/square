@@ -1,5 +1,5 @@
 // Team: Towson Tigers
-// Generated: 2026-01-29T01:40:24Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -11,6 +11,11 @@ $tow-towson-tigers-mascot-red: #CC0033;
 $tow-towson-tigers-old-line-gold: #CC9900;
 $tow-towson-tigers-white: #FFFFFF;
 $tow-towson-tigers-athletic-silver: #C0C0C0;
+
+// Style Classes
+.tow-towson-tigers-black {
+  background-color: #3C3C3C !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #CC9900, -1px 1px 0 #CC9900, 1px -1px 0 #CC9900, -1px -1px 0 #CC9900; 
+}
 
 // Default Style Alias
 .tow-towson-tigers-default {

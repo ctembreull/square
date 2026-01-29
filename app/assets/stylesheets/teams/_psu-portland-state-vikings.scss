@@ -1,5 +1,5 @@
 // Team: Portland State Vikings
-// Generated: 2026-01-29T01:40:23Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -8,6 +8,11 @@ $psu-portland-state-vikings-electric-green: #CFD82D;
 $psu-portland-state-vikings-forest-green: #213921;
 $psu-portland-state-vikings-psu-green: #6D8D24;
 $psu-portland-state-vikings-white: #FFFFFF;
+
+// Style Classes
+.psu-portland-state-vikings-green {
+  background-color: #213921 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; 
+}
 
 // Default Style Alias
 .psu-portland-state-vikings-default {

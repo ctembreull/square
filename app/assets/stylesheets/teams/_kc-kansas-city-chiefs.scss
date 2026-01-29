@@ -1,11 +1,16 @@
 // Team: Kansas City Chiefs
-// Generated: 2026-01-29T01:40:22Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $kc-kansas-city-chiefs-gold: #FFB81C;
 $kc-kansas-city-chiefs-red: #E31837;
 $kc-kansas-city-chiefs-white: #FFFFFF;
+
+// Style Classes
+.kc-kansas-city-chiefs-red {
+  background-color: #E31837 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #FFB81C, -1px 1px 0 #FFB81C, 1px -1px 0 #FFB81C, -1px -1px 0 #FFB81C; 
+}
 
 // Default Style Alias
 .kc-kansas-city-chiefs-default {

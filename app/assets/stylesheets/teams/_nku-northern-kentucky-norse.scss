@@ -1,11 +1,16 @@
 // Team: Northern Kentucky Norse
-// Generated: 2026-01-29T01:40:23Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
 $nku-northern-kentucky-norse-gold: #FFC72C;
 $nku-northern-kentucky-norse-white: #FFFFFF;
 $nku-northern-kentucky-norse-black: #000000;
+
+// Style Classes
+.nku-northern-kentucky-norse-black {
+  background-color: #000000 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #FFC72C, -1px 1px 0 #FFC72C, 1px -1px 0 #FFC72C, -1px -1px 0 #FFC72C; 
+}
 
 // Default Style Alias
 .nku-northern-kentucky-norse-default {

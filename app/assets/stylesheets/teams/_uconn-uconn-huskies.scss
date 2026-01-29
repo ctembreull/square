@@ -1,5 +1,5 @@
 // Team: UConn Huskies
-// Generated: 2026-01-29T01:40:24Z
+// Generated: 2026-01-29T01:52:29Z
 // Do not edit directly - regenerate via TeamStylesheetService
 
 // Color Variables
@@ -8,6 +8,11 @@ $uconn-uconn-huskies-navy-blue: #000E2F;
 $uconn-uconn-huskies-white: #FFFFFF;
 $uconn-uconn-huskies-husky-eyes-only: #A4C8E1;
 $uconn-uconn-huskies-red: #E4002B;
+
+// Style Classes
+.uconn-uconn-huskies-white-on-blue {
+  background-color: #000E2F !important; color: #FFFFFF !important; 
+}
 
 // Default Style Alias
 .uconn-uconn-huskies-default {
