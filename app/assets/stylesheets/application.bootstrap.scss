@@ -40,3 +40,37 @@
 
 // Bootstrap Icons
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+/* -------------------------------------------------------------------------- */
+/*                            Custom Application Styles                        */
+/* -------------------------------------------------------------------------- */
+
+// Post archive list - active post highlighting
+.post-archive-icon {
+  visibility: hidden;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--falcon-primary);
+}
+
+.post-archive-link {
+  text-decoration: none;
+  color: var(--falcon-gray-600);
+
+  &:hover {
+    color: var(--falcon-gray-800);
+  }
+}
+
+tr[data-post-list-target="item"].active {
+  background-color: var(--falcon-primary-bg-subtle);
+
+  .post-archive-icon {
+    visibility: visible;
+  }
+
+  .post-archive-link {
+    color: var(--falcon-primary);
+    font-weight: 600;
+  }
+}

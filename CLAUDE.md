@@ -217,7 +217,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Full Dockerization**~~ | ✅ Done - Chromium + Node.js for Grover PDF generation, docker-compose.yml with SQLite volume, entrypoint runs seeds/imports, admin user via env vars, health check on /status.json |
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 | ~~**Basic Users CRUD**~~ | ✅ Done - UsersController with full CRUD. Manage Users in dropdown. Password match validation via Stimulus. |
-| Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
+| ~~Posts UI: active post styling~~ | ✅ Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
 | Broadcast logger for job visibility | Add `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development |
 | **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Check path resolution. |
 | **Winners table period display** | Reformat individual winning periods column for better scannability |
@@ -347,7 +347,7 @@ Target: Ready for football season
 | ~~Tabs controller Turbo cache issue~~ | ✅ Resolved - No recurrence observed, likely fixed by other Turbo/Stimulus changes |
 | ✅ Action Text links load in frame | Fixed - Stimulus controller `action_text_links_controller.js` adds `data-turbo-frame="_top"` to all links on connect |
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |
-| Posts UI: active post styling | Update right-hand post list to visually distinguish the currently-displayed post |
+| ✅ Posts UI: active post styling | Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
 | Broadcast logger for job visibility | Consider adding `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development, so `bin/jobs` output is visible in Procfile.dev. Trade-off: more verbose Rails server output. |
 | **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Partial failure suggests path resolution issue, not wholesale asset pipeline failure. Check how card backgrounds are referenced vs header logo. |
 | **Winners table period display** | Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. |
