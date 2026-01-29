@@ -218,13 +218,14 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Admin toolbar toggle**~~ | ✅ Done - Session-based toggle in user dropdown, defaults to showing for admins |
 | ~~**Basic Users CRUD**~~ | ✅ Done - UsersController with full CRUD. Manage Users in dropdown. Password match validation via Stimulus. |
 | ~~Posts UI: active post styling~~ | ✅ Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
-| Broadcast logger for job visibility | Add `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development |
+| ~~Broadcast logger for job visibility~~ | ✅ Moot - SolidQueue in-process mode (`processes: 0` in dev) outputs to Puma logs |
 | **Winners table period display** | Reformat individual winning periods column for better scannability |
 | Clarify Event `active` flag purpose | Determine use case vs date-based scopes (upcoming/in_progress/completed). May be removable. |
 | ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
 | Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
 | Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
+| Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
 
 ### Fly.io Deployment Notes
 
