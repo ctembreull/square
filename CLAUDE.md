@@ -225,6 +225,7 @@ Target: NCAA Tournament testing on Fly.io
 | **Team game history** | Team show page: list all games featuring this team. Game create form: show "last used" date for each team. |
 | Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
 | Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
+| Grid highlighter after Turbo refresh | Winners box refresh on Game#show breaks highlighting - Stimulus controller needs to rebind targets after Turbo replacement |
 
 ### Fly.io Deployment Notes
 
@@ -297,6 +298,7 @@ Target: Ready for football season
 | **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
 | ~~**PDF caching**~~ | ✅ Done - PDFs cached in Active Storage, served if fresh. Stale detection via game/score `updated_at`. `rake storage:purge_unattached` cleans orphaned blobs. |
+| **Security audit** | Run Brakeman + bundler-audit. Check: CSRF protection, param filtering, SQL injection, auth bypass, mass assignment. Review Fly.io secrets exposure. Low-value target but protect family fun from griefers. |
 
 ### Event PDF Export (Implemented)
 
