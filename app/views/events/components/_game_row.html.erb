@@ -1,5 +1,6 @@
-<% colspan = game.upcoming? ? "2" : "1" %>
 <% score = game.scores.order(period: :desc).first %>
+<% show_score = (game.completed? || game.in_progress?) && score %>
+<% colspan = show_score ? "1" : "2" %>
 <tr>
 	<td>
 		<%# Date - don't show time for completed games %>
@@ -24,8 +25,7 @@
 		<%# colspan 2 if game is upcoming %>
 		<%= game.away_team.display_location %>
 	</td>
-	<% if game.completed? || game.in_progress? %>
-		<%# only show score if game is completed or live %>
+	<% if show_score %>
 		<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.away_total %></td>
 	<% end %>
 	<td class="bg-200 fw-semi-bold align-middle text-center">
@@ -36,8 +36,7 @@
 			-
 		<% end %>
 	</td>
-	<% if game.completed? || game.in_progress? %>
-		<%# only show score if game is completed %>
+	<% if show_score %>
 		<td class="bg-600 text-200 fw-semi-bold text-center align-middle"><%= score.home_total %></td>
 	<% end %>
 	<td class="text-center px-2 <%= game.home_style %> fw-semi-bold" style="width: 20%;" colspan="<%= colspan %>">
