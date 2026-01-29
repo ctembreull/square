@@ -10,7 +10,7 @@
 	<div class="card-body p-0">
 		<table class="m-0" style="width: 100%;">
 			<tr class="border-bottom">
-				<td class="p-1 h6 text-start <%= game.away_style %>">
+				<td class="p-1 ps-2 h6 fw-semi-bold text-start <%= game.away_style %>">
 					<%= game.away_team.display_location %>
 				</td>
 				<% (1..game.league.periods).each do |n| %>
@@ -19,7 +19,7 @@
 						<%= period.nil? ? "" : period.away %>
 					</td>
 				<% end %>
-				<td class="p-1 bg-300" style="width: 5%; text-align: right;">
+				<td class="p-1 bg-300" style="width: 5%;">
 					<span class="fs-10 fw-bolder">
 						<% unless game.scores.empty? %>
 							<%= game.scores.order(period: :asc).last.away_total %>
@@ -30,16 +30,16 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="p-1 h6 text-start <%= game.home_style %>">
+				<td class="p-1 ps-2 h6 fw-semi-bold text-start <%= game.home_style %>">
 					<%= game.home_team.display_location %>
 				</td>
 				<% (1..game.league.periods).each do |n| %>
 					<% period = game.scores.where(period: n).first %>
-					<td class="p-1 border-end fs-10" style="width: 5%; text-align: center;">
+					<td class="p-1 px-2 border-end fs-10" style="width: 5%; text-align: center;">
 						<%= period.nil? ? "" : period.home %>
 					</td>
 				<% end %>
-				<td class="p-1 bg-300" style="width: 5%; text-align: right;">
+				<td class="p-1 px-2 bg-300 text-center" style="width: 5%;">
 					<span class="fs-10 fw-bolder">
 						<% unless game.scores.empty? %>
 							<%= game.scores.order(period: :asc).last.home_total %>
