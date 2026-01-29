@@ -9,6 +9,7 @@ if [ "${@: -2:1}" == "./bin/rails" ] && [ "${@: -1:1}" == "server" ]; then
   ./bin/rails db:seed              # Leagues, conferences
   ./bin/rails seeds:import         # Teams from YAML
   ./bin/rails affiliations:import  # Team-conference affiliations
+  ./bin/rails styles:regenerate_all # Regenerate SCSS after import (fixes race condition)
 
   # Players import only if YAML exists
   if [ -f "db/seeds/players.yml" ]; then
