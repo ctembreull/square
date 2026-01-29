@@ -4,12 +4,14 @@ import { Controller } from "@hotwired/stimulus"
 // Highlights grid rows and columns when hovering over:
 // - Grid cells (extracts digits from ID like "a3h7")
 // - Winners table rows (uses data-away-digit and data-home-digit attributes)
+//
+// Uses Stimulus actions for winners rows (survives Turbo replacement)
+// and manual listeners for grid cells (static, never replaced)
 export default class extends Controller {
   static targets = ["grid", "scores", "winners"]
 
   connect() {
     this.setupGridListeners()
-    this.setupWinnersListeners()
   }
 
   disconnect() {
@@ -26,14 +28,24 @@ export default class extends Controller {
     })
   }
 
-  setupWinnersListeners() {
-    if (!this.hasWinnersTarget) return
+  // Called via data-action on grid cells
+  gridCellEnter(event) {
+    this.handleGridCellEnter(event)
+  }
 
-    const rows = this.winnersTarget.querySelectorAll("tbody tr[data-away-digit][data-home-digit]")
-    rows.forEach(row => {
-      row.addEventListener("mouseenter", this.handleWinnersRowEnter.bind(this))
-      row.addEventListener("mouseleave", this.handleMouseLeave.bind(this))
-    })
+  // Called via data-action on winners rows
+  winnersRowEnter(event) {
+    const row = event.currentTarget
+    const awayDigit = parseInt(row.dataset.awayDigit, 10)
+    const homeDigit = parseInt(row.dataset.homeDigit, 10)
+
+    if (isNaN(awayDigit) || isNaN(homeDigit)) return
+    this.highlightRowAndColumn(awayDigit, homeDigit)
+  }
+
+  // Called via data-action on both grid cells and winners rows
+  rowLeave() {
+    this.clearHighlights()
   }
 
   handleGridCellEnter(event) {
@@ -44,15 +56,6 @@ export default class extends Controller {
 
     const awayDigit = parseInt(match[1], 10)
     const homeDigit = parseInt(match[2], 10)
-    this.highlightRowAndColumn(awayDigit, homeDigit)
-  }
-
-  handleWinnersRowEnter(event) {
-    const row = event.currentTarget
-    const awayDigit = parseInt(row.dataset.awayDigit, 10)
-    const homeDigit = parseInt(row.dataset.homeDigit, 10)
-
-    if (isNaN(awayDigit) || isNaN(homeDigit)) return
     this.highlightRowAndColumn(awayDigit, homeDigit)
   }
 

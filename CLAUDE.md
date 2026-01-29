@@ -225,7 +225,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
 | Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
 | Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
-| Grid highlighter after Turbo refresh | Winners box refresh on Game#show breaks highlighting - Stimulus controller needs to rebind targets after Turbo replacement |
+| ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 
 ### Fly.io Deployment Notes
 
