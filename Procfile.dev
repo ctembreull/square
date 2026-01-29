@@ -1,3 +1,2 @@
-web: env RUBY_DEBUG_OPEN=true BINDING=0.0.0.0 bin/rails server
+web: env RUBY_DEBUG_OPEN=true SOLID_QUEUE_IN_PUMA=1 BINDING=0.0.0.0 bin/rails server
 css: yarn run watch:css
-jobs: bin/jobs
