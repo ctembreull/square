@@ -156,13 +156,12 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_21_001119) do
   end
 
   create_table "posts", force: :cascade do |t|
+    t.text "body"
     t.datetime "created_at", null: false
     t.bigint "event_id", null: false
     t.string "title"
     t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
     t.index ["event_id"], name: "index_posts_on_event_id"
-    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "scores", force: :cascade do |t|
@@ -229,7 +228,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_21_001119) do
   add_foreign_key "games", "teams", column: "away_team_id"
   add_foreign_key "games", "teams", column: "home_team_id"
   add_foreign_key "posts", "events"
-  add_foreign_key "posts", "users"
   add_foreign_key "scores", "games"
   add_foreign_key "scores", "players", column: "winner_id"
   add_foreign_key "styles", "teams"
