@@ -10,6 +10,12 @@ default: &default
 
 development:
   <<: *default
+  # processes: 0 runs workers in-process (no forking) to avoid SQLite lock contention
+  workers:
+    - queues: "*"
+      threads: 3
+      processes: 0
+      polling_interval: 0.1
 
 test:
   <<: *default
