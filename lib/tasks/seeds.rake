@@ -14,7 +14,9 @@ namespace :seeds do
         "location" => team.location,
         "display_location" => team.display_location,
         "name" => team.name,
-        "level" => team.level
+        "womens_name" => team.womens_name,
+        "level" => team.level,
+        "brand_info" => team.brand_info
       }.compact
 
       # Export colors keyed by slug (name-based, unique within team)
@@ -72,7 +74,9 @@ namespace :seeds do
           location: team_data["location"],
           display_location: team_data["display_location"],
           name: team_data["name"],
-          level: team_data["level"]
+          womens_name: team_data["womens_name"],
+          level: team_data["level"],
+          brand_info: team_data["brand_info"]
         )
         updated[:teams] += 1
       else
@@ -81,7 +85,9 @@ namespace :seeds do
           location: team_data["location"],
           display_location: team_data["display_location"],
           name: team_data["name"],
-          level: team_data["level"]
+          womens_name: team_data["womens_name"],
+          level: team_data["level"],
+          brand_info: team_data["brand_info"]
         )
         created[:teams] += 1
       end
@@ -234,7 +240,9 @@ namespace :seeds do
         "location" => team.location,
         "display_location" => team.display_location,
         "name" => team.name,
-        "level" => team.level
+        "womens_name" => team.womens_name,
+        "level" => team.level,
+        "brand_info" => team.brand_info
       }.compact
 
       if team.colors.any?

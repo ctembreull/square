@@ -8,7 +8,7 @@
     <meta name="application-name" content="Square">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <title><%= content_for(:title) || "Square" %></title>
+    <title><%= page_title %></title>
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -49,7 +49,12 @@
 					<%= link_to root_path, class: "navbar-brand me-1 me-sm-3" do %>
 						<div class="d-flex align-items-center">
 							<img class="me-2" src="<%= asset_path("gridmark.svg") %>" alt="" width="40" height="40">
-							<span class="font-sans-serif text-primary">squares</span>
+							<div class="d-flex flex-column lh-1">
+								<span class="font-sans-serif <%= environment_label ? 'fw-bold' : '' %>" style="<%= environment_color ? "color: #{environment_color}" : 'color: var(--falcon-primary)' %>">squares</span>
+								<% if environment_label %>
+									<small class="text-uppercase fw-semibold" style="font-size: 0.6rem; letter-spacing: 0.1em; color: <%= environment_color %>"><%= environment_label %></small>
+								<% end %>
+							</div>
 						</div>
 					<% end %>
 

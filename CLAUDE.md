@@ -52,6 +52,7 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - ✅ Simplified team naming - removed `prefix`/`suffix` columns, keeping only `location` and `display_location`
 - ✅ Color form modal autofocuses the 'name' field
 - ✅ Replaced List.js with Ransack + Pagy for teams table (server-side search/sort)
+- ✅ Teams export missing `womens_name` and `brand_info` fields - added to `rake seeds:export` and `rake seeds:import`
 
 ### Pending
 - (See milestone tables for tracked work items)
@@ -335,6 +336,7 @@ Target: Ready for football season
 | Broadcast logger for job visibility | Consider adding `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development, so `bin/jobs` output is visible in Procfile.dev. Trade-off: more verbose Rails server output. |
 | **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Partial failure suggests path resolution issue, not wholesale asset pipeline failure. Check how card backgrounds are referenced vs header logo. |
 | **Winners table period display** | Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. |
+| **schema.yaml sync** | Design doc is stale (`brand_url` → `brand_info`, `suffix` removed). Either manually update or create rake task to generate from `db/schema.rb`. |
 
 ---
 

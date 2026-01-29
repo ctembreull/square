@@ -7,6 +7,7 @@ services:
       - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
       - PORT=8080
       - HTTP_PORT=8080
+      - APP_ENV=staging
       # Run Solid Queue job processor inside Puma (single container setup)
       - SOLID_QUEUE_IN_PUMA=1
       # Optional: Admin user created on first boot if these are set
