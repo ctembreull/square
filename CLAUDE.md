@@ -219,7 +219,6 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Basic Users CRUD**~~ | ✅ Done - UsersController with full CRUD. Manage Users in dropdown. Password match validation via Stimulus. |
 | ~~Posts UI: active post styling~~ | ✅ Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
 | Broadcast logger for job visibility | Add `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development |
-| **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Check path resolution. |
 | **Winners table period display** | Reformat individual winning periods column for better scannability |
 | Clarify Event `active` flag purpose | Determine use case vs date-based scopes (upcoming/in_progress/completed). May be removable. |
 | ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
