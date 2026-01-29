@@ -8,6 +8,7 @@ class TeamsController < ApplicationController
   end
 
   def show
+    @games = @team.games.includes(:home_team, :away_team, :event).order(starts_at: :desc)
   end
 
   # GET /teams/:id/styles.json

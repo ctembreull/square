@@ -222,7 +222,7 @@ Target: NCAA Tournament testing on Fly.io
 | **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Check path resolution. |
 | **Winners table period display** | Reformat individual winning periods column for better scannability |
 | Clarify Event `active` flag purpose | Determine use case vs date-based scopes (upcoming/in_progress/completed). May be removable. |
-| **Team game history** | Team show page: list all games featuring this team. Game create form: show "last used" date for each team. |
+| ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
 | Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
 | Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
 | Grid highlighter after Turbo refresh | Winners box refresh on Game#show breaks highlighting - Stimulus controller needs to rebind targets after Turbo replacement |

@@ -3,9 +3,11 @@ import { Controller } from "@hotwired/stimulus"
 // Choices.js is loaded via CDN and attaches to window
 // We'll access it dynamically since the CDN version isn't an ES module
 export default class extends Controller {
-  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner"]
+  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner", "awayLastUsed", "homeLastUsed"]
 
   connect() {
+    // Store team data for last_used lookup
+    this.teamsData = {}
     // Initialize Choices.js on team selects
     this.awayTeamChoices = new Choices(this.awayTeamTarget, {
       searchEnabled: true,
@@ -68,6 +70,11 @@ export default class extends Controller {
     this.awayStyleChoices.clearStore()
     this.homeStyleChoices.clearStore()
 
+    // Clear team data and hide last used icons
+    this.teamsData = {}
+    if (this.hasAwayLastUsedTarget) this.awayLastUsedTarget.classList.add("d-none")
+    if (this.hasHomeLastUsedTarget) this.homeLastUsedTarget.classList.add("d-none")
+
     if (leagueId) {
       this.loadTeamsForLeague(leagueId)
     } else {
@@ -84,6 +91,7 @@ export default class extends Controller {
     this.awayStyleTarget.dataset.selectedValue = ""
     this.updateBanner(this.awayBannerTarget, selectedOption?.label || "Away Team", "")
     this.loadStylesForTeam(teamId, this.awayStyleChoices, this.awayStyleTarget, this.awayBannerTarget)
+    this.updateLastUsed(teamId, this.awayLastUsedTarget)
   }
 
   // Called when home team selection changes
@@ -94,6 +102,26 @@ export default class extends Controller {
     this.homeStyleTarget.dataset.selectedValue = ""
     this.updateBanner(this.homeBannerTarget, selectedOption?.label || "Home Team", "")
     this.loadStylesForTeam(teamId, this.homeStyleChoices, this.homeStyleTarget, this.homeBannerTarget)
+    this.updateLastUsed(teamId, this.homeLastUsedTarget)
+  }
+
+  // Update the last used icon visibility and tooltip
+  updateLastUsed(teamId, iconTarget) {
+    if (!this.hasAwayLastUsedTarget && !this.hasHomeLastUsedTarget) return
+
+    const team = this.teamsData[teamId]
+    if (team?.last_used) {
+      iconTarget.classList.remove("d-none")
+      iconTarget.setAttribute("title", `Last used: ${team.last_used}`)
+      // Reinitialize tooltip if Bootstrap is available
+      if (typeof bootstrap !== "undefined") {
+        const existingTooltip = bootstrap.Tooltip.getInstance(iconTarget)
+        if (existingTooltip) existingTooltip.dispose()
+        new bootstrap.Tooltip(iconTarget)
+      }
+    } else {
+      iconTarget.classList.add("d-none")
+    }
   }
 
   // Called when away style selection changes
@@ -147,6 +175,11 @@ export default class extends Controller {
       const response = await fetch(`/leagues/${leagueId}/teams.json`)
       const teams = await response.json()
 
+      // Store team data for last_used lookup
+      teams.forEach(team => {
+        this.teamsData[team.id.toString()] = team
+      })
+
       const choices = teams.map(team => ({
         value: team.id.toString(),
         label: team.display_name
@@ -165,10 +198,12 @@ export default class extends Controller {
       if (awayTeamId) {
         this.awayTeamChoices.setChoiceByValue(awayTeamId)
         this.loadStylesForTeam(awayTeamId, this.awayStyleChoices, this.awayStyleTarget, this.awayBannerTarget)
+        if (this.hasAwayLastUsedTarget) this.updateLastUsed(awayTeamId, this.awayLastUsedTarget)
       }
       if (homeTeamId) {
         this.homeTeamChoices.setChoiceByValue(homeTeamId)
         this.loadStylesForTeam(homeTeamId, this.homeStyleChoices, this.homeStyleTarget, this.homeBannerTarget)
+        if (this.hasHomeLastUsedTarget) this.updateLastUsed(homeTeamId, this.homeLastUsedTarget)
       }
     } catch (error) {
       console.error("Failed to load teams:", error)

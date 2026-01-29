@@ -80,6 +80,54 @@
   </div>
 </div>
 
+<% if @games.any? %>
+<div class="row mb-3">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-header border-bottom py-2">
+				<h6 class="mb-0">Game History (<%= @games.count %>)</h6>
+			</div>
+			<div class="card-body p-0">
+				<table class="table table-sm fs-10 m-0">
+					<thead>
+						<tr class="bg-200">
+							<th class="ps-2">Date</th>
+							<th>Event</th>
+							<th>Matchup</th>
+							<th class="text-center">Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% @games.each do |game| %>
+							<tr>
+								<td class="ps-2"><%= game.starts_at.strftime("%Y-%m-%d") %></td>
+								<td><%= link_to game.event.title, game.event, class: "text-decoration-none" %></td>
+								<td>
+									<%= link_to game, class: "text-decoration-none" do %>
+										<span class="<%= game.away_team == @team ? 'fw-bold' : '' %>"><%= game.away_team.display_location %></span>
+										<span class="text-muted">@</span>
+										<span class="<%= game.home_team == @team ? 'fw-bold' : '' %>"><%= game.home_team.display_location %></span>
+									<% end %>
+								</td>
+								<td class="text-center">
+									<% if game.completed? %>
+										<span class="badge bg-secondary">Final</span>
+									<% elsif game.in_progress? %>
+										<span class="badge bg-success">Live</span>
+									<% else %>
+										<span class="badge bg-info">Upcoming</span>
+									<% end %>
+								</td>
+							</tr>
+						<% end %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<% end %>
+
 <!-- Affiliation Modal -->
 <%= turbo_frame_tag "affiliation_modal" %>
 

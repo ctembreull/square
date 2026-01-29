@@ -73,4 +73,9 @@ class Team < ApplicationRecord
       ""
     end
   end
+
+  # Returns the most recent game date for this team (for "last used" display)
+  def last_game_date
+    games.maximum(:starts_at)
+  end
 end

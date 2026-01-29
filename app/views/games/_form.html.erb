@@ -63,14 +63,25 @@
 		</div>
 		<div class="col-5">
 			<%= form.label :away_team_id, "Away Team", class: "form-label" %>
-			<%= form.select :away_team_id, [],
-					{ include_blank: "Select League first" },
-					class: "form-control form-control-sm",
-					data: {
-						game_form_target: "awayTeam",
-						action: "change->game-form#awayTeamChanged",
-						selected_value: game.away_team_id
-					} %>
+			<div class="d-flex align-items-start gap-2">
+				<div class="flex-grow-1">
+					<%= form.select :away_team_id, [],
+							{ include_blank: "Select League first" },
+							class: "form-control form-control-sm",
+							data: {
+								game_form_target: "awayTeam",
+								action: "change->game-form#awayTeamChanged",
+								selected_value: game.away_team_id
+							} %>
+				</div>
+				<span class="text-muted d-none" style="margin-top: 0.5rem; cursor: help;"
+					data-game-form-target="awayLastUsed"
+					data-bs-toggle="tooltip"
+					data-bs-placement="top"
+					title="">
+					<i class="bi bi-calendar3"></i>
+				</span>
+			</div>
 		</div>
 		<div class="col-3">
 			<%= form.label :away_style, "Away Style", class: "form-label" %>
@@ -92,14 +103,25 @@
 		</div>
 		<div class="col-5">
 			<%= form.label :home_team_id, "Home Team", class: "form-label" %>
-			<%= form.select :home_team_id, [],
-					{ include_blank: "Select League first" },
-					class: "form-control form-control-sm",
-					data: {
-						game_form_target: "homeTeam",
-						action: "change->game-form#homeTeamChanged",
-						selected_value: game.home_team_id
-					} %>
+			<div class="d-flex align-items-start gap-2">
+				<div class="flex-grow-1">
+					<%= form.select :home_team_id, [],
+							{ include_blank: "Select League first" },
+							class: "form-control form-control-sm",
+							data: {
+								game_form_target: "homeTeam",
+								action: "change->game-form#homeTeamChanged",
+								selected_value: game.home_team_id
+							} %>
+				</div>
+				<span class="text-muted d-none" style="margin-top: 0.5rem; cursor: help;"
+					data-game-form-target="homeLastUsed"
+					data-bs-toggle="tooltip"
+					data-bs-placement="top"
+					title="">
+					<i class="bi bi-calendar3"></i>
+				</span>
+			</div>
 		</div>
 		<div class="col-3">
 			<%= form.label :home_style, "Home Style", class: "form-label" %>
