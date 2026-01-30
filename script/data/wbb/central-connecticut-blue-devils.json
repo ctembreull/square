@@ -1,0 +1,929 @@
+{
+  "team": {
+    "id": "2115",
+    "uid": "s:40~l:54~t:2115",
+    "slug": "central-connecticut-blue-devils",
+    "location": "Central Connecticut",
+    "name": "Blue Devils",
+    "nickname": "C Connecticut",
+    "abbreviation": "CCSU",
+    "displayName": "Central Connecticut Blue Devils",
+    "shortDisplayName": "C Connecticut",
+    "color": "1B49A2",
+    "alternateColor": "d1d5d8",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2115.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2115.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:17Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "0-20",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 73.15
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 52.1
+            },
+            {
+              "name": "differential",
+              "value": -21.1
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 17.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 20.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "losses",
+              "value": 20.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 10.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -421.0
+            },
+            {
+              "name": "points",
+              "value": -10.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1463.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1042.0
+            },
+            {
+              "name": "streak",
+              "value": -20.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.0
+            },
+            {
+              "name": "wins",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "0-9",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 73.666664
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 60.0
+            },
+            {
+              "name": "differential",
+              "value": -13.700000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 8.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 9.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "losses",
+              "value": 9.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 10.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -123.0
+            },
+            {
+              "name": "points",
+              "value": -4.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 663.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 540.0
+            },
+            {
+              "name": "streak",
+              "value": -20.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.0
+            },
+            {
+              "name": "wins",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "0-11",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 72.72727
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 45.636364
+            },
+            {
+              "name": "differential",
+              "value": -27.1
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 8.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "losses",
+              "value": 11.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 10.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -298.0
+            },
+            {
+              "name": "points",
+              "value": -5.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 800.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 502.0
+            },
+            {
+              "name": "streak",
+              "value": -20.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.0
+            },
+            {
+              "name": "wins",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "19",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/2115/central-connecticut-blue-devils",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=2115",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2115",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2115",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2115",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2115",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/central-connecticut-state-blue-devils-womens-basketball-tickets--sports-ncaa-basketball/performer/46134?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401812457",
+        "date": "2026-01-31T19:00Z",
+        "name": "Central Connecticut Blue Devils at Long Island University Sharks",
+        "shortName": "CCSU @ LIU",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401812457",
+            "date": "2026-01-31T19:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": false,
+            "venue": {
+              "fullName": "Steinberg Wellness Center",
+              "address": {
+                "city": "Brooklyn",
+                "state": "NY"
+              }
+            },
+            "competitors": [
+              {
+                "id": "112358",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "112358",
+                  "location": "Long Island University",
+                  "nickname": "Long Island",
+                  "abbreviation": "LIU",
+                  "displayName": "Long Island University Sharks",
+                  "shortDisplayName": "Long Island",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-01-25T21:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/112358.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-01-25T21:35Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/3fba5749-6772-3dd0-bb87-9c27b81037cd/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-27T20:57Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/3fba5749-6772-3dd0-bb87-9c27b81037cd/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-27T20:57Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/112358/long-island-university-sharks",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=112358",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/112358",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/112358",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/112358",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/112358",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/liu-sharks-womens-basketball-tickets--sports-ncaa-basketball/performer/118093?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2115",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2115",
+                  "location": "Central Connecticut",
+                  "nickname": "C Connecticut",
+                  "abbreviation": "CCSU",
+                  "displayName": "Central Connecticut Blue Devils",
+                  "shortDisplayName": "C Connecticut",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2115.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2115.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/df1c4e4c-1793-a846-490d-b96fd122ed39/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2115/central-connecticut-blue-devils",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2115",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2115",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2115",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2115",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2115",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/central-connecticut-state-blue-devils-womens-basketball-tickets--sports-ncaa-basketball/performer/46134?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "1",
+                  "shortName": "TV"
+                },
+                "market": {
+                  "id": "2",
+                  "type": "Home"
+                },
+                "media": {
+                  "shortName": "NEC Front Row"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 2:00 PM EST",
+                "shortDetail": "1/31 - 2:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401812457/c-connecticut-long-island",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401812457",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/preview/_/gameId/401812457",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "10th in NEC"
+  }
+}

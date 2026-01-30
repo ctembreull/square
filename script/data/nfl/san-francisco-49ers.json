@@ -1,0 +1,226 @@
+{
+  "team": {
+    "id": "25",
+    "uid": "s:20~l:28~t:25",
+    "slug": "san-francisco-49ers",
+    "abbreviation": "SF",
+    "displayName": "San Francisco 49ers",
+    "shortDisplayName": "49ers",
+    "name": "49ers",
+    "nickname": "49ers",
+    "location": "San Francisco",
+    "color": "aa0000",
+    "alternateColor": "b3995d",
+    "isActive": true,
+    "isAllStar": false,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/sf.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "scoreboard"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/sf.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "scoreboard",
+          "dark"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/primary_logo_on_white_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/primary_logo_on_black_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/primary_logo_on_primary_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/primary_logo_on_secondary_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/secondary_logo_on_white_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/secondary_logo_on_black_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/secondary_logo_on_primary_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "width": 500,
+        "height": 500
+      },
+      {
+        "href": "https://a.espncdn.com/guid/84caf62b-c753-71ea-a787-44fd224a4294/logos/secondary_logo_on_secondary_color.png",
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/nfl/team/_/name/sf/san-francisco-49ers",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false,
+        "isHidden": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/nfl/team/roster/_/name/sf/san-francisco-49ers",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false,
+        "isHidden": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/nfl/team/stats/_/name/sf/san-francisco-49ers",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false,
+        "isHidden": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/nfl/team/schedule/_/name/sf",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false,
+        "isHidden": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/san-francisco-49ers-tickets--sports-nfl-football/performer/758?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false,
+        "isHidden": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "depthchart",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/nfl/team/depth/_/name/sf",
+        "text": "Depth Chart",
+        "shortText": "Depth Chart",
+        "isExternal": false,
+        "isPremium": false,
+        "isHidden": false
+      }
+    ]
+  }
+}

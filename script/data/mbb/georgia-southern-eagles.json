@@ -1,0 +1,1605 @@
+{
+  "team": {
+    "id": "290",
+    "uid": "s:40~l:41~t:290",
+    "slug": "georgia-southern-eagles",
+    "location": "Georgia Southern",
+    "name": "Eagles",
+    "nickname": "GA Southern",
+    "abbreviation": "GASO",
+    "displayName": "Georgia Southern Eagles",
+    "shortDisplayName": "GA Southern",
+    "color": "041e42",
+    "alternateColor": "a3aaae",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-24T20:19Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/290.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-24T20:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2026-01-08T19:35Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2026-01-08T19:35Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "13-9",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 1.0
+            },
+            {
+              "name": "OTWins",
+              "value": 2.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 80.318184
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 82.454544
+            },
+            {
+              "name": "differential",
+              "value": 2.200000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 2.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 22.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.5555556
+            },
+            {
+              "name": "losses",
+              "value": 9.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 6.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 47.0
+            },
+            {
+              "name": "points",
+              "value": 2.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1767.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1814.0
+            },
+            {
+              "name": "streak",
+              "value": -3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.59090906
+            },
+            {
+              "name": "wins",
+              "value": 13.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "8-3",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 77.09091
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 85.63636
+            },
+            {
+              "name": "differential",
+              "value": 8.5
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 2.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.5
+            },
+            {
+              "name": "losses",
+              "value": 3.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 8.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 94.0
+            },
+            {
+              "name": "points",
+              "value": 2.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 848.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 942.0
+            },
+            {
+              "name": "streak",
+              "value": -3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.72727275
+            },
+            {
+              "name": "wins",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "5-4",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 86.111115
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 83.0
+            },
+            {
+              "name": "differential",
+              "value": -3.0999999999999943
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 9.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.6666667
+            },
+            {
+              "name": "losses",
+              "value": 4.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 8.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -28.0
+            },
+            {
+              "name": "points",
+              "value": 0.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 775.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 747.0
+            },
+            {
+              "name": "streak",
+              "value": -3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.5555556
+            },
+            {
+              "name": "wins",
+              "value": 5.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "27",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/290/georgia-southern-eagles",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/290",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/290",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/290",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/290",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/georgia-southern-eagles-mens-basketball-tickets--sports-ncaa-basketball/performer/5960?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401858731",
+        "date": "2026-01-30T20:00Z",
+        "name": "Georgia Southern Eagles at UL Monroe Warhawks",
+        "shortName": "GASO VS ULM",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401858731",
+            "date": "2026-01-30T20:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": true,
+            "boxscoreAvailable": true,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Fredrick C. Hobdy Assembly Center",
+              "address": {
+                "city": "Grambling",
+                "state": "LA"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2433",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2433",
+                  "location": "UL Monroe",
+                  "nickname": "UL Monroe",
+                  "abbreviation": "ULM",
+                  "displayName": "UL Monroe Warhawks",
+                  "shortDisplayName": "UL Monroe",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2433.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T20:40Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T20:40Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/22c5507e-0f8b-a1a7-8daa-3a13a74a2a35/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2433/ul-monroe-warhawks",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2433",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2433",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2433",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2433",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/louisiana-monroe-warhawks-mens-basketball-tickets--sports-ncaa-basketball/performer/6049?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "score": {
+                  "value": 33.0,
+                  "displayValue": "33"
+                },
+                "record": [
+                  {
+                    "id": "0",
+                    "abbreviation": "Season",
+                    "displayName": "Team Season Record",
+                    "shortDisplayName": "Season",
+                    "description": "Overall Record",
+                    "type": "total",
+                    "displayValue": "3-18"
+                  },
+                  {
+                    "id": "2",
+                    "abbreviation": "Home",
+                    "displayName": "Home",
+                    "shortDisplayName": "HOME",
+                    "description": "Home Record",
+                    "type": "home",
+                    "displayValue": "3-6"
+                  },
+                  {
+                    "id": "3",
+                    "abbreviation": "AWAY",
+                    "displayName": "Away",
+                    "shortDisplayName": "AWAY",
+                    "description": "Away Record",
+                    "type": "road",
+                    "displayValue": "0-11"
+                  },
+                  {
+                    "id": "4",
+                    "abbreviation": "VS AP",
+                    "type": "vsaprankedteams",
+                    "displayValue": "0-0"
+                  },
+                  {
+                    "id": "6",
+                    "abbreviation": "VS USA",
+                    "type": "vsusarankedteams",
+                    "displayValue": "0-0"
+                  },
+                  {
+                    "id": "9",
+                    "abbreviation": "VS CONF",
+                    "displayName": "CONF",
+                    "shortDisplayName": "CONF",
+                    "description": "Conference Record",
+                    "type": "vsconf",
+                    "displayValue": "0-9"
+                  }
+                ],
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "290",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "290",
+                  "location": "Georgia Southern",
+                  "nickname": "GA Southern",
+                  "abbreviation": "GASO",
+                  "displayName": "Georgia Southern Eagles",
+                  "shortDisplayName": "GA Southern",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/290.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T19:35Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T19:35Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/468d28db-2303-28e9-84b0-30f4b5ea2170/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/290/georgia-southern-eagles",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/290",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/290",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/290",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/290",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/georgia-southern-eagles-mens-basketball-tickets--sports-ncaa-basketball/performer/5960?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "score": {
+                  "value": 37.0,
+                  "displayValue": "37"
+                },
+                "leaders": [
+                  {
+                    "name": "points",
+                    "displayName": "Points",
+                    "abbreviation": "Pts",
+                    "leaders": [
+                      {
+                        "displayValue": "10",
+                        "value": 10.0,
+                        "athlete": {
+                          "id": "5107226",
+                          "lastName": "Moore",
+                          "displayName": "Tyren Moore",
+                          "shortName": "T. Moore",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "splits",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107226/tyren-moore"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "assists",
+                    "displayName": "Assists",
+                    "abbreviation": "Ast",
+                    "leaders": [
+                      {
+                        "displayValue": "3",
+                        "value": 3.0,
+                        "athlete": {
+                          "id": "5107226",
+                          "lastName": "Moore",
+                          "displayName": "Tyren Moore",
+                          "shortName": "T. Moore",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "splits",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107226/tyren-moore"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "rebounds",
+                    "displayName": "Rebounds",
+                    "abbreviation": "Reb",
+                    "leaders": [
+                      {
+                        "displayValue": "2",
+                        "value": 2.0,
+                        "athlete": {
+                          "id": "5312449",
+                          "lastName": "Williams Jr",
+                          "displayName": "Dwayne Williams Jr",
+                          "shortName": "D. Williams Jr",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5312449/dwayne-williams-jr"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5312449/dwayne-williams-jr"
+                            },
+                            {
+                              "rel": [
+                                "splits",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5312449/dwayne-williams-jr"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5312449/dwayne-williams-jr"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5312449/dwayne-williams-jr"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5312449/dwayne-williams-jr"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5312449/dwayne-williams-jr"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "blocks",
+                    "displayName": "Blocks",
+                    "abbreviation": "Blk",
+                    "leaders": [
+                      {
+                        "displayValue": "1",
+                        "value": 1.0,
+                        "athlete": {
+                          "id": "5312456",
+                          "lastName": "Carter",
+                          "displayName": "Shainen Carter",
+                          "shortName": "S. Carter",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5312456/shainen-carter"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5312456/shainen-carter"
+                            },
+                            {
+                              "rel": [
+                                "splits",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5312456/shainen-carter"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5312456/shainen-carter"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5312456/shainen-carter"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5312456/shainen-carter"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5312456/shainen-carter"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "steals",
+                    "displayName": "Steals",
+                    "abbreviation": "Stl",
+                    "leaders": [
+                      {
+                        "displayValue": "2",
+                        "value": 2.0,
+                        "athlete": {
+                          "id": "4898382",
+                          "lastName": "Applewhite",
+                          "displayName": "Alden Applewhite",
+                          "shortName": "A. Applewhite",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/4898382/alden-applewhite"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/4898382/alden-applewhite"
+                            },
+                            {
+                              "rel": [
+                                "splits",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/4898382/alden-applewhite"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/4898382/alden-applewhite"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/4898382/alden-applewhite"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/4898382/alden-applewhite"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/4898382/alden-applewhite"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "PER",
+                    "displayName": "Player Efficiency Rating",
+                    "abbreviation": "PER"
+                  },
+                  {
+                    "name": "rating",
+                    "displayName": "Rating",
+                    "abbreviation": "RAT",
+                    "leaders": [
+                      {
+                        "displayValue": "10 PTS",
+                        "value": 16.799999237060547,
+                        "athlete": {
+                          "id": "5107226",
+                          "lastName": "Moore",
+                          "displayName": "Tyren Moore",
+                          "shortName": "T. Moore",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "splits",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5107226/tyren-moore"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107226/tyren-moore"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "record": [
+                  {
+                    "id": "0",
+                    "abbreviation": "Season",
+                    "displayName": "Team Season Record",
+                    "shortDisplayName": "Season",
+                    "description": "Overall Record",
+                    "type": "total",
+                    "displayValue": "13-9"
+                  },
+                  {
+                    "id": "2",
+                    "abbreviation": "Home",
+                    "displayName": "Home",
+                    "shortDisplayName": "HOME",
+                    "description": "Home Record",
+                    "type": "home",
+                    "displayValue": "8-3"
+                  },
+                  {
+                    "id": "3",
+                    "abbreviation": "AWAY",
+                    "displayName": "Away",
+                    "shortDisplayName": "AWAY",
+                    "description": "Away Record",
+                    "type": "road",
+                    "displayValue": "5-4"
+                  },
+                  {
+                    "id": "4",
+                    "abbreviation": "VS AP",
+                    "type": "vsaprankedteams",
+                    "displayValue": "0-0"
+                  },
+                  {
+                    "id": "6",
+                    "abbreviation": "VS USA",
+                    "type": "vsusarankedteams",
+                    "displayValue": "0-0"
+                  },
+                  {
+                    "id": "9",
+                    "abbreviation": "VS CONF",
+                    "displayName": "CONF",
+                    "shortDisplayName": "CONF",
+                    "description": "Conference Record",
+                    "type": "vsconf",
+                    "displayValue": "5-4"
+                  }
+                ],
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 1,
+              "type": {
+                "id": "23",
+                "name": "STATUS_HALFTIME",
+                "state": "in",
+                "completed": false,
+                "description": "Halftime",
+                "detail": "Halftime",
+                "shortDetail": "Halftime"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "live",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game?gameId=401858731",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "live",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401858731",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "teamstats",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/matchup?gameId=401858731",
+            "text": "Team Stats",
+            "shortText": "Team Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "boxscore",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/boxscore/_/gameId/401858731",
+            "text": "Box Score",
+            "shortText": "Box Score",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "boxscore",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401858731",
+            "text": "Box Score",
+            "shortText": "Box Score",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "gamecast",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401858731",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "gamecast",
+              "mobile",
+              "event"
+            ],
+            "href": "https://m.espn.com/ncb/gamecast?gameId=401858731&action=summary",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "gamecast",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401858731",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "pbp",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/playbyplay/_/gameId/401858731",
+            "text": "Play-by-Play",
+            "shortText": "Play-by-Play",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "videos",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/video?gameId=401858731",
+            "text": "Videos",
+            "shortText": "Videos",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "5th in Sun Belt"
+  }
+}

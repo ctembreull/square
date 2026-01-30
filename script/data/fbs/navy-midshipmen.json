@@ -1,0 +1,334 @@
+{
+  "team": {
+    "id": "2426",
+    "uid": "s:20~l:23~t:2426",
+    "slug": "navy-midshipmen",
+    "location": "Navy",
+    "name": "Midshipmen",
+    "nickname": "Navy",
+    "abbreviation": "NAVY",
+    "displayName": "Navy Midshipmen",
+    "shortDisplayName": "Navy",
+    "color": "00225b",
+    "alternateColor": "b5a67c",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-23T22:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2426.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-23T22:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2025-12-26T21:02Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2025-12-26T21:02Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6d79fd87-3903-89aa-8028-da81638e6989/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "11-2",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 25.0
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 31.461538
+            },
+            {
+              "name": "differential",
+              "value": 84.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 13.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.875
+            },
+            {
+              "name": "losses",
+              "value": 2.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 84.0
+            },
+            {
+              "name": "points",
+              "value": 4.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 325.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 409.0
+            },
+            {
+              "name": "streak",
+              "value": 4.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.84615386
+            },
+            {
+              "name": "wins",
+              "value": 11.0
+            },
+            {
+              "name": "divisionLosses",
+              "value": 0.0
+            },
+            {
+              "name": "divisionRecord",
+              "value": 0.0
+            },
+            {
+              "name": "divisionTies",
+              "value": 0.0
+            },
+            {
+              "name": "divisionWins",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "151",
+      "parent": {
+        "id": "80"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/2426/navy-midshipmen",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/2426/navy-midshipmen",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/roster/_/id/2426",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/stats/_/id/2426",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/schedule/_/id/2426",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/navy-midshipmen-football-tickets--sports-ncaa-football/performer/1007?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "awards",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/awards/_/team/2426",
+        "text": "Awards",
+        "shortText": "Awards",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [],
+    "standingSummary": "1st in American",
+    "rank": 23
+  }
+}

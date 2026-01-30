@@ -1,0 +1,333 @@
+{
+  "team": {
+    "id": "183",
+    "uid": "s:20~l:23~t:183",
+    "slug": "syracuse-orange",
+    "location": "Syracuse",
+    "name": "Orange",
+    "nickname": "Syracuse",
+    "abbreviation": "SYR",
+    "displayName": "Syracuse Orange",
+    "shortDisplayName": "Syracuse",
+    "color": "000e54",
+    "alternateColor": "ff431b",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-19T22:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/183.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-19T22:35Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2025-12-20T21:09Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2025-12-20T21:10Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/8a53c7d6-5f95-d1c0-ed4e-374f53b04443/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "3-9",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 34.916668
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 20.166666
+            },
+            {
+              "name": "differential",
+              "value": -177.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 12.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.125
+            },
+            {
+              "name": "losses",
+              "value": 9.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 17.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -177.0
+            },
+            {
+              "name": "points",
+              "value": -3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 419.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 242.0
+            },
+            {
+              "name": "streak",
+              "value": -8.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.25
+            },
+            {
+              "name": "wins",
+              "value": 3.0
+            },
+            {
+              "name": "divisionLosses",
+              "value": 0.0
+            },
+            {
+              "name": "divisionRecord",
+              "value": 0.0
+            },
+            {
+              "name": "divisionTies",
+              "value": 0.0
+            },
+            {
+              "name": "divisionWins",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "1",
+      "parent": {
+        "id": "80"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/183/syracuse-orange",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/183/syracuse-orange",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/roster/_/id/183",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/stats/_/id/183",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/schedule/_/id/183",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/syracuse-orange-football-tickets--sports-ncaa-football/performer/1134?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "awards",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/awards/_/team/183",
+        "text": "Awards",
+        "shortText": "Awards",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [],
+    "standingSummary": "16th in ACC"
+  }
+}

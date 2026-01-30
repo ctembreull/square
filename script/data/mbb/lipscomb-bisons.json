@@ -1,0 +1,1035 @@
+{
+  "team": {
+    "id": "288",
+    "uid": "s:40~l:41~t:288",
+    "slug": "lipscomb-bisons",
+    "location": "Lipscomb",
+    "name": "Bisons",
+    "nickname": "Lipscomb",
+    "abbreviation": "LIP",
+    "displayName": "Lipscomb Bisons",
+    "shortDisplayName": "Lipscomb",
+    "color": "20366C",
+    "alternateColor": "f6b734",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/288.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/288.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:44Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "14-8",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 74.86364
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 80.90909
+            },
+            {
+              "name": "differential",
+              "value": 6.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 22.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.7777778
+            },
+            {
+              "name": "losses",
+              "value": 8.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 2.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 133.0
+            },
+            {
+              "name": "points",
+              "value": 3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1647.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1780.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.6363636
+            },
+            {
+              "name": "wins",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "11-0",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 67.09091
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 87.72727
+            },
+            {
+              "name": "differential",
+              "value": 20.60000000000001
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 0.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 2.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 227.0
+            },
+            {
+              "name": "points",
+              "value": 5.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 738.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 965.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 1.0
+            },
+            {
+              "name": "wins",
+              "value": 11.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "3-8",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 82.63636
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 74.09091
+            },
+            {
+              "name": "differential",
+              "value": -8.5
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 2.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.33333334
+            },
+            {
+              "name": "losses",
+              "value": 8.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 2.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -94.0
+            },
+            {
+              "name": "points",
+              "value": -2.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 909.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 815.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.27272728
+            },
+            {
+              "name": "wins",
+              "value": 3.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "46",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/288/lipscomb-bisons",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/288",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/288",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/288",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/288",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/lipscomb-university-bison-mens-basketball-tickets--sports-ncaa-basketball/performer/5978?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401807718",
+        "date": "2026-01-31T19:00Z",
+        "name": "Lipscomb Bisons at North Florida Ospreys",
+        "shortName": "LIP @ UNF",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401807718",
+            "date": "2026-01-31T19:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "UNF Arena",
+              "address": {
+                "city": "Jacksonville",
+                "state": "FL"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2454",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2454",
+                  "location": "North Florida",
+                  "nickname": "North Florida",
+                  "abbreviation": "UNF",
+                  "displayName": "North Florida Ospreys",
+                  "shortDisplayName": "North Florida",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2454.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2021-09-01T21:40Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2454.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2021-09-01T21:41Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c5e389ac-ff8c-be1e-ba86-c620499546b4/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:31Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2454/north-florida-ospreys",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2454",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2454",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2454",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2454",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/unf-ospreys-mens-basketball-tickets--sports-ncaa-basketball/performer/11695?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "288",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "288",
+                  "location": "Lipscomb",
+                  "nickname": "Lipscomb",
+                  "abbreviation": "LIP",
+                  "displayName": "Lipscomb Bisons",
+                  "shortDisplayName": "Lipscomb",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/288.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/288.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/e1e4dea8-7220-0955-6f10-0018b5dc3870/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:44Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/288/lipscomb-bisons",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/288",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/288",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/288",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/288",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/lipscomb-university-bison-mens-basketball-tickets--sports-ncaa-basketball/performer/5978?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "ESPN+",
+                  "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+                  "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "5907023",
+                "summary": "Tickets as low as $41",
+                "description": "Lipscomb University Bison at North Florida Ospreys Mens Basketball",
+                "maxPrice": 43.77,
+                "startingPrice": 41.42,
+                "numberAvailable": 16,
+                "totalPostings": 2,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/north-florida-ospreys-mens-basketball-tickets-university-of-north-florida-unf-arena-1-31-2026--sports-other-sports/production/5907023?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/university-of-north-florida-unf-arena-tickets.html?wsUser=717"
+                  }
+                ]
+              },
+              {
+                "id": "5907035",
+                "summary": "Tickets as low as $56",
+                "description": "North Florida Ospreys at Lipscomb University Bison Mens Basketball",
+                "maxPrice": 56.37,
+                "startingPrice": 56.37,
+                "numberAvailable": 4,
+                "totalPostings": 1,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/lipscomb-university-bison-mens-basketball-tickets-allen-arena-1-31-2026--sports-ncaa-basketball/production/5907035?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/allen-arena-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 2:00 PM EST",
+                "shortDetail": "1/31 - 2:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401807718/lipscomb-north-florida",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401807718",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/watchespn/index?gameId=401807718&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "app",
+              "event"
+            ],
+            "href": "watchespn://showEvent?gameId=401807718&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "2nd in ASUN"
+  }
+}

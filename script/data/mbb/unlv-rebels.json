@@ -1,0 +1,993 @@
+{
+  "team": {
+    "id": "2439",
+    "uid": "s:40~l:41~t:2439",
+    "slug": "unlv-rebels",
+    "location": "UNLV",
+    "name": "Rebels",
+    "nickname": "UNLV",
+    "abbreviation": "UNLV",
+    "displayName": "UNLV Rebels",
+    "shortDisplayName": "UNLV",
+    "color": "cf0a2c",
+    "alternateColor": "cac8c8",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-24T20:19Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2439.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-24T20:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2026-01-03T21:49Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2026-01-03T21:49Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:30Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "10-10",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 77.3
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 78.0
+            },
+            {
+              "name": "differential",
+              "value": 0.7000000000000028
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 7.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 20.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.5555556
+            },
+            {
+              "name": "losses",
+              "value": 10.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 6.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 14.0
+            },
+            {
+              "name": "points",
+              "value": 0.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1546.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1560.0
+            },
+            {
+              "name": "streak",
+              "value": -2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.5
+            },
+            {
+              "name": "wins",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "6-5",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 74.454544
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 81.36364
+            },
+            {
+              "name": "differential",
+              "value": 6.900000000000006
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 5.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.6
+            },
+            {
+              "name": "losses",
+              "value": 5.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 6.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 76.0
+            },
+            {
+              "name": "points",
+              "value": 0.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 819.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 895.0
+            },
+            {
+              "name": "streak",
+              "value": -2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.54545456
+            },
+            {
+              "name": "wins",
+              "value": 6.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "4-2",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 76.333336
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 76.166664
+            },
+            {
+              "name": "differential",
+              "value": -0.09999999999999432
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 6.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.5
+            },
+            {
+              "name": "losses",
+              "value": 2.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 6.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -1.0
+            },
+            {
+              "name": "points",
+              "value": 1.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 458.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 457.0
+            },
+            {
+              "name": "streak",
+              "value": -2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.6666667
+            },
+            {
+              "name": "wins",
+              "value": 4.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "44",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2439/unlv-rebels",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2439",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2439",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2439",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2439",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/unlv-rebels-mens-basketball-tickets--sports-ncaa-basketball/performer/3375?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401829317",
+        "date": "2026-01-31T03:00Z",
+        "name": "UNLV Rebels at Nevada Wolf Pack",
+        "shortName": "UNLV @ NEV",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401829317",
+            "date": "2026-01-31T03:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Lawlor Events Center",
+              "address": {
+                "city": "Reno",
+                "state": "NV"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2440",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2440",
+                  "location": "Nevada",
+                  "nickname": "Nevada",
+                  "abbreviation": "NEV",
+                  "displayName": "Nevada Wolf Pack",
+                  "shortDisplayName": "Nevada",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2440.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2026-01-03T21:25Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2026-01-03T21:26Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/38a3a703-7955-d45a-51a9-ede18b259a79/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2440/nevada-wolf-pack",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2440",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2440",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2440",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2440",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/nevada-wolf-pack-mens-basketball-tickets--sports-ncaa-basketball/performer/3698?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2439",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2439",
+                  "location": "UNLV",
+                  "nickname": "UNLV",
+                  "abbreviation": "UNLV",
+                  "displayName": "UNLV Rebels",
+                  "shortDisplayName": "UNLV",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2439.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2026-01-03T21:49Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2026-01-03T21:49Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/ebc6c53f-dcf4-63ca-5bb0-80f09127942a/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2439/unlv-rebels",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2439",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2439",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2439",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2439",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/unlv-rebels-mens-basketball-tickets--sports-ncaa-basketball/performer/3375?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "1",
+                  "shortName": "TV"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "CBSSN"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "6030090",
+                "summary": "Tickets as low as $28",
+                "description": "UNLV Rebels at Nevada Wolf Pack Mens Basketball",
+                "maxPrice": 226.83,
+                "startingPrice": 28.27,
+                "numberAvailable": 125,
+                "totalPostings": 34,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/nevada-wolf-pack-mens-basketball-tickets-lawlor-events-center-1-31-2026--sports-ncaa-basketball/production/6030090?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/lawlor-events-center-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Fri, January 30th at 10:00 PM EST",
+                "shortDetail": "1/30 - 10:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401829317/unlv-nevada",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401829317",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/preview/_/gameId/401829317",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "6th in Mountain West"
+  }
+}

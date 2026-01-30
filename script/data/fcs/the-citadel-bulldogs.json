@@ -1,0 +1,333 @@
+{
+  "team": {
+    "id": "2643",
+    "uid": "s:20~l:23~t:2643",
+    "slug": "the-citadel-bulldogs",
+    "location": "The Citadel",
+    "name": "Bulldogs",
+    "nickname": "The Citadel",
+    "abbreviation": "CIT",
+    "displayName": "The Citadel Bulldogs",
+    "shortDisplayName": "The Citadel",
+    "color": "7badd3",
+    "alternateColor": "002856",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2643.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-09-19T20:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2643.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-09-19T20:45Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2025-09-19T23:51Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2025-09-19T23:51Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/57e9b7de-a257-bc7b-165c-b944ff9d9531/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "4-8",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 26.833334
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 20.5
+            },
+            {
+              "name": "differential",
+              "value": -76.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 12.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.375
+            },
+            {
+              "name": "losses",
+              "value": 8.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 7.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -76.0
+            },
+            {
+              "name": "points",
+              "value": -2.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 322.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 246.0
+            },
+            {
+              "name": "streak",
+              "value": -3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.33333334
+            },
+            {
+              "name": "wins",
+              "value": 4.0
+            },
+            {
+              "name": "divisionLosses",
+              "value": 0.0
+            },
+            {
+              "name": "divisionRecord",
+              "value": 0.0
+            },
+            {
+              "name": "divisionTies",
+              "value": 0.0
+            },
+            {
+              "name": "divisionWins",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "29",
+      "parent": {
+        "id": "81"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/2643/the-citadel-bulldogs",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/2643/the-citadel-bulldogs",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/roster/_/id/2643",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/stats/_/id/2643",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/schedule/_/id/2643",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/citadel-bulldogs-football-tickets--sports-ncaa-football/performer/1407?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "awards",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/awards/_/team/2643",
+        "text": "Awards",
+        "shortText": "Awards",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [],
+    "standingSummary": "7th in Southern"
+  }
+}

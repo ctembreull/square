@@ -1,0 +1,333 @@
+{
+  "team": {
+    "id": "253",
+    "uid": "s:20~l:23~t:253",
+    "slug": "southern-utah-thunderbirds",
+    "location": "Southern Utah",
+    "name": "Thunderbirds",
+    "nickname": "Southern Utah",
+    "abbreviation": "SUU",
+    "displayName": "Southern Utah Thunderbirds",
+    "shortDisplayName": "Southern Utah",
+    "color": "c72026",
+    "alternateColor": "000000",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/253.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2023-03-16T14:51Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/253.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2023-03-16T14:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a1b94182-f48d-e796-47d4-acbdb5dc5d55/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:34Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "7-5",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 1.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 29.583334
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 33.75
+            },
+            {
+              "name": "differential",
+              "value": 50.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 12.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.75
+            },
+            {
+              "name": "losses",
+              "value": 5.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 50.0
+            },
+            {
+              "name": "points",
+              "value": 1.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 355.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 405.0
+            },
+            {
+              "name": "streak",
+              "value": 6.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.5833333
+            },
+            {
+              "name": "wins",
+              "value": 7.0
+            },
+            {
+              "name": "divisionLosses",
+              "value": 0.0
+            },
+            {
+              "name": "divisionRecord",
+              "value": 0.0
+            },
+            {
+              "name": "divisionTies",
+              "value": 0.0
+            },
+            {
+              "name": "divisionWins",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "177",
+      "parent": {
+        "id": "81"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/253/southern-utah-thunderbirds",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/253/southern-utah-thunderbirds",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/roster/_/id/253",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/stats/_/id/253",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/schedule/_/id/253",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/southern-utah-thunderbirds-football-tickets--sports-ncaa-football/performer/15279?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "awards",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/awards/_/team/253",
+        "text": "Awards",
+        "shortText": "Awards",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [],
+    "standingSummary": "3rd in UAC"
+  }
+}

@@ -1,0 +1,1039 @@
+{
+  "team": {
+    "id": "2244",
+    "uid": "s:40~l:54~t:2244",
+    "slug": "george-mason-patriots",
+    "location": "George Mason",
+    "name": "Patriots",
+    "nickname": "George Mason",
+    "abbreviation": "GMU",
+    "displayName": "George Mason Patriots",
+    "shortDisplayName": "George Mason",
+    "color": "016600",
+    "alternateColor": "ecb010",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2024-08-27T19:40Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2244.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2024-08-27T19:40Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:21Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "14-6",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 2.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 60.75
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 68.5
+            },
+            {
+              "name": "differential",
+              "value": 7.700000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 4.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 20.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 6.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 2.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 155.0
+            },
+            {
+              "name": "points",
+              "value": 4.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1215.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1370.0
+            },
+            {
+              "name": "streak",
+              "value": 8.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.7
+            },
+            {
+              "name": "wins",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "8-2",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 54.9
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 68.9
+            },
+            {
+              "name": "differential",
+              "value": 14.000000000000007
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 10.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 2.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 2.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 140.0
+            },
+            {
+              "name": "points",
+              "value": 3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 549.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 689.0
+            },
+            {
+              "name": "streak",
+              "value": 8.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.8
+            },
+            {
+              "name": "wins",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "6-2",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 62.125
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 66.375
+            },
+            {
+              "name": "differential",
+              "value": 4.300000000000004
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 2.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 8.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 2.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 2.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 34.0
+            },
+            {
+              "name": "points",
+              "value": 2.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 497.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 531.0
+            },
+            {
+              "name": "streak",
+              "value": 8.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.75
+            },
+            {
+              "name": "wins",
+              "value": 6.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "3",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/2244/george-mason-patriots",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=2244",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2244",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2244",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2244",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2244",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/george-mason-patriots-womens-basketball-tickets--sports-ncaa-basketball/performer/47504?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401829108",
+        "date": "2026-01-31T20:00Z",
+        "name": "Saint Louis Billikens at George Mason Patriots",
+        "shortName": "SLU @ GMU",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401829108",
+            "date": "2026-01-31T20:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "EagleBank Arena",
+              "address": {
+                "city": "Fairfax",
+                "state": "VA"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2244",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2244",
+                  "location": "George Mason",
+                  "nickname": "George Mason",
+                  "abbreviation": "GMU",
+                  "displayName": "George Mason Patriots",
+                  "shortDisplayName": "George Mason",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2024-08-27T19:40Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2244.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2024-08-27T19:40Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d3c4fda-349d-79a2-48c3-8d97e75dceb7/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:21Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2244/george-mason-patriots",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2244",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2244",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2244",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2244",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2244",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/george-mason-patriots-womens-basketball-tickets--sports-ncaa-basketball/performer/47504?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "139",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "139",
+                  "location": "Saint Louis",
+                  "nickname": "Saint Louis",
+                  "abbreviation": "SLU",
+                  "displayName": "Saint Louis Billikens",
+                  "shortDisplayName": "Saint Louis",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/139.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/5be53a10-6491-9b4f-a5b3-ee773e200e65/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:17Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/139/saint-louis-billikens",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=139",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/139",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/139",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/139",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/139",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/st-louis-billikens-womens-basketball-tickets--sports-ncaa-basketball/performer/55535?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "ESPN+",
+                  "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+                  "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "6159300",
+                "summary": "Tickets as low as $29",
+                "description": "Saint Louis Billikens at George Mason Patriots Womens Basketball",
+                "maxPrice": 104.86,
+                "startingPrice": 29.07,
+                "numberAvailable": 101,
+                "totalPostings": 11,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/george-mason-patriots-womens-basketball-tickets-eaglebank-arena-1-31-2026--sports-ncaa-womens-basketball/production/6159300?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/eaglebank-arena-tickets/venue/1301?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 3:00 PM EST",
+                "shortDetail": "1/31 - 3:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401829108/saint-louis-george-mason",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401829108",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/watchespn/index?gameId=401829108&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "app",
+              "event"
+            ],
+            "href": "watchespn://showEvent?gameId=401829108&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "1st in A-10"
+  }
+}

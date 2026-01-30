@@ -1,0 +1,1020 @@
+{
+  "team": {
+    "id": "2514",
+    "uid": "s:40~l:41~t:2514",
+    "slug": "quinnipiac-bobcats",
+    "location": "Quinnipiac",
+    "name": "Bobcats",
+    "nickname": "Quinnipiac",
+    "abbreviation": "QUIN",
+    "displayName": "Quinnipiac Bobcats",
+    "shortDisplayName": "Quinnipiac",
+    "color": "041B43",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2514.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "14-8",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 72.90909
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 77.13636
+            },
+            {
+              "name": "differential",
+              "value": 4.199999999999989
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 22.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.6363636
+            },
+            {
+              "name": "losses",
+              "value": 8.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 5.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 93.0
+            },
+            {
+              "name": "points",
+              "value": 3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1604.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1697.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.6363636
+            },
+            {
+              "name": "wins",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "8-2",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 68.2
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 77.8
+            },
+            {
+              "name": "differential",
+              "value": 9.599999999999994
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 10.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.8
+            },
+            {
+              "name": "losses",
+              "value": 2.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 5.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 96.0
+            },
+            {
+              "name": "points",
+              "value": 3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 682.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 778.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.8
+            },
+            {
+              "name": "wins",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "6-6",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 76.833336
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 76.583336
+            },
+            {
+              "name": "differential",
+              "value": -0.20000000000000284
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 12.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.5
+            },
+            {
+              "name": "losses",
+              "value": 6.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 5.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -3.0
+            },
+            {
+              "name": "points",
+              "value": 0.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 922.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 919.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.5
+            },
+            {
+              "name": "wins",
+              "value": 6.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "13",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2514/quinnipiac-bobcats",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2514",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2514",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2514",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2514",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/quinnipiac-bobcats-mens-basketball-tickets--sports-ncaa-basketball/performer/6012?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401820590",
+        "date": "2026-01-31T00:00Z",
+        "name": "Sacred Heart Pioneers at Quinnipiac Bobcats",
+        "shortName": "SHU @ QUIN",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401820590",
+            "date": "2026-01-31T00:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "M&T Bank Arena",
+              "address": {
+                "city": "Hamden",
+                "state": "CT"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2514",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2514",
+                  "location": "Quinnipiac",
+                  "nickname": "Quinnipiac",
+                  "abbreviation": "QUIN",
+                  "displayName": "Quinnipiac Bobcats",
+                  "shortDisplayName": "Quinnipiac",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2514.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f1407169-9e37-fda6-f2d2-f2c18f670ea9/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2514/quinnipiac-bobcats",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2514",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2514",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2514",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2514",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/quinnipiac-bobcats-mens-basketball-tickets--sports-ncaa-basketball/performer/6012?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2529",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2529",
+                  "location": "Sacred Heart",
+                  "nickname": "Sacred Heart",
+                  "abbreviation": "SHU",
+                  "displayName": "Sacred Heart Pioneers",
+                  "shortDisplayName": "Sacred Heart",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2529.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-01-25T21:35Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2529.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-01-25T21:35Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a981a8a9-051d-63df-d165-414e3a40f5da/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:34Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2529/sacred-heart-pioneers",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2529",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2529",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2529",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2529",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/sacred-heart-pioneers-mens-basketball-tickets--sports-ncaa-basketball/performer/6019?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "ESPN+",
+                  "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+                  "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "5974802",
+                "summary": "Tickets as low as $20",
+                "description": "Sacred Heart Pioneers at Quinnipiac Bobcats Mens Basketball",
+                "maxPrice": 28.53,
+                "startingPrice": 20.78,
+                "numberAvailable": 16,
+                "totalPostings": 2,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/quinnipiac-bobcats-mens-basketball-tickets-mt-bank-arena-1-30-2026--sports-ncaa-basketball/production/5974802?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/mp26t-bank-arena-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Fri, January 30th at 7:00 PM EST",
+                "shortDetail": "1/30 - 7:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401820590/sacred-heart-quinnipiac",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401820590",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/preview/_/gameId/401820590",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/watchespn/index?gameId=401820590&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "app",
+              "event"
+            ],
+            "href": "watchespn://showEvent?gameId=401820590&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "4th in MAAC"
+  }
+}

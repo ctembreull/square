@@ -1,0 +1,993 @@
+{
+  "team": {
+    "id": "71",
+    "uid": "s:40~l:41~t:71",
+    "slug": "bradley-braves",
+    "location": "Bradley",
+    "name": "Braves",
+    "nickname": "Bradley",
+    "abbreviation": "BRAD",
+    "displayName": "Bradley Braves",
+    "shortDisplayName": "Bradley",
+    "color": "b70002",
+    "alternateColor": "c0c0c0",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/71.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2023-01-24T18:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/71.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2023-01-24T18:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:50Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "14-8",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 2.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 73.27273
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 77.681816
+            },
+            {
+              "name": "differential",
+              "value": 4.400000000000006
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 5.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 22.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.6363636
+            },
+            {
+              "name": "losses",
+              "value": 8.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 5.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 97.0
+            },
+            {
+              "name": "points",
+              "value": 3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1612.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1709.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.6363636
+            },
+            {
+              "name": "wins",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "10-2",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 66.833336
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 77.916664
+            },
+            {
+              "name": "differential",
+              "value": 11.100000000000009
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 12.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.8333333
+            },
+            {
+              "name": "losses",
+              "value": 2.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 133.0
+            },
+            {
+              "name": "points",
+              "value": 4.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 802.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 935.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.8333333
+            },
+            {
+              "name": "wins",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "2-4",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 87.666664
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 78.666664
+            },
+            {
+              "name": "differential",
+              "value": -9.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 5.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 6.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.4
+            },
+            {
+              "name": "losses",
+              "value": 4.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -54.0
+            },
+            {
+              "name": "points",
+              "value": -1.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 526.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 472.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.33333334
+            },
+            {
+              "name": "wins",
+              "value": 2.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "18",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/71/bradley-braves",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/71",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/71",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/71",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/71",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/bradley-braves-mens-basketball-tickets--sports-ncaa-basketball/performer/3683?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401830228",
+        "date": "2026-01-31T23:00Z",
+        "name": "Bradley Braves at Drake Bulldogs",
+        "shortName": "BRAD @ DRKE",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401830228",
+            "date": "2026-01-31T23:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Knapp Center",
+              "address": {
+                "city": "Des Moines",
+                "state": "IA"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2181",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2181",
+                  "location": "Drake",
+                  "nickname": "Drake",
+                  "abbreviation": "DRKE",
+                  "displayName": "Drake Bulldogs",
+                  "shortDisplayName": "Drake",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2181.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-12-13T21:29Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2181.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/0d71277f-f5f6-eb01-0657-b00d51ac0bad/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2181/drake-bulldogs",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2181",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2181",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2181",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2181",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/drake-bulldogs-mens-basketball-tickets--sports-ncaa-basketball/performer/3685?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "71",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "71",
+                  "location": "Bradley",
+                  "nickname": "Bradley",
+                  "abbreviation": "BRAD",
+                  "displayName": "Bradley Braves",
+                  "shortDisplayName": "Bradley",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/71.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-01-24T18:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/71.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-01-24T18:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/37ab89ca-ee32-d4c3-ce1f-7e10d571783c/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:50Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/71/bradley-braves",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/71",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/71",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/71",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/71",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/bradley-braves-mens-basketball-tickets--sports-ncaa-basketball/performer/3683?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "1",
+                  "shortName": "TV"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "CBSSN"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "6109720",
+                "summary": "Tickets as low as $12",
+                "description": "Bradley Braves at Drake Bulldogs Mens Basketball",
+                "maxPrice": 308.09,
+                "startingPrice": 12.08,
+                "numberAvailable": 117,
+                "totalPostings": 37,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/drake-bulldogs-mens-basketball-tickets-drake-knapp-center-1-31-2026--sports-ncaa-basketball/production/6109720?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/drake-knapp-center-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 6:00 PM EST",
+                "shortDetail": "1/31 - 6:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401830228/bradley-drake",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401830228",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/preview/_/gameId/401830228",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "3rd in MVC"
+  }
+}

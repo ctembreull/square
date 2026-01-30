@@ -1,0 +1,1007 @@
+{
+  "team": {
+    "id": "2016",
+    "uid": "s:40~l:54~t:2016",
+    "slug": "alcorn-state-lady-braves",
+    "location": "Alcorn State",
+    "name": "Lady Braves",
+    "nickname": "Alcorn St",
+    "abbreviation": "ALCN",
+    "displayName": "Alcorn State Lady Braves",
+    "shortDisplayName": "Alcorn St",
+    "color": "4b0058",
+    "alternateColor": "46166a",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2024-08-21T18:58Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2016.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2024-08-21T18:58Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:15Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "9-9",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 61.555557
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 54.0
+            },
+            {
+              "name": "differential",
+              "value": -7.600000000000001
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 18.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.85714287
+            },
+            {
+              "name": "losses",
+              "value": 9.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -136.0
+            },
+            {
+              "name": "points",
+              "value": 0.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1108.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 972.0
+            },
+            {
+              "name": "streak",
+              "value": 4.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.5
+            },
+            {
+              "name": "wins",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "5-2",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 54.714287
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 65.42857
+            },
+            {
+              "name": "differential",
+              "value": 10.700000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 7.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 2.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 75.0
+            },
+            {
+              "name": "points",
+              "value": 1.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 383.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 458.0
+            },
+            {
+              "name": "streak",
+              "value": 4.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.71428573
+            },
+            {
+              "name": "wins",
+              "value": 5.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "4-6",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 66.0
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 46.3
+            },
+            {
+              "name": "differential",
+              "value": -19.700000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 10.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.8
+            },
+            {
+              "name": "losses",
+              "value": 6.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -197.0
+            },
+            {
+              "name": "points",
+              "value": -1.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 660.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 463.0
+            },
+            {
+              "name": "streak",
+              "value": 4.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.4
+            },
+            {
+              "name": "wins",
+              "value": 4.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "26",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/2016/alcorn-state-lady-braves",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=2016",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2016",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2016",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2016",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2016",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/alcorn-state-braves-womens-basketball-tickets--sports-ncaa-basketball/performer/55565?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401830110",
+        "date": "2026-01-31T19:00Z",
+        "name": "Southern Jaguars at Alcorn State Lady Braves",
+        "shortName": "SOU @ ALCN",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401830110",
+            "date": "2026-01-31T19:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Davey L. Whitney Complex",
+              "address": {
+                "city": "Lorman",
+                "state": "MS"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2016",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2016",
+                  "location": "Alcorn State",
+                  "nickname": "Alcorn St",
+                  "abbreviation": "ALCN",
+                  "displayName": "Alcorn State Lady Braves",
+                  "shortDisplayName": "Alcorn St",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2024-08-21T18:58Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2016.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2024-08-21T18:58Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/36ebc598-bf60-7527-9307-024280527c47/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:15Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2016/alcorn-state-lady-braves",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2016",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2016",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2016",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2016",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2016",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/alcorn-state-braves-womens-basketball-tickets--sports-ncaa-basketball/performer/55565?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2582",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2582",
+                  "location": "Southern",
+                  "nickname": "Southern",
+                  "abbreviation": "SOU",
+                  "displayName": "Southern Jaguars",
+                  "shortDisplayName": "Southern",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2582.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2582.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/31ecc064-19f2-5b64-318f-b45ba5255caf/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:36Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2582/southern-jaguars",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2582",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2582",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2582",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2582",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2582",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/southern-jaguars-womens-basketball-tickets--sports-ncaa-basketball/performer/46136?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [],
+            "tickets": [
+              {
+                "id": "6365379",
+                "summary": "Tickets as low as $35",
+                "description": "Southern Jaguars at Alcorn State Braves Womens Basketball",
+                "maxPrice": 35.04,
+                "startingPrice": 35.04,
+                "numberAvailable": 10,
+                "totalPostings": 1,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/alcorn-state-braves-womens-basketball-tickets-davey-whitney-complex-1-31-2026--sports-ncaa-basketball/production/6365379?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/davey-whitney-complex-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 2:00 PM EST",
+                "shortDetail": "1/31 - 2:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401830110/southern-alcorn-st",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401830110",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/preview/_/gameId/401830110",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "3rd in SWAC"
+  }
+}

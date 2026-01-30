@@ -1,0 +1,333 @@
+{
+  "team": {
+    "id": "2296",
+    "uid": "s:20~l:23~t:2296",
+    "slug": "jackson-state-tigers",
+    "location": "Jackson State",
+    "name": "Tigers",
+    "nickname": "Jackson St",
+    "abbreviation": "JKST",
+    "displayName": "Jackson State Tigers",
+    "shortDisplayName": "Jackson St",
+    "color": "123297",
+    "alternateColor": "b5b7ba",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2296.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6485327c-0bce-5a0e-9d3e-9ca621500292/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:25Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "9-3",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 18.75
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 32.833332
+            },
+            {
+              "name": "differential",
+              "value": 169.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 12.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.875
+            },
+            {
+              "name": "losses",
+              "value": 3.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 169.0
+            },
+            {
+              "name": "points",
+              "value": 3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 225.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 394.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.75
+            },
+            {
+              "name": "wins",
+              "value": 9.0
+            },
+            {
+              "name": "divisionLosses",
+              "value": 0.0
+            },
+            {
+              "name": "divisionRecord",
+              "value": 0.0
+            },
+            {
+              "name": "divisionTies",
+              "value": 0.0
+            },
+            {
+              "name": "divisionWins",
+              "value": 5.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "33",
+      "parent": {
+        "id": "31"
+      },
+      "isConference": false
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/2296/jackson-state-tigers",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/2296/jackson-state-tigers",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/roster/_/id/2296",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/stats/_/id/2296",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/schedule/_/id/2296",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/jackson-state-tigers-football-tickets--sports-ncaa-football/performer/7201?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "awards",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/awards/_/team/2296",
+        "text": "Awards",
+        "shortText": "Awards",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [],
+    "standingSummary": "1st in SWAC - East"
+  }
+}

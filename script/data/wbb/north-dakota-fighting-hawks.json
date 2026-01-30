@@ -1,0 +1,1040 @@
+{
+  "team": {
+    "id": "155",
+    "uid": "s:40~l:54~t:155",
+    "slug": "north-dakota-fighting-hawks",
+    "location": "North Dakota",
+    "name": "Fighting Hawks",
+    "nickname": "North Dakota",
+    "abbreviation": "UND",
+    "displayName": "North Dakota Fighting Hawks",
+    "shortDisplayName": "North Dakota",
+    "color": "00A26B",
+    "alternateColor": "c2c3c0",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2023-01-20T22:36Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/155.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2023-01-20T22:35Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:23Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "4-17",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 71.190475
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 57.57143
+            },
+            {
+              "name": "differential",
+              "value": -13.600000000000001
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 15.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 21.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.125
+            },
+            {
+              "name": "losses",
+              "value": 17.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 8.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -286.0
+            },
+            {
+              "name": "points",
+              "value": -6.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1495.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1209.0
+            },
+            {
+              "name": "streak",
+              "value": -5.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.1904762
+            },
+            {
+              "name": "wins",
+              "value": 4.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "4-7",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 68.90909
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 63.363636
+            },
+            {
+              "name": "differential",
+              "value": -5.500000000000007
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 5.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.25
+            },
+            {
+              "name": "losses",
+              "value": 7.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 8.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -61.0
+            },
+            {
+              "name": "points",
+              "value": -1.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 758.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 697.0
+            },
+            {
+              "name": "streak",
+              "value": -5.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.36363637
+            },
+            {
+              "name": "wins",
+              "value": 4.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "0-8",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 75.875
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 51.25
+            },
+            {
+              "name": "differential",
+              "value": -24.60000000000001
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 8.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 8.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "losses",
+              "value": 8.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 8.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -197.0
+            },
+            {
+              "name": "points",
+              "value": -4.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 607.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 410.0
+            },
+            {
+              "name": "streak",
+              "value": -5.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.0
+            },
+            {
+              "name": "wins",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "47",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/155/north-dakota-fighting-hawks",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=155",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/155",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/155",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/155",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/155",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/north-dakota-fighting-hawks-womens-basketball-tickets--sports-ncaa-basketball/performer/35001?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401818478",
+        "date": "2026-01-31T19:00Z",
+        "name": "Denver Pioneers at North Dakota Fighting Hawks",
+        "shortName": "DEN @ UND",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401818478",
+            "date": "2026-01-31T19:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Betty Engelstad Sioux Center",
+              "address": {
+                "city": "Grand Forks",
+                "state": "ND"
+              }
+            },
+            "competitors": [
+              {
+                "id": "155",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "155",
+                  "location": "North Dakota",
+                  "nickname": "North Dakota",
+                  "abbreviation": "UND",
+                  "displayName": "North Dakota Fighting Hawks",
+                  "shortDisplayName": "North Dakota",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-01-20T22:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/155.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-01-20T22:35Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c7803756-eec6-1d11-34f4-46211417803f/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:23Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/155/north-dakota-fighting-hawks",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=155",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/155",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/155",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/155",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/155",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/north-dakota-fighting-hawks-womens-basketball-tickets--sports-ncaa-basketball/performer/35001?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2172",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2172",
+                  "location": "Denver",
+                  "nickname": "Denver",
+                  "abbreviation": "DEN",
+                  "displayName": "Denver Pioneers",
+                  "shortDisplayName": "Denver",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-03-01T14:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2172.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-03-01T14:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/76de2ac3-229b-4904-d7dd-7ecc78824a7e/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:19Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2172/denver-pioneers",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2172",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2172",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2172",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2172",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2172",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/denver-pioneers-womens-basketball-tickets--sports-ncaa-basketball/performer/55575?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "2",
+                  "type": "Home"
+                },
+                "media": {
+                  "shortName": "Summit League Network"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              },
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "2",
+                  "type": "Home"
+                },
+                "media": {
+                  "shortName": "Midco Sports Plus"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "6134542",
+                "summary": "Tickets as low as $27",
+                "description": "Denver Pioneers at North Dakota Fighting Hawks Womens Basketball",
+                "maxPrice": 199.83,
+                "startingPrice": 27.48,
+                "numberAvailable": 1212,
+                "totalPostings": 189,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/north-dakota-fighting-hawks-womens-basketball-tickets-betty-engelstad-sioux-center-1-31-2026--sports-ncaa-womens-basketball/production/6134542?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/betty-engelstad-sioux-center-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 2:00 PM EST",
+                "shortDetail": "1/31 - 2:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401818478/denver-north-dakota",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401818478",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/preview/_/gameId/401818478",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "8th in Summit"
+  }
+}

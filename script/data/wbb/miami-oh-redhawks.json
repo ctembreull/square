@@ -1,0 +1,1039 @@
+{
+  "team": {
+    "id": "193",
+    "uid": "s:40~l:54~t:193",
+    "slug": "miami-oh-redhawks",
+    "location": "Miami (OH)",
+    "name": "RedHawks",
+    "nickname": "Miami OH",
+    "abbreviation": "M-OH",
+    "displayName": "Miami (OH) RedHawks",
+    "shortDisplayName": "Miami OH",
+    "color": "c41230",
+    "alternateColor": "ffffff",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-24T20:19Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/193.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-24T20:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2025-12-30T15:13Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2025-12-30T15:13Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:11Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "17-4",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 57.190475
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 71.0
+            },
+            {
+              "name": "differential",
+              "value": 13.799999999999997
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 21.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 4.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 1.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 290.0
+            },
+            {
+              "name": "points",
+              "value": 6.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1201.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1491.0
+            },
+            {
+              "name": "streak",
+              "value": 10.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.8095238
+            },
+            {
+              "name": "wins",
+              "value": 17.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "8-0",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 51.75
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 76.0
+            },
+            {
+              "name": "differential",
+              "value": 24.200000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 8.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 0.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 1.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 194.0
+            },
+            {
+              "name": "points",
+              "value": 4.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 414.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 608.0
+            },
+            {
+              "name": "streak",
+              "value": 10.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 1.0
+            },
+            {
+              "name": "wins",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "8-3",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 61.727272
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 68.454544
+            },
+            {
+              "name": "differential",
+              "value": 6.799999999999997
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 3.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 1.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 74.0
+            },
+            {
+              "name": "points",
+              "value": 2.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 679.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 753.0
+            },
+            {
+              "name": "streak",
+              "value": 10.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.72727275
+            },
+            {
+              "name": "wins",
+              "value": 8.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "14",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/193/miami-oh-redhawks",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=193",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/193",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/193",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/193",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/193",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/miami-redhawks-womens-basketball-tickets--sports-ncaa-basketball/performer/55540?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401814648",
+        "date": "2026-01-31T18:00Z",
+        "name": "Ohio Bobcats at Miami (OH) RedHawks",
+        "shortName": "OHIO @ M-OH",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401814648",
+            "date": "2026-01-31T18:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Millett Hall",
+              "address": {
+                "city": "Oxford",
+                "state": "OH"
+              }
+            },
+            "competitors": [
+              {
+                "id": "193",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "193",
+                  "location": "Miami (OH)",
+                  "nickname": "Miami OH",
+                  "abbreviation": "M-OH",
+                  "displayName": "Miami (OH) RedHawks",
+                  "shortDisplayName": "Miami OH",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/193.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:11Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:11Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2025-12-30T15:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2025-12-30T15:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:11Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:11Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:11Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/f8584974-3c8d-f568-b6ef-4d21e4854b09/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:11Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/193/miami-oh-redhawks",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=193",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/193",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/193",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/193",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/193",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/miami-redhawks-womens-basketball-tickets--sports-ncaa-basketball/performer/55540?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "195",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "195",
+                  "location": "Ohio",
+                  "nickname": "Ohio",
+                  "abbreviation": "OHIO",
+                  "displayName": "Ohio Bobcats",
+                  "shortDisplayName": "Ohio",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/195.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2026-01-06T15:11Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2026-01-06T15:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/2e7fe273-7d19-1b62-7254-6c1f6acbd321/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:12Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/195/ohio-bobcats",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=195",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/195",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/195",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/195",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/195",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/ohio-bobcats-womens-basketball-tickets--sports-ncaa-basketball/performer/55541?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "ESPN+",
+                  "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+                  "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "5956328",
+                "summary": "Tickets as low as $49",
+                "description": "Ohio Bobcats at Miami RedHawks Womens Basketball",
+                "maxPrice": 49.34,
+                "startingPrice": 49.34,
+                "numberAvailable": 4,
+                "totalPostings": 1,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/miami-redhawks-womens-basketball-tickets-millett-hall-1-31-2026--sports-ncaa-womens-basketball/production/5956328?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/millett-hall-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 1:00 PM EST",
+                "shortDetail": "1/31 - 1:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401814648/ohio-miami-oh",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401814648",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/watchespn/index?gameId=401814648&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "app",
+              "event"
+            ],
+            "href": "watchespn://showEvent?gameId=401814648&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "1st in MAC"
+  }
+}

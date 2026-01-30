@@ -1,0 +1,1027 @@
+{
+  "team": {
+    "id": "140",
+    "uid": "s:40~l:54~t:140",
+    "slug": "kansas-city-roos",
+    "location": "Kansas City",
+    "name": "Roos",
+    "nickname": "Kansas City",
+    "abbreviation": "KC",
+    "displayName": "Kansas City Roos",
+    "shortDisplayName": "Kansas City",
+    "color": "004b87",
+    "alternateColor": "ffc72c",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/140.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2023-01-20T22:36Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/140.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2023-01-20T22:35Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:18Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "6-15",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 2.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 68.809525
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 69.61905
+            },
+            {
+              "name": "differential",
+              "value": 0.7999999999999972
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 13.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 21.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.375
+            },
+            {
+              "name": "losses",
+              "value": 15.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 7.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 17.0
+            },
+            {
+              "name": "points",
+              "value": -4.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1445.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1462.0
+            },
+            {
+              "name": "streak",
+              "value": -2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.2857143
+            },
+            {
+              "name": "wins",
+              "value": 6.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "5-6",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 62.636364
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 73.90909
+            },
+            {
+              "name": "differential",
+              "value": 11.300000000000004
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 4.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.5
+            },
+            {
+              "name": "losses",
+              "value": 6.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 6.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 124.0
+            },
+            {
+              "name": "points",
+              "value": -0.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 689.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 813.0
+            },
+            {
+              "name": "streak",
+              "value": -2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.45454547
+            },
+            {
+              "name": "wins",
+              "value": 5.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "1-9",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 75.6
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 64.9
+            },
+            {
+              "name": "differential",
+              "value": -10.699999999999989
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 8.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 10.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.25
+            },
+            {
+              "name": "losses",
+              "value": 9.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 6.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -107.0
+            },
+            {
+              "name": "points",
+              "value": -4.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 756.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 649.0
+            },
+            {
+              "name": "streak",
+              "value": -2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.1
+            },
+            {
+              "name": "wins",
+              "value": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "47",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/140/kansas-city-roos",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=140",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/140",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/140",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/140",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/140",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/kansas-city-roos-womens-basketball-tickets--sports-ncaa-basketball/performer/120856?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401818479",
+        "date": "2026-01-31T19:00Z",
+        "name": "Kansas City Roos at Omaha Mavericks",
+        "shortName": "KC @ OMA",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401818479",
+            "date": "2026-01-31T19:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Baxter Arena",
+              "address": {
+                "city": "Omaha",
+                "state": "NE"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2437",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2437",
+                  "location": "Omaha",
+                  "nickname": "Omaha",
+                  "abbreviation": "OMA",
+                  "displayName": "Omaha Mavericks",
+                  "shortDisplayName": "Omaha",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2437.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2437.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/adef3142-9d2f-5898-e16c-8a0c41deb2fb/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:30Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2437/omaha-mavericks",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2437",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2437",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2437",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2437",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2437",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/nebraska-omaha-mavericks-womens-basketball-tickets--sports-ncaa-basketball/performer/46280?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "140",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "140",
+                  "location": "Kansas City",
+                  "nickname": "Kansas City",
+                  "abbreviation": "KC",
+                  "displayName": "Kansas City Roos",
+                  "shortDisplayName": "Kansas City",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/140.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-01-20T22:36Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/140.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-01-20T22:35Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6c23fc01-9824-57cc-6e5a-f9c0e0b99a8c/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:18Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/140/kansas-city-roos",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=140",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/140",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/140",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/140",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/140",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/kansas-city-roos-womens-basketball-tickets--sports-ncaa-basketball/performer/120856?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "2",
+                  "type": "Home"
+                },
+                "media": {
+                  "shortName": "Summit League Network"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              },
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "2",
+                  "type": "Home"
+                },
+                "media": {
+                  "shortName": "Midco Sports Plus"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "5955401",
+                "summary": "Tickets as low as $25",
+                "description": "Kansas City Roos at Nebraska Omaha Mavericks Womens Basketball",
+                "maxPrice": 551.73,
+                "startingPrice": 25.44,
+                "numberAvailable": 740,
+                "totalPostings": 122,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/nebraska-omaha-mavericks-womens-basketball-tickets-baxter-arena-1-31-2026--sports-ncaa-womens-basketball/production/5955401?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/baxter-arena-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 2:00 PM EST",
+                "shortDetail": "1/31 - 2:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401818479/kansas-city-omaha",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401818479",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "5th in Summit"
+  }
+}

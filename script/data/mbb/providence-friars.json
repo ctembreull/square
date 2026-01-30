@@ -1,0 +1,993 @@
+{
+  "team": {
+    "id": "2507",
+    "uid": "s:40~l:41~t:2507",
+    "slug": "providence-friars",
+    "location": "Providence",
+    "name": "Friars",
+    "nickname": "Providence",
+    "abbreviation": "PROV",
+    "displayName": "Providence Friars",
+    "shortDisplayName": "Providence",
+    "color": "000000",
+    "alternateColor": "a3a19e",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2023-03-15T19:32Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2507.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2023-03-17T15:50Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:33Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "9-12",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 4.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 86.09524
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 88.7619
+            },
+            {
+              "name": "differential",
+              "value": 2.700000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 11.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 21.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.2
+            },
+            {
+              "name": "losses",
+              "value": 12.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 11.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 56.0
+            },
+            {
+              "name": "points",
+              "value": -1.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1808.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1864.0
+            },
+            {
+              "name": "streak",
+              "value": -3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.42857143
+            },
+            {
+              "name": "wins",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "7-4",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 79.27273
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 89.181816
+            },
+            {
+              "name": "differential",
+              "value": 9.900000000000006
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 3.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.2
+            },
+            {
+              "name": "losses",
+              "value": 4.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 11.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 109.0
+            },
+            {
+              "name": "points",
+              "value": 1.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 872.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 981.0
+            },
+            {
+              "name": "streak",
+              "value": -3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.6363636
+            },
+            {
+              "name": "wins",
+              "value": 7.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "1-5",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 95.0
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 90.666664
+            },
+            {
+              "name": "differential",
+              "value": -4.299999999999997
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 5.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 6.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.2
+            },
+            {
+              "name": "losses",
+              "value": 5.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 11.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -26.0
+            },
+            {
+              "name": "points",
+              "value": -2.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 570.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 544.0
+            },
+            {
+              "name": "streak",
+              "value": -3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.16666667
+            },
+            {
+              "name": "wins",
+              "value": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "4",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2507/providence-friars",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2507",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2507",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2507",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2507",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/providence-college-friars-mens-basketball-tickets--sports-ncaa-basketball/performer/3666?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401822922",
+        "date": "2026-01-31T00:00Z",
+        "name": "Providence Friars at Villanova Wildcats",
+        "shortName": "PROV @ VILL",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401822922",
+            "date": "2026-01-31T00:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Finneran Pavilion",
+              "address": {
+                "city": "Villanova",
+                "state": "PA"
+              }
+            },
+            "competitors": [
+              {
+                "id": "222",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "222",
+                  "location": "Villanova",
+                  "nickname": "Villanova",
+                  "abbreviation": "VILL",
+                  "displayName": "Villanova Wildcats",
+                  "shortDisplayName": "Villanova",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/222.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2022-12-09T15:57Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/222.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2022-12-09T15:58Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/23f9f5b0-fd83-d350-3f1f-8db1cf389d85/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:20Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/222/villanova-wildcats",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/222",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/222",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/222",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/222",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/villanova-wildcats-mens-basketball-tickets--sports-ncaa-basketball/performer/3384?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2507",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2507",
+                  "location": "Providence",
+                  "nickname": "Providence",
+                  "abbreviation": "PROV",
+                  "displayName": "Providence Friars",
+                  "shortDisplayName": "Providence",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-03-15T19:32Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2507.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-03-17T15:50Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/dba43170-9fc2-c859-6e26-dc482aee8c9f/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:33Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2507/providence-friars",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2507",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2507",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2507",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2507",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/providence-college-friars-mens-basketball-tickets--sports-ncaa-basketball/performer/3666?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "1",
+                  "shortName": "TV"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "FS1"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "6010461",
+                "summary": "Tickets as low as $91",
+                "description": "Providence College Friars at Villanova Wildcats Mens Basketball",
+                "maxPrice": 537.45,
+                "startingPrice": 91.72,
+                "numberAvailable": 76,
+                "totalPostings": 32,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/villanova-wildcats-mens-basketball-tickets-finneran-pavilion-1-30-2026--sports-ncaa-basketball/production/6010461?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/finneran-pavilion-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Fri, January 30th at 7:00 PM EST",
+                "shortDetail": "1/30 - 7:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401822922/providence-villanova",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401822922",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/preview/_/gameId/401822922",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "11th in Big East"
+  }
+}

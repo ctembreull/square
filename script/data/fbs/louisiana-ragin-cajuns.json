@@ -1,0 +1,333 @@
+{
+  "team": {
+    "id": "309",
+    "uid": "s:20~l:23~t:309",
+    "slug": "louisiana-ragin-cajuns",
+    "location": "Louisiana",
+    "name": "Ragin' Cajuns",
+    "nickname": "Louisiana",
+    "abbreviation": "UL",
+    "displayName": "Louisiana Ragin' Cajuns",
+    "shortDisplayName": "Louisiana",
+    "color": "ce181e",
+    "alternateColor": "000000",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/309.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-24T20:19Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/309.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-24T20:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:46Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:46Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2026-01-08T19:48Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2026-01-08T19:48Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:46Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:46Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:46Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/949cb228-b61b-3d98-8989-ab5fb86a5328/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:46Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "6-7",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 2.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 29.23077
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 26.0
+            },
+            {
+              "name": "differential",
+              "value": -42.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.6666667
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 13.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.625
+            },
+            {
+              "name": "losses",
+              "value": 7.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 5.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -42.0
+            },
+            {
+              "name": "points",
+              "value": -0.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 380.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 338.0
+            },
+            {
+              "name": "streak",
+              "value": -1.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.46153846
+            },
+            {
+              "name": "wins",
+              "value": 6.0
+            },
+            {
+              "name": "divisionLosses",
+              "value": 2.0
+            },
+            {
+              "name": "divisionRecord",
+              "value": 0.0
+            },
+            {
+              "name": "divisionTies",
+              "value": 0.0
+            },
+            {
+              "name": "divisionWins",
+              "value": 4.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "168",
+      "parent": {
+        "id": "37"
+      },
+      "isConference": false
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/309/louisiana-ragin-cajuns",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/_/id/309/louisiana-ragin-cajuns",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/roster/_/id/309",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/stats/_/id/309",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/team/schedule/_/id/309",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/louisiana-ragin-cajuns-football-tickets--sports-ncaa-football/performer/3709?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "awards",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/college-football/awards/_/team/309",
+        "text": "Awards",
+        "shortText": "Awards",
+        "isExternal": false,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [],
+    "standingSummary": "2nd in Sun Belt - West"
+  }
+}

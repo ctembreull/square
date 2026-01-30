@@ -1,0 +1,979 @@
+{
+  "team": {
+    "id": "2130",
+    "uid": "s:40~l:41~t:2130",
+    "slug": "chicago-state-cougars",
+    "location": "Chicago State",
+    "name": "Cougars",
+    "nickname": "Chicago St",
+    "abbreviation": "CHST",
+    "displayName": "Chicago State Cougars",
+    "shortDisplayName": "Chicago St",
+    "color": "006700",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2130.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2023-01-27T21:14Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2130.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2023-01-27T21:14Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:18Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "2-19",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 1.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 79.57143
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 65.0
+            },
+            {
+              "name": "differential",
+              "value": -14.599999999999994
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 11.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 21.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "losses",
+              "value": 19.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 10.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -306.0
+            },
+            {
+              "name": "points",
+              "value": -8.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1671.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1365.0
+            },
+            {
+              "name": "streak",
+              "value": -10.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.0952381
+            },
+            {
+              "name": "wins",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "1-5",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 69.333336
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 64.666664
+            },
+            {
+              "name": "differential",
+              "value": -4.599999999999994
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 4.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 6.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "losses",
+              "value": 5.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 10.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -28.0
+            },
+            {
+              "name": "points",
+              "value": -2.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 416.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 388.0
+            },
+            {
+              "name": "streak",
+              "value": -10.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.16666667
+            },
+            {
+              "name": "wins",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "1-14",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 83.666664
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 65.13333
+            },
+            {
+              "name": "differential",
+              "value": -18.60000000000001
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 6.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 15.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "losses",
+              "value": 14.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 10.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -278.0
+            },
+            {
+              "name": "points",
+              "value": -6.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1255.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 977.0
+            },
+            {
+              "name": "streak",
+              "value": -10.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.06666667
+            },
+            {
+              "name": "wins",
+              "value": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "19",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2130/chicago-state-cougars",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2130",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2130",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2130",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2130",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/chicago-state-cougars-mens-basketball-tickets--sports-ncaa-basketball/performer/5945?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401820220",
+        "date": "2026-01-31T19:00Z",
+        "name": "Mercyhurst Lakers at Chicago State Cougars",
+        "shortName": "MERC @ CHST",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401820220",
+            "date": "2026-01-31T19:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Jones Convocation Center",
+              "address": {
+                "city": "Chicago",
+                "state": "IL"
+              }
+            },
+            "competitors": [
+              {
+                "id": "2130",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "2130",
+                  "location": "Chicago State",
+                  "nickname": "Chicago St",
+                  "abbreviation": "CHST",
+                  "displayName": "Chicago State Cougars",
+                  "shortDisplayName": "Chicago St",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2130.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2023-01-27T21:14Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2130.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2023-01-27T21:14Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/25563060-ee9c-208a-fdc6-ff4f87911e3a/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:18Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2130/chicago-state-cougars",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2130",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2130",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2130",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2130",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/chicago-state-cougars-mens-basketball-tickets--sports-ncaa-basketball/performer/5945?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2385",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2385",
+                  "location": "Mercyhurst",
+                  "nickname": "Mercyhurst",
+                  "abbreviation": "MERC",
+                  "displayName": "Mercyhurst Lakers",
+                  "shortDisplayName": "Mercyhurst",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2385.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2385.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2018-06-05T12:08Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/9730bdcf-1dce-3ef2-ba2d-95415d535256/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:28Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2385/mercyhurst-lakers",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2385",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/2385",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2385",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/2385",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/mercyhurst-lakers-mens-basketball-tickets--sports-basketball/performer/96623?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "1",
+                  "shortName": "TV"
+                },
+                "market": {
+                  "id": "2",
+                  "type": "Home"
+                },
+                "media": {
+                  "shortName": "NEC Front Row"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "6119996",
+                "summary": "Tickets as low as $24",
+                "description": "Mercyhurst Lakers at Chicago State Cougars Mens Basketball",
+                "maxPrice": 100.91,
+                "startingPrice": 24.2,
+                "numberAvailable": 34,
+                "totalPostings": 4,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/chicago-state-cougars-mens-basketball-tickets-jones-convocation-center-1-31-2026--sports-ncaa-basketball/production/6119996?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/jones-convocation-center-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 2:00 PM EST",
+                "shortDetail": "1/31 - 2:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401820220/mercyhurst-chicago-st",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401820220",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "10th in NEC"
+  }
+}

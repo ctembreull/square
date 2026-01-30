@@ -1,0 +1,1011 @@
+{
+  "team": {
+    "id": "2483",
+    "uid": "s:40~l:54~t:2483",
+    "slug": "oregon-ducks",
+    "location": "Oregon",
+    "name": "Ducks",
+    "nickname": "Oregon",
+    "abbreviation": "ORE",
+    "displayName": "Oregon Ducks",
+    "shortDisplayName": "Oregon",
+    "color": "00934b",
+    "alternateColor": "fff41b",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-23T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2483.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-23T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:32Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:32Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2025-12-31T19:09Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2025-12-31T19:09Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:32Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:32Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:32Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:32Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "16-7",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 2.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 62.347828
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 77.91304
+            },
+            {
+              "name": "differential",
+              "value": 15.600000000000009
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 5.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 23.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.4
+            },
+            {
+              "name": "losses",
+              "value": 7.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 12.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 358.0
+            },
+            {
+              "name": "points",
+              "value": 4.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1434.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1792.0
+            },
+            {
+              "name": "streak",
+              "value": 2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.6956522
+            },
+            {
+              "name": "wins",
+              "value": 16.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "10-3",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 60.923077
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 82.92308
+            },
+            {
+              "name": "differential",
+              "value": 22.000000000000007
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 2.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 13.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.4
+            },
+            {
+              "name": "losses",
+              "value": 3.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 12.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 286.0
+            },
+            {
+              "name": "points",
+              "value": 3.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 792.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1078.0
+            },
+            {
+              "name": "streak",
+              "value": 2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.7692308
+            },
+            {
+              "name": "wins",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "4-3",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 68.42857
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 72.28571
+            },
+            {
+              "name": "differential",
+              "value": 3.8999999999999915
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 2.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 7.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.4
+            },
+            {
+              "name": "losses",
+              "value": 3.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 12.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 27.0
+            },
+            {
+              "name": "points",
+              "value": 0.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 479.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 506.0
+            },
+            {
+              "name": "streak",
+              "value": 2.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.5714286
+            },
+            {
+              "name": "wins",
+              "value": 4.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "7",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/2483/oregon-ducks",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=2483",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2483",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2483",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2483",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2483",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/oregon-ducks-womens-basketball-tickets--sports-ncaa-basketball/performer/39263?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401825310",
+        "date": "2026-01-31T22:00Z",
+        "name": "Oregon Ducks at Maryland Terrapins",
+        "shortName": "ORE @ MD",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401825310",
+            "date": "2026-01-31T22:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "XFINITY Center",
+              "address": {
+                "city": "College Park",
+                "state": "MD"
+              }
+            },
+            "competitors": [
+              {
+                "id": "120",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "120",
+                  "location": "Maryland",
+                  "nickname": "Maryland",
+                  "abbreviation": "MD",
+                  "displayName": "Maryland Terrapins",
+                  "shortDisplayName": "Maryland",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/120.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T18:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T18:21Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a988d662-ef82-d907-32bd-9ea740fc0cca/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/120/maryland-terrapins",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=120",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/120",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/120",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/120",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/120",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/maryland-terrapins-womens-basketball-tickets--sports-ncaa-basketball/performer/3239?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 16
+                }
+              },
+              {
+                "id": "2483",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "2483",
+                  "location": "Oregon",
+                  "nickname": "Oregon",
+                  "abbreviation": "ORE",
+                  "displayName": "Oregon Ducks",
+                  "shortDisplayName": "Oregon",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2483.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:32Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:32Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T19:09Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T19:09Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:32Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:32Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:32Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/6851b265-32bd-bc12-1800-44220609403d/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:32Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2483/oregon-ducks",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2483",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2483",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2483",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2483",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2483",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/oregon-ducks-womens-basketball-tickets--sports-ncaa-basketball/performer/39263?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "1",
+                  "shortName": "TV"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "BTN"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "5867865",
+                "summary": "Tickets as low as $23",
+                "description": "Oregon Ducks at Maryland Terrapins Womens Basketball",
+                "maxPrice": 595.23,
+                "startingPrice": 23.06,
+                "numberAvailable": 98,
+                "totalPostings": 24,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/maryland-terrapins-womens-basketball-tickets-xfinity-center---md-10-24-2025--sports-ncaa-womens-basketball/production/5867865?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/xfinity-center-md-tickets/venue/2614?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sat, January 31st at 5:00 PM EST",
+                "shortDetail": "1/31 - 5:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401825310/oregon-maryland",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401825310",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "12th in Big Ten"
+  }
+}

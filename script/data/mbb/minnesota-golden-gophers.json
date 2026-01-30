@@ -1,0 +1,980 @@
+{
+  "team": {
+    "id": "135",
+    "uid": "s:40~l:41~t:135",
+    "slug": "minnesota-golden-gophers",
+    "location": "Minnesota",
+    "name": "Golden Gophers",
+    "nickname": "Minnesota",
+    "abbreviation": "MINN",
+    "displayName": "Minnesota Golden Gophers",
+    "shortDisplayName": "Minnesota",
+    "color": "5e0a2f",
+    "alternateColor": "fab41c",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-23T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/135.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-23T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:16Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:16Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2025-12-31T19:00Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2025-12-31T19:00Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:16Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:16Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:16Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:16Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "10-11",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 2.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 68.42857
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 71.61905
+            },
+            {
+              "name": "differential",
+              "value": 3.1999999999999886
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 10.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 21.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.3
+            },
+            {
+              "name": "losses",
+              "value": 11.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 13.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 67.0
+            },
+            {
+              "name": "points",
+              "value": -0.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1437.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1504.0
+            },
+            {
+              "name": "streak",
+              "value": -6.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.47619048
+            },
+            {
+              "name": "wins",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "9-3",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 60.833332
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 74.25
+            },
+            {
+              "name": "differential",
+              "value": 13.5
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 3.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 12.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.4
+            },
+            {
+              "name": "losses",
+              "value": 3.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 13.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 161.0
+            },
+            {
+              "name": "points",
+              "value": 3.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 730.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 891.0
+            },
+            {
+              "name": "streak",
+              "value": -6.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.75
+            },
+            {
+              "name": "wins",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "1-5",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 78.666664
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 67.5
+            },
+            {
+              "name": "differential",
+              "value": -11.200000000000003
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 4.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 6.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.2
+            },
+            {
+              "name": "losses",
+              "value": 5.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 13.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": -67.0
+            },
+            {
+              "name": "points",
+              "value": -2.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 472.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 405.0
+            },
+            {
+              "name": "streak",
+              "value": -6.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.16666667
+            },
+            {
+              "name": "wins",
+              "value": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "7",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/135/minnesota-golden-gophers",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/135",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/135",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/135",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/135",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/minnesota-golden-gophers-mens-basketball-tickets--sports-ncaa-basketball/performer/3256?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401825489",
+        "date": "2026-02-01T19:00Z",
+        "name": "Minnesota Golden Gophers at Penn State Nittany Lions",
+        "shortName": "MINN @ PSU",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401825489",
+            "date": "2026-02-01T19:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Bryce Jordan Center",
+              "address": {
+                "city": "University Park",
+                "state": "PA"
+              }
+            },
+            "competitors": [
+              {
+                "id": "213",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "213",
+                  "location": "Penn State",
+                  "nickname": "Penn State",
+                  "abbreviation": "PSU",
+                  "displayName": "Penn State Nittany Lions",
+                  "shortDisplayName": "Penn State",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/213.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T19:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T19:12Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/7301761e-7f39-3945-da52-1b7783ab61a4/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:17Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/213/penn-state-nittany-lions",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/213",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/213",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/213",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/213",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/penn-state-nittany-lions-mens-basketball-tickets--sports-ncaa-basketball/performer/3293?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "135",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "135",
+                  "location": "Minnesota",
+                  "nickname": "Minnesota",
+                  "abbreviation": "MINN",
+                  "displayName": "Minnesota Golden Gophers",
+                  "shortDisplayName": "Minnesota",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/135.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:16Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:16Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T19:00Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T19:00Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:16Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:16Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:16Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/12529d26-e55d-43ec-3210-ac65258628c1/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:16Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/135/minnesota-golden-gophers",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/135",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/135",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/135",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/135",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/minnesota-golden-gophers-mens-basketball-tickets--sports-ncaa-basketball/performer/3256?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "Peacock"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "5731468",
+                "summary": "Tickets as low as $12",
+                "description": "Minnesota Golden Gophers at Penn State Nittany Lions Mens Basketball",
+                "maxPrice": 566.67,
+                "startingPrice": 12.73,
+                "numberAvailable": 654,
+                "totalPostings": 143,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/penn-state-nittany-lions-mens-basketball-tickets-bryce-jordan-center-10-9-2025--sports-ncaa-basketball/production/5731468?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/bryce-jordan-center-tickets/venue/243?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Sun, February 1st at 2:00 PM EST",
+                "shortDetail": "2/1 - 2:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401825489/minnesota-penn-state",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401825489",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "12th in Big Ten"
+  }
+}

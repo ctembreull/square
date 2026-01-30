@@ -1,0 +1,994 @@
+{
+  "team": {
+    "id": "130",
+    "uid": "s:40~l:41~t:130",
+    "slug": "michigan-wolverines",
+    "location": "Michigan",
+    "name": "Wolverines",
+    "nickname": "Michigan",
+    "abbreviation": "MICH",
+    "displayName": "Michigan Wolverines",
+    "shortDisplayName": "Michigan",
+    "color": "00274c",
+    "alternateColor": "ffcb05",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2026-01-08T23:30Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/130.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-23T01:44Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2025-12-31T18:24Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2025-12-31T18:24Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T00:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T00:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:15Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T00:15Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "19-1",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 1.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 68.8
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 90.85
+            },
+            {
+              "name": "differential",
+              "value": 22.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 20.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.9
+            },
+            {
+              "name": "losses",
+              "value": 1.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 2.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 441.0
+            },
+            {
+              "name": "points",
+              "value": 9.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1376.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1817.0
+            },
+            {
+              "name": "streak",
+              "value": 5.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.95
+            },
+            {
+              "name": "wins",
+              "value": 19.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "10-1",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 67.63636
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 93.63636
+            },
+            {
+              "name": "differential",
+              "value": 26.0
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.8333333
+            },
+            {
+              "name": "losses",
+              "value": 1.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 1.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 286.0
+            },
+            {
+              "name": "points",
+              "value": 4.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 744.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1030.0
+            },
+            {
+              "name": "streak",
+              "value": 5.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.90909094
+            },
+            {
+              "name": "wins",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "5-0",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 72.2
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 81.0
+            },
+            {
+              "name": "differential",
+              "value": 8.799999999999997
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 5.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 1.0
+            },
+            {
+              "name": "losses",
+              "value": 0.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 1.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 44.0
+            },
+            {
+              "name": "points",
+              "value": 2.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 361.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 405.0
+            },
+            {
+              "name": "streak",
+              "value": 5.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 1.0
+            },
+            {
+              "name": "wins",
+              "value": 5.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "7",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/130/michigan-wolverines",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/130",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/130",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/130",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/130",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/michigan-wolverines-mens-basketball-tickets--sports-ncaa-basketball/performer/3252?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401825481",
+        "date": "2026-01-31T01:00Z",
+        "name": "Michigan Wolverines at Michigan State Spartans",
+        "shortName": "MICH @ MSU",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401825481",
+            "date": "2026-01-31T01:00Z",
+            "attendance": 0,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": false,
+            "ticketsAvailable": true,
+            "venue": {
+              "fullName": "Breslin Center",
+              "address": {
+                "city": "East Lansing",
+                "state": "MI"
+              }
+            },
+            "competitors": [
+              {
+                "id": "127",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "team": {
+                  "id": "127",
+                  "location": "Michigan State",
+                  "nickname": "Michigan St",
+                  "abbreviation": "MSU",
+                  "displayName": "Michigan State Spartans",
+                  "shortDisplayName": "Michigan St",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/127.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2026-01-05T20:05Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T18:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T18:28Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/1ee049af-fdba-6368-9c70-eec74ace759f/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:13Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/127/michigan-state-spartans",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/127",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/127",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/127",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/127",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/michigan-state-spartans-mens-basketball-tickets--sports-ncaa-basketball/performer/3248?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 7
+                }
+              },
+              {
+                "id": "130",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "team": {
+                  "id": "130",
+                  "location": "Michigan",
+                  "nickname": "Michigan",
+                  "abbreviation": "MICH",
+                  "displayName": "Michigan Wolverines",
+                  "shortDisplayName": "Michigan",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2026-01-08T23:30Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/130.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-23T01:44Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T18:24Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2025-12-31T18:24Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:15Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/c00151c6-cdd4-5aab-0130-37416052eb2a/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T00:15Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/_/id/130/michigan-wolverines",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/roster/_/id/130",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/stats/_/id/130",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/130",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/mens-college-basketball/team/photos/_/id/130",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/michigan-wolverines-mens-basketball-tickets--sports-ncaa-basketball/performer/3252?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "curatedRank": {
+                  "current": 3
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "1",
+                  "shortName": "TV"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "FOX"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "tickets": [
+              {
+                "id": "6057247",
+                "summary": "Tickets as low as $219",
+                "description": "Michigan Wolverines at Michigan State Spartans Mens Basketball",
+                "maxPrice": 3952.26,
+                "startingPrice": 219.43,
+                "numberAvailable": 140,
+                "totalPostings": 107,
+                "links": [
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "event"
+                    ],
+                    "href": "https://www.vividseats.com/michigan-state-spartans-mens-basketball-tickets-jack-breslin-student-events-center-1-30-2026--sports-ncaa-basketball/production/6057247?wsUser=717"
+                  },
+                  {
+                    "rel": [
+                      "tickets",
+                      "desktop",
+                      "venue"
+                    ],
+                    "href": "https://www.vividseats.com/venues/jack-breslin-student-events-center-tickets.html?wsUser=717"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 0,
+              "type": {
+                "id": "1",
+                "name": "STATUS_SCHEDULED",
+                "state": "pre",
+                "completed": false,
+                "description": "Scheduled",
+                "detail": "Fri, January 30th at 8:00 PM EST",
+                "shortDetail": "1/30 - 8:00 PM EST"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401825481/michigan-michigan-st",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401825481",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "preview",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/mens-college-basketball/preview/_/gameId/401825481",
+            "text": "Preview",
+            "shortText": "Preview",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "1st in Big Ten",
+    "rank": 3
+  }
+}

@@ -53,3 +53,6 @@
 
 # Ignore artifacts (reference docs, mockups, old schemas)
 /artifacts
+
+# Ignore data scraped from ESPN
+/script/data

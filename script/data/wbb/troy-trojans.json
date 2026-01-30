@@ -1,0 +1,1603 @@
+{
+  "team": {
+    "id": "2653",
+    "uid": "s:40~l:54~t:2653",
+    "slug": "troy-trojans",
+    "location": "Troy",
+    "name": "Trojans",
+    "nickname": "Troy",
+    "abbreviation": "TROY",
+    "displayName": "Troy Trojans",
+    "shortDisplayName": "Troy",
+    "color": "862633",
+    "alternateColor": "b1b1b1",
+    "isActive": true,
+    "logos": [
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "default"
+        ],
+        "lastUpdated": "2025-12-24T20:19Z"
+      },
+      {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2653.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+          "full",
+          "dark"
+        ],
+        "lastUpdated": "2025-12-24T20:18Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2026-01-08T20:38Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2026-01-08T20:38Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_white_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_black_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_primary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      },
+      {
+        "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_secondary_color.png",
+        "width": 4096,
+        "height": 4096,
+        "alt": "",
+        "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+        ],
+        "lastUpdated": "2024-11-11T01:39Z"
+      }
+    ],
+    "record": {
+      "items": [
+        {
+          "description": "Overall Record",
+          "type": "total",
+          "summary": "18-4",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 69.13636
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 84.545456
+            },
+            {
+              "name": "differential",
+              "value": 15.400000000000006
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.5
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 22.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.8181818
+            },
+            {
+              "name": "losses",
+              "value": 4.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 339.0
+            },
+            {
+              "name": "points",
+              "value": 7.0
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 1521.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 1860.0
+            },
+            {
+              "name": "streak",
+              "value": 3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.8181818
+            },
+            {
+              "name": "wins",
+              "value": 18.0
+            }
+          ]
+        },
+        {
+          "description": "Home Record",
+          "type": "home",
+          "summary": "8-1",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 60.11111
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 88.55556
+            },
+            {
+              "name": "differential",
+              "value": 28.499999999999993
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 1.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 9.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.75
+            },
+            {
+              "name": "losses",
+              "value": 1.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 256.0
+            },
+            {
+              "name": "points",
+              "value": 3.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 541.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 797.0
+            },
+            {
+              "name": "streak",
+              "value": 3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.8888889
+            },
+            {
+              "name": "wins",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "description": "Away Record",
+          "type": "road",
+          "summary": "8-3",
+          "stats": [
+            {
+              "name": "OTLosses",
+              "value": 0.0
+            },
+            {
+              "name": "OTWins",
+              "value": 0.0
+            },
+            {
+              "name": "avgPointsAgainst",
+              "value": 76.0
+            },
+            {
+              "name": "avgPointsFor",
+              "value": 80.545456
+            },
+            {
+              "name": "differential",
+              "value": 4.5
+            },
+            {
+              "name": "divisionWinPercent",
+              "value": 0.0
+            },
+            {
+              "name": "gamesBehind",
+              "value": 0.0
+            },
+            {
+              "name": "gamesPlayed",
+              "value": 11.0
+            },
+            {
+              "name": "leagueWinPercent",
+              "value": 0.85714287
+            },
+            {
+              "name": "losses",
+              "value": 3.0
+            },
+            {
+              "name": "playoffSeed",
+              "value": 3.0
+            },
+            {
+              "name": "pointDifferential",
+              "value": 50.0
+            },
+            {
+              "name": "points",
+              "value": 2.5
+            },
+            {
+              "name": "pointsAgainst",
+              "value": 836.0
+            },
+            {
+              "name": "pointsFor",
+              "value": 886.0
+            },
+            {
+              "name": "streak",
+              "value": 3.0
+            },
+            {
+              "name": "ties",
+              "value": 0.0
+            },
+            {
+              "name": "winPercent",
+              "value": 0.72727275
+            },
+            {
+              "name": "wins",
+              "value": 8.0
+            }
+          ]
+        }
+      ]
+    },
+    "groups": {
+      "id": "27",
+      "parent": {
+        "id": "50"
+      },
+      "isConference": true
+    },
+    "links": [
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/_/id/2653/troy-trojans",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "clubhouse",
+          "mobile",
+          "team"
+        ],
+        "href": "https://m.espn.com/ncw/clubhouse?teamId=2653",
+        "text": "Clubhouse",
+        "shortText": "Clubhouse",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "roster",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2653",
+        "text": "Roster",
+        "shortText": "Roster",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "stats",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2653",
+        "text": "Statistics",
+        "shortText": "Statistics",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "schedule",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2653",
+        "text": "Schedule",
+        "shortText": "Schedule",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "photos",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2653",
+        "text": "photos",
+        "shortText": "photos",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "language": "en-US",
+        "rel": [
+          "tickets",
+          "desktop",
+          "team"
+        ],
+        "href": "https://www.vividseats.com/troy-trojans-womens-basketball-tickets--sports-ncaa-basketball/performer/55625?wsUser=717",
+        "text": "Tickets",
+        "shortText": "Tickets",
+        "isExternal": true,
+        "isPremium": false
+      }
+    ],
+    "nextEvent": [
+      {
+        "id": "401808775",
+        "date": "2026-01-30T19:30Z",
+        "name": "Troy Trojans at Coastal Carolina Chanticleers",
+        "shortName": "TROY @ CCU",
+        "season": {
+          "year": 2026,
+          "displayName": "2025-26"
+        },
+        "seasonType": {
+          "id": "2",
+          "type": 2,
+          "name": "Regular Season",
+          "abbreviation": "reg"
+        },
+        "week": {
+          "number": 13,
+          "text": "Week 13"
+        },
+        "timeValid": true,
+        "competitions": [
+          {
+            "id": "401808775",
+            "date": "2026-01-30T19:30Z",
+            "attendance": 809,
+            "type": {
+              "id": "1",
+              "text": "Standard",
+              "abbreviation": "STD",
+              "slug": "standard",
+              "type": "standard"
+            },
+            "timeValid": true,
+            "neutralSite": false,
+            "boxscoreAvailable": true,
+            "ticketsAvailable": false,
+            "venue": {
+              "fullName": "The HTC Center",
+              "address": {
+                "city": "Conway",
+                "state": "SC"
+              }
+            },
+            "competitors": [
+              {
+                "id": "324",
+                "type": "team",
+                "order": 0,
+                "homeAway": "home",
+                "winner": false,
+                "team": {
+                  "id": "324",
+                  "location": "Coastal Carolina",
+                  "nickname": "Coastal",
+                  "abbreviation": "CCU",
+                  "displayName": "Coastal Carolina Chanticleers",
+                  "shortDisplayName": "Coastal",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/324.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:47Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:46Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T19:33Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T19:34Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:47Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:47Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:47Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/4e88f0a4-9a44-edda-d080-cba88a812790/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:47Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/324/coastal-carolina-chanticleers",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=324",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/324",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/324",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/324",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/324",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/coastal-carolina-chanticleers-womens-basketball-tickets--sports-ncaa-basketball/performer/55560?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "score": {
+                  "value": 77.0,
+                  "displayValue": "77"
+                },
+                "record": [
+                  {
+                    "id": "1",
+                    "abbreviation": "Game",
+                    "displayName": "Record Year To Date",
+                    "shortDisplayName": "YTD",
+                    "description": "Overall Record",
+                    "type": "total",
+                    "displayValue": "11-12"
+                  },
+                  {
+                    "id": "9002",
+                    "displayName": "Home",
+                    "shortDisplayName": "HOME",
+                    "description": "Home Record",
+                    "type": "home",
+                    "displayValue": "8-6"
+                  },
+                  {
+                    "id": "9003",
+                    "displayName": "Road",
+                    "shortDisplayName": "AWAY",
+                    "description": "Away Record",
+                    "type": "road",
+                    "displayValue": "3-6"
+                  },
+                  {
+                    "id": "9009",
+                    "displayName": "CONF",
+                    "shortDisplayName": "CONF",
+                    "description": "Conference Record",
+                    "type": "vsconf",
+                    "displayValue": "4-7"
+                  }
+                ],
+                "curatedRank": {
+                  "current": 99
+                }
+              },
+              {
+                "id": "2653",
+                "type": "team",
+                "order": 1,
+                "homeAway": "away",
+                "winner": true,
+                "team": {
+                  "id": "2653",
+                  "location": "Troy",
+                  "nickname": "Troy",
+                  "abbreviation": "TROY",
+                  "displayName": "Troy Trojans",
+                  "shortDisplayName": "Troy",
+                  "logos": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2025-12-24T20:19Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2653.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "dark"
+                      ],
+                      "lastUpdated": "2025-12-24T20:18Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:39Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:39Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T20:38Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/primary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "primary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2026-01-08T20:38Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_white_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_white_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:39Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_black_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_black_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:39Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_primary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_primary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:39Z"
+                    },
+                    {
+                      "href": "https://a.espncdn.com/guid/a35c4408-6763-9fc0-f382-2fea52104b62/logos/secondary_logo_on_secondary_color.png",
+                      "width": 4096,
+                      "height": 4096,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "secondary_logo_on_secondary_color"
+                      ],
+                      "lastUpdated": "2024-11-11T01:39Z"
+                    }
+                  ],
+                  "links": [
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/_/id/2653/troy-trojans",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "clubhouse",
+                        "mobile",
+                        "team"
+                      ],
+                      "href": "https://m.espn.com/ncw/clubhouse?teamId=2653",
+                      "text": "Clubhouse"
+                    },
+                    {
+                      "rel": [
+                        "roster",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/roster/_/id/2653",
+                      "text": "Roster"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/stats/_/id/2653",
+                      "text": "Statistics"
+                    },
+                    {
+                      "rel": [
+                        "schedule",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/schedule/_/id/2653",
+                      "text": "Schedule"
+                    },
+                    {
+                      "rel": [
+                        "photos",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/team/photos/_/id/2653",
+                      "text": "photos"
+                    },
+                    {
+                      "rel": [
+                        "tickets",
+                        "desktop",
+                        "team"
+                      ],
+                      "href": "https://www.vividseats.com/troy-trojans-womens-basketball-tickets--sports-ncaa-basketball/performer/55625?wsUser=717",
+                      "text": "Tickets"
+                    }
+                  ]
+                },
+                "score": {
+                  "value": 88.0,
+                  "displayValue": "88"
+                },
+                "leaders": [
+                  {
+                    "name": "points",
+                    "displayName": "Points",
+                    "abbreviation": "Pts",
+                    "leaders": [
+                      {
+                        "displayValue": "20",
+                        "value": 20.0,
+                        "athlete": {
+                          "id": "5175443",
+                          "lastName": "Baez",
+                          "displayName": "Ashley Baez",
+                          "shortName": "A. Baez",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/stats/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/gamelog/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/news/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/bio/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "assists",
+                    "displayName": "Assists",
+                    "abbreviation": "Ast",
+                    "leaders": [
+                      {
+                        "displayValue": "4",
+                        "value": 4.0,
+                        "athlete": {
+                          "id": "5175443",
+                          "lastName": "Baez",
+                          "displayName": "Ashley Baez",
+                          "shortName": "A. Baez",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/stats/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/gamelog/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/news/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/bio/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "rebounds",
+                    "displayName": "Rebounds",
+                    "abbreviation": "Reb",
+                    "leaders": [
+                      {
+                        "displayValue": "13",
+                        "value": 13.0,
+                        "athlete": {
+                          "id": "5108608",
+                          "lastName": "Leggett",
+                          "displayName": "Rachel Leggett",
+                          "shortName": "R. Leggett",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5108608/rachel-leggett"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/stats/_/id/5108608/rachel-leggett"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/gamelog/_/id/5108608/rachel-leggett"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/news/_/id/5108608/rachel-leggett"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/bio/_/id/5108608/rachel-leggett"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5108608/rachel-leggett"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "blocks",
+                    "displayName": "Blocks",
+                    "abbreviation": "Blk",
+                    "leaders": [
+                      {
+                        "displayValue": "1",
+                        "value": 1.0,
+                        "athlete": {
+                          "id": "5113322",
+                          "lastName": "Dyer",
+                          "displayName": "Zay Dyer",
+                          "shortName": "Z. Dyer",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5113322/zay-dyer"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/stats/_/id/5113322/zay-dyer"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/gamelog/_/id/5113322/zay-dyer"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/news/_/id/5113322/zay-dyer"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/bio/_/id/5113322/zay-dyer"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5113322/zay-dyer"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "steals",
+                    "displayName": "Steals",
+                    "abbreviation": "Stl",
+                    "leaders": [
+                      {
+                        "displayValue": "4",
+                        "value": 4.0,
+                        "athlete": {
+                          "id": "5175443",
+                          "lastName": "Baez",
+                          "displayName": "Ashley Baez",
+                          "shortName": "A. Baez",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/stats/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/gamelog/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/news/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/bio/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "PER",
+                    "displayName": "Player Efficiency Rating",
+                    "abbreviation": "PER"
+                  },
+                  {
+                    "name": "rating",
+                    "displayName": "Rating",
+                    "abbreviation": "RAT",
+                    "leaders": [
+                      {
+                        "displayValue": "20 PTS, 4 STL",
+                        "value": 32.75,
+                        "athlete": {
+                          "id": "5175443",
+                          "lastName": "Baez",
+                          "displayName": "Ashley Baez",
+                          "shortName": "A. Baez",
+                          "links": [
+                            {
+                              "rel": [
+                                "playercard",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "stats",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/stats/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "gamelog",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/gamelog/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "news",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/news/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "bio",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/bio/_/id/5175443/ashley-baez"
+                            },
+                            {
+                              "rel": [
+                                "overview",
+                                "desktop",
+                                "athlete"
+                              ],
+                              "href": "https://www.espn.com/womens-college-basketball/player/_/id/5175443/ashley-baez"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "record": [
+                  {
+                    "id": "1",
+                    "abbreviation": "Game",
+                    "displayName": "Record Year To Date",
+                    "shortDisplayName": "YTD",
+                    "description": "Overall Record",
+                    "type": "total",
+                    "displayValue": "18-4"
+                  },
+                  {
+                    "id": "9002",
+                    "displayName": "Home",
+                    "shortDisplayName": "HOME",
+                    "description": "Home Record",
+                    "type": "home",
+                    "displayValue": "8-1"
+                  },
+                  {
+                    "id": "9003",
+                    "displayName": "Road",
+                    "shortDisplayName": "AWAY",
+                    "description": "Away Record",
+                    "type": "road",
+                    "displayValue": "8-3"
+                  },
+                  {
+                    "id": "9009",
+                    "displayName": "CONF",
+                    "shortDisplayName": "CONF",
+                    "description": "Conference Record",
+                    "type": "vsconf",
+                    "displayValue": "9-2"
+                  }
+                ],
+                "curatedRank": {
+                  "current": 99
+                }
+              }
+            ],
+            "notes": [],
+            "broadcasts": [
+              {
+                "type": {
+                  "id": "4",
+                  "shortName": "Streaming"
+                },
+                "market": {
+                  "id": "1",
+                  "type": "National"
+                },
+                "media": {
+                  "shortName": "ESPN+"
+                },
+                "lang": "en",
+                "region": "us",
+                "partnered": false
+              }
+            ],
+            "status": {
+              "clock": 0.0,
+              "displayClock": "0:00",
+              "period": 4,
+              "type": {
+                "id": "3",
+                "name": "STATUS_FINAL",
+                "state": "post",
+                "completed": true,
+                "description": "Final",
+                "detail": "Final",
+                "shortDetail": "Final"
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401808775/troy-coastal",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "summary",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401808775",
+            "text": "Gamecast",
+            "shortText": "Summary",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "teamstats",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/matchup?gameId=401808775",
+            "text": "Team Stats",
+            "shortText": "Team Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "boxscore",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/boxscore/_/gameId/401808775",
+            "text": "Box Score",
+            "shortText": "Box Score",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "boxscore",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401808775",
+            "text": "Box Score",
+            "shortText": "Box Score",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "gamecast",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401808775",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "gamecast",
+              "mobile",
+              "event"
+            ],
+            "href": "http://m.espn.com/ncw/gamecast?gameId=401808775&action=summary",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "gamecast",
+              "sportscenter",
+              "app",
+              "event"
+            ],
+            "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=womens-college-basketball&gameId=401808775",
+            "text": "Gamecast",
+            "shortText": "Gamecast",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "pbp",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/playbyplay/_/gameId/401808775",
+            "text": "Play-by-Play",
+            "shortText": "Play-by-Play",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "videos",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/womens-college-basketball/video?gameId=401808775",
+            "text": "Videos",
+            "shortText": "Videos",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "desktop",
+              "event"
+            ],
+            "href": "https://www.espn.com/watchespn/index?gameId=401808775&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "watchespn",
+              "app",
+              "event"
+            ],
+            "href": "watchespn://showEvent?gameId=401808775&sourceLang=en",
+            "text": "WatchESPN",
+            "shortText": "WatchESPN",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      }
+    ],
+    "standingSummary": "2nd in Sun Belt"
+  }
+}
