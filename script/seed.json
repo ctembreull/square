@@ -1,0 +1,24 @@
+{
+	"leagues": [
+		{
+			"abbr": "nfl",
+			"url": "https://www.espn.com/nfl/standings"
+		},
+		{
+			"abbr": "fbs",
+			"url": "https://www.espn.com/college-football/standings"
+		},
+		{
+			"abbr": "fcs",
+			"url": "https://www.espn.com/college-football/standings/_/view/fcs"
+		},
+		{
+			"abbr": "mbb",
+			"url": "https://www.espn.com/mens-college-basketball/standings"
+		},
+		{
+			"abbr": "wbb",
+			"url": "https://www.espn.com/womens-college-basketball/standings"
+		}
+	]
+}

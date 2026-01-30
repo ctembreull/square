@@ -1,0 +1,553 @@
+{
+  "conferences": [
+    {
+      "league": "wbb",
+      "name": "America East Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2066/binghamton-bearcats",
+        "/womens-college-basketball/team/_/id/261/vermont-catamounts",
+        "/womens-college-basketball/team/_/id/311/maine-black-bears",
+        "/womens-college-basketball/team/_/id/2378/umbc-retrievers",
+        "/womens-college-basketball/team/_/id/2885/njit-highlanders",
+        "/womens-college-basketball/team/_/id/2803/bryant-bulldogs",
+        "/womens-college-basketball/team/_/id/160/new-hampshire-wildcats",
+        "/womens-college-basketball/team/_/id/399/ualbany-great-danes",
+        "/womens-college-basketball/team/_/id/2349/umass-lowell-river-hawks"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "American Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/242/rice-owls",
+        "/womens-college-basketball/team/_/id/151/east-carolina-pirates",
+        "/womens-college-basketball/team/_/id/202/tulsa-golden-hurricane",
+        "/womens-college-basketball/team/_/id/58/south-florida-bulls",
+        "/womens-college-basketball/team/_/id/2636/utsa-roadrunners",
+        "/womens-college-basketball/team/_/id/249/north-texas-mean-green",
+        "/womens-college-basketball/team/_/id/2655/tulane-green-wave",
+        "/womens-college-basketball/team/_/id/218/temple-owls",
+        "/womens-college-basketball/team/_/id/2429/charlotte-49ers",
+        "/womens-college-basketball/team/_/id/2226/florida-atlantic-owls",
+        "/womens-college-basketball/team/_/id/235/memphis-tigers",
+        "/womens-college-basketball/team/_/id/2724/wichita-state-shockers",
+        "/womens-college-basketball/team/_/id/5/uab-blazers"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "ASUN Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2198/eastern-kentucky-colonels",
+        "/womens-college-basketball/team/_/id/2698/west-georgia-wolves",
+        "/womens-college-basketball/team/_/id/526/florida-gulf-coast-eagles",
+        "/womens-college-basketball/team/_/id/2046/austin-peay-governors",
+        "/womens-college-basketball/team/_/id/294/jacksonville-dolphins",
+        "/womens-college-basketball/team/_/id/56/stetson-hatters",
+        "/womens-college-basketball/team/_/id/2110/central-arkansas-sugar-bears",
+        "/womens-college-basketball/team/_/id/2453/north-alabama-lions",
+        "/womens-college-basketball/team/_/id/288/lipscomb-bisons",
+        "/womens-college-basketball/team/_/id/2454/north-florida-ospreys",
+        "/womens-college-basketball/team/_/id/2511/queens-university-royals",
+        "/womens-college-basketball/team/_/id/91/bellarmine-knights"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Atlantic 10 Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/227/rhode-island-rams",
+        "/womens-college-basketball/team/_/id/2244/george-mason-patriots",
+        "/womens-college-basketball/team/_/id/257/richmond-spiders",
+        "/womens-college-basketball/team/_/id/2166/davidson-wildcats",
+        "/womens-college-basketball/team/_/id/2603/saint-josephs-hawks",
+        "/womens-college-basketball/team/_/id/2350/loyola-chicago-ramblers",
+        "/womens-college-basketball/team/_/id/139/saint-louis-billikens",
+        "/womens-college-basketball/team/_/id/2325/la-salle-explorers",
+        "/womens-college-basketball/team/_/id/2670/vcu-rams",
+        "/womens-college-basketball/team/_/id/45/george-washington-revolutionaries",
+        "/womens-college-basketball/team/_/id/2168/dayton-flyers",
+        "/womens-college-basketball/team/_/id/179/st-bonaventure-bonnies",
+        "/womens-college-basketball/team/_/id/2230/fordham-rams",
+        "/womens-college-basketball/team/_/id/2184/duquesne-dukes"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Atlantic Coast Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/97/louisville-cardinals",
+        "/womens-college-basketball/team/_/id/150/duke-blue-devils",
+        "/womens-college-basketball/team/_/id/152/nc-state-wolfpack",
+        "/womens-college-basketball/team/_/id/259/virginia-tech-hokies",
+        "/womens-college-basketball/team/_/id/183/syracuse-orange",
+        "/womens-college-basketball/team/_/id/258/virginia-cavaliers",
+        "/womens-college-basketball/team/_/id/153/north-carolina-tar-heels",
+        "/womens-college-basketball/team/_/id/228/clemson-tigers",
+        "/womens-college-basketball/team/_/id/87/notre-dame-fighting-irish",
+        "/womens-college-basketball/team/_/id/24/stanford-cardinal",
+        "/womens-college-basketball/team/_/id/25/california-golden-bears",
+        "/womens-college-basketball/team/_/id/2390/miami-hurricanes",
+        "/womens-college-basketball/team/_/id/59/georgia-tech-yellow-jackets",
+        "/womens-college-basketball/team/_/id/52/florida-state-seminoles",
+        "/womens-college-basketball/team/_/id/154/wake-forest-demon-deacons",
+        "/womens-college-basketball/team/_/id/2567/smu-mustangs",
+        "/womens-college-basketball/team/_/id/221/pittsburgh-panthers",
+        "/womens-college-basketball/team/_/id/103/boston-college-eagles"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Big 12 Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2628/tcu-horned-frogs",
+        "/womens-college-basketball/team/_/id/239/baylor-bears",
+        "/womens-college-basketball/team/_/id/2641/texas-tech-lady-raiders",
+        "/womens-college-basketball/team/_/id/277/west-virginia-mountaineers",
+        "/womens-college-basketball/team/_/id/197/oklahoma-state-cowgirls",
+        "/womens-college-basketball/team/_/id/254/utah-utes",
+        "/womens-college-basketball/team/_/id/9/arizona-state-sun-devils",
+        "/womens-college-basketball/team/_/id/38/colorado-buffaloes",
+        "/womens-college-basketball/team/_/id/66/iowa-state-cyclones",
+        "/womens-college-basketball/team/_/id/252/byu-cougars",
+        "/womens-college-basketball/team/_/id/2306/kansas-state-wildcats",
+        "/womens-college-basketball/team/_/id/2132/cincinnati-bearcats",
+        "/womens-college-basketball/team/_/id/2305/kansas-jayhawks",
+        "/womens-college-basketball/team/_/id/2116/ucf-knights",
+        "/womens-college-basketball/team/_/id/12/arizona-wildcats",
+        "/womens-college-basketball/team/_/id/248/houston-cougars"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Big East Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/41/uconn-huskies",
+        "/womens-college-basketball/team/_/id/222/villanova-wildcats",
+        "/womens-college-basketball/team/_/id/2550/seton-hall-pirates",
+        "/womens-college-basketball/team/_/id/269/marquette-golden-eagles",
+        "/womens-college-basketball/team/_/id/2599/st-johns-red-storm",
+        "/womens-college-basketball/team/_/id/46/georgetown-hoyas",
+        "/womens-college-basketball/team/_/id/156/creighton-bluejays",
+        "/womens-college-basketball/team/_/id/2086/butler-bulldogs",
+        "/womens-college-basketball/team/_/id/2507/providence-friars",
+        "/womens-college-basketball/team/_/id/2752/xavier-musketeers",
+        "/womens-college-basketball/team/_/id/305/depaul-blue-demons"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Big Sky Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/147/montana-state-bobcats",
+        "/womens-college-basketball/team/_/id/70/idaho-vandals",
+        "/womens-college-basketball/team/_/id/2458/northern-colorado-bears",
+        "/womens-college-basketball/team/_/id/304/idaho-state-bengals",
+        "/womens-college-basketball/team/_/id/16/sacramento-state-hornets",
+        "/womens-college-basketball/team/_/id/331/eastern-washington-eagles",
+        "/womens-college-basketball/team/_/id/149/montana-lady-griz",
+        "/womens-college-basketball/team/_/id/2464/northern-arizona-lumberjacks",
+        "/womens-college-basketball/team/_/id/2502/portland-state-vikings",
+        "/womens-college-basketball/team/_/id/2692/weber-state-wildcats"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Big South Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2272/high-point-panthers",
+        "/womens-college-basketball/team/_/id/2515/radford-highlanders",
+        "/womens-college-basketball/team/_/id/2344/longwood-lancers",
+        "/womens-college-basketball/team/_/id/2737/winthrop-eagles",
+        "/womens-college-basketball/team/_/id/2127/charleston-southern-buccaneers",
+        "/womens-college-basketball/team/_/id/2427/unc-asheville-bulldogs",
+        "/womens-college-basketball/team/_/id/2241/gardner-webb-runnin-bulldogs",
+        "/womens-college-basketball/team/_/id/2908/south-carolina-upstate-spartans",
+        "/womens-college-basketball/team/_/id/2506/presbyterian-blue-hose"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Big Ten Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/26/ucla-bruins",
+        "/womens-college-basketball/team/_/id/2294/iowa-hawkeyes",
+        "/womens-college-basketball/team/_/id/130/michigan-wolverines",
+        "/womens-college-basketball/team/_/id/127/michigan-state-spartans",
+        "/womens-college-basketball/team/_/id/194/ohio-state-buckeyes",
+        "/womens-college-basketball/team/_/id/264/washington-huskies",
+        "/womens-college-basketball/team/_/id/135/minnesota-golden-gophers",
+        "/womens-college-basketball/team/_/id/158/nebraska-cornhuskers",
+        "/womens-college-basketball/team/_/id/356/illinois-fighting-illini",
+        "/womens-college-basketball/team/_/id/120/maryland-terrapins",
+        "/womens-college-basketball/team/_/id/275/wisconsin-badgers",
+        "/womens-college-basketball/team/_/id/2483/oregon-ducks",
+        "/womens-college-basketball/team/_/id/30/usc-trojans",
+        "/womens-college-basketball/team/_/id/2509/purdue-boilermakers",
+        "/womens-college-basketball/team/_/id/77/northwestern-wildcats",
+        "/womens-college-basketball/team/_/id/164/rutgers-scarlet-knights",
+        "/womens-college-basketball/team/_/id/84/indiana-hoosiers",
+        "/womens-college-basketball/team/_/id/213/penn-state-lady-lions"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Big West Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/28/uc-san-diego-tritons",
+        "/womens-college-basketball/team/_/id/300/uc-irvine-anteaters",
+        "/womens-college-basketball/team/_/id/302/uc-davis-aggies",
+        "/womens-college-basketball/team/_/id/2239/cal-state-fullerton-titans",
+        "/womens-college-basketball/team/_/id/2540/uc-santa-barbara-gauchos",
+        "/womens-college-basketball/team/_/id/62/hawaii-rainbow-wahine",
+        "/womens-college-basketball/team/_/id/27/uc-riverside-highlanders",
+        "/womens-college-basketball/team/_/id/2934/cal-state-bakersfield-roadrunners",
+        "/womens-college-basketball/team/_/id/2463/cal-state-northridge-matadors",
+        "/womens-college-basketball/team/_/id/299/long-beach-state-beach",
+        "/womens-college-basketball/team/_/id/13/cal-poly-mustangs"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Coastal Athletic Association",
+      "teams": [
+        "/womens-college-basketball/team/_/id/232/charleston-cougars",
+        "/womens-college-basketball/team/_/id/2405/monmouth-hawks",
+        "/womens-college-basketball/team/_/id/2097/campbell-fighting-camels",
+        "/womens-college-basketball/team/_/id/2619/stony-brook-seawolves",
+        "/womens-college-basketball/team/_/id/2182/drexel-dragons",
+        "/womens-college-basketball/team/_/id/119/towson-tigers",
+        "/womens-college-basketball/team/_/id/2210/elon-phoenix",
+        "/womens-college-basketball/team/_/id/2729/william-mary-tribe",
+        "/womens-college-basketball/team/_/id/2448/north-carolina-at-aggies",
+        "/womens-college-basketball/team/_/id/2261/hampton-lady-pirates",
+        "/womens-college-basketball/team/_/id/111/northeastern-huskies",
+        "/womens-college-basketball/team/_/id/2275/hofstra-pride",
+        "/womens-college-basketball/team/_/id/350/unc-wilmington-seahawks"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Conference USA",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2348/louisiana-tech-lady-techsters",
+        "/womens-college-basketball/team/_/id/2393/middle-tennessee-blue-raiders",
+        "/womens-college-basketball/team/_/id/2534/sam-houston-bearkats",
+        "/womens-college-basketball/team/_/id/2623/missouri-state-bears",
+        "/womens-college-basketball/team/_/id/55/jacksonville-state-gamecocks",
+        "/womens-college-basketball/team/_/id/2229/florida-international-panthers",
+        "/womens-college-basketball/team/_/id/48/delaware-blue-hens",
+        "/womens-college-basketball/team/_/id/2335/liberty-flames",
+        "/womens-college-basketball/team/_/id/338/kennesaw-state-owls",
+        "/womens-college-basketball/team/_/id/166/new-mexico-state-aggies",
+        "/womens-college-basketball/team/_/id/98/western-kentucky-lady-toppers",
+        "/womens-college-basketball/team/_/id/2638/utep-miners"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Horizon League",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2739/green-bay-phoenix",
+        "/womens-college-basketball/team/_/id/2754/youngstown-state-penguins",
+        "/womens-college-basketball/team/_/id/2870/purdue-fort-wayne-mastodons",
+        "/womens-college-basketball/team/_/id/2523/robert-morris-colonials",
+        "/womens-college-basketball/team/_/id/94/northern-kentucky-norse",
+        "/womens-college-basketball/team/_/id/325/cleveland-state-vikings",
+        "/womens-college-basketball/team/_/id/2473/oakland-golden-grizzlies",
+        "/womens-college-basketball/team/_/id/85/iu-indianapolis-jaguars",
+        "/womens-college-basketball/team/_/id/270/milwaukee-panthers",
+        "/womens-college-basketball/team/_/id/2750/wright-state-raiders",
+        "/womens-college-basketball/team/_/id/2174/detroit-mercy-titans"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Ivy League",
+      "teams": [
+        "/womens-college-basketball/team/_/id/163/princeton-tigers",
+        "/womens-college-basketball/team/_/id/171/columbia-lions",
+        "/womens-college-basketball/team/_/id/225/brown-bears",
+        "/womens-college-basketball/team/_/id/108/harvard-crimson",
+        "/womens-college-basketball/team/_/id/219/pennsylvania-quakers",
+        "/womens-college-basketball/team/_/id/172/cornell-big-red",
+        "/womens-college-basketball/team/_/id/43/yale-bulldogs",
+        "/womens-college-basketball/team/_/id/159/dartmouth-big-green"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Metro Atlantic Athletic Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2514/quinnipiac-bobcats",
+        "/womens-college-basketball/team/_/id/2217/fairfield-stags",
+        "/womens-college-basketball/team/_/id/2529/sacred-heart-pioneers",
+        "/womens-college-basketball/team/_/id/2771/merrimack-warriors",
+        "/womens-college-basketball/team/_/id/2561/siena-saints",
+        "/womens-college-basketball/team/_/id/116/mount-st-marys-mountaineers",
+        "/womens-college-basketball/team/_/id/314/iona-gaels",
+        "/womens-college-basketball/team/_/id/2363/manhattan-jaspers",
+        "/womens-college-basketball/team/_/id/2368/marist-red-foxes",
+        "/womens-college-basketball/team/_/id/2612/saint-peters-peacocks",
+        "/womens-college-basketball/team/_/id/2520/rider-broncs",
+        "/womens-college-basketball/team/_/id/2099/canisius-golden-griffins",
+        "/womens-college-basketball/team/_/id/315/niagara-purple-eagles"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Mid-American Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/193/miami-oh-redhawks",
+        "/womens-college-basketball/team/_/id/2050/ball-state-cardinals",
+        "/womens-college-basketball/team/_/id/113/massachusetts-minutewomen",
+        "/womens-college-basketball/team/_/id/195/ohio-bobcats",
+        "/womens-college-basketball/team/_/id/2117/central-michigan-chippewas",
+        "/womens-college-basketball/team/_/id/2649/toledo-rockets",
+        "/womens-college-basketball/team/_/id/189/bowling-green-falcons",
+        "/womens-college-basketball/team/_/id/2199/eastern-michigan-eagles",
+        "/womens-college-basketball/team/_/id/2309/kent-state-golden-flashes",
+        "/womens-college-basketball/team/_/id/2711/western-michigan-broncos",
+        "/womens-college-basketball/team/_/id/2459/northern-illinois-huskies",
+        "/womens-college-basketball/team/_/id/2006/akron-zips",
+        "/womens-college-basketball/team/_/id/2084/buffalo-bulls"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Mid-Eastern Athletic Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2379/maryland-eastern-shore-hawks",
+        "/womens-college-basketball/team/_/id/47/howard-bison",
+        "/womens-college-basketball/team/_/id/2450/norfolk-state-spartans",
+        "/womens-college-basketball/team/_/id/2569/south-carolina-state-lady-bulldogs",
+        "/womens-college-basketball/team/_/id/2154/coppin-state-eagles",
+        "/womens-college-basketball/team/_/id/2415/morgan-state-lady-bears",
+        "/womens-college-basketball/team/_/id/2169/delaware-state-hornets",
+        "/womens-college-basketball/team/_/id/2428/north-carolina-central-eagles"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Missouri Valley Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/93/murray-state-racers",
+        "/womens-college-basketball/team/_/id/2057/belmont-bruins",
+        "/womens-college-basketball/team/_/id/71/bradley-braves",
+        "/womens-college-basketball/team/_/id/2287/illinois-state-redbirds",
+        "/womens-college-basketball/team/_/id/2460/northern-iowa-panthers",
+        "/womens-college-basketball/team/_/id/2181/drake-bulldogs",
+        "/womens-college-basketball/team/_/id/82/uic-flames",
+        "/womens-college-basketball/team/_/id/282/indiana-state-sycamores",
+        "/womens-college-basketball/team/_/id/79/southern-illinois-salukis",
+        "/womens-college-basketball/team/_/id/339/evansville-purple-aces",
+        "/womens-college-basketball/team/_/id/2674/valparaiso-beacons"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Mountain West Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/21/san-diego-state-aztecs",
+        "/womens-college-basketball/team/_/id/2439/unlv-lady-rebels",
+        "/womens-college-basketball/team/_/id/36/colorado-state-rams",
+        "/womens-college-basketball/team/_/id/68/boise-state-broncos",
+        "/womens-college-basketball/team/_/id/167/new-mexico-lobos",
+        "/womens-college-basketball/team/_/id/2253/grand-canyon-lopes",
+        "/womens-college-basketball/team/_/id/2751/wyoming-cowgirls",
+        "/womens-college-basketball/team/_/id/278/fresno-state-bulldogs",
+        "/womens-college-basketball/team/_/id/2440/nevada-wolf-pack",
+        "/womens-college-basketball/team/_/id/2005/air-force-falcons",
+        "/womens-college-basketball/team/_/id/328/utah-state-aggies",
+        "/womens-college-basketball/team/_/id/23/san-jose-state-spartans"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Northeast Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/161/fairleigh-dickinson-knights",
+        "/womens-college-basketball/team/_/id/112358/long-island-university-sharks",
+        "/womens-college-basketball/team/_/id/2385/mercyhurst-lakers",
+        "/womens-college-basketball/team/_/id/2681/wagner-seahawks",
+        "/womens-college-basketball/team/_/id/2441/new-haven-chargers",
+        "/womens-college-basketball/team/_/id/2130/chicago-state-cougars",
+        "/womens-college-basketball/team/_/id/284/stonehill-skyhawks",
+        "/womens-college-basketball/team/_/id/2330/le-moyne-dolphins",
+        "/womens-college-basketball/team/_/id/2598/saint-francis-red-flash",
+        "/womens-college-basketball/team/_/id/2115/central-connecticut-blue-devils"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Ohio Valley Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2710/western-illinois-leathernecks",
+        "/womens-college-basketball/team/_/id/2815/lindenwood-lions",
+        "/womens-college-basketball/team/_/id/88/southern-indiana-screaming-eagles",
+        "/womens-college-basketball/team/_/id/2413/morehead-state-eagles",
+        "/womens-college-basketball/team/_/id/2630/ut-martin-skyhawks",
+        "/womens-college-basketball/team/_/id/2031/little-rock-trojans",
+        "/womens-college-basketball/team/_/id/2635/tennessee-tech-golden-eagles",
+        "/womens-college-basketball/team/_/id/2546/southeast-missouri-state-redhawks",
+        "/womens-college-basketball/team/_/id/2565/siu-edwardsville-cougars",
+        "/womens-college-basketball/team/_/id/2197/eastern-illinois-panthers",
+        "/womens-college-basketball/team/_/id/2634/tennessee-state-lady-tigers"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Patriot League",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2426/navy-midshipmen",
+        "/womens-college-basketball/team/_/id/349/army-black-knights",
+        "/womens-college-basketball/team/_/id/2329/lehigh-mountain-hawks",
+        "/womens-college-basketball/team/_/id/107/holy-cross-crusaders",
+        "/womens-college-basketball/team/_/id/2352/loyola-maryland-greyhounds",
+        "/womens-college-basketball/team/_/id/322/lafayette-leopards",
+        "/womens-college-basketball/team/_/id/44/american-university-eagles",
+        "/womens-college-basketball/team/_/id/104/boston-university-terriers",
+        "/womens-college-basketball/team/_/id/2083/bucknell-bison",
+        "/womens-college-basketball/team/_/id/2142/colgate-raiders"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Southeastern Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2579/south-carolina-gamecocks",
+        "/womens-college-basketball/team/_/id/238/vanderbilt-commodores",
+        "/womens-college-basketball/team/_/id/2633/tennessee-lady-volunteers",
+        "/womens-college-basketball/team/_/id/99/lsu-tigers",
+        "/womens-college-basketball/team/_/id/251/texas-longhorns",
+        "/womens-college-basketball/team/_/id/145/ole-miss-rebels",
+        "/womens-college-basketball/team/_/id/333/alabama-crimson-tide",
+        "/womens-college-basketball/team/_/id/201/oklahoma-sooners",
+        "/womens-college-basketball/team/_/id/61/georgia-lady-bulldogs",
+        "/womens-college-basketball/team/_/id/96/kentucky-wildcats",
+        "/womens-college-basketball/team/_/id/344/mississippi-state-bulldogs",
+        "/womens-college-basketball/team/_/id/142/missouri-tigers",
+        "/womens-college-basketball/team/_/id/2/auburn-tigers",
+        "/womens-college-basketball/team/_/id/245/texas-am-aggies",
+        "/womens-college-basketball/team/_/id/57/florida-gators",
+        "/womens-college-basketball/team/_/id/8/arkansas-razorbacks"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Southern Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/236/chattanooga-mocs",
+        "/womens-college-basketball/team/_/id/231/furman-paladins",
+        "/womens-college-basketball/team/_/id/2747/wofford-terriers",
+        "/womens-college-basketball/team/_/id/2382/mercer-bears",
+        "/womens-college-basketball/team/_/id/2193/east-tennessee-state-bucs",
+        "/womens-college-basketball/team/_/id/2430/unc-greensboro-spartans",
+        "/womens-college-basketball/team/_/id/2535/samford-bulldogs",
+        "/womens-college-basketball/team/_/id/2717/western-carolina-catamounts"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Southland Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2377/mcneese-cowgirls",
+        "/womens-college-basketball/team/_/id/2320/lamar-cardinals",
+        "/womens-college-basketball/team/_/id/292/ut-rio-grande-valley-vaqueros",
+        "/womens-college-basketball/team/_/id/2617/stephen-f-austin-ladyjacks",
+        "/womens-college-basketball/team/_/id/2916/incarnate-word-cardinals",
+        "/womens-college-basketball/team/_/id/2466/northwestern-state-lady-demons",
+        "/womens-college-basketball/team/_/id/2447/nicholls-colonels",
+        "/womens-college-basketball/team/_/id/2837/east-texas-am-lions",
+        "/womens-college-basketball/team/_/id/2277/houston-christian-huskies",
+        "/womens-college-basketball/team/_/id/357/texas-am-corpus-christi-islanders",
+        "/womens-college-basketball/team/_/id/2443/new-orleans-privateers",
+        "/womens-college-basketball/team/_/id/2545/se-louisiana-lady-lions"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Southwestern Athletic Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2582/southern-jaguars",
+        "/womens-college-basketball/team/_/id/2010/alabama-am-bulldogs",
+        "/womens-college-basketball/team/_/id/2016/alcorn-state-lady-braves",
+        "/womens-college-basketball/team/_/id/2011/alabama-state-lady-hornets",
+        "/womens-college-basketball/team/_/id/2640/texas-southern-tigers",
+        "/womens-college-basketball/team/_/id/50/florida-am-rattlers",
+        "/womens-college-basketball/team/_/id/2755/grambling-lady-tigers",
+        "/womens-college-basketball/team/_/id/2400/mississippi-valley-state-devilettes",
+        "/womens-college-basketball/team/_/id/2029/arkansas-pine-bluff-golden-lions",
+        "/womens-college-basketball/team/_/id/2296/jackson-state-lady-tigers",
+        "/womens-college-basketball/team/_/id/2065/bethune-cookman-wildcats",
+        "/womens-college-basketball/team/_/id/2504/prairie-view-am-lady-panthers"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Summit League",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2449/north-dakota-state-bison",
+        "/womens-college-basketball/team/_/id/2571/south-dakota-state-jackrabbits",
+        "/womens-college-basketball/team/_/id/233/south-dakota-coyotes",
+        "/womens-college-basketball/team/_/id/198/oral-roberts-golden-eagles",
+        "/womens-college-basketball/team/_/id/2900/st-thomas-minnesota-tommies",
+        "/womens-college-basketball/team/_/id/2172/denver-pioneers",
+        "/womens-college-basketball/team/_/id/140/kansas-city-roos",
+        "/womens-college-basketball/team/_/id/155/north-dakota-fighting-hawks",
+        "/womens-college-basketball/team/_/id/2437/omaha-mavericks"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Sun Belt Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2032/arkansas-state-red-wolves",
+        "/womens-college-basketball/team/_/id/290/georgia-southern-eagles",
+        "/womens-college-basketball/team/_/id/2653/troy-trojans",
+        "/womens-college-basketball/team/_/id/276/marshall-thundering-herd",
+        "/womens-college-basketball/team/_/id/256/james-madison-dukes",
+        "/womens-college-basketball/team/_/id/326/texas-state-bobcats",
+        "/womens-college-basketball/team/_/id/295/old-dominion-monarchs",
+        "/womens-college-basketball/team/_/id/2247/georgia-state-panthers",
+        "/womens-college-basketball/team/_/id/324/coastal-carolina-chanticleers",
+        "/womens-college-basketball/team/_/id/2572/southern-miss-lady-eagles",
+        "/womens-college-basketball/team/_/id/2026/app-state-mountaineers",
+        "/womens-college-basketball/team/_/id/2433/ul-monroe-warhawks",
+        "/womens-college-basketball/team/_/id/6/south-alabama-jaguars",
+        "/womens-college-basketball/team/_/id/309/louisiana-ragin-cajuns"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "West Coast Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/204/oregon-state-beavers",
+        "/womens-college-basketball/team/_/id/2541/santa-clara-broncos",
+        "/womens-college-basketball/team/_/id/2250/gonzaga-bulldogs",
+        "/womens-college-basketball/team/_/id/2351/loyola-marymount-lions",
+        "/womens-college-basketball/team/_/id/2539/san-francisco-dons",
+        "/womens-college-basketball/team/_/id/2501/portland-pilots",
+        "/womens-college-basketball/team/_/id/2492/pepperdine-waves",
+        "/womens-college-basketball/team/_/id/2608/saint-marys-gaels",
+        "/womens-college-basketball/team/_/id/279/pacific-tigers",
+        "/womens-college-basketball/team/_/id/265/washington-state-cougars",
+        "/womens-college-basketball/team/_/id/301/san-diego-toreros",
+        "/womens-college-basketball/team/_/id/2547/seattle-u-redhawks"
+      ]
+    },
+    {
+      "league": "wbb",
+      "name": "Western Athletic Conference",
+      "teams": [
+        "/womens-college-basketball/team/_/id/2856/california-baptist-lancers",
+        "/womens-college-basketball/team/_/id/2000/abilene-christian-wildcats",
+        "/womens-college-basketball/team/_/id/253/southern-utah-thunderbirds",
+        "/womens-college-basketball/team/_/id/2627/tarleton-state-texans",
+        "/womens-college-basketball/team/_/id/3084/utah-valley-wolverines",
+        "/womens-college-basketball/team/_/id/250/ut-arlington-mavericks",
+        "/womens-college-basketball/team/_/id/3101/utah-tech-trailblazers"
+      ]
+    }
+  ]
+}

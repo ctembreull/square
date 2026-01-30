@@ -1,0 +1,214 @@
+{
+  "conferences": [
+    {
+      "league": "fcs",
+      "name": "Big Sky Conference",
+      "teams": [
+        "/college-football/team/_/id/147/montana-state-bobcats",
+        "/college-football/team/_/id/149/montana-grizzlies",
+        "/college-football/team/_/id/302/uc-davis-aggies",
+        "/college-football/team/_/id/16/sacramento-state-hornets",
+        "/college-football/team/_/id/304/idaho-state-bengals",
+        "/college-football/team/_/id/2464/northern-arizona-lumberjacks",
+        "/college-football/team/_/id/331/eastern-washington-eagles",
+        "/college-football/team/_/id/2458/northern-colorado-bears",
+        "/college-football/team/_/id/13/cal-poly-mustangs",
+        "/college-football/team/_/id/70/idaho-vandals",
+        "/college-football/team/_/id/2692/weber-state-wildcats",
+        "/college-football/team/_/id/2502/portland-state-vikings"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Coastal Athletic Association",
+      "teams": [
+        "/college-football/team/_/id/227/rhode-island-rams",
+        "/college-football/team/_/id/222/villanova-wildcats",
+        "/college-football/team/_/id/160/new-hampshire-wildcats",
+        "/college-football/team/_/id/2405/monmouth-hawks",
+        "/college-football/team/_/id/2729/william-mary-tribe",
+        "/college-football/team/_/id/311/maine-black-bears",
+        "/college-football/team/_/id/2210/elon-phoenix",
+        "/college-football/team/_/id/2619/stony-brook-seawolves",
+        "/college-football/team/_/id/119/towson-tigers",
+        "/college-football/team/_/id/2448/north-carolina-at-aggies",
+        "/college-football/team/_/id/2097/campbell-fighting-camels",
+        "/college-football/team/_/id/2803/bryant-bulldogs",
+        "/college-football/team/_/id/399/ualbany-great-danes",
+        "/college-football/team/_/id/2261/hampton-pirates"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "FCS Independents",
+      "teams": [
+        "/college-football/team/_/id/2529/sacred-heart-pioneers",
+        "/college-football/team/_/id/2771/merrimack-warriors"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Ivy League",
+      "teams": [
+        "/college-football/team/_/id/43/yale-bulldogs",
+        "/college-football/team/_/id/108/harvard-crimson",
+        "/college-football/team/_/id/219/pennsylvania-quakers",
+        "/college-football/team/_/id/159/dartmouth-big-green",
+        "/college-football/team/_/id/172/cornell-big-red",
+        "/college-football/team/_/id/163/princeton-tigers",
+        "/college-football/team/_/id/225/brown-bears",
+        "/college-football/team/_/id/171/columbia-lions"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Mid-Eastern Athletic Conference",
+      "teams": [
+        "/college-football/team/_/id/2569/south-carolina-state-bulldogs",
+        "/college-football/team/_/id/2169/delaware-state-hornets",
+        "/college-football/team/_/id/2428/north-carolina-central-eagles",
+        "/college-football/team/_/id/47/howard-bison",
+        "/college-football/team/_/id/2415/morgan-state-bears",
+        "/college-football/team/_/id/2450/norfolk-state-spartans"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Missouri Valley Football Conference",
+      "teams": [
+        "/college-football/team/_/id/2449/north-dakota-state-bison",
+        "/college-football/team/_/id/233/south-dakota-coyotes",
+        "/college-football/team/_/id/155/north-dakota-fighting-hawks",
+        "/college-football/team/_/id/2754/youngstown-state-penguins",
+        "/college-football/team/_/id/2287/illinois-state-redbirds",
+        "/college-football/team/_/id/2571/south-dakota-state-jackrabbits",
+        "/college-football/team/_/id/79/southern-illinois-salukis",
+        "/college-football/team/_/id/2460/northern-iowa-panthers",
+        "/college-football/team/_/id/93/murray-state-racers",
+        "/college-football/team/_/id/282/indiana-state-sycamores"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Northeast Conference",
+      "teams": [
+        "/college-football/team/_/id/2115/central-connecticut-blue-devils",
+        "/college-football/team/_/id/2184/duquesne-dukes",
+        "/college-football/team/_/id/2341/long-island-university-sharks",
+        "/college-football/team/_/id/2681/wagner-seahawks",
+        "/college-football/team/_/id/284/stonehill-skyhawks",
+        "/college-football/team/_/id/2523/robert-morris-colonials",
+        "/college-football/team/_/id/2598/saint-francis-red-flash"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "OVC-Big South Association",
+      "teams": [
+        "/college-football/team/_/id/2635/tennessee-tech-golden-eagles",
+        "/college-football/team/_/id/2630/ut-martin-skyhawks",
+        "/college-football/team/_/id/2241/gardner-webb-runnin-bulldogs",
+        "/college-football/team/_/id/2815/lindenwood-lions",
+        "/college-football/team/_/id/2127/charleston-southern-buccaneers",
+        "/college-football/team/_/id/2546/southeast-missouri-state-redhawks",
+        "/college-football/team/_/id/2710/western-illinois-leathernecks",
+        "/college-football/team/_/id/2197/eastern-illinois-panthers",
+        "/college-football/team/_/id/2634/tennessee-state-tigers"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Patriot League",
+      "teams": [
+        "/college-football/team/_/id/2329/lehigh-mountain-hawks",
+        "/college-football/team/_/id/322/lafayette-leopards",
+        "/college-football/team/_/id/107/holy-cross-crusaders",
+        "/college-football/team/_/id/257/richmond-spiders",
+        "/college-football/team/_/id/46/georgetown-hoyas",
+        "/college-football/team/_/id/2142/colgate-raiders",
+        "/college-football/team/_/id/2083/bucknell-bison",
+        "/college-football/team/_/id/2230/fordham-rams"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Pioneer Football League",
+      "teams": [
+        "/college-football/team/_/id/2181/drake-bulldogs",
+        "/college-football/team/_/id/2506/presbyterian-blue-hose",
+        "/college-football/team/_/id/301/san-diego-toreros",
+        "/college-football/team/_/id/2168/dayton-flyers",
+        "/college-football/team/_/id/2900/st-thomas-minnesota-tommies",
+        "/college-football/team/_/id/2413/morehead-state-eagles",
+        "/college-football/team/_/id/2086/butler-bulldogs",
+        "/college-football/team/_/id/2368/marist-red-foxes",
+        "/college-football/team/_/id/56/stetson-hatters",
+        "/college-football/team/_/id/2166/davidson-wildcats",
+        "/college-football/team/_/id/2674/valparaiso-beacons"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Southern Conference",
+      "teams": [
+        "/college-football/team/_/id/2382/mercer-bears",
+        "/college-football/team/_/id/2717/western-carolina-catamounts",
+        "/college-football/team/_/id/2193/east-tennessee-state-buccaneers",
+        "/college-football/team/_/id/2747/wofford-terriers",
+        "/college-football/team/_/id/236/chattanooga-mocs",
+        "/college-football/team/_/id/231/furman-paladins",
+        "/college-football/team/_/id/2643/the-citadel-bulldogs",
+        "/college-football/team/_/id/2535/samford-bulldogs",
+        "/college-football/team/_/id/2678/vmi-keydets"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Southland Conference",
+      "teams": [
+        "/college-football/team/_/id/2617/stephen-f-austin-lumberjacks",
+        "/college-football/team/_/id/2545/se-louisiana-lions",
+        "/college-football/team/_/id/2320/lamar-cardinals",
+        "/college-football/team/_/id/292/ut-rio-grande-valley-vaqueros",
+        "/college-football/team/_/id/2447/nicholls-colonels",
+        "/college-football/team/_/id/2377/mcneese-cowboys",
+        "/college-football/team/_/id/2837/east-texas-am-lions",
+        "/college-football/team/_/id/2916/incarnate-word-cardinals",
+        "/college-football/team/_/id/2277/houston-christian-huskies",
+        "/college-football/team/_/id/2466/northwestern-state-demons"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "Southwestern Athletic Conference",
+      "teams": [
+        "/college-football/team/_/id/2011/alabama-state-hornets",
+        "/college-football/team/_/id/2296/jackson-state-tigers",
+        "/college-football/team/_/id/2065/bethune-cookman-wildcats",
+        "/college-football/team/_/id/50/florida-am-rattlers",
+        "/college-football/team/_/id/2010/alabama-am-bulldogs",
+        "/college-football/team/_/id/2400/mississippi-valley-state-delta-devils",
+        "/college-football/team/_/id/2504/prairie-view-am-panthers",
+        "/college-football/team/_/id/2640/texas-southern-tigers",
+        "/college-football/team/_/id/2016/alcorn-state-braves",
+        "/college-football/team/_/id/2755/grambling-tigers",
+        "/college-football/team/_/id/2029/arkansas-pine-bluff-golden-lions",
+        "/college-football/team/_/id/2582/southern-jaguars"
+      ]
+    },
+    {
+      "league": "fcs",
+      "name": "United Athletic Conference",
+      "teams": [
+        "/college-football/team/_/id/2000/abilene-christian-wildcats",
+        "/college-football/team/_/id/2627/tarleton-state-texans",
+        "/college-football/team/_/id/253/southern-utah-thunderbirds",
+        "/college-football/team/_/id/2046/austin-peay-governors",
+        "/college-football/team/_/id/2198/eastern-kentucky-colonels",
+        "/college-football/team/_/id/2110/central-arkansas-bears",
+        "/college-football/team/_/id/3101/utah-tech-trailblazers",
+        "/college-football/team/_/id/2453/north-alabama-lions"
+      ]
+    }
+  ]
+}

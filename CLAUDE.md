@@ -83,6 +83,61 @@ These issues must be resolved before any other development work. Do not proceed 
 - **No stable selectors**: Avoid `.class-name` selectors; use structural navigation (nth-child, table positions)
 - **Fragile by design**: ESPN is intentionally hostile to scrapers - expect maintenance burden
 
+### ESPN JSON API (Discovered 2026-01-29)
+Undocumented but stable API that powers ESPN's own apps - far superior to HTML scraping.
+
+**Endpoint pattern**:
+```
+https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}/summary?event={gameId}
+```
+
+**Example** (men's college basketball):
+```
+https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401825479
+```
+
+**Available data** (partial list):
+- Teams: names, abbreviations, records, ESPN IDs
+- Colors: primary/secondary hex values
+- Logos: URLs to official team logo images
+- Game: status, start time, venue, broadcast info
+- Scores: period-by-period, final, live updates
+- Odds, venue, attendance, etc.
+
+**Reference**: See `artifacts/espn_api_sample.json` for full response structure.
+
+**Usage guidelines**:
+- Cache aggressively - scores don't change faster than every few minutes
+- Respect 429 rate limit responses if they occur
+- Keep HTML scraper as fallback if API becomes unavailable
+- Low-volume use (family game app) is negligible traffic
+
+**Data fetch strategy** (for ESPN ID reconciliation):
+1. Scrape ESPN standings pages → extract team links with IDs, grouped by conference/league
+2. Hit API for each team ID → full team JSON
+3. Store as local JSON files in `scripts/data/` → one-time archive
+4. Build importers against cached files → parse at leisure, no rate limit pressure
+
+### Scripts vs Rake Tasks
+- **`lib/tasks/*.rake`** - Regular maintenance tasks, part of app operations. Run via `bin/rails taskname`. Rails environment loaded automatically.
+- **`scripts/`** - Occasional one-off tools, related but not critical to app. Run directly.
+
+**Script boilerplate** (gems only, no Rails):
+```ruby
+#!/usr/bin/env ruby
+require 'bundler/setup'
+require 'httparty'
+require 'json'
+```
+
+**Script boilerplate** (with Rails/ActiveRecord):
+```ruby
+#!/usr/bin/env ruby
+require 'bundler/setup'
+require_relative '../config/environment'
+# Now have access to models, app config, etc.
+```
+
 ### Accountability
 - ActivityLog table: track deletions and admin actions
 - Require `reason` field when deleting games
@@ -220,7 +275,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Posts UI: active post styling~~ | ✅ Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
 | ~~Broadcast logger for job visibility~~ | ✅ Moot - SolidQueue in-process mode (`processes: 0` in dev) outputs to Puma logs |
 | **Winners table period display** | Reformat individual winning periods column for better scannability |
-| Clarify Event `active` flag purpose | Determine use case vs date-based scopes (upcoming/in_progress/completed). May be removable. |
+| **Remove Event `active` flag** | Delete column, scopes, form toggle, and `.active` chains in controller/layout. Visibility is purely status-based (upcoming for admins only). |
 | ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
 | Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
 | Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
@@ -289,9 +344,7 @@ Target: Ready for football season
 | Transaction wrapper for score processing | Data integrity |
 | Scraper registry pattern | Cleaner architecture |
 | ~~Document rake tasks~~ | ✅ Done - README documents all export/import tasks and rebuild order |
-| Replace h1 headers with hero cards | Visual polish |
 | Gradient/animated text styles | Team branding (e.g., Seahawks iridescent green) |
-| Double-stroke text via text-shadow | Layered outlines (e.g., Kennesaw State black/gold). Generate shadow stack from primary + secondary stroke colors. |
 | Text-stroke lightness slider | HSL adjustment for readability tuning |
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
 | **Square win probability display** | (Stretch) Show win % per square on game#new grid using hardcoded sport-specific digit frequency tables. Fun visualization, may or may not be useful. |
@@ -335,8 +388,14 @@ Target: Ready for football season
 | **Fallback platform plan** | Alternative hosting strategy for outage resilience (multi-cloud, static export). Note: Render blocked SMTP on free tier (Sept 2025), limiting viability unless using paid tier or HTTP-based email APIs. |
 | **Public Docker release** | Package as self-hosted one-click deploy for offices/groups to run their own squares games. Sidesteps SaaS complexity and gambling compliance - users handle their own local rules. Test on TrueNAS first. |
 | **Draft mode for grid selection** | Alternative to random grid: players claim specific squares (office-style pools). Could be first-come-first-served or structured draft order. Note: Chris has patent on automated fantasy drafts - potential IP leverage. |
-| **Full data export/import** | Production is canonical source of truth. Need complete export/import for: (1) **Sport structure** (leagues, conferences, teams, affiliations, colors, styles) → version-controlled seed files, (2) **Game operations** (events, games, scores, players) → disaster recovery if redeploying mid-event. Challenge: grid stores player IDs that differ between systems. Solution: `legacy_id` field + ID translation on import. Export tasks already exist for teams/affiliations/players; need events/games/scores export. This also enables historical game import from old system. |
+| **Full data export/import** | Production is canonical source of truth. Need complete export/import for: (1) **Sport structure** (leagues, conferences, teams, affiliations, colors, styles) → version-controlled seed files, (2) **Game operations** (events, games, scores, players) → disaster recovery if redeploying mid-event. Challenge: grid stores player IDs that differ between systems. Solution: `legacy_id` field + ID translation on import. Export tasks already exist for teams/affiliations/players; need events/games/scores export. |
+| **Historical game import** | Import games from old system (Google Sheets era). Complex: player list translation between systems, team/league mapping, missing `start_time` data, grid player ID reconciliation. Many unknowns - needs discovery phase before implementation. |
 | **Auto-calculate optimal chances** | Algorithm to find best-fit integer chance values given player counts. Constraints: sum to 100, individuals > families (shared winnings), configurable charity allocation. Constrained integer optimization problem. |
+| **Double-stroke text via text-shadow** | Layered outlines (e.g., Kennesaw State black/gold). Needs more thought - current shadow stroke doesn't work well on smaller text. Would need conditional logic to use only primary shadow on small text, which may make the feature impractical. |
+| **Auto-populate game from scoring URL** | Extract gameId from pasted ESPN URL, hit JSON API for structured data (teams, start time, logos). Trivial now with API discovery. Strong candidate for 1.0 promotion. |
+| **ESPN API full integration** | Audit all places we scrape ESPN HTML and migrate to JSON API where possible. **Migration**: Add `espn_id`, `espn_mens_slug`, `espn_womens_slug` to Teams. **Team sync**: ESPN exposes full team lists per league - can bulk-match or seed ESPN IDs. **Scraper registry**: `EspnApiScraper` as primary, `EspnHtmlScraper` as fallback, same interface. **Potential wins**: (1) Score scraper via API, (2) Team colors/logos from API, (3) Cleaner game status. Document rate limits and caching strategy. See `artifacts/espn_api_sample.json`. |
+| **Team logos as local assets** | Build logo directory indexed by `css_slug`. Seed initially from ESPN API URLs, maintain locally. Self-hosted, no runtime external dependency. |
+| **External asset storage** | Configure Rails to serve assets from external storage (S3, Cloudflare R2, etc.) to avoid disk bloat on Fly.io. Active Storage supports multiple backends. Logos (~350 teams × ~50KB) would be ~17MB initially but plan for growth and multiple sports. |
 
 ## Small Fixes (No Milestone)
 
@@ -348,10 +407,9 @@ Target: Ready for football season
 | ✅ Action Text links load in frame | Fixed - Stimulus controller `action_text_links_controller.js` adds `data-turbo-frame="_top"` to all links on connect |
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |
 | ✅ Posts UI: active post styling | Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
-| Broadcast logger for job visibility | Consider adding `ActiveSupport::BroadcastLogger` to log to both file and STDOUT in development, so `bin/jobs` output is visible in Procfile.dev. Trade-off: more verbose Rails server output. |
-| **Fly.io image asset paths broken** | Header logo works, but event card backgrounds and favicon don't load. Partial failure suggests path resolution issue, not wholesale asset pipeline failure. Check how card backgrounds are referenced vs header logo. |
 | **Winners table period display** | Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. |
 | **schema.yaml sync** | Design doc is stale (`brand_url` → `brand_info`, `suffix` removed). Either manually update or create rake task to generate from `db/schema.rb`. |
+| **Orphan CSS cleanup** | When team `display_location` or abbreviation changes, `css_slug` changes, generating new CSS file but leaving old one orphaned. Need rake task to purge CSS files that don't match any current team's `css_slug`. |
 
 ---
 

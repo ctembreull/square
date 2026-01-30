@@ -1,0 +1,48 @@
+{
+  "conferences": [
+    {
+      "league": "nfl",
+      "name": "American Football Conference",
+      "teams": [
+        "/nfl/team/_/name/ne/new-england-patriots",
+        "/nfl/team/_/name/buf/buffalo-bills",
+        "/nfl/team/_/name/mia/miami-dolphins",
+        "/nfl/team/_/name/nyj/new-york-jets",
+        "/nfl/team/_/name/pit/pittsburgh-steelers",
+        "/nfl/team/_/name/bal/baltimore-ravens",
+        "/nfl/team/_/name/cin/cincinnati-bengals",
+        "/nfl/team/_/name/cle/cleveland-browns",
+        "/nfl/team/_/name/jax/jacksonville-jaguars",
+        "/nfl/team/_/name/hou/houston-texans",
+        "/nfl/team/_/name/ind/indianapolis-colts",
+        "/nfl/team/_/name/ten/tennessee-titans",
+        "/nfl/team/_/name/den/denver-broncos",
+        "/nfl/team/_/name/lac/los-angeles-chargers",
+        "/nfl/team/_/name/kc/kansas-city-chiefs",
+        "/nfl/team/_/name/lv/las-vegas-raiders"
+      ]
+    },
+    {
+      "league": "nfl",
+      "name": "National Football Conference",
+      "teams": [
+        "/nfl/team/_/name/phi/philadelphia-eagles",
+        "/nfl/team/_/name/dal/dallas-cowboys",
+        "/nfl/team/_/name/wsh/washington-commanders",
+        "/nfl/team/_/name/nyg/new-york-giants",
+        "/nfl/team/_/name/chi/chicago-bears",
+        "/nfl/team/_/name/gb/green-bay-packers",
+        "/nfl/team/_/name/min/minnesota-vikings",
+        "/nfl/team/_/name/det/detroit-lions",
+        "/nfl/team/_/name/car/carolina-panthers",
+        "/nfl/team/_/name/tb/tampa-bay-buccaneers",
+        "/nfl/team/_/name/atl/atlanta-falcons",
+        "/nfl/team/_/name/no/new-orleans-saints",
+        "/nfl/team/_/name/sea/seattle-seahawks",
+        "/nfl/team/_/name/lar/los-angeles-rams",
+        "/nfl/team/_/name/sf/san-francisco-49ers",
+        "/nfl/team/_/name/ari/arizona-cardinals"
+      ]
+    }
+  ]
+}
