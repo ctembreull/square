@@ -282,7 +282,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 | Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
 | **Teams table filters** | Filter by missing affiliations, colors, styles, or levels. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
-| **(Stretch) Auto-populate game from ESPN URL** | Paste ESPN Gamecast link → extract gameId → hit JSON API → auto-fill teams, start time, scoring URL. Game-changer for rapid game creation during tournament. ESPN IDs now on all teams. |
+| ~~**(Stretch) Auto-populate game from ESPN URL**~~ | ✅ Done - Paste ESPN URL → fetch button hits JSON API → auto-fills date, time, timezone, broadcast, league, teams with styles. Focuses title field for quick entry. |
 
 ### Fly.io Deployment Notes
 
