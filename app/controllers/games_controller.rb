@@ -63,6 +63,70 @@ class GamesController < ApplicationController
     redirect_to @game, alert: "Failed to refresh scores: #{e.message}"
   end
 
+  def fetch_espn_data
+    espn_api_url = params[:espn_api_url]
+    return render json: { error: "No ESPN API URL provided" }, status: :bad_request if espn_api_url.blank?
+
+    begin
+      response = HTTParty.get(espn_api_url, timeout: 10)
+      return render json: { error: "ESPN API request failed" }, status: :bad_gateway unless response.success?
+
+      data = response.parsed_response
+      competition = data.dig("header", "competitions", 0)
+      return render json: { error: "No competition data found" }, status: :not_found unless competition
+
+      # Determine league from ESPN API URL first - we need its level for team lookup
+      league = determine_league_from_espn_url(espn_api_url)
+
+      competitors = competition["competitors"] || []
+      home_competitor = competitors.find { |c| c["homeAway"] == "home" }
+      away_competitor = competitors.find { |c| c["homeAway"] == "away" }
+
+      home_espn_id = home_competitor&.dig("team", "id")
+      away_espn_id = away_competitor&.dig("team", "id")
+
+      # ESPN IDs are only unique within a sport, so filter by level (college vs pro)
+      team_scope = league ? Team.where(level: league.level) : Team
+      home_team = team_scope.find_by(espn_id: home_espn_id) if home_espn_id
+      away_team = team_scope.find_by(espn_id: away_espn_id) if away_espn_id
+
+      # Parse date - ESPN returns UTC, convert to user's timezone
+      game_date_utc = competition["date"]
+      local_date = nil
+      local_time = nil
+      local_timezone = default_timezone_for_form
+
+      if game_date_utc.present?
+        utc_time = Time.parse(game_date_utc)
+        tz = TZInfo::Timezone.get(local_timezone)
+        local_time_obj = tz.utc_to_local(utc_time.utc)
+        local_date = local_time_obj.strftime("%Y-%m-%d")
+        local_time = local_time_obj.strftime("%H:%M")
+      end
+
+      # Extract broadcast networks
+      broadcasts = competition["broadcasts"] || []
+      broadcast_network = broadcasts.map { |b| b.dig("media", "shortName") }.compact.join(" / ")
+
+      render json: {
+        league_id: league&.id,
+        league_name: league&.name,
+        home_team_id: home_team&.id,
+        home_team_name: home_team&.display_name || home_competitor&.dig("team", "displayName"),
+        away_team_id: away_team&.id,
+        away_team_name: away_team&.display_name || away_competitor&.dig("team", "displayName"),
+        local_date: local_date,
+        local_time: local_time,
+        local_timezone: local_timezone,
+        broadcast_network: broadcast_network.presence,
+        home_espn_id: home_espn_id,
+        away_espn_id: away_espn_id
+      }
+    rescue StandardError => e
+      render json: { error: e.message }, status: :internal_server_error
+    end
+  end
+
   def manual_scores
     periods = @game.league.periods
     away_scores = params[:away_scores].values.map { |v| v.blank? ? nil : v.to_i }
@@ -128,7 +192,7 @@ class GamesController < ApplicationController
   def game_params
     params.require(:game).permit(:event_id, :title, :local_date, :local_time, :local_timezone,
         :league_id, :home_team_id, :home_style, :away_team_id, :away_style,
-        :grid, :periods, :period_prize, :final_prize, :score_url, :broadcast_network)
+        :grid, :periods, :period_prize, :final_prize, :score_url, :espn_api_url, :broadcast_network)
   end
 
   def default_timezone_for_form
@@ -140,5 +204,21 @@ class GamesController < ApplicationController
       return iana_id if Game::TIMEZONES.any? { |_, id| id == iana_id }
     end
     "America/Los_Angeles" # Pacific time as default
+  end
+
+  def determine_league_from_espn_url(url)
+    # Map ESPN API URL sport paths to our league abbreviations
+    mappings = {
+      "basketball/mens-college-basketball" => "MBB",
+      "basketball/womens-college-basketball" => "WBB",
+      "football/nfl" => "NFL",
+      "football/college-football" => "FBS" # Default to FBS for college football
+    }
+
+    mappings.each do |path, abbr|
+      return League.find_by(abbr: abbr) if url.include?(path)
+    end
+
+    nil
   end
 end

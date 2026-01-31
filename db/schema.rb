@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_31_075247) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_31_192036) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -110,6 +110,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_31_075247) do
     t.bigint "away_team_id", null: false
     t.string "broadcast_network"
     t.datetime "created_at", null: false
+    t.string "espn_api_url"
     t.bigint "event_id", null: false
     t.integer "final_prize", default: 0, null: false
     t.text "grid"

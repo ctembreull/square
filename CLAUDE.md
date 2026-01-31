@@ -278,10 +278,10 @@ Target: NCAA Tournament testing on Fly.io
 | **Remove Event `active` flag** | Delete column, scopes, form toggle, and `.active` chains in controller/layout. Visibility is purely status-based (upcoming for admins only). |
 | ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
 | Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
-| Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
+| ~~Event game list team links~~ | ✅ Done - Team names in event game items should link to game, but invisibly (no underline/color change). |
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 | Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
-| **Teams table filters** | Filter by missing affiliations, colors, or styles. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
+| **Teams table filters** | Filter by missing affiliations, colors, styles, or levels. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
 | **(Stretch) Auto-populate game from ESPN URL** | Paste ESPN Gamecast link → extract gameId → hit JSON API → auto-fill teams, start time, scoring URL. Game-changer for rapid game creation during tournament. ESPN IDs now on all teams. |
 
 ### Fly.io Deployment Notes
@@ -354,6 +354,7 @@ Target: Ready for football season
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
 | ~~**PDF caching**~~ | ✅ Done - PDFs cached in Active Storage, served if fresh. Stale detection via game/score `updated_at`. `rake storage:purge_unattached` cleans orphaned blobs. |
 | **Security audit** | Run Brakeman + bundler-audit. Check: CSRF protection, param filtering, SQL injection, auth bypass, mass assignment. Review Fly.io secrets exposure. Low-value target but protect family fun from griefers. |
+| **Query optimization on events#winners** | Check for N+1 queries, add eager loading. Aggregation across games, scores, and players likely has inefficiencies. |
 
 ### Event PDF Export (Implemented)
 
@@ -409,7 +410,8 @@ Target: Ready for football season
 | ✅ Action Text links load in frame | Fixed - Stimulus controller `action_text_links_controller.js` adds `data-turbo-frame="_top"` to all links on connect |
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |
 | ✅ Posts UI: active post styling | Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
-| **Winners table period display** | Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. |
+| ✅ Winners table period display | Done - Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. Tooltip added to show game title and period identifier. |
+| **Player form: Charity type handling** | When "Charity" is selected in the type dropdown, disable the Family dropdown and set Chances to 0 (also disabled). Stimulus controller to toggle field states based on type selection. |
 | **schema.yaml sync** | Design doc is stale (`brand_url` → `brand_info`, `suffix` removed). Either manually update or create rake task to generate from `db/schema.rb`. |
 | **Orphan CSS cleanup** | When team `display_location` or abbreviation changes, `css_slug` changes, generating new CSS file but leaving old one orphaned. Need rake task to purge CSS files that don't match any current team's `css_slug`. |
 

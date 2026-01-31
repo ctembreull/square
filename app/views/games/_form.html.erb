@@ -12,11 +12,13 @@
 
 	<%= form.hidden_field :event_id, data: { game_form_target: "eventId" } %>
 	<%= form.hidden_field :grid %>
+	<%= form.hidden_field :espn_api_url, data: { game_form_target: "espnApiUrl" } %>
 
 	<div class="row mb-3">
 		<div class="col-6">
 			<%= form.label :title, "Title", class: "form-label" %>
-			<%= form.text_field :title, class: "form-control form-control-sm" %>
+			<%= form.text_field :title, class: "form-control form-control-sm",
+					data: { game_form_target: "title" } %>
 		</div>
 		<div class="col-2"></div>
 		<div class="col-2">
@@ -34,21 +36,25 @@
 	<div class="row mb-3">
 		<div class="col-3">
 			<%= form.label :local_date, "Date", class: "form-label" %>
-			<%= form.date_field :local_date, class: "form-control form-control-sm" %>
+			<%= form.date_field :local_date, class: "form-control form-control-sm",
+					data: { game_form_target: "localDate" } %>
 		</div>
 		<div class="col-3">
 			<%= form.label :local_time, "Time", class: "form-label" %>
-			<%= form.time_field :local_time, class: "form-control form-control-sm", step: 60 %>
+			<%= form.time_field :local_time, class: "form-control form-control-sm", step: 60,
+					data: { game_form_target: "localTime" } %>
 		</div>
 		<div class="col-3">
 			<%= form.label :local_timezone, "Timezone", class: "form-label" %>
 			<%= form.select :local_timezone, Game::TIMEZONES,
 					{ include_blank: "Select Timezone" },
-					class: "form-control form-control-sm" %>
+					class: "form-control form-control-sm",
+					data: { game_form_target: "localTimezone" } %>
 		</div>
 		<div class="col-3">
 			<%= form.label :broadcast_network, "Broadcast", class: "form-label" %>
-			<%= form.text_field :broadcast_network, class: "form-control form-control-sm" %>
+			<%= form.text_field :broadcast_network, class: "form-control form-control-sm",
+					data: { game_form_target: "broadcastNetwork" } %>
 		</div>
 	</div>
 
@@ -98,8 +104,14 @@
 
 	<div class="row mb-3">
 		<div class="col-4">
-			<%= form.label :score_url, "Score URL", class: "form-label" %>
-			<%= form.text_field :score_url, class: "form-control form-control-sm" %>
+			<label for="game_score_url" class="form-label" data-game-form-target="scoreUrlLabel">Score URL</label>
+			<div class="input-group input-group-sm">
+				<%= form.text_field :score_url, class: "form-control form-control-sm", autofocus: true,
+						data: { game_form_target: "scoreUrl", action: "input->game-form#scoreUrlChanged" } %>
+				<button type="button" class="btn btn-outline-secondary" data-action="click->game-form#fetchEspnData" data-game-form-target="fetchButton" disabled>
+					<i class="fas fa-download"></i>
+				</button>
+			</div>
 		</div>
 		<div class="col-5">
 			<%= form.label :home_team_id, "Home Team", class: "form-label" %>

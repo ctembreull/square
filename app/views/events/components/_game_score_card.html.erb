@@ -10,8 +10,8 @@
 	<div class="card-body p-0">
 		<table class="m-0" style="width: 100%;">
 			<tr class="border-bottom">
-				<td class="p-1 ps-2 h6 fw-semi-bold text-start <%= game.away_style %>">
-					<%= game.away_team.display_location %>
+				<td class="p-1 ps-2 h6 fw-semi-bold text-start position-relative <%= game.away_style %>">
+					<%= link_to game.away_team.display_location, game, class: "text-decoration-none stretched-link #{game.away_style}" %>
 				</td>
 				<% (1..game.league.periods).each do |n| %>
 					<% period = game.scores.where(period: n).first %>
@@ -30,8 +30,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="p-1 ps-2 h6 fw-semi-bold text-start <%= game.home_style %>">
-					<%= game.home_team.display_location %>
+				<td class="p-1 ps-2 h6 fw-semi-bold text-start position-relative <%= game.home_style %>">
+					<%= link_to game.home_team.display_location, game, class: "text-decoration-none stretched-link #{game.home_style}" %>
 				</td>
 				<% (1..game.league.periods).each do |n| %>
 					<% period = game.scores.where(period: n).first %>

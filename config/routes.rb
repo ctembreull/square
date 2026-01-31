@@ -64,6 +64,9 @@ Rails.application.routes.draw do
 
   # Games
   resources :games, except: [ :index ] do
+    collection do
+      get :fetch_espn_data
+    end
     member do
       patch :swap_teams
       patch :refresh_scores
