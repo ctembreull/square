@@ -8,13 +8,13 @@
 #   script/import_espn_teams.rb --apply   # Actually update the database
 #
 # Prerequisites:
-#   - Team JSON files in script/data/mbb/*.json and script/data/wbb/*.json
-#   - Standings files: script/data/mbb.json and script/data/wbb.json
+#   - Team JSON files in script/data/{mbb,wbb,fbs,fcs}/*.json
+#   - Standings files: script/data/{mbb,wbb,fbs,fcs}.json
 #   - Conferences already exist in database (matched by name)
 #
 # This script:
 #   1. Creates skeleton Team records for ESPN teams not in DB
-#   2. Creates MBB and WBB affiliations based on standings data
+#   2. Creates MBB, WBB, FBS, and FCS affiliations based on standings data
 
 require "bundler/setup"
 require_relative "../config/environment"
@@ -88,9 +88,13 @@ end
 
 mbb_standings = JSON.parse(File.read(DATA_DIR.join("mbb.json")))
 wbb_standings = JSON.parse(File.read(DATA_DIR.join("wbb.json")))
+fbs_standings = JSON.parse(File.read(DATA_DIR.join("fbs.json")))
+fcs_standings = JSON.parse(File.read(DATA_DIR.join("fcs.json")))
 
 puts "  MBB: #{mbb_standings['conferences'].size} conferences"
 puts "  WBB: #{wbb_standings['conferences'].size} conferences"
+puts "  FBS: #{fbs_standings['conferences'].size} conferences"
+puts "  FCS: #{fcs_standings['conferences'].size} conferences"
 puts
 
 # Step 4: Build affiliation plan
@@ -98,9 +102,13 @@ puts "Planning affiliations..."
 
 mbb_league = League.find_by!(abbr: "MBB")
 wbb_league = League.find_by!(abbr: "WBB")
+fbs_league = League.find_by!(abbr: "FBS")
+fcs_league = League.find_by!(abbr: "FCS")
 
 mbb_affiliations = []
 wbb_affiliations = []
+fbs_affiliations = []
+fcs_affiliations = []
 
 mbb_standings["conferences"].each do |conf_data|
   conference = mbb_league.conferences.find_by(name: conf_data["name"])
@@ -130,8 +138,38 @@ wbb_standings["conferences"].each do |conf_data|
   end
 end
 
+fbs_standings["conferences"].each do |conf_data|
+  conference = fbs_league.conferences.find_by(name: conf_data["name"])
+  unless conference
+    puts "  WARNING: FBS conference not found: #{conf_data['name']}"
+    next
+  end
+
+  conf_data["teams"].each do |link|
+    espn_id = extract_espn_id(link)
+    next unless espn_id
+    fbs_affiliations << { espn_id: espn_id, conference: conference }
+  end
+end
+
+fcs_standings["conferences"].each do |conf_data|
+  conference = fcs_league.conferences.find_by(name: conf_data["name"])
+  unless conference
+    puts "  WARNING: FCS conference not found: #{conf_data['name']}"
+    next
+  end
+
+  conf_data["teams"].each do |link|
+    espn_id = extract_espn_id(link)
+    next unless espn_id
+    fcs_affiliations << { espn_id: espn_id, conference: conference }
+  end
+end
+
 puts "  MBB affiliations to create: #{mbb_affiliations.size}"
 puts "  WBB affiliations to create: #{wbb_affiliations.size}"
+puts "  FBS affiliations to create: #{fbs_affiliations.size}"
+puts "  FCS affiliations to create: #{fcs_affiliations.size}"
 puts
 
 # Step 5: Report
@@ -142,6 +180,8 @@ puts
 puts "Teams to create: #{teams_to_create.size}"
 puts "MBB affiliations: #{mbb_affiliations.size}"
 puts "WBB affiliations: #{wbb_affiliations.size}"
+puts "FBS affiliations: #{fbs_affiliations.size}"
+puts "FCS affiliations: #{fcs_affiliations.size}"
 puts
 
 if teams_to_create.any?
@@ -233,11 +273,55 @@ else
   end
   puts "  Created: #{wbb_created}, Skipped (existing): #{wbb_skipped}"
 
+  # Create FBS affiliations
+  puts "Creating FBS affiliations..."
+  fbs_created = 0
+  fbs_skipped = 0
+  fbs_affiliations.each do |aff|
+    team = teams_by_espn_id[aff[:espn_id]]
+    unless team
+      puts "  WARNING: No team found for ESPN ID #{aff[:espn_id]}"
+      next
+    end
+
+    existing = Affiliation.find_by(team: team, conference: aff[:conference])
+    if existing
+      fbs_skipped += 1
+    else
+      Affiliation.create!(team: team, conference: aff[:conference], league: aff[:conference].league)
+      fbs_created += 1
+    end
+  end
+  puts "  Created: #{fbs_created}, Skipped (existing): #{fbs_skipped}"
+
+  # Create FCS affiliations
+  puts "Creating FCS affiliations..."
+  fcs_created = 0
+  fcs_skipped = 0
+  fcs_affiliations.each do |aff|
+    team = teams_by_espn_id[aff[:espn_id]]
+    unless team
+      puts "  WARNING: No team found for ESPN ID #{aff[:espn_id]}"
+      next
+    end
+
+    existing = Affiliation.find_by(team: team, conference: aff[:conference])
+    if existing
+      fcs_skipped += 1
+    else
+      Affiliation.create!(team: team, conference: aff[:conference], league: aff[:conference].league)
+      fcs_created += 1
+    end
+  end
+  puts "  Created: #{fcs_created}, Skipped (existing): #{fcs_skipped}"
+
   puts
   puts "=" * 60
   puts "COMPLETE"
   puts "  Teams: #{created_teams} created"
   puts "  MBB affiliations: #{mbb_created} created, #{mbb_skipped} existed"
   puts "  WBB affiliations: #{wbb_created} created, #{wbb_skipped} existed"
+  puts "  FBS affiliations: #{fbs_created} created, #{fbs_skipped} existed"
+  puts "  FCS affiliations: #{fcs_created} created, #{fcs_skipped} existed"
   puts "=" * 60
 end
