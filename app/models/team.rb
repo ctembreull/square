@@ -49,14 +49,19 @@ class Team < ApplicationRecord
 
   # Generates ESPN-style slug: display_location-name
   # e.g., "st-bonaventure-bonnies"
+  # Uses transliterate to convert accented characters (é→e, ñ→n) to ASCII
   def generate_espn_slug
-    "#{display_location || location} #{name}".downcase.gsub(/[''&]/, '').gsub(/[^a-z0-9]+/, '-').gsub(/-$/, '')
+    slug = "#{display_location || location} #{name}"
+    ActiveSupport::Inflector.transliterate(slug).downcase.gsub(/[''&]/, '').gsub(/[^a-z0-9]+/, '-').gsub(/-$/, '')
   end
 
   # Generates slug for SCSS naming: abbr-display_location-name
   # e.g., "tuln-tulane-green-wave"
+  # Uses transliterate to convert accented characters (é→e, ñ→n) to ASCII
   def scss_slug
-    [ abbr, display_location || location, name ].compact.map { |s| s.downcase.gsub(/[^a-z0-9]+/, "-").gsub(/-+$/, "") }.join("-")
+    [ abbr, display_location || location, name ].compact.map { |s|
+      ActiveSupport::Inflector.transliterate(s).downcase.gsub(/[^a-z0-9]+/, "-").gsub(/-+$/, "")
+    }.join("-")
   end
 
   # Full prefix for SCSS variables/classes

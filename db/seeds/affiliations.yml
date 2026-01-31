@@ -1,4 +1,54 @@
 ---
+aamu-alabama-a-m-bulldogs:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
+acu-abilene-christian-wildcats:
+- league: MBB
+  conference: WEST
+- league: WBB
+  conference: WEST
+af-air-force-falcons:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
+akr-akron-zips:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
+ala-alabama-crimson-tide:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+alcn-alcorn-state-braves:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
+alst-alabama-state-hornets:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
+amcc-texas-a-m-corpus-christi-islanders:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
+amer-american-university-eagles:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+app-app-state-mountaineers:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 ari-arizona-cardinals:
 - league: NFL
   conference: NFC
@@ -9,6 +59,11 @@ ari-arizona-wildcats:
   conference: B12
 - league: WBB
   conference: B12
+ark-arkansas-razorbacks:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 army-army-black-knights:
 - league: FBS
   conference: AAC
@@ -16,6 +71,11 @@ army-army-black-knights:
   conference: PAT
 - league: WBB
   conference: PAT
+arst-arkansas-state-red-wolves:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 asu-arizona-state-sun-devils:
 - league: FBS
   conference: B12
@@ -26,9 +86,19 @@ asu-arizona-state-sun-devils:
 atl-atlanta-falcons:
 - league: NFL
   conference: NFC
+aub-auburn-tigers:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 bal-baltimore-ravens:
 - league: NFL
   conference: AFC
+ball-ball-state-cardinals:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
 bay-baylor-bears:
 - league: FBS
   conference: B12
@@ -43,16 +113,41 @@ bc-boston-college-eagles:
   conference: ACC
 - league: WBB
   conference: ACC
+bcu-bethune-cookman-wildcats:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
 bel-bellarmine-knights:
 - league: MBB
   conference: ASUN
 - league: WBB
   conference: ASUN
+bel-belmont-bruins:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+bgsu-bowling-green-falcons:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
 bing-binghamton-bearcats:
 - league: MBB
   conference: AEAST
 - league: WBB
   conference: AEAST
+bois-boise-state-broncos:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
+brad-bradley-braves:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
 brwn-brown-bears:
 - league: FCS
   conference: IVY
@@ -65,15 +160,30 @@ bry-bryant-bulldogs:
   conference: AEAST
 - league: WBB
   conference: AEAST
+bu-boston-university-terriers:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+buck-bucknell-bison:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
 buf-buffalo-bills:
 - league: NFL
   conference: AFC
+buf-buffalo-bulls:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
 but-butler-bulldogs:
 - league: MBB
   conference: BIGEAST
 - league: WBB
   conference: BIGEAST
-byu-brigham-young-cougars:
+byu-byu-cougars:
 - league: FBS
   conference: B12
 - league: MBB
@@ -97,9 +207,29 @@ cam-campbell-fighting-camels:
   conference: CAA
 - league: WBB
   conference: CAA
+can-canisius-golden-griffins:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
 car-carolina-panthers:
 - league: NFL
   conference: NFC
+cbu-california-baptist-lancers:
+- league: MBB
+  conference: WEST
+- league: WBB
+  conference: WEST
+ccsu-central-connecticut-blue-devils:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
+ccu-coastal-carolina-chanticleers:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 cha-charleston-cougars:
 - league: MBB
   conference: CAA
@@ -120,6 +250,11 @@ chs-charleston-southern-buccaneers:
   conference: BSOUTH
 - league: WBB
   conference: BSOUTH
+chst-chicago-state-cougars:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
 cin-cincinnati-bearcats:
 - league: FBS
   conference: B12
@@ -130,6 +265,9 @@ cin-cincinnati-bearcats:
 cin-cincinnati-bengals:
 - league: NFL
   conference: AFC
+cit-the-citadel-bulldogs:
+- league: MBB
+  conference: SOU
 cle-cleveland-browns:
 - league: NFL
   conference: AFC
@@ -140,6 +278,11 @@ clem-clemson-tigers:
   conference: ACC
 - league: WBB
   conference: ACC
+cmu-central-michigan-chippewas:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
 col-colorado-buffaloes:
 - league: FBS
   conference: B12
@@ -154,6 +297,16 @@ col-columbia-lions:
   conference: IVY
 - league: WBB
   conference: IVY
+colg-colgate-raiders:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+copp-coppin-state-eagles:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
 corn-cornell-big-red:
 - league: FCS
   conference: IVY
@@ -161,7 +314,7 @@ corn-cornell-big-red:
   conference: IVY
 - league: WBB
   conference: IVY
-crei-creighton-blue-jays:
+crei-creighton-bluejays:
 - league: MBB
   conference: BIGEAST
 - league: WBB
@@ -176,6 +329,11 @@ cst-cleveland-state-vikings:
   conference: HORIZ
 - league: WBB
   conference: HORIZ
+csu-colorado-state-rams:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
 csuf-cal-state-fullerton-titans:
 - league: MBB
   conference: BWEST
@@ -216,6 +374,11 @@ del-delaware-blue-hens:
 den-denver-broncos:
 - league: NFL
   conference: AFC
+den-denver-pioneers:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
 det-detroit-lions:
 - league: NFL
   conference: NFC
@@ -224,11 +387,21 @@ dpu-depaul-blue-demons:
   conference: BIGEAST
 - league: WBB
   conference: BIGEAST
-drx-drexel-fighting-dragons:
+drke-drake-bulldogs:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+drx-drexel-dragons:
 - league: MBB
   conference: CAA
 - league: WBB
   conference: CAA
+dsu-delaware-state-hornets:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
 duke-duke-blue-devils:
 - league: FBS
   conference: ACC
@@ -248,6 +421,11 @@ ecu-east-carolina-pirates:
   conference: AAC
 - league: WBB
   conference: AAC
+eiu-eastern-illinois-panthers:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
 eku-eastern-kentucky-colonels:
 - league: MBB
   conference: ASUN
@@ -258,11 +436,41 @@ elon-elon-phoenix:
   conference: CAA
 - league: WBB
   conference: CAA
+emu-eastern-michigan-eagles:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
+etam-east-texas-a-m-lions:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
+etsu-east-tennessee-state-buccaneers:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
+evan-evansville-purple-aces:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
 ewu-eastern-washington-eagles:
 - league: MBB
   conference: SKY
 - league: WBB
   conference: BSKY
+fair-fairfield-stags:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+famu-florida-a-m-rattlers:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
 fau-florida-atlantic-owls:
 - league: FBS
   conference: AAC
@@ -270,6 +478,11 @@ fau-florida-atlantic-owls:
   conference: AAC
 - league: WBB
   conference: AAC
+fdu-fairleigh-dickinson-knights:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
 fgcu-florida-gulf-coast-eagles:
 - league: MBB
   conference: ASUN
@@ -282,11 +495,21 @@ fiu-florida-international-panthers:
   conference: CUSA
 - league: WBB
   conference: CUSA
+fla-florida-gators:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 for-fordham-rams:
 - league: MBB
   conference: A10
 - league: WBB
   conference: A10
+fres-fresno-state-bulldogs:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
 fsu-florida-state-seminoles:
 - league: FBS
   conference: ACC
@@ -294,14 +517,44 @@ fsu-florida-state-seminoles:
   conference: ACC
 - league: WBB
   conference: ACC
+fur-furman-paladins:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
+gaso-georgia-southern-eagles:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
+gast-georgia-state-panthers:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 gb-green-bay-packers:
 - league: NFL
   conference: NFC
+gcu-grand-canyon-lopes:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
 gmu-george-mason-patriots:
 - league: MBB
   conference: A10
 - league: WBB
   conference: A10
+gonz-gonzaga-bulldogs:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
+gram-grambling-tigers:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
 gt-georgia-tech-yellow-jackets:
 - league: FBS
   conference: ACC
@@ -341,6 +594,16 @@ haw-hawai-i-rainbow-warriors:
   conference: BWEST
 - league: WBB
   conference: BWEST
+hc-holy-cross-crusaders:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+hcu-houston-christian-huskies:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
 hip-high-point-panthers:
 - league: MBB
   conference: BSOUTH
@@ -361,6 +624,11 @@ hou-houston-cougars:
 hou-houston-texans:
 - league: NFL
   conference: AFC
+how-howard-bison:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
 ida-idaho-vandals:
 - league: MBB
   conference: SKY
@@ -378,9 +646,24 @@ ill-illinois-fighting-illini:
   conference: B1G
 - league: WBB
   conference: B1G
+ilst-illinois-state-redbirds:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
 ind-indianapolis-colts:
 - league: NFL
   conference: AFC
+inst-indiana-state-sycamores:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+iona-iona-gaels:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
 iowa-iowa-hawkeyes:
 - league: FBS
   conference: B1G
@@ -420,6 +703,16 @@ jax-jacksonville-dolphins:
   conference: ASUN
 - league: WBB
   conference: ASUN
+jkst-jackson-state-tigers:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
+jmu-james-madison-dukes:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 jvst-jacksonville-state-gamecocks:
 - league: FBS
   conference: CUSA
@@ -430,6 +723,16 @@ jvst-jacksonville-state-gamecocks:
 kc-kansas-city-chiefs:
 - league: NFL
   conference: AFC
+kc-kansas-city-roos:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
+kent-kent-state-golden-flashes:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
 knst-kennesaw-state-owls:
 - league: FBS
   conference: CUSA
@@ -451,9 +754,24 @@ ku-kansas-jayhawks:
   conference: B12
 - league: WBB
   conference: B12
+l-md-loyola-maryland-greyhounds:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
 lac-los-angeles-chargers:
 - league: NFL
   conference: AFC
+laf-lafayette-leopards:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+lam-lamar-cardinals:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
 lar-los-angeles-rams:
 - league: NFL
   conference: NFC
@@ -474,6 +792,16 @@ lbst-long-beach-state-beach:
   conference: BWEST
 - league: WBB
   conference: BWEST
+leh-lehigh-mountain-hawks:
+- league: MBB
+  conference: PAT
+- league: WBB
+  conference: PAT
+lem-le-moyne-dolphins:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
 lib-liberty-flames:
 - league: FBS
   conference: CUSA
@@ -481,11 +809,26 @@ lib-liberty-flames:
   conference: CUSA
 - league: WBB
   conference: CUSA
+lin-lindenwood-lions:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
 lip-lipscomb-bisons:
 - league: MBB
   conference: ASUN
 - league: WBB
   conference: ASUN
+liu-long-island-university-sharks:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
+lmu-loyola-marymount-lions:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
 lng-longwood-lancers:
 - league: MBB
   conference: BSOUTH
@@ -498,16 +841,44 @@ lou-louisville-cardinals:
   conference: ACC
 - league: WBB
   conference: ACC
+lr-little-rock-trojans:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
+lsu-lsu-tigers:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 luc-loyola-chicago-ramblers:
 - league: MBB
   conference: A10
 - league: WBB
   conference: A10
+lv-las-vegas-raiders:
+- league: NFL
+  conference: AFC
+m-oh-miami-oh-redhawks:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
+man-manhattan-jaspers:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
 marq-marquette-golden-eagles:
 - league: MBB
   conference: BIGEAST
 - league: WBB
   conference: BIGEAST
+mcn-mcneese-cowboys:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
 mem-memphis-tigers:
 - league: FBS
   conference: AAC
@@ -515,6 +886,16 @@ mem-memphis-tigers:
   conference: AAC
 - league: WBB
   conference: AAC
+mer-mercer-bears:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
+merc-mercyhurst-lakers:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
 mia-miami-dolphins:
 - league: NFL
   conference: AFC
@@ -540,6 +921,16 @@ min-minnesota-golden-gophers:
 min-minnesota-vikings:
 - league: NFL
   conference: NFC
+miss-ole-miss-rebels:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+miz-missouri-tigers:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 mn-maine-black-bears:
 - league: MBB
   conference: AEAST
@@ -555,6 +946,16 @@ mon-monmouth-hawks:
   conference: CAA
 - league: WBB
   conference: CAA
+more-morehead-state-eagles:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
+morg-morgan-state-bears:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
 most-missouri-state-bears:
 - league: FBS
   conference: CUSA
@@ -562,6 +963,31 @@ most-missouri-state-bears:
   conference: CUSA
 - league: WBB
   conference: CUSA
+mrmk-merrimack-warriors:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+mrsh-marshall-thundering-herd:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
+mrst-marist-red-foxes:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+msm-mount-st-mary-s-mountaineers:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+msst-mississippi-state-bulldogs:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 msu-michigan-state-spartans:
 - league: FBS
   conference: B1G
@@ -581,6 +1007,16 @@ mtsu-montana-state-bobcats:
   conference: SKY
 - league: WBB
   conference: BSKY
+mur-murray-state-racers:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+mvsu-mississippi-valley-state-delta-devils:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
 nau-north-alabama-lions:
 - league: MBB
   conference: ASUN
@@ -603,6 +1039,11 @@ ncat-north-carolina-a-t-aggies:
   conference: CAA
 - league: WBB
   conference: CAA
+nccu-north-carolina-central-eagles:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
 nco-northern-colorado-bears:
 - league: MBB
   conference: SKY
@@ -615,6 +1056,8 @@ ncst-nc-state-wolfpack:
   conference: ACC
 - league: WBB
   conference: A10
+- league: WBB
+  conference: ACC
 nd-notre-dame-fighting-irish:
 - league: FBS
   conference: IND
@@ -622,6 +1065,11 @@ nd-notre-dame-fighting-irish:
   conference: ACC
 - league: WBB
   conference: ACC
+ndsu-north-dakota-state-bison:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
 ne-new-england-patriots:
 - league: NFL
   conference: AFC
@@ -632,11 +1080,36 @@ neb-nebraska-cornhuskers:
   conference: B1G
 - league: WBB
   conference: B1G
+nev-nevada-wolf-pack:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
 nfl-north-florida-ospreys:
 - league: MBB
   conference: ASUN
 - league: WBB
   conference: ASUN
+nhvn-new-haven-chargers:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
+nia-niagara-purple-eagles:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+nich-nicholls-colonels:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
+niu-northern-illinois-huskies:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
 njit-njit-highlanders:
 - league: MBB
   conference: AEAST
@@ -662,6 +1135,11 @@ nore-northeastern-huskies:
   conference: CAA
 - league: WBB
   conference: CAA
+norf-norfolk-state-spartans:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
 nova-villanova-wildcats:
 - league: MBB
   conference: BIGEAST
@@ -674,6 +1152,11 @@ nw-northwestern-wildcats:
   conference: B1G
 - league: WBB
   conference: B1G
+nwst-northwestern-state-demons:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
 nyg-new-york-giants:
 - league: NFL
   conference: NFC
@@ -685,9 +1168,21 @@ oak-oakland-golden-grizzlies:
   conference: HORIZ
 - league: WBB
   conference: HORIZ
-oak-oakland-raiders:
-- league: NFL
-  conference: AFC
+odu-old-dominion-monarchs:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
+ohio-ohio-bobcats:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
+oma-omaha-mavericks:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
 ore-oregon-ducks:
 - league: FBS
   conference: B1G
@@ -695,6 +1190,16 @@ ore-oregon-ducks:
   conference: B1G
 - league: WBB
   conference: B1G
+orst-oregon-state-beavers:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
+oru-oral-roberts-golden-eagles:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
 osu-ohio-state-buckeyes:
 - league: FBS
   conference: B1G
@@ -709,6 +1214,16 @@ osu-oklahoma-state-cowboys:
   conference: B12
 - league: WBB
   conference: B12
+ou-oklahoma-sooners:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+pac-pacific-tigers:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
 peay-austin-peay-governors:
 - league: MBB
   conference: ASUN
@@ -721,10 +1236,15 @@ penn-pennsylvania-quakers:
   conference: IVY
 - league: WBB
   conference: IVY
+pepp-pepperdine-waves:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
 phi-philadelphia-eagles:
 - league: NFL
   conference: NFC
-pit-pitt-panthers:
+pit-pittsburgh-panthers:
 - league: FBS
   conference: ACC
 - league: MBB
@@ -739,6 +1259,11 @@ poly-cal-poly-mustangs:
   conference: BWEST
 - league: WBB
   conference: BWEST
+port-portland-pilots:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
 pres-presbyterian-blue-hose:
 - league: MBB
   conference: BSOUTH
@@ -775,16 +1300,31 @@ pur-purdue-boilermakers:
   conference: B1G
 - league: WBB
   conference: B1G
+pv-prairie-view-a-m-panthers:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
 qu-queens-university-royals:
 - league: MBB
   conference: ASUN
 - league: WBB
   conference: ASUN
+quin-quinnipiac-bobcats:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
 rad-radford-highlanders:
 - league: MBB
   conference: BSOUTH
 - league: WBB
   conference: BSOUTH
+rgv-ut-rio-grande-valley-vaqueros:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
 rice-rice-owls:
 - league: FBS
   conference: AAC
@@ -797,7 +1337,12 @@ rich-richmond-spiders:
   conference: A10
 - league: WBB
   conference: A10
-rmu-robert-morris-colonels:
+rid-rider-broncs:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+rmu-robert-morris-colonials:
 - league: MBB
   conference: HORIZ
 - league: WBB
@@ -814,6 +1359,11 @@ sacst-sacramento-state-hornets:
   conference: SKY
 - league: WBB
   conference: BSKY
+sam-samford-bulldogs:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
 sbu-st-bonaventure-bonnies:
 - league: MBB
   conference: A10
@@ -824,17 +1374,77 @@ sbu-stony-brook-seawolves:
   conference: CAA
 - league: WBB
   conference: CAA
+sc-south-carolina-gamecocks:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+scst-south-carolina-state-bulldogs:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
+scu-santa-clara-broncos:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
 scu-south-carolina-upstate-spartans:
 - league: MBB
   conference: BSOUTH
 - league: WBB
   conference: BSOUTH
+sdak-south-dakota-coyotes:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
+sdst-south-dakota-state-jackrabbits:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
+sdsu-san-diego-state-aztecs:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
 sea-seattle-seahawks:
 - league: NFL
   conference: NFC
+sea-seattle-u-redhawks:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
+sela-se-louisiana-lions:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
+semo-southeast-missouri-state-redhawks:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
 sf-san-francisco-49ers:
 - league: NFL
   conference: NFC
+sf-san-francisco-dons:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
+sfa-stephen-f-austin-lumberjacks:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
+sfpa-saint-francis-red-flash:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
 sh-seton-hall-pirates:
 - league: MBB
   conference: BIGEAST
@@ -847,7 +1457,32 @@ shst-sam-houston-bearkats:
   conference: CUSA
 - league: WBB
   conference: CUSA
-sju-saint-josephs-hawks:
+shu-sacred-heart-pioneers:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+sie-siena-saints:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
+siu-southern-illinois-salukis:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+siue-siu-edwardsville-cougars:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
+sjsu-san-jos-state-spartans:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
+sju-saint-joseph-s-hawks:
 - league: MBB
   conference: A10
 - league: WBB
@@ -862,13 +1497,28 @@ slu-saint-louis-billikens:
   conference: A10
 - league: WBB
   conference: A10
-smu-southern-methodist-mustangs:
+smc-saint-mary-s-gaels:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
+smu-smu-mustangs:
 - league: FBS
   conference: ACC
 - league: MBB
   conference: ACC
 - league: WBB
   conference: ACC
+sou-southern-jaguars:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
+spu-saint-peter-s-peacocks:
+- league: MBB
+  conference: METRO
+- league: WBB
+  conference: METRO
 stan-stanford-cardinal:
 - league: FBS
   conference: ACC
@@ -881,6 +1531,21 @@ stet-stetson-hatters:
   conference: ASUN
 - league: WBB
   conference: ASUN
+stmn-st-thomas-minnesota-tommies:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
+sto-stonehill-skyhawks:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
+suu-southern-utah-thunderbirds:
+- league: MBB
+  conference: WEST
+- league: WBB
+  conference: WEST
 syr-syracuse-orange:
 - league: FBS
   conference: ACC
@@ -888,10 +1553,20 @@ syr-syracuse-orange:
   conference: ACC
 - league: WBB
   conference: ACC
+ta-m-texas-a-m-aggies:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+tar-tarleton-state-texans:
+- league: MBB
+  conference: WEST
+- league: WBB
+  conference: WEST
 tb-tampa-bay-buccaneers:
 - league: NFL
   conference: NFC
-tcu-texas-christian-horned-frogs:
+tcu-tcu-horned-frogs:
 - league: FBS
   conference: B12
 - league: MBB
@@ -908,11 +1583,41 @@ tem-temple-owls:
 ten-tennessee-titans:
 - league: NFL
   conference: AFC
+tenn-tennessee-volunteers:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+tex-texas-longhorns:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+tnst-tennessee-state-tigers:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
+tntc-tennessee-tech-golden-eagles:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
+tol-toledo-rockets:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
 tow-towson-tigers:
 - league: MBB
   conference: CAA
 - league: WBB
   conference: CAA
+troy-troy-trojans:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 ttu-texas-tech-red-raiders:
 - league: FBS
   conference: B12
@@ -934,24 +1639,39 @@ tuln-tulane-green-wave:
   conference: AAC
 - league: WBB
   conference: AAC
+txso-texas-southern-tigers:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
+txst-texas-state-bobcats:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 ua-ualbany-great-danes:
 - league: MBB
   conference: AEAST
 - league: WBB
   conference: AEAST
-uab-alabama-birmingham-blazers:
+uab-uab-blazers:
 - league: FBS
   conference: AAC
 - league: MBB
   conference: AAC
 - league: WBB
   conference: AAC
+uapb-arkansas-pine-bluff-golden-lions:
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
 ucd-uc-davis-aggies:
 - league: MBB
   conference: BWEST
 - league: WBB
   conference: BWEST
-ucf-central-florida-knights:
+ucf-ucf-knights:
 - league: FBS
   conference: B12
 - league: MBB
@@ -992,11 +1712,41 @@ udm-detroit-mercy-titans:
   conference: HORIZ
 - league: WBB
   conference: HORIZ
+uga-georgia-bulldogs:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 ugb-green-bay-phoenix:
 - league: MBB
   conference: HORIZ
 - league: WBB
   conference: HORIZ
+uic-uic-flames:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+uiw-incarnate-word-cardinals:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
+uk-kentucky-wildcats:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
+ul-louisiana-ragin-cajuns:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
+ulm-ul-monroe-warhawks:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 um-maryland-terrapins:
 - league: FBS
   conference: B1G
@@ -1021,6 +1771,11 @@ umbc-umbc-retrievers:
   conference: AEAST
 - league: WBB
   conference: AEAST
+umes-maryland-eastern-shore-hawks:
+- league: MBB
+  conference: MEAC
+- league: WBB
+  conference: MEAC
 uml-umass-lowell-river-hawks:
 - league: MBB
   conference: AEAST
@@ -1038,16 +1793,46 @@ unca-unc-asheville-bulldogs:
   conference: BSOUTH
 - league: WBB
   conference: BSOUTH
+uncg-unc-greensboro-spartans:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
 uncw-unc-wilmington-seahawks:
 - league: MBB
   conference: CAA
 - league: WBB
   conference: CAA
+und-north-dakota-fighting-hawks:
+- league: MBB
+  conference: SUM
+- league: WBB
+  conference: SUM
 unh-new-hampshire-wildcats:
 - league: MBB
   conference: AEAST
 - league: WBB
   conference: AEAST
+uni-northern-iowa-panthers:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+unlv-unlv-rebels:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
+unm-new-mexico-lobos:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
+uno-new-orleans-privateers:
+- league: MBB
+  conference: SLND
+- league: WBB
+  conference: SLND
 unt-north-texas-mean-green:
 - league: FBS
   conference: AAC
@@ -1065,6 +1850,11 @@ uri-rhode-island-rams:
   conference: A10
 - league: WBB
   conference: A10
+usa-south-alabama-jaguars:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
 usc-usc-trojans:
 - league: FBS
   conference: B1G
@@ -1072,6 +1862,11 @@ usc-usc-trojans:
   conference: B1G
 - league: WBB
   conference: B1G
+usd-san-diego-toreros:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
 usf-south-florida-bulls:
 - league: FBS
   conference: AAC
@@ -1079,6 +1874,26 @@ usf-south-florida-bulls:
   conference: AAC
 - league: WBB
   conference: AAC
+usi-southern-indiana-screaming-eagles:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
+usm-southern-miss-golden-eagles:
+- league: MBB
+  conference: SUN
+- league: WBB
+  conference: SUN
+usu-utah-state-aggies:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
+uta-ut-arlington-mavericks:
+- league: MBB
+  conference: WEST
+- league: WBB
+  conference: WEST
 utah-utah-utes:
 - league: FBS
   conference: B12
@@ -1086,6 +1901,11 @@ utah-utah-utes:
   conference: B12
 - league: WBB
   conference: B12
+utc-chattanooga-mocs:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
 utep-utep-miners:
 - league: FBS
   conference: CUSA
@@ -1093,13 +1913,28 @@ utep-utep-miners:
   conference: CUSA
 - league: WBB
   conference: CUSA
-utsa-texas-san-antonio-roadrunners:
+utm-ut-martin-skyhawks:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
+utsa-utsa-roadrunners:
 - league: FBS
   conference: AAC
 - league: MBB
   conference: AAC
 - league: WBB
   conference: AAC
+utu-utah-tech-trailblazers:
+- league: MBB
+  conference: WEST
+- league: WBB
+  conference: WEST
+uvu-utah-valley-wolverines:
+- league: MBB
+  conference: WEST
+- league: WBB
+  conference: WEST
 uw-washington-huskies:
 - league: FBS
   conference: B1G
@@ -1107,6 +1942,16 @@ uw-washington-huskies:
   conference: B1G
 - league: WBB
   conference: B1G
+val-valparaiso-beacons:
+- league: MBB
+  conference: MVC
+- league: WBB
+  conference: MVC
+van-vanderbilt-commodores:
+- league: MBB
+  conference: SEC
+- league: WBB
+  conference: SEC
 vcu-vcu-rams:
 - league: MBB
   conference: A10
@@ -1119,6 +1964,9 @@ vir-virginia-cavaliers:
   conference: ACC
 - league: WBB
   conference: ACC
+vmi-vmi-keydets:
+- league: MBB
+  conference: SOU
 vt-vermont-catamounts:
 - league: MBB
   conference: AEAST
@@ -1131,6 +1979,11 @@ vt-virginia-tech-hokies:
   conference: ACC
 - league: WBB
   conference: ACC
+wag-wagner-seahawks:
+- league: MBB
+  conference: NEC
+- league: WBB
+  conference: NEC
 wake-wake-forest-demon-deacons:
 - league: FBS
   conference: ACC
@@ -1141,6 +1994,11 @@ wake-wake-forest-demon-deacons:
 was-washington-commanders:
 - league: NFL
   conference: NFC
+wcu-western-carolina-catamounts:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
 web-weber-state-wildcats:
 - league: MBB
   conference: SKY
@@ -1163,6 +2021,16 @@ wis-wisconsin-badgers:
   conference: B1G
 - league: WBB
   conference: B1G
+wist-wichita-state-shockers:
+- league: MBB
+  conference: AAC
+- league: WBB
+  conference: AAC
+wiu-western-illinois-leathernecks:
+- league: MBB
+  conference: OVC
+- league: WBB
+  conference: OVC
 wku-western-kentucky-hilltoppers:
 - league: FBS
   conference: CUSA
@@ -1175,11 +2043,26 @@ wm-william-mary-tribe:
   conference: CAA
 - league: WBB
   conference: CAA
+wmu-western-michigan-broncos:
+- league: MBB
+  conference: MAC
+- league: WBB
+  conference: MAC
+wof-wofford-terriers:
+- league: MBB
+  conference: SOU
+- league: WBB
+  conference: SOU
 wrst-wright-state-raiders:
 - league: MBB
   conference: HORIZ
 - league: WBB
   conference: HORIZ
+wsu-washington-state-cougars:
+- league: MBB
+  conference: WCC
+- league: WBB
+  conference: WCC
 wvu-west-virginia-mountaineers:
 - league: FBS
   conference: B12
@@ -1187,6 +2070,11 @@ wvu-west-virginia-mountaineers:
   conference: B12
 - league: WBB
   conference: B12
+wyo-wyoming-cowboys:
+- league: MBB
+  conference: MWC
+- league: WBB
+  conference: MWC
 xav-xavier-musketeers:
 - league: MBB
   conference: BIGEAST

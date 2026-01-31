@@ -1,4 +1,87 @@
 ---
+acu-abilene-christian-wildcats:
+  abbr: ACU
+  location: Abilene Christian
+  display_location: Abilene Christian
+  name: Wildcats
+  level: college
+  espn_id: 2000
+  espn_mens_slug: abilene-christian-wildcats
+  espn_womens_slug: abilene-christian-wildcats
+af-air-force-falcons:
+  abbr: AF
+  location: Air Force
+  display_location: Air Force
+  name: Falcons
+  level: college
+  espn_id: 2005
+  espn_mens_slug: air-force-falcons
+  espn_womens_slug: air-force-falcons
+akr-akron-zips:
+  abbr: AKR
+  location: Akron
+  display_location: Akron
+  name: Zips
+  level: college
+  espn_id: 2006
+  espn_mens_slug: akron-zips
+  espn_womens_slug: akron-zips
+ala-alabama-crimson-tide:
+  abbr: ALA
+  location: Alabama
+  display_location: Alabama
+  name: Crimson Tide
+  level: college
+  espn_id: 333
+  espn_mens_slug: alabama-crimson-tide
+  espn_womens_slug: alabama-crimson-tide
+aamu-alabama-a-m-bulldogs:
+  abbr: AAMU
+  location: Alabama A&M
+  display_location: Alabama A&M
+  name: Bulldogs
+  level: college
+  espn_id: 2010
+  espn_mens_slug: alabama-am-bulldogs
+  espn_womens_slug: alabama-am-bulldogs
+alst-alabama-state-hornets:
+  abbr: ALST
+  location: Alabama State
+  display_location: Alabama State
+  name: Hornets
+  womens_name: Lady Hornets
+  level: college
+  espn_id: 2011
+  espn_mens_slug: alabama-state-hornets
+  espn_womens_slug: alabama-state-lady-hornets
+alcn-alcorn-state-braves:
+  abbr: ALCN
+  location: Alcorn State
+  display_location: Alcorn State
+  name: Braves
+  womens_name: Lady Braves
+  level: college
+  espn_id: 2016
+  espn_mens_slug: alcorn-state-braves
+  espn_womens_slug: alcorn-state-lady-braves
+amer-american-university-eagles:
+  abbr: AMER
+  location: American University
+  display_location: American University
+  name: Eagles
+  level: college
+  espn_id: 44
+  espn_mens_slug: american-university-eagles
+  espn_womens_slug: american-university-eagles
+app-app-state-mountaineers:
+  abbr: APP
+  location: App State
+  display_location: App State
+  name: Mountaineers
+  level: college
+  espn_id: 2026
+  espn_mens_slug: app-state-mountaineers
+  espn_womens_slug: app-state-mountaineers
 ari-arizona-cardinals:
   abbr: ARI
   location: Arizona
@@ -73,6 +156,33 @@ asu-arizona-state-sun-devils:
       name: Maroon
       css: 'background-color: #8C1D40; color: #FFC627; '
       default: true
+ark-arkansas-razorbacks:
+  abbr: ARK
+  location: Arkansas
+  display_location: Arkansas
+  name: Razorbacks
+  level: college
+  espn_id: 8
+  espn_mens_slug: arkansas-razorbacks
+  espn_womens_slug: arkansas-razorbacks
+arst-arkansas-state-red-wolves:
+  abbr: ARST
+  location: Arkansas State
+  display_location: Arkansas State
+  name: Red Wolves
+  level: college
+  espn_id: 2032
+  espn_mens_slug: arkansas-state-red-wolves
+  espn_womens_slug: arkansas-state-red-wolves
+uapb-arkansas-pine-bluff-golden-lions:
+  abbr: UAPB
+  location: Arkansas-Pine Bluff
+  display_location: Arkansas-Pine Bluff
+  name: Golden Lions
+  level: college
+  espn_id: 2029
+  espn_mens_slug: arkansas-pine-bluff-golden-lions
+  espn_womens_slug: arkansas-pine-bluff-golden-lions
 atl-atlanta-falcons:
   abbr: ATL
   location: Atlanta
@@ -104,6 +214,15 @@ atl-atlanta-falcons:
       css: 'background-color: #A71930; color: #000000; text-shadow: 1px 1px 0 #A5ACAF,
         -1px 1px 0 #A5ACAF, 1px -1px 0 #A5ACAF, -1px -1px 0 #A5ACAF; '
       default: true
+aub-auburn-tigers:
+  abbr: AUB
+  location: Auburn
+  display_location: Auburn
+  name: Tigers
+  level: college
+  espn_id: 2
+  espn_mens_slug: auburn-tigers
+  espn_womens_slug: auburn-tigers
 peay-austin-peay-governors:
   abbr: PEAY
   location: Austin Peay State University
@@ -144,6 +263,15 @@ peay-austin-peay-governors:
       css: 'background-color: #C41E3A; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
         -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
+ball-ball-state-cardinals:
+  abbr: BALL
+  location: Ball State
+  display_location: Ball State
+  name: Cardinals
+  level: college
+  espn_id: 2050
+  espn_mens_slug: ball-state-cardinals
+  espn_womens_slug: ball-state-cardinals
 bal-baltimore-ravens:
   abbr: BAL
   location: Baltimore
@@ -238,6 +366,24 @@ bel-bellarmine-knights:
       css: 'background-color: #752936; color: #B3B3B3; text-shadow: 1px 1px 0 #4D4D4D,
         -1px 1px 0 #4D4D4D, 1px -1px 0 #4D4D4D, -1px -1px 0 #4D4D4D; '
       default: true
+bel-belmont-bruins:
+  abbr: BEL
+  location: Belmont
+  display_location: Belmont
+  name: Bruins
+  level: college
+  espn_id: 2057
+  espn_mens_slug: belmont-bruins
+  espn_womens_slug: belmont-bruins
+bcu-bethune-cookman-wildcats:
+  abbr: BCU
+  location: Bethune-Cookman
+  display_location: Bethune-Cookman
+  name: Wildcats
+  level: college
+  espn_id: 2065
+  espn_mens_slug: bethune-cookman-wildcats
+  espn_womens_slug: bethune-cookman-wildcats
 bing-binghamton-bearcats:
   abbr: BING
   location: Binghamton University
@@ -277,6 +423,15 @@ bing-binghamton-bearcats:
       name: Green
       css: 'background-color: #005A43; color: #FFFFFF; '
       default: true
+bois-boise-state-broncos:
+  abbr: BOIS
+  location: Boise State
+  display_location: Boise State
+  name: Broncos
+  level: college
+  espn_id: 68
+  espn_mens_slug: boise-state-broncos
+  espn_womens_slug: boise-state-broncos
 bc-boston-college-eagles:
   abbr: BC
   location: Boston College
@@ -312,6 +467,33 @@ bc-boston-college-eagles:
       name: Cardinal
       css: 'background-color: #8C2232; color: #DBCCA6; '
       default: true
+bu-boston-university-terriers:
+  abbr: BU
+  location: Boston University
+  display_location: Boston University
+  name: Terriers
+  level: college
+  espn_id: 104
+  espn_mens_slug: boston-university-terriers
+  espn_womens_slug: boston-university-terriers
+bgsu-bowling-green-falcons:
+  abbr: BGSU
+  location: Bowling Green
+  display_location: Bowling Green
+  name: Falcons
+  level: college
+  espn_id: 189
+  espn_mens_slug: bowling-green-falcons
+  espn_womens_slug: bowling-green-falcons
+brad-bradley-braves:
+  abbr: BRAD
+  location: Bradley
+  display_location: Bradley
+  name: Braves
+  level: college
+  espn_id: 71
+  espn_mens_slug: bradley-braves
+  espn_womens_slug: bradley-braves
 byu-byu-cougars:
   abbr: BYU
   location: Brigham Young University
@@ -409,6 +591,15 @@ bry-bryant-bulldogs:
       name: Gold on Black
       css: 'background-color: #222020; color: #A98F42; '
       default: true
+buck-bucknell-bison:
+  abbr: BUCK
+  location: Bucknell
+  display_location: Bucknell
+  name: Bison
+  level: college
+  espn_id: 2083
+  espn_mens_slug: bucknell-bison
+  espn_womens_slug: bucknell-bison
 buf-buffalo-bills:
   abbr: BUF
   location: Buffalo
@@ -436,6 +627,15 @@ buf-buffalo-bills:
       css: 'background-color: #00338D; color: #FFFFFF; text-shadow: 1px 1px 0 #C60C30,
         -1px 1px 0 #C60C30, 1px -1px 0 #C60C30, -1px -1px 0 #C60C30; '
       default: true
+buf-buffalo-bulls:
+  abbr: BUF
+  location: Buffalo
+  display_location: Buffalo
+  name: Bulls
+  level: college
+  espn_id: 2084
+  espn_mens_slug: buffalo-bulls
+  espn_womens_slug: buffalo-bulls
 but-butler-bulldogs:
   abbr: BUT
   location: Butler University
@@ -472,6 +672,15 @@ but-butler-bulldogs:
       css: 'background-color: #13294B; color: #FFFFFF; text-shadow: 1px 1px 0 #00A3E0,
         -1px 1px 0 #00A3E0, 1px -1px 0 #00A3E0, -1px -1px 0 #00A3E0; '
       default: true
+cbu-california-baptist-lancers:
+  abbr: CBU
+  location: California Baptist
+  display_location: California Baptist
+  name: Lancers
+  level: college
+  espn_id: 2856
+  espn_mens_slug: california-baptist-lancers
+  espn_womens_slug: california-baptist-lancers
 poly-cal-poly-mustangs:
   abbr: POLY
   location: California Polytechnic State University
@@ -638,6 +847,15 @@ cam-campbell-fighting-camels:
       css: 'background-color: #EA7125; color: #1E252B; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: true
+can-canisius-golden-griffins:
+  abbr: CAN
+  location: Canisius
+  display_location: Canisius
+  name: Golden Griffins
+  level: college
+  espn_id: 2099
+  espn_mens_slug: canisius-golden-griffins
+  espn_womens_slug: canisius-golden-griffins
 car-carolina-panthers:
   abbr: CAR
   location: Carolina
@@ -669,6 +887,24 @@ car-carolina-panthers:
       css: 'background-color: #0085CA; color: #BFC0BF; text-shadow: 1px 1px 0 #101820,
         -1px 1px 0 #101820, 1px -1px 0 #101820, -1px -1px 0 #101820; '
       default: true
+ccsu-central-connecticut-blue-devils:
+  abbr: CCSU
+  location: Central Connecticut
+  display_location: Central Connecticut
+  name: Blue Devils
+  level: college
+  espn_id: 2115
+  espn_mens_slug: central-connecticut-blue-devils
+  espn_womens_slug: central-connecticut-blue-devils
+cmu-central-michigan-chippewas:
+  abbr: CMU
+  location: Central Michigan
+  display_location: Central Michigan
+  name: Chippewas
+  level: college
+  espn_id: 2117
+  espn_mens_slug: central-michigan-chippewas
+  espn_womens_slug: central-michigan-chippewas
 chs-charleston-southern-buccaneers:
   abbr: CHS
   location: Charleston Southern University
@@ -708,6 +944,15 @@ chs-charleston-southern-buccaneers:
       name: Gold on Blue
       css: 'background-color: #002855; color: #A89968; '
       default: true
+utc-chattanooga-mocs:
+  abbr: UTC
+  location: Chattanooga
+  display_location: Chattanooga
+  name: Mocs
+  level: college
+  espn_id: 236
+  espn_mens_slug: chattanooga-mocs
+  espn_womens_slug: chattanooga-mocs
 chi-chicago-bears:
   abbr: CHI
   location: Chicago
@@ -735,6 +980,15 @@ chi-chicago-bears:
       css: 'background-color: #0B162A; color: #FFFFFF; text-shadow: 1px 1px 0 #C83803,
         -1px 1px 0 #C83803, 1px -1px 0 #C83803, -1px -1px 0 #C83803; '
       default: true
+chst-chicago-state-cougars:
+  abbr: CHST
+  location: Chicago State
+  display_location: Chicago State
+  name: Cougars
+  level: college
+  espn_id: 2130
+  espn_mens_slug: chicago-state-cougars
+  espn_womens_slug: chicago-state-cougars
 cin-cincinnati-bengals:
   abbr: CIN
   location: Cincinnati
@@ -864,6 +1118,24 @@ cst-cleveland-state-vikings:
       css: 'background-color: #006A4D; color: #ffffff; text-shadow: 1px 1px 0 #69BE28,
         -1px 1px 0 #69BE28, 1px -1px 0 #69BE28, -1px -1px 0 #69BE28; '
       default: true
+ccu-coastal-carolina-chanticleers:
+  abbr: CCU
+  location: Coastal Carolina
+  display_location: Coastal Carolina
+  name: Chanticleers
+  level: college
+  espn_id: 324
+  espn_mens_slug: coastal-carolina-chanticleers
+  espn_womens_slug: coastal-carolina-chanticleers
+colg-colgate-raiders:
+  abbr: COLG
+  location: Colgate
+  display_location: Colgate
+  name: Raiders
+  level: college
+  espn_id: 2142
+  espn_mens_slug: colgate-raiders
+  espn_womens_slug: colgate-raiders
 cha-charleston-cougars:
   abbr: CHA
   location: College of Charleston
@@ -892,6 +1164,15 @@ cha-charleston-cougars:
       css: 'background-color: #660000; color: #FFFFFF; text-shadow: 1px 1px 0 #BFA87C,
         -1px 1px 0 #BFA87C, 1px -1px 0 #BFA87C, -1px -1px 0 #BFA87C; '
       default: true
+csu-colorado-state-rams:
+  abbr: CSU
+  location: Colorado State
+  display_location: Colorado State
+  name: Rams
+  level: college
+  espn_id: 36
+  espn_mens_slug: colorado-state-rams
+  espn_womens_slug: colorado-state-rams
 col-columbia-lions:
   abbr: COL
   location: Columbia University
@@ -924,6 +1205,15 @@ col-columbia-lions:
       css: 'background-color: #012169; color: #FFFFFF; text-shadow: 1px 1px 0 #009EFF,
         -1px 1px 0 #009EFF, 1px -1px 0 #009EFF, -1px -1px 0 #009EFF; '
       default: true
+copp-coppin-state-eagles:
+  abbr: COPP
+  location: Coppin State
+  display_location: Coppin State
+  name: Eagles
+  level: college
+  espn_id: 2154
+  espn_mens_slug: coppin-state-eagles
+  espn_womens_slug: coppin-state-eagles
 corn-cornell-big-red:
   abbr: CORN
   location: Cornell University
@@ -1163,6 +1453,15 @@ dpu-depaul-blue-demons:
       name: Blue
       css: 'background-color: #003DA5; color: #FFFFFF; '
       default: true
+dsu-delaware-state-hornets:
+  abbr: DSU
+  location: Delaware State
+  display_location: Delaware State
+  name: Hornets
+  level: college
+  espn_id: 2169
+  espn_mens_slug: delaware-state-hornets
+  espn_womens_slug: delaware-state-hornets
 den-denver-broncos:
   abbr: DEN
   location: Denver
@@ -1208,6 +1507,15 @@ den-denver-broncos:
       css: 'background-color: #F14616; color: #001489; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: false
+den-denver-pioneers:
+  abbr: DEN
+  location: Denver
+  display_location: Denver
+  name: Pioneers
+  level: college
+  espn_id: 2172
+  espn_mens_slug: denver-pioneers
+  espn_womens_slug: denver-pioneers
 det-detroit-lions:
   abbr: DET
   location: Detroit
@@ -1239,6 +1547,15 @@ det-detroit-lions:
       css: 'background-color: #0076B6; color: #FFFFFF; text-shadow: 1px 1px 0 #B0B7BC,
         -1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC; '
       default: true
+drke-drake-bulldogs:
+  abbr: DRKE
+  location: Drake
+  display_location: Drake
+  name: Bulldogs
+  level: college
+  espn_id: 2181
+  espn_mens_slug: drake-bulldogs
+  espn_womens_slug: drake-bulldogs
 drx-drexel-dragons:
   abbr: DRX
   location: Drexel University
@@ -1379,6 +1696,34 @@ ecu-east-carolina-pirates:
       name: Purple
       css: 'background-color: #592A8A; color: #FEC923; '
       default: true
+etsu-east-tennessee-state-buccaneers:
+  abbr: ETSU
+  location: East Tennessee State
+  display_location: East Tennessee State
+  name: Buccaneers
+  womens_name: Bucs
+  level: college
+  espn_id: 2193
+  espn_mens_slug: east-tennessee-state-buccaneers
+  espn_womens_slug: east-tennessee-state-bucs
+etam-east-texas-a-m-lions:
+  abbr: ETAM
+  location: East Texas A&M
+  display_location: East Texas A&M
+  name: Lions
+  level: college
+  espn_id: 2837
+  espn_mens_slug: east-texas-am-lions
+  espn_womens_slug: east-texas-am-lions
+eiu-eastern-illinois-panthers:
+  abbr: EIU
+  location: Eastern Illinois
+  display_location: Eastern Illinois
+  name: Panthers
+  level: college
+  espn_id: 2197
+  espn_mens_slug: eastern-illinois-panthers
+  espn_womens_slug: eastern-illinois-panthers
 eku-eastern-kentucky-colonels:
   abbr: EKU
   location: Eastern Kentucky University
@@ -1414,6 +1759,15 @@ eku-eastern-kentucky-colonels:
       name: White on Maroon
       css: 'background-color: #861F41; color: #FFFFFF; '
       default: true
+emu-eastern-michigan-eagles:
+  abbr: EMU
+  location: Eastern Michigan
+  display_location: Eastern Michigan
+  name: Eagles
+  level: college
+  espn_id: 2199
+  espn_mens_slug: eastern-michigan-eagles
+  espn_womens_slug: eastern-michigan-eagles
 ewu-eastern-washington-eagles:
   abbr: EWU
   location: 'Eastern Washington University '
@@ -1469,6 +1823,51 @@ elon-elon-phoenix:
       name: Gold on Maroon
       css: 'background-color: #73000A; color: #B59A57; '
       default: true
+evan-evansville-purple-aces:
+  abbr: EVAN
+  location: Evansville
+  display_location: Evansville
+  name: Purple Aces
+  level: college
+  espn_id: 339
+  espn_mens_slug: evansville-purple-aces
+  espn_womens_slug: evansville-purple-aces
+fair-fairfield-stags:
+  abbr: FAIR
+  location: Fairfield
+  display_location: Fairfield
+  name: Stags
+  level: college
+  espn_id: 2217
+  espn_mens_slug: fairfield-stags
+  espn_womens_slug: fairfield-stags
+fdu-fairleigh-dickinson-knights:
+  abbr: FDU
+  location: Fairleigh Dickinson
+  display_location: Fairleigh Dickinson
+  name: Knights
+  level: college
+  espn_id: 161
+  espn_mens_slug: fairleigh-dickinson-knights
+  espn_womens_slug: fairleigh-dickinson-knights
+fla-florida-gators:
+  abbr: FLA
+  location: Florida
+  display_location: Florida
+  name: Gators
+  level: college
+  espn_id: 57
+  espn_mens_slug: florida-gators
+  espn_womens_slug: florida-gators
+famu-florida-a-m-rattlers:
+  abbr: FAMU
+  location: Florida A&M
+  display_location: Florida A&M
+  name: Rattlers
+  level: college
+  espn_id: 50
+  espn_mens_slug: florida-am-rattlers
+  espn_womens_slug: florida-am-rattlers
 fau-florida-atlantic-owls:
   abbr: FAU
   location: Florida Atlantic University
@@ -1648,6 +2047,24 @@ for-fordham-rams:
       name: Maroon
       css: 'background-color: #5A0414; color: #FFFFFF; '
       default: true
+fres-fresno-state-bulldogs:
+  abbr: FRES
+  location: Fresno State
+  display_location: Fresno State
+  name: Bulldogs
+  level: college
+  espn_id: 278
+  espn_mens_slug: fresno-state-bulldogs
+  espn_womens_slug: fresno-state-bulldogs
+fur-furman-paladins:
+  abbr: FUR
+  location: Furman
+  display_location: Furman
+  name: Paladins
+  level: college
+  espn_id: 231
+  espn_mens_slug: furman-paladins
+  espn_womens_slug: furman-paladins
 gw-gardner-webb-runnin-bulldogs:
   abbr: GW
   location: Gardner-Webb University
@@ -1774,6 +2191,34 @@ gtn-georgetown-hoyas:
       css: 'background-color: #041E42; color: #FFFFFF; text-shadow: 1px 1px 0 #63666A,
         -1px 1px 0 #63666A, 1px -1px 0 #63666A, -1px -1px 0 #63666A; '
       default: true
+uga-georgia-bulldogs:
+  abbr: UGA
+  location: Georgia
+  display_location: Georgia
+  name: Bulldogs
+  womens_name: Lady Bulldogs
+  level: college
+  espn_id: 61
+  espn_mens_slug: georgia-bulldogs
+  espn_womens_slug: georgia-lady-bulldogs
+gaso-georgia-southern-eagles:
+  abbr: GASO
+  location: Georgia Southern
+  display_location: Georgia Southern
+  name: Eagles
+  level: college
+  espn_id: 290
+  espn_mens_slug: georgia-southern-eagles
+  espn_womens_slug: georgia-southern-eagles
+gast-georgia-state-panthers:
+  abbr: GAST
+  location: Georgia State
+  display_location: Georgia State
+  name: Panthers
+  level: college
+  espn_id: 2247
+  espn_mens_slug: georgia-state-panthers
+  espn_womens_slug: georgia-state-panthers
 gt-georgia-tech-yellow-jackets:
   abbr: GT
   location: Georgia Tech
@@ -1806,6 +2251,34 @@ gt-georgia-tech-yellow-jackets:
       name: Gold on Blue
       css: 'background-color: #003057; color: #B3A369; '
       default: false
+gonz-gonzaga-bulldogs:
+  abbr: GONZ
+  location: Gonzaga
+  display_location: Gonzaga
+  name: Bulldogs
+  level: college
+  espn_id: 2250
+  espn_mens_slug: gonzaga-bulldogs
+  espn_womens_slug: gonzaga-bulldogs
+gram-grambling-tigers:
+  abbr: GRAM
+  location: Grambling
+  display_location: Grambling
+  name: Tigers
+  womens_name: Lady Tigers
+  level: college
+  espn_id: 2755
+  espn_mens_slug: grambling-tigers
+  espn_womens_slug: grambling-lady-tigers
+gcu-grand-canyon-lopes:
+  abbr: GCU
+  location: Grand Canyon
+  display_location: Grand Canyon
+  name: Lopes
+  level: college
+  espn_id: 2253
+  espn_mens_slug: grand-canyon-lopes
+  espn_womens_slug: grand-canyon-lopes
 gb-green-bay-packers:
   abbr: GB
   location: Green Bay
@@ -1940,6 +2413,15 @@ hof-hofstra-pride:
       name: Gold on Blue
       css: 'background-color: #003594; color: #FFC72C; '
       default: true
+hc-holy-cross-crusaders:
+  abbr: HC
+  location: Holy Cross
+  display_location: Holy Cross
+  name: Crusaders
+  level: college
+  espn_id: 107
+  espn_mens_slug: holy-cross-crusaders
+  espn_womens_slug: holy-cross-crusaders
 hou-houston-texans:
   abbr: HOU
   location: Houston
@@ -1972,6 +2454,24 @@ hou-houston-texans:
       css: 'background-color: #A71930; color: #FFFFFF; text-shadow: 1px 1px 0 #03202F,
         -1px 1px 0 #03202F, 1px -1px 0 #03202F, -1px -1px 0 #03202F; '
       default: false
+hcu-houston-christian-huskies:
+  abbr: HCU
+  location: Houston Christian
+  display_location: Houston Christian
+  name: Huskies
+  level: college
+  espn_id: 2277
+  espn_mens_slug: houston-christian-huskies
+  espn_womens_slug: houston-christian-huskies
+how-howard-bison:
+  abbr: HOW
+  location: Howard
+  display_location: Howard
+  name: Bison
+  level: college
+  espn_id: 47
+  espn_mens_slug: howard-bison
+  espn_womens_slug: howard-bison
 idst-idaho-state-bengals:
   abbr: IDST
   location: Idaho State University
@@ -2004,6 +2504,33 @@ idst-idaho-state-bengals:
       css: 'background-color: #333333; color: #FFFFFF; text-shadow: 1px 1px 0 #F47920,
         -1px 1px 0 #F47920, 1px -1px 0 #F47920, -1px -1px 0 #F47920; '
       default: true
+ilst-illinois-state-redbirds:
+  abbr: ILST
+  location: Illinois State
+  display_location: Illinois State
+  name: Redbirds
+  level: college
+  espn_id: 2287
+  espn_mens_slug: illinois-state-redbirds
+  espn_womens_slug: illinois-state-redbirds
+uiw-incarnate-word-cardinals:
+  abbr: UIW
+  location: Incarnate Word
+  display_location: Incarnate Word
+  name: Cardinals
+  level: college
+  espn_id: 2916
+  espn_mens_slug: incarnate-word-cardinals
+  espn_womens_slug: incarnate-word-cardinals
+inst-indiana-state-sycamores:
+  abbr: INST
+  location: Indiana State
+  display_location: Indiana State
+  name: Sycamores
+  level: college
+  espn_id: 282
+  espn_mens_slug: indiana-state-sycamores
+  espn_womens_slug: indiana-state-sycamores
 iupui-iu-indianapolis-jaguars:
   abbr: IUPUI
   location: Indiana University Purdue University Indianapolis
@@ -2058,6 +2585,15 @@ ind-indianapolis-colts:
       name: Blue
       css: 'background-color: #002C5F; color: #FFFFFF; '
       default: true
+iona-iona-gaels:
+  abbr: IONA
+  location: Iona
+  display_location: Iona
+  name: Gaels
+  level: college
+  espn_id: 314
+  espn_mens_slug: iona-gaels
+  espn_womens_slug: iona-gaels
 isu-iowa-state-cyclones:
   abbr: ISU
   location: Iowa State University
@@ -2093,6 +2629,16 @@ isu-iowa-state-cyclones:
       name: Gold on Red
       css: 'background-color: #C8102E; color: #F1BE48; '
       default: true
+jkst-jackson-state-tigers:
+  abbr: JKST
+  location: Jackson State
+  display_location: Jackson State
+  name: Tigers
+  womens_name: Lady Tigers
+  level: college
+  espn_id: 2296
+  espn_mens_slug: jackson-state-tigers
+  espn_womens_slug: jackson-state-lady-tigers
 jac-jacksonville-jaguars:
   abbr: JAC
   location: Jacksonville
@@ -2178,6 +2724,15 @@ jax-jacksonville-dolphins:
       name: Gold on Green
       css: 'background-color: #004D43; color: #C8B783; '
       default: true
+jmu-james-madison-dukes:
+  abbr: JMU
+  location: James Madison
+  display_location: James Madison
+  name: Dukes
+  level: college
+  espn_id: 256
+  espn_mens_slug: james-madison-dukes
+  espn_womens_slug: james-madison-dukes
 kc-kansas-city-chiefs:
   abbr: KC
   location: Kansas City
@@ -2205,6 +2760,15 @@ kc-kansas-city-chiefs:
       css: 'background-color: #E31837; color: #FFFFFF; text-shadow: 1px 1px 0 #FFB81C,
         -1px 1px 0 #FFB81C, 1px -1px 0 #FFB81C, -1px -1px 0 #FFB81C; '
       default: true
+kc-kansas-city-roos:
+  abbr: KC
+  location: Kansas City
+  display_location: Kansas City
+  name: Roos
+  level: college
+  espn_id: 140
+  espn_mens_slug: kansas-city-roos
+  espn_womens_slug: kansas-city-roos
 ksu-kansas-state-wildcats:
   abbr: KSU
   location: Kansas State University
@@ -2267,6 +2831,33 @@ knst-kennesaw-state-owls:
       name: Black
       css: 'background-color: #2D2926; color: #FFC629; '
       default: true
+kent-kent-state-golden-flashes:
+  abbr: KENT
+  location: Kent State
+  display_location: Kent State
+  name: Golden Flashes
+  level: college
+  espn_id: 2309
+  espn_mens_slug: kent-state-golden-flashes
+  espn_womens_slug: kent-state-golden-flashes
+uk-kentucky-wildcats:
+  abbr: UK
+  location: Kentucky
+  display_location: Kentucky
+  name: Wildcats
+  level: college
+  espn_id: 96
+  espn_mens_slug: kentucky-wildcats
+  espn_womens_slug: kentucky-wildcats
+lsu-lsu-tigers:
+  abbr: LSU
+  location: LSU
+  display_location: LSU
+  name: Tigers
+  level: college
+  espn_id: 99
+  espn_mens_slug: lsu-tigers
+  espn_womens_slug: lsu-tigers
 las-la-salle-explorers:
   abbr: LAS
   location: La Salle University
@@ -2306,6 +2897,24 @@ las-la-salle-explorers:
       name: Gold on Blue
       css: 'background-color: #003356; color: #FFCE00; '
       default: true
+laf-lafayette-leopards:
+  abbr: LAF
+  location: Lafayette
+  display_location: Lafayette
+  name: Leopards
+  level: college
+  espn_id: 322
+  espn_mens_slug: lafayette-leopards
+  espn_womens_slug: lafayette-leopards
+lam-lamar-cardinals:
+  abbr: LAM
+  location: Lamar
+  display_location: Lamar
+  name: Cardinals
+  level: college
+  espn_id: 2320
+  espn_mens_slug: lamar-cardinals
+  espn_womens_slug: lamar-cardinals
 lv-las-vegas-raiders:
   abbr: LV
   location: Las Vegas
@@ -2337,6 +2946,24 @@ lv-las-vegas-raiders:
       name: Silver
       css: 'background-color: #A5ACAF; color: #000000; '
       default: false
+lem-le-moyne-dolphins:
+  abbr: LEM
+  location: Le Moyne
+  display_location: Le Moyne
+  name: Dolphins
+  level: college
+  espn_id: 2330
+  espn_mens_slug: le-moyne-dolphins
+  espn_womens_slug: le-moyne-dolphins
+leh-lehigh-mountain-hawks:
+  abbr: LEH
+  location: Lehigh
+  display_location: Lehigh
+  name: Mountain Hawks
+  level: college
+  espn_id: 2329
+  espn_mens_slug: lehigh-mountain-hawks
+  espn_womens_slug: lehigh-mountain-hawks
 lib-liberty-flames:
   abbr: LIB
   location: Liberty University
@@ -2361,6 +2988,15 @@ lib-liberty-flames:
       css: 'background-color: #0A254E; color: #ffffff; text-shadow: 1px 1px 0 #B72025,
         -1px 1px 0 #B72025, 1px -1px 0 #B72025, -1px -1px 0 #B72025; '
       default: true
+lin-lindenwood-lions:
+  abbr: LIN
+  location: Lindenwood
+  display_location: Lindenwood
+  name: Lions
+  level: college
+  espn_id: 2815
+  espn_mens_slug: lindenwood-lions
+  espn_womens_slug: lindenwood-lions
 lip-lipscomb-bisons:
   abbr: LIP
   location: Lipscomb University
@@ -2392,6 +3028,24 @@ lip-lipscomb-bisons:
       name: Yellow on Purple
       css: 'background-color: #331E54; color: #F4AA00; '
       default: true
+lr-little-rock-trojans:
+  abbr: LR
+  location: Little Rock
+  display_location: Little Rock
+  name: Trojans
+  level: college
+  espn_id: 2031
+  espn_mens_slug: little-rock-trojans
+  espn_womens_slug: little-rock-trojans
+liu-long-island-university-sharks:
+  abbr: LIU
+  location: Long Island University
+  display_location: Long Island University
+  name: Sharks
+  level: college
+  espn_id: 112358
+  espn_mens_slug: long-island-university-sharks
+  espn_womens_slug: long-island-university-sharks
 lng-longwood-lancers:
   abbr: LNG
   location: Longwood University
@@ -2481,6 +3135,15 @@ lar-los-angeles-rams:
       css: 'background-color: #003594; color: #FFFFFF; text-shadow: 1px 1px 0 #FFA300,
         -1px 1px 0 #FFA300, 1px -1px 0 #FFA300, -1px -1px 0 #FFA300; '
       default: true
+ul-louisiana-ragin-cajuns:
+  abbr: UL
+  location: Louisiana
+  display_location: Louisiana
+  name: Ragin' Cajuns
+  level: college
+  espn_id: 309
+  espn_mens_slug: louisiana-ragin-cajuns
+  espn_womens_slug: louisiana-ragin-cajuns
 lat-louisiana-tech-bulldogs:
   abbr: LAT
   location: Louisiana Tech University
@@ -2509,6 +3172,24 @@ lat-louisiana-tech-bulldogs:
       name: Blue
       css: 'background-color: #003087; color: #CB333B; '
       default: true
+l-md-loyola-maryland-greyhounds:
+  abbr: L-MD
+  location: Loyola Maryland
+  display_location: Loyola Maryland
+  name: Greyhounds
+  level: college
+  espn_id: 2352
+  espn_mens_slug: loyola-maryland-greyhounds
+  espn_womens_slug: loyola-maryland-greyhounds
+lmu-loyola-marymount-lions:
+  abbr: LMU
+  location: Loyola Marymount
+  display_location: Loyola Marymount
+  name: Lions
+  level: college
+  espn_id: 2351
+  espn_mens_slug: loyola-marymount-lions
+  espn_womens_slug: loyola-marymount-lions
 luc-loyola-chicago-ramblers:
   abbr: LUC
   location: Loyola University Chicago
@@ -2552,6 +3233,24 @@ luc-loyola-chicago-ramblers:
       name: Gold on Maroon
       css: 'background-color: #5A0722; color: #EAAA00; '
       default: true
+man-manhattan-jaspers:
+  abbr: MAN
+  location: Manhattan
+  display_location: Manhattan
+  name: Jaspers
+  level: college
+  espn_id: 2363
+  espn_mens_slug: manhattan-jaspers
+  espn_womens_slug: manhattan-jaspers
+mrst-marist-red-foxes:
+  abbr: MRST
+  location: Marist
+  display_location: Marist
+  name: Red Foxes
+  level: college
+  espn_id: 2368
+  espn_mens_slug: marist-red-foxes
+  espn_womens_slug: marist-red-foxes
 marq-marquette-golden-eagles:
   abbr: MARQ
   location: Marquette University
@@ -2583,6 +3282,24 @@ marq-marquette-golden-eagles:
       name: Blue on Gold
       css: 'background-color: #FFCC00; color: #003366; '
       default: false
+mrsh-marshall-thundering-herd:
+  abbr: MRSH
+  location: Marshall
+  display_location: Marshall
+  name: Thundering Herd
+  level: college
+  espn_id: 276
+  espn_mens_slug: marshall-thundering-herd
+  espn_womens_slug: marshall-thundering-herd
+umes-maryland-eastern-shore-hawks:
+  abbr: UMES
+  location: Maryland Eastern Shore
+  display_location: Maryland Eastern Shore
+  name: Hawks
+  level: college
+  espn_id: 2379
+  espn_mens_slug: maryland-eastern-shore-hawks
+  espn_womens_slug: maryland-eastern-shore-hawks
 umass-massachusetts-minutemen:
   abbr: UMASS
   location: Massachusetts - Amherst
@@ -2623,6 +3340,43 @@ umass-massachusetts-minutemen:
       name: Maroon
       css: 'background-color: #881C1C; color: #FFFFFF; '
       default: true
+mcn-mcneese-cowboys:
+  abbr: MCN
+  location: McNeese
+  display_location: McNeese
+  name: Cowboys
+  womens_name: Cowgirls
+  level: college
+  espn_id: 2377
+  espn_mens_slug: mcneese-cowboys
+  espn_womens_slug: mcneese-cowgirls
+mer-mercer-bears:
+  abbr: MER
+  location: Mercer
+  display_location: Mercer
+  name: Bears
+  level: college
+  espn_id: 2382
+  espn_mens_slug: mercer-bears
+  espn_womens_slug: mercer-bears
+merc-mercyhurst-lakers:
+  abbr: MERC
+  location: Mercyhurst
+  display_location: Mercyhurst
+  name: Lakers
+  level: college
+  espn_id: 2385
+  espn_mens_slug: mercyhurst-lakers
+  espn_womens_slug: mercyhurst-lakers
+mrmk-merrimack-warriors:
+  abbr: MRMK
+  location: Merrimack
+  display_location: Merrimack
+  name: Warriors
+  level: college
+  espn_id: 2771
+  espn_mens_slug: merrimack-warriors
+  espn_womens_slug: merrimack-warriors
 mia-miami-dolphins:
   abbr: MIA
   location: Miami
@@ -2654,6 +3408,15 @@ mia-miami-dolphins:
       css: 'background-color: #008E97; color: #FFFFFF; text-shadow: 1px 1px 0 #FC4C02,
         -1px 1px 0 #FC4C02, 1px -1px 0 #FC4C02, -1px -1px 0 #FC4C02; '
       default: true
+m-oh-miami-oh-redhawks:
+  abbr: M-OH
+  location: Miami (OH)
+  display_location: Miami (OH)
+  name: RedHawks
+  level: college
+  espn_id: 193
+  espn_mens_slug: miami-oh-redhawks
+  espn_womens_slug: miami-oh-redhawks
 msu-michigan-state-spartans:
   abbr: MSU
   location: Michigan State University
@@ -2735,6 +3498,34 @@ min-minnesota-vikings:
       css: 'background-color: #4F2683; color: #FFFFFF; text-shadow: 1px 1px 0 #FFC62F,
         -1px 1px 0 #FFC62F, 1px -1px 0 #FFC62F, -1px -1px 0 #FFC62F; '
       default: true
+msst-mississippi-state-bulldogs:
+  abbr: MSST
+  location: Mississippi State
+  display_location: Mississippi State
+  name: Bulldogs
+  level: college
+  espn_id: 344
+  espn_mens_slug: mississippi-state-bulldogs
+  espn_womens_slug: mississippi-state-bulldogs
+mvsu-mississippi-valley-state-delta-devils:
+  abbr: MVSU
+  location: Mississippi Valley State
+  display_location: Mississippi Valley State
+  name: Delta Devils
+  womens_name: Devilettes
+  level: college
+  espn_id: 2400
+  espn_mens_slug: mississippi-valley-state-delta-devils
+  espn_womens_slug: mississippi-valley-state-devilettes
+miz-missouri-tigers:
+  abbr: MIZ
+  location: Missouri
+  display_location: Missouri
+  name: Tigers
+  level: college
+  espn_id: 142
+  espn_mens_slug: missouri-tigers
+  espn_womens_slug: missouri-tigers
 most-missouri-state-bears:
   abbr: MOST
   location: Missouri State University
@@ -2809,6 +3600,52 @@ mtsu-montana-state-bobcats:
       name: Gold on Blue
       css: 'background-color: #00205B; color: #B9975B; '
       default: true
+more-morehead-state-eagles:
+  abbr: MORE
+  location: Morehead State
+  display_location: Morehead State
+  name: Eagles
+  level: college
+  espn_id: 2413
+  espn_mens_slug: morehead-state-eagles
+  espn_womens_slug: morehead-state-eagles
+morg-morgan-state-bears:
+  abbr: MORG
+  location: Morgan State
+  display_location: Morgan State
+  name: Bears
+  womens_name: Lady Bears
+  level: college
+  espn_id: 2415
+  espn_mens_slug: morgan-state-bears
+  espn_womens_slug: morgan-state-lady-bears
+msm-mount-st-mary-s-mountaineers:
+  abbr: MSM
+  location: Mount St. Mary's
+  display_location: Mount St. Mary's
+  name: Mountaineers
+  level: college
+  espn_id: 116
+  espn_mens_slug: mount-st-marys-mountaineers
+  espn_womens_slug: mount-st-marys-mountaineers
+mur-murray-state-racers:
+  abbr: MUR
+  location: Murray State
+  display_location: Murray State
+  name: Racers
+  level: college
+  espn_id: 93
+  espn_mens_slug: murray-state-racers
+  espn_womens_slug: murray-state-racers
+nev-nevada-wolf-pack:
+  abbr: NEV
+  location: Nevada
+  display_location: Nevada
+  name: Wolf Pack
+  level: college
+  espn_id: 2440
+  espn_mens_slug: nevada-wolf-pack
+  espn_womens_slug: nevada-wolf-pack
 ne-new-england-patriots:
   abbr: NE
   location: New England
@@ -2869,6 +3706,15 @@ ne-new-england-patriots:
       css: 'background-color: #CC122C; color: #FFFFFF; text-shadow: 1px 1px 0 #04328C,
         -1px 1px 0 #04328C, 1px -1px 0 #04328C, -1px -1px 0 #04328C; '
       default: false
+nhvn-new-haven-chargers:
+  abbr: NHVN
+  location: New Haven
+  display_location: New Haven
+  name: Chargers
+  level: college
+  espn_id: 2441
+  espn_mens_slug: new-haven-chargers
+  espn_womens_slug: new-haven-chargers
 njit-njit-highlanders:
   abbr: NJIT
   location: New Jersey Institute of Technology
@@ -2896,6 +3742,15 @@ njit-njit-highlanders:
       name: White on Red
       css: 'background-color: #CC0000; color: #FFFFFF; '
       default: true
+unm-new-mexico-lobos:
+  abbr: UNM
+  location: New Mexico
+  display_location: New Mexico
+  name: Lobos
+  level: college
+  espn_id: 167
+  espn_mens_slug: new-mexico-lobos
+  espn_womens_slug: new-mexico-lobos
 nmst-new-mexico-state-aggies:
   abbr: NMST
   location: New Mexico State University
@@ -2919,6 +3774,15 @@ nmst-new-mexico-state-aggies:
       name: Crimson
       css: 'background-color: #8C0B42; color: #FFFFFF; '
       default: true
+uno-new-orleans-privateers:
+  abbr: UNO
+  location: New Orleans
+  display_location: New Orleans
+  name: Privateers
+  level: college
+  espn_id: 2443
+  espn_mens_slug: new-orleans-privateers
+  espn_womens_slug: new-orleans-privateers
 no-new-orleans-saints:
   abbr: 'NO'
   location: New Orleans
@@ -3007,6 +3871,33 @@ nyj-new-york-jets:
       name: Green
       css: 'background-color: #125740; color: #FFFFFF; '
       default: true
+nia-niagara-purple-eagles:
+  abbr: NIA
+  location: Niagara
+  display_location: Niagara
+  name: Purple Eagles
+  level: college
+  espn_id: 315
+  espn_mens_slug: niagara-purple-eagles
+  espn_womens_slug: niagara-purple-eagles
+nich-nicholls-colonels:
+  abbr: NICH
+  location: Nicholls
+  display_location: Nicholls
+  name: Colonels
+  level: college
+  espn_id: 2447
+  espn_mens_slug: nicholls-colonels
+  espn_womens_slug: nicholls-colonels
+norf-norfolk-state-spartans:
+  abbr: NORF
+  location: Norfolk State
+  display_location: Norfolk State
+  name: Spartans
+  level: college
+  espn_id: 2450
+  espn_mens_slug: norfolk-state-spartans
+  espn_womens_slug: norfolk-state-spartans
 ncat-north-carolina-a-t-aggies:
   abbr: NCAT
   location: North Carolina A&T University
@@ -3034,6 +3925,15 @@ ncat-north-carolina-a-t-aggies:
       name: Blue on Gold
       css: 'background-color: #FDB927; color: #004684; '
       default: true
+nccu-north-carolina-central-eagles:
+  abbr: NCCU
+  location: North Carolina Central
+  display_location: North Carolina Central
+  name: Eagles
+  level: college
+  espn_id: 2428
+  espn_mens_slug: north-carolina-central-eagles
+  espn_womens_slug: north-carolina-central-eagles
 ncst-nc-state-wolfpack:
   abbr: NCST
   location: North Carolina State University
@@ -3061,6 +3961,24 @@ ncst-nc-state-wolfpack:
       name: White on Red
       css: 'background-color: #CC0000; color: #FFFFFF; '
       default: true
+und-north-dakota-fighting-hawks:
+  abbr: UND
+  location: North Dakota
+  display_location: North Dakota
+  name: Fighting Hawks
+  level: college
+  espn_id: 155
+  espn_mens_slug: north-dakota-fighting-hawks
+  espn_womens_slug: north-dakota-fighting-hawks
+ndsu-north-dakota-state-bison:
+  abbr: NDSU
+  location: North Dakota State
+  display_location: North Dakota State
+  name: Bison
+  level: college
+  espn_id: 2449
+  espn_mens_slug: north-dakota-state-bison
+  espn_womens_slug: north-dakota-state-bison
 nore-northeastern-huskies:
   abbr: NORE
   location: Northeastern University
@@ -3120,6 +4038,24 @@ nau-northern-arizona-lumberjacks:
       name: Blue on Gold
       css: 'background-color: #FAC01A; color: #002454; '
       default: false
+niu-northern-illinois-huskies:
+  abbr: NIU
+  location: Northern Illinois
+  display_location: Northern Illinois
+  name: Huskies
+  level: college
+  espn_id: 2459
+  espn_mens_slug: northern-illinois-huskies
+  espn_womens_slug: northern-illinois-huskies
+uni-northern-iowa-panthers:
+  abbr: UNI
+  location: Northern Iowa
+  display_location: Northern Iowa
+  name: Panthers
+  level: college
+  espn_id: 2460
+  espn_mens_slug: northern-iowa-panthers
+  espn_womens_slug: northern-iowa-panthers
 nku-northern-kentucky-norse:
   abbr: NKU
   location: Northern Kentucky University
@@ -3148,6 +4084,16 @@ nku-northern-kentucky-norse:
       css: 'background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #FFC72C,
         -1px 1px 0 #FFC72C, 1px -1px 0 #FFC72C, -1px -1px 0 #FFC72C; '
       default: true
+nwst-northwestern-state-demons:
+  abbr: NWST
+  location: Northwestern State
+  display_location: Northwestern State
+  name: Demons
+  womens_name: Lady Demons
+  level: college
+  espn_id: 2466
+  espn_mens_slug: northwestern-state-demons
+  espn_womens_slug: northwestern-state-lady-demons
 nw-northwestern-wildcats:
   abbr: NW
   location: Northwestern University
@@ -3204,6 +4150,15 @@ oak-oakland-golden-grizzlies:
       css: 'background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #BC945B,
         -1px 1px 0 #BC945B, 1px -1px 0 #BC945B, -1px -1px 0 #BC945B; '
       default: true
+ohio-ohio-bobcats:
+  abbr: OHIO
+  location: Ohio
+  display_location: Ohio
+  name: Bobcats
+  level: college
+  espn_id: 195
+  espn_mens_slug: ohio-bobcats
+  espn_womens_slug: ohio-bobcats
 osu-ohio-state-buckeyes:
   abbr: OSU
   location: Ohio State University
@@ -3232,6 +4187,15 @@ osu-ohio-state-buckeyes:
       css: 'background-color: #BA0C2F; color: #FFFFFF; text-shadow: 1px 1px 0 #A7B1B7,
         -1px 1px 0 #A7B1B7, 1px -1px 0 #A7B1B7, -1px -1px 0 #A7B1B7; '
       default: true
+ou-oklahoma-sooners:
+  abbr: OU
+  location: Oklahoma
+  display_location: Oklahoma
+  name: Sooners
+  level: college
+  espn_id: 201
+  espn_mens_slug: oklahoma-sooners
+  espn_womens_slug: oklahoma-sooners
 osu-oklahoma-state-cowboys:
   abbr: OSU
   location: Oklahoma State University
@@ -3278,6 +4242,60 @@ osu-oklahoma-state-cowboys:
       name: Orange
       css: 'background-color: #FE5C00; color: #000000; '
       default: false
+odu-old-dominion-monarchs:
+  abbr: ODU
+  location: Old Dominion
+  display_location: Old Dominion
+  name: Monarchs
+  level: college
+  espn_id: 295
+  espn_mens_slug: old-dominion-monarchs
+  espn_womens_slug: old-dominion-monarchs
+miss-ole-miss-rebels:
+  abbr: MISS
+  location: Ole Miss
+  display_location: Ole Miss
+  name: Rebels
+  level: college
+  espn_id: 145
+  espn_mens_slug: ole-miss-rebels
+  espn_womens_slug: ole-miss-rebels
+oma-omaha-mavericks:
+  abbr: OMA
+  location: Omaha
+  display_location: Omaha
+  name: Mavericks
+  level: college
+  espn_id: 2437
+  espn_mens_slug: omaha-mavericks
+  espn_womens_slug: omaha-mavericks
+oru-oral-roberts-golden-eagles:
+  abbr: ORU
+  location: Oral Roberts
+  display_location: Oral Roberts
+  name: Golden Eagles
+  level: college
+  espn_id: 198
+  espn_mens_slug: oral-roberts-golden-eagles
+  espn_womens_slug: oral-roberts-golden-eagles
+orst-oregon-state-beavers:
+  abbr: ORST
+  location: Oregon State
+  display_location: Oregon State
+  name: Beavers
+  level: college
+  espn_id: 204
+  espn_mens_slug: oregon-state-beavers
+  espn_womens_slug: oregon-state-beavers
+pac-pacific-tigers:
+  abbr: PAC
+  location: Pacific
+  display_location: Pacific
+  name: Tigers
+  level: college
+  espn_id: 279
+  espn_mens_slug: pacific-tigers
+  espn_womens_slug: pacific-tigers
 psu-penn-state-nittany-lions:
   abbr: PSU
   location: Pennsylvania State University
@@ -3311,6 +4329,15 @@ psu-penn-state-nittany-lions:
       css: 'background-color: #001E44; color: #FFFFFF; text-shadow: 1px 1px 0 #1E407C,
         -1px 1px 0 #1E407C, 1px -1px 0 #1E407C, -1px -1px 0 #1E407C; '
       default: true
+pepp-pepperdine-waves:
+  abbr: PEPP
+  location: Pepperdine
+  display_location: Pepperdine
+  name: Waves
+  level: college
+  espn_id: 2492
+  espn_mens_slug: pepperdine-waves
+  espn_womens_slug: pepperdine-waves
 phi-philadelphia-eagles:
   abbr: PHI
   location: Philadelphia
@@ -3389,6 +4416,15 @@ pit-pittsburgh-steelers:
       css: 'background-color: #101820; color: #FFFFFF; text-shadow: 1px 1px 0 #FFB612,
         -1px 1px 0 #FFB612, 1px -1px 0 #FFB612, -1px -1px 0 #FFB612; '
       default: true
+port-portland-pilots:
+  abbr: PORT
+  location: Portland
+  display_location: Portland
+  name: Pilots
+  level: college
+  espn_id: 2501
+  espn_mens_slug: portland-pilots
+  espn_womens_slug: portland-pilots
 psu-portland-state-vikings:
   abbr: PSU
   location: Portland State University
@@ -3425,6 +4461,16 @@ psu-portland-state-vikings:
       css: 'background-color: #213921; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
         -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
+pv-prairie-view-a-m-panthers:
+  abbr: PV
+  location: Prairie View A&M
+  display_location: Prairie View A&M
+  name: Panthers
+  womens_name: Lady Panthers
+  level: college
+  espn_id: 2504
+  espn_mens_slug: prairie-view-am-panthers
+  espn_womens_slug: prairie-view-am-lady-panthers
 pres-presbyterian-blue-hose:
   abbr: PRES
   location: Presbyterian College
@@ -3622,6 +4668,15 @@ qu-queens-university-royals:
       name: Gold on Navy
       css: 'background-color: #00205B; color: #A89968; '
       default: true
+quin-quinnipiac-bobcats:
+  abbr: QUIN
+  location: Quinnipiac
+  display_location: Quinnipiac
+  name: Bobcats
+  level: college
+  espn_id: 2514
+  espn_mens_slug: quinnipiac-bobcats
+  espn_womens_slug: quinnipiac-bobcats
 rad-radford-highlanders:
   abbr: RAD
   location: Radford University
@@ -3796,6 +4851,15 @@ rich-richmond-spiders:
       css: 'background-color: #122851; color: #990000; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: false
+rid-rider-broncs:
+  abbr: RID
+  location: Rider
+  display_location: Rider
+  name: Broncs
+  level: college
+  espn_id: 2520
+  espn_mens_slug: rider-broncs
+  espn_womens_slug: rider-broncs
 rmu-robert-morris-colonials:
   abbr: RMU
   location: Robert Morris University
@@ -3854,6 +4918,25 @@ rtg-rutgers-scarlet-knights:
       css: 'background-color: #CC0033; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
         -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
+sela-se-louisiana-lions:
+  abbr: SELA
+  location: SE Louisiana
+  display_location: SE Louisiana
+  name: Lions
+  womens_name: Lady Lions
+  level: college
+  espn_id: 2545
+  espn_mens_slug: se-louisiana-lions
+  espn_womens_slug: se-louisiana-lady-lions
+siue-siu-edwardsville-cougars:
+  abbr: SIUE
+  location: SIU Edwardsville
+  display_location: SIU Edwardsville
+  name: Cougars
+  level: college
+  espn_id: 2565
+  espn_mens_slug: siu-edwardsville-cougars
+  espn_womens_slug: siu-edwardsville-cougars
 ua-ualbany-great-danes:
   abbr: UA
   location: SUNY-Albany
@@ -3912,6 +4995,24 @@ sacst-sacramento-state-hornets:
       name: Gold on Green
       css: 'background-color: #043927; color: #C4B581; '
       default: true
+shu-sacred-heart-pioneers:
+  abbr: SHU
+  location: Sacred Heart
+  display_location: Sacred Heart
+  name: Pioneers
+  level: college
+  espn_id: 2529
+  espn_mens_slug: sacred-heart-pioneers
+  espn_womens_slug: sacred-heart-pioneers
+sfpa-saint-francis-red-flash:
+  abbr: SFPA
+  location: Saint Francis
+  display_location: Saint Francis
+  name: Red Flash
+  level: college
+  espn_id: 2598
+  espn_mens_slug: saint-francis-red-flash
+  espn_womens_slug: saint-francis-red-flash
 sju-saint-joseph-s-hawks:
   abbr: SJU
   location: Saint Joseph's University
@@ -3968,6 +5069,24 @@ slu-saint-louis-billikens:
       name: Blue
       css: 'background-color: #003DA5; color: #FFFFFF; '
       default: true
+smc-saint-mary-s-gaels:
+  abbr: SMC
+  location: Saint Mary's
+  display_location: Saint Mary's
+  name: Gaels
+  level: college
+  espn_id: 2608
+  espn_mens_slug: saint-marys-gaels
+  espn_womens_slug: saint-marys-gaels
+spu-saint-peter-s-peacocks:
+  abbr: SPU
+  location: Saint Peter's
+  display_location: Saint Peter's
+  name: Peacocks
+  level: college
+  espn_id: 2612
+  espn_mens_slug: saint-peters-peacocks
+  espn_womens_slug: saint-peters-peacocks
 shst-sam-houston-bearkats:
   abbr: SHST
   location: Sam Houston State University
@@ -3991,6 +5110,33 @@ shst-sam-houston-bearkats:
       name: Orange
       css: 'background-color: #F56423; color: #FFFFFF; '
       default: true
+sam-samford-bulldogs:
+  abbr: SAM
+  location: Samford
+  display_location: Samford
+  name: Bulldogs
+  level: college
+  espn_id: 2535
+  espn_mens_slug: samford-bulldogs
+  espn_womens_slug: samford-bulldogs
+usd-san-diego-toreros:
+  abbr: USD
+  location: San Diego
+  display_location: San Diego
+  name: Toreros
+  level: college
+  espn_id: 301
+  espn_mens_slug: san-diego-toreros
+  espn_womens_slug: san-diego-toreros
+sdsu-san-diego-state-aztecs:
+  abbr: SDSU
+  location: San Diego State
+  display_location: San Diego State
+  name: Aztecs
+  level: college
+  espn_id: 21
+  espn_mens_slug: san-diego-state-aztecs
+  espn_womens_slug: san-diego-state-aztecs
 sf-san-francisco-49ers:
   abbr: SF
   location: San Francisco
@@ -4021,6 +5167,33 @@ sf-san-francisco-49ers:
       name: Gold
       css: 'background-color: #B3995D; color: #AA0000; '
       default: false
+sf-san-francisco-dons:
+  abbr: SF
+  location: San Francisco
+  display_location: San Francisco
+  name: Dons
+  level: college
+  espn_id: 2539
+  espn_mens_slug: san-francisco-dons
+  espn_womens_slug: san-francisco-dons
+sjsu-san-jos-state-spartans:
+  abbr: SJSU
+  location: San José State
+  display_location: San José State
+  name: Spartans
+  level: college
+  espn_id: 23
+  espn_mens_slug: san-jose-state-spartans
+  espn_womens_slug: san-jose-state-spartans
+scu-santa-clara-broncos:
+  abbr: SCU
+  location: Santa Clara
+  display_location: Santa Clara
+  name: Broncos
+  level: college
+  espn_id: 2541
+  espn_mens_slug: santa-clara-broncos
+  espn_womens_slug: santa-clara-broncos
 sea-seattle-seahawks:
   abbr: SEA
   location: Seattle
@@ -4078,6 +5251,15 @@ sea-seattle-seahawks:
       css: 'background-color: #003087; color: #FFFFFF; text-shadow: 1px 1px 0 #046A38,
         -1px 1px 0 #046A38, 1px -1px 0 #046A38, -1px -1px 0 #046A38; '
       default: false
+sea-seattle-u-redhawks:
+  abbr: SEA
+  location: Seattle U
+  display_location: Seattle U
+  name: Redhawks
+  level: college
+  espn_id: 2547
+  espn_mens_slug: seattle-u-redhawks
+  espn_womens_slug: seattle-u-redhawks
 sh-seton-hall-pirates:
   abbr: SH
   location: Seton Hall University
@@ -4146,6 +5328,97 @@ sh-seton-hall-pirates:
       css: 'background-color: #0060A9; color: #FFFFFF; text-shadow: 1px 1px 0 #514F4B,
         -1px 1px 0 #514F4B, 1px -1px 0 #514F4B, -1px -1px 0 #514F4B; '
       default: true
+sie-siena-saints:
+  abbr: SIE
+  location: Siena
+  display_location: Siena
+  name: Saints
+  level: college
+  espn_id: 2561
+  espn_mens_slug: siena-saints
+  espn_womens_slug: siena-saints
+usa-south-alabama-jaguars:
+  abbr: USA
+  location: South Alabama
+  display_location: South Alabama
+  name: Jaguars
+  level: college
+  espn_id: 6
+  espn_mens_slug: south-alabama-jaguars
+  espn_womens_slug: south-alabama-jaguars
+sc-south-carolina-gamecocks:
+  abbr: SC
+  location: South Carolina
+  display_location: South Carolina
+  name: Gamecocks
+  level: college
+  espn_id: 2579
+  espn_mens_slug: south-carolina-gamecocks
+  espn_womens_slug: south-carolina-gamecocks
+scst-south-carolina-state-bulldogs:
+  abbr: SCST
+  location: South Carolina State
+  display_location: South Carolina State
+  name: Bulldogs
+  womens_name: Lady Bulldogs
+  level: college
+  espn_id: 2569
+  espn_mens_slug: south-carolina-state-bulldogs
+  espn_womens_slug: south-carolina-state-lady-bulldogs
+sdak-south-dakota-coyotes:
+  abbr: SDAK
+  location: South Dakota
+  display_location: South Dakota
+  name: Coyotes
+  level: college
+  espn_id: 233
+  espn_mens_slug: south-dakota-coyotes
+  espn_womens_slug: south-dakota-coyotes
+sdst-south-dakota-state-jackrabbits:
+  abbr: SDST
+  location: South Dakota State
+  display_location: South Dakota State
+  name: Jackrabbits
+  level: college
+  espn_id: 2571
+  espn_mens_slug: south-dakota-state-jackrabbits
+  espn_womens_slug: south-dakota-state-jackrabbits
+semo-southeast-missouri-state-redhawks:
+  abbr: SEMO
+  location: Southeast Missouri State
+  display_location: Southeast Missouri State
+  name: Redhawks
+  level: college
+  espn_id: 2546
+  espn_mens_slug: southeast-missouri-state-redhawks
+  espn_womens_slug: southeast-missouri-state-redhawks
+sou-southern-jaguars:
+  abbr: SOU
+  location: Southern
+  display_location: Southern
+  name: Jaguars
+  level: college
+  espn_id: 2582
+  espn_mens_slug: southern-jaguars
+  espn_womens_slug: southern-jaguars
+siu-southern-illinois-salukis:
+  abbr: SIU
+  location: Southern Illinois
+  display_location: Southern Illinois
+  name: Salukis
+  level: college
+  espn_id: 79
+  espn_mens_slug: southern-illinois-salukis
+  espn_womens_slug: southern-illinois-salukis
+usi-southern-indiana-screaming-eagles:
+  abbr: USI
+  location: Southern Indiana
+  display_location: Southern Indiana
+  name: Screaming Eagles
+  level: college
+  espn_id: 88
+  espn_mens_slug: southern-indiana-screaming-eagles
+  espn_womens_slug: southern-indiana-screaming-eagles
 smu-smu-mustangs:
   abbr: SMU
   location: Southern Methodist University
@@ -4176,6 +5449,25 @@ smu-smu-mustangs:
       css: 'background-color: #354CA1; color: #FFFFFF; text-shadow: 1px 1px 0 #CC0035,
         -1px 1px 0 #CC0035, 1px -1px 0 #CC0035, -1px -1px 0 #CC0035; '
       default: true
+usm-southern-miss-golden-eagles:
+  abbr: USM
+  location: Southern Miss
+  display_location: Southern Miss
+  name: Golden Eagles
+  womens_name: Lady Eagles
+  level: college
+  espn_id: 2572
+  espn_mens_slug: southern-miss-golden-eagles
+  espn_womens_slug: southern-miss-lady-eagles
+suu-southern-utah-thunderbirds:
+  abbr: SUU
+  location: Southern Utah
+  display_location: Southern Utah
+  name: Thunderbirds
+  level: college
+  espn_id: 253
+  espn_mens_slug: southern-utah-thunderbirds
+  espn_womens_slug: southern-utah-thunderbirds
 sbu-st-bonaventure-bonnies:
   abbr: SBU
   location: St. Bonaventure University
@@ -4242,6 +5534,15 @@ sju-st-john-s-red-storm:
       name: White on Red
       css: 'background-color: #CF102D; color: #FFFFFF; '
       default: true
+stmn-st-thomas-minnesota-tommies:
+  abbr: STMN
+  location: St. Thomas-Minnesota
+  display_location: St. Thomas-Minnesota
+  name: Tommies
+  level: college
+  espn_id: 2900
+  espn_mens_slug: st-thomas-minnesota-tommies
+  espn_womens_slug: st-thomas-minnesota-tommies
 stan-stanford-cardinal:
   abbr: STAN
   location: Stanford University
@@ -4281,6 +5582,16 @@ stan-stanford-cardinal:
       name: Classic Cardinal
       css: 'background-color: #8C1515; color: #FFFFFF; '
       default: true
+sfa-stephen-f-austin-lumberjacks:
+  abbr: SFA
+  location: Stephen F. Austin
+  display_location: Stephen F. Austin
+  name: Lumberjacks
+  womens_name: Ladyjacks
+  level: college
+  espn_id: 2617
+  espn_mens_slug: stephen-f-austin-lumberjacks
+  espn_womens_slug: stephen-f-austin-ladyjacks
 stet-stetson-hatters:
   abbr: STET
   location: Stetson University
@@ -4316,6 +5627,15 @@ stet-stetson-hatters:
       name: Green
       css: 'background-color: #339933; color: #FFFFFF; '
       default: true
+sto-stonehill-skyhawks:
+  abbr: STO
+  location: Stonehill
+  display_location: Stonehill
+  name: Skyhawks
+  level: college
+  espn_id: 284
+  espn_mens_slug: stonehill-skyhawks
+  espn_womens_slug: stonehill-skyhawks
 sbu-stony-brook-seawolves:
   abbr: SBU
   location: Stony Brook University
@@ -4434,6 +5754,15 @@ tb-tampa-bay-buccaneers:
       css: 'background-color: #34302B; color: #FFFFFF; text-shadow: 1px 1px 0 #D50A0A,
         -1px 1px 0 #D50A0A, 1px -1px 0 #D50A0A, -1px -1px 0 #D50A0A; '
       default: true
+tar-tarleton-state-texans:
+  abbr: TAR
+  location: Tarleton State
+  display_location: Tarleton State
+  name: Texans
+  level: college
+  espn_id: 2627
+  espn_mens_slug: tarleton-state-texans
+  espn_womens_slug: tarleton-state-texans
 tem-temple-owls:
   abbr: TEM
   location: Temple University
@@ -4512,6 +5841,62 @@ ten-tennessee-titans:
       css: 'background-color: #4B92DB; color: #0C2340; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: true
+tenn-tennessee-volunteers:
+  abbr: TENN
+  location: Tennessee
+  display_location: Tennessee
+  name: Volunteers
+  womens_name: Lady Volunteers
+  level: college
+  espn_id: 2633
+  espn_mens_slug: tennessee-volunteers
+  espn_womens_slug: tennessee-lady-volunteers
+tnst-tennessee-state-tigers:
+  abbr: TNST
+  location: Tennessee State
+  display_location: Tennessee State
+  name: Tigers
+  womens_name: Lady Tigers
+  level: college
+  espn_id: 2634
+  espn_mens_slug: tennessee-state-tigers
+  espn_womens_slug: tennessee-state-lady-tigers
+tntc-tennessee-tech-golden-eagles:
+  abbr: TNTC
+  location: Tennessee Tech
+  display_location: Tennessee Tech
+  name: Golden Eagles
+  level: college
+  espn_id: 2635
+  espn_mens_slug: tennessee-tech-golden-eagles
+  espn_womens_slug: tennessee-tech-golden-eagles
+tex-texas-longhorns:
+  abbr: TEX
+  location: Texas
+  display_location: Texas
+  name: Longhorns
+  level: college
+  espn_id: 251
+  espn_mens_slug: texas-longhorns
+  espn_womens_slug: texas-longhorns
+ta-m-texas-a-m-aggies:
+  abbr: TA&M
+  location: Texas A&M
+  display_location: Texas A&M
+  name: Aggies
+  level: college
+  espn_id: 245
+  espn_mens_slug: texas-am-aggies
+  espn_womens_slug: texas-am-aggies
+amcc-texas-a-m-corpus-christi-islanders:
+  abbr: AMCC
+  location: Texas A&M-Corpus Christi
+  display_location: Texas A&M-Corpus Christi
+  name: Islanders
+  level: college
+  espn_id: 357
+  espn_mens_slug: texas-am-corpus-christi-islanders
+  espn_womens_slug: texas-am-corpus-christi-islanders
 tcu-tcu-horned-frogs:
   abbr: TCU
   location: Texas Christian University
@@ -4546,6 +5931,24 @@ tcu-tcu-horned-frogs:
       css: 'background-color: #4D1979; color: #FFFFFF; text-shadow: 1px 1px 0 #A3A9AC,
         -1px 1px 0 #A3A9AC, 1px -1px 0 #A3A9AC, -1px -1px 0 #A3A9AC; '
       default: true
+txso-texas-southern-tigers:
+  abbr: TXSO
+  location: Texas Southern
+  display_location: Texas Southern
+  name: Tigers
+  level: college
+  espn_id: 2640
+  espn_mens_slug: texas-southern-tigers
+  espn_womens_slug: texas-southern-tigers
+txst-texas-state-bobcats:
+  abbr: TXST
+  location: Texas State
+  display_location: Texas State
+  name: Bobcats
+  level: college
+  espn_id: 326
+  espn_mens_slug: texas-state-bobcats
+  espn_womens_slug: texas-state-bobcats
 ttu-texas-tech-red-raiders:
   abbr: TTU
   location: Texas Tech University
@@ -4590,6 +5993,23 @@ ttu-texas-tech-red-raiders:
       name: Red on Black
       css: 'background-color: #000000; color: #CC0000; '
       default: true
+cit-the-citadel-bulldogs:
+  abbr: CIT
+  location: The Citadel
+  display_location: The Citadel
+  name: Bulldogs
+  level: college
+  espn_id: 2643
+  espn_mens_slug: the-citadel-bulldogs
+tol-toledo-rockets:
+  abbr: TOL
+  location: Toledo
+  display_location: Toledo
+  name: Rockets
+  level: college
+  espn_id: 2649
+  espn_mens_slug: toledo-rockets
+  espn_womens_slug: toledo-rockets
 tow-towson-tigers:
   abbr: TOW
   location: Towson University
@@ -4638,6 +6058,15 @@ tow-towson-tigers:
       css: 'background-color: #3C3C3C; color: #FFFFFF; text-shadow: 1px 1px 0 #CC9900,
         -1px 1px 0 #CC9900, 1px -1px 0 #CC9900, -1px -1px 0 #CC9900; '
       default: true
+troy-troy-trojans:
+  abbr: TROY
+  location: Troy
+  display_location: Troy
+  name: Trojans
+  level: college
+  espn_id: 2653
+  espn_mens_slug: troy-trojans
+  espn_womens_slug: troy-trojans
 tuln-tulane-green-wave:
   abbr: TULN
   location: Tulane University
@@ -4671,6 +6100,70 @@ tuln-tulane-green-wave:
       css: 'background-color: #65C5E8; color: #255C4E; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: false
+uic-uic-flames:
+  abbr: UIC
+  location: UIC
+  display_location: UIC
+  name: Flames
+  level: college
+  espn_id: 82
+  espn_mens_slug: uic-flames
+  espn_womens_slug: uic-flames
+ulm-ul-monroe-warhawks:
+  abbr: ULM
+  location: UL Monroe
+  display_location: UL Monroe
+  name: Warhawks
+  level: college
+  espn_id: 2433
+  espn_mens_slug: ul-monroe-warhawks
+  espn_womens_slug: ul-monroe-warhawks
+uncg-unc-greensboro-spartans:
+  abbr: UNCG
+  location: UNC Greensboro
+  display_location: UNC Greensboro
+  name: Spartans
+  level: college
+  espn_id: 2430
+  espn_mens_slug: unc-greensboro-spartans
+  espn_womens_slug: unc-greensboro-spartans
+unlv-unlv-rebels:
+  abbr: UNLV
+  location: UNLV
+  display_location: UNLV
+  name: Rebels
+  womens_name: Lady Rebels
+  level: college
+  espn_id: 2439
+  espn_mens_slug: unlv-rebels
+  espn_womens_slug: unlv-lady-rebels
+uta-ut-arlington-mavericks:
+  abbr: UTA
+  location: UT Arlington
+  display_location: UT Arlington
+  name: Mavericks
+  level: college
+  espn_id: 250
+  espn_mens_slug: ut-arlington-mavericks
+  espn_womens_slug: ut-arlington-mavericks
+utm-ut-martin-skyhawks:
+  abbr: UTM
+  location: UT Martin
+  display_location: UT Martin
+  name: Skyhawks
+  level: college
+  espn_id: 2630
+  espn_mens_slug: ut-martin-skyhawks
+  espn_womens_slug: ut-martin-skyhawks
+rgv-ut-rio-grande-valley-vaqueros:
+  abbr: RGV
+  location: UT Rio Grande Valley
+  display_location: UT Rio Grande Valley
+  name: Vaqueros
+  level: college
+  espn_id: 292
+  espn_mens_slug: ut-rio-grande-valley-vaqueros
+  espn_womens_slug: ut-rio-grande-valley-vaqueros
 army-army-black-knights:
   abbr: ARMY
   location: United States Military Academy
@@ -6702,6 +8195,59 @@ mil-milwaukee-panthers:
       name: Gold
       css: 'background-color: #FEBD36; color: #000000; '
       default: true
+usu-utah-state-aggies:
+  abbr: USU
+  location: Utah State
+  display_location: Utah State
+  name: Aggies
+  level: college
+  espn_id: 328
+  espn_mens_slug: utah-state-aggies
+  espn_womens_slug: utah-state-aggies
+utu-utah-tech-trailblazers:
+  abbr: UTU
+  location: Utah Tech
+  display_location: Utah Tech
+  name: Trailblazers
+  level: college
+  espn_id: 3101
+  espn_mens_slug: utah-tech-trailblazers
+  espn_womens_slug: utah-tech-trailblazers
+uvu-utah-valley-wolverines:
+  abbr: UVU
+  location: Utah Valley
+  display_location: Utah Valley
+  name: Wolverines
+  level: college
+  espn_id: 3084
+  espn_mens_slug: utah-valley-wolverines
+  espn_womens_slug: utah-valley-wolverines
+vmi-vmi-keydets:
+  abbr: VMI
+  location: VMI
+  display_location: VMI
+  name: Keydets
+  level: college
+  espn_id: 2678
+  espn_mens_slug: vmi-keydets
+val-valparaiso-beacons:
+  abbr: VAL
+  location: Valparaiso
+  display_location: Valparaiso
+  name: Beacons
+  level: college
+  espn_id: 2674
+  espn_mens_slug: valparaiso-beacons
+  espn_womens_slug: valparaiso-beacons
+van-vanderbilt-commodores:
+  abbr: VAN
+  location: Vanderbilt
+  display_location: Vanderbilt
+  name: Commodores
+  level: college
+  espn_id: 238
+  espn_mens_slug: vanderbilt-commodores
+  espn_womens_slug: vanderbilt-commodores
 nova-villanova-wildcats:
   abbr: NOVA
   location: Villanova University
@@ -6800,6 +8346,15 @@ vt-virginia-tech-hokies:
       name: Burnt Orange on Maroon
       css: 'background-color: #861F41; color: #E5751F; '
       default: false
+wag-wagner-seahawks:
+  abbr: WAG
+  location: Wagner
+  display_location: Wagner
+  name: Seahawks
+  level: college
+  espn_id: 2681
+  espn_mens_slug: wagner-seahawks
+  espn_womens_slug: wagner-seahawks
 wake-wake-forest-demon-deacons:
   abbr: WAKE
   location: Wake Forest University
@@ -6871,6 +8426,15 @@ was-washington-commanders:
       css: 'background-color: #5A1414; color: #FFFFFF; text-shadow: 1px 1px 0 #FFB612,
         -1px 1px 0 #FFB612, 1px -1px 0 #FFB612, -1px -1px 0 #FFB612; '
       default: true
+wsu-washington-state-cougars:
+  abbr: WSU
+  location: Washington State
+  display_location: Washington State
+  name: Cougars
+  level: college
+  espn_id: 265
+  espn_mens_slug: washington-state-cougars
+  espn_womens_slug: washington-state-cougars
 web-weber-state-wildcats:
   abbr: WEB
   location: Weber State University
@@ -6930,6 +8494,24 @@ wvu-west-virginia-mountaineers:
       name: Gold on Blue
       css: 'background-color: #002C5B; color: #F2B111; '
       default: true
+wcu-western-carolina-catamounts:
+  abbr: WCU
+  location: Western Carolina
+  display_location: Western Carolina
+  name: Catamounts
+  level: college
+  espn_id: 2717
+  espn_mens_slug: western-carolina-catamounts
+  espn_womens_slug: western-carolina-catamounts
+wiu-western-illinois-leathernecks:
+  abbr: WIU
+  location: Western Illinois
+  display_location: Western Illinois
+  name: Leathernecks
+  level: college
+  espn_id: 2710
+  espn_mens_slug: western-illinois-leathernecks
+  espn_womens_slug: western-illinois-leathernecks
 wku-western-kentucky-hilltoppers:
   abbr: WKU
   location: Western Kentucky University
@@ -6954,6 +8536,15 @@ wku-western-kentucky-hilltoppers:
       name: Red
       css: 'background-color: #B01E24; color: #ffffff; '
       default: true
+wmu-western-michigan-broncos:
+  abbr: WMU
+  location: Western Michigan
+  display_location: Western Michigan
+  name: Broncos
+  level: college
+  espn_id: 2711
+  espn_mens_slug: western-michigan-broncos
+  espn_womens_slug: western-michigan-broncos
 wist-wichita-state-shockers:
   abbr: WIST
   location: Wichita State University
@@ -7044,6 +8635,15 @@ win-winthrop-eagles:
       name: Gold on Garnet
       css: 'background-color: #660000; color: #F0B323; '
       default: true
+wof-wofford-terriers:
+  abbr: WOF
+  location: Wofford
+  display_location: Wofford
+  name: Terriers
+  level: college
+  espn_id: 2747
+  espn_mens_slug: wofford-terriers
+  espn_womens_slug: wofford-terriers
 wrst-wright-state-raiders:
   abbr: WRST
   location: Wright State University
@@ -7068,6 +8668,16 @@ wrst-wright-state-raiders:
       css: 'background-color: #046A38; color: #ffffff; text-shadow: 1px 1px 0 #CBA052,
         -1px 1px 0 #CBA052, 1px -1px 0 #CBA052, -1px -1px 0 #CBA052; '
       default: true
+wyo-wyoming-cowboys:
+  abbr: WYO
+  location: Wyoming
+  display_location: Wyoming
+  name: Cowboys
+  womens_name: Cowgirls
+  level: college
+  espn_id: 2751
+  espn_mens_slug: wyoming-cowboys
+  espn_womens_slug: wyoming-cowgirls
 xav-xavier-musketeers:
   abbr: XAV
   location: Xavier University
