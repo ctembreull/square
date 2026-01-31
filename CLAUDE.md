@@ -259,7 +259,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
 | ~~**Deploy to Fly.io**~~ | ✅ Done - App live at family-squares.fly.dev. See deployment notes below. |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. Resend SMTP configured. |
-| Build seed data for all D1 teams | ✅ Partial - 365 college teams with ESPN IDs and affiliations. Remaining: colors/styles for ~178 new teams. |
+| ~~Build seed data for all D1 teams~~ | ✅ Done - 397 teams (365 college + 32 pro), 1023 affiliations across MBB/WBB/FBS/FCS/NFL. ESPN IDs on all teams. ~135 teams still need colors/styles. |
 | ~~**Winners worksheet mode**~~ | ✅ Done - Simplified check-writing view: family-grouped names + amounts, prominent checkboxes, progress bar, grayed strikethrough on checked items, localStorage persistence |
 | ~~**Debug Grover PDF on Fly.io**~~ | ✅ Done - Fixed with `GROVER_NO_SANDBOX=true` env var + async job to avoid 60s proxy timeout |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
@@ -282,7 +282,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 | Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
 | **Teams table filters** | Filter by missing affiliations, colors, or styles. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
-| **(Stretch) Auto-populate game from ESPN URL** | Paste ESPN Gamecast link → extract gameId → hit JSON API → auto-fill teams, start time, scoring URL. Game-changer for rapid game creation during tournament. Requires `espn_id` on Teams for matching. |
+| **(Stretch) Auto-populate game from ESPN URL** | Paste ESPN Gamecast link → extract gameId → hit JSON API → auto-fill teams, start time, scoring URL. Game-changer for rapid game creation during tournament. ESPN IDs now on all teams. |
 
 ### Fly.io Deployment Notes
 
