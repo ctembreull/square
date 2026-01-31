@@ -16,7 +16,10 @@ namespace :seeds do
         "name" => team.name,
         "womens_name" => team.womens_name,
         "level" => team.level,
-        "brand_info" => team.brand_info
+        "brand_info" => team.brand_info,
+        "espn_id" => team.espn_id,
+        "espn_mens_slug" => team.espn_mens_slug,
+        "espn_womens_slug" => team.espn_womens_slug
       }.compact
 
       # Export colors keyed by slug (name-based, unique within team)
@@ -76,7 +79,10 @@ namespace :seeds do
           name: team_data["name"],
           womens_name: team_data["womens_name"],
           level: team_data["level"],
-          brand_info: team_data["brand_info"]
+          brand_info: team_data["brand_info"],
+          espn_id: team_data["espn_id"],
+          espn_mens_slug: team_data["espn_mens_slug"],
+          espn_womens_slug: team_data["espn_womens_slug"]
         )
         updated[:teams] += 1
       else
@@ -87,7 +93,10 @@ namespace :seeds do
           name: team_data["name"],
           womens_name: team_data["womens_name"],
           level: team_data["level"],
-          brand_info: team_data["brand_info"]
+          brand_info: team_data["brand_info"],
+          espn_id: team_data["espn_id"],
+          espn_mens_slug: team_data["espn_mens_slug"],
+          espn_womens_slug: team_data["espn_womens_slug"]
         )
         created[:teams] += 1
       end
@@ -175,6 +184,7 @@ namespace :seeds do
       output << "  l.level = #{l.level.inspect}"
       output << "  l.periods = #{l.periods}"
       output << "  l.quarters_score_as_halves = true" if l.quarters_score_as_halves
+      output << "  l.espn_slug = #{l.espn_slug.inspect}" if l.espn_slug.present?
       output << "end"
       output << "puts \"✓ \#{#{var_name}.name}\""
       output << ""
@@ -242,7 +252,10 @@ namespace :seeds do
         "name" => team.name,
         "womens_name" => team.womens_name,
         "level" => team.level,
-        "brand_info" => team.brand_info
+        "brand_info" => team.brand_info,
+        "espn_id" => team.espn_id,
+        "espn_mens_slug" => team.espn_mens_slug,
+        "espn_womens_slug" => team.espn_womens_slug
       }.compact
 
       if team.colors.any?

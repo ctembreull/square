@@ -5,6 +5,8 @@ ari-arizona-cardinals:
   display_location: Arizona
   name: Cardinals
   level: pro
+  espn_id: 22
+  espn_mens_slug: arizona-cardinals
   colors:
     black:
       name: Black
@@ -34,6 +36,9 @@ asu-arizona-state-sun-devils:
   display_location: Arizona State
   name: Sun Devils
   level: college
+  espn_id: 9
+  espn_mens_slug: arizona-state-sun-devils
+  espn_womens_slug: arizona-state-sun-devils
   colors:
     asu-gold:
       name: ASU Gold
@@ -74,6 +79,8 @@ atl-atlanta-falcons:
   display_location: Atlanta
   name: Falcons
   level: pro
+  espn_id: 1
+  espn_mens_slug: atlanta-falcons
   colors:
     black:
       name: Black
@@ -103,6 +110,9 @@ peay-austin-peay-governors:
   display_location: Austin Peay
   name: Governors
   level: college
+  espn_id: 2046
+  espn_mens_slug: austin-peay-governors
+  espn_womens_slug: austin-peay-governors
   colors:
     red:
       name: Red
@@ -140,6 +150,8 @@ bal-baltimore-ravens:
   display_location: Baltimore
   name: Ravens
   level: pro
+  espn_id: 33
+  espn_mens_slug: baltimore-ravens
   colors:
     black:
       name: Black
@@ -173,6 +185,9 @@ bay-baylor-bears:
   display_location: Baylor
   name: Bears
   level: college
+  espn_id: 239
+  espn_mens_slug: baylor-bears
+  espn_womens_slug: baylor-bears
   colors:
     baylor-green:
       name: Baylor Green
@@ -193,6 +208,9 @@ bel-bellarmine-knights:
   display_location: Bellarmine
   name: Knights
   level: college
+  espn_id: 91
+  espn_mens_slug: bellarmine-knights
+  espn_womens_slug: bellarmine-knights
   colors:
     bellarmine-scarlet:
       name: Bellarmine Scarlet
@@ -226,6 +244,9 @@ bing-binghamton-bearcats:
   display_location: Binghamton
   name: Bearcats
   level: college
+  espn_id: 2066
+  espn_mens_slug: binghamton-bearcats
+  espn_womens_slug: binghamton-bearcats
   colors:
     black:
       name: Black
@@ -262,6 +283,9 @@ bc-boston-college-eagles:
   display_location: Boston College
   name: Eagles
   level: college
+  espn_id: 103
+  espn_mens_slug: boston-college-eagles
+  espn_womens_slug: boston-college-eagles
   colors:
     black:
       name: Black
@@ -296,6 +320,9 @@ byu-byu-cougars:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 252
+  espn_mens_slug: byu-cougars
+  espn_womens_slug: byu-cougars
   colors:
     navy:
       name: Navy
@@ -321,6 +348,9 @@ brwn-brown-bears:
   display_location: Brown
   name: Bears
   level: college
+  espn_id: 225
+  espn_mens_slug: brown-bears
+  espn_womens_slug: brown-bears
   colors:
     brown:
       name: Brown
@@ -350,6 +380,9 @@ bry-bryant-bulldogs:
   display_location: Bryant
   name: Bulldogs
   level: college
+  espn_id: 2803
+  espn_mens_slug: bryant-bulldogs
+  espn_womens_slug: bryant-bulldogs
   colors:
     blue-200:
       name: Blue 200
@@ -382,6 +415,8 @@ buf-buffalo-bills:
   display_location: Buffalo
   name: Bills
   level: pro
+  espn_id: 2
+  espn_mens_slug: buffalo-bills
   colors:
     blue:
       name: Blue
@@ -407,6 +442,9 @@ but-butler-bulldogs:
   display_location: Butler
   name: Bulldogs
   level: college
+  espn_id: 2086
+  espn_mens_slug: butler-bulldogs
+  espn_womens_slug: butler-bulldogs
   colors:
     bright-blue:
       name: Bright Blue
@@ -440,6 +478,9 @@ poly-cal-poly-mustangs:
   display_location: Cal Poly
   name: Mustangs
   level: college
+  espn_id: 13
+  espn_mens_slug: cal-poly-mustangs
+  espn_womens_slug: cal-poly-mustangs
   colors:
     mustang-gold:
       name: Mustang Gold
@@ -465,6 +506,9 @@ csb-cal-state-bakersfield-roadrunners:
   display_location: Cal State Bakersfield
   name: Roadrunners
   level: college
+  espn_id: 2934
+  espn_mens_slug: cal-state-bakersfield-roadrunners
+  espn_womens_slug: cal-state-bakersfield-roadrunners
   colors:
     blue:
       name: Blue
@@ -485,6 +529,9 @@ csuf-cal-state-fullerton-titans:
   display_location: Cal State Fullerton
   name: Titans
   level: college
+  espn_id: 2239
+  espn_mens_slug: cal-state-fullerton-titans
+  espn_womens_slug: cal-state-fullerton-titans
   colors:
     titan-blue:
       name: 'Titan Blue '
@@ -505,6 +552,9 @@ lbst-long-beach-state-beach:
   display_location: Long Beach State
   name: Beach
   level: college
+  espn_id: 299
+  espn_mens_slug: long-beach-state-beach
+  espn_womens_slug: long-beach-state-beach
   colors:
     black:
       name: Black
@@ -534,6 +584,9 @@ csun-cal-state-northridge-matadors:
   display_location: Cal State Northridge
   name: Matadors
   level: college
+  espn_id: 2463
+  espn_mens_slug: cal-state-northridge-matadors
+  espn_womens_slug: cal-state-northridge-matadors
   colors:
     black:
       name: Black
@@ -563,6 +616,9 @@ cam-campbell-fighting-camels:
   display_location: Campbell
   name: Fighting Camels
   level: college
+  espn_id: 2097
+  espn_mens_slug: campbell-fighting-camels
+  espn_womens_slug: campbell-fighting-camels
   colors:
     campbell-black:
       name: Campbell Black
@@ -588,6 +644,8 @@ car-carolina-panthers:
   display_location: Carolina
   name: Panthers
   level: pro
+  espn_id: 29
+  espn_mens_slug: carolina-panthers
   colors:
     black:
       name: Black
@@ -617,6 +675,9 @@ chs-charleston-southern-buccaneers:
   display_location: Charleston Southern
   name: Buccaneers
   level: college
+  espn_id: 2127
+  espn_mens_slug: charleston-southern-buccaneers
+  espn_womens_slug: charleston-southern-buccaneers
   colors:
     csu-blue:
       name: CSU Blue
@@ -653,6 +714,8 @@ chi-chicago-bears:
   display_location: Chicago
   name: Bears
   level: pro
+  espn_id: 3
+  espn_mens_slug: chicago-bears
   colors:
     dark-navy:
       name: Dark Navy
@@ -678,6 +741,8 @@ cin-cincinnati-bengals:
   display_location: Cincinnati
   name: Bengals
   level: pro
+  espn_id: 4
+  espn_mens_slug: cincinnati-bengals
   colors:
     black:
       name: Black
@@ -713,6 +778,9 @@ clem-clemson-tigers:
   display_location: Clemson
   name: Tigers
   level: college
+  espn_id: 228
+  espn_mens_slug: clemson-tigers
+  espn_womens_slug: clemson-tigers
   colors:
     clemson-orange:
       name: Clemson Orange
@@ -746,6 +814,8 @@ cle-cleveland-browns:
   display_location: Cleveland
   name: Browns
   level: pro
+  espn_id: 5
+  espn_mens_slug: cleveland-browns
   colors:
     dark-brown:
       name: Dark Brown
@@ -776,6 +846,9 @@ cst-cleveland-state-vikings:
   display_location: Cleveland State
   name: Vikings
   level: college
+  espn_id: 325
+  espn_mens_slug: cleveland-state-vikings
+  espn_womens_slug: cleveland-state-vikings
   colors:
     fresh-green:
       name: Fresh Green
@@ -797,6 +870,9 @@ cha-charleston-cougars:
   display_location: Charleston
   name: Cougars
   level: college
+  espn_id: 232
+  espn_mens_slug: charleston-cougars
+  espn_womens_slug: charleston-cougars
   colors:
     gold:
       name: Gold
@@ -822,6 +898,9 @@ col-columbia-lions:
   display_location: Columbia
   name: Lions
   level: college
+  espn_id: 171
+  espn_mens_slug: columbia-lions
+  espn_womens_slug: columbia-lions
   colors:
     dark-blue:
       name: Dark Blue
@@ -851,6 +930,9 @@ corn-cornell-big-red:
   display_location: Cornell
   name: Big Red
   level: college
+  espn_id: 172
+  espn_mens_slug: cornell-big-red
+  espn_womens_slug: cornell-big-red
   colors:
     red:
       name: Red
@@ -873,6 +955,9 @@ crei-creighton-bluejays:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 156
+  espn_mens_slug: creighton-bluejays
+  espn_womens_slug: creighton-bluejays
   colors:
     cu-blue:
       name: CU Blue
@@ -906,6 +991,8 @@ dal-dallas-cowboys:
   display_location: Dallas
   name: Cowboys
   level: pro
+  espn_id: 6
+  espn_mens_slug: dallas-cowboys
   colors:
     blue:
       name: Blue
@@ -939,6 +1026,9 @@ dart-dartmouth-big-green:
   display_location: Dartmouth
   name: Big Green
   level: college
+  espn_id: 159
+  espn_mens_slug: dartmouth-big-green
+  espn_womens_slug: dartmouth-big-green
   colors:
     dartmouth-green:
       name: Dartmouth Green
@@ -972,6 +1062,9 @@ dav-davidson-wildcats:
   display_location: Davidson
   name: Wildcats
   level: college
+  espn_id: 2166
+  espn_mens_slug: davidson-wildcats
+  espn_womens_slug: davidson-wildcats
   colors:
     davidson-red:
       name: Davidson Red
@@ -997,6 +1090,9 @@ day-dayton-flyers:
   display_location: Dayton
   name: Flyers
   level: college
+  espn_id: 2168
+  espn_mens_slug: dayton-flyers
+  espn_womens_slug: dayton-flyers
   colors:
     black:
       name: Black
@@ -1026,6 +1122,9 @@ dpu-depaul-blue-demons:
   display_location: DePaul
   name: Blue Demons
   level: college
+  espn_id: 305
+  espn_mens_slug: depaul-blue-demons
+  espn_womens_slug: depaul-blue-demons
   colors:
     blue:
       name: Blue
@@ -1070,6 +1169,8 @@ den-denver-broncos:
   display_location: Denver
   name: Broncos
   level: pro
+  espn_id: 7
+  espn_mens_slug: denver-broncos
   colors:
     broncos-navy:
       name: Broncos Navy
@@ -1113,6 +1214,8 @@ det-detroit-lions:
   display_location: Detroit
   name: Lions
   level: pro
+  espn_id: 8
+  espn_mens_slug: detroit-lions
   colors:
     black:
       name: Black
@@ -1144,6 +1247,9 @@ drx-drexel-dragons:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 2182
+  espn_mens_slug: drexel-dragons
+  espn_womens_slug: drexel-dragons
   colors:
     drexel-blue:
       name: Drexel Blue
@@ -1164,6 +1270,9 @@ duke-duke-blue-devils:
   display_location: Duke
   name: Blue Devils
   level: college
+  espn_id: 150
+  espn_mens_slug: duke-blue-devils
+  espn_womens_slug: duke-blue-devils
   colors:
     duke-navy-blue:
       name: Duke Navy Blue
@@ -1188,6 +1297,9 @@ duq-duquesne-dukes:
   display_location: Duquesne
   name: Dukes
   level: college
+  espn_id: 2184
+  espn_mens_slug: duquesne-dukes
+  espn_womens_slug: duquesne-dukes
   colors:
     blue:
       name: Blue
@@ -1234,6 +1346,9 @@ ecu-east-carolina-pirates:
   display_location: East Carolina
   name: Pirates
   level: college
+  espn_id: 151
+  espn_mens_slug: east-carolina-pirates
+  espn_womens_slug: east-carolina-pirates
   colors:
     gold:
       name: Gold
@@ -1270,6 +1385,9 @@ eku-eastern-kentucky-colonels:
   display_location: Eastern Kentucky
   name: Colonels
   level: college
+  espn_id: 2198
+  espn_mens_slug: eastern-kentucky-colonels
+  espn_womens_slug: eastern-kentucky-colonels
   colors:
     eku-maroon:
       name: EKU Maroon
@@ -1302,6 +1420,9 @@ ewu-eastern-washington-eagles:
   display_location: Eastern Washington
   name: Eagles
   level: college
+  espn_id: 331
+  espn_mens_slug: eastern-washington-eagles
+  espn_womens_slug: eastern-washington-eagles
   colors:
     black:
       name: Black
@@ -1327,6 +1448,9 @@ elon-elon-phoenix:
   display_location: Elon
   name: Phoenix
   level: college
+  espn_id: 2210
+  espn_mens_slug: elon-phoenix
+  espn_womens_slug: elon-phoenix
   colors:
     gold:
       name: Gold
@@ -1351,6 +1475,9 @@ fau-florida-atlantic-owls:
   display_location: Florida Atlantic
   name: Owls
   level: college
+  espn_id: 2226
+  espn_mens_slug: florida-atlantic-owls
+  espn_womens_slug: florida-atlantic-owls
   colors:
     fau-blue:
       name: FAU Blue
@@ -1400,6 +1527,9 @@ fgcu-florida-gulf-coast-eagles:
   display_location: Florida Gulf Coast
   name: Eagles
   level: college
+  espn_id: 526
+  espn_mens_slug: florida-gulf-coast-eagles
+  espn_womens_slug: florida-gulf-coast-eagles
   colors:
     bright-white:
       name: Bright White
@@ -1433,6 +1563,9 @@ fiu-florida-international-panthers:
   display_location: Florida International
   name: Panthers
   level: college
+  espn_id: 2229
+  espn_mens_slug: florida-international-panthers
+  espn_womens_slug: florida-international-panthers
   colors:
     fiu-blue:
       name: FIU Blue
@@ -1459,6 +1592,9 @@ fsu-florida-state-seminoles:
   display_location: Florida State
   name: Seminoles
   level: college
+  espn_id: 52
+  espn_mens_slug: florida-state-seminoles
+  espn_womens_slug: florida-state-seminoles
   colors:
     garnet:
       name: Garnet
@@ -1479,6 +1615,9 @@ for-fordham-rams:
   display_location: Fordham
   name: Rams
   level: college
+  espn_id: 2230
+  espn_mens_slug: fordham-rams
+  espn_womens_slug: fordham-rams
   colors:
     athletics-maroon:
       name: Athletics Maroon
@@ -1515,6 +1654,9 @@ gw-gardner-webb-runnin-bulldogs:
   display_location: Gardner-Webb
   name: Runnin' Bulldogs
   level: college
+  espn_id: 2241
+  espn_mens_slug: gardner-webb-runnin-bulldogs
+  espn_womens_slug: gardner-webb-runnin-bulldogs
   colors:
     gwu-red:
       name: GWU Red
@@ -1544,6 +1686,9 @@ gmu-george-mason-patriots:
   display_location: George Mason
   name: Patriots
   level: college
+  espn_id: 2244
+  espn_mens_slug: george-mason-patriots
+  espn_womens_slug: george-mason-patriots
   colors:
     george-mason-gold:
       name: George Mason Gold
@@ -1572,6 +1717,9 @@ gw-george-washington-revolutionaries:
   display_location: George Washington
   name: Revolutionaries
   level: college
+  espn_id: 45
+  espn_mens_slug: george-washington-revolutionaries
+  espn_womens_slug: george-washington-revolutionaries
   colors:
     blue:
       name: Blue
@@ -1604,6 +1752,9 @@ gtn-georgetown-hoyas:
   display_location: Georgetown
   name: Hoyas
   level: college
+  espn_id: 46
+  espn_mens_slug: georgetown-hoyas
+  espn_womens_slug: georgetown-hoyas
   colors:
     georgetown-blue:
       name: Georgetown Blue
@@ -1629,6 +1780,9 @@ gt-georgia-tech-yellow-jackets:
   display_location: Georgia Tech
   name: Yellow Jackets
   level: college
+  espn_id: 59
+  espn_mens_slug: georgia-tech-yellow-jackets
+  espn_womens_slug: georgia-tech-yellow-jackets
   colors:
     navy-blue:
       name: Navy Blue
@@ -1658,6 +1812,8 @@ gb-green-bay-packers:
   display_location: Green Bay
   name: Packers
   level: pro
+  espn_id: 9
+  espn_mens_slug: green-bay-packers
   colors:
     dark-green:
       name: Dark Green
@@ -1682,7 +1838,11 @@ ham-hampton-pirates:
   location: Hampton University
   display_location: Hampton
   name: Pirates
+  womens_name: Lady Pirates
   level: college
+  espn_id: 2261
+  espn_mens_slug: hampton-pirates
+  espn_womens_slug: hampton-lady-pirates
   colors:
     hampton-blue:
       name: Hampton Blue
@@ -1716,6 +1876,9 @@ harv-harvard-crimson:
   display_location: Harvard
   name: Crimson
   level: college
+  espn_id: 108
+  espn_mens_slug: harvard-crimson
+  espn_womens_slug: harvard-crimson
   colors:
     black:
       name: Black
@@ -1737,6 +1900,9 @@ hip-high-point-panthers:
   display_location: High Point
   name: Panthers
   level: college
+  espn_id: 2272
+  espn_mens_slug: high-point-panthers
+  espn_womens_slug: high-point-panthers
   colors:
     purple:
       name: Purple
@@ -1757,6 +1923,9 @@ hof-hofstra-pride:
   display_location: Hofstra
   name: Pride
   level: college
+  espn_id: 2275
+  espn_mens_slug: hofstra-pride
+  espn_womens_slug: hofstra-pride
   colors:
     hofstra-blue:
       name: Hofstra Blue
@@ -1777,6 +1946,8 @@ hou-houston-texans:
   display_location: Houston
   name: Texans
   level: pro
+  espn_id: 34
+  espn_mens_slug: houston-texans
   colors:
     battle-red:
       name: Battle Red
@@ -1807,6 +1978,9 @@ idst-idaho-state-bengals:
   display_location: Idaho State
   name: Bengals
   level: college
+  espn_id: 304
+  espn_mens_slug: idaho-state-bengals
+  espn_womens_slug: idaho-state-bengals
   colors:
     black:
       name: Black
@@ -1836,6 +2010,9 @@ iupui-iu-indianapolis-jaguars:
   display_location: IU Indianapolis
   name: Jaguars
   level: college
+  espn_id: 85
+  espn_mens_slug: iu-indianapolis-jaguars
+  espn_womens_slug: iu-indianapolis-jaguars
   colors:
     black:
       name: Black
@@ -1857,6 +2034,8 @@ ind-indianapolis-colts:
   display_location: Indianapolis
   name: Colts
   level: pro
+  espn_id: 11
+  espn_mens_slug: indianapolis-colts
   colors:
     gray:
       name: Gray
@@ -1885,6 +2064,9 @@ isu-iowa-state-cyclones:
   display_location: Iowa State
   name: Cyclones
   level: college
+  espn_id: 66
+  espn_mens_slug: iowa-state-cyclones
+  espn_womens_slug: iowa-state-cyclones
   colors:
     gold:
       name: Gold
@@ -1917,6 +2099,8 @@ jac-jacksonville-jaguars:
   display_location: Jacksonville
   name: Jaguars
   level: pro
+  espn_id: 30
+  espn_mens_slug: jacksonville-jaguars
   colors:
     black:
       name: Black
@@ -1950,6 +2134,9 @@ jvst-jacksonville-state-gamecocks:
   display_location: Jacksonville State
   name: Gamecocks
   level: college
+  espn_id: 55
+  espn_mens_slug: jacksonville-state-gamecocks
+  espn_womens_slug: jacksonville-state-gamecocks
   colors:
     red:
       name: Red
@@ -1970,6 +2157,9 @@ jax-jacksonville-dolphins:
   display_location: Jacksonville
   name: Dolphins
   level: college
+  espn_id: 294
+  espn_mens_slug: jacksonville-dolphins
+  espn_womens_slug: jacksonville-dolphins
   colors:
     cool-gray:
       name: Cool Gray
@@ -1994,6 +2184,8 @@ kc-kansas-city-chiefs:
   display_location: Kansas City
   name: Chiefs
   level: pro
+  espn_id: 12
+  espn_mens_slug: kansas-city-chiefs
   colors:
     gold:
       name: Gold
@@ -2019,6 +2211,9 @@ ksu-kansas-state-wildcats:
   display_location: Kansas State
   name: Wildcats
   level: college
+  espn_id: 2306
+  espn_mens_slug: kansas-state-wildcats
+  espn_womens_slug: kansas-state-wildcats
   colors:
     20-black:
       name: 20% Black
@@ -2051,6 +2246,9 @@ knst-kennesaw-state-owls:
   display_location: Kennesaw State
   name: Owls
   level: college
+  espn_id: 338
+  espn_mens_slug: kennesaw-state-owls
+  espn_womens_slug: kennesaw-state-owls
   colors:
     black:
       name: Black
@@ -2075,6 +2273,9 @@ las-la-salle-explorers:
   display_location: La Salle
   name: Explorers
   level: college
+  espn_id: 2325
+  espn_mens_slug: la-salle-explorers
+  espn_womens_slug: la-salle-explorers
   colors:
     explorer-gold:
       name: Explorer Gold
@@ -2111,6 +2312,8 @@ lv-las-vegas-raiders:
   display_location: Las Vegas
   name: Raiders
   level: pro
+  espn_id: 13
+  espn_mens_slug: las-vegas-raiders
   colors:
     raiders-black:
       name: Raiders Black
@@ -2140,6 +2343,9 @@ lib-liberty-flames:
   display_location: Liberty
   name: Flames
   level: college
+  espn_id: 2335
+  espn_mens_slug: liberty-flames
+  espn_womens_slug: liberty-flames
   colors:
     liberty-navy:
       name: Liberty Navy
@@ -2161,6 +2367,9 @@ lip-lipscomb-bisons:
   display_location: Lipscomb
   name: Bisons
   level: college
+  espn_id: 288
+  espn_mens_slug: lipscomb-bisons
+  espn_womens_slug: lipscomb-bisons
   colors:
     gold:
       name: Gold
@@ -2189,6 +2398,9 @@ lng-longwood-lancers:
   display_location: Longwood
   name: Lancers
   level: college
+  espn_id: 2344
+  espn_mens_slug: longwood-lancers
+  espn_womens_slug: longwood-lancers
   colors:
     longwood-blue:
       name: Longwood Blue
@@ -2213,6 +2425,8 @@ lac-los-angeles-chargers:
   display_location: Los Angeles
   name: Chargers
   level: pro
+  espn_id: 24
+  espn_mens_slug: los-angeles-chargers
   colors:
     powder-blue:
       name: Powder Blue
@@ -2238,6 +2452,8 @@ lar-los-angeles-rams:
   display_location: Los Angeles
   name: Rams
   level: pro
+  espn_id: 14
+  espn_mens_slug: los-angeles-rams
   colors:
     blue:
       name: Blue
@@ -2270,7 +2486,11 @@ lat-louisiana-tech-bulldogs:
   location: Louisiana Tech University
   display_location: Louisiana Tech
   name: Bulldogs
+  womens_name: Lady Techsters
   level: college
+  espn_id: 2348
+  espn_mens_slug: louisiana-tech-bulldogs
+  espn_womens_slug: louisiana-tech-lady-techsters
   colors:
     lady-techster-blue:
       name: Lady Techster Blue
@@ -2295,6 +2515,9 @@ luc-loyola-chicago-ramblers:
   display_location: Loyola Chicago
   name: Ramblers
   level: college
+  espn_id: 2350
+  espn_mens_slug: loyola-chicago-ramblers
+  espn_womens_slug: loyola-chicago-ramblers
   colors:
     loyola-gold:
       name: Loyola Gold
@@ -2335,6 +2558,9 @@ marq-marquette-golden-eagles:
   display_location: Marquette
   name: Golden Eagles
   level: college
+  espn_id: 269
+  espn_mens_slug: marquette-golden-eagles
+  espn_womens_slug: marquette-golden-eagles
   colors:
     marquette-blue:
       name: Marquette Blue
@@ -2362,7 +2588,11 @@ umass-massachusetts-minutemen:
   location: Massachusetts - Amherst
   display_location: Massachusetts
   name: Minutemen
+  womens_name: Minutewomen
   level: college
+  espn_id: 113
+  espn_mens_slug: massachusetts-minutemen
+  espn_womens_slug: massachusetts-minutewomen
   colors:
     umass-black:
       name: UMass Black
@@ -2399,6 +2629,8 @@ mia-miami-dolphins:
   display_location: Miami
   name: Dolphins
   level: pro
+  espn_id: 15
+  espn_mens_slug: miami-dolphins
   colors:
     aqua:
       name: Aqua
@@ -2428,6 +2660,9 @@ msu-michigan-state-spartans:
   display_location: Michigan State
   name: Spartans
   level: college
+  espn_id: 127
+  espn_mens_slug: michigan-state-spartans
+  espn_womens_slug: michigan-state-spartans
   colors:
     black:
       name: Black
@@ -2452,6 +2687,9 @@ mtsu-middle-tennessee-blue-raiders:
   display_location: Middle Tennessee
   name: Blue Raiders
   level: college
+  espn_id: 2393
+  espn_mens_slug: middle-tennessee-blue-raiders
+  espn_womens_slug: middle-tennessee-blue-raiders
   colors:
     dark-gray:
       name: Dark Gray
@@ -2476,6 +2714,8 @@ min-minnesota-vikings:
   display_location: Minnesota
   name: Vikings
   level: pro
+  espn_id: 16
+  espn_mens_slug: minnesota-vikings
   colors:
     gold:
       name: Gold
@@ -2501,6 +2741,9 @@ most-missouri-state-bears:
   display_location: Missouri State
   name: Bears
   level: college
+  espn_id: 2623
+  espn_mens_slug: missouri-state-bears
+  espn_womens_slug: missouri-state-bears
   colors:
     black:
       name: Black
@@ -2522,6 +2765,9 @@ mon-monmouth-hawks:
   display_location: Monmouth
   name: Hawks
   level: college
+  espn_id: 2405
+  espn_mens_slug: monmouth-hawks
+  espn_womens_slug: monmouth-hawks
   colors:
     shadow-blue:
       name: Shadow Blue
@@ -2542,6 +2788,9 @@ mtsu-montana-state-bobcats:
   display_location: Montana State
   name: Bobcats
   level: college
+  espn_id: 147
+  espn_mens_slug: montana-state-bobcats
+  espn_womens_slug: montana-state-bobcats
   colors:
     blue:
       name: Blue
@@ -2566,6 +2815,8 @@ ne-new-england-patriots:
   display_location: New England
   name: Patriots
   level: pro
+  espn_id: 17
+  espn_mens_slug: new-england-patriots
   colors:
     nautical-blue-2000:
       name: Nautical Blue (2000)
@@ -2624,6 +2875,9 @@ njit-njit-highlanders:
   display_location: NJIT
   name: Highlanders
   level: college
+  espn_id: 2885
+  espn_mens_slug: njit-highlanders
+  espn_womens_slug: njit-highlanders
   colors:
     njit-red:
       name: NJIT Red
@@ -2648,6 +2902,9 @@ nmst-new-mexico-state-aggies:
   display_location: New Mexico State
   name: Aggies
   level: college
+  espn_id: 166
+  espn_mens_slug: new-mexico-state-aggies
+  espn_womens_slug: new-mexico-state-aggies
   colors:
     aggie-crimson:
       name: Aggie Crimson
@@ -2668,6 +2925,8 @@ no-new-orleans-saints:
   display_location: New Orleans
   name: Saints
   level: pro
+  espn_id: 18
+  espn_mens_slug: new-orleans-saints
   colors:
     black:
       name: Black
@@ -2697,6 +2956,8 @@ nyg-new-york-giants:
   display_location: New York
   name: Giants
   level: pro
+  espn_id: 19
+  espn_mens_slug: new-york-giants
   colors:
     dark-blue:
       name: Dark Blue
@@ -2726,6 +2987,8 @@ nyj-new-york-jets:
   display_location: New York
   name: Jets
   level: pro
+  espn_id: 20
+  espn_mens_slug: new-york-jets
   colors:
     gotham-green:
       name: Gotham Green
@@ -2750,6 +3013,9 @@ ncat-north-carolina-a-t-aggies:
   display_location: North Carolina A&T
   name: Aggies
   level: college
+  espn_id: 2448
+  espn_mens_slug: north-carolina-at-aggies
+  espn_womens_slug: north-carolina-at-aggies
   colors:
     30-black:
       name: 30% Black
@@ -2774,6 +3040,9 @@ ncst-nc-state-wolfpack:
   display_location: NC State
   name: Wolfpack
   level: college
+  espn_id: 152
+  espn_mens_slug: nc-state-wolfpack
+  espn_womens_slug: nc-state-wolfpack
   colors:
     wolfpack-black:
       name: Wolfpack Black
@@ -2798,6 +3067,9 @@ nore-northeastern-huskies:
   display_location: Northeastern
   name: Huskies
   level: college
+  espn_id: 111
+  espn_mens_slug: northeastern-huskies
+  espn_womens_slug: northeastern-huskies
   colors:
     black:
       name: Black
@@ -2827,6 +3099,9 @@ nau-northern-arizona-lumberjacks:
   display_location: Northern Arizona
   name: Lumberjacks
   level: college
+  espn_id: 2464
+  espn_mens_slug: northern-arizona-lumberjacks
+  espn_womens_slug: northern-arizona-lumberjacks
   colors:
     blue:
       name: Blue
@@ -2851,6 +3126,9 @@ nku-northern-kentucky-norse:
   display_location: Northern Kentucky
   name: Norse
   level: college
+  espn_id: 94
+  espn_mens_slug: northern-kentucky-norse
+  espn_womens_slug: northern-kentucky-norse
   colors:
     gold:
       name: Gold
@@ -2876,6 +3154,9 @@ nw-northwestern-wildcats:
   display_location: Northwestern
   name: Wildcats
   level: college
+  espn_id: 77
+  espn_mens_slug: northwestern-wildcats
+  espn_womens_slug: northwestern-wildcats
   colors:
     northwestern-purple:
       name: Northwestern Purple
@@ -2901,6 +3182,9 @@ oak-oakland-golden-grizzlies:
   display_location: Oakland
   name: Golden Grizzlies
   level: college
+  espn_id: 2473
+  espn_mens_slug: oakland-golden-grizzlies
+  espn_womens_slug: oakland-golden-grizzlies
   colors:
     black:
       name: Black
@@ -2926,6 +3210,9 @@ osu-ohio-state-buckeyes:
   display_location: Ohio State
   name: Buckeyes
   level: college
+  espn_id: 194
+  espn_mens_slug: ohio-state-buckeyes
+  espn_womens_slug: ohio-state-buckeyes
   colors:
     gray:
       name: Gray
@@ -2950,7 +3237,11 @@ osu-oklahoma-state-cowboys:
   location: Oklahoma State University
   display_location: Oklahoma State
   name: Cowboys
+  womens_name: Cowgirls
   level: college
+  espn_id: 197
+  espn_mens_slug: oklahoma-state-cowboys
+  espn_womens_slug: oklahoma-state-cowgirls
   colors:
     black:
       name: Black
@@ -2992,7 +3283,11 @@ psu-penn-state-nittany-lions:
   location: Pennsylvania State University
   display_location: Penn State
   name: Nittany Lions
+  womens_name: Lady Lions
   level: college
+  espn_id: 213
+  espn_mens_slug: penn-state-nittany-lions
+  espn_womens_slug: penn-state-lady-lions
   colors:
     beaver-blue:
       name: Beaver Blue
@@ -3022,6 +3317,8 @@ phi-philadelphia-eagles:
   display_location: Philadelphia
   name: Eagles
   level: pro
+  espn_id: 21
+  espn_mens_slug: philadelphia-eagles
   colors:
     black:
       name: Black
@@ -3059,6 +3356,8 @@ pit-pittsburgh-steelers:
   display_location: Pittsburgh
   name: Steelers
   level: pro
+  espn_id: 23
+  espn_mens_slug: pittsburgh-steelers
   colors:
     black:
       name: Black
@@ -3096,6 +3395,9 @@ psu-portland-state-vikings:
   display_location: Portland State
   name: Vikings
   level: college
+  espn_id: 2502
+  espn_mens_slug: portland-state-vikings
+  espn_womens_slug: portland-state-vikings
   colors:
     black:
       name: Black
@@ -3129,6 +3431,9 @@ pres-presbyterian-blue-hose:
   display_location: Presbyterian
   name: Blue Hose
   level: college
+  espn_id: 2506
+  espn_mens_slug: presbyterian-blue-hose
+  espn_womens_slug: presbyterian-blue-hose
   colors:
     pc-true-blue:
       name: PC True Blue
@@ -3166,6 +3471,9 @@ prin-princeton-tigers:
   display_location: Princeton
   name: Tigers
   level: college
+  espn_id: 163
+  espn_mens_slug: princeton-tigers
+  espn_womens_slug: princeton-tigers
   colors:
     black:
       name: Black
@@ -3195,6 +3503,9 @@ prv-providence-friars:
   display_location: Providence
   name: Friars
   level: college
+  espn_id: 2507
+  espn_mens_slug: providence-friars
+  espn_womens_slug: providence-friars
   colors:
     cool-gray:
       name: Cool Gray
@@ -3228,6 +3539,9 @@ pur-purdue-boilermakers:
   display_location: Purdue
   name: Boilermakers
   level: college
+  espn_id: 2509
+  espn_mens_slug: purdue-boilermakers
+  espn_womens_slug: purdue-boilermakers
   colors:
     black:
       name: Black
@@ -3252,6 +3566,9 @@ upfw-purdue-fort-wayne-mastodons:
   display_location: Purdue Fort Wayne
   name: Mastodons
   level: college
+  espn_id: 2870
+  espn_mens_slug: purdue-fort-wayne-mastodons
+  espn_womens_slug: purdue-fort-wayne-mastodons
   colors:
     black:
       name: Black
@@ -3276,6 +3593,9 @@ qu-queens-university-royals:
   display_location: Queens University
   name: Royals
   level: college
+  espn_id: 2511
+  espn_mens_slug: queens-university-royals
+  espn_womens_slug: queens-university-royals
   colors:
     gold:
       name: Gold
@@ -3308,6 +3628,9 @@ rad-radford-highlanders:
   display_location: Radford
   name: Highlanders
   level: college
+  espn_id: 2515
+  espn_mens_slug: radford-highlanders
+  espn_womens_slug: radford-highlanders
   colors:
     blue-ridge:
       name: Blue Ridge
@@ -3352,6 +3675,9 @@ uri-rhode-island-rams:
   display_location: Rhode Island
   name: Rams
   level: college
+  espn_id: 227
+  espn_mens_slug: rhode-island-rams
+  espn_womens_slug: rhode-island-rams
   colors:
     blue:
       name: Blue
@@ -3380,6 +3706,9 @@ rice-rice-owls:
   display_location: Rice
   name: Owls
   level: college
+  espn_id: 242
+  espn_mens_slug: rice-owls
+  espn_womens_slug: rice-owls
   colors:
     rice-university-blue:
       name: Rice University Blue
@@ -3432,6 +3761,9 @@ rich-richmond-spiders:
   display_location: Richmond
   name: Spiders
   level: college
+  espn_id: 257
+  espn_mens_slug: richmond-spiders
+  espn_womens_slug: richmond-spiders
   colors:
     blue:
       name: Blue
@@ -3472,6 +3804,9 @@ rmu-robert-morris-colonials:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 2523
+  espn_mens_slug: robert-morris-colonials
+  espn_womens_slug: robert-morris-colonials
   colors:
     rmu-blue:
       name: RMU Blue
@@ -3497,6 +3832,9 @@ rtg-rutgers-scarlet-knights:
   display_location: Rutgers
   name: Scarlet Knights
   level: college
+  espn_id: 164
+  espn_mens_slug: rutgers-scarlet-knights
+  espn_womens_slug: rutgers-scarlet-knights
   colors:
     black:
       name: Black
@@ -3522,6 +3860,9 @@ ua-ualbany-great-danes:
   display_location: UAlbany
   name: Great Danes
   level: college
+  espn_id: 399
+  espn_mens_slug: ualbany-great-danes
+  espn_womens_slug: ualbany-great-danes
   colors:
     ualbany-gold:
       name: UAlbany Gold
@@ -3554,6 +3895,9 @@ sacst-sacramento-state-hornets:
   display_location: Sacramento State
   name: Hornets
   level: college
+  espn_id: 16
+  espn_mens_slug: sacramento-state-hornets
+  espn_womens_slug: sacramento-state-hornets
   colors:
     sac-state-gold:
       name: Sac State Gold
@@ -3568,12 +3912,17 @@ sacst-sacramento-state-hornets:
       name: Gold on Green
       css: 'background-color: #043927; color: #C4B581; '
       default: true
-sju-saint-josephs-hawks:
+sju-saint-joseph-s-hawks:
   abbr: SJU
-  location: Saint Josephs University
-  display_location: Saint Josephs
+  location: Saint Joseph's University
+  display_location: Saint Joseph's
   name: Hawks
+  womens_name: ''
   level: college
+  brand_info: ''
+  espn_id: 2603
+  espn_mens_slug: saint-josephs-hawks
+  espn_womens_slug: saint-josephs-hawks
   colors:
     crimson:
       name: Crimson
@@ -3598,6 +3947,9 @@ slu-saint-louis-billikens:
   display_location: Saint Louis
   name: Billikens
   level: college
+  espn_id: 139
+  espn_mens_slug: saint-louis-billikens
+  espn_womens_slug: saint-louis-billikens
   colors:
     college-church-gray:
       name: College Church Gray
@@ -3622,6 +3974,9 @@ shst-sam-houston-bearkats:
   display_location: Sam Houston
   name: Bearkats
   level: college
+  espn_id: 2534
+  espn_mens_slug: sam-houston-bearkats
+  espn_womens_slug: sam-houston-bearkats
   colors:
     shsu-orange:
       name: SHSU Orange
@@ -3642,6 +3997,8 @@ sf-san-francisco-49ers:
   display_location: San Francisco
   name: 49ers
   level: pro
+  espn_id: 25
+  espn_mens_slug: san-francisco-49ers
   colors:
     49ers-red:
       name: 49ers Red
@@ -3670,6 +4027,8 @@ sea-seattle-seahawks:
   display_location: Seattle
   name: Seahawks
   level: pro
+  espn_id: 26
+  espn_mens_slug: seattle-seahawks
   colors:
     action-green:
       name: Action Green
@@ -3725,6 +4084,9 @@ sh-seton-hall-pirates:
   display_location: Seton Hall
   name: Pirates
   level: college
+  espn_id: 2550
+  espn_mens_slug: seton-hall-pirates
+  espn_womens_slug: seton-hall-pirates
   colors:
     seton-hall-blue:
       name: Seton Hall Blue
@@ -3792,6 +4154,9 @@ smu-smu-mustangs:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 2567
+  espn_mens_slug: smu-mustangs
+  espn_womens_slug: smu-mustangs
   colors:
     blue:
       name: Blue
@@ -3817,6 +4182,9 @@ sbu-st-bonaventure-bonnies:
   display_location: St. Bonaventure
   name: Bonnies
   level: college
+  espn_id: 179
+  espn_mens_slug: st-bonaventure-bonnies
+  espn_womens_slug: st-bonaventure-bonnies
   colors:
     bona-brown:
       name: Bona Brown
@@ -3845,6 +4213,9 @@ sju-st-john-s-red-storm:
   display_location: St. John's
   name: Red Storm
   level: college
+  espn_id: 2599
+  espn_mens_slug: st-johns-red-storm
+  espn_womens_slug: st-johns-red-storm
   colors:
     red:
       name: Red
@@ -3877,6 +4248,9 @@ stan-stanford-cardinal:
   display_location: Stanford
   name: Cardinal
   level: college
+  espn_id: 24
+  espn_mens_slug: stanford-cardinal
+  espn_womens_slug: stanford-cardinal
   colors:
     black:
       name: Black
@@ -3913,6 +4287,9 @@ stet-stetson-hatters:
   display_location: Stetson
   name: Hatters
   level: college
+  espn_id: 56
+  espn_mens_slug: stetson-hatters
+  espn_womens_slug: stetson-hatters
   colors:
     gray:
       name: Gray
@@ -3945,6 +4322,9 @@ sbu-stony-brook-seawolves:
   display_location: Stony Brook
   name: Seawolves
   level: college
+  espn_id: 2619
+  espn_mens_slug: stony-brook-seawolves
+  espn_womens_slug: stony-brook-seawolves
   colors:
     stony-brook-black:
       name: Stony Brook Black
@@ -3965,6 +4345,9 @@ syr-syracuse-orange:
   display_location: Syracuse
   name: Orange
   level: college
+  espn_id: 183
+  espn_mens_slug: syracuse-orange
+  espn_womens_slug: syracuse-orange
   colors:
     su-blue:
       name: SU Blue
@@ -4018,6 +4401,8 @@ tb-tampa-bay-buccaneers:
   display_location: Tampa Bay
   name: Buccaneers
   level: pro
+  espn_id: 27
+  espn_mens_slug: tampa-bay-buccaneers
   colors:
     bay-orange:
       name: Bay Orange
@@ -4055,6 +4440,9 @@ tem-temple-owls:
   display_location: Temple
   name: Owls
   level: college
+  espn_id: 218
+  espn_mens_slug: temple-owls
+  espn_womens_slug: temple-owls
   colors:
     black:
       name: Black
@@ -4087,6 +4475,8 @@ ten-tennessee-titans:
   display_location: Tennessee
   name: Titans
   level: pro
+  espn_id: 10
+  espn_mens_slug: tennessee-titans
   colors:
     steel-grey:
       name: Steel Grey
@@ -4130,6 +4520,9 @@ tcu-tcu-horned-frogs:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 2628
+  espn_mens_slug: tcu-horned-frogs
+  espn_womens_slug: tcu-horned-frogs
   colors:
     horned-frog-purple:
       name: Horned Frog Purple
@@ -4158,7 +4551,11 @@ ttu-texas-tech-red-raiders:
   location: Texas Tech University
   display_location: Texas Tech
   name: Red Raiders
+  womens_name: Lady Raiders
   level: college
+  espn_id: 2641
+  espn_mens_slug: texas-tech-red-raiders
+  espn_womens_slug: texas-tech-lady-raiders
   colors:
     texas-tech-black:
       name: Texas Tech Black
@@ -4199,6 +4596,9 @@ tow-towson-tigers:
   display_location: Towson
   name: Tigers
   level: college
+  espn_id: 119
+  espn_mens_slug: towson-tigers
+  espn_womens_slug: towson-tigers
   colors:
     "-black":
       name: " Black"
@@ -4244,6 +4644,9 @@ tuln-tulane-green-wave:
   display_location: Tulane
   name: Green Wave
   level: college
+  espn_id: 2655
+  espn_mens_slug: tulane-green-wave
+  espn_womens_slug: tulane-green-wave
   colors:
     tulane-blue:
       name: Tulane Blue
@@ -4274,6 +4677,9 @@ army-army-black-knights:
   display_location: Army
   name: Black Knights
   level: college
+  espn_id: 349
+  espn_mens_slug: army-black-knights
+  espn_womens_slug: army-black-knights
   colors:
     gold:
       name: Gold
@@ -4303,6 +4709,9 @@ navy-navy-midshipmen:
   display_location: Navy
   name: Midshipmen
   level: college
+  espn_id: 2426
+  espn_mens_slug: navy-midshipmen
+  espn_womens_slug: navy-midshipmen
   colors:
     navy-blue:
       name: Navy Blue
@@ -4325,6 +4734,9 @@ uab-uab-blazers:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 5
+  espn_mens_slug: uab-blazers
+  espn_womens_slug: uab-blazers
   colors:
     uab-gold:
       name: UAB Gold
@@ -4361,6 +4773,9 @@ ari-arizona-wildcats:
   display_location: Arizona
   name: Wildcats
   level: college
+  espn_id: 12
+  espn_mens_slug: arizona-wildcats
+  espn_womens_slug: arizona-wildcats
   colors:
     arizona-blue:
       name: Arizona Blue
@@ -4415,6 +4830,9 @@ ucd-uc-davis-aggies:
   display_location: UC Davis
   name: Aggies
   level: college
+  espn_id: 302
+  espn_mens_slug: uc-davis-aggies
+  espn_womens_slug: uc-davis-aggies
   colors:
     aggie-blue:
       name: Aggie Blue
@@ -4435,6 +4853,9 @@ ucla-ucla-bruins:
   display_location: UCLA
   name: Bruins
   level: college
+  espn_id: 26
+  espn_mens_slug: ucla-bruins
+  espn_womens_slug: ucla-bruins
   colors:
     darker-blue:
       name: Darker Blue
@@ -4468,6 +4889,9 @@ ucsb-uc-santa-barbara-gauchos:
   display_location: UC Santa Barbara
   name: Gauchos
   level: college
+  espn_id: 2540
+  espn_mens_slug: uc-santa-barbara-gauchos
+  espn_womens_slug: uc-santa-barbara-gauchos
   colors:
     gold:
       name: Gold
@@ -4488,6 +4912,9 @@ cal-california-golden-bears:
   display_location: California
   name: Golden Bears
   level: college
+  espn_id: 25
+  espn_mens_slug: california-golden-bears
+  espn_womens_slug: california-golden-bears
   colors:
     berkeley-blue:
       name: Berkeley Blue
@@ -4520,6 +4947,9 @@ irv-uc-irvine-anteaters:
   display_location: UC Irvine
   name: Anteaters
   level: college
+  espn_id: 300
+  espn_mens_slug: uc-irvine-anteaters
+  espn_womens_slug: uc-irvine-anteaters
   colors:
     uci-blue:
       name: UCI Blue
@@ -4540,6 +4970,9 @@ ucsd-uc-san-diego-tritons:
   display_location: UC San Diego
   name: Tritons
   level: college
+  espn_id: 28
+  espn_mens_slug: uc-san-diego-tritons
+  espn_womens_slug: uc-san-diego-tritons
   colors:
     uc-san-diego-blue:
       name: UC San Diego Blue
@@ -4569,6 +5002,9 @@ ucr-uc-riverside-highlanders:
   display_location: UC Riverside
   name: Highlanders
   level: college
+  espn_id: 27
+  espn_mens_slug: uc-riverside-highlanders
+  espn_womens_slug: uc-riverside-highlanders
   colors:
     blue:
       name: Blue
@@ -4588,7 +5024,11 @@ cak-central-arkansas-bears:
   location: University of Central Arkansas
   display_location: Central Arkansas
   name: Bears
+  womens_name: Sugar Bears
   level: college
+  espn_id: 2110
+  espn_mens_slug: central-arkansas-bears
+  espn_womens_slug: central-arkansas-sugar-bears
   colors:
     official-gray:
       name: Official Gray
@@ -4616,6 +5056,9 @@ ucf-ucf-knights:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 2116
+  espn_mens_slug: ucf-knights
+  espn_womens_slug: ucf-knights
   colors:
     black:
       name: Black
@@ -4636,6 +5079,9 @@ cin-cincinnati-bearcats:
   display_location: Cincinnati
   name: Bearcats
   level: college
+  espn_id: 2132
+  espn_mens_slug: cincinnati-bearcats
+  espn_womens_slug: cincinnati-bearcats
   colors:
     grey:
       name: Grey
@@ -4697,6 +5143,9 @@ col-colorado-buffaloes:
   display_location: Colorado
   name: Buffaloes
   level: college
+  espn_id: 38
+  espn_mens_slug: colorado-buffaloes
+  espn_womens_slug: colorado-buffaloes
   colors:
     black:
       name: Black
@@ -4725,6 +5174,9 @@ uconn-uconn-huskies:
   display_location: UConn
   name: Huskies
   level: college
+  espn_id: 41
+  espn_mens_slug: uconn-huskies
+  espn_womens_slug: uconn-huskies
   colors:
     grey:
       name: Grey
@@ -4757,6 +5209,9 @@ del-delaware-blue-hens:
   display_location: Delaware
   name: Blue Hens
   level: college
+  espn_id: 48
+  espn_mens_slug: delaware-blue-hens
+  espn_womens_slug: delaware-blue-hens
   colors:
     blue:
       name: Blue
@@ -4777,6 +5232,9 @@ udm-detroit-mercy-titans:
   display_location: Detroit Mercy
   name: Titans
   level: college
+  espn_id: 2174
+  espn_mens_slug: detroit-mercy-titans
+  espn_womens_slug: detroit-mercy-titans
   colors:
     blue:
       name: Blue
@@ -4801,7 +5259,11 @@ haw-hawai-i-rainbow-warriors:
   location: University of Hawaii at Manoa
   display_location: Hawai'i
   name: Rainbow Warriors
+  womens_name: Rainbow Wahine
   level: college
+  espn_id: 62
+  espn_mens_slug: hawaii-rainbow-warriors
+  espn_womens_slug: hawaii-rainbow-wahine
   colors:
     black:
       name: Black
@@ -4827,6 +5289,9 @@ hou-houston-cougars:
   display_location: Houston
   name: Cougars
   level: college
+  espn_id: 248
+  espn_mens_slug: houston-cougars
+  espn_womens_slug: houston-cougars
   colors:
     red:
       name: Red
@@ -4860,6 +5325,9 @@ ida-idaho-vandals:
   display_location: Idaho
   name: Vandals
   level: college
+  espn_id: 70
+  espn_mens_slug: idaho-vandals
+  espn_womens_slug: idaho-vandals
   colors:
     black:
       name: Black
@@ -4889,6 +5357,9 @@ ill-illinois-fighting-illini:
   display_location: Illinois
   name: Fighting Illini
   level: college
+  espn_id: 356
+  espn_mens_slug: illinois-fighting-illini
+  espn_womens_slug: illinois-fighting-illini
   colors:
     illini-blue:
       name: Illini Blue
@@ -4927,6 +5398,9 @@ iu-indiana-hoosiers:
   display_location: Indiana
   name: Hoosiers
   level: college
+  espn_id: 84
+  espn_mens_slug: indiana-hoosiers
+  espn_womens_slug: indiana-hoosiers
   colors:
     cream:
       name: Cream
@@ -4947,6 +5421,9 @@ iowa-iowa-hawkeyes:
   display_location: Iowa
   name: Hawkeyes
   level: college
+  espn_id: 2294
+  espn_mens_slug: iowa-hawkeyes
+  espn_womens_slug: iowa-hawkeyes
   colors:
     black:
       name: Black
@@ -4967,6 +5444,9 @@ ku-kansas-jayhawks:
   display_location: Kansas
   name: Jayhawks
   level: college
+  espn_id: 2305
+  espn_mens_slug: kansas-jayhawks
+  espn_womens_slug: kansas-jayhawks
   colors:
     crimson:
       name: Crimson
@@ -5000,6 +5480,9 @@ lou-louisville-cardinals:
   display_location: Louisville
   name: Cardinals
   level: college
+  espn_id: 97
+  espn_mens_slug: louisville-cardinals
+  espn_womens_slug: louisville-cardinals
   colors:
     black:
       name: Black
@@ -5025,6 +5508,9 @@ mn-maine-black-bears:
   display_location: Maine
   name: Black Bears
   level: college
+  espn_id: 311
+  espn_mens_slug: maine-black-bears
+  espn_womens_slug: maine-black-bears
   colors:
     dark-blue:
       name: Dark Blue
@@ -5067,6 +5553,9 @@ um-maryland-terrapins:
   display_location: Maryland
   name: Terrapins
   level: college
+  espn_id: 120
+  espn_mens_slug: maryland-terrapins
+  espn_womens_slug: maryland-terrapins
   colors:
     black:
       name: Black
@@ -5096,6 +5585,9 @@ umbc-umbc-retrievers:
   display_location: UMBC
   name: Retrievers
   level: college
+  espn_id: 2378
+  espn_mens_slug: umbc-retrievers
+  espn_womens_slug: umbc-retrievers
   colors:
     umbc-black:
       name: UMBC Black
@@ -5116,6 +5608,9 @@ uml-umass-lowell-river-hawks:
   display_location: UMass Lowell
   name: River Hawks
   level: college
+  espn_id: 2349
+  espn_mens_slug: umass-lowell-river-hawks
+  espn_womens_slug: umass-lowell-river-hawks
   colors:
     umass-lowell-blue:
       name: UMass Lowell Blue
@@ -5149,6 +5644,9 @@ mem-memphis-tigers:
   display_location: Memphis
   name: Tigers
   level: college
+  espn_id: 235
+  espn_mens_slug: memphis-tigers
+  espn_womens_slug: memphis-tigers
   colors:
     memphis-blue:
       name: Memphis Blue
@@ -5178,6 +5676,9 @@ mia-miami-hurricanes:
   display_location: Miami
   name: Hurricanes
   level: college
+  espn_id: 2390
+  espn_mens_slug: miami-hurricanes
+  espn_womens_slug: miami-hurricanes
   colors:
     um-green:
       name: UM Green
@@ -5208,6 +5709,9 @@ um-michigan-wolverines:
   display_location: Michigan
   name: Wolverines
   level: college
+  espn_id: 130
+  espn_mens_slug: michigan-wolverines
+  espn_womens_slug: michigan-wolverines
   colors:
     blue:
       name: Blue
@@ -5228,6 +5732,9 @@ min-minnesota-golden-gophers:
   display_location: Minnesota
   name: Golden Gophers
   level: college
+  espn_id: 135
+  espn_mens_slug: minnesota-golden-gophers
+  espn_womens_slug: minnesota-golden-gophers
   colors:
     umn-gold:
       name: UMN Gold
@@ -5247,7 +5754,11 @@ mnt-montana-grizzlies:
   location: University of Montana
   display_location: Montana
   name: Grizzlies
+  womens_name: Lady Griz
   level: college
+  espn_id: 149
+  espn_mens_slug: montana-grizzlies
+  espn_womens_slug: montana-lady-griz
   colors:
     copper-climb:
       name: Copper Climb
@@ -5288,6 +5799,9 @@ neb-nebraska-cornhuskers:
   display_location: Nebraska
   name: Cornhuskers
   level: college
+  espn_id: 158
+  espn_mens_slug: nebraska-cornhuskers
+  espn_womens_slug: nebraska-cornhuskers
   colors:
     cream:
       name: Cream
@@ -5316,6 +5830,9 @@ unh-new-hampshire-wildcats:
   display_location: New Hampshire
   name: Wildcats
   level: college
+  espn_id: 160
+  espn_mens_slug: new-hampshire-wildcats
+  espn_womens_slug: new-hampshire-wildcats
   colors:
     blue:
       name: Blue
@@ -5336,6 +5853,9 @@ nau-north-alabama-lions:
   display_location: North Alabama
   name: Lions
   level: college
+  espn_id: 2453
+  espn_mens_slug: north-alabama-lions
+  espn_womens_slug: north-alabama-lions
   colors:
     una-gold:
       name: UNA Gold
@@ -5360,6 +5880,9 @@ unc-north-carolina-tar-heels:
   display_location: North Carolina
   name: Tar Heels
   level: college
+  espn_id: 153
+  espn_mens_slug: north-carolina-tar-heels
+  espn_womens_slug: north-carolina-tar-heels
   colors:
     black:
       name: Black
@@ -5393,6 +5916,9 @@ cha-charlotte-49ers:
   display_location: Charlotte
   name: 49ers
   level: college
+  espn_id: 2429
+  espn_mens_slug: charlotte-49ers
+  espn_womens_slug: charlotte-49ers
   colors:
     charlotte-green:
       name: Charlotte Green
@@ -5437,6 +5963,9 @@ uncw-unc-wilmington-seahawks:
   display_location: UNC Wilmington
   name: Seahawks
   level: college
+  espn_id: 350
+  espn_mens_slug: unc-wilmington-seahawks
+  espn_womens_slug: unc-wilmington-seahawks
   colors:
     seahawk-gold-accent:
       name: Seahawk Gold Accent
@@ -5466,6 +5995,9 @@ unca-unc-asheville-bulldogs:
   display_location: UNC Asheville
   name: Bulldogs
   level: college
+  espn_id: 2427
+  espn_mens_slug: unc-asheville-bulldogs
+  espn_womens_slug: unc-asheville-bulldogs
   colors:
     bulldog-blue:
       name: Bulldog Blue
@@ -5486,6 +6018,9 @@ nfl-north-florida-ospreys:
   display_location: North Florida
   name: Ospreys
   level: college
+  espn_id: 2454
+  espn_mens_slug: north-florida-ospreys
+  espn_womens_slug: north-florida-ospreys
   colors:
     osprey-blue:
       name: Osprey Blue
@@ -5518,6 +6053,9 @@ unt-north-texas-mean-green:
   display_location: North Texas
   name: Mean Green
   level: college
+  espn_id: 249
+  espn_mens_slug: north-texas-mean-green
+  espn_womens_slug: north-texas-mean-green
   colors:
     black:
       name: Black
@@ -5555,6 +6093,9 @@ nco-northern-colorado-bears:
   display_location: Northern Colorado
   name: Bears
   level: college
+  espn_id: 2458
+  espn_mens_slug: northern-colorado-bears
+  espn_womens_slug: northern-colorado-bears
   colors:
     bears-blue:
       name: Bears Blue
@@ -5579,6 +6120,9 @@ nd-notre-dame-fighting-irish:
   display_location: Notre Dame
   name: Fighting Irish
   level: college
+  espn_id: 87
+  espn_mens_slug: notre-dame-fighting-irish
+  espn_womens_slug: notre-dame-fighting-irish
   colors:
     nd-blue:
       name: ND Blue
@@ -5607,6 +6151,9 @@ ore-oregon-ducks:
   display_location: Oregon
   name: Ducks
   level: college
+  espn_id: 2483
+  espn_mens_slug: oregon-ducks
+  espn_womens_slug: oregon-ducks
   colors:
     uo-green:
       name: UO Green
@@ -5631,6 +6178,9 @@ penn-pennsylvania-quakers:
   display_location: Pennsylvania
   name: Quakers
   level: college
+  espn_id: 219
+  espn_mens_slug: pennsylvania-quakers
+  espn_womens_slug: pennsylvania-quakers
   colors:
     penn-blue:
       name: Penn Blue
@@ -5659,6 +6209,9 @@ pit-pittsburgh-panthers:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 221
+  espn_mens_slug: pittsburgh-panthers
+  espn_womens_slug: pittsburgh-panthers
   colors:
     pitt-gold:
       name: Pitt Gold
@@ -5683,6 +6236,9 @@ scu-south-carolina-upstate-spartans:
   display_location: South Carolina Upstate
   name: Spartans
   level: college
+  espn_id: 2908
+  espn_mens_slug: south-carolina-upstate-spartans
+  espn_womens_slug: south-carolina-upstate-spartans
   colors:
     black:
       name: Black
@@ -5720,6 +6276,9 @@ usf-south-florida-bulls:
   display_location: South Florida
   name: Bulls
   level: college
+  espn_id: 58
+  espn_mens_slug: south-florida-bulls
+  espn_womens_slug: south-florida-bulls
   colors:
     usf-gold:
       name: USF Gold
@@ -5773,6 +6332,9 @@ usc-usc-trojans:
   display_location: USC
   name: Trojans
   level: college
+  espn_id: 30
+  espn_mens_slug: usc-trojans
+  espn_womens_slug: usc-trojans
   colors:
     usc-cardinal:
       name: USC Cardinal
@@ -5803,6 +6365,9 @@ utsa-utsa-roadrunners:
   womens_name: ''
   level: college
   brand_info: ''
+  espn_id: 2636
+  espn_mens_slug: utsa-roadrunners
+  espn_womens_slug: utsa-roadrunners
   colors:
     midnight:
       name: Midnight
@@ -5843,6 +6408,9 @@ utep-utep-miners:
   display_location: UTEP
   name: Miners
   level: college
+  espn_id: 2638
+  espn_mens_slug: utep-miners
+  espn_womens_slug: utep-miners
   colors:
     utep-blue:
       name: UTEP Blue
@@ -5867,6 +6435,9 @@ tul-tulsa-golden-hurricane:
   display_location: Tulsa
   name: Golden Hurricane
   level: college
+  espn_id: 202
+  espn_mens_slug: tulsa-golden-hurricane
+  espn_womens_slug: tulsa-golden-hurricane
   colors:
     blue:
       name: Blue
@@ -5887,6 +6458,9 @@ utah-utah-utes:
   display_location: Utah
   name: Utes
   level: college
+  espn_id: 254
+  espn_mens_slug: utah-utes
+  espn_womens_slug: utah-utes
   colors:
     black:
       name: Black
@@ -5916,6 +6490,9 @@ vt-vermont-catamounts:
   display_location: Vermont
   name: Catamounts
   level: college
+  espn_id: 261
+  espn_mens_slug: vermont-catamounts
+  espn_womens_slug: vermont-catamounts
   colors:
     catamount-green:
       name: Catamount Green
@@ -5952,6 +6529,9 @@ vir-virginia-cavaliers:
   display_location: Virginia
   name: Cavaliers
   level: college
+  espn_id: 258
+  espn_mens_slug: virginia-cavaliers
+  espn_womens_slug: virginia-cavaliers
   colors:
     uva-blue:
       name: UVA Blue
@@ -5980,6 +6560,9 @@ uw-washington-huskies:
   display_location: Washington
   name: Huskies
   level: college
+  espn_id: 264
+  espn_mens_slug: washington-huskies
+  espn_womens_slug: washington-huskies
   colors:
     husky-gold:
       name: Husky Gold
@@ -6029,6 +6612,9 @@ wga-west-georgia-wolves:
   display_location: West Georgia
   name: Wolves
   level: college
+  espn_id: 2698
+  espn_mens_slug: west-georgia-wolves
+  espn_womens_slug: west-georgia-wolves
   colors:
     blue:
       name: Blue
@@ -6053,6 +6639,9 @@ wis-wisconsin-badgers:
   display_location: Wisconsin
   name: Badgers
   level: college
+  espn_id: 275
+  espn_mens_slug: wisconsin-badgers
+  espn_womens_slug: wisconsin-badgers
   colors:
     badger-red:
       name: Badger Red
@@ -6073,6 +6662,9 @@ ugb-green-bay-phoenix:
   display_location: Green Bay
   name: Phoenix
   level: college
+  espn_id: 2739
+  espn_mens_slug: green-bay-phoenix
+  espn_womens_slug: green-bay-phoenix
   colors:
     phoenix-green:
       name: Phoenix Green
@@ -6093,6 +6685,9 @@ mil-milwaukee-panthers:
   display_location: Milwaukee
   name: Panthers
   level: college
+  espn_id: 270
+  espn_mens_slug: milwaukee-panthers
+  espn_womens_slug: milwaukee-panthers
   colors:
     black:
       name: Black
@@ -6113,6 +6708,9 @@ nova-villanova-wildcats:
   display_location: Villanova
   name: Wildcats
   level: college
+  espn_id: 222
+  espn_mens_slug: villanova-wildcats
+  espn_womens_slug: villanova-wildcats
   colors:
     villanova-signature-blue:
       name: Villanova Signature Blue
@@ -6141,6 +6739,9 @@ vcu-vcu-rams:
   display_location: VCU
   name: Rams
   level: college
+  espn_id: 2670
+  espn_mens_slug: vcu-rams
+  espn_womens_slug: vcu-rams
   colors:
     black:
       name: Black
@@ -6169,6 +6770,9 @@ vt-virginia-tech-hokies:
   display_location: Virginia Tech
   name: Hokies
   level: college
+  espn_id: 259
+  espn_mens_slug: virginia-tech-hokies
+  espn_womens_slug: virginia-tech-hokies
   colors:
     burnt-orange:
       name: Burnt Orange
@@ -6202,6 +6806,9 @@ wake-wake-forest-demon-deacons:
   display_location: Wake Forest
   name: Demon Deacons
   level: college
+  espn_id: 154
+  espn_mens_slug: wake-forest-demon-deacons
+  espn_womens_slug: wake-forest-demon-deacons
   colors:
     black:
       name: Black
@@ -6243,6 +6850,8 @@ was-washington-commanders:
   display_location: Washington
   name: Commanders
   level: pro
+  espn_id: 28
+  espn_mens_slug: washington-commanders
   colors:
     burgundy:
       name: Burgundy
@@ -6268,6 +6877,9 @@ web-weber-state-wildcats:
   display_location: Weber State
   name: Wildcats
   level: college
+  espn_id: 2692
+  espn_mens_slug: weber-state-wildcats
+  espn_womens_slug: weber-state-wildcats
   colors:
     university-gray:
       name: University Gray
@@ -6293,6 +6905,9 @@ wvu-west-virginia-mountaineers:
   display_location: West Virginia
   name: Mountaineers
   level: college
+  espn_id: 277
+  espn_mens_slug: west-virginia-mountaineers
+  espn_womens_slug: west-virginia-mountaineers
   colors:
     blue:
       name: Blue
@@ -6320,7 +6935,11 @@ wku-western-kentucky-hilltoppers:
   location: Western Kentucky University
   display_location: Western Kentucky
   name: Hilltoppers
+  womens_name: Lady Toppers
   level: college
+  espn_id: 98
+  espn_mens_slug: western-kentucky-hilltoppers
+  espn_womens_slug: western-kentucky-lady-toppers
   colors:
     wku-red:
       name: WKU Red
@@ -6343,12 +6962,42 @@ wist-wichita-state-shockers:
   womens_name: ''
   level: college
   brand_info: https://www.wichita.edu/services/strategic_communications/brand_standards/colors_and_fonts.php
+  espn_id: 2724
+  espn_mens_slug: wichita-state-shockers
+  espn_womens_slug: wichita-state-shockers
+  colors:
+    black:
+      name: Black
+      hex: '000000'
+      primary: true
+    shocker-yellow:
+      name: Shocker Yellow
+      hex: FFDB00
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    black:
+      name: Black
+      css: 'background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #FFDB00,
+        -1px 1px 0 #FFDB00, 1px -1px 0 #FFDB00, -1px -1px 0 #FFDB00; '
+      default: true
+    white:
+      name: White
+      css: 'background-color: #FFFFFF; color: #000000; text-shadow: 1px 1px 0 #FFDB00,
+        -1px 1px 0 #FFDB00, 1px -1px 0 #FFDB00, -1px -1px 0 #FFDB00; '
+      default: false
 wm-william-mary-tribe:
   abbr: WM
   location: William & Mary University
   display_location: William & Mary
   name: Tribe
   level: college
+  espn_id: 2729
+  espn_mens_slug: william-mary-tribe
+  espn_womens_slug: william-mary-tribe
   colors:
     w-m-gold:
       name: W&M Gold
@@ -6378,6 +7027,9 @@ win-winthrop-eagles:
   display_location: Winthrop
   name: Eagles
   level: college
+  espn_id: 2737
+  espn_mens_slug: winthrop-eagles
+  espn_womens_slug: winthrop-eagles
   colors:
     garnet:
       name: Garnet
@@ -6398,6 +7050,9 @@ wrst-wright-state-raiders:
   display_location: Wright State
   name: Raiders
   level: college
+  espn_id: 2750
+  espn_mens_slug: wright-state-raiders
+  espn_womens_slug: wright-state-raiders
   colors:
     wright-state-gold:
       name: Wright State Gold
@@ -6419,6 +7074,9 @@ xav-xavier-musketeers:
   display_location: Xavier
   name: Musketeers
   level: college
+  espn_id: 2752
+  espn_mens_slug: xavier-musketeers
+  espn_womens_slug: xavier-musketeers
   colors:
     running-man-blue:
       name: Running Man Blue
@@ -6458,6 +7116,9 @@ yale-yale-bulldogs:
   display_location: Yale
   name: Bulldogs
   level: college
+  espn_id: 43
+  espn_mens_slug: yale-bulldogs
+  espn_womens_slug: yale-bulldogs
   colors:
     yale-blue:
       name: Yale Blue
@@ -6474,6 +7135,9 @@ ytsu-youngstown-state-penguins:
   display_location: Youngstown State
   name: Penguins
   level: college
+  espn_id: 2754
+  espn_mens_slug: youngstown-state-penguins
+  espn_womens_slug: youngstown-state-penguins
   colors:
     black:
       name: Black

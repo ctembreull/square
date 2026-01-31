@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_21_001119) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_31_075247) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -134,6 +134,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_21_001119) do
   create_table "leagues", force: :cascade do |t|
     t.string "abbr"
     t.datetime "created_at", null: false
+    t.string "espn_slug"
     t.string "gender"
     t.string "level"
     t.string "name"
@@ -141,6 +142,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_21_001119) do
     t.boolean "quarters_score_as_halves", default: false, null: false
     t.string "sport"
     t.datetime "updated_at", null: false
+    t.index ["espn_slug"], name: "index_leagues_on_espn_slug", unique: true
   end
 
   create_table "players", force: :cascade do |t|
@@ -197,11 +199,17 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_21_001119) do
     t.string "brand_info"
     t.datetime "created_at", null: false
     t.string "display_location"
+    t.integer "espn_id"
+    t.string "espn_mens_slug"
+    t.string "espn_womens_slug"
     t.string "level", default: "", null: false
     t.string "location"
     t.string "name"
     t.datetime "updated_at", null: false
     t.string "womens_name"
+    t.index ["espn_id"], name: "index_teams_on_espn_id"
+    t.index ["espn_mens_slug"], name: "index_teams_on_espn_mens_slug"
+    t.index ["espn_womens_slug"], name: "index_teams_on_espn_womens_slug"
   end
 
   create_table "users", force: :cascade do |t|

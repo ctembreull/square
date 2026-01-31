@@ -44,11 +44,16 @@
   </div>
 
   <div class="row">
-    <div class="col-md-12 mb-3">
+    <div class="col-md-6 mb-3">
       <div class="form-check">
         <%= form.check_box :quarters_score_as_halves, class: "form-check-input" %>
         <%= form.label :quarters_score_as_halves, "Quarters score as halves (as in women's basketball)", class: "form-check-label" %>
       </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <%= form.label :espn_slug, "ESPN API Slug", class: "form-label" %>
+      <%= form.text_field :espn_slug, class: "form-control", placeholder: "e.g., mens-college-basketball" %>
     </div>
   </div>
 

@@ -61,6 +61,6 @@ class LeaguesController < ApplicationController
   end
 
   def league_params
-    params.require(:league).permit(:name, :abbr, :sport, :gender, :level, :periods, :quarters_score_as_halves)
+    params.require(:league).permit(:name, :abbr, :sport, :gender, :level, :periods, :quarters_score_as_halves, :espn_slug)
   end
 end
