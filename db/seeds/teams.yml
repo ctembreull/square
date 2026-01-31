@@ -852,10 +852,30 @@ can-canisius-golden-griffins:
   location: Canisius
   display_location: Canisius
   name: Golden Griffins
+  womens_name: ''
   level: college
+  brand_info: https://teamcolorcodes.com/canisius-golden-griffins-color-codes/
   espn_id: 2099
   espn_mens_slug: canisius-golden-griffins
   espn_womens_slug: canisius-golden-griffins
+  colors:
+    blue:
+      name: Blue
+      hex: 0C2340
+      primary: true
+    gold:
+      name: Gold
+      hex: FFBA00
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    gold-on-blue:
+      name: Gold on Blue
+      css: 'background-color: #0C2340; color: #FFBA00; '
+      default: true
 car-carolina-panthers:
   abbr: CAR
   location: Carolina
@@ -5176,7 +5196,7 @@ sf-san-francisco-dons:
   espn_id: 2539
   espn_mens_slug: san-francisco-dons
   espn_womens_slug: san-francisco-dons
-sjsu-san-jos-state-spartans:
+sjsu-san-jose-state-spartans:
   abbr: SJSU
   location: San José State
   display_location: San José State

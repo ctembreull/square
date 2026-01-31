@@ -1,10 +1,14 @@
-Exported 1023 affiliations for 397 teams to /Users/chris/src/square/db/seeds/affiliations.yml
-  FBS: 136 teams
-  FCS: 126 teams
-  MBB: 365 teams
-  NFL: 32 teams
-  WBB: 364 teams
-conference: UAC
+---
+aamu-alabama-a-m-bulldogs:
+- league: FCS
+  conference: SWAC
+- league: MBB
+  conference: SWAC
+- league: WBB
+  conference: SWAC
+acu-abilene-christian-wildcats:
+- league: FCS
+  conference: UAC
 - league: MBB
   conference: WEST
 - league: WBB
