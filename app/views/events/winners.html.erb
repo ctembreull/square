@@ -94,7 +94,7 @@
 										   data-bs-toggle="collapse"
 										   data-bs-target="#<%= collapse_id %>"
 										   aria-expanded="false">
-											<span class="badge bg-primary">
+											<span class="badge bg-primary fs-10">
 												<%= winner[:wins].length %>
 												<span class="fas fa-chevron-down ms-1 fs-11 collapse-indicator"></span>
 											</span>
@@ -103,12 +103,15 @@
 									<td class="pe-3">
 										<div class="collapse" id="<%= collapse_id %>">
 											<% winner[:wins].each do |win| %>
+
 												<%= link_to game_path(win.game, highlight_period: win.period), class: "text-decoration-none" do %>
-													<span class="badge bg-secondary me-1 mb-1">
+													<span class="badge badge-subtle-secondary fs-10 me-1 mb-1" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+														title="<%= win.game.title %>, <%= win.winners_label %>">
 														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
-														<span class="text-success ms-1">$<%= win.prize %></span>
+														<span class="text-success-emphasis ms-1">$<%= win.prize %></span>
 													</span>
 												<% end %>
+
 											<% end %>
 										</div>
 									</td>
@@ -143,7 +146,7 @@
 										   data-bs-toggle="collapse"
 										   data-bs-target="#<%= collapse_id %>"
 										   aria-expanded="false">
-											<span class="badge bg-primary">
+											<span class="badge bg-primary fs-10">
 												<%= charity[:wins].length %>
 												<span class="fas fa-chevron-down ms-1 fs-11 collapse-indicator"></span>
 											</span>
@@ -153,9 +156,10 @@
 										<div class="collapse" id="<%= collapse_id %>">
 											<% charity[:wins].each do |win| %>
 												<%= link_to game_path(win.game, highlight_period: win.period), class: "text-decoration-none" do %>
-													<span class="badge bg-secondary me-1 mb-1">
+													<span class="badge badge-subtle-secondary fs-10 me-1 mb-1" data-bs-toggle="tooltip" data-bs-placement="bottom"
+														title="<%= win.game.title %>, <%= win.winners_label %>">
 														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
-														<span class="text-success ms-1">$<%= win.prize %></span>
+														<span class="text-success-emphasis ms-1">$<%= win.prize %></span>
 													</span>
 												<% end %>
 											<% end %>
