@@ -1,0 +1,19 @@
+// Team: TCU Horned Frogs
+// Generated: 2026-01-31T01:03:11Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$tcu-tcu-horned-frogs-horned-frog-purple: #4D1979;
+$tcu-tcu-horned-frogs-horned-frog-white: #FFFFFF;
+$tcu-tcu-horned-frogs-horned-frog-black: #000000;
+$tcu-tcu-horned-frogs-horned-frog-grey: #A3A9AC;
+
+// Style Classes
+.tcu-tcu-horned-frogs-white-on-purple {
+  background-color: #4D1979 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #A3A9AC, -1px 1px 0 #A3A9AC, 1px -1px 0 #A3A9AC, -1px -1px 0 #A3A9AC; 
+}
+
+// Default Style Alias
+.tcu-tcu-horned-frogs-default {
+  @extend .tcu-tcu-horned-frogs-white-on-purple;
+}

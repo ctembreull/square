@@ -1,0 +1,21 @@
+// Team: UAB Blazers
+// Generated: 2026-01-31T01:03:11Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$uab-uab-blazers-uab-gold: #FDB913;
+$uab-uab-blazers-uab-green: #1A5632;
+$uab-uab-blazers-bham-sky-blue: #42CAF0;
+$uab-uab-blazers-campus-green: #90D408;
+$uab-uab-blazers-dragon-s-lair-green: #033319;
+$uab-uab-blazers-ever-loyal-evergreen: #17B045;
+
+// Style Classes
+.uab-uab-blazers-gold-on-green {
+  background-color: #1A5632 !important; color: #FDB913 !important; 
+}
+
+// Default Style Alias
+.uab-uab-blazers-default {
+  @extend .uab-uab-blazers-gold-on-green;
+}

@@ -1,0 +1,22 @@
+// Team: Las Vegas Raiders
+// Generated: 2026-01-31T01:03:11Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$lv-las-vegas-raiders-raiders-black: #000000;
+$lv-las-vegas-raiders-raiders-silver: #A5ACAF;
+$lv-las-vegas-raiders-white: #FFFFFF;
+
+// Style Classes
+.lv-las-vegas-raiders-black {
+  background-color: #000000 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #A5ACAF, -1px 1px 0 #A5ACAF, 1px -1px 0 #A5ACAF, -1px -1px 0 #A5ACAF; 
+}
+
+.lv-las-vegas-raiders-silver {
+  background-color: #A5ACAF !important; color: #000000 !important; 
+}
+
+// Default Style Alias
+.lv-las-vegas-raiders-default {
+  @extend .lv-las-vegas-raiders-black;
+}

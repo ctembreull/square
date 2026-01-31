@@ -1,0 +1,22 @@
+// Team: UTSA Roadrunners
+// Generated: 2026-01-31T01:03:11Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$utsa-utsa-roadrunners-midnight: #032044;
+$utsa-utsa-roadrunners-ut-san-antonio-orange: #F15A22;
+$utsa-utsa-roadrunners-black: #332F21;
+$utsa-utsa-roadrunners-concrete: #EBE6E2;
+$utsa-utsa-roadrunners-limestone: #F8F4F1;
+$utsa-utsa-roadrunners-smoke: #D5CFC8;
+$utsa-utsa-roadrunners-white: #FFFFFF;
+
+// Style Classes
+.utsa-utsa-roadrunners-orange-on-blue {
+  background-color: #032044 !important; color: #F15A22 !important; 
+}
+
+// Default Style Alias
+.utsa-utsa-roadrunners-default {
+  @extend .utsa-utsa-roadrunners-orange-on-blue;
+}

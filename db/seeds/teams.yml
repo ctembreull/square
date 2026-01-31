@@ -4,9 +4,7 @@ ari-arizona-cardinals:
   location: Arizona
   display_location: Arizona
   name: Cardinals
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/arizona-cardinals-color-codes/
   colors:
     black:
       name: Black
@@ -35,9 +33,7 @@ asu-arizona-state-sun-devils:
   location: Arizona State University
   display_location: Arizona State
   name: Sun Devils
-  womens_name: ''
   level: college
-  brand_info: https://brandguide.asu.edu/brand-elements/design/color
   colors:
     asu-gold:
       name: ASU Gold
@@ -77,9 +73,7 @@ atl-atlanta-falcons:
   location: Atlanta
   display_location: Atlanta
   name: Falcons
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/atlanta-falcons-color-codes/
   colors:
     black:
       name: Black
@@ -108,9 +102,7 @@ peay-austin-peay-governors:
   location: Austin Peay State University
   display_location: Austin Peay
   name: Governors
-  womens_name: ''
   level: college
-  brand_info: https://www.apsu.edu/identity/colors.php
   colors:
     red:
       name: Red
@@ -147,9 +139,7 @@ bal-baltimore-ravens:
   location: Baltimore
   display_location: Baltimore
   name: Ravens
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/baltimore-ravens-color-codes/
   colors:
     black:
       name: Black
@@ -182,9 +172,7 @@ bay-baylor-bears:
   location: Baylor University
   display_location: Baylor
   name: Bears
-  womens_name: ''
   level: college
-  brand_info: https://brand.web.baylor.edu/brand-standards/official-brand-colors
   colors:
     baylor-green:
       name: Baylor Green
@@ -204,9 +192,7 @@ bel-bellarmine-knights:
   location: Bellarmine University
   display_location: Bellarmine
   name: Knights
-  womens_name: ''
   level: college
-  brand_info: https://www.bellarmine.edu/brand-standard/university-colors/
   colors:
     bellarmine-scarlet:
       name: Bellarmine Scarlet
@@ -239,9 +225,7 @@ bing-binghamton-bearcats:
   location: Binghamton University
   display_location: Binghamton
   name: Bearcats
-  womens_name: ''
   level: college
-  brand_info: https://www.binghamton.edu/communications-and-marketing/branding/colors.html
   colors:
     black:
       name: Black
@@ -277,9 +261,7 @@ bc-boston-college-eagles:
   location: Boston College
   display_location: Boston College
   name: Eagles
-  womens_name: ''
   level: college
-  brand_info: https://bceagles.com/documents/2023/8/2/BC_Athletics_Style_Guide.pdf
   colors:
     black:
       name: Black
@@ -306,14 +288,14 @@ bc-boston-college-eagles:
       name: Cardinal
       css: 'background-color: #8C2232; color: #DBCCA6; '
       default: true
-byu-brigham-young-cougars:
+byu-byu-cougars:
   abbr: BYU
   location: Brigham Young University
-  display_location: Brigham Young
+  display_location: BYU
   name: Cougars
   womens_name: ''
   level: college
-  brand_info: https://brand.byu.edu/colors
+  brand_info: ''
   colors:
     navy:
       name: Navy
@@ -338,9 +320,7 @@ brwn-brown-bears:
   location: Brown University
   display_location: Brown
   name: Bears
-  womens_name: ''
   level: college
-  brand_info: https://policy.brown.edu/sites/default/files/policy/related/Brown_Visual_Identity_Policy_2016-07-22.pdf
   colors:
     brown:
       name: Brown
@@ -369,9 +349,7 @@ bry-bryant-bulldogs:
   location: Bryant University
   display_location: Bryant
   name: Bulldogs
-  womens_name: ''
   level: college
-  brand_info: https://info.bryant.edu/sites/info/files/docs/Bryant_Brand_Guide_7_29.pdf
   colors:
     blue-200:
       name: Blue 200
@@ -403,9 +381,7 @@ buf-buffalo-bills:
   location: Buffalo
   display_location: Buffalo
   name: Bills
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/buffalo-bills-color-codes/
   colors:
     blue:
       name: Blue
@@ -430,9 +406,7 @@ but-butler-bulldogs:
   location: Butler University
   display_location: Butler
   name: Bulldogs
-  womens_name: ''
   level: college
-  brand_info: https://www.butler.edu/marketing/color-palette/
   colors:
     bright-blue:
       name: Bright Blue
@@ -465,9 +439,7 @@ poly-cal-poly-mustangs:
   location: California Polytechnic State University
   display_location: Cal Poly
   name: Mustangs
-  womens_name: ''
   level: college
-  brand_info: https://ucm.calpoly.edu/color-guidelines
   colors:
     mustang-gold:
       name: Mustang Gold
@@ -492,9 +464,7 @@ csb-cal-state-bakersfield-roadrunners:
   location: California State University, Bakersfield
   display_location: Cal State Bakersfield
   name: Roadrunners
-  womens_name: ''
   level: college
-  brand_info: https://www.csub.edu/brand/university-visual-identity/colors.shtml
   colors:
     blue:
       name: Blue
@@ -514,9 +484,7 @@ csuf-cal-state-fullerton-titans:
   location: California State University, Fullerton
   display_location: Cal State Fullerton
   name: Titans
-  womens_name: ''
   level: college
-  brand_info: https://brand.fullerton.edu/colors/
   colors:
     titan-blue:
       name: 'Titan Blue '
@@ -536,9 +504,7 @@ lbst-long-beach-state-beach:
   location: California State University, Long Beach
   display_location: Long Beach State
   name: Beach
-  womens_name: ''
   level: college
-  brand_info: https://www.csulb.edu/university-relations-and-development/strategic-communications/brand-guidance
   colors:
     black:
       name: Black
@@ -567,9 +533,7 @@ csun-cal-state-northridge-matadors:
   location: California State University, Northridge
   display_location: Cal State Northridge
   name: Matadors
-  womens_name: ''
   level: college
-  brand_info: https://www.csun.edu/identity/design-guide
   colors:
     black:
       name: Black
@@ -598,9 +562,7 @@ cam-campbell-fighting-camels:
   location: Campbell University
   display_location: Campbell
   name: Fighting Camels
-  womens_name: ''
   level: college
-  brand_info: https://brand.campbell.edu/visual-identity/color-palette/
   colors:
     campbell-black:
       name: Campbell Black
@@ -625,9 +587,7 @@ car-carolina-panthers:
   location: Carolina
   display_location: Carolina
   name: Panthers
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/carolina-panthers-color-codes/
   colors:
     black:
       name: Black
@@ -656,9 +616,7 @@ chs-charleston-southern-buccaneers:
   location: Charleston Southern University
   display_location: Charleston Southern
   name: Buccaneers
-  womens_name: ''
   level: college
-  brand_info: https://www.csusports.com/documents/2024/8/27/CSU-Athletic_Brand_Guide-2024.pdf
   colors:
     csu-blue:
       name: CSU Blue
@@ -694,9 +652,7 @@ chi-chicago-bears:
   location: Chicago
   display_location: Chicago
   name: Bears
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/chicago-bears-color-codes/
   colors:
     dark-navy:
       name: Dark Navy
@@ -721,9 +677,7 @@ cin-cincinnati-bengals:
   location: Cincinnati
   display_location: Cincinnati
   name: Bengals
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/cincinnati-bengals-color-codes/
   colors:
     black:
       name: Black
@@ -758,9 +712,7 @@ clem-clemson-tigers:
   location: Clemson University
   display_location: Clemson
   name: Tigers
-  womens_name: ''
   level: college
-  brand_info: https://www.clemson.edu/brand/color/
   colors:
     clemson-orange:
       name: Clemson Orange
@@ -793,9 +745,7 @@ cle-cleveland-browns:
   location: Cleveland
   display_location: Cleveland
   name: Browns
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/cleveland-browns-color-codes/
   colors:
     dark-brown:
       name: Dark Brown
@@ -825,9 +775,7 @@ cst-cleveland-state-vikings:
   location: Cleveland State University
   display_location: Cleveland State
   name: Vikings
-  womens_name: ''
   level: college
-  brand_info: https://www.csuohio.edu/sites/default/files/CSU_Brand-Guidelines_01-2023.pdf
   colors:
     fresh-green:
       name: Fresh Green
@@ -848,9 +796,7 @@ cha-charleston-cougars:
   location: College of Charleston
   display_location: Charleston
   name: Cougars
-  womens_name: ''
   level: college
-  brand_info: https://charleston.edu/marketing-communications/university-marketing/brand-guidelines/colors.php
   colors:
     gold:
       name: Gold
@@ -875,9 +821,7 @@ col-columbia-lions:
   location: Columbia University
   display_location: Columbia
   name: Lions
-  womens_name: ''
   level: college
-  brand_info: https://sps.columbia.edu/visual-identity/color-palette
   colors:
     dark-blue:
       name: Dark Blue
@@ -906,9 +850,7 @@ corn-cornell-big-red:
   location: Cornell University
   display_location: Cornell
   name: Big Red
-  womens_name: ''
   level: college
-  brand_info: https://brand.cornell.edu/design-center/colors/
   colors:
     red:
       name: Red
@@ -928,9 +870,7 @@ crei-creighton-blue-jays:
   location: Creighton University
   display_location: Creighton
   name: Blue Jays
-  womens_name: ''
   level: college
-  brand_info: https://gocreighton.com/documents/2015/10/21/Creighton_Guide_Logos_Website.pdf?id=7499
   colors:
     cu-blue:
       name: CU Blue
@@ -963,9 +903,7 @@ dal-dallas-cowboys:
   location: Dallas
   display_location: Dallas
   name: Cowboys
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/dallas-cowboys-color-codes/
   colors:
     blue:
       name: Blue
@@ -998,9 +936,7 @@ dart-dartmouth-big-green:
   location: Dartmouth University
   display_location: Dartmouth
   name: Big Green
-  womens_name: ''
   level: college
-  brand_info: https://communications.dartmouth.edu/guides-and-tools/design-guidelines/dartmouth-colors
   colors:
     dartmouth-green:
       name: Dartmouth Green
@@ -1033,9 +969,7 @@ dav-davidson-wildcats:
   location: Davidson College
   display_location: Davidson
   name: Wildcats
-  womens_name: ''
   level: college
-  brand_info: https://marketing-toolbox.dcreate.domains/branding-assets/color/
   colors:
     davidson-red:
       name: Davidson Red
@@ -1060,9 +994,7 @@ day-dayton-flyers:
   location: Dayton University
   display_location: Dayton
   name: Flyers
-  womens_name: ''
   level: college
-  brand_info: https://daytonflyers.com/documents/2014/11/12/Dayton_Flyers_Style_Guide_public.pdf
   colors:
     black:
       name: Black
@@ -1091,9 +1023,7 @@ dpu-depaul-blue-demons:
   location: DePaul University
   display_location: DePaul
   name: Blue Demons
-  womens_name: ''
   level: college
-  brand_info: https://resources.depaul.edu/brand/brand-guidelines/colors/Pages/default.aspx
   colors:
     blue:
       name: Blue
@@ -1137,9 +1067,7 @@ den-denver-broncos:
   location: Denver
   display_location: Denver
   name: Broncos
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/denver-broncos-color-codes/
   colors:
     broncos-navy:
       name: Broncos Navy
@@ -1182,9 +1110,7 @@ det-detroit-lions:
   location: Detroit
   display_location: Detroit
   name: Lions
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/detroit-lions-color-codes/
   colors:
     black:
       name: Black
@@ -1213,9 +1139,7 @@ drx-drexel-fighting-dragons:
   location: Drexel University
   display_location: Drexel
   name: Fighting Dragons
-  womens_name: ''
   level: college
-  brand_info: https://drexel.edu/identity/drexel/color
   colors:
     drexel-blue:
       name: Drexel Blue
@@ -1235,9 +1159,7 @@ duke-duke-blue-devils:
   location: Duke University
   display_location: Duke
   name: Blue Devils
-  womens_name: ''
   level: college
-  brand_info: https://brand.duke.edu/colors/
   colors:
     duke-navy-blue:
       name: Duke Navy Blue
@@ -1261,9 +1183,7 @@ duq-duquesne-dukes:
   location: Duquesne University
   display_location: Duquesne
   name: Dukes
-  womens_name: ''
   level: college
-  brand_info: https://goduquesne.com/documents/2019/10/18/DUQ_Guidelines_20190807.pdf
   colors:
     blue:
       name: Blue
@@ -1309,9 +1229,7 @@ ecu-east-carolina-pirates:
   location: East Carolina University
   display_location: East Carolina
   name: Pirates
-  womens_name: ''
   level: college
-  brand_info: https://brand.ecu.edu/
   colors:
     gold:
       name: Gold
@@ -1347,9 +1265,7 @@ eku-eastern-kentucky-colonels:
   location: Eastern Kentucky University
   display_location: Eastern Kentucky
   name: Colonels
-  womens_name: ''
   level: college
-  brand_info: https://www.eku.edu/in/guides/branding-information/
   colors:
     eku-maroon:
       name: EKU Maroon
@@ -1381,9 +1297,7 @@ ewu-eastern-washington-eagles:
   location: 'Eastern Washington University '
   display_location: Eastern Washington
   name: Eagles
-  womens_name: ''
   level: college
-  brand_info: https://goeags.com/documents/2025/1/16/EWU_Athletics_Brand_Style_Guide__1_.pdf
   colors:
     black:
       name: Black
@@ -1408,9 +1322,7 @@ elon-elon-phoenix:
   location: Elon University
   display_location: Elon
   name: Phoenix
-  womens_name: ''
   level: college
-  brand_info: https://www.elon.edu/u/university-communications/brand/guide/visual-identity/color-type/
   colors:
     gold:
       name: Gold
@@ -1434,9 +1346,7 @@ fau-florida-atlantic-owls:
   location: Florida Atlantic University
   display_location: Florida Atlantic
   name: Owls
-  womens_name: ''
   level: college
-  brand_info: https://www.fau.edu/styleguide/colors/
   colors:
     fau-blue:
       name: FAU Blue
@@ -1485,9 +1395,7 @@ fgcu-florida-gulf-coast-eagles:
   location: Florida Gulf Coast University
   display_location: Florida Gulf Coast
   name: Eagles
-  womens_name: ''
   level: college
-  brand_info: https://www.fgcu.edu/advancement/universitymarketing/branding-guidelines/
   colors:
     bright-white:
       name: Bright White
@@ -1520,9 +1428,7 @@ fiu-florida-international-panthers:
   location: Florida International University
   display_location: Florida International
   name: Panthers
-  womens_name: ''
   level: college
-  brand_info: https://brand.fiu.edu/visual-styles/colors/
   colors:
     fiu-blue:
       name: FIU Blue
@@ -1548,9 +1454,7 @@ fsu-florida-state-seminoles:
   location: Florida State University
   display_location: Florida State
   name: Seminoles
-  womens_name: ''
   level: college
-  brand_info: https://brand.fsu.edu/web/colors
   colors:
     garnet:
       name: Garnet
@@ -1570,9 +1474,7 @@ for-fordham-rams:
   location: Fordham University
   display_location: Fordham
   name: Rams
-  womens_name: ''
   level: college
-  brand_info: https://www.fordham.edu/university-marketing-and-communications/brand-guidelines/
   colors:
     athletics-maroon:
       name: Athletics Maroon
@@ -1608,9 +1510,7 @@ gw-gardner-webb-runnin-bulldogs:
   location: Gardner-Webb University
   display_location: Gardner-Webb
   name: Runnin' Bulldogs
-  womens_name: ''
   level: college
-  brand_info: https://gardner-webb.edu/about/offices-and-departments/marketing-and-communications/brand-guidelines/color/
   colors:
     gwu-red:
       name: GWU Red
@@ -1639,9 +1539,7 @@ gmu-george-mason-patriots:
   location: George Mason University
   display_location: George Mason
   name: Patriots
-  womens_name: ''
   level: college
-  brand_info: https://brand.gmu.edu/
   colors:
     george-mason-gold:
       name: George Mason Gold
@@ -1669,9 +1567,7 @@ gw-george-washington-revolutionaries:
   location: George Washington University
   display_location: George Washington
   name: Revolutionaries
-  womens_name: ''
   level: college
-  brand_info: https://communications.gwu.edu/visual-identity/color-palette
   colors:
     blue:
       name: Blue
@@ -1703,9 +1599,7 @@ gtn-georgetown-hoyas:
   location: Georgetown University
   display_location: Georgetown
   name: Hoyas
-  womens_name: ''
   level: college
-  brand_info: https://www.georgetown.edu/color-guide/
   colors:
     georgetown-blue:
       name: Georgetown Blue
@@ -1730,9 +1624,7 @@ gt-georgia-tech-yellow-jackets:
   location: Georgia Tech
   display_location: Georgia Tech
   name: Yellow Jackets
-  womens_name: ''
   level: college
-  brand_info: https://brand.gatech.edu/our-look/colors
   colors:
     navy-blue:
       name: Navy Blue
@@ -1761,9 +1653,7 @@ gb-green-bay-packers:
   location: Green Bay
   display_location: Green Bay
   name: Packers
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/green-bay-packers-color-codes/
   colors:
     dark-green:
       name: Dark Green
@@ -1788,9 +1678,7 @@ ham-hampton-pirates:
   location: Hampton University
   display_location: Hampton
   name: Pirates
-  womens_name: ''
   level: college
-  brand_info: https://hamptonpirates.com/documents/2025/4/11/Hampton_Athletics_Brand_Guide.pdf
   colors:
     hampton-blue:
       name: Hampton Blue
@@ -1823,9 +1711,7 @@ harv-harvard-crimson:
   location: Harvard University
   display_location: Harvard
   name: Crimson
-  womens_name: ''
   level: college
-  brand_info: https://identityguide.hms.harvard.edu/brand-design/colors
   colors:
     black:
       name: Black
@@ -1846,9 +1732,7 @@ hip-high-point-panthers:
   location: High Point University
   display_location: High Point
   name: Panthers
-  womens_name: ''
   level: college
-  brand_info: https://www.highpoint.edu/ooc/branding/visual-styles/
   colors:
     purple:
       name: Purple
@@ -1868,9 +1752,7 @@ hof-hofstra-pride:
   location: Hofstra University
   display_location: Hofstra
   name: Pride
-  womens_name: ''
   level: college
-  brand_info: https://sites.google.com/hofstra.edu/hofstrabrandguidelines/design-system/colors
   colors:
     hofstra-blue:
       name: Hofstra Blue
@@ -1890,9 +1772,7 @@ hou-houston-texans:
   location: Houston
   display_location: Houston
   name: Texans
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/houston-texans-color-codes/
   colors:
     battle-red:
       name: Battle Red
@@ -1922,9 +1802,7 @@ idst-idaho-state-bengals:
   location: Idaho State University
   display_location: Idaho State
   name: Bengals
-  womens_name: ''
   level: college
-  brand_info: https://www.isu.edu/brand/design/colors/
   colors:
     black:
       name: Black
@@ -1953,9 +1831,7 @@ iupui-iu-indianapolis-jaguars:
   location: Indiana University Purdue University Indianapolis
   display_location: IU Indianapolis
   name: Jaguars
-  womens_name: ''
   level: college
-  brand_info: https://www.brandcolorcode.com/indiana-university-purdue-university-indianapolis-iupui
   colors:
     black:
       name: Black
@@ -1976,9 +1852,7 @@ ind-indianapolis-colts:
   location: Indianapolis
   display_location: Indianapolis
   name: Colts
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/indianapolis-colts-color-codes/
   colors:
     gray:
       name: Gray
@@ -2006,9 +1880,7 @@ isu-iowa-state-cyclones:
   location: Iowa State University
   display_location: Iowa State
   name: Cyclones
-  womens_name: ''
   level: college
-  brand_info: https://www.brandmarketing.iastate.edu/brand-elements/color-palette/
   colors:
     gold:
       name: Gold
@@ -2040,9 +1912,7 @@ jac-jacksonville-jaguars:
   location: Jacksonville
   display_location: Jacksonville
   name: Jaguars
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/jacksonville-jaguars-color-codes/
   colors:
     black:
       name: Black
@@ -2075,9 +1945,7 @@ jvst-jacksonville-state-gamecocks:
   location: Jacksonville State University
   display_location: Jacksonville State
   name: Gamecocks
-  womens_name: ''
   level: college
-  brand_info: https://www.brandcolorcode.com/jacksonville-state-university
   colors:
     red:
       name: Red
@@ -2097,9 +1965,7 @@ jax-jacksonville-dolphins:
   location: Jacksonville University
   display_location: Jacksonville
   name: Dolphins
-  womens_name: ''
   level: college
-  brand_info: https://www.ju.edu/marcom/brand/
   colors:
     cool-gray:
       name: Cool Gray
@@ -2123,9 +1989,7 @@ kc-kansas-city-chiefs:
   location: Kansas City
   display_location: Kansas City
   name: Chiefs
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/kansas-city-chiefs-color-codes/
   colors:
     gold:
       name: Gold
@@ -2150,9 +2014,7 @@ ksu-kansas-state-wildcats:
   location: Kansas State University
   display_location: Kansas State
   name: Wildcats
-  womens_name: ''
   level: college
-  brand_info: https://www.k-state.edu/communications-marketing/brand-style/visual-language/color/
   colors:
     20-black:
       name: 20% Black
@@ -2184,9 +2046,7 @@ knst-kennesaw-state-owls:
   location: Kennesaw State University
   display_location: Kennesaw State
   name: Owls
-  womens_name: ''
   level: college
-  brand_info: https://campus.kennesaw.edu/offices-services/stratcomm/branding/docs/25-ksu-brand-standards-guide-v10-4.pdf
   colors:
     black:
       name: Black
@@ -2210,9 +2070,7 @@ las-la-salle-explorers:
   location: La Salle University
   display_location: La Salle
   name: Explorers
-  womens_name: ''
   level: college
-  brand_info: https://www.lasalle.edu/brand/graphic-elements/
   colors:
     explorer-gold:
       name: Explorer Gold
@@ -2243,14 +2101,41 @@ las-la-salle-explorers:
       name: Gold on Blue
       css: 'background-color: #003356; color: #FFCE00; '
       default: true
+lv-las-vegas-raiders:
+  abbr: LV
+  location: Las Vegas
+  display_location: Las Vegas
+  name: Raiders
+  level: pro
+  colors:
+    raiders-black:
+      name: Raiders Black
+      hex: '000000'
+      primary: true
+    raiders-silver:
+      name: Raiders Silver
+      hex: A5ACAF
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    black:
+      name: Black
+      css: 'background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #A5ACAF,
+        -1px 1px 0 #A5ACAF, 1px -1px 0 #A5ACAF, -1px -1px 0 #A5ACAF; '
+      default: true
+    silver:
+      name: Silver
+      css: 'background-color: #A5ACAF; color: #000000; '
+      default: false
 lib-liberty-flames:
   abbr: LIB
   location: Liberty University
   display_location: Liberty
   name: Flames
-  womens_name: ''
   level: college
-  brand_info: https://www.liberty.edu/marketing/wp-content/uploads/sites/114/2023/01/Branding-Guide-Digital.pdf
   colors:
     liberty-navy:
       name: Liberty Navy
@@ -2271,9 +2156,7 @@ lip-lipscomb-bisons:
   location: Lipscomb University
   display_location: Lipscomb
   name: Bisons
-  womens_name: ''
   level: college
-  brand_info: https://drive.google.com/file/d/1A8xvWN_b7rsxRUbv-wSzuebx3RoHn3UX/view
   colors:
     gold:
       name: Gold
@@ -2301,9 +2184,7 @@ lng-longwood-lancers:
   location: Longwood University
   display_location: Longwood
   name: Lancers
-  womens_name: ''
   level: college
-  brand_info: https://www.longwood.edu/media/printing-services/solomon/VisualBrandGuide.pdf
   colors:
     longwood-blue:
       name: Longwood Blue
@@ -2327,9 +2208,7 @@ lac-los-angeles-chargers:
   location: Los Angeles
   display_location: Los Angeles
   name: Chargers
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/los-angeles-chargers-color-codes/
   colors:
     powder-blue:
       name: Powder Blue
@@ -2354,9 +2233,7 @@ lar-los-angeles-rams:
   location: Los Angeles
   display_location: Los Angeles
   name: Rams
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/los-angeles-rams-team-colors/
   colors:
     blue:
       name: Blue
@@ -2389,9 +2266,7 @@ lat-louisiana-tech-bulldogs:
   location: Louisiana Tech University
   display_location: Louisiana Tech
   name: Bulldogs
-  womens_name: ''
   level: college
-  brand_info: https://brand.latech.edu/identity-standards/university-colors/
   colors:
     lady-techster-blue:
       name: Lady Techster Blue
@@ -2415,9 +2290,7 @@ luc-loyola-chicago-ramblers:
   location: Loyola University Chicago
   display_location: Loyola Chicago
   name: Ramblers
-  womens_name: ''
   level: college
-  brand_info: https://www.luc.edu/umc/brandidentity/brandcomponents/colors/
   colors:
     loyola-gold:
       name: Loyola Gold
@@ -2457,9 +2330,7 @@ marq-marquette-golden-eagles:
   location: Marquette University
   display_location: Marquette
   name: Golden Eagles
-  womens_name: ''
   level: college
-  brand_info: https://www.marquette.edu/university-relations/marketing-and-communication/color-palette.php
   colors:
     marquette-blue:
       name: Marquette Blue
@@ -2487,9 +2358,7 @@ umass-massachusetts-minutemen:
   location: Massachusetts - Amherst
   display_location: Massachusetts
   name: Minutemen
-  womens_name: Minutewomen
   level: college
-  brand_info: https://www.umass.edu/brand/elements/color
   colors:
     umass-black:
       name: UMass Black
@@ -2525,9 +2394,7 @@ mia-miami-dolphins:
   location: Miami
   display_location: Miami
   name: Dolphins
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/miami-dolphins-color-codes/
   colors:
     aqua:
       name: Aqua
@@ -2556,9 +2423,7 @@ msu-michigan-state-spartans:
   location: Michigan State University
   display_location: Michigan State
   name: Spartans
-  womens_name: ''
   level: college
-  brand_info: https://brand.msu.edu/visual/color-palette
   colors:
     black:
       name: Black
@@ -2582,9 +2447,7 @@ mtsu-middle-tennessee-blue-raiders:
   location: Middle Tennessee State University
   display_location: Middle Tennessee
   name: Blue Raiders
-  womens_name: ''
   level: college
-  brand_info: https://www.mtsu.edu/style-guide/colors/
   colors:
     dark-gray:
       name: Dark Gray
@@ -2608,9 +2471,7 @@ min-minnesota-vikings:
   location: Minnesota
   display_location: Minnesota
   name: Vikings
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/minnesota-vikings-color-codes/
   colors:
     gold:
       name: Gold
@@ -2635,9 +2496,7 @@ most-missouri-state-bears:
   location: Missouri State University
   display_location: Missouri State
   name: Bears
-  womens_name: ''
   level: college
-  brand_info: https://brand.missouristate.edu/Toolkit/colors.htm
   colors:
     black:
       name: Black
@@ -2658,9 +2517,7 @@ mon-monmouth-hawks:
   location: Monmouth University
   display_location: Monmouth
   name: Hawks
-  womens_name: ''
   level: college
-  brand_info: https://www.monmouth.edu/brand/visual-identity-guidelines/color-palette/
   colors:
     shadow-blue:
       name: Shadow Blue
@@ -2680,9 +2537,7 @@ mtsu-montana-state-bobcats:
   location: Montana State University
   display_location: Montana State
   name: Bobcats
-  womens_name: ''
   level: college
-  brand_info: https://www.montana.edu/brandtoolkit/
   colors:
     blue:
       name: Blue
@@ -2706,9 +2561,7 @@ ne-new-england-patriots:
   location: New England
   display_location: New England
   name: Patriots
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/new-england-patriots-color-codes/
   colors:
     nautical-blue-2000:
       name: Nautical Blue (2000)
@@ -2766,9 +2619,7 @@ njit-njit-highlanders:
   location: New Jersey Institute of Technology
   display_location: NJIT
   name: Highlanders
-  womens_name: ''
   level: college
-  brand_info: https://www.njit.edu/communications/sites/njit.edu.communications/files/2019%20NJIT%20Branding%20Guidelines_r1.pdf
   colors:
     njit-red:
       name: NJIT Red
@@ -2792,9 +2643,7 @@ nmst-new-mexico-state-aggies:
   location: New Mexico State University
   display_location: New Mexico State
   name: Aggies
-  womens_name: ''
   level: college
-  brand_info: https://brand.nmsu.edu/color/index.html
   colors:
     aggie-crimson:
       name: Aggie Crimson
@@ -2814,9 +2663,7 @@ no-new-orleans-saints:
   location: New Orleans
   display_location: New Orleans
   name: Saints
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/new-orleans-saints-color-codes/
   colors:
     black:
       name: Black
@@ -2845,9 +2692,7 @@ nyg-new-york-giants:
   location: New York
   display_location: New York
   name: Giants
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/new-york-giants-color-codes/
   colors:
     dark-blue:
       name: Dark Blue
@@ -2876,9 +2721,7 @@ nyj-new-york-jets:
   location: New York
   display_location: New York
   name: Jets
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/new-york-jets-color-codes/
   colors:
     gotham-green:
       name: Gotham Green
@@ -2902,9 +2745,7 @@ ncat-north-carolina-a-t-aggies:
   location: North Carolina A&T University
   display_location: North Carolina A&T
   name: Aggies
-  womens_name: ''
   level: college
-  brand_info: https://hub.ncat.edu/administration/chancellor/university-relations/branding/visual-identity/color-palette.php
   colors:
     30-black:
       name: 30% Black
@@ -2928,9 +2769,7 @@ ncst-nc-state-wolfpack:
   location: North Carolina State University
   display_location: NC State
   name: Wolfpack
-  womens_name: ''
   level: college
-  brand_info: https://brand.ncsu.edu/designing-for-nc-state/color/
   colors:
     wolfpack-black:
       name: Wolfpack Black
@@ -2954,9 +2793,7 @@ nore-northeastern-huskies:
   location: Northeastern University
   display_location: Northeastern
   name: Huskies
-  womens_name: ''
   level: college
-  brand_info: https://brand.northeastern.edu/design-and-experiences/athletics-visual-design/
   colors:
     black:
       name: Black
@@ -2985,9 +2822,7 @@ nau-northern-arizona-lumberjacks:
   location: Northern Arizona University
   display_location: Northern Arizona
   name: Lumberjacks
-  womens_name: ''
   level: college
-  brand_info: https://in.nau.edu/wp-content/uploads/sites/194/NAU-Brand-Quick-Guide-update-6-1-23.pdf
   colors:
     blue:
       name: Blue
@@ -3011,9 +2846,7 @@ nku-northern-kentucky-norse:
   location: Northern Kentucky University
   display_location: Northern Kentucky
   name: Norse
-  womens_name: ''
   level: college
-  brand_info: https://inside.nku.edu/marcomm/brand.html
   colors:
     gold:
       name: Gold
@@ -3038,9 +2871,7 @@ nw-northwestern-wildcats:
   location: Northwestern University
   display_location: Northwestern
   name: Wildcats
-  womens_name: ''
   level: college
-  brand_info: https://www.northwestern.edu/brand/visual-identity/color-palettes/
   colors:
     northwestern-purple:
       name: Northwestern Purple
@@ -3060,45 +2891,12 @@ nw-northwestern-wildcats:
       css: 'background-color: #4E2A84; color: #FFFFFF; text-shadow: 1px 1px 0 #000000,
         -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
       default: true
-oak-oakland-raiders:
-  abbr: OAK
-  location: Oakland
-  display_location: Oakland
-  name: Raiders
-  womens_name: ''
-  level: pro
-  brand_info: https://teamcolorcodes.com/oakland-raiders-color-codes/
-  colors:
-    raiders-black:
-      name: Raiders Black
-      hex: '000000'
-      primary: true
-    raiders-silver:
-      name: Raiders Silver
-      hex: A5ACAF
-      primary: true
-    white:
-      name: White
-      hex: FFFFFF
-      primary: false
-  styles:
-    black:
-      name: Black
-      css: 'background-color: #000000; color: #FFFFFF; text-shadow: 1px 1px 0 #A5ACAF,
-        -1px 1px 0 #A5ACAF, 1px -1px 0 #A5ACAF, -1px -1px 0 #A5ACAF; '
-      default: true
-    silver:
-      name: Silver
-      css: 'background-color: #A5ACAF; color: #000000; '
-      default: false
 oak-oakland-golden-grizzlies:
   abbr: OAK
   location: Oakland University
   display_location: Oakland
   name: Golden Grizzlies
-  womens_name: ''
   level: college
-  brand_info: https://oakland.edu/brand/design-with-purpose/
   colors:
     black:
       name: Black
@@ -3123,9 +2921,7 @@ osu-ohio-state-buckeyes:
   location: Ohio State University
   display_location: Ohio State
   name: Buckeyes
-  womens_name: ''
   level: college
-  brand_info: https://bux.osu.edu/color/primary-colors/
   colors:
     gray:
       name: Gray
@@ -3150,9 +2946,7 @@ osu-oklahoma-state-cowboys:
   location: Oklahoma State University
   display_location: Oklahoma State
   name: Cowboys
-  womens_name: Cowgirls
   level: college
-  brand_info: https://brand.okstate.edu/branding-guidelines/colors/
   colors:
     black:
       name: Black
@@ -3194,9 +2988,7 @@ psu-penn-state-nittany-lions:
   location: Pennsylvania State University
   display_location: Penn State
   name: Nittany Lions
-  womens_name: ''
   level: college
-  brand_info: https://brand.psu.edu/design-toolkit/design-essentials
   colors:
     beaver-blue:
       name: Beaver Blue
@@ -3225,9 +3017,7 @@ phi-philadelphia-eagles:
   location: Philadelphia
   display_location: Philadelphia
   name: Eagles
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/philadelphia-eagles-color-codes/
   colors:
     black:
       name: Black
@@ -3264,9 +3054,7 @@ pit-pittsburgh-steelers:
   location: Pittsburgh
   display_location: Pittsburgh
   name: Steelers
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/pittsburgh-steelers-color-codes/
   colors:
     black:
       name: Black
@@ -3303,9 +3091,7 @@ psu-portland-state-vikings:
   location: Portland State University
   display_location: Portland State
   name: Vikings
-  womens_name: ''
   level: college
-  brand_info: https://www.pdx.edu/university-communications/tools-and-templates/brand-colors
   colors:
     black:
       name: Black
@@ -3338,9 +3124,7 @@ pres-presbyterian-blue-hose:
   location: Presbyterian College
   display_location: Presbyterian
   name: Blue Hose
-  womens_name: ''
   level: college
-  brand_info: https://www.presby.edu/about/offices-and-services/marketing-communications/colors-and-typography/
   colors:
     pc-true-blue:
       name: PC True Blue
@@ -3377,9 +3161,7 @@ prin-princeton-tigers:
   location: Princeton University
   display_location: Princeton
   name: Tigers
-  womens_name: ''
   level: college
-  brand_info: https://www.brandcolorcode.com/princeton-university
   colors:
     black:
       name: Black
@@ -3408,9 +3190,7 @@ prv-providence-friars:
   location: Providence University
   display_location: Providence
   name: Friars
-  womens_name: ''
   level: college
-  brand_info: https://brand.providence.edu/our-brand/#visuals
   colors:
     cool-gray:
       name: Cool Gray
@@ -3443,9 +3223,7 @@ pur-purdue-boilermakers:
   location: Purdue University
   display_location: Purdue
   name: Boilermakers
-  womens_name: ''
   level: college
-  brand_info: https://marcom.purdue.edu/our-brand/visual-identity/
   colors:
     black:
       name: Black
@@ -3469,9 +3247,7 @@ upfw-purdue-fort-wayne-mastodons:
   location: Purdue University Fort Wayne
   display_location: Purdue Fort Wayne
   name: Mastodons
-  womens_name: ''
   level: college
-  brand_info: https://www.pfw.edu/brand/visual-elements
   colors:
     black:
       name: Black
@@ -3495,9 +3271,7 @@ qu-queens-university-royals:
   location: Queens University
   display_location: Queens University
   name: Royals
-  womens_name: ''
   level: college
-  brand_info: https://brandpad.io/qu-of-charlotte./
   colors:
     gold:
       name: Gold
@@ -3529,9 +3303,7 @@ rad-radford-highlanders:
   location: Radford University
   display_location: Radford
   name: Highlanders
-  womens_name: ''
   level: college
-  brand_info: https://www.radford.edu/marketing-communication/graphic-identity.html
   colors:
     blue-ridge:
       name: Blue Ridge
@@ -3575,9 +3347,7 @@ uri-rhode-island-rams:
   location: Rhode Island University
   display_location: Rhode Island
   name: Rams
-  womens_name: ''
   level: college
-  brand_info: https://web.uri.edu/external-relations/uri-brand-visual-standards/
   colors:
     blue:
       name: Blue
@@ -3605,9 +3375,7 @@ rice-rice-owls:
   location: Rice University
   display_location: Rice
   name: Owls
-  womens_name: ''
   level: college
-  brand_info: https://brand.rice.edu/colors
   colors:
     rice-university-blue:
       name: Rice University Blue
@@ -3659,9 +3427,7 @@ rich-richmond-spiders:
   location: Richmond University
   display_location: Richmond
   name: Spiders
-  womens_name: ''
   level: college
-  brand_info: https://brand.richmond.edu/visual/color/
   colors:
     blue:
       name: Blue
@@ -3699,9 +3465,7 @@ rmu-robert-morris-colonels:
   location: Robert Morris University
   display_location: Robert Morris
   name: Colonels
-  womens_name: ''
   level: college
-  brand_info: https://www.rmu.edu/about/news/brand-toolkit/logos-and-identity
   colors:
     rmu-blue:
       name: RMU Blue
@@ -3726,9 +3490,7 @@ rtg-rutgers-scarlet-knights:
   location: Rutgers University
   display_location: Rutgers
   name: Scarlet Knights
-  womens_name: ''
   level: college
-  brand_info: https://communications.rutgers.edu/sites/default/files/rutgers_visual_identity_system_user_guide.pdf
   colors:
     black:
       name: Black
@@ -3753,9 +3515,7 @@ ua-ualbany-great-danes:
   location: SUNY-Albany
   display_location: UAlbany
   name: Great Danes
-  womens_name: ''
   level: college
-  brand_info: https://www.albany.edu/communications-marketing/brand-identity
   colors:
     ualbany-gold:
       name: UAlbany Gold
@@ -3787,9 +3547,7 @@ sacst-sacramento-state-hornets:
   location: 'Sacramento State University '
   display_location: Sacramento State
   name: Hornets
-  womens_name: ''
   level: college
-  brand_info: https://www.csus.edu/brand/color-palettes.html
   colors:
     sac-state-gold:
       name: Sac State Gold
@@ -3809,9 +3567,7 @@ sju-saint-josephs-hawks:
   location: Saint Josephs University
   display_location: Saint Josephs
   name: Hawks
-  womens_name: ''
   level: college
-  brand_info: https://www.sju.edu/resources/brand/brand-standards
   colors:
     crimson:
       name: Crimson
@@ -3835,9 +3591,7 @@ slu-saint-louis-billikens:
   location: Saint Louis University
   display_location: Saint Louis
   name: Billikens
-  womens_name: ''
   level: college
-  brand_info: https://www.slu.edu/marcom/branding-and-identity/colors-fonts.php
   colors:
     college-church-gray:
       name: College Church Gray
@@ -3861,9 +3615,7 @@ shst-sam-houston-bearkats:
   location: Sam Houston State University
   display_location: Sam Houston
   name: Bearkats
-  womens_name: ''
   level: college
-  brand_info: https://www.shsu.edu/offices-departments/integrated-marketing-communications/documents/sam-houston_brand-guidelines-web.pdf
   colors:
     shsu-orange:
       name: SHSU Orange
@@ -3883,9 +3635,7 @@ sf-san-francisco-49ers:
   location: San Francisco
   display_location: San Francisco
   name: 49ers
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/san-francisco-49ers-team-colors/
   colors:
     49ers-red:
       name: 49ers Red
@@ -3913,9 +3663,7 @@ sea-seattle-seahawks:
   location: Seattle
   display_location: Seattle
   name: Seahawks
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/seattle-seahawks-color-codes/
   colors:
     action-green:
       name: Action Green
@@ -3970,9 +3718,7 @@ sh-seton-hall-pirates:
   location: Seton Hall University
   display_location: Seton Hall
   name: Pirates
-  womens_name: ''
   level: college
-  brand_info: https://www.shu.edu/university-relations/brand/visual-identity.html
   colors:
     seton-hall-blue:
       name: Seton Hall Blue
@@ -4032,14 +3778,14 @@ sh-seton-hall-pirates:
       css: 'background-color: #0060A9; color: #FFFFFF; text-shadow: 1px 1px 0 #514F4B,
         -1px 1px 0 #514F4B, 1px -1px 0 #514F4B, -1px -1px 0 #514F4B; '
       default: true
-smu-southern-methodist-mustangs:
+smu-smu-mustangs:
   abbr: SMU
   location: Southern Methodist University
-  display_location: Southern Methodist
+  display_location: SMU
   name: Mustangs
   womens_name: ''
   level: college
-  brand_info: https://www.smu.edu/brand/color-palette
+  brand_info: ''
   colors:
     blue:
       name: Blue
@@ -4064,9 +3810,7 @@ sbu-st-bonaventure-bonnies:
   location: St. Bonaventure University
   display_location: St. Bonaventure
   name: Bonnies
-  womens_name: ''
   level: college
-  brand_info: https://gobonnies.com/sports/2021/8/25/history-of-bonnies-uniforms-logos.aspx
   colors:
     bona-brown:
       name: Bona Brown
@@ -4094,9 +3838,7 @@ sju-st-john-s-red-storm:
   location: St. John's University
   display_location: St. John's
   name: Red Storm
-  womens_name: ''
   level: college
-  brand_info: https://www.stjohns.edu/sites/default/files/2025-05/St._John%27s_University_Brand_Identity_Guide_2025.pdf
   colors:
     red:
       name: Red
@@ -4128,9 +3870,7 @@ stan-stanford-cardinal:
   location: Stanford University
   display_location: Stanford
   name: Cardinal
-  womens_name: ''
   level: college
-  brand_info: https://identity.stanford.edu/design-elements/color/
   colors:
     black:
       name: Black
@@ -4166,9 +3906,7 @@ stet-stetson-hatters:
   location: Stetson University
   display_location: Stetson
   name: Hatters
-  womens_name: ''
   level: college
-  brand_info: https://www.stetson.edu/law/communications/home/media/stetson-brand-guidelines-Rev.2022.pdf
   colors:
     gray:
       name: Gray
@@ -4200,11 +3938,7 @@ sbu-stony-brook-seawolves:
   location: Stony Brook University
   display_location: Stony Brook
   name: Seawolves
-  womens_name: ''
   level: college
-  brand_info: 'https://www.stonybrook.edu/marcom/design-visual-identity/colors.php
-
-    '
   colors:
     stony-brook-black:
       name: Stony Brook Black
@@ -4224,9 +3958,7 @@ syr-syracuse-orange:
   location: Syracuse University
   display_location: Syracuse
   name: Orange
-  womens_name: ''
   level: college
-  brand_info: https://designsystem.syr.edu/documentation/design-tokens/color/
   colors:
     su-blue:
       name: SU Blue
@@ -4279,9 +4011,7 @@ tb-tampa-bay-buccaneers:
   location: Tampa Bay
   display_location: Tampa Bay
   name: Buccaneers
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/tampa-bay-buccaneers-team-colors/
   colors:
     bay-orange:
       name: Bay Orange
@@ -4318,9 +4048,7 @@ tem-temple-owls:
   location: Temple University
   display_location: Temple
   name: Owls
-  womens_name: ''
   level: college
-  brand_info: https://www.temple.edu/sites/www/files/CLC_Art_Sheet_Update_-_May_2021.pdf
   colors:
     black:
       name: Black
@@ -4352,9 +4080,7 @@ ten-tennessee-titans:
   location: Tennessee
   display_location: Tennessee
   name: Titans
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/tennessee-titans-color-codes/
   colors:
     steel-grey:
       name: Steel Grey
@@ -4390,14 +4116,14 @@ ten-tennessee-titans:
       css: 'background-color: #4B92DB; color: #0C2340; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: true
-tcu-texas-christian-horned-frogs:
+tcu-tcu-horned-frogs:
   abbr: TCU
   location: Texas Christian University
-  display_location: Texas Christian
+  display_location: TCU
   name: Horned Frogs
   womens_name: ''
   level: college
-  brand_info: https://brand.tcu.edu/university-color/
+  brand_info: ''
   colors:
     horned-frog-purple:
       name: Horned Frog Purple
@@ -4426,9 +4152,7 @@ ttu-texas-tech-red-raiders:
   location: Texas Tech University
   display_location: Texas Tech
   name: Red Raiders
-  womens_name: Lady Raiders
   level: college
-  brand_info: https://www.texastech.edu/identityguidelines/colors.php
   colors:
     texas-tech-black:
       name: Texas Tech Black
@@ -4468,9 +4192,7 @@ tow-towson-tigers:
   location: Towson University
   display_location: Towson
   name: Tigers
-  womens_name: ''
   level: college
-  brand_info: https://www.towson.edu/brand/visual-guidelines/color.html
   colors:
     "-black":
       name: " Black"
@@ -4515,9 +4237,7 @@ tuln-tulane-green-wave:
   location: Tulane University
   display_location: Tulane
   name: Green Wave
-  womens_name: ''
   level: college
-  brand_info: https://tulane.app.box.com/s/rxqmxdzl4bw9zhufst2blp2qt5xu2p98
   colors:
     tulane-blue:
       name: Tulane Blue
@@ -4547,9 +4267,7 @@ army-army-black-knights:
   location: United States Military Academy
   display_location: Army
   name: Black Knights
-  womens_name: ''
   level: college
-  brand_info: https://goarmywestpoint.com/news/2015/4/13/Army_West_Point_Athletics_Unveils_Brand_Identity
   colors:
     gold:
       name: Gold
@@ -4578,9 +4296,7 @@ navy-navy-midshipmen:
   location: United States Naval Academy
   display_location: Navy
   name: Midshipmen
-  womens_name: ''
   level: college
-  brand_info: https://navysports.com/sports/2022/12/21/logos-style-sheet.aspx
   colors:
     navy-blue:
       name: Navy Blue
@@ -4595,14 +4311,14 @@ navy-navy-midshipmen:
       name: Gold on Blue
       css: 'background-color: #00225B; color: #B5A67C; '
       default: true
-uab-alabama-birmingham-blazers:
+uab-uab-blazers:
   abbr: UAB
   location: University of Alabama - Birmingham
-  display_location: Alabama - Birmingham
+  display_location: UAB
   name: Blazers
   womens_name: ''
   level: college
-  brand_info: https://www.uab.edu/toolkit/
+  brand_info: ''
   colors:
     uab-gold:
       name: UAB Gold
@@ -4638,9 +4354,7 @@ ari-arizona-wildcats:
   location: University of Arizona
   display_location: Arizona
   name: Wildcats
-  womens_name: ''
   level: college
-  brand_info: https://marcom.arizona.edu/brand-guidelines/colors
   colors:
     arizona-blue:
       name: Arizona Blue
@@ -4694,9 +4408,7 @@ ucd-uc-davis-aggies:
   location: University of California - Davis
   display_location: UC Davis
   name: Aggies
-  womens_name: ''
   level: college
-  brand_info: https://communicationsguide.ucdavis.edu/brand-guide/colors
   colors:
     aggie-blue:
       name: Aggie Blue
@@ -4716,9 +4428,7 @@ ucla-ucla-bruins:
   location: University of California - Los Angeles
   display_location: UCLA
   name: Bruins
-  womens_name: ''
   level: college
-  brand_info: https://brand.ucla.edu/identity/colors
   colors:
     darker-blue:
       name: Darker Blue
@@ -4751,9 +4461,7 @@ ucsb-uc-santa-barbara-gauchos:
   location: University of California - Santa Barbara
   display_location: UC Santa Barbara
   name: Gauchos
-  womens_name: ''
   level: college
-  brand_info: https://brand.ucsb.edu/visual-identity/color
   colors:
     gold:
       name: Gold
@@ -4773,9 +4481,7 @@ cal-california-golden-bears:
   location: University of California at Berkeley
   display_location: California
   name: Golden Bears
-  womens_name: ''
   level: college
-  brand_info: https://brand.berkeley.edu/visual-identity/colors/
   colors:
     berkeley-blue:
       name: Berkeley Blue
@@ -4807,9 +4513,7 @@ irv-uc-irvine-anteaters:
   location: University of California at Irvine
   display_location: UC Irvine
   name: Anteaters
-  womens_name: ''
   level: college
-  brand_info: https://brand.uci.edu/identity/colors.php
   colors:
     uci-blue:
       name: UCI Blue
@@ -4829,9 +4533,7 @@ ucsd-uc-san-diego-tritons:
   location: University of California at San Diego
   display_location: UC San Diego
   name: Tritons
-  womens_name: ''
   level: college
-  brand_info: https://brand.ucsd.edu/visual-brand/color/index.html
   colors:
     uc-san-diego-blue:
       name: UC San Diego Blue
@@ -4860,9 +4562,7 @@ ucr-uc-riverside-highlanders:
   location: University of California, Riverside
   display_location: UC Riverside
   name: Highlanders
-  womens_name: ''
   level: college
-  brand_info: https://brand.ucr.edu/ucr-colors-old
   colors:
     blue:
       name: Blue
@@ -4882,9 +4582,7 @@ cak-central-arkansas-bears:
   location: University of Central Arkansas
   display_location: Central Arkansas
   name: Bears
-  womens_name: ''
   level: college
-  brand_info: https://uca.edu/toolkit/official-colors/
   colors:
     official-gray:
       name: Official Gray
@@ -4909,9 +4607,7 @@ ucf-central-florida-knights:
   location: University of Central Florida
   display_location: Central Florida
   name: Knights
-  womens_name: ''
   level: college
-  brand_info: https://www.ucf.edu/brand/brand-assets/colors/
   colors:
     black:
       name: Black
@@ -4931,9 +4627,7 @@ cin-cincinnati-bearcats:
   location: University of Cincinnati
   display_location: Cincinnati
   name: Bearcats
-  womens_name: ''
   level: college
-  brand_info: https://www.uc.edu/about/marketing-communications/brand-guide/visual-identity/color.html
   colors:
     grey:
       name: Grey
@@ -4994,9 +4688,7 @@ col-colorado-buffaloes:
   location: University of Colorado
   display_location: Colorado
   name: Buffaloes
-  womens_name: ''
   level: college
-  brand_info: https://www.cu.edu/brand-and-identity-guidelines/color-specifications
   colors:
     black:
       name: Black
@@ -5024,9 +4716,7 @@ uconn-uconn-huskies:
   location: University of Connecticut
   display_location: UConn
   name: Huskies
-  womens_name: ''
   level: college
-  brand_info: https://brand.uconn.edu/wp-content/uploads/sites/14/2019/11/UCONN-Color-Guidelines.pdf
   colors:
     grey:
       name: Grey
@@ -5058,9 +4748,7 @@ del-delaware-blue-hens:
   location: University of Delaware
   display_location: Delaware
   name: Blue Hens
-  womens_name: ''
   level: college
-  brand_info: https://www.udel.edu/content/dam/udelImages/ocm/style-guide/brand-style-guide.pdf
   colors:
     blue:
       name: Blue
@@ -5080,9 +4768,7 @@ udm-detroit-mercy-titans:
   location: University of Detroit Mercy
   display_location: Detroit Mercy
   name: Titans
-  womens_name: ''
   level: college
-  brand_info: https://www.udmercy.edu/faculty-staff/marcom/brand/
   colors:
     blue:
       name: Blue
@@ -5107,9 +4793,7 @@ haw-hawai-i-rainbow-warriors:
   location: University of Hawaii at Manoa
   display_location: Hawai'i
   name: Rainbow Warriors
-  womens_name: ''
   level: college
-  brand_info: https://www.brandcolorcode.com/university-of-hawaii-at-manoa
   colors:
     black:
       name: Black
@@ -5134,9 +4818,7 @@ hou-houston-cougars:
   location: University of Houston
   display_location: Houston
   name: Cougars
-  womens_name: ''
   level: college
-  brand_info: https://www.uh.edu/brand/brand-identity/style-guide/index.php
   colors:
     red:
       name: Red
@@ -5169,9 +4851,7 @@ ida-idaho-vandals:
   location: University of Idaho
   display_location: Idaho
   name: Vandals
-  womens_name: ''
   level: college
-  brand_info: https://www.uidaho.edu/brand
   colors:
     black:
       name: Black
@@ -5200,9 +4880,7 @@ ill-illinois-fighting-illini:
   location: University of Illinois
   display_location: Illinois
   name: Fighting Illini
-  womens_name: ''
   level: college
-  brand_info: https://brand.illinois.edu/visual-identity/color
   colors:
     illini-blue:
       name: Illini Blue
@@ -5240,9 +4918,7 @@ iu-indiana-hoosiers:
   location: University of Indiana
   display_location: Indiana
   name: Hoosiers
-  womens_name: ''
   level: college
-  brand_info: https://iu.edu/brand/iu-brand/visual-identity/color.html
   colors:
     cream:
       name: Cream
@@ -5262,9 +4938,7 @@ iowa-iowa-hawkeyes:
   location: University of Iowa
   display_location: Iowa
   name: Hawkeyes
-  womens_name: ''
   level: college
-  brand_info: https://brand.uiowa.edu/color
   colors:
     black:
       name: Black
@@ -5284,9 +4958,7 @@ ku-kansas-jayhawks:
   location: University of Kansas
   display_location: Kansas
   name: Jayhawks
-  womens_name: ''
   level: college
-  brand_info: https://brand.ku.edu/guidelines/design/color
   colors:
     crimson:
       name: Crimson
@@ -5319,9 +4991,7 @@ lou-louisville-cardinals:
   location: University of Louisville
   display_location: Louisville
   name: Cardinals
-  womens_name: ''
   level: college
-  brand_info: https://louisville.edu/brand/visual/color
   colors:
     black:
       name: Black
@@ -5346,9 +5016,7 @@ mn-maine-black-bears:
   location: University of Maine
   display_location: Maine
   name: Black Bears
-  womens_name: ''
   level: college
-  brand_info: https://umaine.edu/marketingandcommunications/brand/visual-identity/
   colors:
     dark-blue:
       name: Dark Blue
@@ -5390,9 +5058,7 @@ um-maryland-terrapins:
   location: University of Maryland
   display_location: Maryland
   name: Terrapins
-  womens_name: ''
   level: college
-  brand_info: https://brand.umd.edu/colors
   colors:
     black:
       name: Black
@@ -5421,9 +5087,7 @@ umbc-umbc-retrievers:
   location: University of Maryland, Baltimore County
   display_location: UMBC
   name: Retrievers
-  womens_name: ''
   level: college
-  brand_info: https://styleguide.umbc.edu/umbc-colors/
   colors:
     umbc-black:
       name: UMBC Black
@@ -5443,9 +5107,7 @@ uml-umass-lowell-river-hawks:
   location: University of Massachusetts at Lowell
   display_location: UMass Lowell
   name: River Hawks
-  womens_name: ''
   level: college
-  brand_info: https://goriverhawks.com/sports/2021/8/18/identity-standards
   colors:
     umass-lowell-blue:
       name: UMass Lowell Blue
@@ -5478,9 +5140,7 @@ mem-memphis-tigers:
   location: University of Memphis
   display_location: Memphis
   name: Tigers
-  womens_name: ''
   level: college
-  brand_info: https://www.memphis.edu/communications/brand/colors.php
   colors:
     memphis-blue:
       name: Memphis Blue
@@ -5509,9 +5169,7 @@ mia-miami-hurricanes:
   location: University of Miami
   display_location: Miami
   name: Hurricanes
-  womens_name: ''
   level: college
-  brand_info: https://webcomm.miami.edu/resources/identity/color/index.html
   colors:
     um-green:
       name: UM Green
@@ -5541,9 +5199,7 @@ um-michigan-wolverines:
   location: University of Michigan
   display_location: Michigan
   name: Wolverines
-  womens_name: ''
   level: college
-  brand_info: https://brand.umich.edu/design-resources/colors/
   colors:
     blue:
       name: Blue
@@ -5563,9 +5219,7 @@ min-minnesota-golden-gophers:
   location: University of Minnesota
   display_location: Minnesota
   name: Golden Gophers
-  womens_name: ''
   level: college
-  brand_info: https://umarcomm.umn.edu/resources/colors-and-type
   colors:
     umn-gold:
       name: UMN Gold
@@ -5585,9 +5239,7 @@ mnt-montana-grizzlies:
   location: University of Montana
   display_location: Montana
   name: Grizzlies
-  womens_name: Lady Griz
   level: college
-  brand_info: https://www.umt.edu/brand/colors.php
   colors:
     copper-climb:
       name: Copper Climb
@@ -5627,9 +5279,7 @@ neb-nebraska-cornhuskers:
   location: University of Nebraska
   display_location: Nebraska
   name: Cornhuskers
-  womens_name: ''
   level: college
-  brand_info: https://ucomm.unl.edu/brand/templates-assets/colors/
   colors:
     cream:
       name: Cream
@@ -5657,9 +5307,7 @@ unh-new-hampshire-wildcats:
   location: University of New Hampshire
   display_location: New Hampshire
   name: Wildcats
-  womens_name: ''
   level: college
-  brand_info: ''
   colors:
     blue:
       name: Blue
@@ -5679,9 +5327,7 @@ nau-north-alabama-lions:
   location: University of North Alabama
   display_location: North Alabama
   name: Lions
-  womens_name: ''
   level: college
-  brand_info: https://www.una.edu/emdc/brand/colors.html
   colors:
     una-gold:
       name: UNA Gold
@@ -5705,9 +5351,7 @@ unc-north-carolina-tar-heels:
   location: University of North Carolina
   display_location: North Carolina
   name: Tar Heels
-  womens_name: ''
   level: college
-  brand_info: https://identity.unc.edu/brand/color-palette/
   colors:
     black:
       name: Black
@@ -5740,9 +5384,7 @@ cha-charlotte-49ers:
   location: University of North Carolina - Charlotte
   display_location: Charlotte
   name: 49ers
-  womens_name: ''
   level: college
-  brand_info: https://brand.charlotte.edu/visual-identity/color-palette/
   colors:
     charlotte-green:
       name: Charlotte Green
@@ -5786,9 +5428,7 @@ uncw-unc-wilmington-seahawks:
   location: University of North Carolina - Wilmington
   display_location: UNC Wilmington
   name: Seahawks
-  womens_name: ''
   level: college
-  brand_info: https://uncw.edu/myuncw/about/brand/visual-editorial-style/color-palettes
   colors:
     seahawk-gold-accent:
       name: Seahawk Gold Accent
@@ -5817,9 +5457,7 @@ unca-unc-asheville-bulldogs:
   location: University of North Carolina Asheville
   display_location: UNC Asheville
   name: Bulldogs
-  womens_name: ''
   level: college
-  brand_info: https://communication.unca.edu/design/color-palette/
   colors:
     bulldog-blue:
       name: Bulldog Blue
@@ -5839,9 +5477,7 @@ nfl-north-florida-ospreys:
   location: University of North Florida
   display_location: North Florida
   name: Ospreys
-  womens_name: ''
   level: college
-  brand_info: https://www.unf.edu/brand/colors.html
   colors:
     osprey-blue:
       name: Osprey Blue
@@ -5873,9 +5509,7 @@ unt-north-texas-mean-green:
   location: University of North Texas
   display_location: North Texas
   name: Mean Green
-  womens_name: ''
   level: college
-  brand_info: https://www.untsystem.edu/offices/marketing-and-communications/documents/unts-styleguide-19-20.pdf
   colors:
     black:
       name: Black
@@ -5912,11 +5546,7 @@ nco-northern-colorado-bears:
   location: 'University of Norther Colorado '
   display_location: Northern Colorado
   name: Bears
-  womens_name: ''
   level: college
-  brand_info: 'https://www.unco.edu/marketing-communications/
-
-    '
   colors:
     bears-blue:
       name: Bears Blue
@@ -5940,9 +5570,7 @@ nd-notre-dame-fighting-irish:
   location: University of Notre Dame
   display_location: Notre Dame
   name: Fighting Irish
-  womens_name: ''
   level: college
-  brand_info: https://onmessage.nd.edu/university-branding/colors/
   colors:
     nd-blue:
       name: ND Blue
@@ -5970,9 +5598,7 @@ ore-oregon-ducks:
   location: University of Oregon
   display_location: Oregon
   name: Ducks
-  womens_name: ''
   level: college
-  brand_info: https://communications.uoregon.edu/uo-brand/visual-identity/colors
   colors:
     uo-green:
       name: UO Green
@@ -5996,9 +5622,7 @@ penn-pennsylvania-quakers:
   location: University of Pennsylvania
   display_location: Pennsylvania
   name: Quakers
-  womens_name: ''
   level: college
-  brand_info: https://branding.web-resources.upenn.edu/logos-and-branding/elements-penn-logo
   colors:
     penn-blue:
       name: Penn Blue
@@ -6019,14 +5643,14 @@ penn-pennsylvania-quakers:
       css: 'background-color: #990000; color: #ffffff; text-shadow: 1px 1px 0 #011F5B,
         -1px 1px 0 #011F5B, 1px -1px 0 #011F5B, -1px -1px 0 #011F5B; '
       default: false
-pit-pitt-panthers:
+pit-pittsburgh-panthers:
   abbr: PIT
   location: University of Pittsburgh
-  display_location: Pitt
+  display_location: Pittsburgh
   name: Panthers
   womens_name: ''
   level: college
-  brand_info: https://www.brand.pitt.edu/brand-elements/color-palettes
+  brand_info: ''
   colors:
     pitt-gold:
       name: Pitt Gold
@@ -6050,9 +5674,7 @@ scu-south-carolina-upstate-spartans:
   location: University of South Carolina Upstate
   display_location: South Carolina Upstate
   name: Spartans
-  womens_name: ''
   level: college
-  brand_info: https://upstatespartans.com/documents/2021/4/26/_4_21_BrandStandardsGuide_PAGES.pdf
   colors:
     black:
       name: Black
@@ -6089,9 +5711,7 @@ usf-south-florida-bulls:
   location: University of South Florida
   display_location: South Florida
   name: Bulls
-  womens_name: ''
   level: college
-  brand_info: https://www.usf.edu/ucm/marketing/colors.aspx
   colors:
     usf-gold:
       name: USF Gold
@@ -6144,9 +5764,7 @@ usc-usc-trojans:
   location: University of Southern California
   display_location: USC
   name: Trojans
-  womens_name: ''
   level: college
-  brand_info: https://identity.usc.edu/
   colors:
     usc-cardinal:
       name: USC Cardinal
@@ -6169,14 +5787,14 @@ usc-usc-trojans:
       name: Gold on Red
       css: 'background-color: #990000; color: #FFCC00; '
       default: true
-utsa-texas-san-antonio-roadrunners:
+utsa-utsa-roadrunners:
   abbr: UTSA
   location: University of Texas - San Antonio
-  display_location: Texas - San Antonio
+  display_location: UTSA
   name: Roadrunners
   womens_name: ''
   level: college
-  brand_info: https://hcap.utsa.edu/documents/ut-san-antonio-brand-guidelines_book-july25.pdf
+  brand_info: ''
   colors:
     midnight:
       name: Midnight
@@ -6216,9 +5834,7 @@ utep-utep-miners:
   location: University of Texas at El Paso
   display_location: UTEP
   name: Miners
-  womens_name: ''
   level: college
-  brand_info: https://www.utep.edu/marketing-and-communications/_files/docs/visual-brand-guide.pdf?050523
   colors:
     utep-blue:
       name: UTEP Blue
@@ -6242,9 +5858,7 @@ tul-tulsa-golden-hurricane:
   location: University of Tulsa
   display_location: Tulsa
   name: Golden Hurricane
-  womens_name: ''
   level: college
-  brand_info: https://tulsahurricane.com/documents/download/2022/2/1/Tulsa_StyleGuide_2022_copy.pdf
   colors:
     blue:
       name: Blue
@@ -6264,9 +5878,7 @@ utah-utah-utes:
   location: University of Utah
   display_location: Utah
   name: Utes
-  womens_name: ''
   level: college
-  brand_info: https://brand.utah.edu/branding/colors/
   colors:
     black:
       name: Black
@@ -6295,9 +5907,7 @@ vt-vermont-catamounts:
   location: University of Vermont
   display_location: Vermont
   name: Catamounts
-  womens_name: ''
   level: college
-  brand_info: https://www.uvm.edu/stratcomm/brand/color-palette
   colors:
     catamount-green:
       name: Catamount Green
@@ -6333,9 +5943,7 @@ vir-virginia-cavaliers:
   location: University of Virginia
   display_location: Virginia
   name: Cavaliers
-  womens_name: ''
   level: college
-  brand_info: https://brand.virginia.edu/design-assets/colors
   colors:
     uva-blue:
       name: UVA Blue
@@ -6363,9 +5971,7 @@ uw-washington-huskies:
   location: University of Washington
   display_location: Washington
   name: Huskies
-  womens_name: ''
   level: college
-  brand_info: https://www.washington.edu/brand/brand-elements/colors/
   colors:
     husky-gold:
       name: Husky Gold
@@ -6414,9 +6020,7 @@ wga-west-georgia-wolves:
   location: University of West Georgia
   display_location: West Georgia
   name: Wolves
-  womens_name: ''
   level: college
-  brand_info: https://www.westga.edu/administration/president/ucm/ou-campus-templates.php
   colors:
     blue:
       name: Blue
@@ -6440,9 +6044,7 @@ wis-wisconsin-badgers:
   location: University of Wisconsin
   display_location: Wisconsin
   name: Badgers
-  womens_name: ''
   level: college
-  brand_info: https://brand.wisc.edu/visual-identity/colors/
   colors:
     badger-red:
       name: Badger Red
@@ -6462,9 +6064,7 @@ ugb-green-bay-phoenix:
   location: University of Wisconsin - Green Bay
   display_location: Green Bay
   name: Phoenix
-  womens_name: ''
   level: college
-  brand_info: https://www.uwgb.edu/marcomm/identity/colors/
   colors:
     phoenix-green:
       name: Phoenix Green
@@ -6484,9 +6084,7 @@ mil-milwaukee-panthers:
   location: University of Wisconsin - Milwaukee
   display_location: Milwaukee
   name: Panthers
-  womens_name: ''
   level: college
-  brand_info: https://www.brandcolorcode.com/university-of-wisconsin-milwaukee
   colors:
     black:
       name: Black
@@ -6506,9 +6104,7 @@ nova-villanova-wildcats:
   location: Villanova University
   display_location: Villanova
   name: Wildcats
-  womens_name: ''
   level: college
-  brand_info: https://www1.villanova.edu/villanova/unicommunication/brandguidelines/VisualIdentityGuidelines.html
   colors:
     villanova-signature-blue:
       name: Villanova Signature Blue
@@ -6536,9 +6132,7 @@ vcu-vcu-rams:
   location: Virginia Commonwealth University
   display_location: VCU
   name: Rams
-  womens_name: ''
   level: college
-  brand_info: https://brand.vcu.edu/vcu-university/guidelines/visual-identity-components/color
   colors:
     black:
       name: Black
@@ -6566,9 +6160,7 @@ vt-virginia-tech-hokies:
   location: Virginia Tech University
   display_location: Virginia Tech
   name: Hokies
-  womens_name: ''
   level: college
-  brand_info: https://brand.vt.edu/identity/color.html
   colors:
     burnt-orange:
       name: Burnt Orange
@@ -6601,9 +6193,7 @@ wake-wake-forest-demon-deacons:
   location: Wake Forest University
   display_location: Wake Forest
   name: Demon Deacons
-  womens_name: ''
   level: college
-  brand_info: https://brand.wfu.edu/our-brand-identity/color-patterns-papers/
   colors:
     black:
       name: Black
@@ -6644,9 +6234,7 @@ was-washington-commanders:
   location: Washington
   display_location: Washington
   name: Commanders
-  womens_name: ''
   level: pro
-  brand_info: https://teamcolorcodes.com/washington-redskins-color-codes/
   colors:
     burgundy:
       name: Burgundy
@@ -6671,9 +6259,7 @@ web-weber-state-wildcats:
   location: Weber State University
   display_location: Weber State
   name: Wildcats
-  womens_name: ''
   level: college
-  brand_info: https://www.weber.edu/brand/colors.html
   colors:
     university-gray:
       name: University Gray
@@ -6698,9 +6284,7 @@ wvu-west-virginia-mountaineers:
   location: West Virginia University
   display_location: West Virginia
   name: Mountaineers
-  womens_name: ''
   level: college
-  brand_info: https://scm.wvu.edu/brand/visual-identity/
   colors:
     blue:
       name: Blue
@@ -6728,9 +6312,7 @@ wku-western-kentucky-hilltoppers:
   location: Western Kentucky University
   display_location: Western Kentucky
   name: Hilltoppers
-  womens_name: ''
   level: college
-  brand_info: https://www.wku.edu/web-cms/best-practices/colors/
   colors:
     wku-red:
       name: WKU Red
@@ -6750,9 +6332,7 @@ wm-william-mary-tribe:
   location: William & Mary University
   display_location: William & Mary
   name: Tribe
-  womens_name: ''
   level: college
-  brand_info: https://www.wm.edu/brand/visual-brand/color-palette/
   colors:
     w-m-gold:
       name: W&M Gold
@@ -6781,9 +6361,7 @@ win-winthrop-eagles:
   location: 'Winthrop University '
   display_location: Winthrop
   name: Eagles
-  womens_name: ''
   level: college
-  brand_info: https://www.winthrop.edu/uploadedFiles/ucm/VisualIdentityManual.pdf
   colors:
     garnet:
       name: Garnet
@@ -6803,9 +6381,7 @@ wrst-wright-state-raiders:
   location: Wright State University
   display_location: Wright State
   name: Raiders
-  womens_name: ''
   level: college
-  brand_info: https://www.wright.edu/enrollment-marketing-and-career-development/brand-communications-and-marketing/brand/color
   colors:
     wright-state-gold:
       name: Wright State Gold
@@ -6826,9 +6402,7 @@ xav-xavier-musketeers:
   location: Xavier University
   display_location: Xavier
   name: Musketeers
-  womens_name: ''
   level: college
-  brand_info: https://www.xavier.edu/brand/brand-graphic-identity/index
   colors:
     running-man-blue:
       name: Running Man Blue
@@ -6867,9 +6441,7 @@ yale-yale-bulldogs:
   location: Yale University
   display_location: Yale
   name: Bulldogs
-  womens_name: ''
   level: college
-  brand_info: https://yaleidentity.yale.edu/core-identity-elements/yale-colors
   colors:
     yale-blue:
       name: Yale Blue
@@ -6885,9 +6457,7 @@ ytsu-youngstown-state-penguins:
   location: Youngstown State University
   display_location: Youngstown State
   name: Penguins
-  womens_name: ''
   level: college
-  brand_info: https://ysu.edu/sites/default/files/marketing_communications/VisualStandards_digital_FINAL_2023%203.pdf
   colors:
     black:
       name: Black

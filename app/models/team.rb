@@ -47,6 +47,12 @@ class Team < ApplicationRecord
     BRAND_SEARCH_URL + (location + " brand colors").split(" ").compact.join("+")
   end
 
+  # Generates ESPN-style slug: display_location-name
+  # e.g., "st-bonaventure-bonnies"
+  def generate_espn_slug
+    "#{display_location || location} #{name}".downcase.gsub(/[^a-z0-9]+/, '-').gsub(/-$/, '')
+  end
+
   # Generates slug for SCSS naming: abbr-display_location-name
   # e.g., "tuln-tulane-green-wave"
   def scss_slug

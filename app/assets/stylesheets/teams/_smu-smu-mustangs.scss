@@ -1,0 +1,18 @@
+// Team: SMU Mustangs
+// Generated: 2026-01-31T01:03:11Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$smu-smu-mustangs-blue: #354CA1;
+$smu-smu-mustangs-red: #CC0035;
+$smu-smu-mustangs-white: #FFFFFF;
+
+// Style Classes
+.smu-smu-mustangs-blue {
+  background-color: #354CA1 !important; color: #FFFFFF !important; text-shadow: 1px 1px 0 #CC0035, -1px 1px 0 #CC0035, 1px -1px 0 #CC0035, -1px -1px 0 #CC0035; 
+}
+
+// Default Style Alias
+.smu-smu-mustangs-default {
+  @extend .smu-smu-mustangs-blue;
+}
