@@ -281,6 +281,8 @@ Target: NCAA Tournament testing on Fly.io
 | Event game list team links | Team names in event game items should link to game, but invisibly (no underline/color change). |
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 | Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
+| **Teams table filters** | Filter by missing affiliations, colors, or styles. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
+| **(Stretch) Auto-populate game from ESPN URL** | Paste ESPN Gamecast link → extract gameId → hit JSON API → auto-fill teams, start time, scoring URL. Game-changer for rapid game creation during tournament. Requires `espn_id` on Teams for matching. |
 
 ### Fly.io Deployment Notes
 
@@ -392,7 +394,6 @@ Target: Ready for football season
 | **Historical game import** | Import games from old system (Google Sheets era). Complex: player list translation between systems, team/league mapping, missing `start_time` data, grid player ID reconciliation. Many unknowns - needs discovery phase before implementation. |
 | **Auto-calculate optimal chances** | Algorithm to find best-fit integer chance values given player counts. Constraints: sum to 100, individuals > families (shared winnings), configurable charity allocation. Constrained integer optimization problem. |
 | **Double-stroke text via text-shadow** | Layered outlines (e.g., Kennesaw State black/gold). Needs more thought - current shadow stroke doesn't work well on smaller text. Would need conditional logic to use only primary shadow on small text, which may make the feature impractical. |
-| **Auto-populate game from scoring URL** | Extract gameId from pasted ESPN URL, hit JSON API for structured data (teams, start time, logos). Trivial now with API discovery. Strong candidate for 1.0 promotion. |
 | **ESPN API full integration** | Audit all places we scrape ESPN HTML and migrate to JSON API where possible. **Migration**: Add `espn_id`, `espn_mens_slug`, `espn_womens_slug` to Teams. **Team sync**: ESPN exposes full team lists per league - can bulk-match or seed ESPN IDs. **Scraper registry**: `EspnApiScraper` as primary, `EspnHtmlScraper` as fallback, same interface. **Potential wins**: (1) Score scraper via API, (2) Team colors/logos from API, (3) Cleaner game status. Document rate limits and caching strategy. See `artifacts/espn_api_sample.json`. |
 | **Team logos as local assets** | Build logo directory indexed by `css_slug`. Seed initially from ESPN API URLs, maintain locally. Self-hosted, no runtime external dependency. |
 | **External asset storage** | Configure Rails to serve assets from external storage (S3, Cloudflare R2, etc.) to avoid disk bloat on Fly.io. Active Storage supports multiple backends. Logos (~350 teams × ~50KB) would be ~17MB initially but plan for growth and multiple sports. |
@@ -413,4 +414,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-28
+**Last Updated**: 2026-01-30

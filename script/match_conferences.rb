@@ -22,7 +22,8 @@ seeddata.leagues.each do |league_seed|
   leaguedata.conferences.each do |conf_seed|
     conf_obj = league_obj.conferences.find_by(name: conf_seed.name)
 
-    puts "#{league_seed.abbr} :: #{conf_seed.name} => #{conf_obj.nil? ? "Not Found" : "Found"}"
-    puts "\n"
+    if conf_obj.nil?
+      puts "#{league_seed.abbr} :: #{conf_seed.name} => #{conf_obj.nil? ? "Not Found" : "Found"}"
+    end
   end
 end
