@@ -259,7 +259,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~**Public/Admin View Separation**~~ | ✅ Moot - unified UX approach works for both roles |
 | ~~**Deploy to Fly.io**~~ | ✅ Done - App live at family-squares.fly.dev. See deployment notes below. |
 | ~~Set up ActionMailer + PostMailer~~ | ✅ Done - Letter Opener for dev, Send dropdown with optional PDF attachment. Resend SMTP configured. |
-| Build seed data for all D1 teams | ~350 teams ready for any matchup |
+| Build seed data for all D1 teams | ✅ Partial - 365 college teams with ESPN IDs and affiliations. Remaining: colors/styles for ~178 new teams. |
 | ~~**Winners worksheet mode**~~ | ✅ Done - Simplified check-writing view: family-grouped names + amounts, prominent checkboxes, progress bar, grayed strikethrough on checked items, localStorage persistence |
 | ~~**Debug Grover PDF on Fly.io**~~ | ✅ Done - Fixed with `GROVER_NO_SANDBOX=true` env var + async job to avoid 60s proxy timeout |
 | ~~Grid validation (Player.total_active_chances)~~ | ✅ Done - Game creation blocked if chances >100 or <100 with no charities |
@@ -394,9 +394,10 @@ Target: Ready for football season
 | **Historical game import** | Import games from old system (Google Sheets era). Complex: player list translation between systems, team/league mapping, missing `start_time` data, grid player ID reconciliation. Many unknowns - needs discovery phase before implementation. |
 | **Auto-calculate optimal chances** | Algorithm to find best-fit integer chance values given player counts. Constraints: sum to 100, individuals > families (shared winnings), configurable charity allocation. Constrained integer optimization problem. |
 | **Double-stroke text via text-shadow** | Layered outlines (e.g., Kennesaw State black/gold). Needs more thought - current shadow stroke doesn't work well on smaller text. Would need conditional logic to use only primary shadow on small text, which may make the feature impractical. |
-| **ESPN API full integration** | Audit all places we scrape ESPN HTML and migrate to JSON API where possible. **Migration**: Add `espn_id`, `espn_mens_slug`, `espn_womens_slug` to Teams. **Team sync**: ESPN exposes full team lists per league - can bulk-match or seed ESPN IDs. **Scraper registry**: `EspnApiScraper` as primary, `EspnHtmlScraper` as fallback, same interface. **Potential wins**: (1) Score scraper via API, (2) Team colors/logos from API, (3) Cleaner game status. Document rate limits and caching strategy. See `artifacts/espn_api_sample.json`. |
+| **ESPN API full integration** | Audit all places we scrape ESPN HTML and migrate to JSON API where possible. ~~**Migration**: Add `espn_id`, `espn_mens_slug`, `espn_womens_slug` to Teams.~~ ✅ Done - all 397 teams have ESPN IDs/slugs. **Scraper registry**: `EspnApiScraper` as primary, `EspnHtmlScraper` as fallback, same interface. **Potential wins**: (1) Score scraper via API, (2) Team colors/logos from API, (3) Cleaner game status. Document rate limits and caching strategy. See `artifacts/espn_api_sample.json`. |
 | **Team logos as local assets** | Build logo directory indexed by `css_slug`. Seed initially from ESPN API URLs, maintain locally. Self-hosted, no runtime external dependency. |
 | **External asset storage** | Configure Rails to serve assets from external storage (S3, Cloudflare R2, etc.) to avoid disk bloat on Fly.io. Active Storage supports multiple backends. Logos (~350 teams × ~50KB) would be ~17MB initially but plan for growth and multiple sports. |
+| **Conference realignment detection** | Scrape ESPN standings pages to detect conference membership changes. Compare against current affiliations, generate diff report showing teams that moved. Dry-run mode previews changes; `--apply` updates affiliations. Useful for annual realignment (e.g., Mountain West → Pac-12 migrations for 2026 football). Infrastructure already exists: `script/data/*.json` standings files contain team-to-conference mappings via ESPN IDs. |
 
 ## Small Fixes (No Milestone)
 
@@ -414,4 +415,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-30
+**Last Updated**: 2026-01-31
