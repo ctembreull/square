@@ -1,0 +1,17 @@
+// Team: Drexel Dragons
+// Generated: 2026-01-31T01:20:30Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$drx-drexel-dragons-drexel-blue: #07294D;
+$drx-drexel-dragons-drexel-yellow: #FFC600;
+
+// Style Classes
+.drx-drexel-dragons-blue {
+  background-color: #07294D !important; color: #FFC600 !important; 
+}
+
+// Default Style Alias
+.drx-drexel-dragons-default {
+  @extend .drx-drexel-dragons-blue;
+}

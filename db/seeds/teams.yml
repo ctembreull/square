@@ -865,12 +865,14 @@ corn-cornell-big-red:
       name: Red
       css: 'background-color: #B31B1B; color: #FFFFFF; '
       default: true
-crei-creighton-blue-jays:
+crei-creighton-bluejays:
   abbr: CREI
   location: Creighton University
   display_location: Creighton
-  name: Blue Jays
+  name: Bluejays
+  womens_name: ''
   level: college
+  brand_info: ''
   colors:
     cu-blue:
       name: CU Blue
@@ -1134,12 +1136,14 @@ det-detroit-lions:
       css: 'background-color: #0076B6; color: #FFFFFF; text-shadow: 1px 1px 0 #B0B7BC,
         -1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC; '
       default: true
-drx-drexel-fighting-dragons:
+drx-drexel-dragons:
   abbr: DRX
   location: Drexel University
   display_location: Drexel
-  name: Fighting Dragons
+  name: Dragons
+  womens_name: ''
   level: college
+  brand_info: ''
   colors:
     drexel-blue:
       name: Drexel Blue
@@ -3460,12 +3464,14 @@ rich-richmond-spiders:
       css: 'background-color: #122851; color: #990000; text-shadow: 1px 1px 0 #FFFFFF,
         -1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px -1px 0 #FFFFFF; '
       default: false
-rmu-robert-morris-colonels:
+rmu-robert-morris-colonials:
   abbr: RMU
   location: Robert Morris University
   display_location: Robert Morris
-  name: Colonels
+  name: Colonials
+  womens_name: ''
   level: college
+  brand_info: ''
   colors:
     rmu-blue:
       name: RMU Blue
@@ -4602,12 +4608,14 @@ cak-central-arkansas-bears:
       css: 'background-color: #582C83; color: #FFFFFF; text-shadow: 1px 1px 0 #7C878E,
         -1px 1px 0 #7C878E, 1px -1px 0 #7C878E, -1px -1px 0 #7C878E; '
       default: true
-ucf-central-florida-knights:
+ucf-ucf-knights:
   abbr: UCF
   location: University of Central Florida
-  display_location: Central Florida
+  display_location: UCF
   name: Knights
+  womens_name: ''
   level: college
+  brand_info: ''
   colors:
     black:
       name: Black
@@ -6327,6 +6335,14 @@ wku-western-kentucky-hilltoppers:
       name: Red
       css: 'background-color: #B01E24; color: #ffffff; '
       default: true
+wist-wichita-state-shockers:
+  abbr: WIST
+  location: Wichita State University
+  display_location: Wichita State
+  name: Shockers
+  womens_name: ''
+  level: college
+  brand_info: https://www.wichita.edu/services/strategic_communications/brand_standards/colors_and_fonts.php
 wm-william-mary-tribe:
   abbr: WM
   location: William & Mary University

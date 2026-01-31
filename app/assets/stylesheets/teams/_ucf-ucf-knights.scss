@@ -1,0 +1,17 @@
+// Team: UCF Knights
+// Generated: 2026-01-31T01:20:31Z
+// Do not edit directly - regenerate via TeamStylesheetService
+
+// Color Variables
+$ucf-ucf-knights-black: #000000;
+$ucf-ucf-knights-ucf-bright-gold: #FFC904;
+
+// Style Classes
+.ucf-ucf-knights-black {
+  background-color: #000000 !important; color: #FFC904 !important; 
+}
+
+// Default Style Alias
+.ucf-ucf-knights-default {
+  @extend .ucf-ucf-knights-black;
+}

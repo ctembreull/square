@@ -50,7 +50,7 @@ class Team < ApplicationRecord
   # Generates ESPN-style slug: display_location-name
   # e.g., "st-bonaventure-bonnies"
   def generate_espn_slug
-    "#{display_location || location} #{name}".downcase.gsub(/[^a-z0-9]+/, '-').gsub(/-$/, '')
+    "#{display_location || location} #{name}".downcase.gsub(/[''&]/, '').gsub(/[^a-z0-9]+/, '-').gsub(/-$/, '')
   end
 
   # Generates slug for SCSS naming: abbr-display_location-name
