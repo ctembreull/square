@@ -16,7 +16,7 @@
 				<% (1..game.league.periods).each do |n| %>
 					<% period = game.scores.where(period: n).first %>
 					<td class="p-1 border-end fs-10" style="width: 5%; text-align: center;">
-						<%= period.nil? ? "" : period.away %>
+						<%= period.nil? ? "-" : period.away %>
 					</td>
 				<% end %>
 				<td class="p-1 bg-300" style="width: 5%;">
@@ -35,11 +35,11 @@
 				</td>
 				<% (1..game.league.periods).each do |n| %>
 					<% period = game.scores.where(period: n).first %>
-					<td class="p-1 px-2 border-end fs-10" style="width: 5%; text-align: center;">
-						<%= period.nil? ? "" : period.home %>
+					<td class="p-1 border-end fs-10" style="width: 5%; text-align: center;">
+						<%= period.nil? ? "-" : period.home %>
 					</td>
 				<% end %>
-				<td class="p-1 px-2 bg-300 text-center" style="width: 5%;">
+				<td class="p-1 bg-300" style="width: 5%;">
 					<span class="fs-10 fw-bolder">
 						<% unless game.scores.empty? %>
 							<%= game.scores.order(period: :asc).last.home_total %>

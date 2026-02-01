@@ -5,10 +5,11 @@
 	<td>
 		<%# Date - don't show time for completed games %>
 		<% if game.upcoming? %>
-			<%= game.starts_at.in_time_zone(current_timezone).strftime("%m/%d/%Y, %-I:%M %P") %></td>
+			<%= game.starts_at.in_time_zone(current_timezone).strftime("%m/%d/%Y, %-I:%M %P") %>
 		<% else %>
 			<%= game.starts_at.in_time_zone(current_timezone).strftime("%m/%d/%Y") %>
 		<% end %>
+	</td>
 	<th>
 		<%# format identical %>
 		<span data-bs-toggle="tooltip" data-bs-placement="bottom" title="<%= game.league.name %>">
@@ -26,9 +27,9 @@
 		<%= link_to game.away_team.display_location, game, class: "text-decoration-none stretched-link #{game.away_style}" %>
 	</td>
 	<% if show_score %>
-		<td class="bg-700 text-200 fw-semi-bold text-center align-middle"><%= score.away_total %></td>
+		<td class="bg-700 text-200 fw-semi-bold text-center align-middle" style="width: 3%;"><%= score.away_total %></td>
 	<% end %>
-	<td class="bg-200 fw-semi-bold align-middle text-center">
+	<td class="bg-200 fw-semi-bold align-middle text-center" style="width: 2%;">
 		<%# "vs" if game is upcoming, "-" if completed %>
 		<% if game.upcoming? %>
 			vs
@@ -37,7 +38,7 @@
 		<% end %>
 	</td>
 	<% if show_score %>
-		<td class="bg-700 text-200 fw-semi-bold text-center align-middle"><%= score.home_total %></td>
+		<td class="bg-700 text-200 fw-semi-bold text-center align-middle" style="width: 3%;"><%= score.home_total %></td>
 	<% end %>
 	<td class="text-center py-2 align-middle <%= game.home_style %> h6 fw-semi-bold position-relative" style="width: 20%;" colspan="<%= colspan %>">
 		<%# colspan 2 if game is upcoming %>
@@ -46,7 +47,7 @@
 	<td class="text-end">
 		<%# tv network if upcoming, link to box score if completed %>
 		<% if game.upcoming? || game.in_progress? %>
-			<%= game.broadcast_network %></td>
+			<%= game.broadcast_network %>
 		<% else %>
 			<%= link_to "Box Score", game.score_url, target: "_blank" %>
 		<% end %>

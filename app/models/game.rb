@@ -66,7 +66,7 @@ class Game < ApplicationRecord
   validates :final_prize, presence: true, numericality: { only_integer: true }
   validate :grid_can_be_filled, on: :create
 
-  scope :upcoming, -> { where("starts_at > ?", Time.current) }
+  scope :upcoming, -> { where(status: "upcoming") }
   scope :today, -> { where(starts_at: Time.current.beginning_of_day..Time.current.end_of_day) }
   scope :past, -> { where("starts_at < ?", Time.current) }
   scope :earliest_first, -> { order(starts_at: :asc) }
