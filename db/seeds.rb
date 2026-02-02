@@ -2,7 +2,7 @@
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
-# Generated from database on 2026-01-27 21:13
+# Generated from database on 2026-02-02 20:11
 
 puts "Seeding sports structure..."
 
@@ -201,7 +201,7 @@ end
 # ============================================================================
 
 fcs_conferences = [
-  { abbr: "IVY", name: "Ivy League", display_name: "Ivy" }
+  { abbr: "IVY", name: "Ivy League", display_name: "Ivy League" }
 ]
 
 fcs_conferences.each do |conf_data|
