@@ -63,7 +63,7 @@ These issues must be resolved before any other development work. Do not proceed 
 
 | Issue | Description |
 |-------|-------------|
-| *(none)* | All blockers resolved |
+| **Gitignore team stylesheets** | Remove `app/assets/stylesheets/teams/*.scss` from git tracking, add to `.gitignore`, ensure `rake styles:regenerate_all` runs before asset precompilation in Dockerfile. Generated files shouldn't be in version control. |
 
 ### Resolved Blockers
 - ✅ **Seed data corruption** - Fixed: Removed team definitions from `seeds.rb`, teams now sourced only from `db/seeds/teams.yml` via `rake seeds:import`. Duplicate teams cleaned up by deleting those with zero affiliations.

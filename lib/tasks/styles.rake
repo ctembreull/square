@@ -28,8 +28,14 @@ namespace :styles do
       end
     end
 
-    puts "Removed #{orphaned} orphaned stylesheet#{'s' unless orphaned == 1}." if orphaned > 0
-    puts "No orphaned stylesheets found." if orphaned == 0
+    if orphaned > 0
+      puts "Removed #{orphaned} orphaned stylesheet#{'s' unless orphaned == 1}."
+      # Regenerate index to remove stale imports
+      TeamStylesheetService.regenerate_index
+      puts "Regenerated teams.scss index."
+    else
+      puts "No orphaned stylesheets found."
+    end
   end
 
   desc "Regenerate SCSS stylesheet for a specific team"
