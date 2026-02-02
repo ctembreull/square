@@ -2,7 +2,7 @@
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
-# Generated from database on 2026-02-02 20:11
+# Generated from database on 2026-02-02 20:15
 
 puts "Seeding sports structure..."
 
@@ -17,6 +17,7 @@ mbb = League.find_or_create_by!(abbr: "MBB") do |l|
   l.gender = "men"
   l.level = "college"
   l.periods = 2
+  l.espn_slug = "basketball/mens-college-basketball"
 end
 puts "✓ #{mbb.name}"
 
@@ -28,6 +29,7 @@ wbb = League.find_or_create_by!(abbr: "WBB") do |l|
   l.level = "college"
   l.periods = 4
   l.quarters_score_as_halves = true
+  l.espn_slug = "basketball/womens-college-basketball"
 end
 puts "✓ #{wbb.name}"
 
@@ -38,6 +40,7 @@ nfl = League.find_or_create_by!(abbr: "NFL") do |l|
   l.gender = "men"
   l.level = "pro"
   l.periods = 4
+  l.espn_slug = "football/nfl"
 end
 puts "✓ #{nfl.name}"
 
@@ -48,6 +51,7 @@ fbs = League.find_or_create_by!(abbr: "FBS") do |l|
   l.gender = "men"
   l.level = "college"
   l.periods = 4
+  l.espn_slug = "football/college-football"
 end
 puts "✓ #{fbs.name}"
 
@@ -117,10 +121,10 @@ wbb_conferences = [
   { abbr: "A10", name: "Atlantic 10 Conference", display_name: "Atlantic 10" },
   { abbr: "ACC", name: "Atlantic Coast Conference", display_name: "Atlantic Coast" },
   { abbr: "ASUN", name: "Atlantic Sun Conference", display_name: "Atlantic Sun" },
-  { abbr: "B12", name: "Big 12 Conference ", display_name: "Big 12" },
+  { abbr: "B12", name: "Big 12 Conference", display_name: "Big 12" },
   { abbr: "BIGEAST", name: "Big East Conference", display_name: "Big East" },
   { abbr: "BSKY", name: "Big Sky Conference", display_name: "Big Sky" },
-  { abbr: "BSOUTH", name: "Big South Conference ", display_name: "Big South" },
+  { abbr: "BSOUTH", name: "Big South Conference", display_name: "Big South" },
   { abbr: "B1G", name: "Big Ten Conference", display_name: "Big Ten" },
   { abbr: "BWEST", name: "Big West Conference", display_name: "Big West" },
   { abbr: "CAA", name: "Coastal Athletic Association", display_name: "Coastal" },
@@ -201,7 +205,20 @@ end
 # ============================================================================
 
 fcs_conferences = [
-  { abbr: "IVY", name: "Ivy League", display_name: "Ivy League" }
+  { abbr: "BSKY", name: "Big Sky Conference", display_name: "Big Sky" },
+  { abbr: "CAA", name: "Coastal Athletic Association", display_name: "Coastal" },
+  { abbr: "IND", name: "FCS Independents", display_name: "Independents" },
+  { abbr: "IVY", name: "Ivy League", display_name: "Ivy" },
+  { abbr: "MEAC", name: "Mid-Eastern Athletic Conference", display_name: "Mid-Eastern" },
+  { abbr: "MVC", name: "Missouri Valley Football Conference", display_name: "Missouri Valley" },
+  { abbr: "NEC", name: "Northeast Conference", display_name: "Northeast" },
+  { abbr: "OVCS", name: "OVC-Big South Association", display_name: "OVC - Big South" },
+  { abbr: "PAT", name: "Patriot League", display_name: "Patriot League" },
+  { abbr: "PIO", name: "Pioneer Football League", display_name: "Pioneer" },
+  { abbr: "SOU", name: "Southern Conference", display_name: "Southern" },
+  { abbr: "SLND", name: "Southland Conference", display_name: "Southland" },
+  { abbr: "SWAC", name: "Southwestern Athletic Conference", display_name: "Southwestern" },
+  { abbr: "UAC", name: "United Athletic Conference", display_name: "United" }
 ]
 
 fcs_conferences.each do |conf_data|
