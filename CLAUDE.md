@@ -282,7 +282,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Winners table period display~~ | ✅ Done - Reformat individual winning periods column for better scannability |
 | ~~**Remove Event `active` flag**~~ | ✅ Done - Removed column, scopes, form toggle, controller actions, and routes. Visibility is purely status-based. |
 | ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
-| Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
+| ~~Email template styling~~ | ✅ Done - Removed boxes, simplified to plain paragraphs with signature. Feels like a personal note now. |
 | ~~Event game list team links~~ | ✅ Done - Team names in event game items should link to game, but invisibly (no underline/color change). |
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 | Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
