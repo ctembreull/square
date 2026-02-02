@@ -12,13 +12,10 @@ namespace :styles do
 
     puts "\nGenerated #{count} team stylesheets in app/assets/stylesheets/teams/"
 
-    # Clean up orphaned stylesheets (files that don't match any team's css_slug)
+    # Clean up orphaned stylesheets (files that don't match any team's scss_slug)
     puts "\nCleaning up orphaned stylesheets..."
-    valid_slugs = Team.pluck(:abbr, :display_location, :location, :name).map do |abbr, display_location, location, name|
-      [abbr, display_location || location, name].compact.map { |s|
-        ActiveSupport::Inflector.transliterate(s).downcase.gsub(/[^a-z0-9]+/, "-").gsub(/-+$/, "")
-      }.join("-")
-    end.to_set
+    # Use the actual scss_slug method to ensure consistency with generation
+    valid_slugs = Team.all.map(&:scss_slug).to_set
 
     teams_dir = Rails.root.join("app/assets/stylesheets/teams")
     orphaned = 0
