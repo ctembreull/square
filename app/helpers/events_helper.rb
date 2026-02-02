@@ -3,9 +3,11 @@ module EventsHelper
   # Returns array of hashes sorted by total winnings (descending):
   #   { name: "Player Name", family: family_id_or_'charity', total: 150, wins: [Score, ...] }
   def aggregate_winners(event)
-    scores = event.games
-                  .preload(scores: :winner)
-                  .flat_map(&:scores)
+    # Load scores directly with all needed associations to avoid N+1 queries
+    # View accesses: win.game.title, win.game.starts_at, win.game.league (via winners_label)
+    scores = Score.joins(:game)
+                  .includes(:winner, game: :league)
+                  .where(games: { event_id: event.id })
                   .reject(&:non_scoring)
                   .select(&:winner_id)
 

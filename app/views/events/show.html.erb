@@ -113,7 +113,7 @@
 					   data-tabs-target="button" data-action="tabs#select" data-tabs-panel="games">
 						<h5 class="mb-0 text-600 fs-9">
 							<span class="fas fa-football-ball icon text-600 me-1"></span>
-							Games <span>(<%= @event.games.count %>)</span>
+							Games <span>(<%= @games.size %>)</span>
 						</h5>
 					</a>
 				</li>
@@ -122,7 +122,7 @@
 					   data-tabs-target="button" data-action="tabs#select" data-tabs-panel="posts">
 						<h5 class="mb-0 text-600 fs-9">
 							<span class="bi bi-newspaper icon text-600 me-1"></span>
-							Posts <span>(<%= @event.posts.count %>)</span>
+							Posts <span>(<%= @posts.size %>)</span>
 						</h5>
 					</a>
 				</li>
@@ -143,42 +143,42 @@
 			</ul>
 		</div>
 		<div class="card-body p-0" id="games" data-tabs-target="panel">
-			
+
 			<table class="table table-sm fs-10 m-0">
-				<% if @event.games.in_progress.any? %>
+				<% if @games_in_progress.any? %>
 					<tbody id="in-progress-games-table">
 						<tr>
 							<td colspan="9" class="bg-500 py-2">
 								<h6 class="text-200 my-0">Live Games</h6>
 							</td>
 						</tr>
-						<% @event.games.in_progress.earliest_first.each do |game| %>
+						<% @games_in_progress.each do |game| %>
 							<%= render "events/components/game_row", game: game %>
 						<% end %>
 					</tbody>
 				<% end %>
-				
-				<% if @event.games.upcoming.any? %>
+
+				<% if @games_upcoming.any? %>
 					<tbody id="upcoming-games-table">
 						<tr>
 							<td colspan="9" class="bg-500 py-2">
 								<h6 class="text-200 my-0">Upcoming Games</h6>
 							</td>
 						</tr>
-						<% @event.games.upcoming.earliest_first.each do |game| %>
+						<% @games_upcoming.each do |game| %>
 							<%= render "events/components/game_row", game: game %>
 						<% end %>
 					</tbody>
 				<% end %>
 
-				<% if @event.games.completed.any? %>
+				<% if @games_completed.any? %>
 					<tbody id="completed-games-table">
 						<tr>
 							<td colspan="9" class="bg-500 py-2">
 								<h6 class="text-200 my-0">Completed Games</h6>
 							</td>
 						</tr>
-						<% @event.games.completed.latest_first.each do |game| %>
+						<% @games_completed.each do |game| %>
 							<%= render "events/components/game_row", game: game %>
 						<% end %>
 					</tbody>
@@ -190,9 +190,9 @@
 	<!-- Posts panel: outside the card for floating card styling -->
 	<div class="d-none mt-3" id="posts" data-tabs-target="panel">
 		<div class="row">
-			<% if @event.posts.any? %>
+			<% if @posts.any? %>
 				<div class="col-8">
-					<%= render "posts/content", post: @event.posts.recent.first %>
+					<%= render "posts/content", post: @posts.first %>
 				</div>
 				<div class="col-4">
 					<div class="card" data-controller="post-list">
@@ -200,7 +200,7 @@
 						<div class="card-body py-0 px-0">
 							<table class="table table-sm fs-10 m-0">
 								<tbody>
-									<% @event.posts.recent.each do |post| %>
+									<% @posts.each do |post| %>
 										<tr data-post-list-target="item">
 											<td class="py-2 ps-1">
 												<span class="post-archive-icon bi bi-chevron-left me-1"></span><%= link_to content_post_path(post),

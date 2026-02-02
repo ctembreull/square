@@ -18,7 +18,17 @@ class EventsController < ApplicationController
   end
 
   def show
-    @banner_rows = BannerGameSelector.call(@event)
+    # Eager load all games with associations to avoid N+1 queries
+    @games = @event.games.includes(:home_team, :away_team, :league, :scores).to_a
+    @banner_rows = BannerGameSelector.call(@event, games: @games)
+
+    # Partition games by status in Ruby (avoids multiple DB queries)
+    @games_in_progress = @games.select(&:in_progress?).sort_by(&:starts_at)
+    @games_upcoming = @games.select(&:upcoming?).sort_by(&:starts_at)
+    @games_completed = @games.select(&:completed?).sort_by { |g| -g.starts_at.to_i }
+
+    # Preload posts (sorted by recent)
+    @posts = @event.posts.order(created_at: :desc).to_a
   end
 
   def display

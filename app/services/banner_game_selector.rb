@@ -1,11 +1,15 @@
 class BannerGameSelector < ApplicationService
   Result = Struct.new(:rows, :headers, keyword_init: true)
 
-  def initialize(event)
+  # Accept optional preloaded games to avoid N+1 queries
+  def initialize(event, games: nil)
     @event = event
-    @upcoming = event.games.upcoming.earliest_first.to_a
-    @in_progress = event.games.in_progress.earliest_first.to_a
-    @completed = event.games.completed.latest_first.to_a
+    all_games = games || event.games.includes(:home_team, :away_team, :league, :scores).to_a
+
+    # Partition in Ruby to use preloaded data
+    @upcoming = all_games.select(&:upcoming?).sort_by(&:starts_at)
+    @in_progress = all_games.select(&:in_progress?).sort_by(&:starts_at)
+    @completed = all_games.select(&:completed?).sort_by { |g| -g.starts_at.to_i }
   end
 
   def call

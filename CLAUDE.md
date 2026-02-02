@@ -285,7 +285,7 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Email template styling~~ | ✅ Done - Removed boxes, simplified to plain paragraphs with signature. Feels like a personal note now. |
 | ~~Event game list team links~~ | ✅ Done - Team names in event game items should link to game, but invisibly (no underline/color change). |
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
-| Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
+| ~~Query optimization on events/show~~ | ✅ Done - Eager load games, teams, leagues, scores; partition by status in Ruby; preload posts |
 | **Tippy.js tooltips** | Replace Bootstrap tooltips with Tippy.js site-wide. Bootstrap's built-in tooltips are unreliable. |
 | **Teams table filters** | Filter by missing affiliations, colors, styles, or levels. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
 | ~~**(Stretch) Auto-populate game from ESPN URL**~~ | ✅ Done - Paste ESPN URL → fetch button hits JSON API → auto-fills date, time, timezone, broadcast, league, teams with styles. Focuses title field for quick entry. |
@@ -360,7 +360,7 @@ Target: Ready for football season
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
 | ~~**PDF caching**~~ | ✅ Done - PDFs cached in Active Storage, served if fresh. Stale detection via game/score `updated_at`. `rake storage:purge_unattached` cleans orphaned blobs. |
 | **Security audit** | Run Brakeman + bundler-audit. Check: CSRF protection, param filtering, SQL injection, auth bypass, mass assignment. Review Fly.io secrets exposure. Low-value target but protect family fun from griefers. |
-| **Query optimization on events#winners** | Check for N+1 queries, add eager loading. Aggregation across games, scores, and players likely has inefficiencies. |
+| ~~**Query optimization on events#winners**~~ | ✅ Done - Load scores directly with includes for game and league associations |
 | **Mobile views (public only)** | (Maybe) Rails request variants for mobile device detection. Event show: vertical stack of game score cards. Game show: score card + player-filtered "your squares" list (dropdown sets cookie for server-side filtering) + stacked winners. Replaces 10x10 grid with simple list view. **⚠️ PUBLIC PAGES ONLY - NO ADMIN MOBILE EVER.** |
 
 ### Event PDF Export (Implemented)
@@ -407,6 +407,15 @@ Target: Ready for football season
 | **External asset storage** | Configure Rails to serve assets from external storage (S3, Cloudflare R2, etc.) to avoid disk bloat on Fly.io. Active Storage supports multiple backends. Logos (~350 teams × ~50KB) would be ~17MB initially but plan for growth and multiple sports. |
 | **Conference realignment detection** | Scrape ESPN standings pages to detect conference membership changes. Compare against current affiliations, generate diff report showing teams that moved. Dry-run mode previews changes; `--apply` updates affiliations. Useful for annual realignment (e.g., Mountain West → Pac-12 migrations for 2026 football). Infrastructure already exists: `script/data/*.json` standings files contain team-to-conference mappings via ESPN IDs. |
 
+## Ongoing Monitoring
+
+Items that are "done" but need periodic attention as the app scales or usage patterns change.
+
+| Item | Notes |
+|------|-------|
+| **Query performance on events#show** | Currently 42 queries (~114ms) for a small event. Dense events (70+ games like football season) may need further optimization. Watch for: `_game_score_card` per-period queries, partial rendering overhead. |
+| **SolidQueue database locks** | Fixed with `processes: 0` in dev. Monitor production for any lock contention under load. |
+
 ## Small Fixes (No Milestone)
 
 | Item | Notes |
@@ -424,4 +433,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-02-01
+**Last Updated**: 2026-02-02
