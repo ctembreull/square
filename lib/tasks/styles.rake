@@ -1,5 +1,5 @@
 namespace :styles do
-  desc "Regenerate all team SCSS stylesheets"
+  desc "Regenerate all team SCSS stylesheets and remove orphans"
   task regenerate_all: :environment do
     puts "Regenerating team stylesheets..."
 
@@ -11,6 +11,28 @@ namespace :styles do
     end
 
     puts "\nGenerated #{count} team stylesheets in app/assets/stylesheets/teams/"
+
+    # Clean up orphaned stylesheets (files that don't match any team's css_slug)
+    puts "\nCleaning up orphaned stylesheets..."
+    valid_slugs = Team.pluck(:abbr, :display_location, :location, :name).map do |abbr, display_location, location, name|
+      [abbr, display_location || location, name].compact.map { |s|
+        ActiveSupport::Inflector.transliterate(s).downcase.gsub(/[^a-z0-9]+/, "-").gsub(/-+$/, "")
+      }.join("-")
+    end.to_set
+
+    teams_dir = Rails.root.join("app/assets/stylesheets/teams")
+    orphaned = 0
+    Dir.glob(teams_dir.join("_*.scss")).each do |file|
+      slug = File.basename(file, ".scss").sub(/^_/, "")
+      unless valid_slugs.include?(slug)
+        File.delete(file)
+        orphaned += 1
+        puts "  Deleted orphan: #{File.basename(file)}"
+      end
+    end
+
+    puts "Removed #{orphaned} orphaned stylesheet#{'s' unless orphaned == 1}." if orphaned > 0
+    puts "No orphaned stylesheets found." if orphaned == 0
   end
 
   desc "Regenerate SCSS stylesheet for a specific team"

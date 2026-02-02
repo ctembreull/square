@@ -430,7 +430,7 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | ✅ Winners table period display | Done - Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. Tooltip added to show game title and period identifier. |
 | ✅ **Player form: Charity type handling** | Done - Stimulus controller disables Family dropdown and sets Chances to 0 when Charity type selected. Note: May need revisiting if governance approves family-selected charities proposal. |
 | **schema.yaml sync** | Design doc is stale (`brand_url` → `brand_info`, `suffix` removed). Either manually update or create rake task to generate from `db/schema.rb`. |
-| **Orphan CSS cleanup** | When team `display_location` or abbreviation changes, `css_slug` changes, generating new CSS file but leaving old one orphaned. Need rake task to purge CSS files that don't match any current team's `css_slug`. |
+| ✅ **Orphan CSS cleanup** | Done - Added to `rake styles:regenerate_all` as final cleanup step. Deletes any `_*.scss` files in teams/ that don't match a current team's `css_slug`. |
 
 ---
 
