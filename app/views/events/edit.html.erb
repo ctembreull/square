@@ -64,9 +64,6 @@
             <% end %>
           </dd>
 
-          <dt>Visibility</dt>
-          <dd><%= @event.active? ? "Active (visible)" : "Inactive (hidden)" %></dd>
-
           <dt>Games</dt>
           <dd><%= @event.games.count %> games</dd>
 
@@ -90,28 +87,20 @@
           <% end %>
         </div>
       </div>
-    <% else %>
+    <% elsif @event.in_progress? && @event.end_date.blank? %>
       <div class="card border-warning">
         <div class="card-header py-2 bg-warning">
-          <h6 class="mb-0">Cannot Delete</h6>
+          <h6 class="mb-0">End Event</h6>
         </div>
         <div class="card-body">
-          <p class="text-muted">
+          <p class="text-muted mb-2">
             <span class="fas fa-info-circle me-1"></span>
-            This event has <%= @event.games.count %> games and cannot be deleted. Deactivate it instead to hide from players.
+            Mark this event as completed by setting the end date to today.
           </p>
-          <% if @event.active? %>
-            <%= link_to deactivate_event_path(@event),
-              data: { turbo_method: :patch, turbo_confirm: "Deactivate #{@event.title}?" },
+          <%= link_to end_event_event_path(@event),
+              data: { turbo_method: :patch, turbo_confirm: "End this event now? This will set the end date to today." },
               class: "btn btn-outline-warning btn-sm" do %>
-            <span class="fas fa-eye-slash me-1"></span> Deactivate
-            <% end %>
-          <% else %>
-            <%= link_to activate_event_path(@event),
-                data: { turbo_method: :patch },
-                class: "btn btn-outline-success btn-sm" do %>
-              <span class="fas fa-eye me-1"></span> Activate
-            <% end %>
+            <span class="fas fa-flag-checkered me-1"></span> End Now
           <% end %>
         </div>
       </div>

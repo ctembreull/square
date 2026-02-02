@@ -1,9 +1,9 @@
 class EventsController < ApplicationController
   skip_before_action :require_admin, only: [ :index, :show, :display, :home ]
-  before_action :set_event, only: [ :show, :edit, :update, :destroy, :activate, :deactivate, :end_event, :winners, :winners_worksheet, :display, :pdf, :generate_pdf ]
+  before_action :set_event, only: [ :show, :edit, :update, :destroy, :end_event, :winners, :winners_worksheet, :display, :pdf, :generate_pdf ]
 
   def home
-    current_event = Event.active.in_progress.first
+    current_event = Event.in_progress.first
     if current_event
       redirect_to event_path(current_event)
     else
@@ -26,7 +26,7 @@ class EventsController < ApplicationController
   end
 
   def new
-    @event = Event.new(active: true)
+    @event = Event.new
   end
 
   def edit
@@ -56,16 +56,6 @@ class EventsController < ApplicationController
     else
       redirect_to events_path, alert: @event.errors.full_messages.to_sentence
     end
-  end
-
-  def activate
-    @event.update(active: true)
-    redirect_to events_path, notice: "#{@event.title} has been activated."
-  end
-
-  def deactivate
-    @event.update(active: false)
-    redirect_to events_path, notice: "#{@event.title} has been deactivated."
   end
 
   def end_event
@@ -148,6 +138,6 @@ class EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:title, :start_date, :end_date, :active)
+    params.require(:event).permit(:title, :start_date, :end_date)
   end
 end

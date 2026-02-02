@@ -65,7 +65,7 @@
 							</a>
 							<div class="dropdown-menu dropdown-caret dropdown-menu-card border-0 mt-0" aria-labelledby="events">
                 <div class="bg-white dark__bg-1000 rounded-3 py-2">
-									<% Event.active.in_progress.each do |event| %>
+									<% Event.in_progress.each do |event| %>
 										<%= link_to event.title, event_path(event), class: "dropdown-item link-600 fw-medium" %>
 									<% end %>
 									<%= link_to "Older...", events_path, class: "dropdown-item text-muted" %>

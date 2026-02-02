@@ -10,20 +10,10 @@
     </div>
   <% end %>
 
-  <div class="row">
-    <div class="col-md-8 mb-3">
-      <%= form.label :title, class: "form-label" %>
-      <%= form.text_field :title, class: "form-control", required: true, placeholder: "e.g., March Madness 2026", autofocus: true %>
-      <div class="form-text">A descriptive name for this event.</div>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <%= form.label :active, class: "form-label d-block" %>
-      <div class="form-check form-switch mt-2">
-        <%= form.check_box :active, class: "form-check-input", role: "switch" %>
-        <%= form.label :active, "Active (visible to players)", class: "form-check-label" %>
-      </div>
-    </div>
+  <div class="mb-3">
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control", required: true, placeholder: "e.g., March Madness 2026", autofocus: true %>
+    <div class="form-text">A descriptive name for this event.</div>
   </div>
 
   <div class="row">

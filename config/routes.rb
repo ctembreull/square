@@ -17,8 +17,6 @@ Rails.application.routes.draw do
       get :winners_worksheet
       get :pdf
       post :generate_pdf
-      patch :activate
-      patch :deactivate
       patch :end_event
     end
   end

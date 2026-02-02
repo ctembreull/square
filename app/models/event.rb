@@ -12,8 +12,6 @@ class Event < ApplicationRecord
   validate :end_date_after_start_date, if: -> { end_date.present? }
 
   # Scopes
-  scope :active, -> { where(active: true) }
-  scope :inactive, -> { where(active: false) }
   scope :in_progress, -> { where("start_date <= ? AND (end_date IS NULL OR end_date >= ?)", Date.today, Date.today) }
   scope :upcoming, -> { where("start_date > ?", Date.today) }
   scope :completed, -> { where("end_date IS NOT NULL AND end_date < ?", Date.today) }

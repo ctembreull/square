@@ -280,12 +280,13 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Posts UI: active post styling~~ | ✅ Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
 | ~~Broadcast logger for job visibility~~ | ✅ Moot - SolidQueue in-process mode (`processes: 0` in dev) outputs to Puma logs |
 | ~~Winners table period display~~ | ✅ Done - Reformat individual winning periods column for better scannability |
-| **Remove Event `active` flag** | Delete column, scopes, form toggle, and `.active` chains in controller/layout. Visibility is purely status-based (upcoming for admins only). |
+| ~~**Remove Event `active` flag**~~ | ✅ Done - Removed column, scopes, form toggle, controller actions, and routes. Visibility is purely status-based. |
 | ~~**Team game history**~~ | ✅ Done - Team show page displays game history table. Game form shows calendar icon with last-used tooltip per team. |
 | Email template styling | Make email template more personal, less businesslike. User has specific pointers for implementation. |
 | ~~Event game list team links~~ | ✅ Done - Team names in event game items should link to game, but invisibly (no underline/color change). |
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 | Query optimization on events/show | Check for N+1 queries, add eager loading as needed |
+| **Tippy.js tooltips** | Replace Bootstrap tooltips with Tippy.js site-wide. Bootstrap's built-in tooltips are unreliable. |
 | **Teams table filters** | Filter by missing affiliations, colors, styles, or levels. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
 | ~~**(Stretch) Auto-populate game from ESPN URL**~~ | ✅ Done - Paste ESPN URL → fetch button hits JSON API → auto-fills date, time, timezone, broadcast, league, teams with styles. Focuses title field for quick entry. |
 

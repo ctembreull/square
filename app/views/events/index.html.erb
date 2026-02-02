@@ -183,15 +183,9 @@
 												<% if event.in_progress? && event.end_date.nil? %>
 													<%= link_to end_event_event_path(event),
 															data: { turbo_method: :patch, turbo_confirm: "End #{event.title} today?" },
-															class: "dropdown-item text-success" do %>
+															class: "dropdown-item text-warning" do %>
 														<span class="fas fa-flag-checkered me-2"></span> End Event
 													<% end %>
-												<% end %>
-												<div class="dropdown-divider"></div>
-												<%= link_to deactivate_event_path(event),
-														data: { turbo_method: :patch, turbo_confirm: "Deactivate #{event.title}?" },
-														class: "dropdown-item text-warning" do %>
-													<span class="fas fa-eye-slash me-2"></span> Deactivate
 												<% end %>
 											</div>
 										</td>
