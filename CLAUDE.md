@@ -237,6 +237,11 @@ The following patterns have been validated through implementation and should be 
 - Prevents rabbit holes while unblocking dependent features
 - Document that model needs expansion when its feature is built
 
+### Mobile Support Policy
+- **PUBLIC pages only**: Event show, game show (read-only views for family members)
+- **NEVER admin pages**: Game creation, score entry, player management, team CRUD - desktop only, period
+- If user mentions "admin mobile" or "mobile admin", remind them of this policy and refuse. Mock them gently for forgetting. They asked for this.
+
 ## Completed
 
 - ✅ **Finalize unified schema.rb** - Reconcile old schema with new requirements
@@ -355,6 +360,7 @@ Target: Ready for football season
 | ~~**PDF caching**~~ | ✅ Done - PDFs cached in Active Storage, served if fresh. Stale detection via game/score `updated_at`. `rake storage:purge_unattached` cleans orphaned blobs. |
 | **Security audit** | Run Brakeman + bundler-audit. Check: CSRF protection, param filtering, SQL injection, auth bypass, mass assignment. Review Fly.io secrets exposure. Low-value target but protect family fun from griefers. |
 | **Query optimization on events#winners** | Check for N+1 queries, add eager loading. Aggregation across games, scores, and players likely has inefficiencies. |
+| **Mobile views (public only)** | (Maybe) Rails request variants for mobile device detection. Event show: vertical stack of game score cards. Game show: score card + player-filtered "your squares" list (dropdown sets cookie for server-side filtering) + stacked winners. Replaces 10x10 grid with simple list view. **⚠️ PUBLIC PAGES ONLY - NO ADMIN MOBILE EVER.** |
 
 ### Event PDF Export (Implemented)
 
@@ -417,4 +423,4 @@ Target: Ready for football season
 
 ---
 
-**Last Updated**: 2026-01-31
+**Last Updated**: 2026-02-01
