@@ -286,8 +286,8 @@ Target: NCAA Tournament testing on Fly.io
 | ~~Event game list team links~~ | ✅ Done - Team names in event game items should link to game, but invisibly (no underline/color change). |
 | ~~Grid highlighter after Turbo refresh~~ | ✅ Done - Switched winners rows to use Stimulus actions instead of manual listeners |
 | ~~Query optimization on events/show~~ | ✅ Done - Eager load games, teams, leagues, scores; partition by status in Ruby; preload posts |
-| **Tippy.js tooltips** | Replace Bootstrap tooltips with Tippy.js site-wide. Bootstrap's built-in tooltips are unreliable. |
-| **Teams table filters** | Filter by missing affiliations, colors, styles, or levels. Helps identify incomplete team records after bulk import. Colors entered manually (not from ESPN). |
+| ~~**Tippy.js tooltips**~~ | ✅ Done - Replaced Bootstrap tooltips with Tippy.js. Stimulus controller auto-initializes tooltips via `data-tippy-content` attribute. |
+| ~~**Teams table sorting**~~ | ✅ Done - Affiliations/Colors/Styles columns now sortable via Ransack. Click header to sort ascending (zeros first) to find incomplete teams. |
 | ~~**(Stretch) Auto-populate game from ESPN URL**~~ | ✅ Done - Paste ESPN URL → fetch button hits JSON API → auto-fills date, time, timezone, broadcast, league, teams with styles. Focuses title field for quick entry. |
 
 ### Fly.io Deployment Notes
@@ -406,6 +406,7 @@ Target: Ready for football season
 | **Team logos as local assets** | Build logo directory indexed by `css_slug`. Seed initially from ESPN API URLs, maintain locally. Self-hosted, no runtime external dependency. |
 | **External asset storage** | Configure Rails to serve assets from external storage (S3, Cloudflare R2, etc.) to avoid disk bloat on Fly.io. Active Storage supports multiple backends. Logos (~350 teams × ~50KB) would be ~17MB initially but plan for growth and multiple sports. |
 | **Conference realignment detection** | Scrape ESPN standings pages to detect conference membership changes. Compare against current affiliations, generate diff report showing teams that moved. Dry-run mode previews changes; `--apply` updates affiliations. Useful for annual realignment (e.g., Mountain West → Pac-12 migrations for 2026 football). Infrastructure already exists: `script/data/*.json` standings files contain team-to-conference mappings via ESPN IDs. |
+| **Family-selected charities** | (Governance proposal pending) Allow each family/single to choose a favorite charity. Charities would be associated with families and have `chances` based on selection count (e.g., if two families pick World Central Kitchen, it gets double chances). Would require rethinking current Charity model where chances=0 and family_id=null. |
 
 ## Ongoing Monitoring
 
@@ -427,7 +428,7 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | ✅ Posts UI: add edit links | Edit button in post content header, cancel returns to event#posts |
 | ✅ Posts UI: active post styling | Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
 | ✅ Winners table period display | Done - Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. Tooltip added to show game title and period identifier. |
-| **Player form: Charity type handling** | When "Charity" is selected in the type dropdown, disable the Family dropdown and set Chances to 0 (also disabled). Stimulus controller to toggle field states based on type selection. |
+| ✅ **Player form: Charity type handling** | Done - Stimulus controller disables Family dropdown and sets Chances to 0 when Charity type selected. Note: May need revisiting if governance approves family-selected charities proposal. |
 | **schema.yaml sync** | Design doc is stale (`brand_url` → `brand_info`, `suffix` removed). Either manually update or create rake task to generate from `db/schema.rb`. |
 | **Orphan CSS cleanup** | When team `display_location` or abbreviation changes, `css_slug` changes, generating new CSS file but leaving old one orphaned. Need rake task to purge CSS files that don't match any current team's `css_slug`. |
 

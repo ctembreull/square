@@ -37,11 +37,14 @@
     <%# Choices.js for searchable selects %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@11.0.6/public/assets/styles/choices.min.css">
     <script src="https://cdn.jsdelivr.net/npm/choices.js@11.0.6/public/assets/scripts/choices.min.js"></script>
+    <%# Tippy.js for tooltips %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@6/dist/tippy.css">
+    <script>window.process = { env: { NODE_ENV: 'production' }}</script>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <main class="main" id="top">
+    <main class="main" id="top" data-controller="tippy">
 			<div class="container" data-layout="container">
 
 				<nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg">

@@ -1,5 +1,5 @@
 import utils from 'falcon/utils';
-import tooltipInit from 'falcon/tooltip';
+// Tooltips now handled by Tippy.js via tippy_controller.js
 import popoverInit from 'falcon/popover';
 import handleNavbarVerticalCollapsed from 'falcon/navbar-vertical';
 import listInit from 'falcon/list';
@@ -9,9 +9,6 @@ import listInit from 'falcon/list';
 /* -------------------------------------------------------------------------- */
 
 utils.docReady(() => {
-  // Initialize Bootstrap tooltips
-  tooltipInit();
-
   // Initialize Bootstrap popovers
   popoverInit();
 

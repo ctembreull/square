@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import tippy from "tippy.js"
 
 // Choices.js is loaded via CDN and attaches to window
 // We'll access it dynamically since the CDN version isn't an ES module
@@ -117,12 +118,13 @@ export default class extends Controller {
     const team = this.teamsData[teamId]
     if (team?.last_used) {
       iconTarget.classList.remove("d-none")
-      iconTarget.setAttribute("title", `Last used: ${team.last_used}`)
-      // Reinitialize tooltip if Bootstrap is available
-      if (typeof bootstrap !== "undefined") {
-        const existingTooltip = bootstrap.Tooltip.getInstance(iconTarget)
-        if (existingTooltip) existingTooltip.dispose()
-        new bootstrap.Tooltip(iconTarget)
+      const content = `Last used: ${team.last_used}`
+      iconTarget.setAttribute("data-tippy-content", content)
+      // Destroy existing tippy instance and create new one
+      if (iconTarget._tippy) {
+        iconTarget._tippy.setContent(content)
+      } else {
+        tippy(iconTarget, { content, placement: "top" })
       }
     } else {
       iconTarget.classList.add("d-none")

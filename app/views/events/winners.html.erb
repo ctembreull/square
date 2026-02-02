@@ -105,8 +105,8 @@
 											<% winner[:wins].each do |win| %>
 
 												<%= link_to game_path(win.game, highlight_period: win.period), class: "text-decoration-none" do %>
-													<span class="badge badge-subtle-secondary fs-10 me-1 mb-1" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-														title="<%= win.game.title %>, <%= win.winners_label %>">
+													<span class="badge badge-subtle-secondary fs-10 me-1 mb-1"
+														data-tippy-content="<%= win.game.title %>, <%= win.winners_label %>" data-tippy-placement="bottom">
 														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
 														<span class="text-success-emphasis ms-1">$<%= win.prize %></span>
 													</span>
@@ -156,8 +156,8 @@
 										<div class="collapse" id="<%= collapse_id %>">
 											<% charity[:wins].each do |win| %>
 												<%= link_to game_path(win.game, highlight_period: win.period), class: "text-decoration-none" do %>
-													<span class="badge badge-subtle-secondary fs-10 me-1 mb-1" data-bs-toggle="tooltip" data-bs-placement="bottom"
-														title="<%= win.game.title %>, <%= win.winners_label %>">
+													<span class="badge badge-subtle-secondary fs-10 me-1 mb-1"
+														data-tippy-content="<%= win.game.title %>, <%= win.winners_label %>" data-tippy-placement="bottom">
 														<%= win.game.starts_at.strftime("%-m/%-d") %> P<%= win.period %>
 														<span class="text-success-emphasis ms-1">$<%= win.prize %></span>
 													</span>

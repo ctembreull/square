@@ -65,15 +65,15 @@
 						<table class="table table-sm table-striped fs-10 mb-0 overflow-hidden">
 							<thead class="bg-200">
 								<tr>
-									<th class="text-900"><%= sort_link(@q, :abbr, "Abbr") %></th>
+									<th class="text-900" style="width: 5%"><%= sort_link(@q, :abbr, "Abbr") %></th>
 									<th class="text-900"><%= sort_link(@q, :location, "Name") %></th>
-									<th class="text-900">Women's Name</th>
-									<th class="text-900"><%= sort_link(@q, :level, "Level") %></th>
-									<th class="text-900">Affiliations</th>
-									<th class="text-900">Colors</th>
-									<th class="text-900">Styles</th>
-									<th class="text-900"><%= sort_link(@q, :created_at, "Created") %></th>
-									<th class="text-900 text-end">Actions</th>
+									<th class="text-900" style="width: 15%">Women's Name</th>
+									<th class="text-900" style="width: 6%"><%= sort_link(@q, :level, "Level") %></th>
+									<th class="text-900" style="width: 9%"><%= sort_link(@q, :affiliations_count, "Affil.") %></th>
+									<th class="text-900" style="width: 7%"><%= sort_link(@q, :colors_count, "Colors") %></th>
+									<th class="text-900" style="width: 7%"><%= sort_link(@q, :styles_count, "Styles") %></th>
+									<th class="text-900" style="width: 12%"><%= sort_link(@q, :created_at, "Created") %></th>
+									<th class="text-900 text-end" style="width: 5%">Actions</th>
 								</tr>
 							</thead>
 							<tbody>

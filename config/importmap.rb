@@ -28,3 +28,6 @@ pin "falcon/list", to: "falcon/list.js"
 # Note: Choices.js is loaded via script tag in application.html.erb (not ES module compatible)
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.esm.js"
+
+# Tippy.js for tooltips (replaces Bootstrap tooltips)
+pin "tippy.js", to: "https://cdn.jsdelivr.net/npm/tippy.js@6/dist/tippy.esm.js"

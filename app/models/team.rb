@@ -19,11 +19,25 @@ class Team < ApplicationRecord
 
   # Ransack configuration
   def self.ransackable_attributes(auth_object = nil)
-    %w[abbr created_at display_location level location name updated_at]
+    %w[abbr created_at display_location level location name updated_at
+       colors_count styles_count affiliations_count]
   end
 
   def self.ransackable_associations(auth_object = nil)
     %w[affiliations colors styles]
+  end
+
+  # Virtual attributes for sorting by association counts
+  ransacker :colors_count do
+    Arel.sql("(SELECT COUNT(*) FROM colors WHERE colors.team_id = teams.id)")
+  end
+
+  ransacker :styles_count do
+    Arel.sql("(SELECT COUNT(*) FROM styles WHERE styles.team_id = teams.id)")
+  end
+
+  ransacker :affiliations_count do
+    Arel.sql("(SELECT COUNT(*) FROM affiliations WHERE affiliations.team_id = teams.id)")
   end
 
   def games
