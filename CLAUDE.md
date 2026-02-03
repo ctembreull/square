@@ -349,6 +349,7 @@ Target: Ready for football season
 
 | Item | Notes |
 |------|-------|
+| **Runtime inline styles (public pages)** | HIGH PRIORITY. Enables emergent style changes without deploy. **Hybrid approach**: Compare `style.created_at` against deploy timestamp (written to `/rails/DEPLOY_TIMESTAMP` during Docker build). Styles older than deploy → use compiled CSS class. Styles newer than deploy → inline CSS. Keeps HTML lean for normal pages while allowing mid-event emergency styles. On next deploy, new styles get baked into compiled CSS. Solves "two blue teams in same bracket" problem during live events. |
 | ESPN scraper improvements | Better error handling |
 | Transaction wrapper for score processing | Data integrity |
 | Scraper registry pattern | Cleaner architecture |
@@ -432,7 +433,8 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | ✅ **Player form: Charity type handling** | Done - Stimulus controller disables Family dropdown and sets Chances to 0 when Charity type selected. Note: May need revisiting if governance approves family-selected charities proposal. |
 | **schema.yaml sync** | Design doc is stale (`brand_url` → `brand_info`, `suffix` removed). Either manually update or create rake task to generate from `db/schema.rb`. |
 | ✅ **Orphan CSS cleanup** | Done - Added to `rake styles:regenerate_all` as final cleanup step. Deletes any `_*.scss` files in teams/ that don't match a current team's `css_slug`. |
+| **Color/Style edit deployment warning** | Show alert on Colors and Styles forms: "Changes saved to database but won't be visible until next deployment. Run `rake seeds:export` and redeploy to apply." Team stylesheets are generated at build time from YAML, not runtime from database. |
 
 ---
 
-**Last Updated**: 2026-02-02
+**Last Updated**: 2026-02-03

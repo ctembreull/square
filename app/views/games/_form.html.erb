@@ -24,12 +24,12 @@
 		<div class="col-2">
 			<%= form.label :period_prize, "Period Prize", class: "form-label" %>
 			<%= form.number_field :period_prize, class: "form-control form-control-sm", step: 25,
-					data: { game_form_target: "periodPrize", action: "change->game-form#periodPrizeChanged" } %>
+					data: { game_form_target: "periodPrize", action: "input->game-form#periodPrizeChanged keyup->game-form#periodPrizeChanged" } %>
 		</div>
 		<div class="col-2">
 			<%= form.label :final_prize, "Final Prize", class: "form-label" %>
 			<%= form.number_field :final_prize, class: "form-control form-control-sm", step: 25,
-					data: { game_form_target: "finalPrize", action: "change->game-form#finalPrizeChanged" } %>
+					data: { game_form_target: "finalPrize", action: "input->game-form#finalPrizeChanged keyup->game-form#finalPrizeChanged" } %>
 		</div>
 	</div>
 
