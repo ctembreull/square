@@ -102,6 +102,24 @@ class Game < ApplicationRecord
     starts_at.in_time_zone(zone)
   end
 
+  # Extract the ESPN game id parameter from this game's score url
+  def get_espn_game_id
+    score_url.delete_prefix("https://www.espn.com/").split("/")[4]
+  end
+
+  # Get the ESPN API url for the summary of this game
+  def get_espn_api_summary_url
+    base_url = "https://site.api.espn.com/apis/site/v2/sports/"
+    base_url + league.espn_slug + "/summary?event=" + get_espn_game_id
+  end
+
+  # Get the ESPN API url for the boxscore to this game
+  def get_espn_api_boxscore_url
+    # https://cdn.espn.com/core/mens-college-basketball/boxscore?xhr=1&gameId=401825482
+    base_url = "https://cdn.espn.com/core/"
+    base_url + league.espn_slug.split("/")[1] + "/boxscore?xhr=1&gameId=" + get_espn_game_id
+  end
+
   # Status helpers
   def upcoming?
     status == "upcoming"
