@@ -63,9 +63,10 @@ These issues must be resolved before any other development work. Do not proceed 
 
 | Issue | Description |
 |-------|-------------|
-| **Gitignore team stylesheets** | Remove `app/assets/stylesheets/teams/*.scss` from git tracking, add to `.gitignore`, ensure `rake styles:regenerate_all` runs before asset precompilation in Dockerfile. Generated files shouldn't be in version control. |
+| *(none)* | All blockers resolved |
 
 ### Resolved Blockers
+- ✅ **Gitignore team stylesheets** - Done: `app/assets/stylesheets/teams/` and `teams.scss` removed from git, added to `.gitignore`. New `bin/generate-team-styles` script generates stylesheets from `teams.yml` at Docker build time (before asset precompilation).
 - ✅ **Seed data corruption** - Fixed: Removed team definitions from `seeds.rb`, teams now sourced only from `db/seeds/teams.yml` via `rake seeds:import`. Duplicate teams cleaned up by deleting those with zero affiliations.
 - ✅ **Player export/import** - Done: `rake players:export` and `rake players:import` tasks created. Exports exclude encrypted emails (must be re-entered after import).
 
