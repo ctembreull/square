@@ -65,6 +65,14 @@ These issues must be resolved before any other development work. Do not proceed 
 |-------|-------------|
 | *(none)* | All blockers resolved |
 
+## Next Session Priority
+
+**Deploy 2026-02-04**: Push current commits (runtime inline styles, probability heat map) then freeze until Monday 2026-02-10 (after Super Bowl).
+
+**#1 Priority - R2 Infrastructure** (required before football season, now effectively required for beta):
+1. **Litestream backups** - Continuous SQLite replication to R2
+2. **Production-as-source workflow** - Daily R2 sync (`r2:push`, `r2:pull` tasks)
+
 ### Resolved Blockers
 - ✅ **Gitignore team stylesheets** - Done: `app/assets/stylesheets/teams/` and `teams.scss` removed from git, added to `.gitignore`. New `bin/generate-team-styles` script generates stylesheets from `teams.yml` at Docker build time (before asset precompilation).
 - ✅ **Seed data corruption** - Fixed: Removed team definitions from `seeds.rb`, teams now sourced only from `db/seeds/teams.yml` via `rake seeds:import`. Duplicate teams cleaned up by deleting those with zero affiliations.
