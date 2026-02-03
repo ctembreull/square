@@ -71,6 +71,10 @@ RUN ./bin/generate-team-styles
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
 RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
+# Record deploy timestamp for runtime inline styles detection
+# Styles updated after this timestamp will be rendered inline instead of using compiled CSS
+RUN date -u +%Y-%m-%dT%H:%M:%SZ > DEPLOY_TIMESTAMP
+
 # Note: Keep node_modules - Grover needs puppeteer at runtime for PDF generation
 
 # Final stage for app image

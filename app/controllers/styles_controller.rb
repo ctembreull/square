@@ -9,6 +9,7 @@ class StylesController < ApplicationController
 
   def create
     @style = Style.new(style_params)
+    @style.runtime_style = true  # UI-created styles need inline CSS until next deploy
     @team = @style.team
 
     if @style.save

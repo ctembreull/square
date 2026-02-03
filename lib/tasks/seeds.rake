@@ -72,7 +72,7 @@ namespace :seeds do
       team = Team.all.find { |t| t.scss_slug == team_slug }
 
       if team
-        team.update!(
+        team.assign_attributes(
           abbr: team_data["abbr"],
           location: team_data["location"],
           display_location: team_data["display_location"],
@@ -84,7 +84,10 @@ namespace :seeds do
           espn_mens_slug: team_data["espn_mens_slug"],
           espn_womens_slug: team_data["espn_womens_slug"]
         )
-        updated[:teams] += 1
+        if team.changed?
+          team.save!
+          updated[:teams] += 1
+        end
       else
         team = Team.create!(
           abbr: team_data["abbr"],
@@ -107,12 +110,15 @@ namespace :seeds do
           existing_color = team.colors.find { |c| c.name.downcase.gsub(/[^a-z0-9]+/, "-").gsub(/-+$/, "") == color_slug }
 
           if existing_color
-            existing_color.update!(
+            existing_color.assign_attributes(
               name: color_data["name"],
               hex: color_data["hex"],
               primary: color_data["primary"] || false
             )
-            updated[:colors] += 1
+            if existing_color.changed?
+              existing_color.save!
+              updated[:colors] += 1
+            end
           else
             team.colors.create!(
               name: color_data["name"],
@@ -130,17 +136,22 @@ namespace :seeds do
           existing_style = team.styles.find { |s| s.scss_slug == style_slug }
 
           if existing_style
-            existing_style.update!(
+            existing_style.assign_attributes(
               name: style_data["name"],
               css: style_data["css"],
-              default: style_data["default"] || false
+              default: style_data["default"] || false,
+              runtime_style: false
             )
-            updated[:styles] += 1
+            if existing_style.changed?
+              existing_style.save!
+              updated[:styles] += 1
+            end
           else
             team.styles.create!(
               name: style_data["name"],
               css: style_data["css"],
-              default: style_data["default"] || false
+              default: style_data["default"] || false,
+              runtime_style: false
             )
             created[:styles] += 1
           end

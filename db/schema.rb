@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_02_02_203513) do
+ActiveRecord::Schema[8.1].define(version: 2026_02_03_193411) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -190,6 +190,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_02_203513) do
     t.text "css", null: false
     t.boolean "default", default: false, null: false
     t.string "name", null: false
+    t.boolean "runtime_style", default: false, null: false
     t.bigint "team_id", null: false
     t.datetime "updated_at", null: false
     t.index ["team_id"], name: "index_styles_on_team_id"
