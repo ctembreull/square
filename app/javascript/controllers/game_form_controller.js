@@ -4,7 +4,7 @@ import tippy from "tippy.js"
 // Choices.js is loaded via CDN and attaches to window
 // We'll access it dynamically since the CDN version isn't an ES module
 export default class extends Controller {
-  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner", "awayLastUsed", "homeLastUsed", "eventId", "scoreUrl", "scoreUrlLabel", "espnApiUrl", "fetchButton", "localDate", "localTime", "localTimezone", "broadcastNetwork", "title"]
+  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner", "awayLastUsed", "homeLastUsed", "eventId", "scoreUrl", "scoreUrlLabel", "espnApiUrl", "fetchButton", "localDate", "localTime", "localTimezone", "broadcastNetwork", "title", "probabilityGrid"]
 
   connect() {
     // Store team data for last_used lookup
@@ -86,6 +86,8 @@ export default class extends Controller {
     } else {
       this.awayTeamChoices.setChoices([{ value: "", label: "Select a league first", disabled: true }], "value", "label", true)
       this.homeTeamChoices.setChoices([{ value: "", label: "Select a league first", disabled: true }], "value", "label", true)
+      // Reset grid to "???" when no league selected
+      this.updateProbabilityGrid(null)
     }
   }
 
@@ -320,7 +322,14 @@ export default class extends Controller {
         ? `/leagues/${leagueId}/teams.json?event_id=${eventId}`
         : `/leagues/${leagueId}/teams.json`
       const response = await fetch(url)
-      const teams = await response.json()
+      const data = await response.json()
+
+      // Response format: { sport: "football"|"basketball", teams: [...] }
+      const teams = data.teams
+      const sport = data.sport
+
+      // Update probability grid if present (new game form)
+      this.updateProbabilityGrid(sport)
 
       // Store team data for last_used lookup
       teams.forEach(team => {
@@ -358,6 +367,43 @@ export default class extends Controller {
       }
     } catch (error) {
       console.error("Failed to load teams:", error)
+    }
+  }
+
+  // Update probability grid cells based on sport
+  // Football: show heat map with percentages
+  // Basketball/other: show "???"
+  updateProbabilityGrid(sport) {
+    if (!this.hasProbabilityGridTarget) return
+
+    const grid = this.probabilityGridTarget
+    const probabilities = JSON.parse(grid.dataset.probabilities || "[]")
+
+    // Get all game cells (excluding header cells)
+    for (let a = 0; a <= 9; a++) {
+      for (let h = 0; h <= 9; h++) {
+        const cell = document.getElementById(`a${a}h${h}`)
+        if (!cell) continue
+
+        if (sport === "football") {
+          // Find probability data for this cell
+          const prob = probabilities.find(p => p.a === a && p.h === h)
+          if (prob) {
+            cell.textContent = prob.pct
+            cell.style.backgroundColor = prob.color
+            cell.style.color = "white"
+            cell.classList.remove("bg-200", "text-muted")
+            cell.classList.add("probability-cell")
+          }
+        } else {
+          // Basketball or other: show "???"
+          cell.textContent = "???"
+          cell.style.backgroundColor = ""
+          cell.style.color = ""
+          cell.classList.add("bg-200", "text-muted")
+          cell.classList.remove("probability-cell")
+        }
+      }
     }
   }
 

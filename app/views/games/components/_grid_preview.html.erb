@@ -4,7 +4,27 @@
 <% home_style_class = local_assigns[:home_style] || "" %>
 <% away_style_class = local_assigns[:away_style] || "" %>
 
-<table class="game-grid">
+<%# For new games: hide player names to prevent "fishing" (refreshing to get better grid) %>
+<%# Football: show probability heat map (meaningful variation) %>
+<%# Basketball/other: show empty cells (uniform ~1% each, heat map not useful) %>
+<% is_new_game = @game.new_record? %>
+<% sport = @game.league&.sport %>
+<% show_probabilities = is_new_game && sport == "football" %>
+<% probability_service = SquareProbabilityService.new(:football) if is_new_game %>
+
+<%# Embed football probability data for JS to use when league changes %>
+<% if is_new_game %>
+	<% football_probs = (0..9).flat_map { |a| (0..9).map { |h|
+		cell = probability_service.cell_data(away_digit: a, home_digit: h)
+		{ a: a, h: h, pct: cell[:percentage], color: cell[:color] }
+	}} %>
+<% end %>
+
+<table class="game-grid"
+	<% if is_new_game %>
+		data-game-form-target="probabilityGrid"
+		data-probabilities='<%= football_probs.to_json %>'
+	<% end %>>
 	<tbody>
 		<tr>
 			<th colspan="2"></th>
@@ -28,18 +48,38 @@
 			</th>
 			<th id="a0" class="anum an0 py-3 px-3 fw-bold bg-200 border border-400">0</th>
 			<% (0..9).each do |h| %>
-				<td id="a0h<%= h %>" class="game-cell border fs-10 text-wrap">
-					<%= @game.get_player_for_square("a0h" + h.to_s).display_name %>
-				</td>
+				<% if show_probabilities %>
+					<% cell = probability_service.cell_data(away_digit: 0, home_digit: h) %>
+					<td id="a0h<%= h %>" class="game-cell border fs-10 text-center probability-cell"
+							style="background-color: <%= cell[:color] %>; color: white;">
+						<%= cell[:percentage] %>
+					</td>
+				<% elsif is_new_game %>
+					<td id="a0h<%= h %>" class="game-cell border fs-10 text-center bg-200 text-muted">???</td>
+				<% else %>
+					<td id="a0h<%= h %>" class="game-cell border fs-10 text-wrap">
+						<%= @game.get_player_for_square("a0h" + h.to_s).display_name %>
+					</td>
+				<% end %>
 			<% end %>
 		</tr>
 		<% (1..9).each do |a| %>
 			<tr>
 				<th id="a<%= a %>" class="anum an<%= a %> py-3 fw-bold bg-200 border border-400"><%= a %></th>
 				<% (0..9).each do |h| %>
-					<td id="a<%= a %>h<%= h %>" class="game-cell border fs-10 text-wrap">
-						<%= @game.get_player_for_square("a" + a.to_s + "h" + h.to_s).display_name %>
-					</td>
+					<% if show_probabilities %>
+						<% cell = probability_service.cell_data(away_digit: a, home_digit: h) %>
+						<td id="a<%= a %>h<%= h %>" class="game-cell border fs-10 text-center probability-cell"
+								style="background-color: <%= cell[:color] %>; color: white;">
+							<%= cell[:percentage] %>
+						</td>
+					<% elsif is_new_game %>
+						<td id="a<%= a %>h<%= h %>" class="game-cell border fs-10 text-center bg-200 text-muted">???</td>
+					<% else %>
+						<td id="a<%= a %>h<%= h %>" class="game-cell border fs-10 text-wrap">
+							<%= @game.get_player_for_square("a" + a.to_s + "h" + h.to_s).display_name %>
+						</td>
+					<% end %>
 				<% end %>
 			</tr>
 		<% end %>
