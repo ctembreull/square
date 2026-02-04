@@ -2,33 +2,35 @@
 <% error ||= nil %>
 
 <div id="event_pdf_status">
-  <% if error %>
-    <span class="text-danger me-2">
-      <span class="fas fa-exclamation-triangle me-1"></span>
-      PDF generation failed
-    </span>
-    <%= link_to generate_pdf_event_path(event), class: "btn btn-outline-warning btn-sm", data: { turbo_method: :post } do %>
-      <span class="fas fa-redo me-1"></span> Retry
-    <% end %>
-  <% elsif generating %>
-    <span class="btn btn-outline-light btn-sm disabled">
-      <span class="spinner-border spinner-border-sm me-1" role="status"></span>
-      Generating PDF...
-    </span>
-  <% elsif event.pdf.attached? %>
-    <div class="btn-group btn-group-sm">
-      <%= link_to pdf_event_path(event), class: "btn btn-outline-info", data: { turbo: false } do %>
-        <span class="fas fa-download me-1"></span> Download PDF
+  <% if event.games.any? %>
+    <% if error %>
+      <span class="text-danger me-2">
+        <span class="fas fa-exclamation-triangle me-1"></span>
+        PDF generation failed
+      </span>
+      <%= link_to generate_pdf_event_path(event), class: "btn btn-outline-warning btn-sm", data: { turbo_method: :post } do %>
+        <span class="fas fa-redo me-1"></span> Retry
       <% end %>
-      <% if event.pdf_stale? %>
-        <%= link_to generate_pdf_event_path(event), class: "btn btn-outline-warning", data: { turbo_method: :post }, title: "PDF is outdated - regenerate" do %>
-          <span class="fas fa-sync-alt me-1"></span> Update
+    <% elsif generating %>
+      <span class="btn btn-outline-light btn-sm disabled">
+        <span class="spinner-border spinner-border-sm me-1" role="status"></span>
+        Generating PDF...
+      </span>
+    <% elsif event.pdf.attached? %>
+      <div class="btn-group btn-group-sm">
+        <%= link_to pdf_event_path(event), class: "btn btn-outline-info", data: { turbo: false } do %>
+          <span class="fas fa-download me-1"></span> Download PDF
         <% end %>
+        <% if event.pdf_stale? %>
+          <%= link_to generate_pdf_event_path(event), class: "btn btn-outline-warning", data: { turbo_method: :post }, title: "PDF is outdated - regenerate" do %>
+            <span class="fas fa-sync-alt me-1"></span> Update
+          <% end %>
+        <% end %>
+      </div>
+    <% else %>
+      <%= link_to generate_pdf_event_path(event), class: "btn btn-outline-info btn-sm", data: { turbo_method: :post } do %>
+        <span class="fas fa-file-pdf me-1"></span> Generate PDF
       <% end %>
-    </div>
-  <% else %>
-    <%= link_to generate_pdf_event_path(event), class: "btn btn-outline-info btn-sm", data: { turbo_method: :post } do %>
-      <span class="fas fa-file-pdf me-1"></span> Generate PDF
     <% end %>
   <% end %>
 </div>

@@ -134,51 +134,53 @@ class GamesController < ApplicationController
     mark_final = params[:mark_final] == "1"
     overtime = params[:overtime] == "1"
 
-    progressive_away = 0
-    progressive_home = 0
+    ActiveRecord::Base.transaction do
+      progressive_away = 0
+      progressive_home = 0
 
-    (0..(periods - 1)).each do |i|
-      period_number = i + 1
-      away_score = away_scores[i]
-      home_score = home_scores[i]
+      (0..(periods - 1)).each do |i|
+        period_number = i + 1
+        away_score = away_scores[i]
+        home_score = home_scores[i]
 
-      # Skip periods without scores
-      next if away_score.nil? || home_score.nil?
+        # Skip periods without scores
+        next if away_score.nil? || home_score.nil?
 
-      progressive_away += away_score
-      progressive_home += home_score
+        progressive_away += away_score
+        progressive_home += home_score
 
-      # Destroy existing score for this period and create new one
-      @game.scores.where(period: period_number).destroy_all
+        # Destroy existing score for this period and create new one
+        @game.scores.where(period: period_number).destroy_all
 
-      prize = period_number == periods ? @game.final_prize : @game.period_prize
-      winner_address = "a#{progressive_away % 10}h#{progressive_home % 10}"
-      winner = @game.get_player_for_square(winner_address)
+        prize = period_number == periods ? @game.final_prize : @game.period_prize
+        winner_address = "a#{progressive_away % 10}h#{progressive_home % 10}"
+        winner = @game.get_player_for_square(winner_address)
 
-      score = Score.new(
-        game: @game,
-        period: period_number,
-        complete: true,
-        ot: period_number == periods && overtime,
-        away: away_score,
-        home: home_score,
-        away_total: progressive_away,
-        home_total: progressive_home,
-        prize: prize,
-        winner: winner
-      )
+        score = Score.new(
+          game: @game,
+          period: period_number,
+          complete: true,
+          ot: period_number == periods && overtime,
+          away: away_score,
+          home: home_score,
+          away_total: progressive_away,
+          home_total: progressive_home,
+          prize: prize,
+          winner: winner
+        )
 
-      # Mark as non-scoring for women's basketball (Q1, Q3)
-      if @game.league.quarters_score_as_halves && period_number.odd?
-        score.non_scoring = true
+        # Mark as non-scoring for women's basketball (Q1, Q3)
+        if @game.league.quarters_score_as_halves && period_number.odd?
+          score.non_scoring = true
+        end
+
+        score.save!
       end
 
-      score.save!
+      @game.broadcast_scores
+      @game.start! if @game.upcoming?
+      @game.complete! if mark_final
     end
-
-    @game.broadcast_scores
-    @game.start! if @game.upcoming?
-    @game.complete! if mark_final
 
     redirect_to @game, notice: "Scores updated successfully"
   end

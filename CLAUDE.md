@@ -359,14 +359,15 @@ Target: Ready for football season
 |------|-------|
 | ~~**Runtime inline styles (public pages)**~~ | ✅ Done - Styles created via UI get `runtime_style: true` flag and render as inline CSS immediately. YAML-imported styles use compiled CSS. Query: `runtime_style = true OR updated_at > DEPLOY_TIMESTAMP`. **Workflow to promote**: Export from container (`rake seeds:export`), copy to host (`docker compose cp` or `fly ssh sftp get`), commit, redeploy. Runtime styles accumulate until this workflow is run - acceptable for emergency mid-event changes, but highlights the "production as canonical source" problem. |
 | **Email sending page** | Replace simple dropdown with dedicated page. Left: email preview (like letter_opener). Right: checkbox tree of players grouped by families (no charities), all checked by default with "Uncheck all" control. Allows selective resending to specific players who didn't receive email. Include PDF staleness indicator with "Regenerate PDF" button before sending - better UX than modal warning. |
-| **Conference show page redesign** | Two-column layout: Left half shows affiliations list (colorized with team styles), right half shows games list grouped by event. Need to solve remove action UI against colored backgrounds. |
+| ~~**Conference show page redesign**~~ | ✅ Done - Two-column layout: left shows colorized team affiliations list with team styles applied, right shows games grouped by event. Teams display with their default style class. Delete button uses white icon with text-shadow and drop-shadow for visibility against any team color. Controller loads games with eager loading, groups by event. |
 | ESPN scraper improvements | Better error handling |
-| Transaction wrapper for score processing | Data integrity |
+| ~~Transaction wrapper for score processing~~ | ✅ Done - Wrapped `ScoreboardService::ScoreScraper#process_score` and `GamesController#manual_scores` in `ActiveRecord::Base.transaction` blocks. Ensures all period scores update atomically - either all succeed or none do, preventing partial data on failure. |
+| **ActivityLog accountability system** | Single audit log table for admin actions and system events. Log: (1) Score updates - automated scraping and manual entry with before/after state, (2) Transaction failures/rollbacks - capture errors with full context for debugging, (3) Game deletions - require `reason` field in UI, store who/when/why, (4) Manual score corrections - log old vs new values for each period, (5) Status changes - track game state transitions (start!, complete!). Simple schema: `user_id`, `action`, `loggable` (polymorphic), `details` (JSON), `created_at`. Provides visibility and accountability without per-model complexity. |
 | Scraper registry pattern | Cleaner architecture |
 | ~~Document rake tasks~~ | ✅ Done - README documents all export/import tasks and rebuild order |
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
 | ~~**Square win probability display**~~ | ✅ Done - Heat map on game#new for football (meaningful digit variation: 7s at 14.6%, 2s at 2.3%). Basketball shows "???" (uniform ~10% each). Dynamically updates when league changes. `SquareProbabilityService` accepts custom frequencies for future extensibility. |
-| **Game locking** | One-way lock operation (console-only unlock) that prevents all edits to a game. Confirmation modal with warnings. Protects completed game integrity. |
+| ~~**Game locking**~~ | ❌ Won't fix - Adds admin overhead (lock step that gets forgotten anyway) and friction for legitimate corrections. Confirmation dialogs + visible status + authenticated admins already prevent fat-finger edits. Manual score entry requires showing admin tools, clicking "manual scores", and entering bad data - already difficult to do accidentally. If admin is careless enough to edit completed game, they'd forget to lock it anyway. |
 | **Litestream backups** | Continuous SQLite replication to Cloudflare R2. Replaces manual pre-deploy backups with automatic streaming. Near real-time recovery, point-in-time restore capability. |
 | ~~**PDF caching**~~ | ✅ Done - PDFs cached in Active Storage, served if fresh. Stale detection via game/score `updated_at`. `rake storage:purge_unattached` cleans orphaned blobs. |
 | **Security audit** | Run Brakeman + bundler-audit. Check: CSRF protection, param filtering, SQL injection, auth bypass, mass assignment. Review Fly.io secrets exposure. Low-value target but protect family fun from griefers. |
@@ -453,7 +454,9 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | ✅ **schema.yaml sync** | Done - Updated to match current db/schema.rb. Removed DIVISION model, updated TEAM (removed prefix/suffix, changed brand_url→brand_info, added display_location/espn fields), added LEAGUE fields (sport/espn_slug/periods), updated STYLE (added name/runtime_style). **Note**: Update this file when making schema changes. |
 | ✅ **Orphan CSS cleanup** | Done - Added to `rake styles:regenerate_all` as final cleanup step. Deletes any `_*.scss` files in teams/ that don't match a current team's `css_slug`. |
 | ~~**Color/Style edit deployment warning**~~ | ✅ Moot - Runtime inline styles feature makes changes visible immediately. No warning needed. |
+| ✅ **Hide PDF button if no games** | Done - Wrapped PDF status partial content in `event.games.any?` check. No PDF UI shown if event has no games. |
+| ✅ **Delete button for scoreless games** | Done - Added delete button on Game#edit page (in header alongside "Swap Teams"). Only shows if `@game.scores.empty?`. Confirmation dialog prevents accidental deletion. |
 
 ---
 
-**Last Updated**: 2026-02-03
+**Last Updated**: 2026-02-04

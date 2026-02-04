@@ -1,0 +1,15 @@
+
+<tr>
+	<td style="width: 28%;">
+        <span data-tippy-content="<%= game.title %>" data-tippy-placement="bottom">
+            <%= game.starts_at.in_time_zone(current_timezone).strftime("%m/%d/%Y") %>
+        </span>
+	</td>
+	<td class="text-center py-2 align-middle <%= game.away_style %> h6 fw-semi-bold position-relative" style="width: 30%;">
+		<%= link_to game.away_team.display_location, game, class: "text-decoration-none stretched-link #{game.away_style}" %>
+	</td>
+	<td class="bg-200 fw-semi-bold align-middle text-center" style="width: 2%;">vs.</td>
+	<td class="text-center py-2 align-middle <%= game.home_style %> h6 fw-semi-bold position-relative" style="width: 30%;">
+		<%= link_to game.home_team.display_location, game, class: "text-decoration-none stretched-link #{game.home_style}" %>
+	</td>
+</tr>

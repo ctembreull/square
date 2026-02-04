@@ -63,45 +63,47 @@ module ScoreboardService
       # Skip if no real scores yet (ESPN shows all zeros before game starts)
       return if linescore[:away].all?(&:zero?) && linescore[:home].all?(&:zero?)
 
-      progressive_score = { away: 0, home: 0 }
+      ActiveRecord::Base.transaction do
+        progressive_score = { away: 0, home: 0 }
 
-      (0..(@periods - 1)).each do |i|
-        period_number = i + 1
-        away_score = linescore[:away][i]
-        home_score = linescore[:home][i]
+        (0..(@periods - 1)).each do |i|
+          period_number = i + 1
+          away_score = linescore[:away][i]
+          home_score = linescore[:home][i]
 
-        # The scraper puts a -1 as the score for every period that hasn't been played yet.
-        # If we see that happen (or nil if array is short), skip that period.
-        next if away_score.nil? || home_score.nil? || away_score == -1 || home_score == -1
+          # The scraper puts a -1 as the score for every period that hasn't been played yet.
+          # If we see that happen (or nil if array is short), skip that period.
+          next if away_score.nil? || home_score.nil? || away_score == -1 || home_score == -1
 
-        progressive_score[:away] += away_score
-        progressive_score[:home] += home_score
+          progressive_score[:away] += away_score
+          progressive_score[:home] += home_score
 
-        # We can't have duplicate scores for any game period. There can only be one
-        # canonical score per period per game. So, we must destroy any existing score
-        # for this period and create a new one.
-        @game.scores.where(period: period_number).destroy_all
+          # We can't have duplicate scores for any game period. There can only be one
+          # canonical score per period per game. So, we must destroy any existing score
+          # for this period and create a new one.
+          @game.scores.where(period: period_number).destroy_all
 
-        # Create new score object
-        period_score = Score.new(
-          game: @game,
-          period: period_number,
-          ot: (i == @periods - 1) && linescore[:overtime],
-          complete: true,
-          away: away_score,
-          home: home_score,
-          away_total: progressive_score[:away],
-          home_total: progressive_score[:home],
-          prize: process_prize(period_number),
-          winner: process_winner(progressive_score)
-        )
+          # Create new score object
+          period_score = Score.new(
+            game: @game,
+            period: period_number,
+            ot: (i == @periods - 1) && linescore[:overtime],
+            complete: true,
+            away: away_score,
+            home: home_score,
+            away_total: progressive_score[:away],
+            home_total: progressive_score[:home],
+            prize: process_prize(period_number),
+            winner: process_winner(progressive_score)
+          )
 
-        # Mark as non-scoring for women's basketball (Q1, Q3)
-        if @game.league.quarters_score_as_halves && period_number.odd?
-          period_score.non_scoring = true
+          # Mark as non-scoring for women's basketball (Q1, Q3)
+          if @game.league.quarters_score_as_halves && period_number.odd?
+            period_score.non_scoring = true
+          end
+
+          period_score.save!
         end
-
-        period_score.save!
       end
     end
 

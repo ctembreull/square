@@ -16,9 +16,14 @@
 						</h4>
 					</div>
 				</div>
-				<div class="col-md-auto p-3">
+				<div class="col-md-auto p-3 d-flex gap-2">
 					<%= button_to swap_teams_game_path(@game), method: :patch, class: "btn btn-outline-secondary btn-sm", data: { turbo_confirm: "Swap home and away teams?" } do %>
 						<span class="fas fa-exchange-alt me-1"></span> Swap Teams
+					<% end %>
+					<% if @game.scores.empty? %>
+						<%= button_to game_path(@game), method: :delete, class: "btn btn-outline-danger btn-sm", data: { turbo_confirm: "Delete this game? This cannot be undone." } do %>
+							<span class="fas fa-trash me-1"></span> Delete Game
+						<% end %>
 					<% end %>
 				</div>
 			</div>

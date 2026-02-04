@@ -6,12 +6,19 @@ class ConferencesController < ApplicationController
   end
 
   def show
-    @affiliations = @conference.affiliations.includes(:team).order("teams.location")
+    @affiliations = @conference.affiliations.includes(team: :styles).order("teams.location")
     # Teams at this level that don't yet have any affiliation in this league
     teams_in_league = Affiliation.where(league_id: @conference.league_id).select(:team_id)
     @available_teams = Team.where(level: @conference.league.level)
                            .where.not(id: teams_in_league)
                            .alphabetical
+
+    # Load games involving teams from this conference, grouped by event
+    team_ids = @conference.teams.pluck(:id)
+    @games_by_event = Game.includes(:event, :home_team, :away_team, :league)
+                          .where("home_team_id IN (?) OR away_team_id IN (?)", team_ids, team_ids)
+                          .order("events.start_date DESC, games.starts_at DESC")
+                          .group_by(&:event)
   end
 
   def new

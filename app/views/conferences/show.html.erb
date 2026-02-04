@@ -39,10 +39,54 @@
 </div>
 
 <div class="row">
-	<div class="col-12">
+	<!-- Left column: Team affiliations -->
+	<div class="col-6">
 		<%= render "conferences/conference_teams_card",
 		    conference: @conference,
 		    affiliations: @affiliations,
 		    available_teams: @available_teams %>
+	</div>
+
+	<!-- Right column: Games by event -->
+	<div class="col-6">
+		<div class="card">
+			<div class="card-header p-2 border-bottom">
+				<h5 class="fs-9 mb-0 text-nowrap py-2 py-xl-0">
+					Games
+					<span class="badge bg-soft-secondary text-secondary ms-2"><%= @games_by_event.values.flatten.count %></span>
+				</h5>
+			</div>
+			<div class="card-body px-0 py-0">
+				<table class="table table-sm fs-10 m-0">
+					<% if @games_by_event.any? %>
+						<% @games_by_event.each do |event, games| %>
+							<tbody>
+								<tr>
+									<td colspan="5" class="bg-500 py-2">
+										<h6 class="text-200 my-0">
+											<%= link_to event.title, event_path(event), class: "text-decoration-none, text-light" %>
+											<span class="text-light ms-1">(<%= games.count %>)</span>
+										</h6>
+									</td>
+								</tr>
+								<% games.each do |game| %>
+									<%= render "conferences/conference_games_card", game: game %>
+								<% end %>
+							</tbody>
+						<% end %>
+					<% else %>
+						<tbody>
+							<tr>
+								<td colspan="9" class="bg-500 py-2">
+									<h6 class="text-200 my-0">
+										No games for teams in this conference yet.
+									</h6>
+								</td>
+							</tr>
+						</tbody>
+					<% end %>
+				</table>
+			</div>
+		</div>
 	</div>
 </div>
