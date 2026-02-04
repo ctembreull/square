@@ -58,7 +58,7 @@
 						</div>
 				</div>
 				<div class="card-body p-0 g-0">
-					<% teams = conference.teams.sort_by { |t| [t.location.to_s, t.name.to_s] } %>
+					<% teams = conference.teams.sort_by { |t| [t.display_location.to_s, t.name.to_s] } %>
 					<% if teams.any? %>
 						<ul class="list-group list-group-flush">
 							<% teams.each do |team| %>
