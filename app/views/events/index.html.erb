@@ -109,15 +109,19 @@
 					<div class="bg-holder d-none d-xl-block bg-card" style="background-image:url(<%= asset_path("backgrounds/corner-4.png") %>);opacity: 0.7;pointer-events:none;"></div><!--/.bg-holder-->
 					<div class="card-body">
 
-						<h5><%= event.title %></h5>
+						<h5>
+							<% if admin? %>
+								<%= link_to event.title, event, class: "text-muted" %>
+							<% end %>	
+						</h5>
 						<div>
 							<div class="badge rounded-pill badge-subtle-primary fs-11">
 								Upcoming
 								<span class="fas fa-stopwatch ms-1" data-fa-transform="shrink-2"></span>
 							</div>
-							<% if event.end_date.present? %>
-								<strong class="ms-2">Ends:</strong>
-								<span><%= event.end_date %></span>
+							<% if event.start_date.present? %>
+								<strong class="ms-2">Starts:</strong>
+								<span><%= event.start_date %></span>
 							<% end %>
 						</div>
 						<div class="mt-4 text-center fw-600">
