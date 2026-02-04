@@ -2,7 +2,7 @@ class AddDisplayNameToDivisions < ActiveRecord::Migration[8.1]
   def up
     add_column :divisions, :display_name, :string
 
-    Division.where(display_name: nil).update_all(display_name: " ")
+    execute "UPDATE divisions SET display_name = ' ' WHERE display_name IS NULL"
 
     change_column :divisions, :display_name, :string, null: false
   end
