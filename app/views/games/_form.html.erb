@@ -68,7 +68,7 @@
 					data: { game_form_target: "league", action: "change->game-form#leagueChanged" } %>
 		</div>
 		<div class="col-5">
-			<%= form.label :away_team_id, "Away Team", class: "form-label" %>
+			<label for="game_away_team_id" class="form-label" data-game-form-target="awayTeamLabel">Away Team</label>
 			<div class="d-flex align-items-start gap-2">
 				<div class="flex-grow-1">
 					<%= form.select :away_team_id, [],
@@ -111,7 +111,7 @@
 			</div>
 		</div>
 		<div class="col-5">
-			<%= form.label :home_team_id, "Home Team", class: "form-label" %>
+			<label for="game_home_team_id" class="form-label" data-game-form-target="homeTeamLabel">Home Team</label>
 			<div class="d-flex align-items-start gap-2">
 				<div class="flex-grow-1">
 					<%= form.select :home_team_id, [],

@@ -358,6 +358,8 @@ Target: Ready for football season
 | Item | Notes |
 |------|-------|
 | ~~**Runtime inline styles (public pages)**~~ | ✅ Done - Styles created via UI get `runtime_style: true` flag and render as inline CSS immediately. YAML-imported styles use compiled CSS. Query: `runtime_style = true OR updated_at > DEPLOY_TIMESTAMP`. **Workflow to promote**: Export from container (`rake seeds:export`), copy to host (`docker compose cp` or `fly ssh sftp get`), commit, redeploy. Runtime styles accumulate until this workflow is run - acceptable for emergency mid-event changes, but highlights the "production as canonical source" problem. |
+| **Email sending page** | Replace simple dropdown with dedicated page. Left: email preview (like letter_opener). Right: checkbox tree of players grouped by families (no charities), all checked by default with "Uncheck all" control. Allows selective resending to specific players who didn't receive email. Include PDF staleness indicator with "Regenerate PDF" button before sending - better UX than modal warning. |
+| **Conference show page redesign** | Two-column layout: Left half shows affiliations list (colorized with team styles), right half shows games list grouped by event. Need to solve remove action UI against colored backgrounds. |
 | ESPN scraper improvements | Better error handling |
 | Transaction wrapper for score processing | Data integrity |
 | Scraper registry pattern | Cleaner architecture |
@@ -428,6 +430,7 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 |------|-------|
 | **Query performance on events#show** | Currently 42 queries (~114ms) for a small event. Dense events (70+ games like football season) may need further optimization. Watch for: `_game_score_card` per-period queries, partial rendering overhead. |
 | **SolidQueue database locks** | Fixed with `processes: 0` in dev. Monitor production for any lock contention under load. |
+| **Admin toolbar toggle** | Fixed multiple times (button_to → link_to with Turbo method). Bootstrap dropdown + form interaction causes click handler issues. If multi-click problem recurs, may need to move outside dropdown or use custom JavaScript. |
 
 ## Small Fixes (No Milestone)
 
@@ -441,7 +444,13 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | ✅ Posts UI: active post styling | Done - Chevron icon + highlight on active post, Stimulus controller tracks selection |
 | ✅ Winners table period display | Done - Individual winning periods column is hard to read. Consider reformatting (badges, commas, grouping by game) for better scannability. Tooltip added to show game title and period identifier. |
 | ✅ **Player form: Charity type handling** | Done - Stimulus controller disables Family dropdown and sets Chances to 0 when Charity type selected. Note: May need revisiting if governance approves family-selected charities proposal. |
-| **schema.yaml sync** | Design doc is stale (`brand_url` → `brand_info`, `suffix` removed). Either manually update or create rake task to generate from `db/schema.rb`. |
+| ✅ **Unique Games by score_url** | Done - Added unique index on `games.score_url` and model validation. Prevents duplicate game creation from same ESPN URL. |
+| ✅ **Admin toolbar toggle UX** | Done - Changed from `button_to` (form) to `link_to` with Turbo method. Forms inside Bootstrap dropdowns had click handler interference. Now works on first click. |
+| ✅ **Team field labels as links** | Done - Away/Home team labels dynamically link to team show page when team selected. Added `updateTeamLabel` method in game_form controller, clears on league change. |
+| ~~**Team dropdown tab order**~~ | **Not fixable** - Choices.js fundamentally doesn't support keyboard tab navigation. Investigated tabindex on container, focus forwarding to input, and exposing hidden select. All approaches failed. Would require replacing Choices.js with different library or native selects. Accepting limitation - users can click or use mouse to access dropdowns. |
+| ✅ **Events dropdown structure** | Done - Active/in-progress events at top (ordered by start_date DESC), separator, 10 most recent completed events (ordered by end_date DESC), "Older..." link at bottom. Clean, scannable structure. |
+| ✅ **Conference links on League show** | Done - Conference names in card headers now link to Conference#show page. Simple one-line change wrapping display_name in link_to. |
+| ✅ **schema.yaml sync** | Done - Updated to match current db/schema.rb. Removed DIVISION model, updated TEAM (removed prefix/suffix, changed brand_url→brand_info, added display_location/espn fields), added LEAGUE fields (sport/espn_slug/periods), updated STYLE (added name/runtime_style). **Note**: Update this file when making schema changes. |
 | ✅ **Orphan CSS cleanup** | Done - Added to `rake styles:regenerate_all` as final cleanup step. Deletes any `_*.scss` files in teams/ that don't match a current team's `css_slug`. |
 | ~~**Color/Style edit deployment warning**~~ | ✅ Moot - Runtime inline styles feature makes changes visible immediately. No warning needed. |
 

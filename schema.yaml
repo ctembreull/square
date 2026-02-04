@@ -1,34 +1,35 @@
 LEAGUE:
-  name:   string, unique          # National Footabll League
-  abbr:   string, unique          # NFL
-  level:  string['pro','college'] # pro
-  gender: string['men','women']   # men
+  name:                      string # National Football League
+  abbr:                      string # NFL
+  sport:                     string # football
+  level:                     string['pro','college'] # pro
+  gender:                    string['men','women'] # men
+  espn_slug:                 string, unique # football/nfl
+  periods:                   integer # 4
+  quarters_score_as_halves:  boolean[false] # false
 
 CONFERENCE:
-  name:   string  # National Football Conference
-  abbr:   string  # NFC
-  league: *league # -> National Football League
-
-DIVISION:
-  name:       string # NFC West
-  abbr:       string # NFCW
-  conference: *conference # -> National Football Conference
+  name:         string # National Football Conference
+  abbr:         string # NFC
+  display_name: string # NFC
+  league:       *league # -> National Football League
 
 TEAM:
-  abbr:         string # SEA
-  prefix:       string # 
-  location:     string # Seattle
-  suffix:       string #
-  display_name: string # Seattle Seahawks
-  name:         string # Seahawks
-  womens_name:  string # 
-  brand_url:    string #
+  abbr:             string # SEA
+  location:         string # Seattle
+  display_location: string # Seattle
+  name:             string # Seahawks
+  womens_name:      string #
+  level:            string, default: '' # pro
+  brand_info:       string #
+  espn_id:          integer # 26
+  espn_mens_slug:   string # seattle-seahawks
+  espn_womens_slug: string #
 
 AFFILIATION:
   team:       *team       # -> Seattle Seahawks
   league:     *league     # -> National Football League
   conference: *conference # -> National Football Conference
-  division:   *division   # -> NFC West
 
 COLOR:
   team:    *team
@@ -37,6 +38,8 @@ COLOR:
   hex:     string
 
 STYLE:
-  team:    *team
-  css:     string
-  default: boolean[false]
+  team:          *team
+  name:          string # Default
+  css:           text # CSS rules
+  default:       boolean[false] # true
+  runtime_style: boolean[false] # false

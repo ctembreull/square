@@ -59,7 +59,7 @@ class Game < ApplicationRecord
   validates :league, presence: true
   validates :home_team, presence: true
   validates :away_team, presence: true
-  validates :score_url, presence: true
+  validates :score_url, presence: true, uniqueness: true
   validate :score_url_is_valid_http_url
   validates :starts_at, presence: true
   validates :period_prize, presence: true, numericality: { only_integer: true }

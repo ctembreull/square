@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_02_03_193411) do
+ActiveRecord::Schema[8.1].define(version: 2026_02_04_174932) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -127,6 +127,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_03_193411) do
     t.index ["event_id"], name: "index_games_on_event_id"
     t.index ["home_team_id"], name: "index_games_on_home_team_id"
     t.index ["league_id"], name: "index_games_on_league_id"
+    t.index ["score_url"], name: "index_games_on_score_url", unique: true
     t.index ["starts_at"], name: "index_games_on_starts_at"
     t.index ["status"], name: "index_games_on_status"
   end

@@ -4,7 +4,7 @@ import tippy from "tippy.js"
 // Choices.js is loaded via CDN and attaches to window
 // We'll access it dynamically since the CDN version isn't an ES module
 export default class extends Controller {
-  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner", "awayLastUsed", "homeLastUsed", "eventId", "scoreUrl", "scoreUrlLabel", "espnApiUrl", "fetchButton", "localDate", "localTime", "localTimezone", "broadcastNetwork", "title", "probabilityGrid"]
+  static targets = ["league", "awayTeam", "awayStyle", "homeTeam", "homeStyle", "periodPrize", "finalPrize", "awayBanner", "homeBanner", "awayLastUsed", "homeLastUsed", "eventId", "scoreUrl", "scoreUrlLabel", "espnApiUrl", "fetchButton", "localDate", "localTime", "localTimezone", "broadcastNetwork", "title", "probabilityGrid", "awayTeamLabel", "homeTeamLabel"]
 
   connect() {
     // Store team data for last_used lookup
@@ -81,6 +81,10 @@ export default class extends Controller {
     if (this.hasAwayLastUsedTarget) this.awayLastUsedTarget.classList.add("d-none")
     if (this.hasHomeLastUsedTarget) this.homeLastUsedTarget.classList.add("d-none")
 
+    // Clear team label links
+    if (this.hasAwayTeamLabelTarget) this.updateTeamLabel(null, this.awayTeamLabelTarget, "Away Team")
+    if (this.hasHomeTeamLabelTarget) this.updateTeamLabel(null, this.homeTeamLabelTarget, "Home Team")
+
     if (leagueId) {
       this.loadTeamsForLeague(leagueId)
     } else {
@@ -100,6 +104,7 @@ export default class extends Controller {
     this.updateBanner(this.awayBannerTarget, selectedOption?.label || "Away Team", "")
     this.loadStylesForTeam(teamId, this.awayStyleChoices, this.awayStyleTarget, this.awayBannerTarget)
     this.updateLastUsed(teamId, this.awayLastUsedTarget)
+    this.updateTeamLabel(teamId, this.awayTeamLabelTarget, "Away Team")
   }
 
   // Called when home team selection changes
@@ -111,6 +116,7 @@ export default class extends Controller {
     this.updateBanner(this.homeBannerTarget, selectedOption?.label || "Home Team", "")
     this.loadStylesForTeam(teamId, this.homeStyleChoices, this.homeStyleTarget, this.homeBannerTarget)
     this.updateLastUsed(teamId, this.homeLastUsedTarget)
+    this.updateTeamLabel(teamId, this.homeTeamLabelTarget, "Home Team")
   }
 
   // Update the last used icon visibility and tooltip
@@ -130,6 +136,17 @@ export default class extends Controller {
       }
     } else {
       iconTarget.classList.add("d-none")
+    }
+  }
+
+  // Update the team label to link to team show page or plain text
+  updateTeamLabel(teamId, labelTarget, defaultText) {
+    if (!labelTarget) return
+
+    if (teamId) {
+      labelTarget.innerHTML = `<a href="/teams/${teamId}" target="_blank">${defaultText} <i class="fas fa-external-link-alt fs-10"></i></a>`
+    } else {
+      labelTarget.textContent = defaultText
     }
   }
 
@@ -357,6 +374,7 @@ export default class extends Controller {
         this.updateBanner(this.awayBannerTarget, awayOption?.label || "Away Team", "")
         this.loadStylesForTeam(awayTeamId, this.awayStyleChoices, this.awayStyleTarget, this.awayBannerTarget)
         if (this.hasAwayLastUsedTarget) this.updateLastUsed(awayTeamId, this.awayLastUsedTarget)
+        if (this.hasAwayTeamLabelTarget) this.updateTeamLabel(awayTeamId, this.awayTeamLabelTarget, "Away Team")
       }
       if (homeTeamId) {
         this.homeTeamChoices.setChoiceByValue(homeTeamId)
@@ -364,6 +382,7 @@ export default class extends Controller {
         this.updateBanner(this.homeBannerTarget, homeOption?.label || "Home Team", "")
         this.loadStylesForTeam(homeTeamId, this.homeStyleChoices, this.homeStyleTarget, this.homeBannerTarget)
         if (this.hasHomeLastUsedTarget) this.updateLastUsed(homeTeamId, this.homeLastUsedTarget)
+        if (this.hasHomeTeamLabelTarget) this.updateTeamLabel(homeTeamId, this.homeTeamLabelTarget, "Home Team")
       }
     } catch (error) {
       console.error("Failed to load teams:", error)
