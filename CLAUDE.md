@@ -456,6 +456,7 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | ~~**Color/Style edit deployment warning**~~ | ✅ Moot - Runtime inline styles feature makes changes visible immediately. No warning needed. |
 | ✅ **Hide PDF button if no games** | Done - Wrapped PDF status partial content in `event.games.any?` check. No PDF UI shown if event has no games. |
 | ✅ **Delete button for scoreless games** | Done - Added delete button on Game#edit page (in header alongside "Swap Teams"). Only shows if `@game.scores.empty?`. Confirmation dialog prevents accidental deletion. |
+| ✅ **Sticky header on winners worksheet** | Done - Wrapped header card and progress bar in sticky container (`sticky-top bg-body pt-3` with `z-index: 1020`). Header stays at top while worksheet table scrolls beneath. |
 
 ---
 
