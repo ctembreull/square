@@ -12,18 +12,27 @@ class Event < ApplicationRecord
   validate :end_date_after_start_date, if: -> { end_date.present? }
 
   # Scopes
-  scope :in_progress, -> { where("start_date <= ? AND (end_date IS NULL OR end_date >= ?)", Date.today, Date.today) }
-  scope :upcoming, -> { where("start_date > ?", Date.today) }
-  scope :completed, -> { where("end_date IS NOT NULL AND end_date < ?", Date.today) }
+  # Use Hawaii time for event status to ensure events stay active through end_date
+  # in westernmost US timezone (prevents premature completion at midnight UTC)
+  scope :in_progress, -> { where("start_date <= ? AND (end_date IS NULL OR end_date >= ?)", today_in_hawaii, today_in_hawaii) }
+  scope :upcoming, -> { where("start_date > ?", today_in_hawaii) }
+  scope :completed, -> { where("end_date IS NOT NULL AND end_date < ?", today_in_hawaii) }
+
+  # Helper method for consistent timezone handling
+  # Events stay active through end_date in Hawaii time (westernmost US timezone)
+  def self.today_in_hawaii
+    Time.now.in_time_zone('Hawaii').to_date
+  end
 
   # Prevent deletion if games exist
   before_destroy :prevent_deletion_with_games
 
   # Status helpers
   def status
-    if start_date > Date.today
+    today = self.class.today_in_hawaii
+    if start_date > today
       :upcoming
-    elsif end_date.present? && end_date < Date.today
+    elsif end_date.present? && end_date < today
       :completed
     else
       :in_progress
