@@ -5271,6 +5271,11 @@ sea-seattle-seahawks:
       css: 'background-color: #003087; color: #FFFFFF; text-shadow: 1px 1px 0 #046A38,
         -1px 1px 0 #046A38, 1px -1px 0 #046A38, -1px -1px 0 #046A38; '
       default: false
+    white:
+      name: White
+      css: 'background-color: #FFFFFF; color: #003087; text-shadow: 1px 1px 0 #69BE28,
+        -1px 1px 0 #69BE28, 1px -1px 0 #69BE28, -1px -1px 0 #69BE28; '
+      default: false
 sea-seattle-u-redhawks:
   abbr: SEA
   location: Seattle U
