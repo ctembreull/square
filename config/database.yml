@@ -17,10 +17,12 @@ development:
   primary:
     <<: *default
     database: storage/development.sqlite3
+    pool: 15  # Higher pool for Puma threads + ActiveJob :async threads
   queue:
     <<: *default
     database: storage/development_queue.sqlite3
     migrations_paths: db/queue_migrate
+    pool: 15
   cable:
     <<: *default
     database: storage/development_cable.sqlite3
@@ -41,6 +43,7 @@ production:
     <<: *default
     database: storage/production.sqlite3
     url: <%= ENV["DATABASE_URL"] %>
+    pool: <%= ENV.fetch("DB_POOL") { 10 } %>  # Higher pool for Puma + SolidQueue workers
   cache:
     <<: *default
     database: storage/production_cache.sqlite3
@@ -51,6 +54,7 @@ production:
     database: storage/production_queue.sqlite3
     migrations_paths: db/queue_migrate
     url: <%= URI.parse(ENV["DATABASE_URL"]).tap { |url| url.path += "_queue" } if ENV["DATABASE_URL"] %>
+    pool: <%= ENV.fetch("DB_POOL") { 10 } %>
   cable:
     <<: *default
     database: storage/production_cable.sqlite3
