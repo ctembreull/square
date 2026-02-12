@@ -21,9 +21,10 @@
 						<span class="fas fa-exchange-alt me-1"></span> Swap Teams
 					<% end %>
 					<% if @game.scores.empty? %>
-						<%= button_to game_path(@game), method: :delete, class: "btn btn-outline-danger btn-sm", data: { turbo_confirm: "Delete this game? This cannot be undone." } do %>
+						<button type="button" class="btn btn-outline-danger btn-sm"
+								data-bs-toggle="modal" data-bs-target="#deleteGameModal">
 							<span class="fas fa-trash me-1"></span> Delete Game
-						<% end %>
+						</button>
 					<% end %>
 				</div>
 			</div>
@@ -56,3 +57,7 @@
 		</div>
 	</div>
 </div>
+
+<% if @game.scores.empty? %>
+	<%= render "games/components/delete_game_modal" %>
+<% end %>

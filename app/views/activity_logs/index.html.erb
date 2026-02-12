@@ -1,0 +1,131 @@
+<div class="row mb-3">
+  <div class="col-12">
+    <div class="card bg-100 shadow-none border py-2">
+      <div class="row gx-0 flex-between-center">
+        <div class="col-sm-auto d-flex align-items-center px-7">
+          <h4 class="text-primary fw-bold mb-0">Activity Log</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-12">
+    <%= form_with url: activity_logs_path, method: :get, class: "d-flex gap-2 align-items-center" do |f| %>
+      <%= f.select :level_filter,
+          options_for_select([["Errors", "error"], ["Warnings", "warning"], ["Info", "info"]], params[:level_filter]),
+          { include_blank: "All Levels" },
+          class: "form-select form-select-sm",
+          style: "width: auto;",
+          onchange: "this.form.requestSubmit()" %>
+      <%= f.select :action_filter,
+          options_for_select(%w[game_created game_deleted game_status_change score_update_automated score_update_manual post_created post_updated email_sent pdf_generated pdf_generation_failed transaction_rollback r2_sync], params[:action_filter]),
+          { include_blank: "All Actions" },
+          class: "form-select form-select-sm",
+          style: "width: auto;",
+          onchange: "this.form.requestSubmit()" %>
+      <%= f.select :record_type_filter,
+          options_for_select(%w[Game Event Post System], params[:record_type_filter]),
+          { include_blank: "All Records" },
+          class: "form-select form-select-sm",
+          style: "width: auto;",
+          onchange: "this.form.requestSubmit()" %>
+      <%= f.select :user_filter,
+          options_for_select([["System", "system"]] + @users_for_filter.map { |u| [u.name, u.id] }, params[:user_filter]),
+          { include_blank: "All Users" },
+          class: "form-select form-select-sm",
+          style: "width: auto;",
+          onchange: "this.form.requestSubmit()" %>
+      <% has_filters = params[:level_filter].present? || params[:action_filter].present? || params[:record_type_filter].present? || params[:user_filter].present? %>
+      <%= link_to "Clear", activity_logs_path, class: "btn btn-secondary btn-sm #{'disabled' unless has_filters}" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-sm table-hover mb-0">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Level</th>
+                <th>Action</th>
+                <th>User</th>
+                <th>Record</th>
+                <th>Reason</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if @activity_logs.any? %>
+                <% @activity_logs.each do |log| %>
+                  <tr>
+                    <td class="text-nowrap">
+                      <small><%= log.created_at.in_time_zone("America/Los_Angeles").strftime("%m/%d/%Y %H:%M %Z") %></small>
+                    </td>
+                    <td>
+                      <span class="badge bg-<%= log_badge_color(log.level) %>">
+                        <%= log.level %>
+                      </span>
+                    </td>
+                    <td>
+                      <small><%= log.action.humanize %></small>
+                    </td>
+                    <td>
+                      <small><%= log.user&.name || "System" %></small>
+                    </td>
+                    <td>
+                      <small><%= activity_record_link(log) %></small>
+                    </td>
+                    <td>
+                      <% if log.reason.present? %>
+                        <small class="text-muted"><%= log.reason.truncate(50) %></small>
+                      <% end %>
+                    </td>
+                    <td>
+                      <% if log.metadata.present? %>
+                        <button class="btn btn-sm btn-link p-0" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#metadata-<%= log.id %>"
+                                aria-expanded="false"
+                                id="toggle-<%= log.id %>">
+                          <small>View</small>
+                        </button>
+                        <div class="collapse mt-2" id="metadata-<%= log.id %>">
+                          <%= format_activity_metadata(log.metadata) %>
+                        </div>
+                        <script>
+                          document.getElementById('metadata-<%= log.id %>').addEventListener('show.bs.collapse', function() {
+                            document.getElementById('toggle-<%= log.id %>').querySelector('small').textContent = 'Hide';
+                          });
+                          document.getElementById('metadata-<%= log.id %>').addEventListener('hide.bs.collapse', function() {
+                            document.getElementById('toggle-<%= log.id %>').querySelector('small').textContent = 'View';
+                          });
+                        </script>
+                      <% end %>
+                    </td>
+                  </tr>
+                <% end %>
+              <% else %>
+                <tr>
+                  <td colspan="7" class="text-center text-muted py-4">
+                    No activity logs found
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <% if @pagy.pages > 1 %>
+        <div class="card-footer">
+          <%== pagy_nav(@pagy) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

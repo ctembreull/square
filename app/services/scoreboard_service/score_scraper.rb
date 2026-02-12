@@ -63,6 +63,8 @@ module ScoreboardService
       # Skip if no real scores yet (ESPN shows all zeros before game starts)
       return if linescore[:away].all?(&:zero?) && linescore[:home].all?(&:zero?)
 
+      periods_updated = []
+
       ActiveRecord::Base.transaction do
         progressive_score = { away: 0, home: 0 }
 
@@ -103,8 +105,44 @@ module ScoreboardService
           end
 
           period_score.save!
+
+          # Track this period for activity log
+          periods_updated << {
+            period: period_number,
+            away: away_score,
+            home: home_score,
+            away_total: progressive_score[:away],
+            home_total: progressive_score[:home],
+            winner_id: period_score.winner_id
+          }
         end
+
+        # Log the automated score update
+        ActivityLog.create!(
+          action: "score_update_automated",
+          record: @game,
+          metadata: {
+            source: "espn_scraper",
+            score_url: @game.score_url,
+            periods_updated: periods_updated,
+            final: linescore[:final]
+          }.to_json
+        )
       end
+    rescue => e
+      # Log transaction failure
+      ActivityLog.create!(
+        action: "transaction_rollback",
+        record: @game,
+        level: "error",
+        metadata: {
+          error_class: e.class.name,
+          error_message: e.message,
+          backtrace: e.backtrace.first(5),
+          context: "automated_score_scraping"
+        }.to_json
+      )
+      raise # Re-raise to preserve existing error handling
     end
 
     def fake_process_score(linescore)

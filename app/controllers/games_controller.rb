@@ -23,6 +23,18 @@ class GamesController < ApplicationController
     @game = Game.new(game_params)
 
     if @game.save
+      ActivityLog.create!(
+        action: "game_created",
+        record: @game,
+        user: current_user,
+        metadata: {
+          title: @game.title,
+          away_team: @game.away_team.display_name,
+          home_team: @game.home_team.display_name,
+          event: @game.event.title,
+          starts_at: @game.starts_at&.iso8601
+        }.to_json
+      )
       redirect_to @game, notice: "Game was successfully created"
     else
       render :new, status: :unprocessable_entity
@@ -38,10 +50,37 @@ class GamesController < ApplicationController
   end
 
   def destroy
+    reason = params[:reason]
+    if reason.blank?
+      redirect_to edit_game_path(@game), alert: "Deletion reason is required"
+      return
+    end
+
+    # Capture game metadata before destruction
+    game_metadata = {
+      title: @game.title,
+      away_team: @game.away_team.display_name,
+      home_team: @game.home_team.display_name,
+      event: @game.event.title,
+      had_scores: @game.scores.any?,
+      starts_at: @game.starts_at&.iso8601
+    }
+
+    event = @game.event
+
     if @game.destroy
-      redirect_to @game.event, notice: "Event was successfully deleted"
+      ActivityLog.create!(
+        action: "game_deleted",
+        record_type: "Game",
+        record_id: @game.id,
+        user: current_user,
+        level: "warning",
+        reason: reason,
+        metadata: game_metadata.to_json
+      )
+      redirect_to event, notice: "Game was successfully deleted"
     else
-      redirect_to @game.event, alert: @game.errors.full_messages.to_sentence
+      redirect_to event, alert: @game.errors.full_messages.to_sentence
     end
   end
 
@@ -133,6 +172,11 @@ class GamesController < ApplicationController
     home_scores = params[:home_scores].values.map { |v| v.blank? ? nil : v.to_i }
     mark_final = params[:mark_final] == "1"
     overtime = params[:overtime] == "1"
+    reason = params[:reason].presence
+
+    # Capture existing scores for comparison
+    existing_scores = @game.scores.by_period.index_by(&:period)
+    periods_changed = []
 
     ActiveRecord::Base.transaction do
       progressive_away = 0
@@ -148,6 +192,20 @@ class GamesController < ApplicationController
 
         progressive_away += away_score
         progressive_home += home_score
+
+        # Capture before state
+        old_score = existing_scores[period_number]
+        before_state = if old_score
+          {
+            away: old_score.away,
+            home: old_score.home,
+            away_total: old_score.away_total,
+            home_total: old_score.home_total,
+            winner_id: old_score.winner_id
+          }
+        else
+          { away: nil, home: nil }
+        end
 
         # Destroy existing score for this period and create new one
         @game.scores.where(period: period_number).destroy_all
@@ -175,7 +233,39 @@ class GamesController < ApplicationController
         end
 
         score.save!
+
+        # Capture after state
+        after_state = {
+          away: away_score,
+          home: home_score,
+          away_total: progressive_away,
+          home_total: progressive_home,
+          winner_id: score.winner_id
+        }
+
+        # Track if changed
+        if before_state != after_state
+          periods_changed << {
+            period: period_number,
+            before: before_state,
+            after: after_state
+          }
+        end
       end
+
+      # Log the manual update
+      ActivityLog.create!(
+        action: "score_update_manual",
+        record: @game,
+        user: current_user,
+        reason: reason,
+        metadata: {
+          source: "manual_entry",
+          periods_changed: periods_changed,
+          mark_final: mark_final,
+          overtime: overtime
+        }.to_json
+      )
 
       @game.broadcast_scores
       @game.start! if @game.upcoming?
@@ -183,6 +273,20 @@ class GamesController < ApplicationController
     end
 
     redirect_to @game, notice: "Scores updated successfully"
+  rescue => e
+    ActivityLog.create!(
+      action: "transaction_rollback",
+      record: @game,
+      user: current_user,
+      level: "error",
+      metadata: {
+        error_class: e.class.name,
+        error_message: e.message,
+        backtrace: e.backtrace.first(5),
+        context: "manual_score_entry"
+      }.to_json
+    )
+    redirect_to @game, alert: "Failed to update scores: #{e.message}"
   end
 
   private

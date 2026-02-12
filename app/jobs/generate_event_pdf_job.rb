@@ -1,10 +1,12 @@
 class GenerateEventPdfJob < ApplicationJob
   queue_as :default
+  retry_on ActiveRecord::StatementTimeout, wait: 5.seconds, attempts: 3
 
-  def perform(event_id)
+  def perform(event_id, user_id = nil)
     event = Event.find_by(id: event_id)
     return unless event
 
+    user = User.find_by(id: user_id) if user_id
     Rails.logger.info "[GenerateEventPdfJob] Starting PDF generation for event #{event_id}"
 
     # Eager load associations to avoid N+1 queries during PDF generation
@@ -44,6 +46,20 @@ class GenerateEventPdfJob < ApplicationJob
 
     Rails.logger.info "[GenerateEventPdfJob] PDF generation complete for event #{event_id}"
 
+    # Log PDF generation (with retry for database locks)
+    log_with_retry do
+      ActivityLog.create!(
+        action: "pdf_generated",
+        record: event,
+        user: user,
+        metadata: {
+          event_title: event.title,
+          game_count: event.games.count,
+          file_size: pdf_data.bytesize
+        }.to_json
+      )
+    end
+
     # Broadcast that PDF is ready
     Turbo::StreamsChannel.broadcast_replace_to(
       event,
@@ -55,6 +71,22 @@ class GenerateEventPdfJob < ApplicationJob
     Rails.logger.error "[GenerateEventPdfJob] Failed to generate PDF for event #{event_id}: #{e.message}"
     Rails.logger.error e.backtrace.first(10).join("\n")
 
+    # Log PDF generation failure (with retry for database locks)
+    log_with_retry do
+      ActivityLog.create!(
+        action: "pdf_generation_failed",
+        record: event,
+        user: user,
+        level: "error",
+        metadata: {
+          event_title: event.title,
+          error_class: e.class.name,
+          error_message: e.message,
+          backtrace: e.backtrace.first(5)
+        }.to_json
+      )
+    end
+
     # Broadcast error state
     Turbo::StreamsChannel.broadcast_replace_to(
       event,
@@ -62,5 +94,23 @@ class GenerateEventPdfJob < ApplicationJob
       partial: "events/pdf_status",
       locals: { event: event, error: e.message }
     )
+  end
+
+  private
+
+  def log_with_retry(max_attempts: 3, wait: 0.5)
+    attempts = 0
+    begin
+      attempts += 1
+      yield
+    rescue ActiveRecord::StatementTimeout, SQLite3::BusyException => e
+      if attempts < max_attempts
+        sleep(wait * attempts)  # Exponential backoff
+        retry
+      else
+        Rails.logger.error "[GenerateEventPdfJob] Failed to log after #{attempts} attempts: #{e.message}"
+        # Don't re-raise - we don't want logging failures to fail the job
+      end
+    end
   end
 end

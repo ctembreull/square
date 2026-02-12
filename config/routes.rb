@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   # Users (admin management)
   resources :users, except: [:show]
 
+  # Activity Logs (admin only)
+  resources :activity_logs, only: [:index]
+
   # Events
   resources :events do
     resources :posts, only: [:new, :create]

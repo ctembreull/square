@@ -54,6 +54,7 @@ class Game < ApplicationRecord
   belongs_to :away_team, class_name: "Team"
 
   has_many :scores, dependent: :destroy
+  has_many :activity_logs, as: :record, dependent: :destroy
 
   validates :event, presence: true
   validates :league, presence: true
@@ -134,13 +135,35 @@ class Game < ApplicationRecord
   end
 
   def start!
+    old_status = status.to_s
     update!(status: "in_progress")
     broadcast_status_change
+
+    ActivityLog.create!(
+      action: "game_status_change",
+      record: self,
+      metadata: {
+        from: old_status,
+        to: "in_progress",
+        trigger: "auto"
+      }.to_json
+    )
   end
 
   def complete!
+    old_status = status.to_s
     update!(status: "completed")
     broadcast_status_change
+
+    ActivityLog.create!(
+      action: "game_status_change",
+      record: self,
+      metadata: {
+        from: old_status,
+        to: "completed",
+        trigger: "auto"
+      }.to_json
+    )
   end
 
   # Broadcast a page refresh to connected clients when status changes

@@ -21,6 +21,15 @@ class PostsController < ApplicationController
     @post.user_id = current_user.id
 
     if @post.save
+      ActivityLog.create!(
+        action: "post_created",
+        record: @post,
+        user: current_user,
+        metadata: {
+          title: @post.title,
+          event: @event.title
+        }.to_json
+      )
       redirect_to @post.event, notice: "Post was successfully created."
     else
       render :new, status: :unprocessable_entity
@@ -32,6 +41,15 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
+      ActivityLog.create!(
+        action: "post_updated",
+        record: @post,
+        user: current_user,
+        metadata: {
+          title: @post.title,
+          event: @post.event.title
+        }.to_json
+      )
       redirect_to @post.event, notice: "Post was successfully updated."
     else
       render :edit, status: :unprocessable_entity
@@ -50,6 +68,18 @@ class PostsController < ApplicationController
     if Rails.env.development?
       # Development: only send to current admin user (safety)
       PostMailer.event_post(@post, current_user.email, attach_pdf: attach_pdf).deliver_later
+      ActivityLog.create!(
+        action: "email_sent",
+        record: @post,
+        user: current_user,
+        metadata: {
+          post_title: @post.title,
+          event: @post.event.title,
+          recipient_count: 1,
+          attach_pdf: attach_pdf,
+          environment: "development"
+        }.to_json
+      )
       msg = attach_pdf ? "Email with PDF sent to #{current_user.email} (dev mode)." : "Email sent to #{current_user.email} (dev mode)."
       redirect_to @post.event, notice: msg
     else
@@ -66,6 +96,18 @@ class PostsController < ApplicationController
         PostMailer.event_post(@post, email, attach_pdf: attach_pdf).deliver_later
       end
 
+      ActivityLog.create!(
+        action: "email_sent",
+        record: @post,
+        user: current_user,
+        metadata: {
+          post_title: @post.title,
+          event: @post.event.title,
+          recipient_count: emails.count,
+          attach_pdf: attach_pdf,
+          environment: "production"
+        }.to_json
+      )
       redirect_to @post.event, notice: "Email queued for #{emails.count} recipient(s)."
     end
   end

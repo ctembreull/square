@@ -1,0 +1,56 @@
+<% activity_logs = @game.activity_logs.recent.limit(10) %>
+<% if show_admin_tools? && activity_logs.any? %>
+  <div class="card mt-3">
+    <div class="card-header py-2 d-flex justify-content-between align-items-center">
+      <h6 class="mb-0">Activity Log</h6>
+      <%= link_to "View All", activity_logs_path(record_type_filter: "Game"), class: "btn btn-sm btn-link p-0" %>
+    </div>
+    <div class="card-body p-2">
+      <div class="table-responsive">
+        <table class="table table-sm fs-10 mb-0">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Action</th>
+              <th>User</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% activity_logs.each do |log| %>
+              <tr>
+                <td class="text-nowrap">
+                  <%= log.created_at.in_time_zone("America/Los_Angeles").strftime("%m/%d %H:%M") %>
+                </td>
+                <td>
+                  <span class="badge bg-<%= log_badge_color(log.level) %> fs-11">
+                    <%= log.action.humanize %>
+                  </span>
+                </td>
+                <td><small><%= log.user&.name || "System" %></small></td>
+                <td>
+                  <small class="text-muted">
+                    <% if log.reason.present? %>
+                      <%= log.reason.truncate(40) %>
+                    <% elsif log.metadata.present? %>
+                      <% metadata = log.parsed_metadata %>
+                      <% if metadata["periods_changed"].present? %>
+                        <%= pluralize(metadata["periods_changed"].length, "period") %> updated
+                      <% elsif metadata["from"].present? && metadata["to"].present? %>
+                        <%= metadata["from"] %> → <%= metadata["to"] %>
+                      <% elsif metadata["error_message"].present? %>
+                        Error: <%= metadata["error_message"].truncate(30) %>
+                      <% else %>
+                        <%= log.metadata.truncate(40) %>
+                      <% end %>
+                    <% end %>
+                  </small>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<% end %>

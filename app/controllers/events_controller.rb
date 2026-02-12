@@ -101,7 +101,7 @@ class EventsController < ApplicationController
   end
 
   def generate_pdf
-    GenerateEventPdfJob.perform_later(@event.id)
+    GenerateEventPdfJob.perform_later(@event.id, current_user.id)
     respond_to do |format|
       format.html { redirect_to @event, notice: "PDF generation started. This may take a minute." }
       format.turbo_stream {

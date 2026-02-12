@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_02_04_174932) do
+ActiveRecord::Schema[8.1].define(version: 2026_02_12_193256) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -52,12 +52,14 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_04_174932) do
   create_table "activity_logs", force: :cascade do |t|
     t.string "action", null: false
     t.datetime "created_at", null: false
+    t.string "level", default: "info", null: false
     t.text "metadata"
     t.text "reason"
     t.bigint "record_id"
     t.string "record_type", null: false
     t.bigint "user_id"
     t.index ["created_at"], name: "index_activity_logs_on_created_at"
+    t.index ["level"], name: "index_activity_logs_on_level"
     t.index ["record_type", "record_id"], name: "index_activity_logs_on_record"
     t.index ["user_id"], name: "index_activity_logs_on_user_id"
   end
