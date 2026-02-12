@@ -68,12 +68,12 @@ namespace :r2 do
     )
     puts "  ✓ Uploaded seeds/timestamp.json"
 
-    # Future: Log to ActivityLog when that feature is implemented
-    # ActivityLog.create!(
-    #   action: "r2_push",
-    #   record_type: "System",
-    #   metadata: metadata.to_json
-    # )
+    # Log to ActivityLog
+    ActivityLog.create!(
+      action: "r2_sync",
+      record_type: "System",
+      metadata: metadata.to_json
+    )
 
     puts "\n✅ Backup complete! Pushed #{files.count} files to R2 at #{metadata[:synced_at]}"
   end

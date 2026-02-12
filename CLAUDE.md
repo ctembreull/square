@@ -67,7 +67,9 @@ These issues must be resolved before any other development work. Do not proceed 
 
 ## Next Session Priority
 
-*(No priority items - R2 infrastructure complete!)*
+**#1 Priority - Email Sending Page**: Replace simple dropdown with dedicated page featuring email preview (left) + checkbox tree of players grouped by families (right). Include PDF staleness indicator with "Regenerate PDF" button. Enables selective resending for missed emails.
+
+**#2 Priority - International Timezone Support**: "More timezones..." modal with full timezone list grouped by region (Americas, Europe, Asia/Pacific). Handles edge case of international family members or travelers without cluttering main dropdown.
 
 ### Resolved Blockers
 - ✅ **R2 Infrastructure** - Complete: Litestream continuous backups + production-as-source workflow implemented. `rake r2:push` runs daily at 3am, `rake r2:pull` syncs dev from prod. Sports structure moved to YAML export (`structure.rake`). Litestream replicates all three SQLite databases to R2 with 10-second sync for main DB.
@@ -360,7 +362,7 @@ Target: Ready for football season
 | ESPN scraper improvements | Better error handling |
 | ~~Transaction wrapper for score processing~~ | ✅ Done - Wrapped `ScoreboardService::ScoreScraper#process_score` and `GamesController#manual_scores` in `ActiveRecord::Base.transaction` blocks. Ensures all period scores update atomically - either all succeed or none do, preventing partial data on failure. |
 | ~~**Event completion timezone fix**~~ | ✅ Done - Events now use Hawaii time (UTC-10) for status transitions via `Event.today_in_hawaii` class method. Prevents premature completion at midnight UTC. Updated scopes (in_progress, upcoming, completed) and status method to use Hawaii time consistently. |
-| **ActivityLog accountability system** | Single audit log table for admin actions and system events. Log: (1) Score updates - automated scraping and manual entry with before/after state, (2) Transaction failures/rollbacks - capture errors with full context for debugging, (3) Game deletions - require `reason` field in UI, store who/when/why, (4) Manual score corrections - log old vs new values for each period, (5) Status changes - track game state transitions (start!, complete!). Simple schema: `user_id`, `action`, `loggable` (polymorphic), `details` (JSON), `created_at`. Provides visibility and accountability without per-model complexity. |
+| ~~**ActivityLog accountability system**~~ | ✅ Done - Comprehensive audit logging with `level` column (info/warning/error), polymorphic `record` association, `metadata` JSON, and `reason` field for destructive actions. Logs: game creation/deletion, status changes, score updates (automated/manual), PDF generation success/failure, post create/update, email sends. Admin UI at `/activity_logs` with auto-submit filters (level, action, record_type, user including "System"). View/Hide metadata toggle, Pagy pagination. Job retry logic handles database locks during high concurrency. |
 | Scraper registry pattern | Cleaner architecture |
 | ~~Document rake tasks~~ | ✅ Done - README documents all export/import tasks and rebuild order |
 | **Job queue monitoring** | Email/SMS alerts to admins when Solid Queue worker stalls or queue backs up |
@@ -424,6 +426,7 @@ Target: Ready for football season
 | **Text-stroke lightness slider** | HSL adjustment for readability tuning. Fine-tune stroke color relative to background. |
 | **Family-selected charities** | (Governance proposal pending) Allow each family/single to choose a favorite charity. Charities would be associated with families and have `chances` based on selection count (e.g., if two families pick World Central Kitchen, it gets double chances). Would require rethinking current Charity model where chances=0 and family_id=null. |
 | **Historical digit frequency computation** | Replace hardcoded probability data with frequencies computed from our own game history. Job runs on event completion: tallies final score digits by sport, stores computed frequencies (JSON column or dedicated table). Need 100+ games per sport for statistical significance. Could offer toggle between "published averages" and "our history" once sample size is meaningful. |
+| **ActivityLog R2 archival** | Export and archive old ActivityLogs to R2, keep SQLite database lean. **Prerequisites**: (1) Add `event_id` column to ActivityLogs for direct event association (simplifies queries, enables event-based archival), (2) Backfill existing logs by traversing polymorphic associations (Game→Event, Post→Event). **Implementation**: `rake activity_logs:archive` exports completed event logs to JSON (e.g., `activity_logs/2026/march-madness-2026.json`), uploads to R2, deletes from database. **Retention policy**: Keep current season + last season in SQLite, archive older seasons to R2, purge ancient logs (2+ years) entirely. **Recovery**: Download JSON from R2 if historical investigation needed. Fits perfectly with existing R2 infrastructure and "production as source" philosophy. |
 
 ## Potential 2.0 Features
 
@@ -443,6 +446,7 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | **SolidQueue database locks** | Fixed with `processes: 0` in dev. Monitor production for any lock contention under load. |
 | **Admin toolbar toggle** | Fixed multiple times (button_to → link_to with Turbo method). Bootstrap dropdown + form interaction causes click handler issues. If multi-click problem recurs, may need to move outside dropdown or use custom JavaScript. |
 | **PDF generation reliability** | Intermittent blank PDF downloads (Super Bowl 2026: event had Q1/Q2 scores but generated blank PDF, did not recur). Possible causes: Puppeteer timeout, asset loading failure, race condition in async job, or Turbo state issues. Add detailed logging around PDF generation (Grover/Puppeteer timing, asset requests, content verification). Monitor closely during NCAA Tournament (first high-volume test). If recurs, check: job logs, Puppeteer timeout settings, CSS/asset loading in headless browser, database transaction timing. |
+| **ActivityLog table growth** | Monitor database size as logs accumulate. High-frequency events: score scraping every 5 minutes during games, PDF generation with backtraces, bulk email sends. SQLite size matters more than traditional databases. May need archival strategy: export old logs to JSON/CSV, purge records older than N months, or move to separate archive database. Consider retention policy: keep recent season, archive previous seasons, purge after 2-3 years. Check table size periodically: `SELECT COUNT(*), pg_size_pretty(pg_total_relation_size('activity_logs')) FROM activity_logs;` (adjust for SQLite). |
 
 ## Small Fixes (No Milestone)
 
@@ -468,7 +472,8 @@ Items that are "done" but need periodic attention as the app scales or usage pat
 | ✅ **Hide PDF button if no games** | Done - Wrapped PDF status partial content in `event.games.any?` check. No PDF UI shown if event has no games. |
 | ✅ **Delete button for scoreless games** | Done - Added delete button on Game#edit page (in header alongside "Swap Teams"). Only shows if `@game.scores.empty?`. Confirmation dialog prevents accidental deletion. |
 | ✅ **Sticky header on winners worksheet** | Done - Wrapped header card and progress bar in sticky container (`sticky-top bg-body pt-3` with `z-index: 1020`). Header stays at top while worksheet table scrolls beneath. |
+| **MAYBE: Log affiliation/color/style changes** | Consider adding ActivityLog entries for team data modifications (affiliations added/removed, colors created/updated, styles created/updated). Would provide audit trail for team branding changes. May be overkill for low-frequency operations. |
 
 ---
 
-**Last Updated**: 2026-02-04
+**Last Updated**: 2026-02-12
