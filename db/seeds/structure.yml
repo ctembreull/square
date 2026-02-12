@@ -1,0 +1,313 @@
+---
+leagues:
+  FBS:
+    name: NCAA Football Bowl Subdivision
+    sport: football
+    gender: men
+    level: college
+    periods: 4
+    quarters_score_as_halves: false
+    espn_slug: football/college-football
+    conferences:
+    - abbr: AAC
+      name: American Conference
+      display_name: American
+    - abbr: ACC
+      name: Atlantic Coast Conference
+      display_name: Atlantic Coast
+    - abbr: B12
+      name: Big 12 Conference
+      display_name: Big 12
+    - abbr: B1G
+      name: Big Ten Conference
+      display_name: Big Ten
+    - abbr: CUSA
+      name: Conference USA
+      display_name: Conference USA
+    - abbr: IND
+      name: FBS Independents
+      display_name: Independent
+    - abbr: MAC
+      name: Mid-American Conference
+      display_name: Mid-American
+    - abbr: MWC
+      name: Mountain West Conference
+      display_name: Mountain West
+    - abbr: PAC
+      name: Pac-12 Conference
+      display_name: Pac-12
+    - abbr: SEC
+      name: Southeastern Conference
+      display_name: Southeastern
+    - abbr: SUN
+      name: Sun Belt Conference
+      display_name: Sun Belt
+  FCS:
+    name: NCAA Football Championship Subdivision
+    sport: football
+    gender: men
+    level: college
+    periods: 4
+    quarters_score_as_halves: false
+    conferences:
+    - abbr: BSKY
+      name: Big Sky Conference
+      display_name: Big Sky
+    - abbr: CAA
+      name: Coastal Athletic Association
+      display_name: Coastal
+    - abbr: IND
+      name: FCS Independents
+      display_name: Independents
+    - abbr: IVY
+      name: Ivy League
+      display_name: Ivy
+    - abbr: MEAC
+      name: Mid-Eastern Athletic Conference
+      display_name: Mid-Eastern
+    - abbr: MVC
+      name: Missouri Valley Football Conference
+      display_name: Missouri Valley
+    - abbr: NEC
+      name: Northeast Conference
+      display_name: Northeast
+    - abbr: OVCS
+      name: OVC-Big South Association
+      display_name: OVC - Big South
+    - abbr: PAT
+      name: Patriot League
+      display_name: Patriot League
+    - abbr: PIO
+      name: Pioneer Football League
+      display_name: Pioneer
+    - abbr: SLND
+      name: Southland Conference
+      display_name: Southland
+    - abbr: SOU
+      name: Southern Conference
+      display_name: Southern
+    - abbr: SWAC
+      name: Southwestern Athletic Conference
+      display_name: Southwestern
+    - abbr: UAC
+      name: United Athletic Conference
+      display_name: United
+  MBB:
+    name: NCAA Men's Division I Basketball
+    sport: basketball
+    gender: men
+    level: college
+    periods: 2
+    quarters_score_as_halves: false
+    espn_slug: basketball/mens-college-basketball
+    conferences:
+    - abbr: A10
+      name: Atlantic 10 Conference
+      display_name: Atlantic 10
+    - abbr: AAC
+      name: American Conference
+      display_name: American
+    - abbr: ACC
+      name: Atlantic Coast Conference
+      display_name: Atlantic Coast
+    - abbr: AEAST
+      name: America East Conference
+      display_name: " America East"
+    - abbr: ASUN
+      name: Atlantic Sun Conference
+      display_name: Atlantic Sun
+    - abbr: B12
+      name: Big 12 Conference
+      display_name: Big 12
+    - abbr: B1G
+      name: Big Ten Conference
+      display_name: Big Ten
+    - abbr: BIGEAST
+      name: Big East Conference
+      display_name: Big East
+    - abbr: BSOUTH
+      name: Big South Conference
+      display_name: Big South
+    - abbr: BWEST
+      name: Big West Conference
+      display_name: Big West
+    - abbr: CAA
+      name: Coastal Athletic Association
+      display_name: 'Coastal '
+    - abbr: CUSA
+      name: Conference USA
+      display_name: " Conference USA"
+    - abbr: HORIZ
+      name: Horizon League
+      display_name: " Horizon League"
+    - abbr: IVY
+      name: Ivy League
+      display_name: " Ivy League"
+    - abbr: MAC
+      name: Mid-American Conference
+      display_name: Mid-American
+    - abbr: MEAC
+      name: Mid-Eastern Athletic Conference
+      display_name: Mid-Eastern
+    - abbr: METRO
+      name: Metro Atlantic Athletic Conference
+      display_name: Metro Atlantic
+    - abbr: MVC
+      name: Missouri Valley Conference
+      display_name: Missouri Valley
+    - abbr: MWC
+      name: Mountain West Conference
+      display_name: Mountain West
+    - abbr: NEC
+      name: Northeast Conference
+      display_name: Northeast
+    - abbr: OVC
+      name: Ohio Valley Conference
+      display_name: Ohio Valley
+    - abbr: PAT
+      name: Patriot League
+      display_name: Patriot League
+    - abbr: SEC
+      name: Southeastern Conference
+      display_name: Southeastern
+    - abbr: SKY
+      name: Big Sky Conference
+      display_name: Big Sky
+    - abbr: SLND
+      name: Southland Conference
+      display_name: Southland
+    - abbr: SOU
+      name: Southern Conference
+      display_name: Southern
+    - abbr: SUM
+      name: Summit League
+      display_name: Summit
+    - abbr: SUN
+      name: Sun Belt Conference
+      display_name: Sun Belt
+    - abbr: SWAC
+      name: Southwestern Athletic Conference
+      display_name: Southwestern
+    - abbr: WCC
+      name: West Coast Conference
+      display_name: West Coast
+    - abbr: WEST
+      name: Western Athletic Conference
+      display_name: Western
+  NFL:
+    name: National Football League
+    sport: football
+    gender: men
+    level: pro
+    periods: 4
+    quarters_score_as_halves: false
+    espn_slug: football/nfl
+    conferences:
+    - abbr: AFC
+      name: American Football Conference
+      display_name: AFC
+    - abbr: NFC
+      name: National Football Conference
+      display_name: NFC
+  WBB:
+    name: NCAA Women's Division I Basketball
+    sport: basketball
+    gender: women
+    level: college
+    periods: 4
+    quarters_score_as_halves: true
+    espn_slug: basketball/womens-college-basketball
+    conferences:
+    - abbr: A10
+      name: Atlantic 10 Conference
+      display_name: Atlantic 10
+    - abbr: AAC
+      name: American Conference
+      display_name: American
+    - abbr: ACC
+      name: Atlantic Coast Conference
+      display_name: Atlantic Coast
+    - abbr: AEAST
+      name: America East Conference
+      display_name: America East
+    - abbr: ASUN
+      name: Atlantic Sun Conference
+      display_name: Atlantic Sun
+    - abbr: B12
+      name: Big 12 Conference
+      display_name: Big 12
+    - abbr: B1G
+      name: Big Ten Conference
+      display_name: Big Ten
+    - abbr: BIGEAST
+      name: Big East Conference
+      display_name: Big East
+    - abbr: BSKY
+      name: Big Sky Conference
+      display_name: Big Sky
+    - abbr: BSOUTH
+      name: Big South Conference
+      display_name: Big South
+    - abbr: BWEST
+      name: Big West Conference
+      display_name: Big West
+    - abbr: CAA
+      name: Coastal Athletic Association
+      display_name: Coastal
+    - abbr: CUSA
+      name: Conference USA
+      display_name: Conference USA
+    - abbr: HORIZ
+      name: Horizon League
+      display_name: Horizon League
+    - abbr: IVY
+      name: Ivy League
+      display_name: Ivy League
+    - abbr: MAC
+      name: Mid-American Conference
+      display_name: Mid-American
+    - abbr: MEAC
+      name: Mid-Eastern Athletic Conference
+      display_name: Mid-Eastern
+    - abbr: METRO
+      name: Metro Atlantic Athletic Conference
+      display_name: Metro Atlantic
+    - abbr: MVC
+      name: Missouri Valley Conference
+      display_name: Missouri Valley
+    - abbr: MWC
+      name: Mountain West Conference
+      display_name: Mountain West
+    - abbr: NEC
+      name: Northeast Conference
+      display_name: Northeast
+    - abbr: OVC
+      name: Ohio Valley Conference
+      display_name: Ohio Valley
+    - abbr: PAT
+      name: Patriot League
+      display_name: Patriot League
+    - abbr: SEC
+      name: Southeastern Conference
+      display_name: Southeastern
+    - abbr: SLND
+      name: Southland Conference
+      display_name: Southland
+    - abbr: SOU
+      name: Southern Conference
+      display_name: Southern
+    - abbr: SUM
+      name: Summit League
+      display_name: Summit League
+    - abbr: SUN
+      name: Sun Belt Conference
+      display_name: Sun Belt
+    - abbr: SWAC
+      name: Southwestern Athletic Conference
+      display_name: Southwestern
+    - abbr: WCC
+      name: West Coast Conference
+      display_name: West Coast
+    - abbr: WEST
+      name: Western Athletic Conference
+      display_name: Western
