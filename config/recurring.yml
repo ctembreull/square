@@ -24,3 +24,6 @@ production:
   refresh_active_games:
     class: RefreshActiveGamesJob
     schedule: every 5 minutes
+  r2_daily_backup:
+    class: R2PushJob
+    schedule: every day at 3am

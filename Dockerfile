@@ -84,6 +84,14 @@ FROM base
 COPY --from=build /usr/local/node /usr/local/node
 ENV PATH=/usr/local/node/bin:$PATH
 
+# Install Litestream for continuous database backups to R2
+# https://github.com/benbjohnson/litestream/releases
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y wget ca-certificates && \
+    wget -qO- https://github.com/benbjohnson/litestream/releases/download/v0.3.13/litestream-v0.3.13-linux-amd64.tar.gz | \
+    tar xvz -C /usr/local/bin litestream && \
+    rm -rf /var/lib/apt/lists /var/cache/apt/archives
+
 # Run and own only the runtime files as a non-root user for security
 RUN groupadd --system --gid 1000 rails && \
     useradd rails --uid 1000 --gid 1000 --create-home --shell /bin/bash

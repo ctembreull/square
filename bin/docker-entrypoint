@@ -19,6 +19,14 @@ if [ "${@: -2:1}" == "./bin/rails" ] && [ "${@: -1:1}" == "server" ]; then
   if [ -n "$ADMIN_EMAIL" ] && [ -n "$ADMIN_PASSWORD" ]; then
     ./bin/rails users:create_admin
   fi
+
+  # Start Litestream replication in background (production only)
+  if [ -n "$FLY_APP_NAME" ] && [ "$RAILS_ENV" = "production" ]; then
+    echo "Starting Litestream replication..."
+    litestream replicate -config /rails/config/litestream.yml &
+    LITESTREAM_PID=$!
+    echo "Litestream started (PID: $LITESTREAM_PID)"
+  fi
 fi
 
 exec "${@}"

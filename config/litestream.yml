@@ -1,0 +1,45 @@
+# Litestream configuration for continuous SQLite replication to Cloudflare R2
+# Docs: https://litestream.io/reference/config/
+
+dbs:
+  # Main application database - most critical, frequent backups
+  - path: /rails/storage/production.sqlite3
+    replicas:
+      - type: s3
+        bucket: ${R2_BUCKET_NAME}
+        path: litestream/production
+        endpoint: ${R2_ENDPOINT_URL}
+        region: auto
+        access-key-id: ${R2_ACCESS_KEY_ID}
+        secret-access-key: ${R2_SECRET_ACCESS_KEY}
+        retention: 168h  # 7 days - allows recovery from recent mistakes
+        snapshot-interval: 24h  # Daily full snapshots
+        sync-interval: 10s  # Sync WAL changes every 10 seconds
+
+  # Cache database - less critical, can be rebuilt
+  - path: /rails/storage/production_cache.sqlite3
+    replicas:
+      - type: s3
+        bucket: ${R2_BUCKET_NAME}
+        path: litestream/production_cache
+        endpoint: ${R2_ENDPOINT_URL}
+        region: auto
+        access-key-id: ${R2_ACCESS_KEY_ID}
+        secret-access-key: ${R2_SECRET_ACCESS_KEY}
+        retention: 24h  # 1 day - cache is ephemeral
+        snapshot-interval: 24h
+        sync-interval: 60s  # Less frequent syncing
+
+  # Job queue database - transient data
+  - path: /rails/storage/production_queue.sqlite3
+    replicas:
+      - type: s3
+        bucket: ${R2_BUCKET_NAME}
+        path: litestream/production_queue
+        endpoint: ${R2_ENDPOINT_URL}
+        region: auto
+        access-key-id: ${R2_ACCESS_KEY_ID}
+        secret-access-key: ${R2_SECRET_ACCESS_KEY}
+        retention: 24h  # 1 day - job queue can be rebuilt
+        snapshot-interval: 24h
+        sync-interval: 60s  # Less frequent syncing
