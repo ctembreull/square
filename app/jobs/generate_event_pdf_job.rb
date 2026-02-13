@@ -60,11 +60,19 @@ class GenerateEventPdfJob < ApplicationJob
       )
     end
 
-    # Broadcast that PDF is ready
+    # Broadcast that PDF is ready (to event show page)
     Turbo::StreamsChannel.broadcast_replace_to(
       event,
       target: "event_pdf_status",
       partial: "events/pdf_status",
+      locals: { event: event }
+    )
+
+    # Broadcast to email sender page
+    Turbo::StreamsChannel.broadcast_replace_to(
+      event,
+      target: "email_sender_pdf_status",
+      partial: "events/pdf_status_email_sender",
       locals: { event: event }
     )
   rescue StandardError => e
@@ -87,11 +95,19 @@ class GenerateEventPdfJob < ApplicationJob
       )
     end
 
-    # Broadcast error state
+    # Broadcast error state (to event show page)
     Turbo::StreamsChannel.broadcast_replace_to(
       event,
       target: "event_pdf_status",
       partial: "events/pdf_status",
+      locals: { event: event, error: e.message }
+    )
+
+    # Broadcast error to email sender page
+    Turbo::StreamsChannel.broadcast_replace_to(
+      event,
+      target: "email_sender_pdf_status",
+      partial: "events/pdf_status_email_sender",
       locals: { event: event, error: e.message }
     )
   end

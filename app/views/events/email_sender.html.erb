@@ -1,0 +1,180 @@
+<%= turbo_stream_from @event %>
+
+<!-- Header -->
+<div class="card mb-3">
+  <div class="card-body">
+    <h4>Send Email</h4>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><%= link_to @event.title, @event %></li>
+        <li class="breadcrumb-item active">Send Email</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<%= form_with url: send_email_event_path(@event), method: :post,
+              data: { controller: "email-sender" } do |f| %>
+
+  <div class="row">
+    <!-- LEFT COLUMN (50%) -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0">Email Preview</h5>
+        </div>
+        <div class="card-body">
+          <!-- Post selector dropdown -->
+          <% if @posts.any? %>
+            <%= select_tag :post_id,
+                options_from_collection_for_select(@posts, :id, :title, @selected_post&.id),
+                class: "form-select mb-3",
+                data: { action: "change->email-sender#changePost" } %>
+
+            <!-- Email preview (embedded HTML) -->
+            <div class="email-preview email-preview-body p-3 border rounded bg-white" style="overflow: auto; max-height: 600px; contain: content;">
+              <%= @email_preview_html&.html_safe %>
+            </div>
+          <% else %>
+            <div class="alert alert-info">
+              No posts available for this event. <%= link_to "Create a post", new_event_post_path(@event) %> first.
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN (50%) -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0">
+            Recipients
+            <span class="badge bg-primary rounded-pill"><%= @recipient_count %></span>
+          </h5>
+        </div>
+        <div class="card-body">
+          <!-- PDF Status Section -->
+          <div class="mb-3 p-3 border rounded">
+            <%= render "events/pdf_status_email_sender", event: @event %>
+          </div>
+
+          <!-- Recipient Checkbox Tree -->
+          <div class="mb-3 p-4 py-1 border rounded">
+            <div class="form-check mb-2 px-2 py-1">
+              <%= check_box_tag "select_all_recipients", "1", true,
+                  class: "form-check-input",
+                  data: {
+                    email_sender_target: "selectAllCheckbox",
+                    action: "change->email-sender#toggleAll"
+                  } %>
+              <label class="form-check-label fw-bold">
+                Select Recipients
+              </label>
+            </div>
+
+            <div>
+              <!-- Families with members -->
+              <% @families_with_members.each do |family, members| %>
+              <div class="family-group mb-2">
+                <div class="form-check bg-100 px-2 py-1 rounded">
+                  <%= check_box_tag "group_checkbox_#{family.id}", "1", true,
+                      class: "form-check-input",
+                      data: {
+                        email_sender_target: "groupCheckbox",
+                        group_id: "family-#{family.id}",
+                        action: "email-sender#toggleGroup"
+                      } %>
+                  <label class="form-check-label fw-bold">
+                    <%= family.display_name_or_name %>
+                    <span class="text-muted">(family, <%= members.count %>)</span>
+                  </label>
+                </div>
+
+                <% members.each do |member| %>
+                  <div class="form-check ms-4 mt-1">
+                    <%= check_box_tag "recipient_ids[]", member.id, true,
+                        class: "form-check-input",
+                        data: {
+                          email_sender_target: "memberCheckbox",
+                          group_id: "family-#{family.id}",
+                          action: "email-sender#toggleMember"
+                        } %>
+                    <label class="form-check-label">
+                      <span class="bi-arrow-return-right me-1"></span>
+                      <%= member.display_name_or_name %>
+                    </label>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+
+              <!-- Singles -->
+              <% @singles.each do |single| %>
+                <div class="form-check px-2 py-1">
+                  <%= check_box_tag "recipient_ids[]", single.id, true,
+                      class: "form-check-input",
+                      data: {
+                        email_sender_target: "memberCheckbox groupCheckbox",
+                        group_id: "single-#{single.id}",
+                        action: "email-sender#toggleMember"
+                      } %>
+                  <label class="form-check-label">
+                    <%= single.display_name_or_name %>
+                  </label>
+                </div>
+              <% end %>
+            </div>
+          </div>
+
+          <!-- Hidden admin checkboxes (checked only when broadcasting to all) -->
+          <% @non_player_admins.each do |admin| %>
+            <%= check_box_tag "admin_ids[]", admin.id, true,
+                style: "display: none;",
+                data: {
+                  email_sender_target: "adminCheckbox"
+                } %>
+          <% end %>
+
+          <!-- Selected count -->
+          <div class="mb-3 text-muted">
+            Selected: <strong data-email-sender-target="selectedCount"><%= @recipient_count %></strong>
+            of <%= @recipient_count %>
+          </div>
+
+          <!-- Other Emails (Ad-hoc, not persisted) -->
+          <div class="mb-3 border-top pt-3">
+            <label for="other_emails" class="form-label">
+              <strong>Other Emails</strong>
+              <small class="text-muted">(optional, one-time use)</small>
+            </label>
+            <%= text_area_tag :other_emails, "",
+                class: "form-control",
+                rows: 2,
+                placeholder: "Enter additional email addresses (comma or line-separated)",
+                data: { email_sender_target: "otherEmails" } %>
+            <small class="form-text text-muted">
+              For temporary addresses or alternate contacts. Not saved to database.
+            </small>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <%= f.hidden_field :attach_pdf, value: "0" %>
+          <%= f.submit "Send Email",
+              class: "btn btn-primary me-2",
+              data: {
+                email_sender_target: "submitButton",
+                action: "click->email-sender#submitWithoutPdf"
+              } %>
+          <%= f.submit "Send with PDF",
+              class: "btn btn-success",
+              data: {
+                email_sender_target: "submitButton",
+                action: "click->email-sender#submitWithPdf"
+              } %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

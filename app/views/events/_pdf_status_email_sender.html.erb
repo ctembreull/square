@@ -1,0 +1,76 @@
+<% generating ||= false %>
+<% error ||= nil %>
+
+<div id="email_sender_pdf_status">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h6 class="mb-0">PDF Attachment</h6>
+    <% if error %>
+      <span class="badge bg-danger"
+            data-tippy-content="<%= error %>">
+        <i class="fas fa-exclamation-triangle"></i> Generation Failed
+      </span>
+    <% elsif generating %>
+      <span class="badge bg-info">
+        <span class="spinner-border spinner-border-sm me-1" role="status"></span>
+        Generating...
+      </span>
+    <% elsif event.pdf.attached? %>
+      <% if event.pdf_fresh? %>
+        <span class="badge bg-success"
+              data-tippy-content="Generated <%= time_ago_in_words(event.pdf.blob.created_at) %> ago">
+          <i class="fas fa-check-circle"></i> PDF Ready
+        </span>
+      <% else %>
+        <span class="badge bg-warning"
+              data-tippy-content="Games or scores have changed since PDF generation">
+          <i class="fas fa-exclamation-triangle"></i> PDF Outdated
+        </span>
+      <% end %>
+    <% else %>
+      <span class="badge bg-secondary"
+            data-tippy-content="No PDF has been generated yet">
+        <i class="fas fa-file-pdf"></i> No PDF
+      </span>
+    <% end %>
+  </div>
+
+  <% if error %>
+    <div class="d-flex justify-content-end">
+      <%= link_to "Retry Generation",
+          generate_pdf_event_path(event),
+          class: "btn btn-sm btn-outline-danger",
+          data: { turbo_method: :post, turbo_frame: "_top" } %>
+    </div>
+  <% elsif generating %>
+    <!-- Show nothing while generating -->
+  <% elsif event.pdf.attached? %>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="form-check">
+        <%= check_box_tag :confirm_stale_pdf, "1", event.pdf_fresh?,
+            class: "form-check-input",
+            data: { email_sender_target: "staleConfirmation" } %>
+        <label class="form-check-label">
+          Attach PDF
+        </label>
+      </div>
+      <% unless event.pdf_fresh? %>
+        <%= link_to "Regenerate PDF",
+            generate_pdf_event_path(event),
+            class: "btn btn-sm btn-outline-primary",
+            data: { turbo_method: :post, turbo_frame: "_top" } %>
+      <% end %>
+    </div>
+    <% unless event.pdf_fresh? %>
+      <small class="text-warning d-block mt-1">
+        I understand the PDF is outdated and want to send it anyway
+      </small>
+    <% end %>
+  <% else %>
+    <div class="d-flex justify-content-end">
+      <%= link_to "Generate PDF",
+          generate_pdf_event_path(event),
+          class: "btn btn-sm btn-primary",
+          data: { turbo_method: :post, turbo_frame: "_top" } %>
+    </div>
+  <% end %>
+</div>

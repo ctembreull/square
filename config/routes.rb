@@ -21,6 +21,8 @@ Rails.application.routes.draw do
       get :pdf
       post :generate_pdf
       patch :end_event
+      get :email_sender
+      post :send_email
     end
   end
   root "events#home"
@@ -79,7 +81,6 @@ Rails.application.routes.draw do
   resources :posts, only: [:show, :edit, :update, :destroy] do
     member do
       get :content
-      post :send_email
     end
   end
 

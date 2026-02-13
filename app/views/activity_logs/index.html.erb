@@ -122,8 +122,8 @@
         </div>
       </div>
       <% if @pagy.pages > 1 %>
-        <div class="card-footer">
-          <%== pagy_nav(@pagy) %>
+        <div class="card-footer d-flex justify-content-center">
+          <%== @pagy.series_nav(:bootstrap) %>
         </div>
       <% end %>
     </div>

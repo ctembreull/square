@@ -11,30 +11,12 @@
 				</div>
 				<% if defined?(admin?) && admin? %>
 					<div class="btn-group">
+						<%= link_to email_sender_event_path(post.event, post_id: post.id), class: "btn btn-outline-primary btn-sm", data: { turbo_frame: "_top" } do %>
+							<span class="fas fa-paper-plane me-1"></span> Send Email
+						<% end %>
 						<%= link_to edit_post_path(post), class: "btn btn-outline-secondary btn-sm", data: { turbo_frame: "_top" } do %>
 							<span class="fas fa-edit"></span>
 						<% end %>
-						<button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-							<span class="fas fa-paper-plane me-1"></span> Send
-						</button>
-						<ul class="dropdown-menu dropdown-menu-end">
-							<li>
-								<%= button_to send_email_post_path(post), method: :post, class: "dropdown-item",
-									form: { data: { turbo_confirm: Rails.env.development? ?
-										"Send test email to yourself?" :
-										"Send to #{Player.email_recipients.select(:email).distinct.count} recipient(s)?" } } do %>
-									<span class="fas fa-envelope me-2"></span> Send Email
-								<% end %>
-							</li>
-							<li>
-								<%= button_to send_email_post_path(post, attach_pdf: "1"), method: :post, class: "dropdown-item",
-									form: { data: { turbo_confirm: Rails.env.development? ?
-										"Send test email with PDF to yourself?" :
-										"Send with PDF to #{Player.email_recipients.select(:email).distinct.count} recipient(s)?" } } do %>
-									<span class="fas fa-file-pdf me-2"></span> Send with PDF
-								<% end %>
-							</li>
-						</ul>
 					</div>
 				<% end %>
 			</div>
