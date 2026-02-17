@@ -1,0 +1,50 @@
+<%
+  international_zones = {
+    "Americas" => [
+      ["Atlantic Time (Canada)", "-04:00"],
+      ["Newfoundland", "-03:30"],
+      ["Buenos Aires", "-03:00"],
+      ["Santiago", "-04:00"]
+    ],
+    "Europe & Africa" => [
+      ["London", "+00:00"],
+      ["Paris", "+01:00"],
+      ["Athens", "+02:00"],
+      ["Moscow", "+03:00"]
+    ],
+    "Asia" => [
+      ["Abu Dhabi", "+04:00"],
+      ["Kolkata", "+05:30"],
+      ["Bangkok", "+07:00"],
+      ["Hong Kong", "+08:00"],
+      ["Tokyo", "+09:00"],
+      ["Seoul", "+09:00"]
+    ],
+    "Pacific" => [
+      ["Sydney", "+10:00"],
+      ["Auckland", "+12:00"]
+    ]
+  }
+%>
+
+<div class="modal fade" id="timezoneModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <h6 class="modal-title mb-0">International Timezones</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body py-2">
+        <% international_zones.each_with_index do |(region, zones), i| %>
+          <% if i > 0 %><hr class="my-2"><% end %>
+          <div class="text-uppercase fw-semibold text-muted mb-1" style="font-size: 0.7rem; letter-spacing: 0.05em;"><%= region %></div>
+          <% zones.each do |name, offset| %>
+            <%= button_to timezone_path(timezone: name), method: :patch, class: "dropdown-item py-1 #{'fw-bold' if name == current_timezone}" do %>
+              <%= name %> <span class="text-muted ms-1" style="font-size: 0.85em;">UTC<%= offset %></span>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

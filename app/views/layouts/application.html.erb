@@ -114,6 +114,8 @@
 									<% %w[Hawaii Alaska Pacific\ Time\ (US\ &\ Canada) Arizona Mountain\ Time\ (US\ &\ Canada) Central\ Time\ (US\ &\ Canada) Eastern\ Time\ (US\ &\ Canada)].each do |zone| %>
 										<%= button_to zone, timezone_path(timezone: zone), method: :patch, class: "dropdown-item #{'fw-bold' if zone == current_timezone}" %>
 									<% end %>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item text-muted" data-bs-toggle="modal" data-bs-target="#timezoneModal">More...</a>
 								</div>
 							</div>
 						</li>
@@ -155,6 +157,7 @@
 				</div>
 
 			</div>
+		<%= render "layouts/timezone_modal" %>
     </main>
   </body>
 	
