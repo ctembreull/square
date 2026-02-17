@@ -67,9 +67,9 @@ These issues must be resolved before any other development work. Do not proceed 
 
 ## Next Session Priority
 
-**#1 Priority - Email Sending Page**: Replace simple dropdown with dedicated page featuring email preview (left) + checkbox tree of players grouped by families (right). Include PDF staleness indicator with "Regenerate PDF" button. Enables selective resending for missed emails.
+~~**#1 Priority - Email Sending Page**~~: ✅ Done.
 
-**#2 Priority - International Timezone Support**: "More timezones..." modal with full timezone list grouped by region (Americas, Europe, Asia/Pacific). Handles edge case of international family members or travelers without cluttering main dropdown.
+~~**#2 Priority - International Timezone Support**~~: ✅ Done.
 
 ### Resolved Blockers
 - ✅ **R2 Infrastructure** - Complete: Litestream continuous backups + production-as-source workflow implemented. `rake r2:push` runs daily at 3am, `rake r2:pull` syncs dev from prod. Sports structure moved to YAML export (`structure.rake`). Litestream replicates all three SQLite databases to R2 with 10-second sync for main DB.
@@ -374,7 +374,7 @@ Target: Ready for football season
 | **Security audit** | Run Brakeman + bundler-audit. Check: CSRF protection, param filtering, SQL injection, auth bypass, mass assignment. Review Fly.io secrets exposure. Low-value target but protect family fun from griefers. |
 | ~~**Query optimization on events#winners**~~ | ✅ Done - Load scores directly with includes for game and league associations |
 | **Mobile views (public only)** | (Maybe) Rails request variants for mobile device detection. Event show: vertical stack of game score cards. Game show: score card + player-filtered "your squares" list (dropdown sets cookie for server-side filtering) + stacked winners. Replaces 10x10 grid with simple list view. **⚠️ PUBLIC PAGES ONLY - NO ADMIN MOBILE EVER.** |
-| **International timezone support** | Add "More timezones..." option at bottom of timezone dropdown. Opens modal with full list of all timezones (grouped by region: Americas, Europe, Asia/Pacific, etc.). Clicking timezone sets cookie using same mechanism as dropdown. Handles edge case of international family members or travelers without cluttering the main dropdown. Future enhancement: IP geolocation auto-detect using Cloudflare headers (with manual override). |
+| ~~**International timezone support**~~ | ✅ Done - "More..." link at bottom of US timezone dropdown opens modal with 16 curated international timezones across 4 regions (Americas, Europe & Africa, Asia, Pacific). Same cookie mechanism, no new controllers or routes. Future enhancement: IP geolocation auto-detect using Cloudflare headers (with manual override). |
 | ~~**Production-as-source workflow**~~ | ✅ Done - Daily R2 sync at 3am via R2PushJob. Sports structure moved to YAML (`structure.rake`). `rake r2:push` exports and uploads 4 YAML files (structure, teams, players, affiliations) to R2. `rake r2:pull` downloads for dev sync. Safety gates prevent accidental prod overwrite from dev. |
 | ~~**Disaster recovery documentation**~~ | ✅ Done - Comprehensive DR section added to README covering: (1) Four recovery scenarios (complete DB loss, point-in-time recovery, corrupted team data, total infrastructure loss), (2) Step-by-step procedures for each scenario, (3) Backup best practices (automated + manual), (4) R2 bucket structure explanation, (5) Understanding when to use Litestream vs YAML exports. |
 
