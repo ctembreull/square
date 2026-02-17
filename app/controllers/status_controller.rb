@@ -16,15 +16,20 @@ class StatusController < ApplicationController
 
     if Rails.env.production? && ENV["FLY_APP_NAME"].present?
       heartbeat = Rails.cache.read("queue_heartbeat")
-      stale = heartbeat.nil? || heartbeat < HEARTBEAT_STALE_THRESHOLD.ago
 
-      status[:queue_status] = stale ? "stalled" : "ok"
-      status[:queue_heartbeat] = heartbeat&.iso8601
-
-      if stale
+      if heartbeat.nil?
+        # Cold start: no heartbeat yet, give the queue time to warm up
+        status[:queue_status] = "starting"
+      elsif heartbeat < HEARTBEAT_STALE_THRESHOLD.ago
+        # Had a heartbeat but it went stale: queue is stuck
+        status[:queue_status] = "stalled"
+        status[:queue_heartbeat] = heartbeat.iso8601
         log_queue_stall(heartbeat)
         render json: status, status: :service_unavailable
         return
+      else
+        status[:queue_status] = "ok"
+        status[:queue_heartbeat] = heartbeat.iso8601
       end
     end
 
