@@ -27,3 +27,6 @@ production:
   r2_daily_backup:
     class: R2PushJob
     schedule: every day at 3am
+  queue_heartbeat:
+    class: QueueHeartbeatJob
+    schedule: every 3 minutes
