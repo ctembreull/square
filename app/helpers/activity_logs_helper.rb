@@ -17,7 +17,7 @@ module ActivityLogsHelper
   end
 
   def activity_record_link(log)
-    return content_tag(:span, log.record_type, class: "text-muted") unless log.record
+    return content_tag(:span, log.record_type, class: "text-muted") unless log.record_id.present? && log.record_type&.safe_constantize
 
     case log.record
     when Game

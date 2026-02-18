@@ -2,7 +2,7 @@ class ActivityLogsController < ApplicationController
   before_action :require_admin
 
   def index
-    scope = ActivityLog.includes(:user, :record).recent
+    scope = ActivityLog.includes(:user).recent
 
     # Apply filters
     scope = scope.by_action(params[:action_filter]) if params[:action_filter].present?
@@ -18,6 +18,10 @@ class ActivityLogsController < ApplicationController
     end
 
     @pagy, @activity_logs = pagy(scope, items: 25)
+
+    # Preload polymorphic records in batch, skipping non-model types like "System"
+    preloadable = @activity_logs.select { |l| l.record_id.present? && l.record_type&.safe_constantize }
+    ActiveRecord::Associations::Preloader.new(records: preloadable, associations: [ :record ]).call
 
     # Get distinct users who have activity logs for the filter dropdown
     @users_for_filter = User.joins(:activity_logs).distinct.order(:name)

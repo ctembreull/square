@@ -20,7 +20,7 @@
           style: "width: auto;",
           onchange: "this.form.requestSubmit()" %>
       <%= f.select :action_filter,
-          options_for_select(%w[game_created game_deleted game_status_change score_update_automated score_update_manual post_created post_updated email_sent pdf_generated pdf_generation_failed transaction_rollback r2_sync], params[:action_filter]),
+          options_for_select(%w[game_created game_deleted game_status_change score_update_automated score_update_manual post_created post_updated email_sent pdf_generated pdf_generation_failed transaction_rollback r2_sync queue_stalled], params[:action_filter]),
           { include_blank: "All Actions" },
           class: "form-select form-select-sm",
           style: "width: auto;",

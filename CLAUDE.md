@@ -53,6 +53,7 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - ✅ Color form modal autofocuses the 'name' field
 - ✅ Replaced List.js with Ransack + Pagy for teams table (server-side search/sort)
 - ✅ Teams export missing `womens_name` and `brand_info` fields - added to `rake seeds:export` and `rake seeds:import`
+- ✅ `/activity_logs` 500 error (`uninitialized constant System`) - Manual `Preloader` with `safe_constantize` skips non-model `record_type` values
 
 ### Pending
 - (See milestone tables for tracked work items)
@@ -63,7 +64,7 @@ These issues must be resolved before any other development work. Do not proceed 
 
 | Issue | Description |
 |-------|-------------|
-| *(none)* | All blockers resolved |
+| *(none)* | |
 
 ## Next Session Priority
 
