@@ -1,9 +1,13 @@
 module ScoreboardService
+  class ScraperError < StandardError; end
+  class TransientError < ScraperError; end
+
   class ScoreScraper < ApplicationService
     def initialize(game)
       raise ScraperError, "No score URL set for game <#{game.id}>" if game.score_url.blank?
       @game = game
       @periods = game.league.periods
+      @scraper_source = nil
     end
 
     def call
@@ -36,12 +40,26 @@ module ScoreboardService
     end
 
     def scrape_by_url
-      if @game.score_url.match?("espn.com")
-        ScoreboardService::EspnScraper.scrape_score(@game.score_url)
-      elsif @game.score_url.match?("reference.com")
-        ScoreboardService::SrCfbScraper.scrape_score(@game.score_url)
+      raise ScraperError, "Unsupported score URL: #{@game.score_url}" unless @game.score_url.match?("espn.com")
+
+      scrape_espn
+    end
+
+    # ESPN: try JSON API first, fall back to HTML scraper
+    def scrape_espn
+      if @game.league.espn_slug.present?
+        begin
+          result = ScoreboardService::EspnApiScraper.scrape_score(@game)
+          @scraper_source = "espn_api"
+          result
+        rescue ScoreboardService::ScraperError => e
+          Rails.logger.warn "[ScoreScraper] ESPN API failed (#{e.message}), falling back to HTML for game #{@game.id}"
+          @scraper_source = "espn_html_fallback"
+          ScoreboardService::EspnHtmlScraper.scrape_score(@game.score_url)
+        end
       else
-        ScoreboardService::BaseScraper.scrape_score(@game.score_url)
+        @scraper_source = "espn_html"
+        ScoreboardService::EspnHtmlScraper.scrape_score(@game.score_url)
       end
     end
 
@@ -122,7 +140,7 @@ module ScoreboardService
           action: "score_update_automated",
           record: @game,
           metadata: {
-            source: "espn_scraper",
+            source: @scraper_source || "unknown",
             score_url: @game.score_url,
             periods_updated: periods_updated,
             final: linescore[:final]
@@ -191,6 +209,5 @@ module ScoreboardService
       period == @game.league.periods ? @game.final_prize : @game.period_prize
     end
 
-    class ScraperError < StandardError; end
   end
 end

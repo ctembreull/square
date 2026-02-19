@@ -105,7 +105,8 @@ class Game < ApplicationRecord
 
   # Extract the ESPN game id parameter from this game's score url
   def get_espn_game_id
-    score_url.delete_prefix("https://www.espn.com/").split("/")[4]
+    match = score_url&.match(/gameId\/(\d+)/)
+    match&.[](1)
   end
 
   # Get the ESPN API url for the summary of this game

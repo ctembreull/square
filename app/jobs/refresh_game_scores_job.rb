@@ -2,7 +2,7 @@ class RefreshGameScoresJob < ApplicationJob
   queue_as :default
 
   # Retry transient errors (timeouts, 5xx) with backoff: ~3s, ~18s, ~83s
-  retry_on ScoreboardService::BaseScraper::TransientError,
+  retry_on ScoreboardService::TransientError,
     wait: :polynomially_longer, attempts: 3
 
   def perform(game_id)
@@ -19,7 +19,7 @@ class RefreshGameScoresJob < ApplicationJob
     Rails.logger.info "[RefreshGameScoresJob] Completed scrape for game #{game_id}, final=#{is_final}"
   rescue URI::InvalidURIError
     Rails.logger.warn "[RefreshGameScoresJob] Invalid URL for game #{game_id}: #{game&.score_url}"
-  rescue ScoreboardService::ScoreScraper::ScraperError, ScoreboardService::BaseScraper::ScraperError => e
+  rescue ScoreboardService::ScraperError => e
     # Don't log pre-game errors - they're expected when game hasn't started
     return if e.message.include?("pre-game")
 
