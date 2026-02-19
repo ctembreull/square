@@ -9,12 +9,12 @@ module ScoreboardService
     LINESCORE_START_CELL = 2
     LINESCORE_END_CELL = -2
 
-    def self.scrape_score(url)
-      # Extract the linescore table from the html of the url specified
-      response = HTTParty.get(url)
-      raise ScraperError, "The URL returned no response" if response.body.nil? || response.body.empty?
+    HTTP_TIMEOUT = 15 # seconds for both connect and read
 
-      doc = Nokogiri::HTML(response.body)
+    def self.scrape_score(url)
+      response = fetch_url(url)
+      doc = parse_html(response.body)
+
       linescore = doc.css(self::LINESCORE_CSS_PATH)[self::LINESCORE_CSS_INDEX]
       raise ScraperError, "No linescore found in the response HTML" if linescore.nil?
 
@@ -42,6 +42,29 @@ module ScoreboardService
       :unknown
     end
 
+    def self.fetch_url(url)
+      response = HTTParty.get(url, timeout: HTTP_TIMEOUT)
+      raise ScraperError, "The URL returned no response" if response.body.nil? || response.body.empty?
+
+      unless response.success?
+        error_class = response.code >= 500 ? TransientError : ScraperError
+        raise error_class, "HTTP #{response.code} from #{URI.parse(url).host}"
+      end
+
+      response
+    rescue Net::OpenTimeout, Net::ReadTimeout => e
+      raise TransientError, "Timeout fetching #{URI.parse(url).host}: #{e.message}"
+    rescue SocketError, Errno::ECONNREFUSED, Errno::ECONNRESET => e
+      raise TransientError, "Network error fetching #{URI.parse(url).host}: #{e.message}"
+    end
+
+    def self.parse_html(body)
+      Nokogiri::HTML(body)
+    rescue => e
+      raise ScraperError, "HTML parse error: #{e.message}"
+    end
+
     class ScraperError < StandardError; end
+    class TransientError < ScraperError; end
   end
 end

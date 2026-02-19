@@ -21,7 +21,7 @@ module ScoreboardService
 
     def self.detect_game_status(doc)
       status_text = doc.css(self::STATUS_CSS_PATH).text
-      raise ScraperError, "No Gamestrip found in the response HTML" if status_text.nil?
+      raise ScraperError, "No Gamestrip found in the response HTML" if status_text.blank?
       return :final if status_text.include?("Final")
       :in_progress
     end
