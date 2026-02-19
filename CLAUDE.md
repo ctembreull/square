@@ -113,8 +113,6 @@ https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball
 - Scores: period-by-period, final, live updates
 - Odds, venue, attendance, etc.
 
-**Reference**: See `artifacts/espn_api_sample.json` for full response structure.
-
 **Usage guidelines**:
 - Cache aggressively - scores don't change faster than every few minutes
 - Respect 429 rate limit responses if they occur
@@ -179,14 +177,6 @@ Tables exist in schema, models not yet built:
 
 Grid rendering flow: Team → Colors → Styles → CSS class on grid headers
 
-### Welcome Widgets (artifacts/welcome/)
-Reusable components for game display, ready to wire to models:
-- **Cards**: `_standard_card`, `_flex_card` (generic wrappers)
-- **Game display**: `_game_card`, `_game_card_empty`, `_upcoming_game_list_item`
-- **Grid components**: `_grid_grid` (10x10 board), `_grid_scores` (period scores), `_grid_winners` (prize/winner table)
-- **Demo layout**: `demo.html.erb` shows full game page composition
-- Reference: `artifacts/Bowls_Round_2.pdf` shows existing game output format
-
 ## Falcon Theme Integration
 
 **Strategy: Option B (Selective Integration)**
@@ -211,9 +201,6 @@ Reusable components for game display, ready to wire to models:
 
 - Grid logic: `app/models/game.rb` (build_grid method)
 - Score scraping: `app/services/scoreboard_service/`
-- Old schema reference: `artifacts/schema.rb` (PostgreSQL, needs migration)
-- UI mockup: `artifacts/Bowls_Round_2.pdf`
-- Writing guide: `artifacts/Chris's Sports Writing Style Guide v2.pdf`
 
 ## Established Patterns & UX Understanding
 
@@ -378,6 +365,7 @@ Target: Ready for football season
 | ~~**International timezone support**~~ | ✅ Done - "More..." link at bottom of US timezone dropdown opens modal with 16 curated international timezones across 4 regions (Americas, Europe & Africa, Asia, Pacific). Same cookie mechanism, no new controllers or routes. Future enhancement: IP geolocation auto-detect using Cloudflare headers (with manual override). |
 | ~~**Production-as-source workflow**~~ | ✅ Done - Daily R2 sync at 3am via R2PushJob. Sports structure moved to YAML (`structure.rake`). `rake r2:push` exports and uploads 4 YAML files (structure, teams, players, affiliations) to R2. `rake r2:pull` downloads for dev sync. Safety gates prevent accidental prod overwrite from dev. |
 | ~~**Disaster recovery documentation**~~ | ✅ Done - Comprehensive DR section added to README covering: (1) Four recovery scenarios (complete DB loss, point-in-time recovery, corrupted team data, total infrastructure loss), (2) Step-by-step procedures for each scenario, (3) Backup best practices (automated + manual), (4) R2 bucket structure explanation, (5) Understanding when to use Litestream vs YAML exports. |
+| **Migrate backlog to GitHub Issues** | Tag 1.0 release on GitHub, then migrate all Post-1.0 and 2.0 items from CLAUDE.md into GitHub Issues with milestones and labels. Slim CLAUDE.md down to architectural context and patterns only. Last item before closing out 1.0 work. |
 
 ### Event PDF Export (Implemented)
 
@@ -419,7 +407,7 @@ Target: Ready for football season
 | **Historical game import** | Import games from old system (Google Sheets era). Complex: player list translation between systems, team/league mapping, missing `start_time` data, grid player ID reconciliation. Many unknowns - needs discovery phase before implementation. |
 | **Auto-calculate optimal chances** | Algorithm to find best-fit integer chance values given player counts. Constraints: sum to 100, individuals > families (shared winnings), configurable charity allocation. Constrained integer optimization problem. |
 | **Double-stroke text styling** | Layered outlines (e.g., Kennesaw State black/gold). Clean approach: `-webkit-text-stroke` for inner stroke, `text-shadow` for outer stroke. This separation allows conditionally disabling only the outer stroke at small font sizes while preserving the inner stroke for readability. Double-stroked text should also get `letter-spacing` adjustment to prevent crowding. |
-| **ESPN API full integration** | Audit all places we scrape ESPN HTML and migrate to JSON API where possible. ~~**Migration**: Add `espn_id`, `espn_mens_slug`, `espn_womens_slug` to Teams.~~ ✅ Done - all 397 teams have ESPN IDs/slugs. **Scraper registry**: `EspnApiScraper` as primary, `EspnHtmlScraper` as fallback, same interface. **Potential wins**: (1) Score scraper via API, (2) Team colors/logos from API, (3) Cleaner game status. Document rate limits and caching strategy. See `artifacts/espn_api_sample.json`. |
+| **ESPN API full integration** | Audit all places we scrape ESPN HTML and migrate to JSON API where possible. ~~**Migration**: Add `espn_id`, `espn_mens_slug`, `espn_womens_slug` to Teams.~~ ✅ Done - all 397 teams have ESPN IDs/slugs. **Scraper registry**: `EspnApiScraper` as primary, `EspnHtmlScraper` as fallback, same interface. **Potential wins**: (1) Score scraper via API, (2) Team colors/logos from API, (3) Cleaner game status. Document rate limits and caching strategy. Use `Game#get_espn_api_boxscore_url` to fetch live samples. |
 | **Team logos as local assets** | Build logo directory indexed by `css_slug`. Seed initially from ESPN API URLs, maintain locally. Self-hosted, no runtime external dependency. |
 | **External asset storage** | Configure Rails to serve assets from external storage (S3, Cloudflare R2, etc.) to avoid disk bloat on Fly.io. Active Storage supports multiple backends. Logos (~350 teams × ~50KB) would be ~17MB initially but plan for growth and multiple sports. |
 | **Cloudflare page caching** | Edge caching for public event/game pages. **Strategy**: TTL-based caching aligns perfectly with 5-minute score scraping interval. Set `expires_in 5.minutes` for in-progress games, `expires_in 24.hours` for completed games in Rails controllers. No manual cache invalidation needed - cache expires naturally when fresh data arrives. **Value**: Reduces Fly.io load during live events, faster page loads for family members, especially valuable for completed games (bulk of long-tail traffic). Pages without `expires_in` pass through uncached (safe default for admin pages). Monitor cache hit rates in Cloudflare dashboard. |
@@ -430,6 +418,7 @@ Target: Ready for football season
 | **Historical digit frequency computation** | Replace hardcoded probability data with frequencies computed from our own game history. Job runs on event completion: tallies final score digits by sport, stores computed frequencies (JSON column or dedicated table). Need 100+ games per sport for statistical significance. Could offer toggle between "published averages" and "our history" once sample size is meaningful. |
 | **ActivityLog R2 archival** | Export and archive old ActivityLogs to R2, keep SQLite database lean. **Prerequisites**: (1) Add `event_id` column to ActivityLogs for direct event association (simplifies queries, enables event-based archival), (2) Backfill existing logs by traversing polymorphic associations (Game→Event, Post→Event). **Implementation**: `rake activity_logs:archive` exports completed event logs to JSON (e.g., `activity_logs/2026/march-madness-2026.json`), uploads to R2, deletes from database. **Retention policy**: Keep current season + last season in SQLite, archive older seasons to R2, purge ancient logs (2+ years) entirely. **Recovery**: Download JSON from R2 if historical investigation needed. Fits perfectly with existing R2 infrastructure and "production as source" philosophy. |
 | **View componentization pass** | Full audit and refactor of large view files into focused partials/components. Goal: maintainability — long ERB files are hard to navigate and reason about. Extract repeated patterns (nav dropdowns, card wrappers, form groups, status badges) into reusable partials. Candidates: `application.html.erb` (navbar sections), `events/show` (game cards, score displays, winner tables), `games/show` (score card, grid, admin tools), `email_sender` (preview pane, recipient tree, PDF status). Follow Rails convention of `_component_name.html.erb` partials in a `components/` subdirectory per resource. Keep partials self-contained with clear local variable interfaces — no implicit instance variable dependencies where avoidable. |
+| **Backfill test coverage** | Comprehensive test suite written against the stable 1.0 codebase. **Approach**: Start with model tests (validations, scopes, associations, domain logic like `build_grid`, `process_winner`), then service objects (ScoreScraper, SquareProbabilityService), then controller/integration tests for critical flows (game creation, score scraping, email sending, PDF generation). Use fixtures seeded from production-like data. **Priority order**: (1) Models with business logic (Game, Score, Player, Event), (2) Service objects, (3) Job behavior (retry logic, error handling), (4) Controller happy paths + auth guards, (5) Edge cases discovered during tournament use. Wait until after 1.0 is stable — no point testing patterns that are still shifting. |
 
 ## Potential 2.0 Features
 
