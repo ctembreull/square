@@ -1,7 +1,4 @@
 module ScoreboardService
-  class ScraperError < StandardError; end
-  class TransientError < ScraperError; end
-
   class ScoreScraper < ApplicationService
     def initialize(game)
       raise ScraperError, "No score URL set for game <#{game.id}>" if game.score_url.blank?
