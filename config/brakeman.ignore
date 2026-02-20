@@ -1,0 +1,26 @@
+{
+  "ignored_warnings": [
+    {
+      "fingerprint": "3609db7f1a8d858ddc1a193d7c41d0887aa31d0a7eba8acb12fc4bd894cc9ef3",
+      "code": "params.require(:user).permit(:name, :email, :display_name, :admin, :password, :password_confirmation)",
+      "note": "UsersController is behind require_admin. Only existing admins can set the admin flag on other users. This is by design."
+    },
+    {
+      "fingerprint": "014094f16de93f471b5a94dcb9e9d0742f2053f1a2a23e8b1e9401e42339ae18",
+      "code": null,
+      "note": "Email preview renders PostMailer output. Post body uses Action Text (sanitized HTML). Admin-only page."
+    },
+    {
+      "fingerprint": "70d6d5baae94093b88a2ca9ad605fc6ac0ea192d9f464ae95c037d3ac63a4a88",
+      "code": "link_to(\"Preview\", Game.find(params[:id]).score_url, :target => \"_blank\")",
+      "note": "score_url is an ESPN URL set by admins during game creation. Not user-controllable input."
+    },
+    {
+      "fingerprint": "daf26c544384813bff9e88c63fb1ad758861c837740295007884c8f544e1cd07",
+      "code": "link_to(\"Box Score\", Game.find(params[:id]).score_url, :target => \"_blank\")",
+      "note": "Same as above - score_url is admin-set ESPN URL."
+    }
+  ],
+  "updated": "2026-02-20",
+  "brakeman_version": "7.1.2"
+}

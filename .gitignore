@@ -46,5 +46,6 @@
 /app/assets/stylesheets/teams/
 /app/assets/stylesheets/teams.scss
 
-# Claude Code working files
-/.claude/
+# Claude Code working files (except plans, which must be in the repo)
+/.claude/*
+!/.claude/plans/
