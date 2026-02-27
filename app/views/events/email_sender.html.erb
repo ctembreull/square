@@ -76,8 +76,8 @@
             <div>
               <!-- Families with members -->
               <% @families_with_members.each do |family, members| %>
-              <div class="family-group mb-2">
-                <div class="form-check bg-100 px-2 py-1 rounded">
+              <div class="family-group mb-1">
+                <div class="form-check bg-100 px-2 py-0 rounded">
                   <%= check_box_tag "group_checkbox_#{family.id}", "1", true,
                       class: "form-check-input",
                       data: {
@@ -92,7 +92,7 @@
                 </div>
 
                 <% members.each do |member| %>
-                  <div class="form-check ms-4 mt-1">
+                  <div class="form-check ms-4">
                     <%= check_box_tag "recipient_ids[]", member.id, true,
                         class: "form-check-input",
                         data: {
@@ -111,7 +111,7 @@
 
               <!-- Singles -->
               <% @singles.each do |single| %>
-                <div class="form-check px-2 py-1">
+                <div class="form-check px-2 py-0">
                   <%= check_box_tag "recipient_ids[]", single.id, true,
                       class: "form-check-input",
                       data: {
@@ -124,17 +124,29 @@
                   </label>
                 </div>
               <% end %>
+
+              <% if @non_player_admins.any? %>
+                <!-- Non-player admins -->
+                <div class="border-top mt-2 pt-1 px-2">
+                  <small class="text-muted fw-bold">Admins (non-player)</small>
+                </div>
+                <% @non_player_admins.each do |admin| %>
+                  <div class="form-check px-2 py-0">
+                    <%= check_box_tag "admin_ids[]", admin.id, true,
+                        class: "form-check-input",
+                        data: {
+                          email_sender_target: "memberCheckbox groupCheckbox",
+                          group_id: "admin-#{admin.id}",
+                          action: "email-sender#toggleMember"
+                        } %>
+                    <label class="form-check-label">
+                      <%= admin.name %>
+                    </label>
+                  </div>
+                <% end %>
+              <% end %>
             </div>
           </div>
-
-          <!-- Hidden admin checkboxes (checked only when broadcasting to all) -->
-          <% @non_player_admins.each do |admin| %>
-            <%= check_box_tag "admin_ids[]", admin.id, true,
-                style: "display: none;",
-                data: {
-                  email_sender_target: "adminCheckbox"
-                } %>
-          <% end %>
 
           <!-- Selected count -->
           <div class="mb-3 text-muted">
@@ -160,18 +172,10 @@
         </div>
 
         <div class="card-footer">
-          <%= f.hidden_field :attach_pdf, value: "0" %>
           <%= f.submit "Send Email",
-              class: "btn btn-primary me-2",
+              class: "btn btn-primary",
               data: {
-                email_sender_target: "submitButton",
-                action: "click->email-sender#submitWithoutPdf"
-              } %>
-          <%= f.submit "Send with PDF",
-              class: "btn btn-success",
-              data: {
-                email_sender_target: "submitButton",
-                action: "click->email-sender#submitWithPdf"
+                email_sender_target: "submitButton"
               } %>
         </div>
       </div>

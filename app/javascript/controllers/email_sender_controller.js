@@ -7,9 +7,7 @@ export default class extends Controller {
     "selectedCount",
     "submitButton",
     "selectAllCheckbox",
-    "staleConfirmation",
-    "otherEmails",
-    "adminCheckbox"
+    "otherEmails"
   ]
 
   connect() {
@@ -38,11 +36,6 @@ export default class extends Controller {
       .filter(cb => cb.dataset.groupId === groupId)
       .forEach(cb => cb.checked = checked)
 
-    // Uncheck admin checkboxes (selective mode)
-    if (this.hasAdminCheckboxTarget) {
-      this.adminCheckboxTargets.forEach(cb => cb.checked = false)
-    }
-
     this.updateSelectedCount()
   }
 
@@ -62,11 +55,6 @@ export default class extends Controller {
       groupCheckbox.indeterminate = checkedCount > 0 && checkedCount < members.length
     }
 
-    // Uncheck admin checkboxes (selective mode)
-    if (this.hasAdminCheckboxTarget) {
-      this.adminCheckboxTargets.forEach(cb => cb.checked = false)
-    }
-
     this.updateSelectedCount()
   }
 
@@ -81,11 +69,6 @@ export default class extends Controller {
       cb.checked = checked
       cb.indeterminate = false
     })
-
-    // Check/uncheck admin checkboxes (broadcast mode)
-    if (this.hasAdminCheckboxTarget) {
-      this.adminCheckboxTargets.forEach(cb => cb.checked = checked)
-    }
 
     this.updateSelectedCount()
   }
@@ -111,20 +94,4 @@ export default class extends Controller {
     })
   }
 
-  submitWithoutPdf(event) {
-    // Set hidden field to "0"
-    document.getElementById('attach_pdf').value = "0"
-  }
-
-  submitWithPdf(event) {
-    // Check if PDF is stale and confirmation not checked
-    if (this.hasStaleConfirmationTarget && !this.staleConfirmationTarget.checked) {
-      event.preventDefault()
-      alert("Please confirm you want to send the outdated PDF, or regenerate it first.")
-      return false
-    }
-
-    // Set hidden field to "1"
-    document.getElementById('attach_pdf').value = "1"
-  }
 }

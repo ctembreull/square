@@ -126,11 +126,11 @@ class EventsController < ApplicationController
     @families_with_members = all_recipients.select { |p| p.is_a?(Family) }
                                            .map { |f| [ f, f.members.select(&:active?) ] }
     @singles = all_recipients.select { |p| p.is_a?(Single) }
-    @recipient_count = @singles.count + @families_with_members.sum { |_, m| m.count }
-
-    # Get admin users who aren't also players (for broadcast-only emails)
+    # Get admin users who aren't also players
     player_emails = all_recipients.flat_map { |p| p.is_a?(Family) ? p.members.map(&:email) : [ p.email ] }.compact
     @non_player_admins = User.where(admin: true).where.not(email: player_emails).where.not(email: nil)
+
+    @recipient_count = @singles.count + @families_with_members.sum { |_, m| m.count } + @non_player_admins.count
 
     # Render email preview for selected post
     if @selected_post

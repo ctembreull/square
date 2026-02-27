@@ -46,9 +46,8 @@
   <% elsif event.pdf.attached? %>
     <div class="d-flex justify-content-between align-items-center">
       <div class="form-check">
-        <%= check_box_tag :confirm_stale_pdf, "1", event.pdf_fresh?,
-            class: "form-check-input",
-            data: { email_sender_target: "staleConfirmation" } %>
+        <%= check_box_tag :attach_pdf, "1", event.pdf_fresh?,
+            class: "form-check-input" %>
         <label class="form-check-label">
           Attach PDF
         </label>
