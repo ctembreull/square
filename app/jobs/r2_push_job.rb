@@ -29,7 +29,7 @@ class R2PushJob < ApplicationJob
     Rails.logger.error "[R2Backup] #{e.backtrace&.first(5)&.join("\n")}"
 
     ActivityLog.create!(
-      action: "r2_sync_failed",
+      action: "r2_sync",
       record_type: "System",
       level: "error",
       metadata: {
