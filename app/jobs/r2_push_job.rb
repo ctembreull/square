@@ -10,6 +10,11 @@ class R2PushJob < ApplicationJob
 
     Rails.logger.info "[R2Backup] Starting daily backup..."
 
+    # Rake isn't loaded in the SolidQueue worker context —
+    # it's only auto-available when booted via `rake` or `rails` CLI.
+    require "rake"
+    Rails.application.load_tasks
+
     # Reenable the task chain — Rake marks tasks as "already invoked"
     # in long-lived processes, so subsequent runs silently no-op
     %w[structure:export seeds:export players:export affiliations:export r2:push].each do |task|
