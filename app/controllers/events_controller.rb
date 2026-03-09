@@ -157,9 +157,10 @@ class EventsController < ApplicationController
     recipient_ids = params[:recipient_ids]&.map(&:to_i) || []
     admin_ids = params[:admin_ids]&.map(&:to_i) || []
 
-    # Get selected recipients from database
-    recipients = Player.email_recipients.where(id: recipient_ids)
-    emails = recipients.pluck(:email).uniq.compact
+    # Get emails for selected players (any active player with an email)
+    emails = Player.where(id: recipient_ids, active: true)
+                   .where.not(email: [nil, ""])
+                   .pluck(:email).uniq.compact
 
     # Add admin emails (broadcast mode only)
     admin_emails = User.where(id: admin_ids, admin: true).pluck(:email).compact
@@ -177,6 +178,9 @@ class EventsController < ApplicationController
       return
     end
 
+    # Log activity (before dev override so counts reflect real recipients)
+    actual_recipient_count = emails.count
+
     # Development mode safety
     if Rails.env.development?
       emails = [ current_user.email ]
@@ -185,7 +189,6 @@ class EventsController < ApplicationController
     # Send emails
     emails.each { |email| PostMailer.event_post(@post, email, attach_pdf: attach_pdf).deliver_later }
 
-    # Log activity
     ActivityLog.create!(
       action: "email_sent",
       record: @post,
@@ -193,7 +196,7 @@ class EventsController < ApplicationController
       metadata: {
         post_title: @post.title,
         event: @event.title,
-        recipient_count: emails.count,
+        recipient_count: actual_recipient_count,
         player_recipients: recipient_ids.count,
         admin_recipients: admin_ids.count,
         other_recipients: other_emails.count,
