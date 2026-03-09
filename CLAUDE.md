@@ -27,7 +27,7 @@ A Rails 8.1.1 application for managing family sports squares games across NCAA b
 - Active players: participate in new games (have chances > 0)
 - Charity players: fallback for unfilled squares
 - Family structure: self-referential (`family_id` references Player)
-- **Email addresses encrypted** (Rails `encrypts`), never displayed in UI
+- **Email addresses visible only in admin player views** (index, show)
 
 ### Score Tracking
 - Stores both period scores AND cumulative totals:

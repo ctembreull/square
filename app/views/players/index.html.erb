@@ -43,7 +43,7 @@
 								<th class="text-900">Type</th>
 								<th class="text-900">Name</th>
 								<th class="text-900">Display Name</th>
-								<th class="text-900 text-center"><span class="fas fa-envelope"></span></th>
+								<th class="text-900">Email</th>
 								<th class="text-900">Family</th>
 								<th class="text-900 text-center">Chances</th>
 								<th class="text-900 text-end">Actions</th>
@@ -61,11 +61,7 @@
 											<%= link_to player.name, player_path(player), class: "fw-semi-bold", target: "_top" %>
 										</td>
 										<td class="py-2 text-muted"><%= player.display_name %></td>
-										<td class="py-2 text-center">
-											<% if player.email.present? %>
-												<span class="fas fa-check text-success"></span>
-											<% end %>
-										</td>
+										<td class="py-2 text-muted"><%= player.email %></td>
 										<td class="py-2">
 											<span class="text-muted">-</span>
 										</td>
@@ -101,11 +97,7 @@
 											<%= link_to family.name, player_path(family), class: "fw-semi-bold", target: "_top" %>
 										</td>
 										<td class="py-2 text-muted"><%= family.display_name %></td>
-										<td class="py-2 text-center">
-											<% if family.email.present? %>
-												<span class="fas fa-check text-success"></span>
-											<% end %>
-										</td>
+										<td class="py-2 text-muted"><%= family.email %></td>
 										<td class="py-2">
 											<span class="text-muted"><%= family.members.count %> members</span>
 										</td>
@@ -140,11 +132,7 @@
 												<%= link_to member.name, player_path(member), class: "fw-semi-bold", target: "_top" %>
 											</td>
 											<td class="py-2 text-muted"><%= member.display_name %></td>
-											<td class="py-2 text-center">
-												<% if member.email.present? %>
-													<span class="fas fa-check text-success"></span>
-												<% end %>
-											</td>
+											<td class="py-2 text-muted"><%= member.email %></td>
 											<td class="py-2">
 												<%= link_to family.name, player_path(family), class: "text-info", target: "_top" %>
 											</td>
@@ -271,7 +259,7 @@
 									<th class="text-900">Type</th>
 									<th class="text-900">Name</th>
 									<th class="text-900">Display Name</th>
-									<th class="text-900 text-center"><span class="fas fa-envelope"></span></th>
+									<th class="text-900">Email</th>
 									<th class="text-900">Family</th>
 									<th class="text-900 text-center">Chances</th>
 									<th class="text-900 text-end">Actions</th>
@@ -287,11 +275,7 @@
 											<%= link_to player.name, player_path(player), class: "fw-semi-bold text-muted" %>
 										</td>
 										<td class="py-2"><%= player.display_name %></td>
-										<td class="py-2 text-center">
-											<% if player.email.present? %>
-												<span class="fas fa-check text-success"></span>
-											<% end %>
-										</td>
+										<td class="py-2"><%= player.email %></td>
 										<td class="py-2">
 											<% if player.family.present? %>
 												<%= link_to player.family.name, player_path(player.family) %>
