@@ -186,8 +186,8 @@ class EventsController < ApplicationController
       emails = [ current_user.email ]
     end
 
-    # Send emails
-    emails.each { |email| PostMailer.event_post(@post, email, attach_pdf: attach_pdf).deliver_later }
+    # Send emails (stagger 2s apart to avoid Resend rate limits)
+    emails.each_with_index { |email, i| PostMailer.event_post(@post, email, attach_pdf: attach_pdf).deliver_later(wait: (i * 2).seconds) }
 
     ActivityLog.create!(
       action: "email_sent",
