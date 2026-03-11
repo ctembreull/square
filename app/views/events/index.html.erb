@@ -10,7 +10,7 @@
 							<h6 class="text-primary fs-10 mb-0">Welcome to </h6>
 							<h4 class="text-primary fw-bold mb-0">
 								Squares
-								<span class="text-info fw-medium">Event Management</span>
+								<span class="text-info fw-medium">Event Hub</span>
 							</h4>
 						</div>
 					</div>
@@ -110,9 +110,7 @@
 					<div class="card-body">
 
 						<h5>
-							<% if admin? %>
-								<%= link_to event.title, event, class: "text-muted" %>
-							<% end %>	
+							<%= link_to event.title, event, class: "text-muted" %>
 						</h5>
 						<div>
 							<div class="badge rounded-pill badge-subtle-primary fs-11">
