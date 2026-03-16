@@ -10,6 +10,9 @@
   <%= stylesheet_link_tag :app, media: "all" %>
   <%= stylesheet_link_tag "teams", media: "all" %>
   <%= stylesheet_link_tag "game", media: "all" %>
+  <% if (inline_css = runtime_inline_styles).present? %>
+    <style data-runtime-styles><%= inline_css.html_safe %></style>
+  <% end %>
 
   <style>
     /* PDF-specific overrides */
