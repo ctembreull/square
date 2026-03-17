@@ -26,6 +26,41 @@ akr-akron-zips:
   espn_id: 2006
   espn_mens_slug: akron-zips
   espn_womens_slug: akron-zips
+  colors:
+    buchtel-blue:
+      name: Buchtel Blue
+      hex: 070C72
+      primary: true
+    prezi-gold:
+      name: Prezi Gold
+      hex: 9D9362
+      primary: true
+    black:
+      name: Black
+      hex: '000000'
+      primary: false
+    bright-blue:
+      name: Bright Blue
+      hex: 1E63AF
+      primary: false
+    daylily:
+      name: Daylily
+      hex: FFFAA0
+      primary: false
+    kangaroo-blue:
+      name: Kangaroo Blue
+      hex: 2323FF
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #070C72; color: #FFFFFF; text-shadow: 1px 1px 0 #9D9362,
+        -1px 1px 0 #9D9362, 1px -1px 0 #9D9362, -1px -1px 0 #9D9362; '
+      default: true
 ala-alabama-crimson-tide:
   abbr: ALA
   location: Alabama
@@ -35,6 +70,24 @@ ala-alabama-crimson-tide:
   espn_id: 333
   espn_mens_slug: alabama-crimson-tide
   espn_womens_slug: alabama-crimson-tide
+  colors:
+    capstone-gray:
+      name: Capstone Gray
+      hex: 828A8F
+      primary: true
+    crimson-flame:
+      name: Crimson Flame
+      hex: 9E1B32
+      primary: true
+    victory-white:
+      name: Victory White
+      hex: FFFFFF
+      primary: true
+  styles:
+    crimson:
+      name: Crimson
+      css: 'background-color: #9E1B32; color: #FFFFFF; '
+      default: true
 aamu-alabama-a-m-bulldogs:
   abbr: AAMU
   location: Alabama A&M
@@ -2280,6 +2333,25 @@ gonz-gonzaga-bulldogs:
   espn_id: 2250
   espn_mens_slug: gonzaga-bulldogs
   espn_womens_slug: gonzaga-bulldogs
+  colors:
+    athletic-gray:
+      name: Athletic Gray
+      hex: C1C6C8
+      primary: true
+    athletic-red:
+      name: Athletic Red
+      hex: C8102E
+      primary: true
+    navy-blue:
+      name: Navy Blue
+      hex: 041E42
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #041E42; color: #ffffff; text-shadow: 1px 1px 0 #C8102E,
+        -1px 1px 0 #C8102E, 1px -1px 0 #C8102E, -1px -1px 0 #C8102E; '
+      default: true
 gram-grambling-tigers:
   abbr: GRAM
   location: Grambling
@@ -2753,6 +2825,21 @@ jmu-james-madison-dukes:
   espn_id: 256
   espn_mens_slug: james-madison-dukes
   espn_womens_slug: james-madison-dukes
+  colors:
+    jmu-gold:
+      name: JMU Gold
+      hex: CBB677
+      primary: true
+    jmu-purple:
+      name: JMU Purple
+      hex: '450084'
+      primary: true
+  styles:
+    purple:
+      name: Purple
+      css: 'background-color: #450084; color: #ffffff; text-shadow: 1px 1px 0 #CBB677,
+        -1px 1px 0 #CBB677, 1px -1px 0 #CBB677, -1px -1px 0 #CBB677; '
+      default: true
 kc-kansas-city-chiefs:
   abbr: KC
   location: Kansas City
@@ -2869,6 +2956,16 @@ uk-kentucky-wildcats:
   espn_id: 96
   espn_mens_slug: kentucky-wildcats
   espn_womens_slug: kentucky-wildcats
+  colors:
+    wildcat-blue:
+      name: Wildcat Blue
+      hex: 0033A0
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #0033A0; color: #ffffff; '
+      default: true
 lsu-lsu-tigers:
   abbr: LSU
   location: LSU
@@ -3370,6 +3467,32 @@ mcn-mcneese-cowboys:
   espn_id: 2377
   espn_mens_slug: mcneese-cowboys
   espn_womens_slug: mcneese-cowgirls
+  colors:
+    official-blue:
+      name: Official Blue
+      hex: 00477F
+      primary: true
+    official-gold:
+      name: Official Gold
+      hex: FFD520
+      primary: true
+    cyan:
+      name: Cyan
+      hex: 00AEEF
+      primary: false
+    dark-blue:
+      name: Dark Blue
+      hex: 002A54
+      primary: false
+    orange-gold:
+      name: Orange Gold
+      hex: F2B32E
+      primary: false
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #00477F; color: #FFD520; '
+      default: true
 mer-mercer-bears:
   abbr: MER
   location: Mercer
@@ -3437,6 +3560,17 @@ m-oh-miami-oh-redhawks:
   espn_id: 193
   espn_mens_slug: miami-oh-redhawks
   espn_womens_slug: miami-oh-redhawks
+  colors:
+    miami-red:
+      name: Miami Red
+      hex: C41230
+      primary: true
+  styles:
+    red:
+      name: Red
+      css: 'background-color: #C41230; color: #ffffff; text-shadow: 1px 1px 0 #000000,
+        -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000; '
+      default: true
 msu-michigan-state-spartans:
   abbr: MSU
   location: Michigan State University
@@ -4280,6 +4414,29 @@ miss-ole-miss-rebels:
   espn_id: 145
   espn_mens_slug: ole-miss-rebels
   espn_womens_slug: ole-miss-rebels
+  colors:
+    navy-blue:
+      name: Navy Blue
+      hex: 14213D
+      primary: true
+    red:
+      name: Red
+      hex: CE1126
+      primary: true
+    powder-blue:
+      name: Powder Blue
+      hex: 006BA6
+      primary: false
+    white:
+      name: White
+      hex: FFFFFF
+      primary: false
+  styles:
+    powder-blue:
+      name: Powder Blue
+      css: 'background-color: #006BA6; color: #FFFFFF; text-shadow: 1px 1px 0 #CE1126,
+        -1px 1px 0 #CE1126, 1px -1px 0 #CE1126, -1px -1px 0 #CE1126; '
+      default: true
 oma-omaha-mavericks:
   abbr: OMA
   location: Omaha
@@ -5408,6 +5565,20 @@ sdst-south-dakota-state-jackrabbits:
   espn_id: 2571
   espn_mens_slug: south-dakota-state-jackrabbits
   espn_womens_slug: south-dakota-state-jackrabbits
+  colors:
+    sdstate-blue:
+      name: SDState Blue
+      hex: 0033A0
+      primary: true
+    sdstate-yellow:
+      name: SDState Yellow
+      hex: FFD100
+      primary: true
+  styles:
+    blue:
+      name: Blue
+      css: 'background-color: #0033A0; color: #FFD100; '
+      default: false
 semo-southeast-missouri-state-redhawks:
   abbr: SEMO
   location: Southeast Missouri State
@@ -5876,6 +6047,24 @@ tenn-tennessee-volunteers:
   espn_id: 2633
   espn_mens_slug: tennessee-volunteers
   espn_womens_slug: tennessee-lady-volunteers
+  colors:
+    smokey-gray:
+      name: Smokey Gray
+      hex: 4B4B4B
+      primary: true
+    tennessee-orange:
+      name: Tennessee Orange
+      hex: FF8200
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    orange:
+      name: Orange
+      css: 'background-color: #FF8200; color: #FFFFFF; '
+      default: true
 tnst-tennessee-state-tigers:
   abbr: TNST
   location: Tennessee State
@@ -8273,6 +8462,28 @@ van-vanderbilt-commodores:
   espn_id: 238
   espn_mens_slug: vanderbilt-commodores
   espn_womens_slug: vanderbilt-commodores
+  colors:
+    black:
+      name: Black
+      hex: 1C1C1C
+      primary: true
+    flat-gold:
+      name: Flat Gold
+      hex: CFAE70
+      primary: true
+    white:
+      name: White
+      hex: FFFFFF
+      primary: true
+  styles:
+    black:
+      name: Black
+      css: 'background-color: #1C1C1C; color: #CFAE70; '
+      default: true
+    gold:
+      name: Gold
+      css: 'background-color: #CFAE70; color: #1C1C1C; '
+      default: false
 nova-villanova-wildcats:
   abbr: NOVA
   location: Villanova University
@@ -8693,6 +8904,11 @@ wrst-wright-state-raiders:
       css: 'background-color: #046A38; color: #ffffff; text-shadow: 1px 1px 0 #CBA052,
         -1px 1px 0 #CBA052, 1px -1px 0 #CBA052, -1px -1px 0 #CBA052; '
       default: true
+    white:
+      name: White
+      css: 'background-color: #ffffff; color: #046A38; text-shadow: 1px 1px 0 #CBA052,
+        -1px 1px 0 #CBA052, 1px -1px 0 #CBA052, -1px -1px 0 #CBA052; '
+      default: false
 wyo-wyoming-cowboys:
   abbr: WYO
   location: Wyoming
