@@ -47,7 +47,11 @@
 	<td class="text-end">
 		<%# tv network if upcoming, link to box score if completed %>
 		<% if game.upcoming? || game.in_progress? %>
-			<%= game.broadcast_network %>
+			<% networks = game.broadcast_network&.split("/")&.map(&:strip) %>
+			<%= networks&.first %>
+			<% if networks && networks.size > 1 %>
+				<%= link_to "(more)", game %>
+			<% end %>
 		<% else %>
 			<%= link_to "Box Score", game.score_url, target: "_blank" %>
 		<% end %>
