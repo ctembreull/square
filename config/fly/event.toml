@@ -1,7 +1,6 @@
-# fly.toml app configuration file generated for family-squares on 2026-01-27T09:41:30-08:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+# Fly.io configuration: EVENT mode
+# Scaled up for active events with PDF generation and score scraping.
+# Apply with: bin/fly-mode event
 
 app = 'family-squares'
 primary_region = 'sjc'
@@ -27,7 +26,7 @@ console_command = '/rails/bin/rails console'
   auto_start_machines = true
   min_machines_running = 1
   processes = ['app']
-  idle_timeout = 120  # 2 minutes for slow PDF generation
+  idle_timeout = 120
 
   [[http_service.checks]]
     interval = '10s'
@@ -42,6 +41,6 @@ console_command = '/rails/bin/rails console'
       X-Forwarded-Proto = 'https'
 
 [[vm]]
-  memory = '1gb'
-  cpus = 1
-  memory_mb = 1024
+  memory = '2gb'
+  cpus = 2
+  memory_mb = 2048

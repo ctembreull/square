@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+FLY_TOML="$APP_ROOT/fly.toml"
+CONFIG_DIR="$APP_ROOT/config/fly"
+
+usage() {
+  echo "Usage: bin/fly-mode [idle|event]"
+  echo ""
+  echo "  idle   - Minimal resources for off-season (1 CPU, 1GB RAM)"
+  echo "  event  - Scaled up for active events (2 CPUs, 2GB RAM)"
+  echo ""
+  echo "  With no argument, displays the current fly.toml contents."
+}
+
+if [ $# -eq 0 ]; then
+  if [ -f "$FLY_TOML" ]; then
+    echo "Current fly.toml:"
+    echo ""
+    cat "$FLY_TOML"
+  else
+    echo "No fly.toml found. Run 'bin/fly-mode idle' or 'bin/fly-mode event' to create one."
+  fi
+  exit 0
+fi
+
+MODE="$1"
+SOURCE="$CONFIG_DIR/$MODE.toml"
+
+if [ ! -f "$SOURCE" ]; then
+  echo "Error: unknown mode '$MODE'"
+  echo ""
+  usage
+  exit 1
+fi
+
+cp "$SOURCE" "$FLY_TOML"
+echo "fly.toml set to $MODE mode (from config/fly/$MODE.toml)"
