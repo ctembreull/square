@@ -12,8 +12,10 @@ class R2PushJob < ApplicationJob
 
     # Rake isn't loaded in the SolidQueue worker context —
     # it's only auto-available when booted via `rake` or `rails` CLI.
+    # Guard: only load tasks once per process. Repeated load_tasks calls
+    # re-register task bodies, causing duplicate execution (see #50).
     require "rake"
-    Rails.application.load_tasks
+    Rails.application.load_tasks unless Rake::Task.task_defined?("r2:push")
 
     # Reenable the task chain — Rake marks tasks as "already invoked"
     # in long-lived processes, so subsequent runs silently no-op
