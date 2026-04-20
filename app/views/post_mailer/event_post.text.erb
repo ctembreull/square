@@ -1,4 +1,8 @@
 <%= @post_body_text %>
+<% if @sender&.email_signature.present? %>
+
+<%= @sender.email_signature %>
+<% end %>
 
 --
 Family Squares · <%= @event.title %>

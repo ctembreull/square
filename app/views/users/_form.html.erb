@@ -26,6 +26,12 @@
 		<div class="form-text">Shown in the navigation bar instead of name.</div>
 	</div>
 
+	<div class="mb-3">
+		<%= form.label :email_signature, "Email Signature (optional)", class: "form-label" %>
+		<%= form.text_area :email_signature, class: "form-control", rows: 4 %>
+		<div class="form-text">Appended to emails you send. Never shown in the app.</div>
+	</div>
+
 	<div data-controller="password-match">
 		<div class="mb-3">
 			<%= form.label :password, class: "form-label" %>
