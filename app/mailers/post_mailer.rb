@@ -1,7 +1,8 @@
 class PostMailer < ApplicationMailer
-  def event_post(post, email, attach_pdf: false)
+  def event_post(post, email, sender: nil, attach_pdf: false)
     @post = post
     @event = post.event
+    @sender = sender
 
     # Convert relative URLs in post body to absolute for email clients
     @post_body = absolutize_urls(@post.body.to_s)
@@ -17,11 +18,20 @@ class PostMailer < ApplicationMailer
 
     mail(
       to: email,
+      from: from_with_sender(sender),
       subject: "[Family Squares] #{@post.title}"
     )
   end
 
   private
+
+  def from_with_sender(sender)
+    default_from = self.class.default[:from]
+    return default_from if sender.blank? || sender.name.blank?
+
+    address = Mail::Address.new(default_from).address
+    "#{sender.name} <#{address}>"
+  end
 
   def absolutize_urls(html)
     host = ActionMailer::Base.default_url_options[:host]

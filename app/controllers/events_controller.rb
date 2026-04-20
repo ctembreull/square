@@ -134,7 +134,7 @@ class EventsController < ApplicationController
 
     # Render email preview for selected post
     if @selected_post
-      mailer = PostMailer.event_post(@selected_post, "preview@example.com", attach_pdf: false)
+      mailer = PostMailer.event_post(@selected_post, "preview@example.com", sender: current_user, attach_pdf: false)
       # Extract HTML body from multipart email
       html = if mailer.html_part
                mailer.html_part.body.decoded
@@ -187,7 +187,7 @@ class EventsController < ApplicationController
     end
 
     # Send emails (stagger 2s apart to avoid Resend rate limits)
-    emails.each_with_index { |email, i| PostMailer.event_post(@post, email, attach_pdf: attach_pdf).deliver_later(wait: (i * 2).seconds) }
+    emails.each_with_index { |email, i| PostMailer.event_post(@post, email, sender: current_user, attach_pdf: attach_pdf).deliver_later(wait: (i * 2).seconds) }
 
     ActivityLog.create!(
       action: "email_sent",
