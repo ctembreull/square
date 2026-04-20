@@ -26,7 +26,11 @@
       margin: 0.3em 0;
     }
     a {
-      color: #2c3e50;
+      color: #0d6efd;
+    }
+    .post-body a, .signature a {
+      color: #0d6efd;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -38,7 +42,7 @@
   <div class="signature">
     <p>--</p>
     <p>Family Squares &middot; <%= @event.title %></p>
-    <p><%= link_to "View online", post_url(@post) %></p>
+    <p><%= link_to "View online", post_url(@post), style: "color: #0d6efd; text-decoration: underline;" %></p>
   </div>
 </body>
 </html>
